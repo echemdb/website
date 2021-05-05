@@ -29,8 +29,8 @@ extra_css:
 plugins:
      - search
      - macros:
-         module_name: ec_mkdocs_macros
-         include_dir: code
+         module_name: code
+         #include_dir: code
      - section-index
 
 markdown_extensions:

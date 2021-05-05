@@ -10,6 +10,16 @@ from matplotlib import colors
 mdFile = MdUtils(file_name='Example_Markdown',title='Markdown File Example')
 
 
+def sometest(s):
+    ns = '| A | B ' \
+         '| \n | ------- | ----------- ' \
+         '| \n | H  | T       ' \
+         '| \n | P  | T       |'
+
+    return ns
+
+
+
 def restructure_array(listarray):
     alllines = []
     for line in listarray:
