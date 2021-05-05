@@ -11,6 +11,20 @@ def get_table(filename):
         columns, rows, text =  shapedlistfrom_csv(filename)
         return mdFile.new_table(columns, rows, text, text_align='center', marker='')  # text is flattened array
 
+def shapedlistfrom_csv(filename):
+    df = pd.read_csv(filename)
+    rows, columns = df.shape
+    rows+=1
+    listed = df.columns.tolist()
+    for r in df.iterrows():
+        listed.extend(r[1].astype(str).tolist())
+    return columns, rows, listed
+
+
+def shapedlistfrom_json(filename):
+    return None
+
+
 def make_element_link(elementname):
     return '[**{}**]'.format(elementname) + '(  # )'
 
