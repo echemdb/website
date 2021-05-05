@@ -15,10 +15,6 @@ website version on x axis ?!
 
 Then periodic table overview to click to get to systems / elements
 
-{{ periodic_table() }}
-
-
-
 # Knowledge
 
 Nico: I copied an own introduction

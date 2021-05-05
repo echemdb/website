@@ -1,4 +1,4 @@
-from markdown_readwrite_gensites import get_table, get_periodic_table_span
+from code.markdown_readwrite_gensites import get_table, get_periodic_table_span
 
 def define_env(env):
     # you could, of course, also define a macro here:
