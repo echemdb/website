@@ -1,76 +1,68 @@
 site_name: echemdb.org
 nav:
     - Home: index.md
-    # - 'CVs':
-    #   - cyclic_voltammograms/index.md
-    #   - 'Periodic Table': cyclic_voltammograms/
-    #   - 'Systems': cyclic_voltammograms/systems.md
-    #   - 'Apps': cyclic_voltammograms/apps.md
-    #   - 'Data Standardization': cyclic_voltammograms/schema.md
-    # - CV:
-    #   - cv/index.md
-    #   - Periodic Table: cv/periodic__table.md
-    #   - Systems: cv/systems.md
-    #   - Apps: cv/apps.md
-    #   - Data Standardization: cv/data__standardization.md
-    # - 'About' : about/
+    - CV:
+      - cv/index.md
+      - Periodic Table: cv/periodic__table.md
+      - Systems: cv/systems.md
+      - Apps: cv/apps.md
+      - Data Standardization: cv/data__standardization.md
+    - 'About' : about.md
 theme:
     name: material
-    # palette:
-    #   # Light mode
-    #   - light blue: '(prefers-color-scheme: light)'
-    #     scheme: default
-    #     primary: black
-    #     accent: lime
+    palette:
+      scheme: default
+      primary: black
+      accent: lime
+    features:
+      - navigation.tabs
     #     toggle:
     #       icon: material/toggle-switch-off-outline
     #       name: Switch to dark mode
     #Good is flatly or sandstone then dash app can be in same styling
     # materials theme makes problems with css restyling why?!
     # material
-    #features:
-    #  - navigation.tabs
 
-# extra_css:
-#   - stylesheets/extra.css
-# 
-# plugins:
-#     - search
-#     - macros:
-#         module_name: ec_mkdocs_macros
-#     - section-index
-# 
-# markdown_extensions:
-#   - extra
-#   - admonition
-#   - codehilite
-#   - smarty
-#   - meta
-#   - def_list
-#   - pymdownx.emoji:
-#       emoji_index: !!python/name:materialx.emoji.twemoji
-#       emoji_generator: !!python/name:materialx.emoji.to_svg
-#   - markdown_include.include:
-#       base_path: docs
-#   - pymdownx.smartsymbols
-#   - attr_list
-#   - pymdownx.arithmatex:
-#         generic: true
-#   - pymdownx.critic
-#   - pymdownx.details
-#   - footnotes
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+     - search
+     - macros:
+         module_name: ec_mkdocs_macros
+     - section-index
+
+markdown_extensions:
+  - extra
+  - admonition
+  - codehilite
+  - smarty
+  - meta
+  - def_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - markdown_include.include:
+      base_path: docs
+  - attr_list
+  - pymdownx.arithmatex:
+        generic: true
+  - pymdownx.details
+  - footnotes
+  - pymdownx.highlight
+  - pymdownx.magiclink
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+        custom_checkbox: true
 #   - abbr
 #   - pymdownx.caret
-#   - pymdownx.highlight
 #   - pymdownx.inlinehilite
-#   - pymdownx.magiclink
-#   - pymdownx.tabbed
-#   - pymdownx.tasklist:
-#         custom_checkbox: true
-# 
-# extra_javascript:
-#   - javascripts/config.js
-#   - https://polyfill.io/v3/polyfill.min.js?features=es6
-#   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-#   - javascripts/tables.js
-#   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+#   - pymdownx.critic
+#   - pymdownx.smartsymbols
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/tables.js
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
