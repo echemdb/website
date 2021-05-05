@@ -1,0 +1,17 @@
+{
+    "$id": "adress_to_json.json",
+    "$schema": "link_to_schemadescription_inwebpage",
+    "title": "CV",
+    "description": "JSON Schema for a CV object.",
+    "type": "object",
+    "properties": {
+      "potential": {
+        "type": "float",
+        "description": "The potential of a cyclic voltammogram."
+      },
+      "current": {
+        "type": "float",
+        "description": "The current(or equiv. quantity) of a cyclic voltammogram."
+      }
+    }
+  }
