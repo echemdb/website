@@ -1,0 +1,13 @@
+{   "name": "my-dataset",
+    "profile": "data-package",
+    "resources": [
+        {
+            "path": "https://edmond.mpdl.mpg.de/imeji/exportServlet?format=file&id=http://edmond.mpdl.mpg.de/imeji/item/Yyz3J17Tt539aMAg",
+            "profile": "data-resource",
+            "name": "remotetest",
+            "format": "zip",
+            "mediatype": "zip",
+            "encoding": "utf-8"
+        }
+    ]
+}
