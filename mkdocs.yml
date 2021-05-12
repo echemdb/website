@@ -4,6 +4,7 @@ nav:
     - CV:
       - cv/index.md
       - Periodic Table: cv/periodic__table.md
+      #- Cu: cv/elements/Cu.md
       - Systems: cv/systems.md
       - Apps: cv/apps.md
       - Data Standardization: cv/data__standardization.md
@@ -16,6 +17,9 @@ theme:
       accent: lime
     features:
       - navigation.tabs
+      - navigation.indexes
+      - navigation.tabs.sticky
+      - toc.integrate
     #     toggle:
     #       icon: material/toggle-switch-off-outline
     #       name: Switch to dark mode
@@ -49,6 +53,7 @@ markdown_extensions:
   - pymdownx.arithmatex:
         generic: true
   - pymdownx.details
+  - pymdownx.superfences
   - footnotes
   - pymdownx.highlight
   - pymdownx.magiclink

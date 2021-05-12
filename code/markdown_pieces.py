@@ -2,6 +2,7 @@ from mdutils.mdutils import MdUtils
 import pandas as pd, numpy as np
 from matplotlib.cm import jet_r
 from matplotlib import colors
+from .make_pages import get_page_links, cv_data
 
 # mdFile = MdUtils(file_name='Example_Markdown',title='Markdown File Example')
 # mtext = mdFile.new_inline_image(text='snow trees', path='./doc/source/images/photo-of-snow-covered-trees.jpg'))
@@ -79,7 +80,12 @@ def get_periodic_table():
 
 
 def make_element_link(elementname):
-    return '[**{}**]'.format(elementname) + '(  # )'
+    if elementname in cv_data['electrode material'].values:
+        link = get_page_links({'elementname': elementname})
+
+        return '[**{}**]'.format(elementname) + "(" + link.split("(")[1]
+    else:
+        return '**{}**'.format(elementname)
 
 def make_span(elementname, elecolor):
     return '<span class="a" style="background-color:{}"> '.format(elecolor)  + make_element_link(elementname) + ' </span>'

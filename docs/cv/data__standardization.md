@@ -1,7 +1,6 @@
 ---
 author: Nicolas G. Hoermann
 title: echemdb - The community database for electrochemical data
-pse_csv_path: ./docs/cyclic_voltammograms/data/dd.csv
 contentmd: cv/data__standardization_content.md
 ---
 
