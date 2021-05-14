@@ -1,4 +1,5 @@
 import os
+import os.path
 
 from mdutils.mdutils import MdUtils
 from .build_data import TEMPLATE_FOLDERS, ELEMENTS_DATA, TARGET_FOLDERS, DISPLAYED_INFOS, get_plotly_plot
@@ -116,6 +117,7 @@ def create_element_pages(elementname):
 
     target = copy.deepcopy(TARGET_FOLDERS['elements']).replace('tobesubstituted', elementname)
     targetfile = TARGET_FOLDERS['path'] + target
+    os.makedirs(os.path.dirname(targetfile), exist_ok=True)
     with open(targetfile, 'w') as f:
         frontmatter.dump(templatemd, targetfile)
 
@@ -127,6 +129,7 @@ def create_systems_pages():
 
     target = copy.deepcopy(TARGET_FOLDERS['systems'])
     targetfile = TARGET_FOLDERS['path'] + target
+    os.makedirs(os.path.dirname(targetfile), exist_ok=True)
     with open(targetfile, 'w') as f:
         frontmatter.dump(templatemd, targetfile)
 
@@ -141,6 +144,7 @@ def create_element_surface_pages(elementname, surfacename):
 
     target = copy.deepcopy(TARGET_FOLDERS['elements']).replace('tobesubstituted', f'{elementname}-{surfacename}')
     targetfile = TARGET_FOLDERS['path'] + target
+    os.makedirs(os.path.dirname(targetfile), exist_ok=True)
     with open(targetfile, 'w') as f:
         frontmatter.dump(templatemd, targetfile)
 
@@ -156,6 +160,7 @@ def create_echemdb_id_pages(echemdb_id):
 
     target = copy.deepcopy(TARGET_FOLDERS['echemdb_id']).replace('tobesubstituted', echemdb_id)
     targetfile = TARGET_FOLDERS['path'] + target
+    os.makedirs(os.path.dirname(targetfile), exist_ok=True)
     with open(targetfile, 'w') as f:
         frontmatter.dump(templatemd, targetfile)
 
@@ -309,8 +314,3 @@ def get_echembd_id_page_contents(echembd_id):
     page_md = '\n'.join(page_md)
 
     return page_md
-
-
-
-
-
