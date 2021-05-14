@@ -34,7 +34,6 @@ plugins:
      - search
      - macros:
          module_name: code
-         #include_dir: code
      - section-index
 
 markdown_extensions:
