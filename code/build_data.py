@@ -28,8 +28,8 @@ TARGET_FOLDERS = {'path': "./docs/",
 
 
 ELEMENTS_DATA = {
-    "elements_data": "./elements.csv",
-    "exp_cvs_index_csv": "./docs/cv/data/exp_cvs_index.csv"}
+    "elements_data": "./elements.csv"
+}
 
 DISPLAYED_INFOS = ['electrode material', 'surface', 'electrolyte', 'reference', 'link', 'echemdb-id']
 
@@ -90,19 +90,6 @@ def get_echemdb_id(elementname, filename):
     '''
     echemdb_id = elementname + '-' + hashlib.md5(filename.encode('utf-8')).hexdigest()[:10]
     return echemdb_id
-
-
-def collect_data_local(basefolder = '/'.join(ELEMENTS_DATA["exp_cvs_index_csv"].split('/')[:-1]), outfile= ELEMENTS_DATA["exp_cvs_index_csv"]):
-    '''
-    Let us agree that each experiment/single data is collected as datapackage. Meaning one
-     experiment is one datapackage (one experiment is e.g. one single CV).
-    We have to discuss whether we should package together data maybe when from the
-    same publication ?
-    :param basefolder: here is where the data lies
-    :param outfile: this csv file will collect all the data we have, only including the most important metadata
-    :return:
-    '''
-    return None
 
 
 def datapackage_to_dataframe(datapkg):

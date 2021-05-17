@@ -3,9 +3,10 @@ from .make_pages import get_element_page_contents, create_element_pages, get_sys
 
 from .build_data import ELEMENTS_DATA
 import pandas as pd
+from .data import collect_datapackages, make_cvs_dataframe
 
-ej = ELEMENTS_DATA["exp_cvs_index_csv"]
-allele_data = pd.read_csv(ej)
+allele_data = make_cvs_dataframe(collect_datapackages())
+
 ag  = allele_data.groupby(by = ['electrode material', 'surface'])
 
 def create_pages():
