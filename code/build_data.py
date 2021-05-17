@@ -80,18 +80,6 @@ def _extract_zip_if_possible(descriptor):
 datapackage.package._extract_zip_if_possible = _extract_zip_if_possible
 #Now we can use Package(url_or_local_path)
 
-def get_echemdb_id(elementname, filename):
-    '''
-    We start with hashes only containing the first 10 characters
-    If we see problems we could move forward to 20 or more characters. Resulting ids would have the same first 10 character and so the ids should be also 'future-proof'
-    :param elementname:
-    :param filename:
-    :return:
-    '''
-    echemdb_id = elementname + '-' + hashlib.md5(filename.encode('utf-8')).hexdigest()[:10]
-    return echemdb_id
-
-
 def datapackage_to_dataframe(datapkg):
     '''
     Generate directly pandas dataframe from firsr resource entry. Assumes tabular data.

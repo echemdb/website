@@ -1,5 +1,6 @@
+import os
 from .markdown_pieces import get_table, get_periodic_table_span, sometest
-from .make_pages import get_element_page_contents, create_element_pages, get_systems_page_contents, create_systems_pages, get_echemdb_id_page_contents, create_echemdb_id_pages, get_element_surface_page_contents, create_element_surface_pages #get_surface_page_contents, create_surface_pages
+from .make_pages import get_element_page_contents, create_element_pages, get_systems_page_contents, create_systems_pages, render, get_element_surface_page_contents, create_element_surface_pages #get_surface_page_contents, create_surface_pages
 
 from .build_data import ELEMENTS_DATA
 import pandas as pd
@@ -10,14 +11,20 @@ allele_data = make_cvs_dataframe(collect_datapackages())
 ag  = allele_data.groupby(by = ['electrode material', 'surface'])
 
 def create_pages():
+    docs = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "docs"))
+
     create_systems_pages()
 
     for elementname in list(set(allele_data['electrode material'].values)):
         create_element_pages(elementname)
     #for surfacename in list(set(allele_data['surface'].values)):
     #    create_surface_pages(surfacename)
+
     for echemdb_id in list(set(allele_data['echemdb-id'].values)):
-        create_echemdb_id_pages(echemdb_id)
+        targetfile = os.path.join(docs, "cv", "echemdb_pages", f"{echemdb_id}.md")
+        os.makedirs(os.path.dirname(targetfile), exist_ok=True)
+        with open(targetfile, 'w') as out:
+            out.write(render("echemdb_id.md", echemdb_id=echemdb_id, cvs=allele_data))
 
     for tupled in ag.groups:
         create_element_surface_pages(tupled[0], tupled[1])
@@ -53,7 +60,3 @@ def define_env(env):
     @env.macro
     def make_element_surface_page(elementname, surfacename):
         return get_element_surface_page_contents(elementname, surfacename)
-
-    @env.macro
-    def make_echemdb_id_page(echemdb_id):
-        return get_echemdb_id_page_contents(echemdb_id)

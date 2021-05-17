@@ -1,15 +1,14 @@
 ---
 author: Nicolas G. Hoermann
-title: echemdb - The community database for electrochemical data
-data:
-    echemdb_id : echemdb_id
+title: echemdb - {{ echemdb_id }} CV Data
 ---
 
+# {{ echemdb_id }}
 
-{{ make_echemdb_id_page(page.meta.data.echemdb_id) }}
+## Experimental Setup
 
+{{ cvs[cvs['echemdb-id'] == echemdb_id][['electrode material', 'surface', 'electrolyte']].to_markdown(index=False) }}
 
+## Experimental Results
 
-
-
-
+{{ plotly(echemdb_id, cvs[cvs['echemdb-id'] == echemdb_id]['path'].values[0]) }}
