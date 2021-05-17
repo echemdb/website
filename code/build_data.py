@@ -115,13 +115,11 @@ def get_plot_data_from_paths(names, paths):
     if type(paths) == list:
         alldfs = []
         for name, path in zip(names, paths):
-            print("path", path)
             datapkg = Package(path)
             # to be done
             metadata = None
             alldfs.append((name, datapackage_to_dataframe(datapkg), metadata))
     else:
-        print("path", paths)
         datapkg = Package(paths)
         # to be done
         metadata = None

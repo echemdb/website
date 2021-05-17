@@ -27,6 +27,5 @@ def make_cvs_dataframe(packages, data = datadir):
         f"{package.base_path}/datapackage.json",
         os.path.relpath(package.base_path, datadir),
     ] for package in packages]
-    print(data)
 
     return pd.DataFrame(data, columns=['electrode material', 'surface', 'electrolyte', 'reference', 'echemdb-id', 'path', 'relpath'])
