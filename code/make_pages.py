@@ -29,32 +29,6 @@ def get_filtered_tables(elementname, surface=None):
 
     return ele_list_md_str
 
-
-
-
-
-
-
-#### Single Page contents ####
-def get_echemdb_id_page_contents(echemdb_id):
-    '''
-    builds the page for a single CV measurement
-    echemdb_id needs to classify these correctly
-    I prefer to use a hash-like id, or some number
-    but then we need a database that stores how something relates to something. A 'protected' csv file that gathers the
-    things would as well be sufficient. Let's assume we have everything in a csv file.
-    It would make sense just to take the index of the csv file.
-    Note, we should then not ever 'automatically' create that csv file
-    as then the ids would change.
-    I think that it makes sense that we have associated with each data
-    I will use hashes because i dont want to
-    hashlib.md5(string.encode('utf-8'))).hexdigest()[:10]
-    :param echemdb_id:
-    :return:
-    '''
-
-
-
 def get_echemdb_id_file(echemdb_id):
     target = copy.deepcopy(TARGET_FOLDERS['echemdb_id']).replace('tobesubstituted', echemdb_id)
     targetfile = target
@@ -277,13 +251,8 @@ def get_systems_page_contents():
 
     return page_md
 
-
-
-
-
-
-#### echembd_id contents ####
-def get_echembd_id_page_contents(echembd_id):
+#### echemdb_id contents ####
+def get_echemdb_id_page_contents(echemdb_id):
     '''
     creates the contents in markdown for the elements pages
 
@@ -292,12 +261,12 @@ def get_echembd_id_page_contents(echembd_id):
 
     '''
 
-    head = "# {}".format(echembd_id)
+    head = "# {}".format(echemdb_id)
     page_md = [head]
 
     page_md += ["## Experimental setup"]
 
-    ele_data = cv_data.loc[(cv_data['echemdb-id'] == echembd_id)]
+    ele_data = cv_data.loc[(cv_data['echemdb-id'] == echemdb_id)]
     ele_data = ele_data[['electrode material', 'surface', 'electrolyte' ]] # maybe more
     ele_list_md_str = ele_data.to_markdown(index=False)
 
@@ -306,10 +275,9 @@ def get_echembd_id_page_contents(echembd_id):
     page_md += ["## Experimental results \n"]
     # Now read Datapackage and do something with it e.g. plot
 
-    ele_data = cv_data.loc[(cv_data['echemdb-id'] == echembd_id)]
+    ele_data = cv_data.loc[(cv_data['echemdb-id'] == echemdb_id)]
     path = ele_data['path'].values[0]
-    print("datain", ele_data , path)
-    page_md += [get_plotly_plot(str(echembd_id), path)]
+    page_md += [get_plotly_plot(str(echemdb_id), path)]
 
     page_md = '\n'.join(page_md)
 

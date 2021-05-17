@@ -1,5 +1,5 @@
 from .markdown_pieces import get_table, get_periodic_table_span, sometest
-from .make_pages import get_element_page_contents, create_element_pages, get_systems_page_contents, create_systems_pages, get_echembd_id_page_contents, create_echemdb_id_pages, get_element_surface_page_contents, create_element_surface_pages #get_surface_page_contents, create_surface_pages
+from .make_pages import get_element_page_contents, create_element_pages, get_systems_page_contents, create_systems_pages, get_echemdb_id_page_contents, create_echemdb_id_pages, get_element_surface_page_contents, create_element_surface_pages #get_surface_page_contents, create_surface_pages
 
 from .build_data import ELEMENTS_DATA
 import pandas as pd
@@ -54,5 +54,5 @@ def define_env(env):
         return get_element_surface_page_contents(elementname, surfacename)
 
     @env.macro
-    def make_echemdb_id_page(echembd_id):
-        return get_echembd_id_page_contents(echembd_id)
+    def make_echemdb_id_page(echemdb_id):
+        return get_echemdb_id_page_contents(echemdb_id)
