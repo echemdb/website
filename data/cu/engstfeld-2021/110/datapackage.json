@@ -1,0 +1,35 @@
+{
+    "profile": "tabular-data-package",
+    "electrode material": "Cu",
+    "surface": "110",
+    "electrolyte": "NaCl",
+    "reference": "somestuff.ref",
+    "echemdb-id": "engstfeld-2021-cu-110",
+    "resources": [
+        {
+            "path": "dd.csv",
+            "profile": "tabular-data-resource",
+            "name": "dd",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "potential",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "current",
+                        "type": "number",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            }
+        }
+    ]
+}

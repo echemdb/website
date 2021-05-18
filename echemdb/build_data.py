@@ -12,11 +12,11 @@ import datapackage.package
 import plotly.express as px
 import plotly.graph_objects as go
 import plotly.io
-TEMPLATE_FOLDERS = {'elements': "./code/templates/element.md",
-                    'echemdb_id': "./code/templates/echemdb_id.md",
-                    'systems': "./code/templates/systems.md",
-                    'surfaces': "./code/templates/surface.md",
-                    'element_surface': "./code/templates/element_surface.md"
+TEMPLATE_FOLDERS = {'elements': "./templates/element.md",
+                    'echemdb_id': "./templates/echemdb_id.md",
+                    'systems': "./templates/systems.md",
+                    'surfaces': "./templates/surface.md",
+                    'element_surface': "./templates/element_surface.md"
                     }
 
 TARGET_FOLDERS = {'path': "./docs/",
@@ -28,8 +28,8 @@ TARGET_FOLDERS = {'path': "./docs/",
 
 
 ELEMENTS_DATA = {
-    "elements_data": "./elements.csv",
-    "exp_cvs_index_csv": "./docs/cv/data/exp_cvs_index.csv"}
+    "elements_data": "./elements.csv"
+}
 
 DISPLAYED_INFOS = ['electrode material', 'surface', 'electrolyte', 'reference', 'link', 'echemdb-id']
 
@@ -80,31 +80,6 @@ def _extract_zip_if_possible(descriptor):
 datapackage.package._extract_zip_if_possible = _extract_zip_if_possible
 #Now we can use Package(url_or_local_path)
 
-def get_echemdb_id(elementname, filename):
-    '''
-    We start with hashes only containing the first 10 characters
-    If we see problems we could move forward to 20 or more characters. Resulting ids would have the same first 10 character and so the ids should be also 'future-proof'
-    :param elementname:
-    :param filename:
-    :return:
-    '''
-    echemdb_id = elementname + '-' + hashlib.md5(filename.encode('utf-8')).hexdigest()[:10]
-    return echemdb_id
-
-
-def collect_data_local(basefolder = '/'.join(ELEMENTS_DATA["exp_cvs_index_csv"].split('/')[:-1]), outfile= ELEMENTS_DATA["exp_cvs_index_csv"]):
-    '''
-    Let us agree that each experiment/single data is collected as datapackage. Meaning one
-     experiment is one datapackage (one experiment is e.g. one single CV).
-    We have to discuss whether we should package together data maybe when from the
-    same publication ?
-    :param basefolder: here is where the data lies
-    :param outfile: this csv file will collect all the data we have, only including the most important metadata
-    :return:
-    '''
-    return None
-
-
 def datapackage_to_dataframe(datapkg):
     '''
     Generate directly pandas dataframe from firsr resource entry. Assumes tabular data.
@@ -128,13 +103,11 @@ def get_plot_data_from_paths(names, paths):
     if type(paths) == list:
         alldfs = []
         for name, path in zip(names, paths):
-            print("path", path)
             datapkg = Package(path)
             # to be done
             metadata = None
             alldfs.append((name, datapackage_to_dataframe(datapkg), metadata))
     else:
-        print("path", paths)
         datapkg = Package(paths)
         # to be done
         metadata = None

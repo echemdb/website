@@ -4,17 +4,36 @@ import os.path
 from mdutils.mdutils import MdUtils
 from .build_data import TEMPLATE_FOLDERS, ELEMENTS_DATA, TARGET_FOLDERS, DISPLAYED_INFOS, get_plotly_plot
 
-
 import frontmatter
 import markdown
 import pandas as pd
 import numpy as np
 import copy
+from .data import collect_datapackages, make_cvs_dataframe
 
-ej = ELEMENTS_DATA["exp_cvs_index_csv"]
-cv_data = pd.read_csv(ej)
+cv_data = make_cvs_dataframe(collect_datapackages())
 grouped_cv_data = cv_data.groupby(by=['electrode material', 'surface'])
 
+def render(template, **kwargs):
+    r"""
+    Render `template` as a jinja template.
+    """
+    from jinja2 import Environment, FileSystemLoader, select_autoescape
+    env = Environment(
+        loader=FileSystemLoader(os.path.join(os.path.dirname(__file__), "..", "templates")),
+        autoescape=select_autoescape()
+    )
+
+    # Load macros like mkdocs-macros does, see
+    # https://github.com/fralau/mkdocs_macros_plugin/blob/master/mkdocs_macros/plugin.py#L157
+    def macro(f, name=''):
+        env.globals[name or f.__name__] = f
+    env.macro = macro
+    from .macros import define_env
+    define_env(env)
+    del env.macro
+
+    return env.get_template(template).render(**kwargs)
 
 def get_filtered_tables(elementname, surface=None):
 
@@ -28,32 +47,6 @@ def get_filtered_tables(elementname, surface=None):
     ele_list_md_str = ele_data.to_markdown(index=False)
 
     return ele_list_md_str
-
-
-
-
-
-
-
-#### Single Page contents ####
-def get_echemdb_id_page_contents(echemdb_id):
-    '''
-    builds the page for a single CV measurement
-    echemdb_id needs to classify these correctly
-    I prefer to use a hash-like id, or some number
-    but then we need a database that stores how something relates to something. A 'protected' csv file that gathers the
-    things would as well be sufficient. Let's assume we have everything in a csv file.
-    It would make sense just to take the index of the csv file.
-    Note, we should then not ever 'automatically' create that csv file
-    as then the ids would change.
-    I think that it makes sense that we have associated with each data
-    I will use hashes because i dont want to
-    hashlib.md5(string.encode('utf-8'))).hexdigest()[:10]
-    :param echemdb_id:
-    :return:
-    '''
-
-
 
 def get_echemdb_id_file(echemdb_id):
     target = copy.deepcopy(TARGET_FOLDERS['echemdb_id']).replace('tobesubstituted', echemdb_id)
@@ -105,8 +98,6 @@ def create_nice_table_overview(df):
     # reference????
     return dfc
 
-
-
 #### Element Page creation, basic copy paste md template ####
 def create_element_pages(elementname):
     print(f"Creating {elementname} page")
@@ -147,24 +138,6 @@ def create_element_surface_pages(elementname, surfacename):
     os.makedirs(os.path.dirname(targetfile), exist_ok=True)
     with open(targetfile, 'w') as f:
         frontmatter.dump(templatemd, targetfile)
-
-
-
-#### echemdb-id Page creation ####
-def create_echemdb_id_pages(echemdb_id):
-    print(f"Creating {echemdb_id} page")
-    with open(TEMPLATE_FOLDERS['echemdb_id']) as f:
-        templatemd = frontmatter.load(f)
-    templatemd['data']['echemdb_id'] = echemdb_id
-    templatemd['title'] = 'echemdb - {} CV data'.format(echemdb_id)
-
-    target = copy.deepcopy(TARGET_FOLDERS['echemdb_id']).replace('tobesubstituted', echemdb_id)
-    targetfile = TARGET_FOLDERS['path'] + target
-    os.makedirs(os.path.dirname(targetfile), exist_ok=True)
-    with open(targetfile, 'w') as f:
-        frontmatter.dump(templatemd, targetfile)
-
-
 
 #### Content Creation ####
 
@@ -272,44 +245,6 @@ def get_systems_page_contents():
 
     page_md += [ele_list_md_str, ' ']
     
-
-    page_md = '\n'.join(page_md)
-
-    return page_md
-
-
-
-
-
-
-#### echembd_id contents ####
-def get_echembd_id_page_contents(echembd_id):
-    '''
-    creates the contents in markdown for the elements pages
-
-    :param elementname:
-    :return: Whatever we want to write/plot for the element
-
-    '''
-
-    head = "# {}".format(echembd_id)
-    page_md = [head]
-
-    page_md += ["## Experimental setup"]
-
-    ele_data = cv_data.loc[(cv_data['echemdb-id'] == echembd_id)]
-    ele_data = ele_data[['electrode material', 'surface', 'electrolyte' ]] # maybe more
-    ele_list_md_str = ele_data.to_markdown(index=False)
-
-    page_md += [ele_list_md_str, ' ']
-
-    page_md += ["## Experimental results \n"]
-    # Now read Datapackage and do something with it e.g. plot
-
-    ele_data = cv_data.loc[(cv_data['echemdb-id'] == echembd_id)]
-    path = ele_data['path'].values[0]
-    print("datain", ele_data , path)
-    page_md += [get_plotly_plot(str(echembd_id), path)]
 
     page_md = '\n'.join(page_md)
 
