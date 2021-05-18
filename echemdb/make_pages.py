@@ -20,12 +20,18 @@ def render(template, **kwargs):
     """
     from jinja2 import Environment, FileSystemLoader, select_autoescape
     env = Environment(
-        loader=FileSystemLoader(os.path.join(os.path.dirname(__file__), "templates")),
+        loader=FileSystemLoader(os.path.join(os.path.dirname(__file__), "..", "templates")),
         autoescape=select_autoescape()
     )
 
-    from .build_data import get_plotly_plot
-    env.globals['plotly'] = get_plotly_plot
+    # Load macros like mkdocs-macros does, see
+    # https://github.com/fralau/mkdocs_macros_plugin/blob/master/mkdocs_macros/plugin.py#L157
+    def macro(f, name=''):
+        env.globals[name or f.__name__] = f
+    env.macro = macro
+    from .macros import define_env
+    define_env(env)
+    del env.macro
 
     return env.get_template(template).render(**kwargs)
 

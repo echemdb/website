@@ -31,10 +31,13 @@ extra_css:
   - stylesheets/extra.css
 
 plugins:
-     - search
-     - macros:
-         module_name: code
-     - section-index
+  - search
+  - macros:
+      module_name: echemdb
+  - gen-files:
+      scripts:
+        - gen_pages.py
+  - section-index
 
 markdown_extensions:
   - extra

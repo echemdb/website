@@ -12,11 +12,11 @@ import datapackage.package
 import plotly.express as px
 import plotly.graph_objects as go
 import plotly.io
-TEMPLATE_FOLDERS = {'elements': "./code/templates/element.md",
-                    'echemdb_id': "./code/templates/echemdb_id.md",
-                    'systems': "./code/templates/systems.md",
-                    'surfaces': "./code/templates/surface.md",
-                    'element_surface': "./code/templates/element_surface.md"
+TEMPLATE_FOLDERS = {'elements': "./templates/element.md",
+                    'echemdb_id': "./templates/echemdb_id.md",
+                    'systems': "./templates/systems.md",
+                    'surfaces': "./templates/surface.md",
+                    'element_surface': "./templates/element_surface.md"
                     }
 
 TARGET_FOLDERS = {'path': "./docs/",

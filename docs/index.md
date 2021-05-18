@@ -15,5 +15,3 @@ elemental electrodes can be found in the respective lower hierarchies.
 
 Our standardization methods as well the way this database / collection of data was 
 obtained is explained in [`Standards`](/standards/)
-
-{{ test('test') }}
