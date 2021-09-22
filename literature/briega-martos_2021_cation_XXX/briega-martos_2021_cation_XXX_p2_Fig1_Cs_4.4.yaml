@@ -57,7 +57,7 @@ electrochemical system:
       sum formula: HClO4
       type: acid
     ph:
-      uncertainty: 0.1
+      uncertainty: null
       value: 4.4
     temperature:
       unit: K
