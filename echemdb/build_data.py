@@ -84,9 +84,11 @@ def datapackage_to_dataframe(datapkg):
     '''
     Generate directly pandas dataframe from firsr resource entry. Assumes tabular data.
     Should also work for remote resource path and for csv data as we assume here
+    Note the datapackage can be created only from the json, if csv is in correct path and in ressources
     :param datapkg: datapackage object
     :return: pandas dataframe object
     '''
+
     # get resource to be updated
     res = datapkg.get_resource(datapkg.resource_names[0])
     # get resource data into pandas dataframe: This works for local and remote csv files
@@ -105,22 +107,61 @@ def get_plot_data_from_paths(names, paths):
         for name, path in zip(names, paths):
             datapkg = Package(path)
             # to be done
-            metadata = None
+            metadata = datapkg.descriptor
             alldfs.append((name, datapackage_to_dataframe(datapkg), metadata))
     else:
+        print(paths)
         datapkg = Package(paths)
         # to be done
-        metadata = None
+        metadata = datapkg.descriptor
         alldfs = [(names, datapackage_to_dataframe(datapkg), metadata)]
 
     return alldfs
 
 def make_plotly_figure_from_dataframes(alldfs):
+    '''
+    If we want to plot different things on top of each other, it makes no sense to have all different units etc
+    so we need to update that code:
+    first standardize data, then plot.
+    As a result it also makes no sense to read out metadata always for axis labels
+    For the moment I read out, but I think it is wrong when digitized
+
+        "figure description": {
+        "type": "digitized",
+        "measurement type": "CV",
+        "scan rate": {
+            "value": 50.0,
+            "unit": "mV / s"
+        },
+        "potential scale": {
+            "unit": "V",
+            "reference": "SHE"
+        },
+        "current": {
+            "unit": "uA / cm2"
+        },
+        "comment": ""
+    },
+
+
+
+
+    '''
+
+
+    # homogenize data ....
+
+    u = alldfs[0][-1]["figure description"]["potential scale"]
+    j = alldfs[0][-1]["figure description"]["current"]
+
+
+
     fig = go.Figure()
+
 
     for (descr, df, meta) in alldfs:
 
-        fig.add_trace(go.Scatter( x= df['potential'], y =df['current'],  mode='lines', name=descr))
+        fig.add_trace(go.Scatter( x= df['U'], y =df['j'],  mode='lines', name=descr))
         fig.update_layout(template="simple_white",
                           showlegend=True,
                           autosize=True,
@@ -136,8 +177,8 @@ def make_plotly_figure_from_dataframes(alldfs):
                           # paper_bgcolor="LightSteelBlue",
                           )
     # to be done
-    fig.update_xaxes(mirror="allticks", ticks="inside", title={'text': 'potential (V)'})
-    fig.update_yaxes(mirror="allticks", ticks="inside",title={'text': 'current (mA)'}) #range=[0., 400],
+    fig.update_xaxes(mirror="allticks", ticks="inside", title={'text': f'E vs {u["reference"]} [{u["unit"]}]'})
+    fig.update_yaxes(mirror="allticks", ticks="inside",title={'text': f'j [{j["unit"]}]'}) #range=[0., 400],
 
 
     figstring = '<script src="https://cdn.plot.ly/plotly-latest.min.js"></script> \n \n '
