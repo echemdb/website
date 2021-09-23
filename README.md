@@ -12,7 +12,8 @@ conda config --set channel_priority strict
 conda env create --force -f environment.yml
 ```
 
-Alternatively, if you want to update an existing environment use:
+Alternatively, if you want to install the required packages into an existing, environment use:
+
 
 ```
 conda env update --name <your_env_name> --file environment.yml
