@@ -14,4 +14,4 @@ The navigation lists several experimental standard techniques, and results on se
 elemental electrodes can be found in the respective lower hierarchies.
 
 Our standardization methods as well the way this database / collection of data was 
-obtained is explained in [`Standards`](/standards/)
+obtained is explained in [`Standards`](cv/data__standardization.md)
