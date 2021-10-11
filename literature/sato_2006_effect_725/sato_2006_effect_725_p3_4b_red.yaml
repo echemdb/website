@@ -1,0 +1,71 @@
+version: 1
+
+source: 
+    doi: https://doi.org/10.1016/j.elecom.2006.03.001
+    bib: sato_2006_effect_725
+    figure: 4b
+    curve: red
+    
+curator:
+    name: Johannes M. Hermann
+    orcid:  https://orcid.org/0000-0001-7119-1295 
+    digitized: 2021-10-11
+    
+figure description:
+    linked measurements: null
+    comment:
+
+electrochemical system:
+    electrolyte:
+        type: aq
+        components:
+            - name: water
+              sum formula: H2O
+              type: solvent
+              proportion:
+                  value: 100
+                  unit: volume percent
+              source:
+                  refinement: Milli-Q SP-TOC
+                  quality: ultrapure water
+                  resistance:
+                      value: 18.2
+                      unit: MOhm cm
+                  total organic carbon: 
+                      value: none
+                      unit: none
+            - name: sulfuric acid
+              sum formula: H2SO4
+              type: acid
+              source:
+                  supplier: Merck Suprapur
+                  LOT: null
+              concentration:
+                  value: 2.5
+                  unit: M
+        pH: 
+            estimated value (CurTiPot): -0.5
+            uncertainty: none
+        temperature:
+            value: 273.15
+            unit: C
+    electrodes:
+        configuration: three
+        reference electrode:
+            type: Ag/AgCl-sat
+            source:
+                supplier: not given
+        counter electrode:
+            material: not given
+            shape: not given
+        working electrode:
+            material: Au
+            crystallographic orientation: 111
+            source:
+                supplier: homemade
+            shape:
+                type: bead shaped
+            geometric electrolyte contact area: 
+                value: null
+                unit: cm-2
+            preparation procedure: annealed in hydrogen flame (1 min) and subsequently quenched in ultrapure water
