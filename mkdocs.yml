@@ -1,4 +1,5 @@
 site_name: echemdb.org
+docs_dir: pages
 nav:
     - Home: index.md
     - CV:
@@ -33,10 +34,11 @@ extra_css:
 plugins:
   - search
   - macros:
-      module_name: echemdb
+      modules:
+        - echemdb.website.macros.legacy
   - gen-files:
       scripts:
-        - gen_pages.py
+        - echemdb/website/generator/__main__.py
   - section-index
 
 markdown_extensions:
@@ -50,7 +52,7 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - markdown_include.include:
-      base_path: docs
+      base_path: pages
   - attr_list
   - pymdownx.arithmatex:
         generic: true
