@@ -1,29 +1,34 @@
-# This file can exist with the "source" information only, the entry data exists should be marked as "False" 
-# to indcate that neither the metadata nor the actual data were digitized or provided.
-# use "null" to idicate that a value is not available in the literature
-version: 1
+# This file describes a figure from a publication containing electrochemical data.
+# For the `echemdb/website` project, the source, curator and electrochemical system is mandatory.
+# Figure description is optional. It is created automatically by the cv module of svgdigitizer
 
-source: 
+source:
+    version: 1
     doi: https://doi.org/10.1039/C0CP01001D
     bib: alves_2011_electrochemistry_6010 # AuthorName_YYYY_FirstWordTitle_pageNr. No prepositions. Fingers crossed that there is no duplicate.
     figure: 2a # depending on the subfigure labels use 1, 1b, or 1_3
-    curve: solid # use a unique short description to identify the curve in the figure
+    curve: solid # use a unique short description to identify the curve in the figure, i.e.. label, color, etc
     
 curator:
+    version: 1
     name: Albert Engstfeld
     orcid: https://orcid.org/0000-0002-9686-3948
     digitized: 2021-07-09 # YYYY-MM-DD
     
 figure description:
+    version: 1
     linked measurements: null # FTIR, SXRD, Ring Disc - indicate if any other operando methods were shown in the same plot, which is linked to the data
     comment: sharp peaks # Add whatever you think is important to understand the data
 
 electrochemical system:
+    version: 1
+    instrumentation:
+        - type: potentiostat
+          supplier: null
     electrolyte:
         type: aq # aqueous = aq, non-aqueous=naq
         components: # create as many components as necessary. A simple electrolyte consists of two components, i.e., H2SO4 and water
-            - name: water
-              sum formula: H2O
+            - name: H2O # can be trivia name, sum formula, etc
               type: solvent
               proportion:
                   value: 100
@@ -34,8 +39,7 @@ electrochemical system:
                   total organic carbon: 
                       value: none
                       unit: none
-            - name: perchloric acid
-              sum formula: HClO4
+            - name: HClO4
               type: acid
               source:
                   supplier: Merck Suprapur
