@@ -1,7 +1,7 @@
 ---
 author: Nicolas G. Hoermann
 title: echemdb - The community database for electrochemical data
-csv_path: ./docs/cyclic_voltammograms/data/dd.csv
+csv_path: ./pages/cyclic_voltammograms/data/dd.csv
 ---
 # echemdb - the community database for electrochemical data
 echemdb is supposed to be a repository for high quality experimental and theoretical data on

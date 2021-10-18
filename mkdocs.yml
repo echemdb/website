@@ -1,4 +1,5 @@
 site_name: echemdb.org
+docs_dir: pages
 nav:
     - Home: index.md
     - CV:
@@ -50,7 +51,7 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - markdown_include.include:
-      base_path: docs
+      base_path: pages
   - attr_list
   - pymdownx.arithmatex:
         generic: true
