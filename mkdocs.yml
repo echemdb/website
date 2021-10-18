@@ -37,7 +37,7 @@ plugins:
       module_name: echemdb
   - gen-files:
       scripts:
-        - gen_pages.py
+        - echemdb/website/generator/__main__.py
   - section-index
 
 markdown_extensions:
