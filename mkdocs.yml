@@ -34,7 +34,8 @@ extra_css:
 plugins:
   - search
   - macros:
-      module_name: echemdb
+      modules:
+        - echemdb.website.macros.legacy
   - gen-files:
       scripts:
         - echemdb/website/generator/__main__.py
