@@ -4,6 +4,8 @@ A cyclic voltammogramm for Pt(111) recorded in 0.1 M CsF + 0.1 M HClO4 at a scan
 
 {{ entry.plot().html }}
 
+{{ entry.plot().html_original }}
+
 * include interactive plot with the original axis properties
 
 [Download datapackage with ID-XXXXXXXX](http://link.to.datapackage.XXXXXXXXzip)
@@ -28,4 +30,4 @@ Properties of the electrochemical cell:
 {{ entry.electrochemical_system.electrodes.reference_electrode.type }}
 
 ## scan rate
-{{ entry.figure_description.scan_rate.value }} {{ entry.figure_description.scan_rate.unit }}
+{{ entry.figure_description.scan_rate.value }} {{ entry.figure_description.scan_rate.unit | lower }}
