@@ -1,22 +1,16 @@
 site_name: echemdb.org
 docs_dir: pages
 theme:
-    name: material
-    palette:
-      scheme: default
-      primary: black
-      accent: lime
-    features:
-      - navigation.tabs
-      - navigation.indexes
-      - navigation.tabs.sticky
-      - toc.integrate
-    #     toggle:
-    #       icon: material/toggle-switch-off-outline
-    #       name: Switch to dark mode
-    #Good is flatly or sandstone then dash app can be in same styling
-    # materials theme makes problems with css restyling why?!
-    # material
+  name: material
+  palette:
+    scheme: default
+    primary: black
+    accent: lime
+  features:
+  - navigation.tabs
+  - navigation.indexes
+  - navigation.tabs.sticky
+   - toc.integrate
 
 extra_css:
   - stylesheets/extra.css
@@ -25,10 +19,10 @@ plugins:
   - search
   - macros:
       modules:
-        - echemdb.website.macros.legacy
+      - echemdb.website.macros.legacy
   - gen-files:
       scripts:
-        - echemdb/website/generator/__main__.py
+      - echemdb/website/generator/__main__.py
   - section-index
   - literate-nav:
       nav_file: NAVIGATION.md
@@ -47,20 +41,16 @@ markdown_extensions:
       base_path: pages
   - attr_list
   - pymdownx.arithmatex:
-        generic: true
+      generic: true
   - pymdownx.details
   - pymdownx.superfences
   - footnotes
   - pymdownx.highlight
   - pymdownx.magiclink
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tasklist:
-        custom_checkbox: true
-#   - abbr
-#   - pymdownx.caret
-#   - pymdownx.inlinehilite
-#   - pymdownx.critic
-#   - pymdownx.smartsymbols
+      custom_checkbox: true
 
 extra_javascript:
   - javascripts/config.js
