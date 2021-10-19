@@ -4,7 +4,7 @@
 
 <!-- TODO: Create text from metadata. See #31. -->
 <!-- TODO: We should merge all our .bib files when building the pages and then create reference to original article from that .bib file. See #31. -->
-A cyclic voltammogramm for Pt(111) recorded in 0.1 M CsF + 0.1 M HClO4 at a scan rate of 50 mV s$^{-1}$ from [N. Author *et al.*, *Journal Name*, **Volume** (YEAR) Page, "TITLE"](https://doi.org/10.1039/C0CP01001D).
+A cyclic voltammogramm for Pt(111) recorded in 0.1 M CsF + 0.1 M HClO4 at a scan rate of 50 mV s$^{-1}$ from Figure 2a in [N. Author *et al.*, *Journal Name*, **Volume** (YEAR) Page, "TITLE"](https://doi.org/10.1039/C0CP01001D).
 
 <!-- TODO: Show plots with original axis units, see #25. It would be great if we could toggle between SI and original units. See #31. -->
 <!-- TODO: Properly format plots. They should probably be much bigger since they are nice to look at. See #31. -->
@@ -29,6 +29,8 @@ Properties of the electrochemical cell:
 <!-- TODO: Insert all the metadata from the .yaml file in some collapsible form here. E.g., just the YAML file with syntax highlighting. See #31. -->
 
 ----
+
+<!-- TODO: Insert links to other data which are plotted in the same figure and/or even add a plot with all data from that figure. See #31 -->
 
 <!-- TODO: These sections should be removed. See #31. -->
 ## electrolyte
