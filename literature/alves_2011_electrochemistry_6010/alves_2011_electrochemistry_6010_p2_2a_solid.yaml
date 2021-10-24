@@ -18,7 +18,7 @@ curator:
 figure description:
     version: 1
     linked measurements: null # FTIR, SXRD, Ring Disc - indicate if any other operando methods were shown in the same plot, which is linked to the data
-    comment: sharp peaks # Add whatever you think is important to understand the data
+    comment: # Add whatever you think is important to understand the data
 
 electrochemical system:
     version: 1
@@ -65,7 +65,7 @@ electrochemical system:
             shape: null
         working electrode:
             material: Ru
-            crystallographic orientation: 0001 # hkl, 100, 110, poly
+            crystallographic orientation: '0001' # 'hkl', '100', '110', 'poly'. Force string with ''. Otherwise the zeroes will be stripped from '0001'
             source:
                 supplier: Mateck
                 LOT: 
