@@ -19,7 +19,6 @@ curator:
 figure description:
     version: 1
     linked measurements: null # FTIR, SXRD, Ring Disc - indicate if any other operando methods were shown in the same plot, which is linked to the data
-    comment: small humps around 0.3 to 0.45 V are complicated to digitize # Add whatever you think is important to understand the data
 
 electrochemical system:
     version: 1
@@ -33,7 +32,7 @@ electrochemical system:
               sum formula: H2O
               type: solvent
               proportion:
-                  value: 100
+                  value: '100'
                   unit: volume percent
               source:
                   refinement: Millipore MilliQ
