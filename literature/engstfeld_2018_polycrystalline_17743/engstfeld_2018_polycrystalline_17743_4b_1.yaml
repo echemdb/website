@@ -6,7 +6,7 @@ version: 1
 source:
     version: 1
     doi: https://doi.org/10.1002/chem.201803418
-    bib: Engstfeld_2018_Polycrystalline_17747 # AuthorName_YYYY_FirstWordTitle_pageNr. No prepositions. Fingers crossed that there is no duplicate.
+    bib: engstfeld_2018_polycrystalline_17747 # AuthorName_YYYY_FirstWordTitle_pageNr. No prepositions. Fingers crossed that there is no duplicate.
     figure: 4b # depending on the subfigure labels use 1, 1b, or 1_3
     curve: 1 # use a unique short description to identify the curve in the figure
     
