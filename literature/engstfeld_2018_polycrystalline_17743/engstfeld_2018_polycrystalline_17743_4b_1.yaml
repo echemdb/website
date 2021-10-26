@@ -23,8 +23,8 @@ figure description:
 electrochemical system:
     version: 1
         instrumentation:
-        - type: potentiostat
-          supplier: Biologic
+            - type: potentiostat
+              supplier: Biologic
     electrolyte:
         type: aq # aqueous = aq, non-aqueous=naq
         components: # create as many components as necessary. A simple electrolyte consists of two components, i.e., H2SO4 and water
