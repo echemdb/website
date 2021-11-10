@@ -9,7 +9,7 @@ A cyclic voltammogramm for
 recorded in 
 0.1 M CsF + 0.1 M HClO4 
 at a scan rate of 
-50 mV s$^{-1}$ <!-- TOFO: Create nice representation of the scan rate unit from entry.figure_description.scan_rate_unit -->
+50 mV s$^{-1}$ <!-- TODO: Create nice representation of the scan rate unit from entry.figure_description.scan_rate_unit -->
 from Figure 
 {{entry.source.figure }} 
 in 
