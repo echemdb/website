@@ -27,18 +27,17 @@ Properties of the electrochemical cell:
 * Reference electrode: XXX
 
 <!-- TODO: Insert all the metadata from the .yaml file in some collapsible form here. E.g., just the YAML file with syntax highlighting. See #31. -->
+## Metdata
+<details>
+<summary>Click to expand metadata!</summary>
+
+```python
+{{ entry.electrochemical_system_metadata() }}
+```
+</details>
 
 ----
 
 <!-- TODO: Insert links to other data which are plotted in the same figure and/or even add a plot with all data from that figure. See #31 -->
 
 <!-- TODO: These sections should be removed. See #31. -->
-## electrolyte
-0.1 M CsF + 0.1 M HClO4
-
-## reference electrode
-
-{{ entry.electrochemical_system.electrodes.reference_electrode.type }}
-
-## scan rate
-{{ entry.figure_description.scan_rate.value }} {{ entry.figure_description.scan_rate.unit | lower }}
