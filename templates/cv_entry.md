@@ -29,10 +29,10 @@ Properties of the electrochemical cell:
 <!-- TODO: Insert all the metadata from the .yaml file in some collapsible form here. E.g., just the YAML file with syntax highlighting. See #31. -->
 ## Metdata
 <details>
-<summary>Click to expand metadata!</summary>
+<summary>Click to expand metadata (yaml).</summary>
 
-```python
-{{ entry.electrochemical_system_metadata() }}
+```yaml
+{{ entry.electrochemical_system.create_yaml() }}
 ```
 </details>
 
