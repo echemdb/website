@@ -1,6 +1,6 @@
 <!-- TODO: Create the small heading subtitle from metadata. See #31. -->
 # {{ entry.electrochemical_system.electrodes.working_electrode.material }}({{ entry.electrochemical_system.electrodes.working_electrode.crystallographic_orientation }}) <small>- 0.1 M CsF + 0.1 M HClO4</small>
-
+<!-- TODO: Simplify the entry for electrode material, throughout the entire document: See #42. -->
 <!-- TODO: Create text from metadata. See #31. -->
 <!-- TODO: We should merge all our .bib files when building the pages and then create reference to original article from that .bib file. See #31. -->
 A cyclic voltammogramm for 
@@ -43,6 +43,14 @@ Preparation procedure not available.
 `Content from the yaml file`
 
 <!-- TODO: Insert all the metadata from the .yaml file in some collapsible form here. E.g., just the YAML file with syntax highlighting. See #31. -->
+## Metdata
+<details>
+<summary>Click to expand metadata (yaml).</summary>
+
+```yaml
+{{ entry.electrochemical_system.yaml }}
+```
+</details>
 
 ----
 
