@@ -23,10 +23,8 @@ in
 
 **Figure notes:**  
 The figure shows {{ entry.figure_description.type }} data.
-{% if entry.figure_description.comment is defined %}
-{% if entry.figure_description.comment|wordcount() > 1 %}
+{% if entry.figure_description.comment %}
 Note from the curator: {{ entry.figure_description.comment }}
-{% endif %}
 {% endif %}
 
 <!-- TODO: Make download link work, i.e., build .zip package and link to it here. See #31. -->
