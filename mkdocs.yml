@@ -1,4 +1,5 @@
 site_name: echemdb.org
+site_dir: generated/website
 docs_dir: pages
 theme:
   name: material
