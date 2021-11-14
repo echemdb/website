@@ -32,7 +32,7 @@ Properties of the electrochemical cell:
 <summary>Click to expand metadata (yaml).</summary>
 
 ```yaml
-{{ entry.electrochemical_system.create_yaml() }}
+{{ entry.electrochemical_system.yaml }}
 ```
 </details>
 
