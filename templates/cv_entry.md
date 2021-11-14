@@ -39,5 +39,3 @@ Properties of the electrochemical cell:
 ----
 
 <!-- TODO: Insert links to other data which are plotted in the same figure and/or even add a plot with all data from that figure. See #31 -->
-
-<!-- TODO: These sections should be removed. See #31. -->
