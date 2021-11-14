@@ -34,10 +34,8 @@ Note from the curator: {{ entry.figure_description.comment }}
 ## Further information
 **Preparation procedure**
 {% if entry.electrochemical_system.electrodes.working_electrode.preparation_procedure is defined %}
-{% if entry.electrochemical_system.electrodes.working_electrode.preparation_procedure|wordcount() > 1 %}
 The {{ entry.electrochemical_system.electrodes.working_electrode.material }}({{ entry.electrochemical_system.electrodes.working_electrode.crystallographic_orientation }}) electrode was prepared by:  
 {{ entry.electrochemical_system.electrodes.working_electrode.preparation_procedure }}
-{% endif %}
 {% else %}
 Preparation procedure not available.
 {% endif %}
