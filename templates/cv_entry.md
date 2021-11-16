@@ -28,7 +28,7 @@ Note from the curator: {{ entry.figure_description.comment }}
 {% endif %}
 
 <!-- TODO: Make download link work, i.e., build .zip package and link to it here. See #31. -->
-[Download datapackage with ID-XXXXXXXX](http://link.to.datapackage.XXXXXXXXzip)
+[Download datapackage with ID-XXXXXXXX](#TODO)
 
 <!-- TODO: Style this section. See #31. -->
 ## Further information

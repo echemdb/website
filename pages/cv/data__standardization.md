@@ -1,11 +1,17 @@
 ---
 author: Nicolas G. Hoermann
 title: echemdb - The community database for electrochemical data
-contentmd: cv/data__standardization_content.md
 ---
 
+# Standardized CV data
 
-{! {{page.meta.contentmd}}  !}
+In general a CV is the measured current $j = -e \frac{ {\rm d} n_e}{ {\rm d} t}$ while cyclically scanning the potential $\Phi_E$. The current depends on the scan speed $v = \frac{ {\rm }d \Phi_E}{ {\rm d} t}$ as well as the active surface area (number of active surface sites). With
+
+In table we analyse different possible normalization schemes:
+
+
+
+Different conventional normalizations are possible
 
 # Data Standardization
 
@@ -16,14 +22,14 @@ In our database we try to follow certain data standards, more or less closely.So
 ###Definitions
 
 > *Data Package* consists of:
-> 
+>
 > - Metadata that describes the structure and contents of the Data Package
 > - Resources such as data files that form the contents of the Data Package
 
 
 
-> *Metadata*  
-> 
+> *Metadata*
+>
 > - stored in a "Descriptor".
 > - Metadata Descriptor MUST be a valid JSON object.
 > - MUST be named datapackage.json and it MUST be placed in the top-level directory (relative to any other resources provided as part of the Data Package)
@@ -32,7 +38,7 @@ In our database we try to follow certain data standards, more or less closely.So
 
 
 > *Resource*
-> 
+>
 > - Files bundled locally with the Metadata Descriptor
 > - Remote resources, referenced by URL
 > - "Inline" data, included directly in the Descriptor
@@ -85,9 +91,9 @@ jsondict = {
 - [Research Data Management - Max Planck Digital Library (MPDL)](https://rdm.mpdl.mpg.de/)
 
 ### Data Packages
-- https://frictionlessdata.io/  
-- https://specs.frictionlessdata.io/  
-- https://specs.frictionlessdata.io/data-package/  
+- https://frictionlessdata.io/
+- https://specs.frictionlessdata.io/
+- https://specs.frictionlessdata.io/data-package/
 - https://specs.frictionlessdata.io/data-resource/
 - https://ckan.org/
-- https://json-schema.org/understanding-json-schema/about.html#about  
+- https://json-schema.org/understanding-json-schema/about.html#about

@@ -11,7 +11,7 @@ theme:
   - navigation.tabs
   - navigation.indexes
   - navigation.tabs.sticky
-   - toc.integrate
+  - toc.integrate
 
 extra_css:
   - stylesheets/extra.css

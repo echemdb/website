@@ -1,5 +1,5 @@
 * [Home](index.md)
-* [CV](cv/index.md)
+* [CV](cv/)
   * [Periodic Table](cv/periodic__table.md)
   * [Systems](cv/systems.md)
   * [Apps](cv/apps.md)
