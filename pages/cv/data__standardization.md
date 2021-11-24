@@ -78,16 +78,9 @@ jsondict = {
 }]
 ```
 
-
-
-
-
-
-
-
-
 ## Links
 ### General
+<!-- TODO: Fix broken link to MPDL. (see #71) -->
 - Research Data Management - Max Planck Digital Library (MPDL) - https://rdm.mpdl.mpg.de/
 
 ### Data Packages
