@@ -3,17 +3,16 @@
 <!-- TODO: Simplify the entry for electrode material, throughout the entire document: See #42. -->
 <!-- TODO: Create text from metadata. See #31. -->
 A cyclic voltammogramm for 
-{{ entry.electrochemical_system.electrodes.working_electrode.material }}
-({{ entry.electrochemical_system.electrodes.working_electrode.crystallographic_orientation }}) 
+{{ entry.electrochemical_system.electrodes.working_electrode.material }}({{ entry.electrochemical_system.electrodes.working_electrode.crystallographic_orientation }}) 
 recorded in 
 0.1 M CsF + 0.1 M HClO4 
 at a scan rate of 
 50 mV s$^{-1}$ <!-- TODO: Create nice representation of the scan rate unit from entry.figure_description.scan_rate_unit -->
 from Figure 
-{{entry.source.figure }} 
+
+{{ entry.source.figure }} 
 in 
-[{{ entry.citation }}
-](https://doi.org/{{ entry.source.doi }}).
+[{{ entry.citation() }}](https://doi.org/{{ entry.source.doi }}).
 
 <!-- TODO: Show plots with original axis units, see #25. It would be great if we could toggle between SI and original units. See #31. -->
 <!-- TODO: Properly format plots. They should probably be much bigger since they are nice to look at. See #31. -->
