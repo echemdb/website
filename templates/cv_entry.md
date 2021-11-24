@@ -2,7 +2,6 @@
 # {{ entry.electrochemical_system.electrodes.working_electrode.material }}({{ entry.electrochemical_system.electrodes.working_electrode.crystallographic_orientation }}) <small>- 0.1 M CsF + 0.1 M HClO4</small>
 <!-- TODO: Simplify the entry for electrode material, throughout the entire document: See #42. -->
 <!-- TODO: Create text from metadata. See #31. -->
-<!-- TODO: We should merge all our .bib files when building the pages and then create reference to original article from that .bib file. See #31. -->
 A cyclic voltammogramm for 
 {{ entry.electrochemical_system.electrodes.working_electrode.material }}
 ({{ entry.electrochemical_system.electrodes.working_electrode.crystallographic_orientation }}) 
@@ -13,7 +12,8 @@ at a scan rate of
 from Figure 
 {{entry.source.figure }} 
 in 
-[N. Author *et al.*, *Journal Name*, **Volume** (YEAR) Page, "TITLE"](https://doi.org/10.1039/C0CP01001D).
+[{{ entry.citation }}
+](https://doi.org/{{ entry.source.doi }}).
 
 <!-- TODO: Show plots with original axis units, see #25. It would be great if we could toggle between SI and original units. See #31. -->
 <!-- TODO: Properly format plots. They should probably be much bigger since they are nice to look at. See #31. -->
