@@ -17,7 +17,8 @@ curator:
     
 figure description: #This section will be updated by module `CV`
     version: 1
-    linked measurements: Current transients (voltage steps), time-resolved X-ray diffraction, EIS # FTIR, SXRD, Ring Disc - indicate if any other operando methods were shown in the same plot, which is linked to the data
+    linked measurements: Current transients (voltage steps), time-resolved XRD, EIS # FTIR, SXRD, Ring Disc - indicate if any other operando methods were shown in the same plot, which is linked to the data
+
     comment: Focus on counterion (Cs+) to electrode distance as a function of potential # Add whatever you think is important to understand the data
 
 electrochemical system:
