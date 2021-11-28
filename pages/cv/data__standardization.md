@@ -78,17 +78,10 @@ jsondict = {
 }]
 ```
 
-
-
-
-
-
-
-
-
 ## Links
 ### General
-- [Research Data Management - Max Planck Digital Library (MPDL)](https://rdm.mpdl.mpg.de/)
+<!-- TODO: Fix broken link to MPDL. (see #71) -->
+- Research Data Management - Max Planck Digital Library (MPDL - rdm.mpdl.mpg.de)
 
 ### Data Packages
 - https://frictionlessdata.io/
