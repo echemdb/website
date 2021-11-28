@@ -84,7 +84,8 @@ electrochemical system:
             shape: wire
         working electrode:
             material: Au
-            crystallographic orientation: 100 # hkl, 100, 110, poly
+            crystallographic orientation: '100' # hkl, 100, 110, poly
+
             source:
                 supplier:
                 LOT: 
