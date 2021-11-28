@@ -17,7 +17,7 @@ curator:
     
 figure description: #This section will be updated by module `CV`
     version: 1
-    linked measurements: X-ray diffraction # FTIR, SXRD, Ring Disc - indicate if any other operando methods were shown in the same plot, which is linked to the data
+    linked measurements: XRD # FTIR, SXRD, Ring Disc - indicate if any other operando methods were shown in the same plot, which is linked to the data
     comment: focus on electrochemical Ag oxidation # Add whatever you think is important to understand the data
 
 electrochemical system:
