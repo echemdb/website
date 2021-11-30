@@ -18,7 +18,8 @@ curator:
 figure description: #This section will be updated by module `CV`
     version: 1
     linked measurements: # FTIR, SXRD, Ring Disc - indicate if any other operando methods were shown in the same plot, which is linked to the data
-    comment: up to high potentias, Ag oxidation observed # Add whatever you think is important to understand the data
+    comment: At high potentials, oxidation of Ag was observed. # Add whatever you think is important to understand the data
+
 
 electrochemical system:
     version: 1
