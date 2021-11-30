@@ -18,7 +18,7 @@ curator:
 figure description: #This section will be updated by module `CV`
     version: 1
     linked measurements: # FTIR, SXRD, Ring Disc - indicate if any other operando methods were shown in the same plot, which is linked to the data
-    comment: before cycling between 0.2 and 0.5V (Ag oxidation) # Add whatever you think is important to understand the data
+    comment: CV was obtained before cycling between 0.2 V and 0.5 V. # Add whatever you think is important to understand the data
 
 electrochemical system:
     version: 1
