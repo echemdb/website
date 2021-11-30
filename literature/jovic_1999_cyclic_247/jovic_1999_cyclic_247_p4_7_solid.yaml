@@ -18,7 +18,8 @@ curator:
 figure description: #This section will be updated by module `CV`
     version: 1
     linked measurements: # FTIR, SXRD, Ring Disc - indicate if any other operando methods were shown in the same plot, which is linked to the data
-    comment: comparison of (100) and (111) surface # Add whatever you think is important to understand the data
+    comment: Comparison between (100) and (111) surfaces. # Add whatever you think is important to understand the data
+
 
 electrochemical system:
     version: 1
