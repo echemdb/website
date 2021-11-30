@@ -99,4 +99,5 @@ electrochemical system:
             geometric electrolyte contact area: 
                 value:
                 unit:
-            preparation procedure: Ag crystal polished with fine emery paper, alumina, then etsched with cyanide and H2O2 # Short description of sample preparation. This can be very useful. :)
+            preparation procedure: Ag crystal polished with fine emery paper, alumina, then etched with cyanide and H2O2. # Short description of sample preparation. This can be very useful. :)
+
