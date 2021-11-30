@@ -18,7 +18,7 @@ curator:
 figure description: #This section will be updated by module `CV`
     version: 1
     linked measurements: in-situ Second Harmonic Generation, LEED, RHEED # FTIR, SXRD, Ring Disc - indicate if any other operando methods were shown in the same plot, which is linked to the data
-    comment: Hg/HgO ref. is 0.165 V vs the normal hydrogen electrode (NHE ~ SHE). Scan rate is not mentionend in the paper, but can be obtained by comparison to charge integral --> 50 mV/s # Add whatever you think is important to understand the data
+    comment: Hg/HgO ref. is 0.165 V vs the normal hydrogen electrode (NHE ~ SHE). The scan rate is not mentioned in the publication, but can be calculated from the integrated charge provided in the publication, resulting in 50 mV/s. # Add whatever you think is important to understand the data
 
 electrochemical system:
     version: 1
