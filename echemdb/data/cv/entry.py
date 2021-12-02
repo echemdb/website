@@ -171,16 +171,10 @@ class Entry:
         return fig
 
     def electrolyte_text(self):
-        component_names = ''
-        for component in self.electrochemical_system.electrolyte.components:
-            if component['type'] in ['acid', 'base', 'alkaline', 'salt']:
-                if component_names:
-                    component_names += ' + '
-                component_names += f"{component['name']} {component['concentration']['value']} {component['concentration']['unit']}"
         
-        return component_names
-        
-        #return self.electrochemical_system.electrolyte.components.yaml
+        return " + ".join(f"{component['name']} {component['concentration']['value']} {component['concentration']['unit']}" 
+                            for component in self.electrochemical_system.electrolyte.components 
+                                if component['type'] in ['acid', 'base', 'alkaline', 'salt'])
 
     @classmethod
     def create_examples(cls, name="alves_2011_electrochemistry_6010"):
