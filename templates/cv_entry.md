@@ -15,6 +15,11 @@ from Figure
 in 
 [N. Author *et al.*, *Journal Name*, **Volume** (YEAR) Page, "TITLE"](https://doi.org/10.1039/C0CP01001D).
 
+
+{{ entry.electrolyte_text()  }}
+
+
+{{ entry.figure_description.scan_rate.markdown }}
 <!-- TODO: Show plots with original axis units, see #25. It would be great if we could toggle between SI and original units. See #31. -->
 <!-- TODO: Properly format plots. They should probably be much bigger since they are nice to look at. See #31. -->
 {{ entry.plot()._repr_html_() }}
