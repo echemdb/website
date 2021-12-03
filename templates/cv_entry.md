@@ -30,7 +30,7 @@ Note from the curator: {{ entry.figure_description.comment }}
 <summary>Click to expand complete figure metadata (yaml).</summary>
 
 ```yaml
-{{ entry.figure_desctiption.yaml }}
+{{ entry.figure_description.yaml }}
 ```
 </details>
 
