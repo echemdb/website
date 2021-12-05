@@ -1,5 +1,5 @@
 <!-- TODO: Create the small heading subtitle from metadata. See #31. -->
-# {{ entry.electrochemical_system.electrodes.working_electrode.material }}({{ entry.electrochemical_system.electrodes.working_electrode.crystallographic_orientation }}) <small>- 0.1 M CsF + 0.1 M HClO4</small>
+# {{ entry.electrochemical_system.electrodes.working_electrode.material }}({{ entry.electrochemical_system.electrodes.working_electrode.crystallographic_orientation }}) <small>- {{ entry.electrochemical_system.electrolyte | render("components/electrolyte.md") }}</small>
 <!-- TODO: Simplify the entry for electrode material, throughout the entire document: See #42. -->
 <!-- TODO: Create text from metadata. See #31. -->
 <!-- TODO: We should merge all our .bib files when building the pages and then create reference to original article from that .bib file. See #31. -->
@@ -7,9 +7,9 @@ A cyclic voltammogramm for
 {{ entry.electrochemical_system.electrodes.working_electrode.material }}
 ({{ entry.electrochemical_system.electrodes.working_electrode.crystallographic_orientation }}) 
 recorded in 
-0.1 M CsF + 0.1 M HClO4 
+{{ entry.electrochemical_system.electrolyte | render("components/electrolyte.md") }}
 at a scan rate of 
-50 mV s$^{-1}$ <!-- TODO: Create nice representation of the scan rate unit from entry.figure_description.scan_rate_unit -->
+{{ entry.figure_description.scan_rate | render }}
 from Figure 
 {{entry.source.figure }} 
 in 
