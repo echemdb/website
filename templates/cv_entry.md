@@ -26,6 +26,13 @@ The figure shows {{ entry.figure_description.type }} data.
 {% if entry.figure_description.comment %}
 Note from the curator: {{ entry.figure_description.comment }}
 {% endif %}
+<details>
+<summary>Click to expand complete figure metadata (yaml).</summary>
+
+```yaml
+{{ entry.figure_description.yaml }}
+```
+</details>
 
 <!-- TODO: Make download link work, i.e., build .zip package and link to it here. See #31. -->
 [Download datapackage with ID-XXXXXXXX](#TODO)
