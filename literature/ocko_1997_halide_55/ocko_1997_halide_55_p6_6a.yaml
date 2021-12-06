@@ -17,7 +17,7 @@ curator:
     
 figure description: #This section will be updated by module `CV`
     version: 1
-    linked measurements: Synchrotron X-ray scattering # FTIR, SXRD, Ring Disc - indicate if any other operando methods were shown in the same plot, which is linked to the data
+    linked measurements: Synchrotron XRD # FTIR, SXRD, Ring Disc - indicate if any other operando methods were shown in the same plot, which is linked to the data
     comment: Ag is compared to Au, but CV is shown only for Ag(100) # Add whatever you think is important to understand the data
 
 electrochemical system:
