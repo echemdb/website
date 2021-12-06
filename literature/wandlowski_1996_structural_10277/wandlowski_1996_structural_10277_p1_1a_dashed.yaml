@@ -17,7 +17,7 @@ curator:
     
 figure description: #This section will be updated by module `CV`
     version: 1
-    linked measurements: in-situ surface X-ray # FTIR, SXRD, Ring Disc - indicate if any other operando methods were shown in the same plot, which is linked to the data
+    linked measurements: SXRD # FTIR, SXRD, Ring Disc - indicate if any other operando methods were shown in the same plot, which is linked to the data
     comment: Focus on phase transitions of Br on Au(100) # Add whatever you think is important to understand the data
 
 electrochemical system:
