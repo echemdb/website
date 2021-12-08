@@ -12,7 +12,7 @@ from Figure
 
 {{ entry.source.figure }} 
 in 
-[{{ entry.citation(render='md') }}](https://doi.org/{{ entry.source.doi }}).
+[{{ entry.citation('md') }}](https://doi.org/{{ entry.source.doi }}).
 
 <!-- TODO: Show plots with original axis units, see #25. It would be great if we could toggle between SI and original units. See #31. -->
 <!-- TODO: Properly format plots. They should probably be much bigger since they are nice to look at. See #31. -->
