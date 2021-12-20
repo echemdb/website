@@ -59,6 +59,16 @@ Preparation procedure not available.
 ```
 </details>
 
+## Bibliography
+<details>
+<summary>Bibliography (bibtex). Click to expand.</summary>
+
+```bibtex
+{{ entry.bibliography.to_string('bibtex') }}
+```
+</details>
+
+
 ----
 
 <!-- TODO: Insert links to other data which are plotted in the same figure and/or even add a plot with all data from that figure. See #31 -->
