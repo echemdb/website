@@ -3,6 +3,9 @@ author: Nicolas G. Hoermann
 title: echemdb - The community database for electrochemical data
 ---
 
+Under construction!
+
+<!--
 # Standardized CV data
 
 In general a CV is the measured current $j = -e \frac{ {\rm d} n_e}{ {\rm d} t}$ while cyclically scanning the potential $\Phi_E$. The current depends on the scan speed $v = \frac{ {\rm }d \Phi_E}{ {\rm d} t}$ as well as the active surface area (number of active surface sites). With
@@ -77,12 +80,17 @@ jsondict = {
   "licenses": ""
 }]
 ```
+-->
 
+<!--
 ## Links
 ### General
+-->
+
 <!-- TODO: Fix broken link to MPDL. (see #71) -->
 - Research Data Management - Max Planck Digital Library (MPDL - rdm.mpdl.mpg.de)
 
+<!--
 ### Data Packages
 - https://frictionlessdata.io/
 - https://specs.frictionlessdata.io/
@@ -90,3 +98,4 @@ jsondict = {
 - https://specs.frictionlessdata.io/data-resource/
 - https://ckan.org/
 - https://json-schema.org/understanding-json-schema/about.html#about
+-->

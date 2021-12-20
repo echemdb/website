@@ -2,13 +2,10 @@
 author: Nicolas G. Hoermann
 title: echemdb - The community database for electrochemical data
 ---
-# Periodic Tables
+# Periodic Table
 
-
-basdfpasldf
-asdfasdf
-asdf
-
+Under construction!
+<!--
 some text and explanation
 
 /* maybe here we could have some periodic table plots / or transition metals only
@@ -21,7 +18,7 @@ These plots can be updated automatically when the periodiuc table plot
 takes e.g. as input some parameters that we can set in the header in the 
 json path or the csv path. json and csv need to updated with a python 
 script that is executed before calling mkdocs to render
-
-Then periodic table overview to click to get to systems / elements
+-->
+Click on an element to get a list of system specific electrochemical data. (under contsruction)
 
 {{ periodic_table() }}
