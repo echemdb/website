@@ -87,8 +87,9 @@ jsondict = {
 ### General
 -->
 
-<!-- TODO: Fix broken link to MPDL. (see #71) -->
+<!-- TODO: Fix broken link to MPDL. (see #71) 
 - Research Data Management - Max Planck Digital Library (MPDL - rdm.mpdl.mpg.de)
+-->
 
 <!--
 ### Data Packages
