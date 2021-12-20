@@ -12,8 +12,11 @@ from Figure
 
 {{ entry.source.figure }} 
 in 
+{% if entry.source.doi is defined %}
 [{{ entry.citation('md') }}](https://doi.org/{{ entry.source.doi }}).
-
+{% elif entry.source.url is defined %}
+[{{ entry.citation('md') }}]({{ entry.source.url }}).
+{% endif %}
 <!-- TODO: Show plots with original axis units, see #25. It would be great if we could toggle between SI and original units. See #31. -->
 <!-- TODO: Properly format plots. They should probably be much bigger since they are nice to look at. See #31. -->
 {{ entry.plot()._repr_html_() }}
