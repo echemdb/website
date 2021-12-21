@@ -65,7 +65,7 @@ electrochemical system:
                   LOT: 
               concentration:
                   value: 0.05
-                  unit: M #[M, mM, µM, g kg-1, ...] 
+                  unit: mol / l
         ph: 
             value:
             uncertainty:
