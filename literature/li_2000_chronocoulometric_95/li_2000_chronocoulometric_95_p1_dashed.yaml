@@ -38,7 +38,7 @@ electrochemical system:
             - name: HClO4 # can be trivia name, sum formula, etc
               concentration:
                   value: 1
-                  unit: mM #[M, mM, µM, g kg-1, ...]
+                  unit: mmol / l
               type: #
               source:
                   supplier:
@@ -57,7 +57,7 @@ electrochemical system:
             - name: KClO4 # can be trivia name, sum formula, etc
               concentration:
                   value: 0.1
-                  unit: M #[M, mM, µM, g kg-1, ...]
+                  unit: mol / l
               type: #
               source:
                   supplier:
@@ -69,7 +69,7 @@ electrochemical system:
                   LOT: 
               concentration: 
                   value: 0.1
-                  unit: mM #[M, mM, µM, g kg-1, ...] 
+                  unit: mmol / l
         ph: 
             value: 3
             uncertainty:

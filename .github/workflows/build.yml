@@ -20,16 +20,11 @@ jobs:
         run: |
           mamba env update --quiet -n test -f environment.yml
           conda list
-      - name: fix permissions
-        shell: bash -l {0}
-        run: |
-          # Strangely, the linkchecker modules are installed writable and linkchecker then refuses to load them.
-          chmod -R a-w `python -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())"`
       - name: digitize
         shell: bash -l {0}
         run: |
           pushd literature
-          ls ./**/*.yaml | parallel --bar --halt now,fail=1 'svgdigitizer cv --sampling_interval .005 --package --metadata {} {.}.svg --outdir=../data/generated/svgdigitizer/{//}'
+          ls ./**/*.yaml | parallel --bar --halt now,fail=1 'svgdigitizer cv --sampling_interval .001 --package --metadata {} {.}.svg --outdir=../data/generated/svgdigitizer/{//}'
           popd
       - name: mkdocs
         shell: bash -l {0}
@@ -42,6 +37,11 @@ jobs:
           mv data generated/website/
           # Disable further processing by GitHub
           touch generated/website/.nojekyll
+      - name: fix permissions
+        shell: bash -l {0}
+        run: |
+          # Strangely, the linkchecker modules are installed writable and linkchecker then refuses to load them.
+          chmod -R a-w `python -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())"`
       - name: detect broken links
         shell: bash -l {0}
         run: |
