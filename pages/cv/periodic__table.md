@@ -19,6 +19,6 @@ takes e.g. as input some parameters that we can set in the header in the
 json path or the csv path. json and csv need to updated with a python 
 script that is executed before calling mkdocs to render
 -->
-Click on an element to get a list of system specific electrochemical data. (under contsruction)
+Click on an element to get a list of system specific electrochemical data. (under construction)
 
 {{ periodic_table() }}
