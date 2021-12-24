@@ -6,7 +6,10 @@ figs_setup_json_path:
 ---
 # Apps
 
+Under construction!
+<!--
 some text and explanation
 
 /*  Links to external apps these should be able to access the
+-->
 
