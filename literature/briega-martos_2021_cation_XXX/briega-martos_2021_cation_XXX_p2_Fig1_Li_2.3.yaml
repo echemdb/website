@@ -34,7 +34,7 @@ electrochemical system:
   electrolyte:
     components:
     - concentration:
-        unit: M
+        unit: mol / l
         value: 0.04
       name: LiF
       source:
@@ -48,7 +48,7 @@ electrochemical system:
       sum formula: H2O
       type: solvent
     - concentration:
-        unit: M
+        unit: mol / l
         value: null
       name: perchloric acid
       source:
