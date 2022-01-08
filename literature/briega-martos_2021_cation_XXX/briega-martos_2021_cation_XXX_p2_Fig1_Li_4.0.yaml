@@ -17,20 +17,14 @@ electrochemical system:
       crystallographic orientation: 111
       geometric electrolyte contact area:
         unit: cm-2
-        value: null
       material: Pt
-      preparation procedure: null
       shape:
         diameter:
           unit: mm
           value: 2
         height:
           unit: mm
-          value: null
         type: bead
-      source:
-        LOT: null
-        supplier: null
   electrolyte:
     components:
     - concentration:
@@ -49,15 +43,12 @@ electrochemical system:
       type: solvent
     - concentration:
         unit: mol / l
-        value: null
       name: perchloric acid
       source:
-        LOT: null
         supplier: Merck
       sum formula: HClO4
       type: acid
     ph:
-      uncertainty: null
       value: 4.0
     temperature:
       unit: K
