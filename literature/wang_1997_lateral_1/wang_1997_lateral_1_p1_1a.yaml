@@ -38,7 +38,8 @@ electrochemical system:
             - name: KBr # can be trivia name, sum formula, etc
               concentration:
                   value: 10
-                  unit: mM #[M, mM, µM, g kg-1, ...]
+                  unit: mmol / l #[M, mM, µM, g kg-1, ...]
+
               type: #
               source:
                   supplier:
