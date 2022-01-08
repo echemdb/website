@@ -6,6 +6,7 @@ source:
     version: 1
     doi: 10.1016/S0013-4686(98)00028-0 #only the number without preceeding doix or https
     bib: lipkowski_1998_ionic_2875 # AuthorName_YYYY_FirstWordTitle_pageNr. No prepositions. Fingers crossed that there is no duplicate.
+    techniques: SHG, SXRD
     figure: 1a # depending on the subfigure labels use 1, 1b, or 1_3
     curve: I # use a unique short description to identify the curve in the figure, i.e.. label, color, etc
     
@@ -17,7 +18,6 @@ curator:
     
 figure description: #This section will be updated by module `CV`
     version: 1
-    linked measurements: SHG, X-ray diffraction # FTIR, SXRD, Ring Disc - indicate if any other operando methods were shown in the same plot, which is linked to the data
     comment: No information about counter electrode available. # Add whatever you think is important to understand the data
 
 electrochemical system:
@@ -37,7 +37,7 @@ electrochemical system:
             - name: KClO4 # can be trivia name, sum formula, etc
               concentration:
                   value: 0.1
-                  unit: M #[M, mM, µM, g kg-1, ...]
+                  unit: mol / l #[M, mM, µM, g kg-1, ...]
               type: salt #
               source:
                   supplier:
@@ -65,7 +65,7 @@ electrochemical system:
                   LOT: 
               concentration:
                   value: 1
-                  unit: mM #[M, mM, µM, g kg-1, ...] 
+                  unit: mmol / l #[M, mM, µM, g kg-1, ...] 
         ph: 
             value:
             uncertainty:
