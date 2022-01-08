@@ -37,7 +37,7 @@ electrochemical system:
             - name: HClO4 # can be trivia name, sum formula, etc
               concentration:
                   value: 0.011
-                  unit: M #[M, mM, µM, g kg-1, ...]
+                  unit: mol / l #[M, mM, µM, g kg-1, ...]
               type: acid #
               source:
                   supplier:
@@ -57,12 +57,12 @@ electrochemical system:
               type: salt
               concentration:
                   value: 0.082
-                  unit: M #[M, mM, µM, g kg-1, ...]
+                  unit: mol / l #[M, mM, µM, g kg-1, ...]
             - name: NaF
               type: salt
               concentration:
                   value: 0.017
-                  unit: M #[M, mM, µM, g kg-1, ...]                 
+                  unit: mol / l #[M, mM, µM, g kg-1, ...]                 
             - name: KBr
               type: salt
               source:
@@ -70,7 +70,7 @@ electrochemical system:
                   LOT: 
               concentration:
                   value: 0.1
-                  unit: mM #[M, mM, µM, g kg-1, ...] 
+                  unit: mmol / l #[M, mM, µM, g kg-1, ...] 
         ph: 
             value: 3
             uncertainty:
