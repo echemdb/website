@@ -37,7 +37,8 @@ electrochemical system:
             - name: KI # can be trivia name, sum formula, etc
               concentration:
                   value: 0.01
-                  unit: M #[M, mM, µM, g kg-1, ...]
+                  unit: mol #[M, mM, µM, g kg-1, ...]
+
               type: #
               source:
                   supplier:
