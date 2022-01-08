@@ -37,8 +37,8 @@ electrochemical system:
             - name: NaClO4 # can be trivia name, sum formula, etc
               concentration:
                   value: 0.05
-                  unit: M #[M, mM, µM, g kg-1, ...]
-              type: #
+                  unit: mol #[M, mM, µM, g kg-1, ...]
+              type: acid #
               source:
                   supplier:
                   LOT: 
