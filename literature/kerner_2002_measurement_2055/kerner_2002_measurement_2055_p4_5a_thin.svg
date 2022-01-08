@@ -48,7 +48,7 @@
        sodipodi:role="line"
        id="tspan90885"
        x="1324.9039"
-       y="653.88684">scan rate: 10 mV/s</tspan></text>
+       y="653.88684">scan rate: 10 mV / s</tspan></text>
   <g
      id="g97738">
     <path
@@ -81,7 +81,7 @@
          sodipodi:role="line"
          id="tspan94724"
          x="387.63867"
-         y="980.82593">y2: 5 uA/cm2</tspan></text>
+         y="980.82593">y2: 5 uA / cm2</tspan></text>
   </g>
   <g
      id="g97728">
@@ -98,7 +98,7 @@
          sodipodi:role="line"
          id="tspan95718"
          x="365.67566"
-         y="1556.3717">y1: -5 uA/cm2</tspan></text>
+         y="1556.3717">y1: -5 uA / cm2</tspan></text>
   </g>
   <g
      id="g97733">

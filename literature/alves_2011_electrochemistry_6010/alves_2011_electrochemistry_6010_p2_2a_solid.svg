@@ -66,7 +66,7 @@
        id="tspan4506"
        x="1851.7422"
        y="4891.021"
-       style="font-size:66.66666412px">rate: 0.05 V s-1</tspan></text>
+       style="font-size:66.66666412px">rate: 0.05 V / s</tspan></text>
   <g
      id="g4559">
     <text
@@ -78,7 +78,7 @@
          y="3912.8931"
          x="943.69873"
          id="tspan4532-5"
-         sodipodi:role="line">y2: 0.1 mA cm-2</tspan></text>
+         sodipodi:role="line">y2: 0.1 mA / cm2</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path4554"
@@ -96,7 +96,7 @@
          y="5402.6958"
          x="946.33209"
          id="tspan4532"
-         sodipodi:role="line">y1: -0.8 mA cm-2</tspan></text>
+         sodipodi:role="line">y1: -0.8 mA / cm2</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path4561"

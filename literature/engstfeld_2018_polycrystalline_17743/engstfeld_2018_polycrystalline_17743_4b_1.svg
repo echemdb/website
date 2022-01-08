@@ -68,7 +68,7 @@
          y="5364.1929"
          x="2898.5591"
          id="tspan817"
-         sodipodi:role="line">y1: -150 uA cm-2</tspan></text>
+         sodipodi:role="line">y1: -150 uA / cm2</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path821"
@@ -87,7 +87,7 @@
          y="5364.1929"
          x="2898.5591"
          id="tspan817-0"
-         sodipodi:role="line">y2: 150 uA cm-2</tspan></text>
+         sodipodi:role="line">y2: 150 uA / cm2</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path821-4"
@@ -162,7 +162,7 @@
        sodipodi:role="line"
        id="tspan838"
        x="3377.9365"
-       y="4648.8433">Rate: 50 mV/s</tspan></text>
+       y="4648.8433">Rate: 50 mV / s</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"

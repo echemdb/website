@@ -38,7 +38,7 @@ electrochemical system:
 figure description:
   comment: Hg/HgO ref. is 0.165 V vs the normal hydrogen electrode (NHE ~ SHE). The
     scan rate is not mentioned in the publication, but can be calculated from the
-    integrated charge provided in the publication, resulting in 50 mV/s.
+    integrated charge provided in the publication, resulting in 50 mV / s.
   linked measurements: in-situ Second Harmonic Generation, LEED, RHEED
   version: 1
 source:
