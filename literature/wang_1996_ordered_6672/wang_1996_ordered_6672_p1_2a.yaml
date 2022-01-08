@@ -38,8 +38,7 @@ electrochemical system:
               concentration:
                   value: 0.01
                   unit: mol #[M, mM, µM, g kg-1, ...]
-
-              type: #
+              type: salt #
               source:
                   supplier:
                   LOT: 
