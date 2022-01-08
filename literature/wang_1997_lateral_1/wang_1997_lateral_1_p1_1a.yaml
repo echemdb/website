@@ -5,7 +5,6 @@
 source:
     version: 1
     url: www.osti.gov/biblio/537264 #only the number without preceeding doix or https:
-
     bib: wang_1997_lateral_1 # AuthorName_YYYY_FirstWordTitle_pageNr. No prepositions. Fingers crossed that there is no duplicate.
     figure: 1a # depending on the subfigure labels use 1, 1b, or 1_3
     curve: top # use a unique short description to identify the curve in the figure, i.e.. label, color, etc
