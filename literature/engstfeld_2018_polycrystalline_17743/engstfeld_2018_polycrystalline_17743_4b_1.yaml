@@ -52,7 +52,7 @@ electrochemical system:
       source:
         supplier: Merck Suprapur
       sum formula: KOH
-      type: alkaline
+      type: base
     ph:
       uncertainty: none
       value: 13
