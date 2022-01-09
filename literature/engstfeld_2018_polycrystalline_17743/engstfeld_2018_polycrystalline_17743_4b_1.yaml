@@ -1,74 +1,86 @@
-curator:
-  digitized: 2021-07-09
-  name: Albert Engstfeld
-  orcid: https://orcid.org/0000-0002-9686-3948
-  version: 1
-electrochemical system:
-  electrodes:
-    configuration: three
-    counter electrode:
-      crystallographic orientation: poly
-      material: Au
-      shape: mesh
-    reference electrode:
-      source:
-        supplier: homemade
-      type: RHE
-    working electrode:
-      crystallographic orientation: '100'
-      geometric electrolyte contact area:
-        unit: cm-2
-      material: Cu
-      preparation procedure: sputter and heating under UHV conditions
-      shape:
-        diameter:
-          unit: mm
-          value: 4.4
-        height:
-          unit: mm
-          value: 2
-        type: head shaped
-      source:
-        supplier: Mateck
-  electrolyte:
-    components:
-    - name: water
-      proportion:
-        unit: volume percent
-        value: '100'
-      source:
-        quality: ultrapure water
-        refinement: Millipore MilliQ
-        total organic carbon:
-          unit: none
-          value: none
-      sum formula: H2O
-      type: solvent
-    - concentration:
-        unit: mol / l
-        value: 0.1
-      name: potassium hydroxide
-      source:
-        supplier: Merck Suprapur
-      sum formula: KOH
-      type: alkaline
-    ph:
-      uncertainty: none
-      value: 13
-    temperature:
-      unit: K
-      value: 298.15
-    type: aq
-  instrumentation:
-  - supplier: Biologic
-    type: potentiostat
-  version: 1
-figure description:
-  version: 1
-source:
-  bib: engstfeld_2018_polycrystalline_17743
-  curve: 1
-  doi: https://doi.org/10.1002/chem.201803418
-  figure: 4b
-  version: 1
+# This file can exist with the "source" information only, the entry data exists should be marked as "False" 
+# to indcate that neither the metadata nor the actual data were digitized or provided.
+# use "null" to idicate that a value is not available in the literature
 version: 1
+
+source:
+    version: 1
+    doi: 10.1002/chem.201803418
+    bib: engstfeld_2018_polycrystalline_17743 # AuthorName_YYYY_FirstWordTitle_pageNr. No prepositions. Fingers crossed that there is no duplicate.
+    figure: 4b # depending on the subfigure labels use 1, 1b, or 1_3
+    curve: 1 # use a unique short description to identify the curve in the figure
+    
+# This file is part of echemdb (https://github.com/echemdb/website)
+curator:
+    version: 1
+    name: Albert Engstfeld
+    orcid: https://orcid.org/0000-0002-9686-3948
+    digitized: 2021-07-09 # YYYY-MM-DD
+    
+figure description:
+    version: 1
+    linked measurements: null # FTIR, SXRD, Ring Disc - indicate if any other operando methods were shown in the same plot, which is linked to the data
+
+electrochemical system:
+    version: 1
+    instrumentation:
+        - type: potentiostat
+          supplier: Biologic
+    electrolyte:
+        type: aq # aqueous = aq, non-aqueous=naq
+        components: # create as many components as necessary. A simple electrolyte consists of two components, i.e., H2SO4 and water
+            - name: water
+              sum formula: H2O
+              type: solvent
+              proportion:
+                  value: '100'
+                  unit: volume percent
+              source:
+                  refinement: Millipore MilliQ
+                  quality: ultrapure water
+                  total organic carbon: 
+                      value: none
+                      unit: none
+            - name: potassium hydroxide
+              sum formula: KOH
+              type: alkaline
+              source:
+                  supplier: Merck Suprapur
+                  LOT: null
+              concentration:
+                  value: 0.1
+                  unit: mol / l
+        ph: 
+            value: 13
+            uncertainty: none
+        temperature: # provide the temperature as it is given in the article. Assume room temperature if nothing is provided
+            value: 298.15 
+            unit: K # [K, C, F]
+    electrodes:
+        configuration: three # number of electrodes
+        reference electrode:
+            type: RHE # the reference electrode given in the experimental section. Might differ from that in the plot: MSE-sat, MSE-3M, MSE-1M, RHE, AgCl2
+            source:
+                supplier: homemade
+        counter electrode:
+            material: Au
+            crystallographic orientation: poly
+            shape: mesh
+        working electrode:
+            material: Cu
+            crystallographic orientation: '100' # hkl, 100, 110, poly
+            source:
+                supplier: Mateck
+                LOT: 
+            shape: # optional
+                type: head shaped # bead/sphere
+                height:
+                    value: 2
+                    unit: mm
+                diameter:
+                    value: 4.4
+                    unit: mm
+            geometric electrolyte contact area: 
+                value: null
+                unit: cm-2
+            preparation procedure: sputter and heating under UHV conditions # Short description of sample preparation. This can be very useful. :)
