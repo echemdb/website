@@ -40,9 +40,6 @@ electrochemical system:
       source:
         quality: ultrapure water
         refinement: Millipore MilliQ
-        total organic carbon:
-          unit: none
-          value: none
       sum formula: H2O
       type: solvent
     - concentration:
