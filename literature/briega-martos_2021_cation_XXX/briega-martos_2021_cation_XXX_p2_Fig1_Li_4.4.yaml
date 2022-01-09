@@ -44,7 +44,7 @@ electrochemical system:
       type: solvent
     - concentration:
         unit: mol / l
-      name: perchloric acid
+      name: HClO4
       source:
         supplier: Merck
       sum formula: HClO4
