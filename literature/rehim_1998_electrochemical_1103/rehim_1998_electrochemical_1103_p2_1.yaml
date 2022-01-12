@@ -23,6 +23,7 @@ electrochemical system:
         unit: mol / l
         value: 1
       name: NaOH
+      type: base
     - name: water
       type: solvent
     temperature:
