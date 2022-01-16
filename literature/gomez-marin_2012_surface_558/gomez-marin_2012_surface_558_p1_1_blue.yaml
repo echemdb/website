@@ -15,9 +15,7 @@ electrochemical system:
     working electrode:
       crystallographic orientation: '544'
       material: Pt
-      preparation procedure: "Prior to each experiment the electrodes were \uFB02\
-        ame annealed, cooled in a hydrogen/argon atmosphere and transferred to the\
-        \ cell protected by a drop of ultra-pure water saturated with these gases."
+      preparation procedure: Prior to each experiment the electrodes were flame annealed, cooled in a hydrogen/argon atmosphere and transferred to the cell protected by a drop of ultra-pure water saturated with these gases.
   electrolyte:
     components:
     - concentration:
