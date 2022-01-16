@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    height="6756px"
    version="1.1"
    width="5103px"
    id="svg233"
-   sodipodi:docname="Gomez-Marin_2012_surface_558_p1_1_blue.svg"
-   inkscape:version="1.1.1 (eb90963e84, 2021-10-02)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   sodipodi:docname="gomez-marin_2012_surface_558_p1_1_blue.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata32">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <sodipodi:namedview
      id="namedview235"
      pagecolor="#ffffff"
@@ -20,25 +34,26 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="0.28635941"
-     inkscape:cx="3568.9416"
-     inkscape:cy="1505.1016"
+     inkscape:zoom="0.05062167"
+     inkscape:cx="-1640.2139"
+     inkscape:cy="697.35486"
      inkscape:window-width="1920"
-     inkscape:window-height="933"
-     inkscape:window-x="1920"
-     inkscape:window-y="0"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="32"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg233" />
   <defs
      id="defs229" />
   <image
-     height="6756px"
-     sodipodi:insensitive="true"
-     width="5103px"
-     x="0"
+     sodipodi:absref="F:\Github\echemdb\website\literature\gomez-marin_2012_surface_558\Gomez-Marin_2012_surface_558_p1.png"
      xlink:href="Gomez-Marin_2012_surface_558_p1.png"
+     id="image231"
      y="0"
-     id="image231" />
+     x="0"
+     width="5103px"
+     sodipodi:insensitive="true"
+     height="6756px" />
   <g
      id="g34433">
     <path
@@ -117,6 +132,16 @@
        id="tspan32399"
        x="3353.8955"
        y="1872.8066">scan rate: 50 mV / s</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:85.33329773px;line-height:1.25;font-family:sans-serif"
+     x="3294.6323"
+     y="2386.4207"
+     id="text25"><tspan
+       sodipodi:role="line"
+       id="tspan23"
+       x="3294.6323"
+       y="2386.4207">comment: Focus on Pt oxidation, surface defects (at steps), and sulfate vs. perchlorate adsorption.</tspan></text>
   <g
      id="g50118">
     <path
