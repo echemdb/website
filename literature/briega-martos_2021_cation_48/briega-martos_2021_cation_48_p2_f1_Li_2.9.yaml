@@ -33,7 +33,11 @@ electrochemical system:
         value: 0.04
       name: LiF
       source:
-        supplier: Merck, Suprapur, 99.99%
+        supplier: Merck, Suprapur
+        supplied purity:
+            grade: 
+                value: 99.99
+                unit: pct
       sum formula: LiF
       type: salt
     - name: water
