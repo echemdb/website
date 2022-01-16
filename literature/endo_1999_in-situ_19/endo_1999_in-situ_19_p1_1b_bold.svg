@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    height="6601px"
    version="1.1"
    width="5100px"
    id="svg74819"
-   sodipodi:docname="Endo_1999_In-situ_19_p1_1b_bold.svg"
-   inkscape:version="1.1 (ce6663b3b7, 2021-05-25)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   sodipodi:docname="endo_1999_in-situ_19_p1_1b_bold.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata28">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <sodipodi:namedview
      id="namedview74821"
      pagecolor="#ffffff"
@@ -20,25 +34,26 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="0.72739656"
-     inkscape:cx="3480.2199"
-     inkscape:cy="4914.1008"
-     inkscape:window-width="1608"
-     inkscape:window-height="986"
-     inkscape:window-x="72"
-     inkscape:window-y="27"
+     inkscape:zoom="0.51434704"
+     inkscape:cx="2851.2976"
+     inkscape:cy="1071.4211"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="32"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g131561" />
+     inkscape:current-layer="svg74819" />
   <defs
      id="defs74815" />
   <image
-     height="6601px"
-     sodipodi:insensitive="true"
-     width="5100px"
-     x="0"
+     sodipodi:absref="F:\Github\echemdb\website\literature\endo_1999_in-situ_19\Endo_1999_In-situ_19_p1.png"
      xlink:href="Endo_1999_In-situ_19_p1.png"
+     id="image74817"
      y="0"
-     id="image74817" />
+     x="0"
+     width="5100px"
+     sodipodi:insensitive="true"
+     height="6601px" />
   <g
      id="g90868">
     <path
@@ -135,4 +150,14 @@
        id="path131476"
        sodipodi:nodetypes="cssssssssssssssssssssssssssssssssssssssssscscssssssssssscsssssssssssssssssssssssssssscc" />
   </g>
+  <text
+     xml:space="preserve"
+     style="font-size:85.33329773px;line-height:1.25;font-family:sans-serif"
+     x="3197.8594"
+     y="5543.8379"
+     id="text103539-9"><tspan
+       sodipodi:role="line"
+       id="tspan103537-2"
+       x="3197.8594"
+       y="5543.8379">linked: XAFS</tspan></text>
 </svg>
