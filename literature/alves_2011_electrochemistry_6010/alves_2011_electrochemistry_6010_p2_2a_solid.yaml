@@ -1,4 +1,18 @@
+<<<<<<< HEAD
 # This file is part of echemdb (https://github.com/echemdb/website)
+=======
+# This file describes a figure from a publication containing electrochemical data.
+# For the `echemdb/website` project, the source, curator and electrochemical system is mandatory.
+# Figure description is optional. It is created automatically by the cv module of svgdigitizer
+
+source:
+    version: 1
+    doi: 10.1039/C0CP01001D
+    bib: alves_2011_electrochemistry_6010 # AuthorName_YYYY_FirstWordTitle_pageNr. No prepositions. Fingers crossed that there is no duplicate.
+    figure: 2a # depending on the subfigure labels use 1, 1b, or 1_3
+    curve: solid # use a unique short description to identify the curve in the figure, i.e.. label, color, etc
+    
+>>>>>>> filter
 curator:
   digitized: 2021-07-09
   name: Albert Engstfeld

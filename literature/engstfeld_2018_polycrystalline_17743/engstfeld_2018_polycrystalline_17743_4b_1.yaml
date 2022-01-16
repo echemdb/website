@@ -1,4 +1,19 @@
+<<<<<<< HEAD
 # This file is part of echemdb (https://github.com/echemdb/website)
+=======
+# This file can exist with the "source" information only, the entry data exists should be marked as "False" 
+# to indcate that neither the metadata nor the actual data were digitized or provided.
+# use "null" to idicate that a value is not available in the literature
+version: 1
+
+source:
+    version: 1
+    doi: 10.1002/chem.201803418
+    bib: engstfeld_2018_polycrystalline_17743 # AuthorName_YYYY_FirstWordTitle_pageNr. No prepositions. Fingers crossed that there is no duplicate.
+    figure: 4b # depending on the subfigure labels use 1, 1b, or 1_3
+    curve: 1 # use a unique short description to identify the curve in the figure
+    
+>>>>>>> filter
 curator:
   digitized: 2021-07-09
   name: Albert Engstfeld
