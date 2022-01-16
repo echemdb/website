@@ -17,7 +17,7 @@ electrochemical system:
     working electrode:
       crystallographic orientation: '111'
       geometric electrolyte contact area:
-        unit: cm-2
+        unit: 1 / cm2
       material: Pt
       shape:
         diameter:

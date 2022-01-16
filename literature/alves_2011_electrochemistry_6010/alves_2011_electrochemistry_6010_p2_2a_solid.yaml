@@ -14,7 +14,7 @@ electrochemical system:
     working electrode:
       crystallographic orientation: '0001'
       material: Ru
-      preparation procedure: Sputtering and flash annealing under UHV conditions.
+      preparation procedure: Sputtering and flash annealing under UHV conditions with repeated cycles of oxygen adsorption and desorption.
       shape:
         height:
           unit: mm
@@ -60,3 +60,4 @@ source:
   doi: 10.1039/C0CP01001D
   figure: 2a
   version: 1
+version: 1

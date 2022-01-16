@@ -18,9 +18,9 @@ electrochemical system:
     working electrode:
       crystallographic orientation: '100'
       geometric electrolyte contact area:
-        unit: cm-2
+        unit: 1 / cm2
       material: Cu
-      preparation procedure: sputter and heating under UHV conditions
+      preparation procedure: Sputter and heating under UHV conditions.
       shape:
         diameter:
           unit: mm
@@ -36,19 +36,17 @@ electrochemical system:
     - name: water
       proportion:
         unit: volume percent
-        value: '100'
+        value: 100
       source:
         quality: ultrapure water
         refinement: Millipore MilliQ
-      sum formula: H2O
       type: solvent
     - concentration:
         unit: mol / l
         value: 0.1
-      name: potassium hydroxide
+      name: KOH
       source:
         supplier: Merck Suprapur
-      sum formula: KOH
       type: base
     ph:
       uncertainty: none
