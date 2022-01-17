@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    height="6601px"
    version="1.1"
    width="5100px"
    id="svg53"
    sodipodi:docname="horswell_2004_a_10970_p2_1a_solid.svg"
-   inkscape:version="1.1.1 (eb90963e84, 2021-10-02)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata28">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <sodipodi:namedview
      id="namedview55"
      pagecolor="#ffffff"
@@ -20,25 +34,26 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="0.31493622"
-     inkscape:cx="2548.135"
-     inkscape:cy="1752.7358"
+     inkscape:zoom="0.15746811"
+     inkscape:cx="1724.4148"
+     inkscape:cy="4648.2488"
      inkscape:window-width="1920"
-     inkscape:window-height="917"
-     inkscape:window-x="1920"
-     inkscape:window-y="0"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="32"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg53" />
   <defs
      id="defs49" />
   <image
-     height="6601px"
-     sodipodi:insensitive="true"
-     width="5100px"
-     x="0"
+     sodipodi:absref="F:\Github\echemdb\website\literature\horswell_2004_a_10970\Horswell_2004_A_10970_p2.png"
      xlink:href="Horswell_2004_A_10970_p2.png"
+     id="image51"
      y="0"
-     id="image51" />
+     x="0"
+     width="5100px"
+     sodipodi:insensitive="true"
+     height="6601px" />
   <g
      id="g12490"
      transform="translate(-692.187,66.693542)">
@@ -137,4 +152,14 @@
        id="tspan2176"
        x="4290.3613"
        y="1039.0585">scan rate: 50 mV / s</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="-2714.0513"
+     y="221.7742"
+     id="text837"><tspan
+       sodipodi:role="line"
+       id="tspan835"
+       x="-2714.0513"
+       y="221.7742">comment: Hg/HgO ref. is 0.165 V vs the normal hydrogen electrode (NHE ~ SHE). The scan rate is not mentioned in the publication, but can be calculated from the integrated charge provided in the publication, resulting in 50 mV / s.</tspan></text>
 </svg>
