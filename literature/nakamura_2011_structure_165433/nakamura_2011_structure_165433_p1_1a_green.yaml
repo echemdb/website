@@ -44,4 +44,5 @@ source:
   curve: green
   doi: 10.1103/PhysRevB.84.165433
   figure: 1a
+  techniques: XAS
   version: 1

@@ -37,4 +37,5 @@ source:
   curve: blue
   doi: 10.1103/PhysRevB.84.165433
   figure: 1b
+  techniques: XAS
   version: 1

@@ -34,7 +34,7 @@ electrochemical system:
     type: aq
   version: 1
 figure description:
-  comment: focus on Cs+ counterions close to the EDL.
+  comment: Focus on Cs+ counterions close to the electric double layer.
   linked measurements: XAS
   version: 1
 source:
@@ -42,4 +42,5 @@ source:
   curve: red
   doi: 10.1103/PhysRevB.84.165433
   figure: 1b
+  techniques: XAS
   version: 1
