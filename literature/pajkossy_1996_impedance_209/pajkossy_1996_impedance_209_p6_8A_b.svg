@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    height="6612px"
    version="1.1"
    width="4931px"
    id="svg47954"
-   sodipodi:docname="Pajkossy_1996_Impedance_209_p6_8A_b.svg"
-   inkscape:version="1.1 (ce6663b3b7, 2021-05-25)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   sodipodi:docname="pajkossy_1996_impedance_209_p6_8A_b.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata28">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <sodipodi:namedview
      id="namedview47956"
      pagecolor="#ffffff"
@@ -20,25 +34,26 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="0.32211216"
-     inkscape:cx="1516.5525"
-     inkscape:cy="1013.6221"
-     inkscape:window-width="1608"
-     inkscape:window-height="986"
-     inkscape:window-x="72"
-     inkscape:window-y="27"
+     inkscape:zoom="0.11388385"
+     inkscape:cx="673.9136"
+     inkscape:cy="4084.0988"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="32"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg47954" />
   <defs
      id="defs47950" />
   <image
-     height="6612px"
-     sodipodi:insensitive="true"
-     width="4931px"
-     x="0"
+     sodipodi:absref="F:\Github\echemdb\website\literature\pajkossy_1996_impedance_209\Pajkossy_1996_Impedance_209_p6.png"
      xlink:href="Pajkossy_1996_Impedance_209_p6.png"
+     id="image47952"
      y="0"
-     id="image47952" />
+     x="0"
+     width="4931px"
+     sodipodi:insensitive="true"
+     height="6612px" />
   <g
      id="g58784"
      transform="translate(4.6555788,3.0838549)">
@@ -139,4 +154,14 @@
        id="path71118"
        sodipodi:nodetypes="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssscssssssssssssssssssssscsssssssssssssssssscssssssssssssssssssscsssssssssssssssssssssssss" />
   </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="2710.2913"
+     y="575.26544"
+     id="text837"><tspan
+       sodipodi:role="line"
+       id="tspan835"
+       x="2710.2913"
+       y="575.26544">comment: Some peak currents were cut-off in the CV plots.</tspan></text>
 </svg>
