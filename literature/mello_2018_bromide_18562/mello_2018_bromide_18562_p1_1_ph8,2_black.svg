@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    height="6820px"
    version="1.1"
    width="5212px"
    id="svg53"
    sodipodi:docname="mello_2018_bromide_18562_p1_1_ph8,2_black.svg"
-   inkscape:version="1.1.1 (eb90963e84, 2021-10-02)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata28">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <sodipodi:namedview
      id="namedview55"
      pagecolor="#ffffff"
@@ -20,25 +34,26 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="0.27164513"
-     inkscape:cx="1640.0073"
-     inkscape:cy="2854.8275"
-     inkscape:window-width="1848"
-     inkscape:window-height="906"
-     inkscape:window-x="72"
-     inkscape:window-y="27"
+     inkscape:zoom="0.096041057"
+     inkscape:cx="1592.6044"
+     inkscape:cy="5085.9365"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="32"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg53" />
   <defs
      id="defs49" />
   <image
-     height="6820px"
-     sodipodi:insensitive="true"
-     width="5212px"
-     x="0"
+     sodipodi:absref="F:\Github\echemdb\website\literature\mello_2018_bromide_18562\mello_2018_bromide_18562_p1.png"
      xlink:href="mello_2018_bromide_18562_p1.png"
+     id="image51"
      y="0"
-     id="image51" />
+     x="0"
+     width="5212px"
+     sodipodi:insensitive="true"
+     height="6820px" />
   <text
      xml:space="preserve"
      style="font-size:85.3333px;line-height:1.25;font-family:sans-serif"
@@ -136,4 +151,14 @@
          x="125.82837"
          y="3196.1787">y1: -75 uA / cm2</tspan></text>
   </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="-6887.8198"
+     y="417.7345"
+     id="text837"><tspan
+       sodipodi:role="line"
+       id="tspan835"
+       x="-6887.8198"
+       y="417.7345">comment: &quot;Working solutions of the pH-series with values lower than 3 were prepared by using HClO4 and KClO4. For pH values ranging from 3 to 9, phosphate buffer solutions were employed (Na2HPO4 and NaH2PO4). Alkaline solutions were prepared with NaOH and KClO4. The exact concentrations of these components are unkown.&quot;</tspan></text>
 </svg>
