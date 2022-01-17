@@ -105,11 +105,10 @@ class GenericDescriptor:
         """
         name = name.replace('_', ' ')
         
-        try:
-            if name in self._descriptor:
-                return Descriptor(self._descriptor[name])
-        except:
-            print(f"Descriptor has no entry {name}. Did you mean one of {[key.replace(' ', '_') for key in self._descriptor.keys()]}?")
+        if name in self._descriptor:
+            return Descriptor(self._descriptor[name])
+
+        return UndefinedDescriptor()
 
     def __getitem__(self, name):
         r"""
@@ -122,11 +121,10 @@ class GenericDescriptor:
             0
 
         """
-        try:
-            if name in self._descriptor:
-                return Descriptor(self._descriptor[name])
-        except:
-            print(f"Descriptor has no entry {name}. Did you mean one of {list(self._descriptor.keys())}?")
+        if name in self._descriptor:
+            return Descriptor(self._descriptor[name])
+
+        return UndefinedDescriptor()
 
     def __repr__(self):
         r"""
@@ -205,6 +203,44 @@ class QuantityDescriptor(GenericDescriptor):
         return str(self.quantity)
 
 
+class UndefinedDescriptor:
+    def __dir__(self):
+        return object.__dir__(self)
+    
+    def __getitem__(self, name):
+        return self
+
+    def __getattr__(self, name):
+        return self
+
+    def __bool__(self):
+        return False
+
+    def __repr__(self):
+        return ""
+
+    def __str__(self):
+        return ""
+
+    def __eq__(self, other):
+        return False
+
+    def __ne__(self, other):
+        return True
+
+    def __lt__(self, other):
+        return True
+
+    def __gt__(self, other):
+        return True
+
+    def __le__(self, other):
+        return False
+
+    def __ge__(self, other):
+        return False
+
+
 def Descriptor(descriptor):
     r"""
     Return `descriptor` augmented with additional convenience methods.
@@ -238,6 +274,9 @@ def Descriptor(descriptor):
     """
 
     if isinstance(descriptor, GenericDescriptor):
+        return descriptor
+
+    if isinstance(descriptor, UndefinedDescriptor):
         return descriptor
 
     if isinstance(descriptor, dict):
