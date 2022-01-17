@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    height="7176px"
    version="1.1"
    width="5825px"
    id="svg357"
-   sodipodi:docname="Jovic_1999_Cyclic_247_p3_4.svg"
-   inkscape:version="1.1 (ce6663b3b7, 2021-05-25)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   sodipodi:docname="jovic_1999_cyclic_247_p3_4.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata28">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <sodipodi:namedview
      id="namedview359"
      pagecolor="#ffffff"
@@ -20,25 +34,26 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="0.28970094"
-     inkscape:cx="1385.912"
-     inkscape:cy="4892.9769"
-     inkscape:window-width="1608"
-     inkscape:window-height="986"
-     inkscape:window-x="72"
-     inkscape:window-y="27"
+     inkscape:zoom="0.14485047"
+     inkscape:cx="-291.17945"
+     inkscape:cy="5143.6307"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="32"
      inkscape:window-maximized="1"
      inkscape:current-layer="g20512" />
   <defs
      id="defs353" />
   <image
-     height="7176px"
-     sodipodi:insensitive="true"
-     width="5825px"
-     x="0"
+     sodipodi:absref="F:\Github\echemdb\website\literature\jovic_1999_cyclic_247\Jovic_1999_Cyclic_247_p3.png"
      xlink:href="Jovic_1999_Cyclic_247_p3.png"
+     id="image355"
      y="0"
-     id="image355" />
+     x="0"
+     width="5825px"
+     sodipodi:insensitive="true"
+     height="7176px" />
   <g
      id="g11841"
      transform="translate(1.2201102,-1.212289)">
@@ -137,5 +152,15 @@
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 1102.7866,4905.5722 8.5406,-5.4943 22.5717,-1.222 43.3289,0.6159 31.7224,-1.2221 44.549,-0.6159 57.97,0.6159 41.4831,-2.4441 58.58,1.2221 43.3289,-1.8282 61.0203,-1.838 50.0237,-6.7066 41.4987,-7.3225 17.0814,-12.2009 9.7607,-10.3727 h 7.3205 l 17.097,9.1507 20.1314,5.4845 28.6722,3.06 h 21.3672 l 19.5215,1.8282 41.5112,4.8784 53.0896,3.6661 48.1937,3.6564 43.3288,2.4441 h 45.1591 l 33.5525,-0.6159 36.0083,-1.8282 25.622,-2.4441 23.1817,-7.3225 19.5371,-7.9286 26.232,-9.7666 23.7917,-5.4846 12.2166,-4.8882 7.3205,-8.5347 2.4403,-6.7164 4.2703,-3.0502 4.2703,3.0502 4.8804,6.7164 4.8803,2.4343 9.1507,-1.8282 6.7105,-8.5445 9.7608,-16.4732 9.7763,-31.1182 6.1005,-37.8346 3.6603,-25.6239 4.2703,-26.8628 3.6602,-57.358 3.6603,-48.2073 3.0503,-58.58 2.4401,-43.9253 3.6603,-49.4293 1.2201,-42.713 1.2201,-41.491 3.6603,-48.8134 v -37.2284 l 5.4904,-85.4249 v -39.6627 l 3.0502,-52.4796 3.0502,-12.2009 v 20.1295 19.5332 l 4.2704,32.3403 1.2201,39.0468 1.8301,28.068 1.2201,25.6336 1.2201,20.7455 3.0502,24.4018 3.0503,4.2723 4.896,-17.6952 2.4401,1.222 0.6101,16.4732 0.61,18.3112 0.6101,70.7809 -1.2201,44.5412 1.8301,35.9966 -0.61,86.6572 0.61,73.841 -1.2201,75.0532 0.6101,54.9139 -1.2201,56.7421 0.61,51.8734 -1.2201,76.2823 -1.2201,31.1182 -5.506,28.068 -4.8804,39.6627 -5.4904,35.9966 -4.2703,28.684 -4.2704,31.1181 -3.6602,32.3482 -3.0502,34.7844 -2.4402,50.0355 -3.6603,42.7129 -1.8302,28.6741 -1.8301,45.7633 -1.2201,36.0064 -0.61,35.9966 -1.2201,39.0566 -1.2201,22.5736 0.6101,43.3192 v 25.6336 l -0.6101,127.5334 -1.2201,46.9852 -0.61,33.5623 -1.2201,36.0064 -1.2201,78.7096 -10.9808,0.6061 v -14.0291 -42.713 l -0.6101,-37.8345 -0.61,-48.8135 -0.6101,-48.2073 v -57.9641 -49.4293 l -1.2201,-47.5914 -0.61,-48.8135 v -20.1393 l -1.8301,-95.2025 v -68.3369 l -2.4403,-65.9026 -1.22,-72.003 -1.8302,-46.3693 -4.2859,-48.2073 -5.4904,-78.7196 -9.7608,-28.0777 -9.1507,-20.1296 -8.5406,-4.8882 -10.3708,7.9384 -6.1004,9.7569 -7.3206,6.1102 -10.9964,-8.5446 -5.4905,-9.1506 -13.421,-3.0503 -18.3013,-3.06 -23.7918,-7.9286 -30.518,-11.5948 -32.3324,-7.3225 -37.2284,-1.2221 -34.7726,-2.4343 -47.5993,1.2221 -38.4485,1.8282 -36.6027,1.222 -45.1591,2.4343 -31.7223,1.838 -41.4988,2.4343 -43.3289,4.2723 -29.2822,7.9286 -17.1093,3.6662 -18.9114,11.5947 -6.7106,3.6564 -9.7607,-2.4343 -6.1005,-11.5948 -15.2511,-13.4229 -21.9773,-5.4944 -36.6027,-6.7164 -35.3983,-4.8783 -31.1124,-0.6062 h -36.6184 -34.1625 l -51.2595,-0.6159 -43.939,-1.8282 -47.5835,-0.6061 -43.939,0.6061 -28.6721,-0.6061 -32.9581,-0.6159 -34.1626,-1.2221 -5.4904,-1.2123 z"
        id="path20427" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="635.13776"
+       y="341.36563"
+       id="text837"><tspan
+         sodipodi:role="line"
+         id="tspan835"
+         x="635.13776"
+         y="341.36563">comment: At high potentials, oxidation of Ag was observed.</tspan></text>
   </g>
 </svg>
