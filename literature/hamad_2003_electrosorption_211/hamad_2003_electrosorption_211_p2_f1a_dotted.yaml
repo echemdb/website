@@ -33,10 +33,6 @@ electrochemical system:
       value: 293
     type: aq
   version: 1
-figure description:
-  comment: Combined with Monte-Carlo simulation.
-  linked measurements: capacitance measurement (ac), chronocoulometry
-  version: 1
 source:
   bib: hamad_2003_electrosorption_211
   techniques: Monte-Carlo simulations

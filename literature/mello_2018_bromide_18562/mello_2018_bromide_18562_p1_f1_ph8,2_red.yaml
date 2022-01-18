@@ -35,12 +35,6 @@ electrochemical system:
       value: 298.15
     type: aq
   version: 1
-figure description:
-  comment: Working solutions of the pH-series with values lower than 3 were prepared
-    by using HClO4 and KClO4. For pH values ranging from 3 to 9, phosphate buffer
-    solutions were employed (Na2HPO4 and NaH2PO4). Alkaline solutions were prepared
-    with NaOH and KClO4. The exact concentrations of these components are unkown.
-  version: 1
 source:
   bib: mello_2018_bromide_18562
   curve: ph8,2_red

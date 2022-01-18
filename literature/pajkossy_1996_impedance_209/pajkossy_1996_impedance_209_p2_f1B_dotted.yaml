@@ -43,10 +43,6 @@ electrochemical system:
       value: 293
     type: aq
   version: 1
-figure description:
-  comment: Some peak currents were cut-off in the CV plots.
-  linked measurements: EIS
-  version: 1
 source:
   bib: pajkossy_1996_impedance_209
   curve: dotted

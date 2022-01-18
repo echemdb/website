@@ -30,10 +30,6 @@ electrochemical system:
       value: 298.15
     type: aq
   version: 1
-figure description:
-  comment: Missing information about electrochemical setup.
-  linked measurements: X-ray scattering
-  version: 1
 source:
   bib: wang_1997_lateral_1
   curve: top

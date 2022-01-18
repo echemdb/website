@@ -36,11 +36,6 @@ electrochemical system:
       value: 298.15
     type: aq
   version: 1
-figure description:
-  comment: Hg/HgO ref. is 0.165 V vs the normal hydrogen electrode (NHE ~ SHE). The
-    scan rate is not mentioned in the publication, but can be calculated from the
-    integrated charge provided in the publication, resulting in 50 mV / s.
-  version: 1
 source:
   bib: horswell_2004_a_10970
   curve: dashed

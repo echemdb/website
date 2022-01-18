@@ -33,10 +33,6 @@ electrochemical system:
       value: 298.15
     type: aq
   version: 1
-figure description:
-  comment: Focus on Cs+ counterions close to the electric double layer.
-  linked measurements: XAS
-  version: 1
 source:
   bib: nakamura_2011_structure_165433
   curve: red

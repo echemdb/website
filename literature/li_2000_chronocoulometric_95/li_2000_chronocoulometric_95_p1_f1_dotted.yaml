@@ -42,10 +42,6 @@ electrochemical system:
       value: 298.15
     type: aq
   version: 1
-figure description:
-  comment: The scan rate is not given in the publication. It was manually determined
-    from the charge integration as 20 mV / s.
-  version: 1
 source:
   bib: li_2000_chronocoulometric_95
   curve: dotted

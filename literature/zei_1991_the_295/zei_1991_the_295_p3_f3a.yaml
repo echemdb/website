@@ -29,9 +29,6 @@ electrochemical system:
       value: 298.15
     type: aq
   version: 1
-figure description:
-  linked measurements: LEED, RHEED, Auger_spectroscopy
-  version: 1
 source:
   bib: zei_1991_the_295
   curve: NaCl
