@@ -30,7 +30,7 @@ electrochemical system:
     type: aq
   version: 1
 figure description:
-  comment: missing information about electrochemical setup.
+  comment: Missing information about electrochemical setup.
   linked measurements: X-ray scattering
   version: 1
 source:
@@ -38,4 +38,5 @@ source:
   curve: top
   figure: 1a
   url: www.osti.gov/biblio/537264
+  techniques: SXRD
   version: 1
