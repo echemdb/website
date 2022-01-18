@@ -11,7 +11,7 @@ from Figure
 {{ entry.source.figure }} 
 in 
 {% if entry.source.doi is defined %}
-[{{ entry.citation('md') }}](https://doi.org/{{ entry.source.doi }}).
+[{{ entry.citation('md') }}]({{ entry.source.doi }}).
 {% elif entry.source.url is defined %}
 [{{ entry.citation('md') }}]({{ entry.source.url }}).
 {% endif %}
