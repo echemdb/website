@@ -17,7 +17,8 @@ electrochemical system:
     working electrode:
       crystallographic orientation: '100'
       material: Ag
-      preparation procedure: Electrode etched with a cyanide solution, rinsed with Milli-Q water, annealed in a H2 flame for 30 s.
+      preparation procedure: Electrode etched with a cyanide solution, rinsed with
+        Milli-Q water, annealed in a H2 flame for 30 s.
   electrolyte:
     components:
     - concentration:
@@ -43,3 +44,4 @@ source:
   doi: https://doi.org/10.1016/S0022-0728(03)00178-5
   figure: 1a
   version: 1
+version: 1

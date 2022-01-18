@@ -15,7 +15,9 @@ electrochemical system:
     working electrode:
       crystallographic orientation: '111'
       material: Pt
-      preparation procedure: Prior to each experiment the electrodes were flame annealed, cooled in a hydrogen/argon atmosphere and transferred to the cell protected by a drop of ultra-pure water saturated with these gases.
+      preparation procedure: Prior to each experiment the electrodes were flame annealed,
+        cooled in a hydrogen/argon atmosphere and transferred to the cell protected
+        by a drop of ultra-pure water saturated with these gases.
   electrolyte:
     components:
     - concentration:
@@ -41,3 +43,4 @@ source:
   doi: https://doi.org/10.1016/j.electacta.2012.04.066
   figure: 1
   version: 1
+version: 1

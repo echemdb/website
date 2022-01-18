@@ -35,9 +35,9 @@ electrochemical system:
       source:
         supplier: Alfa Aesar Puratronic
         supplied purity:
-            grade: 
-                value: 99.99
-                unit: pct
+          grade:
+            value: 99.99
+            unit: pct
       type: salt
     - name: water
       source:
