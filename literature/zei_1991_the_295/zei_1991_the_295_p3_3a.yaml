@@ -37,4 +37,5 @@ source:
   curve: NaCl
   doi: 10.1016/0022-0728(91)85074-Y
   figure: 3a
+  techniques: LEED, RHEED, AES
   version: 1
