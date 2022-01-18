@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    height="6726px"
    version="1.1"
    width="5042px"
    id="svg18141"
-   sodipodi:docname="Shi_1996_Chloride_225_p1_1_dotted.svg"
-   inkscape:version="1.1 (ce6663b3b7, 2021-05-25)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   sodipodi:docname="shi_1996_chloride_225_p1_1_dotted.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata28">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <sodipodi:namedview
      id="namedview18143"
      pagecolor="#ffffff"
@@ -21,24 +35,25 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="0.15832632"
-     inkscape:cx="2914.866"
-     inkscape:cy="3805.4318"
-     inkscape:window-width="1608"
-     inkscape:window-height="986"
-     inkscape:window-x="72"
-     inkscape:window-y="27"
+     inkscape:cx="1888.5047"
+     inkscape:cy="4563.3601"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="32"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg18141" />
   <defs
      id="defs18137" />
   <image
-     height="6726px"
-     sodipodi:insensitive="true"
-     width="5042px"
-     x="0"
+     sodipodi:absref="F:\Github\echemdb\website\literature\shi_1996_chloride_225\Shi_1996_Chloride_225_p1.png"
      xlink:href="Shi_1996_Chloride_225_p1.png"
+     id="image18139"
      y="0"
-     id="image18139" />
+     x="0"
+     width="5042px"
+     sodipodi:insensitive="true"
+     height="6726px" />
   <g
      id="g27724"
      transform="translate(9.4716464)">
@@ -139,4 +154,14 @@
        id="path35908"
        sodipodi:nodetypes="ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssscssssssssssssssssssssssss" />
   </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="1193.7371"
+     y="504.67181"
+     id="text837"><tspan
+       sodipodi:role="line"
+       id="tspan835"
+       x="1193.7371"
+       y="504.67181">comment: Contains differential capacitance data.</tspan></text>
 </svg>
