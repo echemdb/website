@@ -32,8 +32,7 @@ electrochemical system:
     type: aq
   version: 1
 figure description:
-  comment: focus on electrochemical Ag oxidation
-  linked measurements: XRD
+  comment: Focus on electrochemical oxidation of Ag.
   version: 1
 source:
   bib: rehim_1998_electrochemical_1103
