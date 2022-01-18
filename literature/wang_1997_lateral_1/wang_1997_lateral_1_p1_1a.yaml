@@ -17,6 +17,7 @@ electrochemical system:
         unit: mmol / l
         value: 10
       name: KBr
+      type: salt
     - name: water
       type: solvent
     - concentration:
