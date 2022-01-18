@@ -37,7 +37,7 @@ figure description:
 source:
   bib: lipkowski_1998_ionic_2875
   curve: Br
-  doi: https://doi.org/10.1016/S0013-4686(98)00028-0
+  url: https://doi.org/10.1016/S0013-4686(98)00028-0
   figure: 1a
   techniques: SHG, SXRD
   version: 1

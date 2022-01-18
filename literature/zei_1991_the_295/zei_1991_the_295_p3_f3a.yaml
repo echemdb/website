@@ -35,7 +35,7 @@ figure description:
 source:
   bib: zei_1991_the_295
   curve: NaCl
-  doi: https://doi.org/10.1016/0022-0728(91)85074-Y
+  url: https://doi.org/10.1016/0022-0728(91)85074-Y
   figure: 3a
   techniques: LEED, RHEED, AES
   version: 1

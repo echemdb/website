@@ -38,7 +38,7 @@ figure description:
 source:
   bib: pajkossy_2001_double_3063
   curve: A
-  doi: https://doi.org/10.1016/S0013-4686(01)00597-7
+  url: https://doi.org/10.1016/S0013-4686(01)00597-7
   figure: 6a
   techniques: EIS
   version: 1

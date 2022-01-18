@@ -60,6 +60,6 @@ electrochemical system:
 source:
   bib: briega-martos_2021_cation_48
   curve: First cycle
-  doi: https://doi.org/10.1021/acsmeasuresciau.1c00004
+  url: https://doi.org/10.1021/acsmeasuresciau.1c00004
   figure: 1
 version: 1

@@ -46,7 +46,7 @@ source:
   bib: hamad_2003_electrosorption_211
   techniques: Monte-Carlo simulations
   curve: solid
-  doi: https://doi.org/10.1016/S0022-0728(03)00178-5
+  url: https://doi.org/10.1016/S0022-0728(03)00178-5
   figure: 1a
   version: 1
 version: 1

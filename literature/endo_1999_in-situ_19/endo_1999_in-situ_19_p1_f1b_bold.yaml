@@ -42,7 +42,7 @@ figure description:
 source:
   bib: endo_1999_in-situ_19
   curve: bold
-  doi: https://doi.org/10.1016/S0022-0728(99)00148-5
+  url: https://doi.org/10.1016/S0022-0728(99)00148-5
   figure: 1b
   version: 1
 version: 1

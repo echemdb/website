@@ -45,7 +45,7 @@ figure description:
 source:
   bib: pajkossy_1996_impedance_209
   curve: solid
-  doi: https://doi.org/10.1016/0022-0728(96)04700-6
+  url: https://doi.org/10.1016/0022-0728(96)04700-6
   figure: 1B
   techniques: EIS
   version: 1

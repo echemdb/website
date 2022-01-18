@@ -32,7 +32,7 @@ figure description:
   version: 1
 source:
   bib: wang_1996_ordered_6672
-  doi: https://doi.org/10.1021/jp952938y
+  url: https://doi.org/10.1021/jp952938y
   figure: 2b
   techniques: SXRD
   version: 1

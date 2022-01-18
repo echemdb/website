@@ -41,7 +41,7 @@ figure description:
 source:
   bib: Kerner_2002_Measurement_2055
   curve: 1
-  doi: https://doi.org/10.1016/0022-0728(92)80223-Q
+  url: https://doi.org/10.1016/0022-0728(92)80223-Q
   figure: 6a
   techniques: EIS
   version: 1
