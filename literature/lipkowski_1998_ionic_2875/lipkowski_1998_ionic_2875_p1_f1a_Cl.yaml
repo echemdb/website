@@ -1,0 +1,43 @@
+# This file is part of echemdb (https://github.com/echemdb/website)
+curator:
+  digitized: 2021-10-21
+  name: Markus Schilling
+  orcid: https://orcid.org/0000-0003-2684-3711
+  version: 1
+electrochemical system:
+  electrodes:
+    configuration: 3
+    reference electrode:
+      type: SCE
+    working electrode:
+      crystallographic orientation: '111'
+      material: Au
+  electrolyte:
+    components:
+    - concentration:
+        unit: mol / l
+        value: 0.1
+      name: KClO4
+      type: salt
+    - name: water
+      type: solvent
+    - concentration:
+        unit: mmol / l
+        value: 1
+      name: KCl
+      type: salt
+    temperature:
+      unit: K
+      value: 298.15
+    type: aq
+  version: 1
+figure description:
+  comment: No information about counter electrode available.
+  version: 1
+source:
+  bib: lipkowski_1998_ionic_2875
+  curve: Cl
+  doi: https://doi.org/10.1016/S0013-4686(98)00028-0
+  figure: 1a
+  techniques: SHG, SXRD
+  version: 1
