@@ -34,6 +34,6 @@ figure description:
 source:
   bib: shi_1996_chloride_225
   curve: dotted
-  doi: 10.1016/0022-0728(92)80223-Q
+  doi: https:/doi.org/10.1016/0022-0728(92)80223-Q
   figure: 1
   version: 1

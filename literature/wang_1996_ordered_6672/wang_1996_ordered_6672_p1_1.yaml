@@ -33,7 +33,7 @@ figure description:
 source:
   bib: wang_1996_ordered_6672
   curve: solid
-  doi: 10.1021/jp952938y
+  doi: https:/doi.org/10.1021/jp952938y
   figure: 1
   techniques: SXRD
   version: 1

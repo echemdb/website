@@ -48,6 +48,6 @@ figure description:
 source:
   bib: li_2000_chronocoulometric_95
   curve: solid
-  doi: 10.1016/S0022-0728(00)00199-6
+  doi: https:/doi.org/10.1016/S0022-0728(00)00199-6
   figure: 1
   version: 1

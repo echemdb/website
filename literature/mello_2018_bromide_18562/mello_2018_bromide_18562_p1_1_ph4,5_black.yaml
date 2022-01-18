@@ -36,6 +36,6 @@ figure description:
 source:
   bib: mello_2018_bromide_18562
   curve: ph4,5_black
-  doi: 10.1021/acs.jpcc.8b05685
+  doi: https:/doi.org/10.1021/acs.jpcc.8b05685
   figure: 1
   version: 1

@@ -35,7 +35,7 @@ figure description:
 source:
   bib: zei_1991_the_295
   curve: NaBr
-  doi: 10.1016/0022-0728(91)85074-Y
+  doi: https:/doi.org/10.1016/0022-0728(91)85074-Y
   figure: 3b
   techniques: LEED, RHEED, AES
   version: 1

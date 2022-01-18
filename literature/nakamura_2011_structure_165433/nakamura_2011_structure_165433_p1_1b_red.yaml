@@ -40,7 +40,7 @@ figure description:
 source:
   bib: nakamura_2011_structure_165433
   curve: red
-  doi: 10.1103/PhysRevB.84.165433
+  doi: https:/doi.org/10.1103/PhysRevB.84.165433
   figure: 1b
   techniques: XAS
   version: 1

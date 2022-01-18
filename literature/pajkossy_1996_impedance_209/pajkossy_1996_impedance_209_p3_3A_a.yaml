@@ -50,7 +50,7 @@ figure description:
 source:
   bib: pajkossy_1996_impedance_209
   curve: a
-  doi: 10.1016/0022-0728(96)04700-6
+  doi: https:/doi.org/10.1016/0022-0728(96)04700-6
   figure: 3A
   techniques: EIS
   version: 1

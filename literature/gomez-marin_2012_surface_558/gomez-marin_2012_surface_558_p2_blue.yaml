@@ -36,6 +36,6 @@ figure description:
 source:
   bib: gomez-marin_2012_surface_558
   curve: blue
-  doi: 10.1016/j.electacta.2012.04.066
+  doi: https:/doi.org/10.1016/j.electacta.2012.04.066
   figure: 2
   version: 1
