@@ -35,7 +35,7 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="0.13603869"
-     inkscape:cx="2180.0091"
+     inkscape:cx="985.49598"
      inkscape:cy="4518.004"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
@@ -48,12 +48,12 @@
   <image
      sodipodi:absref="F:\Github\echemdb\website\literature\shi_1996_chloride_225\Shi_1996_Chloride_225_p1.png"
      xlink:href="Shi_1996_Chloride_225_p1.png"
-     id="image51"
-     y="0"
-     x="0"
-     width="5042px"
+     height="6726px"
      sodipodi:insensitive="true"
-     height="6726px" />
+     width="5042px"
+     x="0"
+     y="0"
+     id="image51" />
   <g
      id="g11011"
      transform="translate(-1.3324531,-0.65393309)">
@@ -138,21 +138,24 @@
        y="5120.7231">scan rate: 10 mV / s</tspan></text>
   <g
      id="g3521">
-    <text
-       xml:space="preserve"
-       style="font-size:85.3333px;line-height:1.25;font-family:sans-serif"
-       x="1783.2183"
-       y="4227.5967"
-       id="text12656"><tspan
-         sodipodi:role="line"
-         id="tspan12654"
+    <g
+       id="g839">
+      <text
+         id="text12656"
+         y="4227.5967"
          x="1783.2183"
-         y="4227.5967">curve: Au(111)_0.1M_KClO4</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1971.9374,4917.3636 7.8065,-36.7535 23.4466,-11.485 36.2872,-1.3804 39.5173,-5.5147 35.3719,-4.1344 53.2731,-3.2163 41.8055,-0.918 53.7577,-6.8883 40.8903,-12.403 33.5413,-17.4622 29.8534,-23.4257 18.8434,-23.4324 10.0948,-10.5671 10.5792,2.7608 10.5523,9.6422 3.688,16.5442 6.4337,8.7243 11.9521,3.6787 11.01,-6.4327 9.6639,-11.0294 8.2642,-7.8063 6.8913,5.9703 0.4576,55.5892 -2.2881,104.7457 -6.8913,16.5374 -11.9521,4.1412 -27.5653,-1.8428 -27.5652,2.2983 -15.1555,7.8131 -18.3859,-0.4624 -8.2642,-0.4556 -9.2064,4.1344 -12.3828,-11.0295 -23.9043,-22.97 -30.7685,-16.5374 -36.2871,-11.9474 -33.5414,-2.754 -39.0598,0.4556 -46.8663,-1.836 -38.5753,-0.918 -37.2292,2.754 -40.8902,1.3804 z"
-       id="path2881"
-       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccc" />
+         style="font-size:85.3333px;line-height:1.25;font-family:sans-serif"
+         xml:space="preserve"><tspan
+           y="4227.5967"
+           x="1783.2183"
+           id="tspan12654"
+           sodipodi:role="line">curve: Au(111)_0.1M_KClO4</tspan></text>
+      <path
+         sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccc"
+         id="path2881"
+         d="m 1971.9374,4917.3636 7.8065,-36.7535 23.4466,-11.485 36.2872,-1.3804 39.5173,-5.5147 35.3719,-4.1344 53.2731,-3.2163 41.8055,-0.918 53.7577,-6.8883 40.8903,-12.403 33.5413,-17.4622 29.8534,-23.4257 18.8434,-23.4324 10.0948,-10.5671 10.5792,2.7608 10.5523,9.6422 3.688,16.5442 6.4337,8.7243 11.9521,3.6787 11.01,-6.4327 9.6639,-11.0294 8.2642,-7.8063 6.8913,5.9703 0.4576,55.5892 -2.2881,104.7457 -6.8913,16.5374 -11.9521,4.1412 -27.5653,-1.8428 -27.5652,2.2983 -15.1555,7.8131 -18.3859,-0.4624 -8.2642,-0.4556 -9.2064,4.1344 -12.3828,-11.0295 -23.9043,-22.97 -30.7685,-16.5374 -36.2871,-11.9474 -33.5414,-2.754 -39.0598,0.4556 -46.8663,-1.836 -38.5753,-0.918 -37.2292,2.754 -40.8902,1.3804 z"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"

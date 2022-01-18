@@ -35,8 +35,8 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="0.19238775"
-     inkscape:cx="1616.527"
-     inkscape:cy="4735.2287"
+     inkscape:cx="771.87863"
+     inkscape:cy="3279.8346"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -48,12 +48,12 @@
   <image
      sodipodi:absref="F:\Github\echemdb\website\literature\shi_1996_chloride_225\Shi_1996_Chloride_225_p1.png"
      xlink:href="Shi_1996_Chloride_225_p1.png"
-     id="image51"
-     y="0"
-     x="0"
-     width="5042px"
+     height="6726px"
      sodipodi:insensitive="true"
-     height="6726px" />
+     width="5042px"
+     x="0"
+     y="0"
+     id="image51" />
   <g
      id="g11011"
      transform="translate(-1.3324531,-0.65393309)">
@@ -138,21 +138,24 @@
        y="5120.7231">scan rate: 10 mV / s</tspan></text>
   <g
      id="g4536">
-    <text
-       xml:space="preserve"
-       style="font-size:85.3333px;line-height:1.25;font-family:sans-serif"
-       x="1783.2183"
-       y="4227.5967"
-       id="text12656"><tspan
-         sodipodi:role="line"
-         id="tspan12654"
+    <g
+       id="g839">
+      <text
+         id="text12656"
+         y="4227.5967"
          x="1783.2183"
-         y="4227.5967">curve: Au(111)_0.1M_KClO4_1mM_KCl</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1972.7908,4923.9363 3.8831,-42.8704 29.8466,-11.6937 45.5309,-5.2122 46.7495,-5.1929 65.0227,-7.7894 67.5354,-6.5007 45.4551,-13.0016 24.7449,-25.9838 12.9438,-49.3712 7.8421,-83.1636 9.0607,-323.5573 7.7663,317.0565 3.959,23.3874 7.7663,13.0015 h 32.5112 l 41.5719,-1.3078 20.786,16.8865 18.1975,22.0988 13.0196,19.4831 14.2379,11.6937 h 15.6087 l 10.4309,-27.2725 9.0607,-115.6482 9.1365,135.1313 3.8832,15.5979 6.4719,5.193 v 165.0194 l -6.4719,45.4861 -3.8832,6.5008 -2.6649,49.3712 -6.4716,113.0517 -5.1775,-123.4376 -9.1368,-40.2932 -11.6492,-9.0971 -11.7256,5.2121 -23.3744,31.1768 -23.3747,29.8881 -19.4915,16.8866 -46.8256,-3.8851 h -20.786 l -12.9438,2.5964 -11.7253,11.6937 -7.7663,10.3859 -11.7252,-9.0973 -5.1776,18.1945 -9.1365,-57.1606 -10.355,-68.8734 -7.8422,-27.2918 -16.9031,-25.9838 -28.5519,-6.5007 -45.4551,-1.3079 -52.0031,-3.8851 -57.1803,-3.9043 h -32.5112 l -32.4354,3.9043 -23.3747,5.193 z"
-       id="path3749"
-       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+         style="font-size:85.3333px;line-height:1.25;font-family:sans-serif"
+         xml:space="preserve"><tspan
+           y="4227.5967"
+           x="1783.2183"
+           id="tspan12654"
+           sodipodi:role="line">curve: Au(111)_0.1M_KClO4_1mM_KCl</tspan></text>
+      <path
+         sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+         id="path3749"
+         d="m 1972.7908,4923.9363 3.8831,-42.8704 29.8466,-11.6937 45.5309,-5.2122 46.7495,-5.1929 65.0227,-7.7894 67.5354,-6.5007 45.4551,-13.0016 24.7449,-25.9838 12.9438,-49.3712 7.8421,-83.1636 9.0607,-323.5573 7.7663,317.0565 3.959,23.3874 7.7663,13.0015 h 32.5112 l 41.5719,-1.3078 20.786,16.8865 18.1975,22.0988 13.0196,19.4831 14.2379,11.6937 h 15.6087 l 10.4309,-27.2725 9.0607,-115.6482 9.1365,135.1313 3.8832,15.5979 6.4719,5.193 v 165.0194 l -6.4719,45.4861 -3.8832,6.5008 -2.6649,49.3712 -6.4716,113.0517 -5.1775,-123.4376 -9.1368,-40.2932 -11.6492,-9.0971 -11.7256,5.2121 -23.3744,31.1768 -23.3747,29.8881 -19.4915,16.8866 -46.8256,-3.8851 h -20.786 l -12.9438,2.5964 -11.7253,11.6937 -7.7663,10.3859 -11.7252,-9.0973 -5.1776,18.1945 -9.1365,-57.1606 -10.355,-68.8734 -7.8422,-27.2918 -16.9031,-25.9838 -28.5519,-6.5007 -45.4551,-1.3079 -52.0031,-3.8851 -57.1803,-3.9043 h -32.5112 l -32.4354,3.9043 -23.3747,5.193 z"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
