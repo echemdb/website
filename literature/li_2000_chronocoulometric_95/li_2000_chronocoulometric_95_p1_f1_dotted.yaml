@@ -1,0 +1,54 @@
+# This file is part of echemdb (https://github.com/echemdb/website)
+curator:
+  digitized: 2021-11-17
+  name: Markus Schilling
+  orcid: https://orcid.org/0000-0003-2684-3711
+  version: 1
+electrochemical system:
+  electrodes:
+    configuration: 3
+    counter electrode:
+      material: Pt
+      shape: coil
+    reference electrode:
+      type: SCE
+    working electrode:
+      crystallographic orientation: '111'
+      material: Pt
+      preparation procedure: A Pt single crystal bead was cut along the (111) orientation
+        (geometric area of the (111) surface 0.043 cm2 ). The electrode was annealed
+        in a hydrogen+air flame and then cooled down in a hydrogen atmosphere and
+        later quenched with ultrapure water, before each experiment
+  electrolyte:
+    components:
+    - concentration:
+        unit: mmol / l
+        value: 1
+      name: HClO4
+    - name: water
+      type: solvent
+    - concentration:
+        unit: mol / l
+        value: 0.1
+      name: KClO4
+    - concentration:
+        unit: mmol / l
+        value: 1
+      name: KCl
+    ph:
+      value: 3
+    temperature:
+      unit: K
+      value: 298.15
+    type: aq
+  version: 1
+figure description:
+  comment: The scan rate is not given in the publication. It was manually determined
+    from the charge integration as 20 mV / s.
+  version: 1
+source:
+  bib: li_2000_chronocoulometric_95
+  curve: dotted
+  doi: https://doi.org/10.1016/S0022-0728(00)00199-6
+  figure: 1
+  version: 1
