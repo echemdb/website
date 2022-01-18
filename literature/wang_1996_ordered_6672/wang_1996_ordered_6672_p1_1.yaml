@@ -27,7 +27,7 @@ electrochemical system:
     type: aq
   version: 1
 figure description:
-  comment: Focus on variation of counterion Cs+, K+, Na+, Li+
+  comment: Focus on variation of counterion Cs+, K+, Na+, Li+.
   linked measurements: XRD
   version: 1
 source:
@@ -35,4 +35,5 @@ source:
   curve: solid
   doi: 10.1021/jp952938y
   figure: 1
+  techniques: SXRD
   version: 1

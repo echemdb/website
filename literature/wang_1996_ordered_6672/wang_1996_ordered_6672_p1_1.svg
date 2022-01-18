@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    height="6601px"
    version="1.1"
    width="5100px"
    id="svg8903"
-   sodipodi:docname="Wang_1996_Ordered_6672_p1_1.svg"
-   inkscape:version="1.1.1 (eb90963e84, 2021-10-02)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   sodipodi:docname="wang_1996_ordered_6672_p1_1.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata28">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <sodipodi:namedview
      id="namedview8905"
      pagecolor="#ffffff"
@@ -20,25 +34,26 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="0.2930835"
-     inkscape:cx="1649.7005"
-     inkscape:cy="571.50948"
-     inkscape:window-width="1848"
-     inkscape:window-height="898"
-     inkscape:window-x="72"
-     inkscape:window-y="27"
+     inkscape:zoom="0.14654175"
+     inkscape:cx="1163.1694"
+     inkscape:cy="5209.9814"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="32"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg8903" />
   <defs
      id="defs8899" />
   <image
-     height="6601px"
-     sodipodi:insensitive="true"
-     width="5100px"
-     x="0"
+     sodipodi:absref="F:\Github\echemdb\website\literature\wang_1996_ordered_6672\Wang_1996_Ordered_6672_p1.png"
      xlink:href="Wang_1996_Ordered_6672_p1.png"
+     id="image8901"
      y="0"
-     id="image8901" />
+     x="0"
+     width="5100px"
+     sodipodi:insensitive="true"
+     height="6601px" />
   <text
      xml:space="preserve"
      style="font-size:85.3333px;line-height:1.25;font-family:sans-serif"
@@ -139,4 +154,14 @@
        id="path20059"
        sodipodi:nodetypes="cssssssssssssssssssssssssssssssssssscsssssssssssssssscssssssssssssssscssssssssssssssssssssssscssssssssssssssssscsssssssssssssssssssssssscssssssssssssc" />
   </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="156.95186"
+     y="97.733871"
+     id="text837"><tspan
+       sodipodi:role="line"
+       id="tspan835"
+       x="156.95186"
+       y="97.733871">Focus on variation of counterion Cs+, K+, Na+, Li+.</tspan></text>
 </svg>
