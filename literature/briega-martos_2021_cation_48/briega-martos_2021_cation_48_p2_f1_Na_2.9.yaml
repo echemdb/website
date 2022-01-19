@@ -11,8 +11,6 @@ electrochemical system:
       material: Pt
       shape: coiled wire
     reference electrode:
-      source:
-        supplier: none
       type: RHE
     working electrode:
       crystallographic orientation: '111'
@@ -38,7 +36,6 @@ electrochemical system:
           grade:
             value: 99.99
             unit: pct
-      sum formula: NaF
       type: salt
     - name: water
       source:
@@ -49,7 +46,6 @@ electrochemical system:
       name: HClO4
       source:
         supplier: Merck
-      sum formula: HClO4
       type: acid
     ph:
       value: 2.9

@@ -49,7 +49,6 @@ electrochemical system:
         supplier: Merck Suprapur
       type: base
     ph:
-      uncertainty: none
       value: 13
     temperature:
       unit: K
