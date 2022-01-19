@@ -43,7 +43,7 @@ The {{ entry.electrochemical_system.electrodes.working_electrode.material }}({{ 
 Preparation procedure not available.
 {% endif %}
 
-## Metdata
+## Metadata
 <details>
 <summary>Click to expand metadata (yaml).</summary>
 
