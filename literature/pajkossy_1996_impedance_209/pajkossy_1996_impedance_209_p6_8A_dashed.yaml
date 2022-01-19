@@ -4,7 +4,7 @@
 
 source:
     version: 1
-    doi: 10.1016/0022-0728(96)04700-6 #only the number without preceeding doix or https
+    url: https://doi.org/10.1016/0022-0728(96)04700-6 #only the number without preceeding doix or https
     bib: pajkossy_1996_impedance_209 # AuthorName_YYYY_FirstWordTitle_pageNr. No prepositions. Fingers crossed that there is no duplicate.
     figure: 8A # depending on the subfigure labels use 1, 1b, or 1_3
     curve: dashed # use a unique short description to identify the curve in the figure, i.e.. label, color, etc
