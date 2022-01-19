@@ -4,7 +4,7 @@
 
 source:
     version: 1
-    doi: 10.1149/2.0081815jes # only the number without preceeding doix or https
+    url: https://doi.org/10.1149/2.0081815jes # only the number without preceeding doix or https
     bib: mello_2018_understanding_J3045 # AuthorName_YYYY_FirstWordTitle_pageNr. No prepositions. Fingers crossed that there is no duplicate.
     figure: 1 # depending on the subfigure labels use 1, 1b, or 1_3
     curve: C_blue # use a unique short description to identify the curve in the figure, i.e.. label, color, etc
