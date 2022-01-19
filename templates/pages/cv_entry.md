@@ -10,11 +10,7 @@ at a scan rate of
 from Figure 
 {{ entry.source.figure }} 
 in 
-{% if entry.source.doi is defined %}
-[{{ entry.citation('md') }}](https://doi.org/{{ entry.source.doi }}).
-{% elif entry.source.url is defined %}
 [{{ entry.citation('md') }}]({{ entry.source.url }}).
-{% endif %}
 
 <!-- TODO: It would be great if we could toggle between SI and original units. See #31. -->
 <!-- TODO: Format plots. See #31. -->
