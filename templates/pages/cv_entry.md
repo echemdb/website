@@ -12,28 +12,15 @@ from Figure
 in 
 [{{ entry.citation('md') }}]({{ entry.source.url }}).
 
-<!-- TODO: It would be great if we could toggle between SI and original units. See #31. -->
-<!-- TODO: Format plots. See #31. -->
+<!-- TODO: It would be great if we could toggle between SI and original units. See #104. -->
+<!-- TODO: Format plots. See #104. -->
 {{ entry.plot(xunit='original', yunit='original')._repr_html_() }}
 
-**Figure notes:**  
-The figure shows {{ entry.figure_description.type }} data.
-{% if entry.figure_description.comment %}
-Note from the curator: {{ entry.figure_description.comment }}
-{% endif %}
-<details>
-<summary>Click to expand complete figure metadata (yaml).</summary>
 
-```yaml
-{{ entry.figure_description.yaml }}
-```
-</details>
-
-<!-- TODO: Make download link work, i.e., build .zip package and link to it here. See #31. 
+<!-- TODO: Make download link work, i.e., build .zip package and link to it here. See #104. 
 [Download datapackage with ID-XXXXXXXX](#TODO)
 -->
 
-<!-- TODO: Style this section. See #31. -->
 ## Further information
 **Preparation procedure**
 {% if entry.electrochemical_system.electrodes.working_electrode.preparation_procedure is defined %}
@@ -43,25 +30,51 @@ The {{ entry.electrochemical_system.electrodes.working_electrode.material }}({{ 
 Preparation procedure not available.
 {% endif %}
 
+**Figure note**  
+The figure shows {{ entry.figure_description.type }} data.
+
+{% if entry.figure_description.comment %}
+**Comment left by the curator on the published figure**
+Note from the curator: {{ entry.figure_description.comment }}
+{% endif %}
+
 ## Metadata
+Details on the electrochemical system:
 <details>
-<summary>Click to expand metadata (yaml).</summary>
+<summary>Click to expand (yaml)</summary>
 
 ```yaml
 {{ entry.electrochemical_system.yaml }}
 ```
 </details>
 
-## Bibliography
+Bibtex citation key:
 <details>
-<summary>Bibliography (bibtex). Click to expand.</summary>
+<summary>Click to expand (bibtex)</summary>
 
 ```bibtex
 {{ entry.bibliography.to_string('bibtex') }}
 ```
 </details>
 
+Details about the original figure in the publicaton:
+<details>
+<summary>Click to expand (yaml).</summary>
+
+```yaml
+{{ entry.figure_description.yaml }}
+```
+</details>
+
+Details about the curators of this entry:
+<details>
+<summary>Click to expand (yaml).</summary>
+
+```yaml
+{{ entry.curator.yaml }}
+```
+</details>
 
 ----
 
-<!-- TODO: Insert links to other data which are plotted in the same figure and/or even add a plot with all data from that figure. See #31 -->
+<!-- TODO: Insert links to other data which are plotted in the same figure and/or even add a plot with all data from that figure. See #104 -->
