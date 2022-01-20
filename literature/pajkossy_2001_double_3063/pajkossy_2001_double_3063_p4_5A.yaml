@@ -4,7 +4,7 @@
 
 source:
     version: 1
-    doi: 10.1016/S0013-4686(01)00597-7 # only the number without preceeding doix or https
+    url: https://doi.org/10.1016/S0013-4686(01)00597-7 # only the number without preceeding doix or https
     bib: pajkossy_2001_double_3063 # AuthorName_YYYY_FirstWordTitle_pageNr. No prepositions. Fingers crossed that there is no duplicate.
     figure: 5 # depending on the subfigure labels use 1, 1b, or 1_3
     curve: A # use a unique short description to identify the curve in the figure, i.e.. label, color, etc

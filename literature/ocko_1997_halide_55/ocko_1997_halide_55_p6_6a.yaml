@@ -4,7 +4,7 @@
 
 source:
     version: 1
-    doi: 10.1557/PROC-451-55 #only the number without preceeding doix or https
+    url: https://doi.org/10.1557/PROC-451-55 #only the number without preceeding doix or https
     bib: Ocko_1997_Halide_55 # AuthorName_YYYY_FirstWordTitle_pageNr. No prepositions. Fingers crossed that there is no duplicate.
     figure: 6a # depending on the subfigure labels use 1, 1b, or 1_3
     curve: 0.05 M NaBr # use a unique short description to identify the curve in the figure, i.e.. label, color, etc

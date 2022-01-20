@@ -2,16 +2,15 @@
 <small>echemdb identifier: `{{ entry.identifier }}`</small>  
 
 A cyclic voltammogramm for 
-{{ entry.electrochemical_system.electrodes.working_electrode.material }}
-({{ entry.electrochemical_system.electrodes.working_electrode.crystallographic_orientation }}) 
+{{ entry.electrochemical_system.electrodes.working_electrode.material }}({{ entry.electrochemical_system.electrodes.working_electrode.crystallographic_orientation }}) 
 recorded in 
 {{ entry.electrochemical_system.electrolyte | render("components/electrolyte.md") }}
 at a scan rate of 
 {{ entry.figure_description.scan_rate | render }}
 from Figure 
-{{entry.source.figure }} 
+{{ entry.source.figure }} 
 in 
-[N. Author *et al.*, *Journal Name*, **Volume** (YEAR) Page, "TITLE"](https://doi.org/10.1039/C0CP01001D).
+[{{ entry.citation('md') }}]({{ entry.source.url }}).
 
 <!-- TODO: It would be great if we could toggle between SI and original units. See #31. -->
 <!-- TODO: Format plots. See #31. -->
@@ -44,7 +43,7 @@ The {{ entry.electrochemical_system.electrodes.working_electrode.material }}({{ 
 Preparation procedure not available.
 {% endif %}
 
-## Metdata
+## Metadata
 <details>
 <summary>Click to expand metadata (yaml).</summary>
 

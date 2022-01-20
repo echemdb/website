@@ -4,7 +4,11 @@
 
 source:
     version: 1
+<<<<<<< HEAD
     doi: 10.1039/C0CP01001D
+=======
+    url: https://doi.org/10.1039/C0CP01001D
+>>>>>>> origin/main
     bib: alves_2011_electrochemistry_6010 # AuthorName_YYYY_FirstWordTitle_pageNr. No prepositions. Fingers crossed that there is no duplicate.
     figure: 2a # depending on the subfigure labels use 1, 1b, or 1_3
     curve: solid # use a unique short description to identify the curve in the figure, i.e.. label, color, etc
