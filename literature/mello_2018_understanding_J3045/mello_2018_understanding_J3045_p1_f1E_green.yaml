@@ -41,12 +41,11 @@ electrochemical system:
       value: 298.15
     type: aq
   version: 1
-figure description:
-  version: 1
 source:
   bib: mello_2018_understanding_J3045
   curve: E_green
-  doi: https://doi.org/10.1149/2.0081815jes
+  url: https://doi.org/10.1149/2.0081815jes
   figure: 1e
   techniques: ORR
   version: 1
+version: 1

@@ -34,14 +34,11 @@ electrochemical system:
       value: 298.15
     type: aq
   version: 1
-figure description:
-  comment: For CV with KI, KClO4 is used instead of HClO4 (as for KCl, BrCl).
-  linked measurements: EIS
-  version: 1
 source:
   bib: kerner_2002_measurement_2055
   curve: thin
-  doi: https://doi.org/10.1016/0022-0728(92)80223-Q
+  url: https://doi.org/10.1016/0022-0728(92)80223-Q
   figure: 5a
   techniques: EIS
   version: 1
+version: 1

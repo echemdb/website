@@ -31,12 +31,10 @@ electrochemical system:
       value: 298.15
     type: aq
   version: 1
-figure description:
-  comment: CV was obtained before cycling between 0.2 V and 0.5 V.
-  version: 1
 source:
   bib: jovic_1999_cyclic_247
   curve: solid
-  doi: https://doi.org/10.1016/S1388-2481(99)00049-1
+  url: https://doi.org/10.1016/S1388-2481(99)00049-1
   figure: 6
   version: 1
+version: 1

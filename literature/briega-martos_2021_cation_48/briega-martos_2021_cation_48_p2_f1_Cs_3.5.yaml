@@ -35,9 +35,9 @@ electrochemical system:
       source:
         supplier: Alfa Aesar Puratronic
         supplied purity:
-            grade: 
-                value: 99.99
-                unit: pct
+          grade:
+            value: 99.99
+            unit: pct
       type: salt
     - name: water
       source:
@@ -59,6 +59,6 @@ electrochemical system:
 source:
   bib: briega-martos_2021_cation_48
   curve: First cycle
-  doi: https://doi.org/10.1021/acsmeasuresciau.1c00004
+  url: https://doi.org/10.1021/acsmeasuresciau.1c00004
   figure: 1
 version: 1

@@ -26,14 +26,11 @@ electrochemical system:
       value: 298.15
     type: aq
   version: 1
-figure description:
-  comment: Ag is compared to Au, but CV is shown only for Ag(100).
-  linked measurements: Synchrotron XRD
-  version: 1
 source:
   bib: ocko_1997_halide_55
   curve: 0.05 M NaBr
-  doi: https://doi.org/10.1557/PROC-451-55
+  url: https://doi.org/10.1557/PROC-451-55
   figure: 6a
   techniques: SXRD
   version: 1
+version: 1
