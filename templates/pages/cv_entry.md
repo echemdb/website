@@ -22,19 +22,18 @@ in
 -->
 
 ## Further information
-**Preparation procedure**
+The figure shows {{ entry.figure_description.type }} data.
+
 {% if entry.electrochemical_system.electrodes.working_electrode.preparation_procedure is defined %}
+**Preparation procedure**  
 The {{ entry.electrochemical_system.electrodes.working_electrode.material }}({{ entry.electrochemical_system.electrodes.working_electrode.crystallographic_orientation }}) electrode was prepared by:  
 {{ entry.electrochemical_system.electrodes.working_electrode.preparation_procedure }}
 {% else %}
 Preparation procedure not available.
 {% endif %}
 
-**Figure note**  
-The figure shows {{ entry.figure_description.type }} data.
-
 {% if entry.figure_description.comment %}
-**Comment left by the curator on the published figure**
+**Comment left by the curator on the published figure**  
 Note from the curator: {{ entry.figure_description.comment }}
 {% endif %}
 
