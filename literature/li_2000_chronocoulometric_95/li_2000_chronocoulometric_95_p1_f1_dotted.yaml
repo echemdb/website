@@ -20,16 +20,19 @@ electrochemical system:
         unit: mmol / l
         value: 1
       name: HClO4
+      type: acid
     - name: water
       type: solvent
     - concentration:
         unit: mol / l
         value: 0.1
       name: KClO4
+      type: salt
     - concentration:
         unit: mmol / l
         value: 1
       name: KCl
+      type: salt
     ph:
       value: 3
     temperature:

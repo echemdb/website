@@ -19,6 +19,7 @@ electrochemical system:
         unit: mol / l
         value: 0.022
       name: HClO4
+      type: acid
     - name: water
       type: solvent
     temperature:

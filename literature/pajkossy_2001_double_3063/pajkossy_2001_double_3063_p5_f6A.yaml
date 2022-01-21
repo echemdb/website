@@ -20,6 +20,7 @@ electrochemical system:
         unit: mol / l
         value: 0.1
       name: NaF
+      type: salt
     - name: water
       type: solvent
     temperature:

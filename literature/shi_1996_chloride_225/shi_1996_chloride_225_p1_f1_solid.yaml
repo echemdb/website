@@ -17,6 +17,7 @@ electrochemical system:
         unit: mol / l
         value: 0.1
       name: KClO4
+      type: salt
     - name: water
       type: solvent
     - concentration:

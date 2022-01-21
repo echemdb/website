@@ -19,6 +19,7 @@ electrochemical system:
         unit: mmol / l
         value: 10
       name: NaBr
+      type: salt
     - name: water
       type: solvent
     - concentration:

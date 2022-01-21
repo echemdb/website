@@ -20,6 +20,7 @@ electrochemical system:
         unit: mol / l
         value: 0.1
       name: CsBr
+      type: salt
     - name: water
       type: solvent
     - concentration:

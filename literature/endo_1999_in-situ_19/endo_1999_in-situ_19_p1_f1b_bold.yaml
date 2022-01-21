@@ -19,6 +19,7 @@ electrochemical system:
         unit: uM
         value: 50
       name: NaBr
+      type: salt
     - name: water
       type: solvent
     - concentration:
