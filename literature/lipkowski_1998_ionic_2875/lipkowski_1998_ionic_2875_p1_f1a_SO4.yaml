@@ -32,7 +32,7 @@ electrochemical system:
     type: aq
   version: 1
 source:
-  bib: lipkowski_1998_ionic_2875
+  citation key: lipkowski_1998_ionic_2875
   curve: SO4
   url: https://doi.org/10.1016/S0013-4686(98)00028-0
   figure: 1a

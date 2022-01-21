@@ -37,7 +37,7 @@ electrochemical system:
     type: aq
   version: 1
 source:
-  bib: mello_2018_understanding_J3045
+  citation key: mello_2018_understanding_J3045
   curve: A_red
   url: https://doi.org/10.1149/2.0081815jes
   figure: 1a

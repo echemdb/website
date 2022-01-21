@@ -35,7 +35,7 @@ electrochemical system:
     type: aq
   version: 1
 source:
-  bib: shi_1996_chloride_225
+  citation key: shi_1996_chloride_225
   curve: solid
   url: https://doi.org/10.1016/0022-0728(92)80223-Q
   figure: 1

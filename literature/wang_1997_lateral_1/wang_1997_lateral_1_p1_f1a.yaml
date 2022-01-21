@@ -31,7 +31,7 @@ electrochemical system:
     type: aq
   version: 1
 source:
-  bib: wang_1997_lateral_1
+  citation key: wang_1997_lateral_1
   curve: top
   figure: 1a
   url: https://www.osti.gov/biblio/537264

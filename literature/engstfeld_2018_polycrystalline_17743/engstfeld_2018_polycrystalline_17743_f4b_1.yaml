@@ -59,7 +59,7 @@ electrochemical system:
     type: potentiostat
   version: 1
 source:
-  bib: engstfeld_2018_polycrystalline_17743
+  citation key: engstfeld_2018_polycrystalline_17743
   curve: 1
   url: https://doi.org/10.1002/chem.201803418
   figure: 4b

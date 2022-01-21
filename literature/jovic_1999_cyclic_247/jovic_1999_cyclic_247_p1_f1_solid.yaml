@@ -32,7 +32,7 @@ electrochemical system:
     type: aq
   version: 1
 source:
-  bib: jovic_1999_cyclic_247
+  citation key: jovic_1999_cyclic_247
   curve: dashed
   url: https://doi.org/10.1016/S1388-2481(99)00049-1
   figure: 1

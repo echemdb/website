@@ -35,7 +35,7 @@ electrochemical system:
     type: aq
   version: 1
 source:
-  bib: kerner_2002_measurement_2055
+  citation key: kerner_2002_measurement_2055
   curve: 2
   url: https://doi.org/10.1016/0022-0728(92)80223-Q
   figure: 6a

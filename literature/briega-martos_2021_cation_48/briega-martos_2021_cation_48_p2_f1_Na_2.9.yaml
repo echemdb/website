@@ -54,7 +54,7 @@ electrochemical system:
       value: 298.15
     type: aq
 source:
-  bib: briega-martos_2021_cation_48
+  citation key: briega-martos_2021_cation_48
   curve: First cycle
   url: https://doi.org/10.1021/acsmeasuresciau.1c00004
   figure: 1

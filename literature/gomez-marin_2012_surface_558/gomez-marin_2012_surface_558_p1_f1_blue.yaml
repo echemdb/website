@@ -34,7 +34,7 @@ electrochemical system:
     type: aq
   version: 1
 source:
-  bib: gomez-marin_2012_surface_558
+  citation key: gomez-marin_2012_surface_558
   curve: blue
   url: https://doi.org/10.1016/j.electacta.2012.04.066
   figure: 1

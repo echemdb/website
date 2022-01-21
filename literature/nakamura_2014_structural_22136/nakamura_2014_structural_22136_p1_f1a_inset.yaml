@@ -39,7 +39,7 @@ electrochemical system:
       value: 298.15
   version: 1
 source:
-  bib: nakamura_2014_structural_22136
+  citation key: nakamura_2014_structural_22136
   curve: inset
   url: https://doi.org/10.1021/jp506979p
   figure: 1a

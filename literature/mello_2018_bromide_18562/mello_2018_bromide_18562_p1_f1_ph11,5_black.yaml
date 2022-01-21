@@ -31,7 +31,7 @@ electrochemical system:
     type: aq
   version: 1
 source:
-  bib: mello_2018_bromide_18562
+  citation key: mello_2018_bromide_18562
   curve: ph11,5_black
   url: https://doi.org/10.1021/acs.jpcc.8b05685
   figure: 1

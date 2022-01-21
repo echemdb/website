@@ -39,7 +39,7 @@ electrochemical system:
     type: aq
   version: 1
 source:
-  bib: pajkossy_1996_impedance_209
+  citation key: pajkossy_1996_impedance_209
   curve: dashed
   url: https://doi.org/10.1016/0022-0728(96)04700-6
   figure: 8A

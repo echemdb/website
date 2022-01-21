@@ -27,7 +27,7 @@ electrochemical system:
     type: aq
   version: 1
 source:
-  bib: ocko_1997_halide_55
+  citation key: ocko_1997_halide_55
   curve: 0.05 M NaBr
   url: https://doi.org/10.1557/PROC-451-55
   figure: 6a

@@ -33,7 +33,7 @@ electrochemical system:
     type: aq
   version: 1
 source:
-  bib: pajkossy_2001_double_3063
+  citation key: pajkossy_2001_double_3063
   curve: A
   url: https://doi.org/10.1016/S0013-4686(01)00597-7
   figure: 5a

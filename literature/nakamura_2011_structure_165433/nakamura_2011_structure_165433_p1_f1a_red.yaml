@@ -36,7 +36,7 @@ electrochemical system:
     type: aq
   version: 1
 source:
-  bib: nakamura_2011_structure_165433
+  citation key: nakamura_2011_structure_165433
   curve: red
   url: https://doi.org/10.1103/PhysRevB.84.165433
   figure: 1a

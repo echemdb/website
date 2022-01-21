@@ -27,7 +27,7 @@ electrochemical system:
     type: aq
   version: 1
 source:
-  bib: wang_1996_ordered_6672
+  citation key: wang_1996_ordered_6672
   url: https://doi.org/10.1021/jp952938y
   figure: 2a
   techniques: SXRD
