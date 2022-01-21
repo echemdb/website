@@ -1,9 +1,4 @@
 # This file is part of echemdb (https://github.com/echemdb/website)
-curator:
-  digitized: 2021-10-18
-  name: Markus Schilling
-  orcid: https://orcid.org/0000-0003-2684-3711
-  version: 1
 electrochemical system:
   electrodes:
     configuration: 3
@@ -38,3 +33,14 @@ source:
   figure: 7
   version: 1
 version: 1
+curation:
+  version: 1
+  process:
+  - role: curator
+    name: Markus Schilling
+    orcid: https://orcid.org/0000-0003-2684-3711
+    date: 2021-10-18
+  - role: reviewer
+    name: Albert Engstfeld
+    orcid: https://orcid.org/0000-0002-9686-3948
+    date: '2022-01-21'

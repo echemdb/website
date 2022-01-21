@@ -1,8 +1,4 @@
 # This file is part of echemdb (https://github.com/echemdb/website)
-curator:
-  digitized: 2021-09-21
-  name: Nicolas Hoermann
-  orcid: https://orcid.org/0000-0001-6944-5575
 electrochemical system:
   electrodes:
     configuration: three
@@ -59,3 +55,14 @@ source:
   url: https://doi.org/10.1021/acsmeasuresciau.1c00004
   figure: 1
 version: 1
+curation:
+  version: 1
+  process:
+  - role: curator
+    name: Nicolas Hoermann
+    orcid: https://orcid.org/0000-0001-6944-5575
+    date: 2021-09-21
+  - role: reviewer
+    name: Albert Engstfeld
+    orcid: https://orcid.org/0000-0002-9686-3948
+    date: '2022-01-21'
