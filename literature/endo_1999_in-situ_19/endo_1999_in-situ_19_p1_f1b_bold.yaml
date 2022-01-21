@@ -16,7 +16,7 @@ electrochemical system:
   electrolyte:
     components:
     - concentration:
-        unit: uM
+        unit: umol / l
         value: 50
       name: NaBr
       type: salt
