@@ -26,6 +26,7 @@ electrochemical system:
   version: 1
 source:
   citation key: kerner_2002_measurement_2055
+  curve: solid
   url: https://doi.org/10.1016/0022-0728(92)80223-Q
   figure: 2a
   techniques: EIS

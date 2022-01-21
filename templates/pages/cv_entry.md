@@ -70,7 +70,7 @@ Details about the curators of this entry:
 <summary>Click to expand (yaml).</summary>
 
 ```yaml
-{{ entry.curator.yaml }}
+{{ entry.curation.yaml }}
 ```
 </details>
 
