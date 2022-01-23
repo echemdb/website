@@ -65,6 +65,7 @@ Details about the original figure in the publicaton:
 ```
 </details>
 
+
 Details about the curation process of this entry:
 <details>
 <summary>Click to expand (yaml).</summary>
