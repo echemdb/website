@@ -175,7 +175,7 @@ class Entry:
 
     def x(self):
         r"""
-        Return the name of the variable on the x-axis, i.e., `"E"`.
+        Return the name of the variable on the x-axis, i.e., ``"E"``.
 
         EXAMPLES::
 
@@ -186,17 +186,16 @@ class Entry:
         """
         from astropy import units as u
 
-        if not self.data_description.axes:
-            raise ValueError(f"No axes were specified for the dataset.")
-        if 'E' in self.data_description.axes._descriptor.keys():
-            assert u.Unit(self.data_description.axes.E.unit).is_equivalent('V'), f"The variable on the x-axis is not equivalent to 'V'."
-            return 'E'
-        else:
-            raise ValueError(f"None of the axes has a variable 'E'.")
+        axis = getattr(self.data_description, 'axes', {})['E']
+
+        if not u.Unit(axis.unit).is_equivalent('V'):
+            raise ValueError("The variable on the x-axis denoted as 'E', is not convertible to 'V'.")
+        
+        return 'E'
 
     def y(self):
         r"""
-        Return the name of the variable on the y-axis, i.e., `"j"` or `"I"`.
+        Return the name of the variable on the y-axis, i.e., ``"j"`` or ``"I"``.
 
         EXAMPLES::
 
@@ -207,14 +206,24 @@ class Entry:
         """
         from astropy import units as u
 
-        if self.data_description.axes.I:
-            assert u.Unit(self.data_description.axes.I.unit).is_equivalent('A'), f"The variable on the x-axis is not equivalent to 'A'."
-            return 'I'
-        if self.data_description.axes.j:
-            assert u.Unit(self.data_description.axes.j.unit).is_equivalent('A / m2'), f"The variable on the x-axis is not equivalent to 'A / m2'."
-            return 'j'
-        else:
-            raise ValueError(f"None of the axes has a variable 'I' or 'j'.")
+        axes = getattr(self.data_description, 'axes', {})
+
+        variables = [variable for variable in dir(axes) if variable in ['I', 'j']]
+
+        if len(variables) != 1:
+            raise KeyError("Exactly one of the axes must have variable 'I' or 'j'.")
+
+        variable = variables[0]
+
+        if variable == 'I':
+            if not u.Unit(axes[variable].unit).is_equivalent('A'):
+                raise Exception("Unit on I axis must be convertible to A.")
+
+        if variable == 'j':
+            if not u.Unit(axes[variable].unit).is_equivalent('A / m2'):
+                raise Exception("Unit on j axis must be convertible to A / m².")
+
+        return variable
 
     def x_unit(self, xunit=None):
         r"""
@@ -365,9 +374,9 @@ class Entry:
             >>> entry.plot(xunit='original', yunit='original')
             Figure(...)
 
-        The plot can also be returned with custum axis units, where 
-        `xunit` should be equivalents to `V` and 
-        yunit equivalnts to `A` or `A / m2`.::
+        The plot can also be returned with custom axis units, where 
+        `xunit` should be convertible to `V` and 
+        `yunit` convertible to `A` or `A / m2`.::
 
             >>> entry = Entry.create_examples()[0]
             >>> entry.plot(xunit='mV', yunit='uA / cm2')
