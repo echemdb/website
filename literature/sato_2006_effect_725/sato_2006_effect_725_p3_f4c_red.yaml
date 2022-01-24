@@ -6,10 +6,11 @@ source:
     figure: 4c
     curve: red
     
-curator:
-    name: Johannes M. Hermann
-    orcid:  https://orcid.org/0000-0001-7119-1295 
-    digitized: 2021-10-11
+curation:
+    - role: curator
+      name: Johannes M. Hermann
+      orcid: https://orcid.org/0000-0001-7119-1295
+      date: 2021-10-11
     
 figure description:
     linked measurements: null
@@ -28,12 +29,10 @@ electrochemical system:
               source:
                   refinement: Milli-Q SP-TOC
                   quality: ultrapure water
-                  resistance:
-                      value: 18.2
-                      unit: MOhm cm
-                  total organic carbon: 
-                      value: none
-                      unit: none
+              purity:
+                resistance:
+                    value: 18.2
+                    unit: MOhm cm
             - name: sulfuric acid
               sum formula: H2SO4
               type: acid
@@ -48,7 +47,7 @@ electrochemical system:
             estimated value (CurTiPot): -1.1
             uncertainty: none
         temperature:
-            value: 273.15
+            value: 20
             unit: C
     electrodes:
         configuration: three
@@ -61,7 +60,7 @@ electrochemical system:
             shape: not given
         working electrode:
             material: Au
-            crystallographic orientation: 111
+            crystallographic orientation: '111'
             source:
                 supplier: homemade
             shape:

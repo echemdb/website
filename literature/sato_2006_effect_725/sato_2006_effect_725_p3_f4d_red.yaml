@@ -1,15 +1,18 @@
+# This file is part of echemdb (https://github.com/echemdb/website)
+# Details on the meta data structure can be found on https://github.com/echemdb/metadata-schema
 version: 1
 
 source: 
     doi: https://doi.org/10.1016/j.elecom.2006.03.001
     bib: sato_2006_effect_725
-    figure: 4b
+    figure: 4d
     curve: red
     
-curator:
-    name: Johannes M. Hermann
-    orcid:  https://orcid.org/0000-0001-7119-1295 
-    digitized: 2021-10-11
+curation:
+    - role: curator
+      name: Johannes M. Hermann
+      orcid: https://orcid.org/0000-0001-7119-1295
+      date: 2021-10-11
     
 figure description:
     linked measurements: null
@@ -26,28 +29,25 @@ electrochemical system:
                   value: 100
                   unit: volume percent
               source:
-                  refinement: Milli-Q SP-TOC
+                  refinement: Millipore Milli-Q
                   quality: ultrapure water
-                  resistance:
-                      value: 18.2
-                      unit: MOhm cm
-                  total organic carbon: 
-                      value: none
-                      unit: none
-            - name: sulfuric acid
-              sum formula: H2SO4
+              purity:
+                resistance:
+                    value: 18.2
+                    unit: MOhm cm
+            - name: H2SO4
               type: acid
               source:
-                  supplier: Merck Suprapur
-                  LOT: null
+                  supplier: Cica-Merck
+                  grade: ultrapur
               concentration:
-                  value: 2.5
+                  value: 7.5
                   unit: M
         pH: 
-            estimated value (CurTiPot): -0.5
+            estimated value (CurTiPot): -1.5
             uncertainty: none
         temperature:
-            value: 273.15
+            value: 20
             unit: C
     electrodes:
         configuration: three
@@ -60,7 +60,7 @@ electrochemical system:
             shape: not given
         working electrode:
             material: Au
-            crystallographic orientation: 111
+            crystallographic orientation: '111'
             source:
                 supplier: homemade
             shape:

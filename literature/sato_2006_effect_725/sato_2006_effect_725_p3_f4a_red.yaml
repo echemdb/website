@@ -3,18 +3,15 @@ version: 1
 source: 
     doi: https://doi.org/10.1016/j.elecom.2006.03.001
     bib: sato_2006_effect_725
-    figure: 4d
+    figure: 4a
     curve: red
     
-curator:
-    name: Johannes M. Hermann
-    orcid:  https://orcid.org/0000-0001-7119-1295 
-    digitized: 2021-10-11
+curation:
+    - role: curator
+      name: Johannes M. Hermann
+      orcid: https://orcid.org/0000-0001-7119-1295
+      date: 2021-10-11
     
-figure description:
-    linked measurements: null
-    comment:
-
 electrochemical system:
     electrolyte:
         type: aq
@@ -26,14 +23,12 @@ electrochemical system:
                   value: 100
                   unit: volume percent
               source:
-                  refinement: Millipore Milli-Q
+                  refinement: Milli-Q SP-TOC
                   quality: ultrapure water
-                  resistance:
-                      value: 18.2
-                      unit: MOhm cm
-                  total organic carbon: 
-                      value: none
-                      unit: none
+              purity:
+                resistance:
+                    value: 18.2
+                    unit: MOhm cm
             - name: sulfuric acid
               sum formula: H2SO4
               type: acid
@@ -42,26 +37,26 @@ electrochemical system:
                   grade: ultrapur
                   LOT: null
               concentration:
-                  value: 7.5
+                  value: 1.0
                   unit: M
         pH: 
-            estimated value (CurTiPot): -1.5
+            estimated value (CurTiPot): 0.1
             uncertainty: none
         temperature:
-            value: 273.15
+            value: 20
             unit: C
     electrodes:
         configuration: three
         reference electrode:
             type: Ag/AgCl-sat
             source:
-                supplier: not given
+                supplier: (not given)
         counter electrode:
             material: not given
             shape: not given
         working electrode:
             material: Au
-            crystallographic orientation: 111
+            crystallographic orientation: '111'
             source:
                 supplier: homemade
             shape:
