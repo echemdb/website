@@ -65,12 +65,13 @@ Details about the original figure in the publicaton:
 ```
 </details>
 
-Details about the curators of this entry:
+
+Details about the curation process of this entry:
 <details>
 <summary>Click to expand (yaml).</summary>
 
 ```yaml
-{{ entry.curator.yaml }}
+{{ entry.curation.yaml }}
 ```
 </details>
 
