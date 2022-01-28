@@ -1,31 +1,17 @@
 site_name: echemdb.org
-nav:
-    - Home: index.md
-    - CV:
-      - cv/index.md
-      - Periodic Table: cv/periodic__table.md
-      #- Cu: cv/elements/Cu.md
-      - Systems: cv/systems.md
-      - Apps: cv/apps.md
-      - Data Standardization: cv/data__standardization.md
-    - 'About' : about.md
+site_dir: generated/website
+docs_dir: pages
 theme:
-    name: material
-    palette:
-      scheme: default
-      primary: black
-      accent: lime
-    features:
-      - navigation.tabs
-      - navigation.indexes
-      - navigation.tabs.sticky
-      - toc.integrate
-    #     toggle:
-    #       icon: material/toggle-switch-off-outline
-    #       name: Switch to dark mode
-    #Good is flatly or sandstone then dash app can be in same styling
-    # materials theme makes problems with css restyling why?!
-    # material
+  name: material
+  palette:
+    scheme: default
+    primary: black
+    accent: lime
+  features:
+  - navigation.tabs
+  - navigation.indexes
+  - navigation.tabs.sticky
+  - toc.integrate
 
 extra_css:
   - stylesheets/extra.css
@@ -33,11 +19,14 @@ extra_css:
 plugins:
   - search
   - macros:
-      module_name: echemdb
+      modules:
+      - echemdb.website.macros.legacy
   - gen-files:
       scripts:
-        - gen_pages.py
+      - echemdb/website/generator/__main__.py
   - section-index
+  - literate-nav:
+      nav_file: NAVIGATION.md
 
 markdown_extensions:
   - extra
@@ -50,23 +39,19 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - markdown_include.include:
-      base_path: docs
+      base_path: pages
   - attr_list
   - pymdownx.arithmatex:
-        generic: true
+      generic: true
   - pymdownx.details
   - pymdownx.superfences
   - footnotes
   - pymdownx.highlight
   - pymdownx.magiclink
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tasklist:
-        custom_checkbox: true
-#   - abbr
-#   - pymdownx.caret
-#   - pymdownx.inlinehilite
-#   - pymdownx.critic
-#   - pymdownx.smartsymbols
+      custom_checkbox: true
 
 extra_javascript:
   - javascripts/config.js

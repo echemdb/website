@@ -3,20 +3,32 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - mkdocs
-  - pip
-  - pandas
+  - astropy
+  - filelock
+  - inflect
   - matplotlib
+  - mkdocs
+  - pandas
+  - parallel
+  - pip
   - plotly
+  - pip
+  - pybtex
+  - pytest
+  - pytest-doctestplus
+  - pytest-xdist
+  - pytest-remotedata
+  - pyyaml
   - pip:
+    - linkchecker
     - mkdocs-material
     - mkdocs-gen-files
+    - mkdocs-literate-nav
     - markdown-include
     - mdutils
     - mkdocs-section-index
     - mkdocs-macros-plugin
-    - python-frontmatter
     - tabulate
     - datapackage
     - python-frontmatter
-
+    - svgdigitizer >=0.2.0,<0.3.0

@@ -1,3 +1,6 @@
+# Digitized data
+/data/generated
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -119,7 +122,7 @@ venv.bak/
 .ropeproject
 
 # mkdocs documentation
-/site
+/generated
 
 # mypy
 .mypy_cache/
