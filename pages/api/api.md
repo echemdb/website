@@ -36,7 +36,7 @@ git clone git@github.com:echemdb/website.git
 Install all dependencies
 
 
-```sh .noeval
+```sh .noeval  
 cd website
 conda env create --file environment.yml
 ```
@@ -45,7 +45,7 @@ conda env create --file environment.yml
 Switch to the correct environment and install echemdb:
 
 
-```sh .noeval
+```sh .noeval  
 conda actiavte echemdb
 pip install -e .
 ```
