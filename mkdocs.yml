@@ -18,6 +18,12 @@ extra_css:
 
 plugins:
   - search
+  - mkdocs-jupyter:
+      include: ["*.ipynb"]
+      execute: True
+      ignore_h1_titles: True
+  # - mknotebooks:
+  #     execute: True
   - macros:
       modules:
       - echemdb.website.macros.legacy
@@ -27,6 +33,8 @@ plugins:
   - section-index
   - literate-nav:
       nav_file: NAVIGATION.md
+nav:
+  - api/api.ipynb
 
 markdown_extensions:
   - extra
