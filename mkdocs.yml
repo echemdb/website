@@ -33,8 +33,6 @@ plugins:
   - section-index
   - literate-nav:
       nav_file: NAVIGATION.md
-nav:
-  - api/api.ipynb
 
 markdown_extensions:
   - extra
