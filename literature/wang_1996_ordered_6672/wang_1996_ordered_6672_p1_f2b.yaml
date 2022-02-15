@@ -11,7 +11,7 @@ electrochemical system:
   electrolyte:
     components:
     - concentration:
-        unit: mol
+        unit: mol / l
         value: 0.01
       name: CsI
       type: salt
