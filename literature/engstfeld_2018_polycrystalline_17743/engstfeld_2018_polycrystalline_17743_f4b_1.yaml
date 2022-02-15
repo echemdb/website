@@ -59,6 +59,7 @@ source:
   curve: 1
   url: https://doi.org/10.1002/chem.201803418
   figure: 4b
+  techniques: XPS, STM
   version: 1
 version: 1
 curation:
