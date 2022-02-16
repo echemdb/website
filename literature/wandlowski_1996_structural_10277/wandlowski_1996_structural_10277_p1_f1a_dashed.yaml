@@ -13,7 +13,7 @@ electrochemical system:
   electrolyte:
     components:
     - concentration:
-        unit: mol
+        unit: mol / l
         value: 0.05
       name: NaClO4
       type: acid
