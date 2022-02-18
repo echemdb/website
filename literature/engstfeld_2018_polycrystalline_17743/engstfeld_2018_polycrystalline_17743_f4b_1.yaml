@@ -1,6 +1,13 @@
 # This file is part of echemdb (https://github.com/echemdb/website)
 # Details on the meta data structure can be found on https://github.com/echemdb/metadata-schema
-electrochemical system:
+experimental:
+  tags:
+  - BCV
+  instrumentation:
+  - supplier: Biologic
+    type: potentiostat
+system:
+  type: electrochemical
   electrodes:
     configuration: three
     counter electrode:
@@ -50,9 +57,6 @@ electrochemical system:
       unit: K
       value: 298.15
     type: aq
-  instrumentation:
-  - supplier: Biologic
-    type: potentiostat
   version: 1
 source:
   citation key: engstfeld_2018_polycrystalline_17743
