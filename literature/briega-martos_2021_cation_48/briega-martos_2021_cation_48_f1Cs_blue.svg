@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    height="6820px"
    version="1.2"
    width="5212px"
    id="svg6"
-   sodipodi:docname="briega-martos_2021_cation_48_f1_Cs_3.5.svg"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+   sodipodi:docname="briega-martos_2021_cation_48_f1_Cs_3_5.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -34,21 +34,21 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="2488"
-     inkscape:window-height="1295"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
      id="namedview8"
      showgrid="false"
-     inkscape:zoom="0.39150076"
-     inkscape:cx="4046.7307"
-     inkscape:cy="4815.7303"
-     inkscape:window-x="72"
-     inkscape:window-y="27"
+     inkscape:zoom="0.27683284"
+     inkscape:cx="4334.7458"
+     inkscape:cy="1943.411"
+     inkscape:window-x="-8"
+     inkscape:window-y="32"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g936" />
+     inkscape:current-layer="svg6"
+     inkscape:pagecheckerboard="0" />
   <defs
      id="defs2" />
   <image
-     sodipodi:absref="/home/hoermann/Downloads/EchemDB_Digitizer/Test21Sept_data/briega-martos_2021_cation_48/briega-martos_2021_cation_48_p2.png"
      xlink:href="briega-martos_2021_cation_48_p2.png"
      height="6820px"
      width="5212px"
@@ -66,13 +66,13 @@
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
-       style="font-size:3.17499995px;line-height:1.25;font-family:sans-serif;stroke-width:0.26458299"
+       style="font-size:3.175px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
        x="34.305443"
        y="123.96095"
        id="text10650"><tspan
          sodipodi:role="line"
          id="tspan10648"
-         style="stroke-width:0.26458299"
+         style="stroke-width:0.264583"
          x="34.305443"
          y="123.96095">y2: 100 uA cm-2</tspan></text>
   </g>
@@ -87,13 +87,13 @@
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
-       style="font-size:3.17499995px;line-height:1.25;font-family:sans-serif;stroke-width:0.26458299"
+       style="font-size:3.175px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
        x="47.220585"
        y="155.55656"
        id="text2906"><tspan
          sodipodi:role="line"
          id="tspan2904"
-         style="stroke-width:0.26458299"
+         style="stroke-width:0.264583"
          x="47.220585"
          y="155.55656">y1: -100  uA cm-2</tspan></text>
   </g>
@@ -108,13 +108,13 @@
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
-       style="font-size:3.17499995px;line-height:1.25;font-family:sans-serif;stroke-width:0.26458299"
+       style="font-size:3.175px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
        x="6.8084121"
        y="83.536674"
        id="text15406"><tspan
          sodipodi:role="line"
          id="tspan15404"
-         style="stroke-width:0.26458299"
+         style="stroke-width:0.264583"
          x="6.8084121"
          y="83.536674">x1: -0.2 V vs SHE</tspan></text>
   </g>
@@ -129,27 +129,16 @@
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
-       style="font-size:3.17499995px;line-height:1.25;font-family:sans-serif;stroke-width:0.26458299"
+       style="font-size:3.175px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
        x="61.111824"
        y="81.725914"
        id="text18116"><tspan
          sodipodi:role="line"
          id="tspan18114"
-         style="stroke-width:0.26458299"
+         style="stroke-width:0.264583"
          x="61.111824"
          y="81.725914">x2: 0.9 V vs SHE</tspan></text>
   </g>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:258.70736694px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:9.70152664"
-     x="4942.9067"
-     y="1840.6807"
-     id="text839"><tspan
-       sodipodi:role="line"
-       id="tspan837"
-       x="4942.9067"
-       y="1840.6807"
-       style="stroke-width:9.70152664">scan rate: 50 mV / s</tspan></text>
   <g
      transform="translate(4.6379309e-6,5.0067902e-6)"
      id="g936">
@@ -163,12 +152,45 @@
        id="text10650-7-3"
        y="2256.2637"
        x="4132.7466"
-       style="font-size:116.41832733px;line-height:1.25;font-family:sans-serif;stroke-width:9.7015152"
+       style="font-size:116.418px;line-height:1.25;font-family:sans-serif;stroke-width:9.70152"
        xml:space="preserve"><tspan
          y="2256.2637"
          x="4132.7466"
-         style="stroke-width:9.7015152"
+         style="stroke-width:9.70152"
          id="tspan10648-5-5"
-         sodipodi:role="line">curve: Cs+pH3.5</tspan></text>
+         sodipodi:role="line">curve: blue</tspan></text>
   </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:9.70153"
+     x="5501.8799"
+     y="1704.0762"
+     id="text839"><tspan
+       sodipodi:role="line"
+       id="tspan837"
+       x="5501.8799"
+       y="1704.0762"
+       style="font-size:80px;stroke-width:9.70153">scan rate: 50 mV / s</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:9.70153"
+     x="5500.5845"
+     y="1820.7974"
+     id="text839-9"><tspan
+       sodipodi:role="line"
+       id="tspan837-1"
+       x="5500.5845"
+       y="1820.7974"
+       style="font-size:80px;stroke-width:9.70153">figure: 1Cs</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:9.70153"
+     x="5489.5024"
+     y="1932.5627"
+     id="text839-9-5"><tspan
+       sodipodi:role="line"
+       id="tspan837-1-2"
+       x="5489.5024"
+       y="1932.5627"
+       style="font-size:80px;stroke-width:9.70153">tags: BCV</tspan></text>
 </svg>
