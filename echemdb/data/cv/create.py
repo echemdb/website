@@ -79,13 +79,15 @@ def create_from_SVG(sourcedir=None, outdir=None, name=None, replace_files=False,
         from glob import glob
         for yaml in glob(os.path.join(sourcedir, "*.yaml")):
             svg = os.path.splitext(yaml)[0] + ".svg"
+            
+            if os.path.exists(svg):
 
-            from svgdigitizer.test.cli import invoke
-            from svgdigitizer.__main__ import digitize_cv
-            invoke(digitize_cv, "--sampling-interval", str(sampling), "--package", "--metadata", yaml, svg, "--outdir", outdir)
+                from svgdigitizer.test.cli import invoke
+                from svgdigitizer.__main__ import digitize_cv
+                invoke(digitize_cv, "--sampling-interval", str(sampling), "--package", "--metadata", yaml, svg, "--outdir", outdir)
 
-        assert os.path.exists(outdir), f"Ran digitizer to generate {outdir}. But directory is still missing after invoking digitizer."
-        assert any(os.scandir(outdir)), f"Ran digitizer to generate {outdir}. But the directory generated is empty after invoking digitizer."
+                assert os.path.exists(outdir), f"Ran digitizer to generate {outdir}. But directory is still missing after invoking digitizer."
+                assert any(os.scandir(outdir)), f"Ran digitizer to generate {outdir}. But the directory generated is empty after invoking digitizer."
 
 def copy_bibfiles(name=None, sourcedir=None, outdir=None):
 
@@ -128,11 +130,10 @@ def copy_bibfiles(name=None, sourcedir=None, outdir=None):
 
     shutil.copyfile(source_bib_file, target_bib_file)
 
-def create_datapackages(sourcedir=None, outdir=None, start=0, stop=1, replace_files=False):
+def create_data(sourcedir=None, outdir=None, start=0, stop=1, replace_files=False, bib=False):
     from glob import glob
     import os
     from pathlib import Path
-    from echemdb.data.cv.create import copy_bibfiles
     from echemdb.data.cv.create import create_from_SVG
 
     if not sourcedir:
@@ -151,4 +152,6 @@ def create_datapackages(sourcedir=None, outdir=None, start=0, stop=1, replace_fi
         file = Path(yml)
         name = file.parts[-2]
         create_from_SVG(name=name, sourcedir=sourcedir, outdir=outdir, replace_files=replace_files)
-        copy_bibfiles(name=name, sourcedir=sourcedir, outdir=outdir)
+        if bib:
+            from echemdb.data.cv.create import copy_bibfiles
+            copy_bibfiles(name=name, sourcedir=sourcedir, outdir=outdir)
