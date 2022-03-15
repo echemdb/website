@@ -40,26 +40,29 @@ def create_from_SVG(sourcedir=None, outdir=None, name=None, replace_files=False,
     """
     import os.path
 
-    sourcedir = sourcedir or os.path.join(
-        os.path.dirname(__file__),
-        '..',
-        '..',
-        '..',
-        'literature',
-        name or '')
+    if not sourcedir:
+        sourcedir = os.path.join(
+            os.path.dirname(__file__),
+            '..',
+            '..',
+            '..',
+            'literature',
+            )
 
-    if not os.path.exists(sourcedir):
-        raise ValueError(f"Could not find sourcedir {sourcedir}.")
+    if not outdir:
+        outdir = outdir or os.path.join(
+            os.path.dirname(__file__),
+            '..',
+            '..',
+            '..',
+            'data',
+            'generated',
+            'svgdigitizer',
+            )
 
-    outdir = outdir or os.path.join(
-        os.path.dirname(__file__),
-        '..',
-        '..',
-        '..',
-        'data',
-        'generated',
-        'svgdigitizer',
-        name or '')
+    if name:
+        sourcedir = os.path.join(sourcedir, name)
+        outdir = os.path.join(outdir, name)
 
     # We now might have to digitize some files on demand. When running
     # tests in parallel, this introduces a race condition that we avoid
@@ -84,30 +87,36 @@ def create_from_SVG(sourcedir=None, outdir=None, name=None, replace_files=False,
         assert os.path.exists(outdir), f"Ran digitizer to generate {outdir}. But directory is still missing after invoking digitizer."
         assert any(os.scandir(outdir)), f"Ran digitizer to generate {outdir}. But the directory generated is empty after invoking digitizer."
 
-def copy_bibfiles(name, sourcedir=None, outdir=None):
+def copy_bibfiles(name=None, sourcedir=None, outdir=None):
 
     import os.path
 
-    sourcedir = sourcedir or os.path.join(
-        os.path.dirname(__file__),
-        '..',
-        '..',
-        '..',
-        'literature',
-        name or '')
+    if not sourcedir:
+        sourcedir = os.path.join(
+            os.path.dirname(__file__),
+            '..',
+            '..',
+            '..',
+            'literature',
+            )
+
+    if not outdir:
+        outdir = outdir or os.path.join(
+            os.path.dirname(__file__),
+            '..',
+            '..',
+            '..',
+            'data',
+            'generated',
+            'svgdigitizer',
+            )
+
+    if name:
+        sourcedir = os.path.join(sourcedir, name)
+        outdir = os.path.join(outdir, name)
 
     if not os.path.exists(sourcedir):
         raise ValueError(f"Could not find sourcedir {sourcedir}.")
-
-    outdir = outdir or os.path.join(
-        os.path.dirname(__file__),
-        '..',
-        '..',
-        '..',
-        'data',
-        'generated',
-        'svgdigitizer',
-        name or '')
 
     source_bib_file = os.path.join(sourcedir, f"{name}.bib")
     
@@ -118,3 +127,28 @@ def copy_bibfiles(name, sourcedir=None, outdir=None):
     import shutil
 
     shutil.copyfile(source_bib_file, target_bib_file)
+
+def create_datapackages(sourcedir=None, outdir=None, start=0, stop=1, replace_files=False):
+    from glob import glob
+    import os
+    from pathlib import Path
+    from echemdb.data.cv.create import copy_bibfiles
+    from echemdb.data.cv.create import create_from_SVG
+
+    if not sourcedir:
+        sourcedir = os.path.join(
+            os.path.dirname(__file__),
+            '..',
+            '..',
+            '..',
+            'literature',
+            )
+
+    if not os.path.exists(sourcedir):
+        raise ValueError(f"Could not find sourcedir {sourcedir}.")
+
+    for yml in glob(os.path.join(sourcedir, '**/*.yaml'))[start:stop]:
+        file = Path(yml)
+        name = file.parts[-2]
+        create_from_SVG(name=name, sourcedir=sourcedir, outdir=outdir, replace_files=replace_files)
+        copy_bibfiles(name=name, sourcedir=sourcedir, outdir=outdir)
