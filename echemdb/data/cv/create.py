@@ -27,8 +27,8 @@ along with the generated datapackage.
 
 def create_from_SVG(sourcedir=None, outdir=None, name=None, replace_files=False, sampling=.005):
     """
-    Creates a datapackage, consisting of a CSV and JSON, 
-    from an SVG (prepared with ``svgdigitizer``) and a YAML.
+    Creates datapackages, consisting of a CSV and JSON, 
+    from SVG (prepared with ``svgdigitizer``) and a YAML.
     Datapackages can be created from individual files or 
     all files in a specified folder.
 
@@ -51,7 +51,7 @@ def create_from_SVG(sourcedir=None, outdir=None, name=None, replace_files=False,
     if not os.path.exists(sourcedir):
         raise ValueError(f"Could not find sourcedir {sourcedir}.")
 
-    outdir = os.path.join(
+    outdir = outdir or os.path.join(
         os.path.dirname(__file__),
         '..',
         '..',
@@ -83,3 +83,38 @@ def create_from_SVG(sourcedir=None, outdir=None, name=None, replace_files=False,
 
         assert os.path.exists(outdir), f"Ran digitizer to generate {outdir}. But directory is still missing after invoking digitizer."
         assert any(os.scandir(outdir)), f"Ran digitizer to generate {outdir}. But the directory generated is empty after invoking digitizer."
+
+def copy_bibfiles(name, sourcedir=None, outdir=None):
+
+    import os.path
+
+    sourcedir = sourcedir or os.path.join(
+        os.path.dirname(__file__),
+        '..',
+        '..',
+        '..',
+        'literature',
+        name or '')
+
+    if not os.path.exists(sourcedir):
+        raise ValueError(f"Could not find sourcedir {sourcedir}.")
+
+    outdir = outdir or os.path.join(
+        os.path.dirname(__file__),
+        '..',
+        '..',
+        '..',
+        'data',
+        'generated',
+        'svgdigitizer',
+        name or '')
+
+    source_bib_file = os.path.join(sourcedir, f"{name}.bib")
+    
+    from pathlib import Path
+    
+    target_bib_file = os.path.join(outdir, Path(source_bib_file).name)
+
+    import shutil
+
+    shutil.copyfile(source_bib_file, target_bib_file)
