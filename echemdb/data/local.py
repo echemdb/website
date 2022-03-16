@@ -23,6 +23,10 @@ Utilities to work with local data packages.
 #  along with echemdb. If not, see <https://www.gnu.org/licenses/>.
 # ********************************************************************
 
+from msilib import schema
+from struct import pack
+
+
 def collect_datapackages(data):
     r"""
     Return a list of data packages defined in the directory `data` and its
@@ -37,11 +41,26 @@ def collect_datapackages(data):
     # https://specs.frictionlessdata.io/data-package/#metadata
     import os.path
     from glob import glob
-    descriptors = glob(os.path.join(data, '**', '*.json'), recursive=True)
+
+    descriptors = glob(os.path.join(data, "**", "*.json"), recursive=True)
 
     # Read the package descriptors (does not read the actual data CSVs)
-    from datapackage import Package
-    return [Package(descriptor) for descriptor in descriptors]
+    from frictionless import Package
+
+    packages = []
+
+    for descriptor in descriptors:
+        package = Package(descriptor)
+        package.add_resource(
+            package.resources[0].write(
+                scheme="buffer",
+                format="csv", **{'name': 'echemdb', 'schema': package.resources[0].schema.to_dict()}
+            )
+        )
+        packages.append(package)
+ 
+    return packages
+
 
 def collect_bibliography(bibfiles):
     r"""
@@ -57,4 +76,8 @@ def collect_bibliography(bibfiles):
     from glob import glob
     from pybtex.database import parse_file
 
-    return [entry for file in glob(os.path.join(bibfiles, '**', '*.bib'), recursive=True) for entry in parse_file(file, bib_format="bibtex").entries.values()]
+    return [
+        entry
+        for file in glob(os.path.join(bibfiles, "**", "*.bib"), recursive=True)
+        for entry in parse_file(file, bib_format="bibtex").entries.values()
+    ]
