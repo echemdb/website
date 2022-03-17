@@ -1,6 +1,10 @@
 # This file is part of echemdb (https://github.com/echemdb/website)
 # Details on the meta data structure can be found on https://github.com/echemdb/metadata-schema
-electrochemical system:
+experimental:
+  tags:
+  - BCV
+system:
+  type: electrochemical
   electrodes:
     configuration: 3
     reference electrode:
@@ -11,7 +15,7 @@ electrochemical system:
   electrolyte:
     components:
     - concentration:
-        unit: mol
+        unit: mol / l
         value: 0.01
       name: CsI
       type: salt
