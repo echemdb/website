@@ -3,7 +3,7 @@ SOURCE_DIR=../literature
 SOURCE_METADATA=${wildcard ${SOURCE_DIR}/**/*.yaml}
 SOURCE_SVG=${patsubst %.yaml,%.svg,${SOURCES_METADATA}}
 
-TARGET_DIR=generated/digitized
+TARGET_DIR=generated/svgdigitizer
 
 TARGET_CSV=${patsubst %.yaml,%.csv,${patsubst ${SOURCE_DIR}/%,${TARGET_DIR}/%,${wildcard ${SOURCE_DIR}/**/*.yaml}}}
 TARGET_JSON=${patsubst %.yaml,%.json,${patsubst ${SOURCE_DIR}/%,${TARGET_DIR}/%,${wildcard ${SOURCE_DIR}/**/*.yaml}}}
