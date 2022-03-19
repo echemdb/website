@@ -21,4 +21,4 @@ all: $(TARGET_CSV) $(TARGET_JSON) $(TARGET_BIB)
 clean:
 	rm -rf data/generated
 
-.PHONY: all
+.PHONY: all clean
