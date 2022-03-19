@@ -19,6 +19,6 @@ ${TARGET_DIR}/%.bib: ${SOURCE_DIR}/%.bib
 all: ${TARGET_CSV} ${TARGET_JSON} ${TARGET_BIB}
 
 clean:
-	rm -rf data/generated
+	rm -rf ${TARGET_DIR}
 
 .PHONY: all clean
