@@ -1,6 +1,10 @@
 # This file is part of echemdb (https://github.com/echemdb/website)
 # Details on the meta data structure can be found on https://github.com/echemdb/metadata-schema
-electrochemical system:
+experimental:
+  tags:
+  - BCV
+system:
+  type: electrochemical
   electrodes:
     configuration: three
     counter electrode:
@@ -45,7 +49,7 @@ electrochemical system:
         supplier: Merck
       type: acid
     ph:
-      value: 3.5
+      value: 2.3
     temperature:
       unit: K
       value: 298.15

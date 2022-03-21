@@ -1,6 +1,10 @@
 # This file is part of echemdb (https://github.com/echemdb/website)
 # Details on the meta data structure can be found on https://github.com/echemdb/metadata-schema
-electrochemical system:
+experimental:
+  tags:
+  - BCV
+system:
+  type: electrochemical
   electrodes:
     configuration: three
     counter electrode:
@@ -25,10 +29,10 @@ electrochemical system:
     components:
     - concentration:
         unit: mol / l
-        value: 0.04
-      name: LiF
+        value: 0.1
+      name: CsF
       source:
-        supplier: Merck, Suprapur
+        supplier: Alfa Aesar Puratronic
         supplied purity:
           grade:
             value: 99.99
@@ -54,7 +58,7 @@ source:
   citation key: briega-martos_2021_cation_48
   curve: First cycle
   url: https://doi.org/10.1021/acsmeasuresciau.1c00004
-  figure: 1Li
+  figure: 1Cs
 version: 1
 curation:
   version: 1

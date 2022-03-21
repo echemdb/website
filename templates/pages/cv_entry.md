@@ -1,10 +1,10 @@
-# {{ entry.electrochemical_system.electrodes.working_electrode.material }}({{ entry.electrochemical_system.electrodes.working_electrode.crystallographic_orientation }}) <small>- {{ entry.electrochemical_system.electrolyte | render("components/electrolyte.md") }}</small>
+# {{ entry.system.electrodes.working_electrode.material }}({{ entry.system.electrodes.working_electrode.crystallographic_orientation }}) <small>- {{ entry.system.electrolyte | render("components/electrolyte.md") }}</small>
 <small>echemdb identifier: `{{ entry.identifier }}`</small>  
 
 A cyclic voltammogramm for 
-{{ entry.electrochemical_system.electrodes.working_electrode.material }}({{ entry.electrochemical_system.electrodes.working_electrode.crystallographic_orientation }}) 
+{{ entry.system.electrodes.working_electrode.material }}({{ entry.system.electrodes.working_electrode.crystallographic_orientation }}) 
 recorded in 
-{{ entry.electrochemical_system.electrolyte | render("components/electrolyte.md") }}
+{{ entry.system.electrolyte | render("components/electrolyte.md") }}
 at a scan rate of 
 {{ entry.figure_description.scan_rate | render }}
 from Figure 
@@ -25,9 +25,9 @@ in
 The figure shows {{ entry.figure_description.type }} data.
 
 **Preparation procedure**  
-{% if entry.electrochemical_system.electrodes.working_electrode.preparation_procedure is defined %}
-The {{ entry.electrochemical_system.electrodes.working_electrode.material }}({{ entry.electrochemical_system.electrodes.working_electrode.crystallographic_orientation }}) electrode was prepared by:  
-{{ entry.electrochemical_system.electrodes.working_electrode.preparation_procedure }}
+{% if entry.system.electrodes.working_electrode.preparation_procedure is defined %}
+The {{ entry.system.electrodes.working_electrode.material }}({{ entry.system.electrodes.working_electrode.crystallographic_orientation }}) electrode was prepared by:  
+{{ entry.system.electrodes.working_electrode.preparation_procedure }}
 {% else %}
 Preparation procedure not available.
 {% endif %}
@@ -43,7 +43,7 @@ Details on the electrochemical system:
 <summary>Click to expand (yaml)</summary>
 
 ```yaml
-{{ entry.electrochemical_system.yaml }}
+{{ entry.system.yaml }}
 ```
 </details>
 
