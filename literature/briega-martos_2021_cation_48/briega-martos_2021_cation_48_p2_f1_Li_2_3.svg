@@ -101,7 +101,7 @@
          sodipodi:role="line"
          id="tspan19194"
          x="2133.7549"
-         y="2471.5938">y1: -100 uA / cm2</tspan></text>
+         y="2471.5938">j1: -100 uA / cm2</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 2916.5013,2892.8744 2513.5648,2443.3223"
@@ -120,7 +120,7 @@
          sodipodi:role="line"
          id="tspan23079"
          x="2710.0842"
-         y="3077.8994">x1: -0.2 V vs. SHE</tspan></text>
+         y="3077.8994">E1: -0.2 V vs. SHE</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 3049.0043,2893.5129 -350.4144,175.4467"
@@ -138,7 +138,7 @@
          sodipodi:role="line"
          id="tspan23079-8"
          x="4277.6069"
-         y="3107.0767">x2: 0.8 V vs. SHE</tspan></text>
+         y="3107.0767">E2: 0.8 V vs. SHE</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 4370.3619,2893.2735 4269.4681,3091.948"
@@ -156,7 +156,7 @@
          sodipodi:role="line"
          id="tspan19194-8"
          x="2291.9622"
-         y="1971.1135">y2: 100 uA / cm2</tspan></text>
+         y="1971.1135">j2: 100 uA / cm2</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 2917.2996,2191.3272 2697.3128,1956.5735"
