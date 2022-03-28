@@ -30,9 +30,9 @@ system:
     - concentration:
         unit: mol / l
         value: 0.1
-      name: NaF
+      name: CsF
       source:
-        supplier: Merck, Suprapur
+        supplier: Alfa Aesar Puratronic
         supplied purity:
           grade:
             value: 99.99
@@ -49,16 +49,16 @@ system:
         supplier: Merck
       type: acid
     ph:
-      value: 4.4
+      value: 4.0
     temperature:
       unit: K
       value: 298.15
     type: aq
 source:
-  citation key: briega-martos_2021_cation_48
+  citation key: briega_martos_2021_cation_48
   curve: First cycle
   url: https://doi.org/10.1021/acsmeasuresciau.1c00004
-  figure: 1Na
+  figure: 1Cs
 version: 1
 curation:
   version: 1

@@ -29,10 +29,10 @@ system:
     components:
     - concentration:
         unit: mol / l
-        value: 0.1
-      name: CsF
+        value: 0.04
+      name: LiF
       source:
-        supplier: Alfa Aesar Puratronic
+        supplier: Merck, Suprapur
         supplied purity:
           grade:
             value: 99.99
@@ -55,10 +55,10 @@ system:
       value: 298.15
     type: aq
 source:
-  citation key: briega-martos_2021_cation_48
+  citation key: briega_martos_2021_cation_48
   curve: First cycle
   url: https://doi.org/10.1021/acsmeasuresciau.1c00004
-  figure: 1Cs
+  figure: 1Li
 version: 1
 curation:
   version: 1
