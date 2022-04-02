@@ -80,7 +80,7 @@
          sodipodi:role="line"
          id="tspan12606"
          x="517.53107"
-         y="734.85114">y2: 300 uA / cm2</tspan></text>
+         y="734.85114">j2: 300 uA / cm2</tspan></text>
   </g>
   <g
      id="g19302"
@@ -98,7 +98,7 @@
          sodipodi:role="line"
          id="tspan16768"
          x="554.30731"
-         y="1664.3514">y1: -250 uA / cm2</tspan></text>
+         y="1664.3514">j1: -250 uA / cm2</tspan></text>
   </g>
   <g
      id="g31146"
@@ -116,7 +116,7 @@
          sodipodi:role="line"
          id="tspan21240"
          x="871.05731"
-         y="1795.0084">x1: 0.1 V vs RHE </tspan></text>
+         y="1795.0084">E1: 0.1 V vs RHE </tspan></text>
   </g>
   <g
      id="g31141"
@@ -134,7 +134,7 @@
          sodipodi:role="line"
          id="tspan29998"
          x="1839.1025"
-         y="1785.8185">x2: 0.9 V vs RHE</tspan></text>
+         y="1785.8185">E2: 0.9 V vs RHE</tspan></text>
   </g>
   <g
      id="g50246">

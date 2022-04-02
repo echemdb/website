@@ -4,7 +4,7 @@
    version="1.2"
    width="4961px"
    id="svg6"
-   sodipodi:docname="alves_2011_electrochemistry_6010_f2a_solid.svg"
+   sodipodi:docname="alves_2011_electrochemistry_6010_f1a_solid.svg"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -78,7 +78,7 @@
          y="3912.8931"
          x="943.69873"
          id="tspan4532-5"
-         sodipodi:role="line">y2: 0.1 mA / cm2</tspan></text>
+         sodipodi:role="line">j2: 0.1 mA / cm2</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path4554"
@@ -96,7 +96,7 @@
          y="5402.6958"
          x="946.33209"
          id="tspan4532"
-         sodipodi:role="line">y1: -0.8 mA / cm2</tspan></text>
+         sodipodi:role="line">j1: -0.8 mA / cm2</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path4561"
@@ -114,7 +114,7 @@
          y="5720.7769"
          x="1350.4822"
          id="tspan4510"
-         sodipodi:role="line">x1: -0.2 V vs. RHE</tspan></text>
+         sodipodi:role="line">E1: -0.2 V vs. RHE</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path4568"
@@ -133,7 +133,7 @@
          y="5734.1558"
          x="2317.0129"
          id="tspan4510-9"
-         sodipodi:role="line">x2: 1.0 V vs. RHE</tspan></text>
+         sodipodi:role="line">E2: 1.0 V vs. RHE</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path4575"

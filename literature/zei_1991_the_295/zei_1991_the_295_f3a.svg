@@ -62,7 +62,7 @@
          id="tspan22631-6"
          x="-434.27808"
          y="3270.062"
-         style="font-size:85.3333px">y1: -32 uA / cm2</tspan></text>
+         style="font-size:85.3333px">j1: -32 uA / cm2</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 744.26738,3539.2625 -361.44265,3293.1921"
@@ -80,7 +80,7 @@
          id="tspan22631"
          x="-395.0477"
          y="2389.3103"
-         style="font-size:85.3333px">y2: 48 uA / cm2</tspan></text>
+         style="font-size:85.3333px">j2: 48 uA / cm2</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 740.59474,2638.856 -328.39,2407.4403"
@@ -101,7 +101,7 @@
          sodipodi:role="line"
          id="tspan62449"
          x="357.82373"
-         y="3994.0986">x1: -1 V vs Ag/AgCl</tspan></text>
+         y="3994.0986">E1: -1 V vs Ag/AgCl</tspan></text>
   </g>
   <g
      id="g241">
@@ -118,7 +118,7 @@
          sodipodi:role="line"
          id="tspan71099"
          x="2550.7869"
-         y="3853.647">x2: 0 V vs Ag/AgCl</tspan></text>
+         y="3853.647">E2: 0 V vs Ag/AgCl</tspan></text>
   </g>
   <g
      id="g5264">
