@@ -5,7 +5,7 @@
    width="4875px"
    id="svg106"
    sodipodi:docname="mello_2018_understanding_j3045_p1_f1e_black.svg"
-   inkscape:version="1.1.1 (eb90963e84, 2021-10-02)"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -21,12 +21,12 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="0.19828379"
-     inkscape:cx="1676.8895"
-     inkscape:cy="4975.1924"
-     inkscape:window-width="1848"
-     inkscape:window-height="898"
-     inkscape:window-x="72"
-     inkscape:window-y="27"
+     inkscape:cx="1679.4111"
+     inkscape:cy="4977.714"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="32"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg106" />
   <defs
@@ -132,10 +132,30 @@
          sodipodi:role="line"
          x="1326.5004"
          y="4644.6562"
-         id="tspan68527">curve: Pt_(111)_E_black</tspan></text>
+         id="tspan68527">curve: black</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 1300.663,5009.3726 1.2558,-32.147 1.2559,-27.1039 4.4325,-15.7588 10.7119,-11.9835 12.5957,-3.7755 h 17.6561 l 23.9724,1.2585 44.7313,-0.6292 h 29.0329 l 28.3311,-0.6293 h 18.284 25.2283 18.2841 l 17.0282,2.517 22.6796,1.8878 12.6326,0.6385 25.8194,8.8187 19.5399,5.0432 16.4003,3.1555 14.5164,2.5169 9.456,1.897 9.456,3.1463 22.6796,0.6385 25.2283,1.2584 h 32.1356 l 29.6239,-1.2584 28.368,-0.6385 h 24.6004 27.1121 24.5635 l 37.196,-1.2585 28.996,-1.8878 25.2283,-5.0432 30.8797,-6.3017 29.0205,-6.311 26.4472,-4.4139 28.368,-3.7755 h 19.54 30.2887 l 19.5399,-2.5262 13.2236,-5.6725 8.2002,-10.0865 3.7676,-11.9741 1.9208,-9.4572 6.2793,-1.2585 1.2559,10.7157 3.8045,11.3449 2.5118,10.0865 2.5117,6.9309 3.8047,8.1987 11.3397,13.2419 12.5957,4.4047 14.5165,3.1555 23.3075,1.8878 22.7166,0.6385 h 16.9912 l 0.628,8.8186 -13.8516,1.2678 -22.0517,0.6292 -22.0886,2.517 -16.3633,2.5263 -13.2605,4.4047 -10.7119,7.5695 -8.8281,9.4571 -7.5722,13.2327 -5.0235,14.5004 -1.8838,13.2419 -3.1766,5.0432 -5.6515,-5.0432 -0.6279,-12.6127 -3.8046,-11.9741 -10.0839,-7.5602 -15.1074,-3.1555 -21.4607,-1.8877 h -21.4237 -25.8563 -16.3633 l -25.2283,-5.6818 -32.1357,-6.3017 -29.6608,-6.3017 -27.7031,-6.3017 -17.6561,-2.5262 h -12.0047 l -25.1914,0.6292 -28.9959,0.6293 -26.4842,1.2677 h -18.912 l -16.4003,-0.6292 -28.368,-0.6385 -25.1913,-0.6293 -22.7166,-0.6292 -17.6561,0.6292 -27.1121,-0.6292 -26.4473,3.7847 -17.0282,2.517 -13.8885,1.897 -49.1514,12.6034 -37.1961,7.5694 -32.8005,1.2585 -40.3357,1.2585 -41.5916,3.1555 h -41.6286 l -37.824,-3.1555 -26.4841,2.5263 -16.9913,3.7847 -7.5722,4.4047 z"
        id="path85750" />
   </g>
+  <text
+     xml:space="preserve"
+     style="font-size:80px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px"
+     x="-660.66925"
+     y="4508.6895"
+     id="text3273"><tspan
+       sodipodi:role="line"
+       id="tspan3271"
+       x="-660.66925"
+       y="4508.6895">Figure: 1e</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:80px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px"
+     x="-655.62598"
+     y="4665.0308"
+     id="text4135"><tspan
+       sodipodi:role="line"
+       id="tspan4133"
+       x="-655.62598"
+       y="4665.0308">Tags: BCV</tspan></text>
 </svg>
