@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    height="6751px"
    version="1.1"
    width="5063px"
    id="svg77195"
    sodipodi:docname="nakamura_2011_structure_165433_f1a_red.svg"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata28">
     <rdf:RDF>
@@ -34,9 +34,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="0.05443638"
-     inkscape:cx="-3398.2161"
-     inkscape:cy="3892.0244"
+     inkscape:zoom="0.15396933"
+     inkscape:cx="201.33879"
+     inkscape:cy="2013.3879"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -46,7 +46,6 @@
   <defs
      id="defs77191" />
   <image
-     sodipodi:absref="F:\Github\echemdb\website\literature\nakamura_2011_structure_165433\Nakamura_2011_Structure_165433_p1.png"
      xlink:href="Nakamura_2011_Structure_165433_p1.png"
      id="image77193"
      y="0"
@@ -140,7 +139,7 @@
          sodipodi:role="line"
          id="tspan89726"
          x="779.21143"
-         y="561.92712">curve: Ag(100)_0.1M_CsBr_0.05M_CsOH</tspan></text>
+         y="561.92712">curve: red</tspan></text>
   </g>
   <text
      xml:space="preserve"
@@ -154,12 +153,22 @@
        y="1580.8506">scan rate: 50 mV / s</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     x="-862.55029"
-     y="178.21593"
-     id="text837"><tspan
+     style="font-size:80px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px"
+     x="-811.84998"
+     y="467.62558"
+     id="text2692"><tspan
        sodipodi:role="line"
-       id="tspan835"
-       x="-862.55029"
-       y="178.21593">comment: Focus on Cs+ counterions close to the electric double layer.</tspan></text>
+       id="tspan2690"
+       x="-811.84998"
+       y="467.62558">Figure: 1a</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:80px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px"
+     x="-792.3656"
+     y="675.45917"
+     id="text3884"><tspan
+       sodipodi:role="line"
+       id="tspan3882"
+       x="-792.3656"
+       y="675.45917">Tags: BCV</tspan></text>
 </svg>
