@@ -70,7 +70,7 @@
          sodipodi:role="line"
          id="tspan79276"
          x="0.77166378"
-         y="747.66248">y2: 15 uA / cm2</tspan></text>
+         y="747.66248">j2: 15 uA / cm2</tspan></text>
   </g>
   <g
      id="g82733"
@@ -88,7 +88,7 @@
          sodipodi:role="line"
          id="tspan81536"
          x="-2.4748938"
-         y="1673.1396">y1: -10 uA / cm2</tspan></text>
+         y="1673.1396">j1: -10 uA / cm2</tspan></text>
   </g>
   <g
      id="g88642">
@@ -105,7 +105,7 @@
          sodipodi:role="line"
          id="tspan83950"
          x="-132.33714"
-         y="2085.5669">x1: -1.2 V vs Ag/AgCl</tspan></text>
+         y="2085.5669">E1: -1.2 V vs Ag/AgCl</tspan></text>
   </g>
   <g
      id="g88637">
@@ -122,7 +122,7 @@
          sodipodi:role="line"
          id="tspan87956"
          x="2228.4097"
-         y="1968.6594">x2: -0.2 V vs Ag/AgCl</tspan></text>
+         y="1968.6594">E2: -0.2 V vs Ag/AgCl</tspan></text>
   </g>
   <text
      xml:space="preserve"
