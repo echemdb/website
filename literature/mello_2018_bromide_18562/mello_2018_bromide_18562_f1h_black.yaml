@@ -32,9 +32,7 @@ system:
   version: 1
 source:
   citation key: mello_2018_bromide_18562
-  curve: ph9,1_black
   url: https://doi.org/10.1021/acs.jpcc.8b05685
-  figure: 1
   version: 1
 version: 1
 curation:

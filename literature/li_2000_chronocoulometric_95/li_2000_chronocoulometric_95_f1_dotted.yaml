@@ -47,9 +47,7 @@ system:
   version: 1
 source:
   citation key: li_2000_chronocoulometric_95
-  curve: dotted
   url: https://doi.org/10.1016/S0022-0728(00)00199-6
-  figure: 1
   version: 1
 version: 1
 curation:

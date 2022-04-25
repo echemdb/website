@@ -35,10 +35,9 @@ system:
   version: 1
 source:
   citation key: hamad_2003_electrosorption_211
-  techniques: Monte-Carlo simulations
-  curve: dotted
+  techniques:
+  - Monte-Carlo simulations
   url: https://doi.org/10.1016/S0022-0728(03)00178-5
-  figure: 1a
   version: 1
 version: 1
 curation:

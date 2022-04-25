@@ -28,10 +28,9 @@ system:
   version: 1
 source:
   citation key: wang_1996_ordered_6672
-  curve: solid
   url: https://doi.org/10.1021/jp952938y
-  figure: 2a
-  techniques: SXRD
+  techniques:
+  - SXRD
   version: 1
 version: 1
 curation:

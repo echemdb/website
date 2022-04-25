@@ -32,9 +32,7 @@ system:
   version: 1
 source:
   citation key: shi_1996_chloride_225
-  curve: dashed
   url: https://doi.org/10.1016/0022-0728(92)80223-Q
-  figure: 1a
   version: 1
 version: 1
 curation:

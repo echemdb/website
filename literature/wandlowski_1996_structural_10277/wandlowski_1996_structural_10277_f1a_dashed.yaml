@@ -30,10 +30,9 @@ system:
   version: 1
 source:
   citation key: wandlowski_1996_structural_10277
-  curve: dashed
   url: https://doi.org/10.1021/jp9600064
-  figure: 1a
-  techniques: SXRD
+  techniques:
+  - SXRD
   version: 1
 version: 1
 curation:

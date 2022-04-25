@@ -39,10 +39,9 @@ system:
   version: 1
 source:
   citation key: endo_1999_in-situ_19
-  curve: bold
   url: https://doi.org/10.1016/S0022-0728(99)00148-5
-  figure: 1b
-  techniques: EXAFS
+  techniques:
+  - EXAFS
   version: 1
 version: 1
 curation:

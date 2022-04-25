@@ -30,10 +30,9 @@ system:
   version: 1
 source:
   citation key: nakamura_2011_structure_165433
-  curve: blue
   url: https://doi.org/10.1103/PhysRevB.84.165433
-  figure: 1b
-  techniques: XAS
+  techniques:
+  - XAS
   version: 1
 version: 1
 curation:

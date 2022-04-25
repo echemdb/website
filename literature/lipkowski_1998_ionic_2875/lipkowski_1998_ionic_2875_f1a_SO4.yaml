@@ -33,10 +33,10 @@ system:
   version: 1
 source:
   citation key: lipkowski_1998_ionic_2875
-  curve: SO4
   url: https://doi.org/10.1016/S0013-4686(98)00028-0
-  figure: 1a
-  techniques: SHG, SXRD
+  techniques:
+  - SHG 
+  - SXRD
   version: 1
 version: 1
 curation:

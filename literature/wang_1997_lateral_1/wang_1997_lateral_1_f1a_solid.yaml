@@ -32,10 +32,9 @@ system:
   version: 1
 source:
   citation key: wang_1997_lateral_1
-  curve: top
-  figure: 1a
   url: https://www.osti.gov/biblio/537264
-  techniques: SXRD
+  techniques:
+  - SXRD
   version: 1
 version: 1
 curation:

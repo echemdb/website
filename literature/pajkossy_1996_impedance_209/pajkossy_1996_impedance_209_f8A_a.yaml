@@ -45,10 +45,9 @@ system:
   version: 1
 source:
   citation key: pajkossy_1996_impedance_209
-  curve: a
   url: https://doi.org/10.1016/0022-0728(96)04700-6
-  figure: 8A
-  techniques: EIS
+  techniques:
+  - EIS
   version: 1
 version: 1
 curation:

@@ -28,10 +28,9 @@ system:
   version: 1
 source:
   citation key: ocko_1997_halide_55
-  curve: 0.05 M NaBr
   url: https://doi.org/10.1557/PROC-451-55
-  figure: 6a
-  techniques: SXRD
+  techniques:
+  - SXRD
   version: 1
 version: 1
 curation:

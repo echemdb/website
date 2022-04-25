@@ -48,10 +48,9 @@ system:
   version: 1
 source:
   citation key: mello_2018_understanding_j3045
-  curve: F_blue
   url: https://doi.org/10.1149/2.0081815jes
-  figure: 1f
-  techniques: ORR
+  techniques:
+  - ORR
   version: 1
 version: 1
 curation:

@@ -36,10 +36,9 @@ system:
   version: 1
 source:
   citation key: kerner_2002_measurement_2055
-  curve: thick
   url: https://doi.org/10.1016/0022-0728(92)80223-Q
-  figure: 3a
-  techniques: EIS
+  techniques:
+  - EIS
   version: 1
 version: 1
 curation:
