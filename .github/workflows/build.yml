@@ -63,12 +63,12 @@ jobs:
           linkchecker --check-extern --no-robots --ignore fonts.gstatic.com --ignore doi.org http://localhost:8880/website/
         # We only check links on Linux since we do not want to get flagged because of too many requests by the target websites.
         if: ${{ matrix.os == 'ubuntu-latest' }}
-      - uses: JamesIves/github-pages-deploy-action@3.7.1
+      - uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: generated/website
-          TARGET_FOLDER: ""
+          branch: gh-pages
+          folder: generated/website
+          target-folder: ""
+          single-commit: true
         if: ${{ github.event_name == 'push' && matrix.os == 'ubuntu-latest' }}
       - name: doctest against generated website data
         shell: bash -l {0}
