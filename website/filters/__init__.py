@@ -32,7 +32,7 @@ def enable_filters(env):
 
     This registers ``render`` as a filter::
 
-        >>> from echemdb.website.macros.render import render
+        >>> from website.macros.render import render
         >>> from io import StringIO
         >>> from astropy.units import Unit
 
@@ -41,6 +41,6 @@ def enable_filters(env):
         '1 M'
 
     """
-    from echemdb.website.filters.render import render
+    from website.filters.render import render
 
     env.filters["render"] = render

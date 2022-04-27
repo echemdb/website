@@ -31,8 +31,8 @@ import os.path
 
 import mkdocs_gen_files
 
-import echemdb.website.generator.database
-from echemdb.website.macros.render import render
+import website.generator.database
+from website.macros.render import render
 
 
 def main():
@@ -42,14 +42,14 @@ def main():
 
     This function is invoked automatically by mkdocs during the build process.
     """
-    for entry in echemdb.website.generator.database.cv:
+    for entry in website.generator.database.cv:
         with mkdocs_gen_files.open(
             os.path.join("cv", "entries", f"{entry.identifier}.md"), "w"
         ) as markdown:
             markdown.write(
                 render(
                     "pages/cv_entry.md",
-                    database=echemdb.website.generator.database.cv,
+                    database=website.generator.database.cv,
                     entry=entry,
                 )
             )

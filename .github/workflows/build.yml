@@ -28,7 +28,7 @@ jobs:
         run: |
           cd data
           make
-      - name: install echemdb
+      - name: install echemdb-website
         shell: bash -l {0}
         run: |
           pip install -e .
@@ -42,11 +42,6 @@ jobs:
           mv data generated/website/
           # Disable further processing by GitHub
           touch generated/website/.nojekyll
-      - name: build documentation
-        shell: bash -l {0}
-        run: |
-          cd doc
-          make html
       - name: fix permissions
         shell: bash -l {0}
         run: |
@@ -80,7 +75,7 @@ jobs:
 
           # Run tests against the new ZIP archive.
           export ECHEMDB_DATABASE_URL=http://localhost:8880/website/website-gh-pages.zip
-          pytest -n auto --doctest-plus --remote-data --doctest-modules echemdb
+          pytest -n auto --doctest-plus --remote-data --doctest-modules website
         # We only run tests on Linux since we already run tests for all OSes in the test workflow.
         if: ${{ matrix.os == 'ubuntu-latest' }}
 

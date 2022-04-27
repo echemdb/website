@@ -1,5 +1,18 @@
 r"""
-Provides custom Jinja macros for rendering the echemdb websites.
+Data packages and bibliography built from local data.
+
+This module provides a (cached) database of CVs which is queried when building
+the website. In principle, this is no different than calling ``Database()``
+directly. However, this uses data from the local ``data`` directory and it also
+caches this information in a global variable for improved performance during
+the website build.
+
+EXAMPLES::
+
+    >>> from website.generator.database import cv
+    >>> cv
+    [...]
+
 """
 # ********************************************************************
 #  This file is part of echemdb.
@@ -23,24 +36,17 @@ Provides custom Jinja macros for rendering the echemdb websites.
 #  along with echemdb. If not, see <https://www.gnu.org/licenses/>.
 # ********************************************************************
 
+import os.path
 
-def enable_macros(env):
-    r"""
-    Register macros for use in mkdocs.
+import echemdb.cv.database
+import echemdb.local
 
-    EXAMPLES:
+packages = echemdb.data.local.collect_datapackages(
+    os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "data"))
+)
 
-    This registers ``render`` as a macro::
+bibliography = echemdb.data.local.collect_bibliography(
+    os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "data"))
+)
 
-        >>> from echemdb.website.macros.render import render
-        >>> from io import StringIO
-        >>> from astropy.units import Unit
-
-        >>> snippet = StringIO("{{ render('components/quantity.md', value={ 'quantity': quantity }) }}")
-        >>> render(snippet, quantity=1 * Unit("mol / l"))
-        '1 M'
-
-    """
-    from echemdb.website.macros.render import render
-
-    env.macro(render)
+cv = echemdb.data.cv.database.Database(packages, bibliography)
