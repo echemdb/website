@@ -60,7 +60,7 @@ def render(template, **kwargs):
 
     env = Environment(
         loader=FileSystemLoader(
-            os.path.join(os.path.dirname(__file__), "..", "..", "..", "templates")
+            os.path.join(os.path.dirname(__file__), "..", "..", "templates")
         ),
         autoescape=select_autoescape(),
         trim_blocks=True,
