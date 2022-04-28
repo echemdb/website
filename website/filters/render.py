@@ -5,7 +5,7 @@ EXAMPLES:
 
 The `render` filter renders an element using a specific template::
 
-    >>> from echemdb.website.macros.render import render
+    >>> from website.macros.render import render
     >>> from io import StringIO
     >>> from astropy.units import Unit
 
@@ -70,7 +70,7 @@ def render(value, template=None):
 
     EXAMPLES::
 
-        >>> from echemdb.website.macros.render import render
+        >>> from website.macros.render import render
         >>> from io import StringIO
         >>> from astropy.units import Unit
 
@@ -89,6 +89,6 @@ def render(value, template=None):
                 "No template specified but value does neither provide a markdown property nor a markdown_template property."
             )
 
-    import echemdb.website.macros.render
+    import website.macros.render
 
-    return echemdb.website.macros.render.render(template, value=value)
+    return website.macros.render.render(template, value=value)

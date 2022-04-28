@@ -32,7 +32,7 @@ def enable_macros(env):
 
     This registers ``render`` as a macro::
 
-        >>> from echemdb.website.macros.render import render
+        >>> from website.macros.render import render
         >>> from io import StringIO
         >>> from astropy.units import Unit
 
@@ -41,6 +41,6 @@ def enable_macros(env):
         '1 M'
 
     """
-    from echemdb.website.macros.render import render
+    from website.macros.render import render
 
     env.macro(render)

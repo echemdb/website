@@ -21,7 +21,7 @@ plugins:
   - macros
   - gen-files:
       scripts:
-      - echemdb/website/generator/__main__.py
+      - website/generator/__main__.py
   - section-index
   - literate-nav:
       nav_file: NAVIGATION.md

@@ -60,7 +60,7 @@ def render(template, **kwargs):
 
     env = Environment(
         loader=FileSystemLoader(
-            os.path.join(os.path.dirname(__file__), "..", "..", "..", "templates")
+            os.path.join(os.path.dirname(__file__), "..", "..", "templates")
         ),
         autoescape=select_autoescape(),
         trim_blocks=True,
@@ -73,12 +73,12 @@ def render(template, **kwargs):
         env.globals[name or function.__name__] = function
 
     env.macro = macro
-    from echemdb.website.macros import enable_macros
+    from website.macros import enable_macros
 
     enable_macros(env)
     del env.macro
 
-    from echemdb.website.filters import enable_filters
+    from website.filters import enable_filters
 
     enable_filters(env)
 

@@ -9,7 +9,7 @@ the website build.
 
 EXAMPLES::
 
-    >>> from echemdb.website.generator.database import cv
+    >>> from website.generator.database import cv
     >>> cv
     [...]
 
@@ -38,15 +38,15 @@ EXAMPLES::
 
 import os.path
 
-import echemdb.data.cv.database
-import echemdb.data.local
+import echemdb.cv.database
+import echemdb.local
 
-packages = echemdb.data.local.collect_datapackages(
+packages = echemdb.local.collect_datapackages(
     os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "data"))
 )
 
-bibliography = echemdb.data.local.collect_bibliography(
+bibliography = echemdb.local.collect_bibliography(
     os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "data"))
 )
 
-cv = echemdb.data.cv.database.Database(packages, bibliography)
+cv = echemdb.cv.database.Database(packages, bibliography)
