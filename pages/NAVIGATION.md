@@ -1,4 +1,4 @@
 * [Home](index.md)
 * [CV](cv/)
-* [API](doc/html/index.md)
+* [API](https://echemdb.github.io/echemdb/)
 * [About](about.md)
