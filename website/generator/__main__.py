@@ -42,6 +42,7 @@ def main():
 
     This function is invoked automatically by mkdocs during the build process.
     """
+    # Create a single page for each entry in the database
     for entry in website.generator.database.cv:
         with mkdocs_gen_files.open(
             os.path.join("cv", "entries", f"{entry.identifier}.md"), "w"
@@ -53,6 +54,7 @@ def main():
                     entry=entry,
                 )
             )
+    # Create an overview page with tabulated and linked entries.
     with mkdocs_gen_files.open(
             os.path.join("cv", "index.md"), "w"
         ) as markdown:
