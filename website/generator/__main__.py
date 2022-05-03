@@ -42,26 +42,36 @@ def main():
 
     This function is invoked automatically by mkdocs during the build process.
     """
+    
+    database = website.generator.database.cv
     # Create a single page for each entry in the database
-    for entry in website.generator.database.cv:
+    for entry in database:
         with mkdocs_gen_files.open(
             os.path.join("cv", "entries", f"{entry.identifier}.md"), "w"
         ) as markdown:
             markdown.write(
                 render(
                     "pages/cv_entry.md",
-                    database=website.generator.database.cv,
+                    database=database,
                     entry=entry,
                 )
             )
     # Create an overview page with tabulated and linked entries.
     with mkdocs_gen_files.open(
-            os.path.join("cv", "index.md"), "w"
-        ) as markdown:
+        os.path.join("cv", "index.md"), "w"
+    ) as markdown:
+        markdown.write(
+                    render(
+                        "pages/cv.md",
+                        database=database
+                    )
+                )
+        for material in ['Ru', 'Cu', 'Pt']: #database.materials()
+            filtered_db = database.filter(lambda entry: entry.system.electrodes.working_electrode.material == material)
             markdown.write(
                 render(
-                    "pages/cv.md",
-                    database=website.generator.database.cv,
+                    "components/cv_table.md",
+                    database=filtered_db, material=material
                 )
             )
 

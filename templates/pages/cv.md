@@ -1,13 +1,18 @@
 ---
-author: Nicolas G. Hoermann
+author: Nicolas G. Hoermann, Albert K. Engstfeld
 title: echemdb - The community database for electrochemical data
 ---
 # Cyclic Voltammograms
 
-Under construction!
+template table
 
-Some new text
+{{database | render("components/cv_table.md")}} 
 
+other table  
+
+{% for material in materials %}
+## material
+{% endfor %}
 | identifier |
 | ---------- |
 {% for entry in database %}
