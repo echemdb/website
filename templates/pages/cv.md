@@ -4,7 +4,9 @@ title: echemdb - The community database for electrochemical data
 ---
 # Cyclic Voltammograms
 
-template table
+A list of digitized cyclic voltammograms.
+
+<!-- template table
 
 {{database | render("components/cv_table.md")}} 
 
@@ -17,7 +19,9 @@ other table
 | ---------- |
 {% for entry in database %}
 | [{{ entry.identifier }}](entries/{{ entry.identifier }}) |
-{% endfor %}
+{% endfor %} -->
+
+
 
 <!--
 /* maybe here we could have some overview of the data, how many read
