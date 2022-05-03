@@ -53,7 +53,15 @@ def main():
                     entry=entry,
                 )
             )
-
+    with mkdocs_gen_files.open(
+            os.path.join("cv", "index.md"), "w"
+        ) as markdown:
+            markdown.write(
+                render(
+                    "pages/cv.md",
+                    database=website.generator.database.cv,
+                )
+            )
 
 if __name__ in ["__main__", "<run_path>"]:
     main()
