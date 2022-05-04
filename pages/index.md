@@ -8,38 +8,55 @@ csv_path: ./pages/cyclic_voltammograms/data/dd.csv
 ## Philosophy
 echemdb aims at standardizing electrochemical data according to the 
 [FAIR principles](https://www.go-fair.org/fair-principles/), allowing 
-for comparison between pubished data from the past with data acquired 
-in the lab, and theoretical models.
-The authors currently focus on cyclic voltammetry measurements 
-on single crystal electrodes.
+comparison of published data with data acquired 
+in the laboratory, and theoretical models.
+The authors currently focus on cyclic voltammograms recorded 
+on monometallic single crystal electrodes.
 
 Read more in our [`About`](about.md) section.
 
-# Website content
+## Website content
 
-The website shows the standardized and validated cyclic voltammograms
-from the echemdb data repository, 
-provided or carefully extracted from the literature
-by the community.
+The website shows cyclic voltammograms from the echemdb data repository,
+which were standardized and validated from published works by the community.
 
-More details? Explore an entry.
-::TODO: Iclude a figure of a CV (Pt111) and add a link to the respective entry.
+[More details? Explore an entry](Entry Link).
 
-# API
+!!! Note
+    
+    Include a figure of a CV of (Pt111) and add a link to the respective entry.
+    Need to digitize an appropriate figure.
 
-Add Link to a API and a code snippet as image
+## API
 
-# Validation
+The entries in the database are accessible by the echemdb python module, 
+which provides an interactive way to visualize, filter or evaluate the 
+available data.
 
-Echemdb metadata schema
+Get started with our interactive [example notbook](link to notebok),
+or read more in our [documentation](https://echemdb.github.io/echemdb/).
 
-Add a figure of a json and yaml snipped
+!!! Note 
 
-# digitization and preservation
+    Add link to demo notebook and a code snippet as image or gif.
+
+## Validation
+
+To render all electrochemical data interoperable we designed 
+a metadata schema for electrochemical measurements.
+
+!!! Note
+
+    Add a figure of a json and yaml snippet.
+
+## digitization and preservation
 
 SVGdigitizer
 
-Add fancy figure showing raw and digitized data or something that we want to add on SVGdigitizer anyway.
+!!! Note
+
+    Add fancy figure showing raw and digitized data 
+    (Maybe something that we want show on the website of SVGdigitizer)
 
 <!-- 
 The navigation lists several experimental standard techniques, and results on selected 
