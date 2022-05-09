@@ -24,7 +24,6 @@ in
 ## Further information
 The figure shows {{ entry.figure_description.type }} data.
 
-**Preparation procedure**  
 {% if entry.system.electrodes.working_electrode.preparation_procedure is defined %}
 The {{ entry.system.electrodes.working_electrode.material }}({{ entry.system.electrodes.working_electrode.crystallographic_orientation }}) electrode was prepared by:  
 {{ entry.system.electrodes.working_electrode.preparation_procedure }}
@@ -38,37 +37,34 @@ Preparation procedure not available.
 {% endif %}
 
 ## Metadata
-Details on the electrochemical system:
+
 <details>
-<summary>Click to expand (yaml)</summary>
+<summary>Details on the electrochemical system (yaml)</summary>
 
 ```yaml
 {{ entry.system.yaml }}
 ```
 </details>
 
-Bibtex citation key:
 <details>
-<summary>Click to expand (bibtex)</summary>
+<summary>Citation key (bibtex)</summary>
 
 ```bibtex
 {{ entry.bibliography.to_string('bibtex') }}
 ```
 </details>
 
-Details about the original figure in the publicaton:
+
 <details>
-<summary>Click to expand (yaml).</summary>
+<summary>Details about the original figure in the publicaton (yaml).</summary>
 
 ```yaml
 {{ entry.figure_description.yaml }}
 ```
 </details>
 
-
-Details about the curation process of this entry:
 <details>
-<summary>Click to expand (yaml).</summary>
+<summary>Details about the curation process of this entry (yaml).</summary>
 
 ```yaml
 {{ entry.curation.yaml }}
