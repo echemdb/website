@@ -5,7 +5,7 @@
     border: 0px solid white;
     border-radius: 0px;
     width = 10px
-    }
+}
 
 span.b {
     display: inline-block;
@@ -42,50 +42,50 @@ span.a {
  * instead.
  **/
 .echemdb-spotlight figure {
-  display: flex;
-  flex-flow: row nowrap;
-  margin: 0 0 0 3em;
-  text-align: left;
-  gap: 3em;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 0 0 3em;
+    text-align: left;
+    gap: 3em;
 }
 
 .echemdb-spotlight figure > p:first-child {
-  flex-shrink: 0;
+    flex-shrink: 0;
 }
 
 .echemdb-spotlight figure.echemdb-spotlight-reverse {
-  flex-flow: row-reverse nowrap;
+    flex-flow: row-reverse nowrap;
 }
 
 .echemdb-spotlight figcaption {
-  margin: 0 0 .5em 0;
-  font-style: normal;
-  max-width: 100%;
+    margin: 0 0 .5em 0;
+    font-style: normal;
+    max-width: 100%;
 }
 
 .echemdb-spotlight figcaption h2 {
-  margin: .8em 0 0 0;
+    margin: .8em 0 0 0;
 }
 
 .echemdb-spotlight img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-  width: 40ex;
-  border-radius: .3ex;
-box-shadow: 4px 5px 20px -6px rgba(0,0,0,0.1);
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: 40ex;
+    border-radius: .3ex;
+    box-shadow: 4px 5px 20px -6px rgba(0,0,0,0.1);
 }
 
 @media screen and (max-width: 991px) {
-.echemdb-spotlight figure , .echemdb-spotlight figure.echemdb-spotlight-reverse {
-  flex-flow: column;
-  gap: 0;
-  margin: 0;
-}
+    .echemdb-spotlight figure , .echemdb-spotlight figure.echemdb-spotlight-reverse {
+        flex-flow: column;
+        gap: 0;
+        margin: 0;
+    }
 
-.echemdb-spotlight img {
-  margin-left: auto;
-  margin-right: auto;
-  width: 28em;
-}
+    .echemdb-spotlight img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 28em;
+    }
 }
