@@ -3,15 +3,15 @@ Create generated pages for the website.
 
 This module is invoked by the `mkdocs-gen-files module
 <https://oprypin.github.io/mkdocs-gen-files/>` to generate pages such as the
-individual pages for each CV.
+individual pages for each entry in the database.
 """
 # ********************************************************************
 #  This file is part of echemdb.
 #
-#        Copyright (C) 2021 Albert Engstfeld
-#        Copyright (C) 2021 Johannes Hermann
-#        Copyright (C) 2021 Julian Rüth
-#        Copyright (C) 2021 Nicolas Hörmann
+#        Copyright (C) 2021-2022 Albert Engstfeld
+#        Copyright (C) 2021      Johannes Hermann
+#        Copyright (C) 2021-2022 Julian Rüth
+#        Copyright (C) 2021      Nicolas Hörmann
 #
 #  echemdb is free software: you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -62,18 +62,15 @@ def main():
     ) as markdown:
         markdown.write(
                     render(
-                        "pages/cv.md",
-                        database=database
+                        "pages/cv.md"
                     )
                 )
-        for material in ['Ru', 'Cu', 'Pt']: #database.materials()
-            filtered_db = database.filter(lambda entry: entry.system.electrodes.working_electrode.material == material)
-            markdown.write(
-                render(
-                    "components/cv_table.md",
-                    database=filtered_db, material=material
-                )
+        markdown.write(
+            render(
+                "components/cv_overview_table.md",
+                database=database
             )
+        )
 
 if __name__ in ["__main__", "<run_path>"]:
     main()

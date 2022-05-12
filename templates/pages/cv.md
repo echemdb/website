@@ -1,27 +1,6 @@
----
-author: Nicolas G. Hoermann, Albert K. Engstfeld
-title: echemdb - The community database for electrochemical data
----
 # Cyclic Voltammograms
 
-A list of digitized cyclic voltammograms.
-
-<!-- template table
-
-{{database | render("components/cv_table.md")}} 
-
-other table  
-
-{% for material in materials %}
-## material
-{% endfor %}
-| identifier |
-| ---------- |
-{% for entry in database %}
-| [{{ entry.identifier }}](entries/{{ entry.identifier }}) |
-{% endfor %} -->
-
-
+Select a graph for more details.
 
 <!--
 /* maybe here we could have some overview of the data, how many read
