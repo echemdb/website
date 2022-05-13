@@ -1,6 +1,3 @@
-experimental:
-  tags:
-  - BCV, Cu UPD
 curation:
   process:
   - date: 2022-02-18
@@ -10,7 +7,7 @@ curation:
   version: 1
 electrochemical system:
   electrodes:
-    configuration: 3
+    configuration: three
     reference electrode:
       type: RHE
     working electrode:
@@ -25,12 +22,6 @@ electrochemical system:
       proportion:
         unit: volume percent
         value: 100
-      purity:
-        grade: ultrapure water
-        total organic carbon:
-          unit: ppb
-      source:
-        refinement: Millipore-Super Q
       type: solvent
     - concentration:
         unit: mol / l
@@ -48,7 +39,8 @@ electrochemical system:
       name: Cu
       purity:
         grade: 5N
-      type: Cu-ion source
+      type: salt
+      comment: Cu-ion source not provied.
     - name: Ar
       pressure:
         unit: 1
@@ -66,9 +58,7 @@ electrochemical system:
   version: 1
 source:
   citation key: durand_1992_insitu_1977
-  curve: steady-state curve
-  doi: https://doi.org/10.1016/0022-0728(93)80333-D
-  figure: 1
+  url: https://doi.org/10.1016/0013-4686(92)87111-C
   techniques: 
   - CV
   - in situ XRD
