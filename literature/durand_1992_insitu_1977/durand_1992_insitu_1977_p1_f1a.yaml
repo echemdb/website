@@ -1,0 +1,115 @@
+source:
+   version: 1
+   doi: https://doi.org/10.1016/0022-0728(93)80333-D 
+   citation key: Durand_1992_insitu_1977
+   techniques: CV
+   figure: 1
+   curve: steady-state curve
+ 
+curation:
+  version: 1
+  process:
+  - role: curator
+    name: Tobias Schmider
+    orcid: https://orcid.org/0000-0002-2911-2925
+    date: 2022-02-18
+    
+figure description: 
+    version: 1
+    simultaneous measurements: null 
+    comment: steady-state CV of an in air cooled Pt(110)
+
+# Description of the electrochemical system
+
+electrochemical system:
+    version: 1
+    instrumentation:
+        - type: potentiostat
+          supplier: null
+    electrolyte:
+        type: aq # aqueous = aq, non-aqueous=naq
+        components: # create as many components as necessary. A simple electrolyte consists of two components, i.e., H2SO4 and water
+            - name: water
+              type: solvent
+              proportion:
+                  value: 100
+                  unit: volume percent
+              source:
+                  refinement: Millipore-Super Q
+              purity: 
+                  grade: ultrapure water
+                  total organic carbon: 
+                      value: null
+                      unit: ppb
+            - name: HClO4
+              type: acid
+              source:
+                  supplier: null
+                  LOT: null
+              concentration:
+                  value: 0.001
+                  unit: mol / l 
+            - name: NaClO4
+              type: salt
+              source:
+                  supplier: null
+                  LOT: null
+              concentration:
+                  value: 1
+                  unit: mol / l 
+            - name: Cu
+              type: Cu-ion source
+              source:
+                supplier: null
+                LOT: null 
+              concentration:
+                value: 0.0001
+                unit: mol / l
+              purity:
+                grade: 5N
+            - name: Ar
+              type: gas
+              purity:
+                  grade: null
+              pressure:
+                  unit: 1
+                  value: bar # use 1 bar for saturated solutions
+              proportion:
+                  value: 100
+              flow:
+                  value: null
+                  unit: null
+        ph: 
+            value: 0.29
+            uncertainty: 0.1
+        temperature: 
+            value: 298.15 
+            unit: K 
+    electrodes:
+        configuration: 3 # number of electrodes
+        reference electrode:
+            type: RHE 
+            source:
+                supplier: null
+        counter electrode:
+            material: null
+            crystallographic orientation: null
+            shape: null
+        working electrode:
+            material: Pt
+            crystallographic orientation: '110' 
+            source:
+                supplier: null
+                LOT: null
+            #shape: null
+            #    type: null
+            #    height:
+            #        value: null
+            #        unit: mm
+            #    diameter:
+            #        value: null
+            #        unit: mm
+            geometric electrolyte contact area: 
+                value: null
+                unit: cm-2
+            preparation procedure: Annealed in H2-O2 flame 
