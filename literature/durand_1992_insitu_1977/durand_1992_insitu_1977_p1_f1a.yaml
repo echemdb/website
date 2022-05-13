@@ -1,110 +1,76 @@
-source:
-   version: 1
-   doi: https://doi.org/10.1016/0022-0728(93)80333-D 
-   citation key: Durand_1992_insitu_1977
-   techniques: CV
-   curve: steady-state curve
- 
+experimental:
+  tags:
+  - BCV, Cu UPD
 curation:
-  version: 1
   process:
-  - role: curator
+  - date: 2022-02-18
     name: Tobias Schmider
     orcid: https://orcid.org/0000-0002-2911-2925
-    date: 2022-02-18
-    
-
-# Description of the electrochemical system
-
+    role: curator
+  version: 1
 electrochemical system:
-    version: 1
-    instrumentation:
-        - type: potentiostat
-          supplier: null
-    electrolyte:
-        type: aq # aqueous = aq, non-aqueous=naq
-        components: # create as many components as necessary. A simple electrolyte consists of two components, i.e., H2SO4 and water
-            - name: water
-              type: solvent
-              proportion:
-                  value: 100
-                  unit: volume percent
-              source:
-                  refinement: Millipore-Super Q
-              purity: 
-                  grade: ultrapure water
-                  total organic carbon: 
-                      value: null
-                      unit: ppb
-            - name: HClO4
-              type: acid
-              source:
-                  supplier: null
-                  LOT: null
-              concentration:
-                  value: 0.001
-                  unit: mol / l 
-            - name: NaClO4
-              type: salt
-              source:
-                  supplier: null
-                  LOT: null
-              concentration:
-                  value: 1
-                  unit: mol / l 
-            - name: Cu
-              type: Cu-ion source
-              source:
-                supplier: null
-                LOT: null 
-              concentration:
-                value: 0.0001
-                unit: mol / l
-              purity:
-                grade: 5N
-            - name: Ar
-              type: gas
-              purity:
-                  grade: null
-              pressure:
-                  unit: 1
-                  value: bar # use 1 bar for saturated solutions
-              proportion:
-                  value: 100
-              flow:
-                  value: null
-                  unit: null
-        ph: 
-            value: 0.29
-            uncertainty: 0.1
-        temperature: 
-            value: 298.15 
-            unit: K 
-    electrodes:
-        configuration: 3 # number of electrodes
-        reference electrode:
-            type: RHE 
-            source:
-                supplier: null
-        counter electrode:
-            material: null
-            crystallographic orientation: null
-            shape: null
-        working electrode:
-            material: Pt
-            crystallographic orientation: '110' 
-            source:
-                supplier: null
-                LOT: null
-            #shape: null
-            #    type: null
-            #    height:
-            #        value: null
-            #        unit: mm
-            #    diameter:
-            #        value: null
-            #        unit: mm
-            geometric electrolyte contact area: 
-                value: null
-                unit: cm-2
-            preparation procedure: Annealed in H2-O2 flame 
+  electrodes:
+    configuration: 3
+    reference electrode:
+      type: RHE
+    working electrode:
+      crystallographic orientation: '110'
+      geometric electrolyte contact area:
+        unit: cm-2
+      material: Pt
+      preparation procedure: Annealed in an H2-O2 flame.
+  electrolyte:
+    components:
+    - name: water
+      proportion:
+        unit: volume percent
+        value: 100
+      purity:
+        grade: ultrapure water
+        total organic carbon:
+          unit: ppb
+      source:
+        refinement: Millipore-Super Q
+      type: solvent
+    - concentration:
+        unit: mol / l
+        value: 0.001
+      name: HClO4
+      type: acid
+    - concentration:
+        unit: mol / l
+        value: 1
+      name: NaClO4
+      type: salt
+    - concentration:
+        unit: mol / l
+        value: 0.0001
+      name: Cu
+      purity:
+        grade: 5N
+      type: Cu-ion source
+    - name: Ar
+      pressure:
+        unit: 1
+        value: bar
+      proportion:
+        value: 100
+      type: gas
+    ph:
+      uncertainty: 0.1
+      value: 0.29
+    temperature:
+      unit: K
+      value: 298.15
+    type: aq
+  version: 1
+source:
+  citation key: durand_1992_insitu_1977
+  curve: steady-state curve
+  doi: https://doi.org/10.1016/0022-0728(93)80333-D
+  figure: 1
+  techniques: 
+  - CV
+  - in situ XRD
+  - EXAFS
+  version: 1
