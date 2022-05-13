@@ -5,7 +5,8 @@ curation:
     orcid: https://orcid.org/0000-0002-2911-2925
     role: curator
   version: 1
-electrochemical system:
+system:
+  type: electrochemical
   electrodes:
     configuration: three
     reference electrode:
