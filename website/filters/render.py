@@ -88,6 +88,10 @@ def render(value, template=None):
             raise ValueError(
                 "No template specified but value does neither provide a markdown property nor a markdown_template property."
             )
+    if template == 'latex':
+        from pylatexenc.latex2text import LatexNodes2Text
+    
+        return LatexNodes2Text().latex_to_text(value)
 
     import website.macros.render
 
