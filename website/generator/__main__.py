@@ -42,7 +42,7 @@ def main():
 
     This function is invoked automatically by mkdocs during the build process.
     """
-    
+
     database = website.generator.database.cv
     # Create a single page for each entry in the database
     for entry in database:
@@ -57,20 +57,10 @@ def main():
                 )
             )
     # Create an overview page with tabulated and linked entries.
-    with mkdocs_gen_files.open(
-        os.path.join("cv", "index.md"), "w"
-    ) as markdown:
-        markdown.write(
-                    render(
-                        "pages/cv.md"
-                    )
-                )
-        markdown.write(
-            render(
-                "components/cv_overview_table.md",
-                database=database
-            )
-        )
+    with mkdocs_gen_files.open(os.path.join("cv", "index.md"), "w") as markdown:
+        markdown.write(render("pages/cv.md"))
+        markdown.write(render("components/cv_overview_table.md", database=database))
+
 
 if __name__ in ["__main__", "<run_path>"]:
     main()
