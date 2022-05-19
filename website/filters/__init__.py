@@ -4,10 +4,10 @@ Provides custom Jinja filters for rendering the echemdb websites.
 # ********************************************************************
 #  This file is part of echemdb.
 #
-#        Copyright (C) 2021 Albert Engstfeld
-#        Copyright (C) 2021 Johannes Hermann
-#        Copyright (C) 2021 Julian Rüth
-#        Copyright (C) 2021 Nicolas Hörmann
+#        Copyright (C)      2021 Albert Engstfeld
+#        Copyright (C)      2021 Johannes Hermann
+#        Copyright (C) 2021-2022 Julian Rüth
+#        Copyright (C)      2021 Nicolas Hörmann
 #
 #  echemdb is free software: you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -42,5 +42,7 @@ def enable_filters(env):
 
     """
     from website.filters.render import render
+    from website.filters.unicode import unicode
 
     env.filters["render"] = render
+    env.filters["unicode"] = unicode

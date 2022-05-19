@@ -70,10 +70,6 @@ def render(value, template=None):
 
     EXAMPLES::
 
-        >>> latex_text = 'Gl{\\"o}ckner'
-        >>> render(latex_text, template='latex')
-        'Glöckner'
-
         >>> from website.macros.render import render
         >>> from io import StringIO
         >>> from astropy.units import Unit
@@ -92,11 +88,6 @@ def render(value, template=None):
             raise ValueError(
                 "No template specified but value does neither provide a markdown property nor a markdown_template property."
             )
-    if template == "latex":
-        from pylatexenc.latex2text import LatexNodes2Text
-
-        return LatexNodes2Text().latex_to_text(value)
-
     import website.macros.render
 
     return website.macros.render.render(template, value=value)
