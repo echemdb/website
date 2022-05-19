@@ -47,4 +47,4 @@ def enable_filters(env):
 
     env.filters["render"] = render
     env.filters["unicode"] = unicode
-    env.filters["b64encode"] = b64encode
+    env.filters["b64encode"] = lambda value: b64encode(value).decode('utf-8')

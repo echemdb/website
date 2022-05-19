@@ -2,6 +2,14 @@
 
 Select a graph for more details.
 
+{% for material in database.materials() %}
+
+## {{ material }}
+
+{{ render("components/cv_overview_table.md", database=database.filter(material_filter(material))) }}
+
+{% endfor %}
+
 <!--
 /* maybe here we could have some overview of the data, how many read
 how man first is an analysis figure to see contributions w.r.t to time?!
