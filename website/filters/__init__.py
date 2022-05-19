@@ -43,6 +43,8 @@ def enable_filters(env):
     """
     from website.filters.render import render
     from website.filters.unicode import unicode
+    from base64 import b64encode
 
     env.filters["render"] = render
     env.filters["unicode"] = unicode
+    env.filters["b64encode"] = b64encode
