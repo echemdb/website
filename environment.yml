@@ -13,6 +13,7 @@ dependencies:
   - myst-nb>=0.13.0,<0.14.0
   - myst-parser>=0.15,<0.17
   - pip
+  - pylatexenc>=2.10,<3
   - pylint
   - pytest
   - pytest-doctestplus
