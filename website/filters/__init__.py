@@ -41,10 +41,11 @@ def enable_filters(env):
         '1 M'
 
     """
+    from base64 import b64encode
+
     from website.filters.render import render
     from website.filters.unicode import unicode
-    from base64 import b64encode
 
     env.filters["render"] = render
     env.filters["unicode"] = unicode
-    env.filters["b64encode"] = lambda value: b64encode(value).decode('utf-8')
+    env.filters["b64encode"] = lambda value: b64encode(value).decode("utf-8")
