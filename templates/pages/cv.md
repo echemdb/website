@@ -1,6 +1,6 @@
 # Cyclic Voltammograms
 
-Select a graph for more details.
+Click a graph for more details.
 
 {% for material in database.materials() %}
 
