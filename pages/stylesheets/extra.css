@@ -41,7 +41,7 @@
     box-shadow: 4px 5px 20px -6px rgba(0,0,0,0.1);
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 768px) {
     .echemdb-spotlight figure , .echemdb-spotlight figure.echemdb-spotlight-reverse {
         flex-flow: column;
         gap: 0;
