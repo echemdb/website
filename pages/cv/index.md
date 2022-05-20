@@ -1,7 +1,3 @@
----
-author: Nicolas G. Hoermann
-title: echemdb - The community database for electrochemical data
----
 # Cyclic Voltammograms
 
 Under construction!

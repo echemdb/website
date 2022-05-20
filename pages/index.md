@@ -1,8 +1,3 @@
----
-author: Nicolas G. Hoermann, Albert Engstfeld
-title: echemdb - The community database for electrochemical data
-csv_path: ./pages/cyclic_voltammograms/data/dd.csv
----
 # echemdb - the community database for electrochemical data
 
 <div class="echemdb-spotlight" markdown>
