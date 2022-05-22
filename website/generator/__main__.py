@@ -58,14 +58,20 @@ def main():
             )
     # Create an overview page with tabulated and linked entries.
     with mkdocs_gen_files.open(os.path.join("cv", "index.md"), "w") as markdown:
-        markdown.write(render(
-            "pages/cv.md",
-            database=database,
-            # The overview page needs to filter the database by material.
-            # Unfortunately, jinja does not allow such generic lambdas so we
-            # need to pass the lambda that filters by a material into the
-            # template from here.
-            material_filter=lambda material: (lambda entry: entry.system.electrodes.working_electrode.material == material)))
+        markdown.write(
+            render(
+                "pages/cv.md",
+                database=database,
+                # The overview page needs to filter the database by material.
+                # Unfortunately, jinja does not allow such generic lambdas so we
+                # need to pass the lambda that filters by a material into the
+                # template from here.
+                material_filter=lambda material: (
+                    lambda entry: entry.system.electrodes.working_electrode.material
+                    == material
+                ),
+            )
+        )
 
 
 if __name__ in ["__main__", "<run_path>"]:
