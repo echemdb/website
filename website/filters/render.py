@@ -88,7 +88,6 @@ def render(value, template=None):
             raise ValueError(
                 "No template specified but value does neither provide a markdown property nor a markdown_template property."
             )
-
     import website.macros.render
 
     return website.macros.render.render(template, value=value)

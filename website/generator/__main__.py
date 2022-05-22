@@ -3,15 +3,15 @@ Create generated pages for the website.
 
 This module is invoked by the `mkdocs-gen-files module
 <https://oprypin.github.io/mkdocs-gen-files/>` to generate pages such as the
-individual pages for each CV.
+individual pages for each entry in the database.
 """
 # ********************************************************************
 #  This file is part of echemdb.
 #
-#        Copyright (C) 2021 Albert Engstfeld
-#        Copyright (C) 2021 Johannes Hermann
-#        Copyright (C) 2021 Julian Rüth
-#        Copyright (C) 2021 Nicolas Hörmann
+#        Copyright (C) 2021-2022 Albert Engstfeld
+#        Copyright (C) 2021      Johannes Hermann
+#        Copyright (C) 2021-2022 Julian Rüth
+#        Copyright (C) 2021      Nicolas Hörmann
 #
 #  echemdb is free software: you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -42,17 +42,36 @@ def main():
 
     This function is invoked automatically by mkdocs during the build process.
     """
-    for entry in website.generator.database.cv:
+
+    database = website.generator.database.cv
+    # Create a single page for each entry in the database
+    for entry in database:
         with mkdocs_gen_files.open(
             os.path.join("cv", "entries", f"{entry.identifier}.md"), "w"
         ) as markdown:
             markdown.write(
                 render(
                     "pages/cv_entry.md",
-                    database=website.generator.database.cv,
+                    database=database,
                     entry=entry,
                 )
             )
+    # Create an overview page with tabulated and linked entries.
+    with mkdocs_gen_files.open(os.path.join("cv", "index.md"), "w") as markdown:
+        markdown.write(
+            render(
+                "pages/cv.md",
+                database=database,
+                # The overview page needs to filter the database by material.
+                # Unfortunately, jinja does not allow such generic lambdas so we
+                # need to pass the lambda that filters by a material into the
+                # template from here.
+                material_filter=lambda material: (
+                    lambda entry: entry.system.electrodes.working_electrode.material
+                    == material
+                ),
+            )
+        )
 
 
 if __name__ in ["__main__", "<run_path>"]:
