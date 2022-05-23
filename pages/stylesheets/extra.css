@@ -68,6 +68,8 @@ th[role=columnheader] {
 tr img.echemdb-cv-thumbnail {
   transform: unset;
   height: calc(72px / 1.5);
+  /* Chrome blurs the thumbnails when they are scaled down. So we ask all webkit browsers to optimize for high-contrast. */
+  image-rendering: -webkit-optimize-contrast;
 }
 
 tr:hover img.echemdb-cv-thumbnail {
