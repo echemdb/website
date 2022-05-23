@@ -1,2 +1,1 @@
 - [Cyclic Voltammograms](index.md)
-- [Entries](entries/)
