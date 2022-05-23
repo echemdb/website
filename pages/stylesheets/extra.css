@@ -9,7 +9,7 @@
 .echemdb-spotlight figure {
     display: flex;
     flex-flow: row nowrap;
-    margin: 0 0 0 3em;
+    margin: 0 0 2em 3em;
     text-align: left;
     gap: 3em;
 }
