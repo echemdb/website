@@ -1,104 +1,56 @@
-.md-typeset md-button {
-    display: inline-block;
-    padding: 0px 0px 0px 0px;
-    font-weight: 100;
-    border: 0px solid white;
-    border-radius: 0px;
-    width = 10px
+/*
+ * Spotlight cards for the homepage.
+ *
+ * Apparently, spotlight is a sponsor-feature of mkdocs-material (or completely unreleased.)
+ * Since we want something like this on our homepage, we roll our own. Once
+ * this has been open-sourced, we should use the mkdocs-material feature
+ * instead.
+ **/
+.echemdb-spotlight figure {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 0 2em 3em;
+    text-align: left;
+    gap: 3em;
+}
+
+.echemdb-spotlight figure > p:first-child {
+    flex-shrink: 0;
+}
+
+.echemdb-spotlight figure.echemdb-spotlight-reverse {
+    flex-flow: row-reverse nowrap;
+}
+
+.echemdb-spotlight figcaption {
+    margin: 0 0 .5em 0;
+    font-style: normal;
+    max-width: 100%;
+}
+
+.echemdb-spotlight figcaption h2 {
+    margin: .8em 0 0 0;
+}
+
+.echemdb-spotlight img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: 40ex;
+    border-radius: .3ex;
+    box-shadow: 4px 5px 20px -6px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width: 991px) {
+    .echemdb-spotlight figure , .echemdb-spotlight figure.echemdb-spotlight-reverse {
+        flex-flow: column;
+        gap: 0;
+        margin: 0;
     }
 
-test {
-    display: inline-block;
-    width: 40px;
-    height: 48px;
-    vertical-align: middle;
-    border: 2px solid red;
-}
-
-span.b {
-    display: inline-block;
-    width: 1.6rem;
-    padding: 0.1rem;
-    vertical-align: middle;
-    horizontal-align: middle;
-    background-color: white;
-    text-align: center;
-    border-color: coral;
-    border-radius: 5px;
-    border: 0px solid white;
-}
-
-
-span.a {
-    display: inline-block;
-    width: 1.6rem;
-    padding: 0.1rem;
-    vertical-align: middle;
-    horizontal-align: middle;
-    background-color: white;
-    text-align: center;
-    border-color: coral;
-    border-radius: 5px;
-    border: 1px solid black;
-}
-
-
-/*
-.md-typeset__table {
-    border-collapse: collapse;
-    background-color: white;
-    border-top: 0px;
-    max-width: 580px;
-    min-width: 20px;
-    width: 450px;
-    table-layout: auto;
-}
-.foo table {
-    display: inline
-    border-collapse: collapse;
-    background-color: red;
-}
-.foo td {
-    display: td
-    background-color: red;
-}
-.foo th {
-    display: th
-    background-color: red;
-}
-.foo tr {
-    display: inline
-    background-color: red;
-}
-.md-typeset td {
-    background-color: white;
-    border-top: 0px;
-    border-bottom: 0;
-    border-top: 0;
-    border-top: 0;
-    border-top: 0 solid white;;
-    padding: 0px 0px 0px 0px;
-    max-width: 10px;
-    min-width: 20px;
-    width: 10px;
-    table-layout: fixed;
-}
-.md-typeset th {
-    max-width: 10px;
-    min-width: 9px;
-    padding: 0px 0px 0px 0px;
-    color: white;
-    vertical-align: top;
-    background-color: white;
+    .echemdb-spotlight img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 28em;
     }
-.md-typeset tr {
-    background-color: red;
-    padding: 0px 0px 0px 0px;
-    box-shadow: 0 0 0 orange inset;
-    max-width: 10px;
-    min-width: 10px;
-  }
-.md-typeset table:not([class]) {
-    display: table;
 }
-/*
