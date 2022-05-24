@@ -19,7 +19,7 @@ system:
     working electrode:
       crystallographic orientation: '111'
       material: Pt
-      preparation procedure: The elctrode was prepared under UHV conditions by sputtering the electrode surface and subsequent controlled heating and colling cycles, including oxygen adsorption during the colling process. The final step only involved controlled heating and cooling.
+      preparation procedure: The elctrode was prepared under UHV conditions by sputtering the electrode surface and subsequent controlled heating and cooling cycles, including oxygen adsorption during the cooling process. The final step only involved controlled heating and cooling.
       shape:
         height:
           unit: mm
@@ -74,7 +74,3 @@ curation:
     name: Albert Engstfeld
     orcid: https://orcid.org/0000-0002-9686-3948
     date: 2022-05-23
-  - role: reviewer
-    name: Albert Engstfeld
-    orcid: https://orcid.org/0000-0002-9686-3948
-    date: 2022-01-21
