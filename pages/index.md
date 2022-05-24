@@ -1,3 +1,8 @@
+---
+hide:
+- toc
+- navigation
+---
 # echemdb - the community database for electrochemical data
 
 <div class="echemdb-spotlight" markdown>
