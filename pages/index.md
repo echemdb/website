@@ -1,11 +1,8 @@
----
-title: echemdb - The community database for electrochemical data
----
 # echemdb - the community database for electrochemical data
 
 <div class="echemdb-spotlight" markdown>
 <figure class="echemdb-spotlight" markdown>
-![Philosophy](https://dummyimage.com/800x600/)
+![Philosophy](https://user-images.githubusercontent.com/373765/169917484-db4cb1cb-51dd-44d4-b676-3f950e6c775a.svg)
 <figcaption markdown>
 ## Philosophy
 
@@ -13,73 +10,61 @@ echemdb aims at standardizing electrochemical data according to the
 [FAIR principles](https://www.go-fair.org/fair-principles/), allowing 
 comparison of published data with data acquired 
 in the laboratory, and theoretical models.
-The authors currently focus on cyclic voltammograms recorded 
-on monometallic single crystal electrodes.
 
 [→ Learn more](about.md)
 </figcaption>
 </figure>
 
 <figure class="echemdb-spotlight echemdb-spotlight-reverse" markdown>
-![Content](https://dummyimage.com/800x600/)
+[![Content](./images/home_plot.png)](./cv/entries/schnaidt_2017_a_4141_f2_solid)
 <figcaption markdown>
-## Website content
+## Website
 
-The website shows cyclic voltammograms from the echemdb data repository,
+The website shows cyclic voltammograms from the echemdb data repository
 which were standardized and validated from published works by the community.
 
-[More details? Explore an entry](Entry Link).
-
-!!! Note
-    
-    Include a figure of a CV of (Pt111) and add a link to the respective entry.
-    Need to digitize an appropriate figure.
+[→ Explore](./cv).
 </figcaption>
 </figure>
 
 <figure class="echemdb-spotlight" markdown>
-![API](https://dummyimage.com/800x600/)
+![API](./images/home_api.png)
 <figcaption markdown>
 ## API
 
-The entries in the database are accessible by the echemdb python module, 
-which provides an interactive way to visualize, filter or evaluate the 
-available data.
+The echemdb Python module provides an interactive way to visualize, filter, 
+or evaluate the entries in the database.
 
-Get started with our interactive [example notbook](link to notebok),
-or read more in our [documentation](https://echemdb.github.io/echemdb/).
+[→ Explore](https://mybinder.org/v2/gh/echemdb/echemdb/0.3.0?urlpath=tree%2Fdoc%2Fusage%2Fentry_interactions.md)  
+[→ Documentation](https://echemdb.github.io/echemdb/).
 
-!!! Note 
-
-    Add link to demo notebook and a code snippet as image or gif.
 </figcaption>
 </figure>
 
 <figure class="echemdb-spotlight echemdb-spotlight-reverse" markdown>
-![Validation](https://dummyimage.com/800x600/)
+![Validation](./images/home_yaml.png)
 <figcaption markdown>
-## Validation
+## Metadata
 
-To render all electrochemical data interoperable we designed 
-a metadata schema for electrochemical measurements.
+A metadata schema for electrochemical measurements
+renders electrochemical data interoperable. 
 
-!!! Note
-
-    Add a figure of a json and yaml snippet.
+[→ Learn more](https://github.com/echemdb/metadata-schema)
 </figcaption>
 </figure>
 
 <figure class="echemdb-spotlight" markdown>
-![SVGDigitizer](https://dummyimage.com/800x600/)
+![SVGDigitizer](./images/home_digitizer.png)
 <figcaption markdown>
-## digitization and preservation
+## Digitizer
 
-SVGdigitizer
+The svgdigitizer recovers data
+from published figures,
+where machine-readable data is not available.
 
-!!! Note
+[→ Learn more](https://echemdb.github.io/svgdigitizer/)  
+[→ Digitize a plot for echemdb](https://echemdb.github.io/svgdigitizer/workflow.html).
 
-    Add fancy figure showing raw and digitized data 
-    (Maybe something that we want show on the website of SVGdigitizer)
 </figcaption>
 </figure>
 </div>
