@@ -41,7 +41,7 @@
     box-shadow: 4px 5px 20px -6px rgba(0,0,0,0.1);
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 768px) {
     .echemdb-spotlight figure , .echemdb-spotlight figure.echemdb-spotlight-reverse {
         flex-flow: column;
         gap: 0;
@@ -53,4 +53,54 @@
         margin-right: auto;
         width: 28em;
     }
+}
+
+/*
+ * Do not wrap sort buttons in column headers. (So we do not get oversized headers.)
+ */
+th[role=columnheader] {
+  white-space: nowrap;
+}
+
+/*
+ * Animated hover for CV thumbnails.
+ */
+tr img.echemdb-cv-thumbnail {
+  transform: unset;
+  height: calc(72px / 1.5);
+  /* Chrome blurs the thumbnails when they are scaled down. So we ask all webkit browsers to optimize for high-contrast. */
+  image-rendering: -webkit-optimize-contrast;
+}
+
+tr:hover img.echemdb-cv-thumbnail {
+  transform: scale(1.5);
+  transition: transform 125ms;
+}
+
+/*
+ * Hide elements on mobile.
+ */
+
+@media screen and (max-width: 768px) {
+  .echemdb-hide-mobile {
+    display: none;
+  }
+}
+
+/*
+ * Expand tables to full width.
+ * Note that one of the th cells needs to be marked with the
+ * .echemdb-expand-column class to make sure that the table contents also fill
+ * the entire width.
+ */
+.md-typeset__table {
+  width: 100%;
+}
+
+.echemdb-expand-column {
+  width: 100%;
+}
+
+.md-typeset table:not([class]) td.echemdb-middle-cell {
+  vertical-align: middle;
 }
