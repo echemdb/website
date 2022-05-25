@@ -61,7 +61,9 @@ def main():
         markdown.write(
             render(
                 "pages/cv.md",
-                database=database.filter(lambda entry: entry.system.electrolyte.type == 'aq'),
+                database=database.filter(
+                    lambda entry: entry.system.electrolyte.type == "aq"
+                ),
                 material_filter=material_filter(),
             )
         )
@@ -70,22 +72,24 @@ def main():
         markdown.write(
             render(
                 "pages/cv.md",
-                database=database.filter(lambda entry: entry.system.electrolyte.type == 'ionic liquid'),
+                database=database.filter(
+                    lambda entry: entry.system.electrolyte.type == "ionic liquid"
+                ),
                 material_filter=material_filter(),
             )
         )
 
+
 def material_filter():
     r"""
-    A lambda that filters a database by a material that can be be passed 
+    A lambda that filters a database by a material that can be be passed
     into a template.
     Specifically this is required to generate the overview pages.
     Unfortunately, jinja does not allow such generic lambdas.
     """
     return lambda material: (
-                    lambda entry: entry.system.electrodes.working_electrode.material
-                    == material)
-
+        lambda entry: entry.system.electrodes.working_electrode.material == material
+    )
 
 
 if __name__ in ["__main__", "<run_path>"]:
