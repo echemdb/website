@@ -57,7 +57,7 @@ def main():
                 )
             )
     # Create an overview page with tabulated and linked entries for aqueous systems.
-    with mkdocs_gen_files.open(os.path.join("cv", "index.md"), "w") as markdown:
+    with mkdocs_gen_files.open(os.path.join("cv", "aqueous.md"), "w") as markdown:
         markdown.write(
             render(
                 "pages/cv.md",
