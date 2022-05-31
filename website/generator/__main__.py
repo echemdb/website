@@ -56,22 +56,42 @@ def main():
                     entry=entry,
                 )
             )
-    # Create an overview page with tabulated and linked entries.
-    with mkdocs_gen_files.open(os.path.join("cv", "index.md"), "w") as markdown:
+    # Create an overview page with tabulated and linked entries for aqueous systems.
+    with mkdocs_gen_files.open(os.path.join("cv", "aqueous.md"), "w") as markdown:
         markdown.write(
             render(
                 "pages/cv.md",
-                database=database,
-                # The overview page needs to filter the database by material.
-                # Unfortunately, jinja does not allow such generic lambdas so we
-                # need to pass the lambda that filters by a material into the
-                # template from here.
-                material_filter=lambda material: (
-                    lambda entry: entry.system.electrodes.working_electrode.material
-                    == material
+                database=database.filter(
+                    lambda entry: entry.system.electrolyte.type == "aq"
                 ),
+                entries_path="../entries",
+                material_filter=material_filter(),
             )
         )
+    # Create an overview page with tabulated and linked entries for ionic liquid systems.
+    with mkdocs_gen_files.open(os.path.join("cv", "ionic_liquid.md"), "w") as markdown:
+        markdown.write(
+            render(
+                "pages/cv.md",
+                database=database.filter(
+                    lambda entry: entry.system.electrolyte.type == "ionic liquid"
+                ),
+                entries_path="../entries",
+                material_filter=material_filter(),
+            )
+        )
+
+
+def material_filter():
+    r"""
+    A lambda that filters a database by a material that can be be passed
+    into a template.
+    Specifically this is required to generate the overview pages.
+    Unfortunately, jinja does not allow such generic lambdas.
+    """
+    return lambda material: (
+        lambda entry: entry.system.electrodes.working_electrode.material == material
+    )
 
 
 if __name__ in ["__main__", "<run_path>"]:
