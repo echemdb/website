@@ -63,8 +63,24 @@ def main():
                 "pages/cv.md",
                 database=database.filter(
                     lambda entry: entry.system.electrolyte.type == "aq"
+                    and "BCV" in entry.experimental.tags
                 ),
                 entries_path="../entries",
+                material_filter=material_filter(),
+            )
+        )
+    # Create an overview page with tabulated and linked entries for CO oxidation (COOR) in aqueous systems.
+    with mkdocs_gen_files.open(
+        os.path.join("cv", "aqueous", "COOR.md"), "w"
+    ) as markdown:
+        markdown.write(
+            render(
+                "pages/cv.md",
+                database=database.filter(
+                    lambda entry: entry.system.electrolyte.type == "aq"
+                    and "COOR" in entry.experimental.tags
+                ),
+                entries_path="../../entries",
                 material_filter=material_filter(),
             )
         )

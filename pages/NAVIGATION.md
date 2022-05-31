@@ -1,6 +1,7 @@
 * [Home](index.md)
 * [CV](cv/index.md)
     * [Aqueous](cv/aqueous.md)
+        * [COOR](cv/aqueous/COOR.md)
     * [Ionic Liquid](cv/ionic_liquid.md)
 * [API](https://echemdb.github.io/echemdb/)
 * [About](about.md)
