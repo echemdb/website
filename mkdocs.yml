@@ -13,6 +13,8 @@ theme:
   - navigation.tabs.sticky
   - toc.follow
 
+use_directory_urls: False
+
 extra_css:
   - stylesheets/extra.css
 
