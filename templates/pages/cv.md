@@ -1,4 +1,10 @@
 # Cyclic Voltammograms
+{% if cv_tag == 'aqueous COOR' %}
+Cyclic voltammograms recorded in CO containing aqueous electrolytes.
+{% elif cv_tag == 'ionic liquid BCV' %}
+Cyclic voltammograms recorded in ionic liquids.
+{% else %}
+{% endif %}
 
 Click a graph for more details.
 
