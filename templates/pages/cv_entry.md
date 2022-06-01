@@ -1,9 +1,19 @@
 # {{ entry.system.electrodes.working_electrode.material }}({{ entry.system.electrodes.working_electrode.crystallographic_orientation }}) <small>- {{ entry.system.electrolyte | render("components/electrolyte.md") }}</small>
 <small>echemdb identifier: `{{ entry.identifier }}`</small>  
+<small>tags:
+{% set separator = joiner(", ") %}
+{% for tag in entry.experimental.tags %}
+    {{- separator() -}}
+    {{ tag }}
+{% endfor %}
+</small>
 
 A cyclic voltammogramm for 
 {{ entry.system.electrodes.working_electrode.material }}({{ entry.system.electrodes.working_electrode.crystallographic_orientation }}) 
 recorded in 
+{% if 'COOR' in entry.experimental.tags %}
+CO containing 
+{% endif %}
 {{ entry.system.electrolyte | render("components/electrolyte.md") }}
 at a scan rate of 
 {{ entry.figure_description.scan_rate | render }}
