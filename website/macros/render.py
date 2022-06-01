@@ -16,10 +16,10 @@ The `render` macro renders an element using a specific template::
 # ********************************************************************
 #  This file is part of echemdb.
 #
-#        Copyright (C)      2021 Albert Engstfeld
-#        Copyright (C)      2021 Johannes Hermann
-#        Copyright (C) 2021-2022 Julian Rüth
-#        Copyright (C)      2021 Nicolas Hörmann
+#        Copyright (C) 2021 Albert Engstfeld
+#        Copyright (C) 2021 Johannes Hermann
+#        Copyright (C) 2021 Julian Rüth
+#        Copyright (C) 2021 Nicolas Hörmann
 #
 #  echemdb is free software: you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -36,76 +36,57 @@ The `render` macro renders an element using a specific template::
 # ********************************************************************
 
 
-def create_render(outer_environment=None):
+def render(template, **kwargs):
     r"""
-    Return a macro that renders a Jinja template, optionally with some global
-    variables pulled from the ``outer_environment``.
+    Render `template` as a jinja template in a new context.
 
-    The ``outer_environment`` is needed so that recursive calls to ``render``
-    know about the filename of the generated document for correct link creation
-    with :meth:`website.macros.link`.
+    TESTS:
+
+    The outer context does not leak into a nested context::
+
+        >>> from io import StringIO
+        >>> from astropy.units import Unit
+
+        >>> snippet = StringIO("{{ render('components/quantity.md') }}")
+        >>> render(snippet, value={ 'quantity': 1 * Unit("mol / l") })
+        Traceback (most recent call last):
+        ...
+        jinja2.exceptions.UndefinedError: 'value' is undefined
+
     """
-    def render(template, **kwargs):
-        r"""
-        Render `template` as a jinja template in a new context.
+    import os.path
 
-        TESTS:
+    from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-        The outer context does not leak into a nested context::
+    env = Environment(
+        loader=FileSystemLoader(
+            os.path.join(os.path.dirname(__file__), "..", "..", "templates")
+        ),
+        autoescape=select_autoescape(),
+        trim_blocks=True,
+        lstrip_blocks=True,
+    )
 
-            >>> from io import StringIO
-            >>> from astropy.units import Unit
+    # Load macros like mkdocs-macros does, see
+    # https://github.com/fralau/mkdocs_macros_plugin/blob/master/mkdocs_macros/plugin.py#L157
+    def macro(function, name=""):
+        env.globals[name or function.__name__] = function
 
-            >>> snippet = StringIO("{{ render('components/quantity.md') }}")
-            >>> render(snippet, value={ 'quantity': 1 * Unit("mol / l") })
-            Traceback (most recent call last):
-            ...
-            jinja2.exceptions.UndefinedError: 'value' is undefined
+    env.macro = macro
+    from website.macros import enable_macros
 
-        """
-        import os.path
+    enable_macros(env)
+    del env.macro
 
-        from jinja2 import Environment, FileSystemLoader, select_autoescape
+    from website.filters import enable_filters
 
-        env = Environment(
-            loader=FileSystemLoader(
-                os.path.join(os.path.dirname(__file__), "..", "..", "templates")
-            ),
-            autoescape=select_autoescape(),
-            trim_blocks=True,
-            lstrip_blocks=True,
-        )
+    enable_filters(env)
 
-        # Register "filename" as a global variable to make the link() macro work.
-        # Note that this global variable is inherited from an outer
-        # environment, i.e., when calling macro() in a template, link() still
-        # works since the filename is passed on.
-        env.globals["filename"] = kwargs.pop("filename", outer_environment.globals.get("filename", None) if outer_environment is not None else None)
+    from io import TextIOBase
 
-        # Load macros like mkdocs-macros does, see
-        # https://github.com/fralau/mkdocs_macros_plugin/blob/master/mkdocs_macros/plugin.py#L157
-        def macro(function, name=""):
-            env.globals[name or function.__name__] = function
+    if isinstance(template, TextIOBase):
+        template = env.from_string(template.read())
+    else:
+        template = env.get_template(template)
 
-        env.macro = macro
-        from website.macros import enable_macros
-
-        enable_macros(env)
-        del env.macro
-
-        from website.filters import enable_filters
-
-        enable_filters(env)
-
-        from io import TextIOBase
-
-        if isinstance(template, TextIOBase):
-            template = env.from_string(template.read())
-        else:
-            template = env.get_template(template)
-
-        return template.render(**kwargs)
-
-    return render
-
-render = create_render()
+    return template.render(**kwargs)

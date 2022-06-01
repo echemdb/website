@@ -41,8 +41,6 @@ def enable_macros(env):
         '1 M'
 
     """
-    from website.macros.render import create_render
-    env.macro(create_render(env), name="render")
+    from website.macros.render import render
 
-    from website.macros.link import create_link
-    env.macro(create_link(env), name="link")
+    env.macro(render)
