@@ -65,7 +65,7 @@ def main():
                     lambda entry: entry.system.electrolyte.type == "aq"
                     and "BCV" in entry.experimental.tags
                 ),
-                cv_tag='aqueous BCV',
+                cv_tag="aqueous BCV",
                 entries_path="../entries",
                 material_filter=material_filter(),
             )
@@ -81,7 +81,7 @@ def main():
                     lambda entry: entry.system.electrolyte.type == "aq"
                     and "COOR" in entry.experimental.tags
                 ),
-                cv_tag='aqueous COOR',
+                cv_tag="aqueous COOR",
                 entries_path="../../entries",
                 material_filter=material_filter(),
             )
@@ -94,7 +94,7 @@ def main():
                 database=database.filter(
                     lambda entry: entry.system.electrolyte.type == "ionic liquid"
                 ),
-                cv_tag='ionic liquid BCV',
+                cv_tag="ionic liquid BCV",
                 entries_path="../entries",
                 material_filter=material_filter(),
             )
