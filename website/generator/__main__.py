@@ -42,6 +42,7 @@ def main():
 
     This function is invoked automatically by mkdocs during the build process.
     """
+    root = mkdocs_gen_files.directory
 
     database = website.generator.database.cv
     # Create a single page for each entry in the database
@@ -54,6 +55,7 @@ def main():
                     "pages/cv_entry.md",
                     database=database,
                     entry=entry,
+                    filename=os.path.relpath(markdown.name, root),
                 )
             )
     # Create an overview page with tabulated and linked entries for aqueous systems.
@@ -64,8 +66,8 @@ def main():
                 database=database.filter(
                     lambda entry: entry.system.electrolyte.type == "aq"
                 ),
-                entries_path="../entries",
                 material_filter=material_filter(),
+                filename=os.path.relpath(markdown.name, root),
             )
         )
     # Create an overview page with tabulated and linked entries for ionic liquid systems.
@@ -76,10 +78,33 @@ def main():
                 database=database.filter(
                     lambda entry: entry.system.electrolyte.type == "ionic liquid"
                 ),
-                entries_path="../entries",
                 material_filter=material_filter(),
+                filename=os.path.relpath(markdown.name, root),
             )
         )
+
+
+def create_linker(root):
+    def linker(path):
+        import os.path
+
+        path = os.path.relpath(path, root)
+
+        if not path.endswith(".md"):
+            raise NotImplementedError("can only link from outputs written to .md files")
+
+        path = path[:-3] + os.path.sep
+
+        def link(absolute):
+            absolute = absolute.replace('/', os.path.sep)
+
+            relative = os.path.relpath(absolute, path)
+
+            return relative.replace(os.path.sep, '/')
+
+        return link
+
+    return linker
 
 
 def material_filter():

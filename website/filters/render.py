@@ -40,10 +40,10 @@ When no template is given, the filter renders the value with the
 # ********************************************************************
 #  This file is part of echemdb.
 #
-#        Copyright (C) 2021 Albert Engstfeld
-#        Copyright (C) 2021 Johannes Hermann
-#        Copyright (C) 2021 Julian Rüth
-#        Copyright (C) 2021 Nicolas Hörmann
+#        Copyright (C)      2021 Albert Engstfeld
+#        Copyright (C)      2021 Johannes Hermann
+#        Copyright (C) 2021-2022 Julian Rüth
+#        Copyright (C)      2021 Nicolas Hörmann
 #
 #  echemdb is free software: you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -60,34 +60,48 @@ When no template is given, the filter renders the value with the
 # ********************************************************************
 
 
-def render(value, template=None):
+def create_render(outer_environment):
     r"""
-    Return `value` as a MarkDown string.
-
-    Note that this filter might not interact correctly with autoescaping. If
-    there are problems, we should revisit the autoescaping advice at
-    https://jinja.palletsprojects.com/en/3.0.x/api/#custom-filters.
-
-    EXAMPLES::
-
-        >>> from website.macros.render import render
-        >>> from io import StringIO
-        >>> from astropy.units import Unit
-
-        >>> snippet = StringIO("{{ value | render(template='components/quantity.md') }}")
-        >>> render(snippet, value={ 'quantity': 1 * Unit("A / m^2") })
-        '1.0 $\\mathrm{A\\,m^{-2}}$'
-
+    Return a ``render`` filter pulling some global variables from the optional
+    Jinja environment ``outer_environment``.
     """
-    if template is None:
-        if hasattr(value, "markdown"):
-            return value.markdown
-        if hasattr(value, "markdown_template"):
-            template = value.markdown_template
-        else:
-            raise ValueError(
-                "No template specified but value does neither provide a markdown property nor a markdown_template property."
-            )
     import website.macros.render
+    render_macro = website.macros.render.create_render(outer_environment)
 
-    return website.macros.render.render(template, value=value)
+    def render(value, template=None):
+        r"""
+        Return `value` as a MarkDown string.
+
+        Note that this filter might not interact correctly with autoescaping. If
+        there are problems, we should revisit the autoescaping advice at
+        https://jinja.palletsprojects.com/en/3.0.x/api/#custom-filters.
+
+        EXAMPLES::
+
+            >>> from website.macros.render import render
+            >>> from io import StringIO
+            >>> from astropy.units import Unit
+
+        A ``render`` filter is globally registered by our ``__init__.py``. We use it in a template::
+
+            >>> snippet = StringIO("{{ value | render(template='components/quantity.md') }}")
+            >>> render(snippet, value={ 'quantity': 1 * Unit("A / m^2") })
+            '1.0 $\\mathrm{A\\,m^{-2}}$'
+
+        """
+        if template is None:
+            if hasattr(value, "markdown"):
+                return value.markdown
+            if hasattr(value, "markdown_template"):
+                template = value.markdown_template
+            else:
+                raise ValueError(
+                    "No template specified but value does neither provide a markdown property nor a markdown_template property."
+                )
+
+        return render_macro(template, value=value)
+
+    return render
+
+
+render = create_render(None)
