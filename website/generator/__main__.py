@@ -64,7 +64,6 @@ def main():
                 database=database.filter(
                     lambda entry: entry.system.electrolyte.type == "aq"
                 ),
-                entries_path="../entries",
                 material_filter=material_filter(),
             )
         )
@@ -76,7 +75,6 @@ def main():
                 database=database.filter(
                     lambda entry: entry.system.electrolyte.type == "ionic liquid"
                 ),
-                entries_path="../entries",
                 material_filter=material_filter(),
             )
         )
