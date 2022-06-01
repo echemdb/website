@@ -35,6 +35,7 @@ markdown_extensions:
   - smarty
   - meta
   - def_list
+  - footnotes
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
