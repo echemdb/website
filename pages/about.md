@@ -23,6 +23,12 @@ Reliable and appropriately standardized data across different systems is still r
 as small changes in the experiments can easily yield dramatic differences in the observations.
 -->
 
+# Contribute
+
+Contributions are always welcome and do not necessarily require programming skills. Please leave us a message if you are interested in contributing to the echemDB.
+
+You could get started by [digitizing some published data](https://echemdb.github.io/svgdigitizer/workflow.html) in your area of research or by extending any of the pages of the [echemDB website](https://echemdb.github.io/website/). If your interest is outside of cyclic voltammograms or electrochemistry, we would also be thrilled to hear about your ideas to extend these projects to other areas.
+
 # Contact
 
 E-mail: contact@echemdb.org
