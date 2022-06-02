@@ -92,7 +92,7 @@ def main():
                 database=database.filter(
                     lambda entry: entry.system.electrolyte.type == "ionic liquid"
                 ),
-                intro="Cyclic voltammograms recorded in ionic liquids."
+                intro="Cyclic voltammograms recorded in ionic liquids.",
                 material_filter=material_filter(),
             )
         )
