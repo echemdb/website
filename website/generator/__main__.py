@@ -79,7 +79,6 @@ def main():
                     lambda entry: entry.system.electrolyte.type == "aq"
                     and "COOR" in entry.experimental.tags
                 ),
-                entries_path="../../entries",
                 material_filter=material_filter(),
             )
         )
