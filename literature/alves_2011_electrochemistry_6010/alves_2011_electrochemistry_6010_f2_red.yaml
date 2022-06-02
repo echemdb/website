@@ -41,7 +41,7 @@ system:
         supplier: Merck Suprapur
       type: acid
     - name: CO
-      proportion: 
+      proportion:
         value: 100
         unit: volume percent
       type: gas

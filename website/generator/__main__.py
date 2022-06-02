@@ -66,7 +66,6 @@ def main():
                     and "BCV" in entry.experimental.tags
                 ),
                 cv_tag="aqueous BCV",
-                entries_path="../entries",
                 material_filter=material_filter(),
             )
         )
@@ -82,7 +81,6 @@ def main():
                     and "COOR" in entry.experimental.tags
                 ),
                 cv_tag="aqueous COOR",
-                entries_path="../../entries",
                 material_filter=material_filter(),
             )
         )
@@ -95,7 +93,6 @@ def main():
                     lambda entry: entry.system.electrolyte.type == "ionic liquid"
                 ),
                 cv_tag="ionic liquid BCV",
-                entries_path="../entries",
                 material_filter=material_filter(),
             )
         )
