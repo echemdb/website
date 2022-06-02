@@ -9,11 +9,11 @@ use the [API](https://echemdb.github.io/echemdb/).
 
 ## Systems
 
-* **Aqueous**: Aqueous systems use water as a solvent, which is mixed with ions from an acid, a base, a salt, or a combination of such chemicals.
+* **[Aqueous](aqueous.md)**: Aqueous systems use water as a solvent, which is mixed with ions from an acid, a base, a salt, or a combination of such chemicals.
 Other chemicals or gases can be added.
 * **Non aqueous**: The ion conducting electrolyte can be a solid or a liquid.
 In the case of a liquid, the solvent is either conductive itself,
-as in **ionic liquids**, or it consists of a non-conductive solvent mixed with a salt.
+as in **[Ionic Liquids](ionic_liquid.md)**, or it consists of a non-conductive solvent mixed with a salt.
 
 ## Tags
 
