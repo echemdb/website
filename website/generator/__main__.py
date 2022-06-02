@@ -65,7 +65,6 @@ def main():
                     lambda entry: entry.system.electrolyte.type == "aq"
                     and "BCV" in entry.experimental.tags
                 ),
-                entries_path="../entries",
                 material_filter=material_filter(),
             )
         )
@@ -92,7 +91,6 @@ def main():
                 database=database.filter(
                     lambda entry: entry.system.electrolyte.type == "ionic liquid"
                 ),
-                entries_path="../entries",
                 material_filter=material_filter(),
             )
         )
