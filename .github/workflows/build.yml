@@ -50,12 +50,12 @@ jobs:
       - name: detect broken links
         shell: bash -l {0}
         run: |
-          python -m http.server 8880 --directory generated &
+          python -m http.server 8880 --directory generated/website &
           sleep 1
           # We check for broken links:
           # * ignore fonts.gstatic.com which is mentioned by a link preconnect tag that linkchecker does not parse correctly.
           # * ignore DOIs since some publishers ban GitHub or bots.
-          linkchecker --check-extern --no-robots --ignore fonts.gstatic.com --ignore doi.org http://localhost:8880/website/ --ignore mybinder.org
+          linkchecker --check-extern --no-robots --ignore fonts.gstatic.com --ignore doi.org http://localhost:8880/ --ignore mybinder.org
         # We only check links on Linux since we do not want to get flagged because of too many requests by the target websites.
         if: ${{ matrix.os == 'ubuntu-latest' }}
       - uses: JamesIves/github-pages-deploy-action@v4.3.3
