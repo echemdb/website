@@ -22,3 +22,9 @@ enabling seamless integration into existing workflows.
 Reliable and appropriately standardized data across different systems is still rare, especially
 as small changes in the experiments can easily yield dramatic differences in the observations.
 -->
+
+# Contact
+
+E-mail: contact@echemdb.org
+
+To reach individual contributors visit our [GitHub organization](https://github.com/echemdb).
