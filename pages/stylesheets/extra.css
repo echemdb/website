@@ -21,7 +21,7 @@
 
 .echemdb-spotlight figure > p:first-child {
     flex-shrink: 0;
-    /* Align imaes and headings. */
+    /* Align images and headings. */
     margin-top: 1.2em;
 }
 
@@ -87,7 +87,7 @@
     }
 
     /*
-     *
+     * The headers can be confusing on mobile since they break which picture belongs to which text. Since they are repeated in the text anyway, we hide them.
      */
     .echemdb-spotlight figcaption h2 {
         display: none;
