@@ -7,15 +7,22 @@
  * instead.
  **/
 .echemdb-spotlight figure {
+    position: relative;
     display: flex;
     flex-flow: row nowrap;
-    margin: 0 0 2em 3em;
+    margin: 0 0 6em 3em;
     text-align: left;
     gap: 3em;
 }
 
+.echemdb-spotlight figure > p {
+    margin: 0;
+}
+
 .echemdb-spotlight figure > p:first-child {
     flex-shrink: 0;
+    /* Align images and headings. */
+    margin-top: 1.2em;
 }
 
 .echemdb-spotlight figure.echemdb-spotlight-reverse {
@@ -45,13 +52,45 @@
     .echemdb-spotlight figure , .echemdb-spotlight figure.echemdb-spotlight-reverse {
         flex-flow: column;
         gap: 0;
-        margin: 0;
+        margin: 0 0 3em 0;
     }
 
     .echemdb-spotlight img {
         margin-left: auto;
         margin-right: auto;
-        width: 28em;
+        width: 28rem;
+        box-shadow: unset;
+    }
+
+    .echemdb-spotlight figure > p:first-child {
+        margin-top: 0;
+    }
+
+    /*
+     * Shade every other spotlight so that it is clear on mobile which figure belongs to which caption.
+     */
+    .echemdb-spotlight figure.echemdb-spotlight-reverse:before {
+        position: absolute;
+        content: "";
+
+        /* A random shade of gray. We might be able to replace this from a color from the logo evenutually. */
+        background-color: #efefef;
+
+        /* Span the entire width of the screen */
+        width: 200vw;
+        left: -100vw;
+
+        height: calc(100% + 1.5em);
+        top: -1.5em;
+
+        z-index: -1;
+    }
+
+    /*
+     * The headers can be confusing on mobile since they break which picture belongs to which text. Since they are repeated in the text anyway, we hide them.
+     */
+    .echemdb-spotlight figcaption h2 {
+        display: none;
     }
 }
 
