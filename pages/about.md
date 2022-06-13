@@ -61,7 +61,7 @@ Contributions are always welcome and do not necessarily require programming skil
 Please leave us a message if you are interested in contributing to the echemdb.
 
 You could get started by [digitizing some published data](https://echemdb.github.io/svgdigitizer/workflow.html)
-in your area of research or by extending any of the pages of the [echemDB website](https://echemdb.github.io/website/).
+in your area of research or by extending any of the pages of the [echemdb website](https://echemdb.github.io/website/).
 If your interest is outside of cyclic voltammograms or electrochemistry,
 we would also be thrilled to hear about your ideas to extend these projects to other areas.
 
@@ -74,6 +74,11 @@ which in combination with the metadata files produce an echemdb data package.
 
 ## Contact
 
+The authors of echemdb are from the fields of experimental and theoretical physical chemistry,
+as well as from computer science and mathematics.
+
 E-mail: contact@echemdb.org
 
-To reach individual contributors visit our [GitHub organization](https://github.com/echemdb).
+Reach individual contributors on the [GitHub organization](https://github.com/echemdb).
+
+Discuss and stay up to date on [echemdb.zulipchat.com](https://echemdb.zulipchat.com).

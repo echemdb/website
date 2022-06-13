@@ -1,5 +1,5 @@
 # {{ entry.system.electrodes.working_electrode.material }}({{ entry.system.electrodes.working_electrode.crystallographic_orientation }}) <small>- {{ entry.system.electrolyte | render("components/electrolyte.md") }}</small>
-<small>echemdb identifier: `{{ entry.identifier }}`</small>\
+<small>echemdb identifier: `{{ entry.identifier }}`</small>  
 <small>tags:
 {% set separator = joiner(", ") %}
 {% for tag in entry.experimental.tags %}
@@ -20,7 +20,7 @@ at a scan rate of
 from Figure
 {{ entry.source.figure }}
 in
-[{{ entry.citation('md') }}]({{ entry.source.url }}).
+[{{ entry.citation('md') }}]({{ entry.source.url }})
 
 <!-- TODO: It would be great if we could toggle between SI and original units. See #104. -->
 <!-- TODO: Format plots. See #104. -->

@@ -11,9 +11,9 @@ hide:
 <figcaption markdown>
 ## Philosophy
 
-echemdb aims at standardizing electrochemical data according to the 
-[FAIR principles](https://www.go-fair.org/fair-principles/), allowing 
-comparison of published data with data acquired 
+echemdb aims at standardizing electrochemical data according to the
+[FAIR principles](https://www.go-fair.org/fair-principles/), allowing
+comparison of published data with data acquired
 in the laboratory, and theoretical models.
 
 [→ Learn more](about.md)
@@ -28,7 +28,7 @@ in the laboratory, and theoretical models.
 The website shows cyclic voltammograms from the echemdb data repository
 which were standardized and validated from published works by the community.
 
-[→ Explore](./cv).
+[→ Explore](./cv)
 </figcaption>
 </figure>
 
@@ -37,11 +37,11 @@ which were standardized and validated from published works by the community.
 <figcaption markdown>
 ## API
 
-The echemdb Python module provides an interactive way to visualize, filter, 
+The echemdb Python module provides an interactive way to visualize, filter,
 or evaluate the entries in the database.
 
 [→ Explore](https://mybinder.org/v2/gh/echemdb/echemdb/0.3.0?urlpath=tree%2Fdoc%2Fusage%2Fentry_interactions.md)  
-[→ Documentation](https://echemdb.github.io/echemdb/).
+[→ Documentation](https://echemdb.github.io/echemdb/)
 
 </figcaption>
 </figure>
@@ -52,7 +52,7 @@ or evaluate the entries in the database.
 ## Metadata
 
 A metadata schema for electrochemical measurements
-renders electrochemical data interoperable. 
+renders electrochemical data interoperable.
 
 [→ Learn more](https://github.com/echemdb/metadata-schema)
 </figcaption>
@@ -68,7 +68,7 @@ from published figures,
 where machine-readable data is not available.
 
 [→ Learn more](https://echemdb.github.io/svgdigitizer/)  
-[→ Digitize a plot for echemdb](https://echemdb.github.io/svgdigitizer/workflow.html).
+[→ Digitize a plot for echemdb](https://echemdb.github.io/svgdigitizer/workflow.html)
 
 </figcaption>
 </figure>
