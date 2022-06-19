@@ -4,8 +4,8 @@
    version="1.1"
    width="4961px"
    id="svg6"
-   sodipodi:docname="sato_2006_effect_725_p3_4d_red.svg"
-   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="sato_2006_effect_725_p3_f4d_red.svg"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -20,15 +20,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="1.4349511"
-     inkscape:cx="605.944"
-     inkscape:cy="5213.4181"
-     inkscape:window-width="1920"
-     inkscape:window-height="1011"
+     inkscape:zoom="0.50733183"
+     inkscape:cx="411.95917"
+     inkscape:cy="4933.6546"
+     inkscape:window-width="2560"
+     inkscape:window-height="1355"
      inkscape:window-x="0"
-     inkscape:window-y="32"
+     inkscape:window-y="48"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg6" />
+     inkscape:current-layer="svg6"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
   <defs
      id="defs2" />
   <image
@@ -57,7 +59,7 @@
          id="tspan18629"
          x="-19.710775"
          y="5942.2944"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff00ff;stroke-width:97.6288">x1: -0.4 V vs. Ag/AgCl</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff00ff;stroke-width:97.6288">E1: -0.4 V vs. Ag/AgCl</tspan></text>
   </g>
   <g
      id="g21198-1"
@@ -80,7 +82,7 @@
            id="tspan18629-8"
            x="6.9315844"
            y="5944.353"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff00ff;stroke-width:97.6288">y1: 0 µA cm⁻²</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff00ff;stroke-width:97.6288">j1: 0 µA cm⁻²</tspan></text>
     </g>
   </g>
   <g
@@ -107,7 +109,7 @@
          id="tspan18629-8-4"
          x="-1013.3798"
          y="5776"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff00ff;stroke-width:97.6288">y_scale_bar: 50 µA cm⁻²</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff00ff;stroke-width:97.6288">j_scale_bar: 50 µA cm⁻²</tspan></text>
   </g>
   <text
      xml:space="preserve"
@@ -119,7 +121,7 @@
        id="tspan18629-8-4-7"
        x="109.02647"
        y="2367.927"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff00ff;stroke-width:97.6288">y_scaling_factor: 50</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff00ff;stroke-width:97.6288">j_scaling_factor: 50</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff00ff;stroke:none;stroke-width:97.6288;stroke-opacity:1"
@@ -148,22 +150,35 @@
          id="tspan18629-1"
          x="1595.5623"
          y="5954.5713"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff00ff;stroke-width:97.6288">x2: 1.8 V vs. Ag/AgCl</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff00ff;stroke-width:97.6288">E2: 1.8 V vs. Ag/AgCl</tspan></text>
+  </g>
+  <g
+     id="g1519">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff00ff;stroke-width:97.6288"
+       x="848.50824"
+       y="5036.4961"
+       id="text18631-9-4-1-1-8"><tspan
+         sodipodi:role="line"
+         id="tspan18629-8-4-7-7-5"
+         x="848.50824"
+         y="5036.4961"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff00ff;stroke-width:97.6288">curve: red</tspan></text>
+    <path
+       style="fill:none;stroke:#ffff00;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 802.47771,5495.9173 0.0676,-121.1754 c 2.22438,-101.1366 22.88738,-165.2204 65.50464,-187.3603 29.84708,-6.5373 85.34666,-3.373 126.24874,-0.6785 84.04691,-6.3487 82.16271,-28.4005 102.38221,-44.9089 9.4476,-4.9999 21.1273,-15.5454 35.5045,-20.9869 15.0921,-5.7121 32.9333,-6.1931 44.6133,-5.7589 74.1207,-29.8646 63.2918,-34.3549 162.622,31.6795 29.3845,17.072 58.4855,28.3893 87.1312,30.4702 90.603,2.9984 216.2195,11.5068 260.2859,7.1819 l 0.6878,103.9178 c -4.6102,3.9988 -9.5973,6.6903 -15.1736,7.3386 -71.1281,9.9175 -148.4037,9.6012 -224.0902,11.9304 -50.3746,-1.6685 -94.2525,15.6085 -133.4789,46.4502 -63.9854,50.5181 -113.2378,34.5953 -159.2069,3.8659 -17.8715,-10.9765 -36.5471,-21.1854 -59.6519,-27.1659 -30.5001,-5.1863 -30.1138,-5.1833 -67.7297,-17.6054 -23.0716,-4.2514 -45.55612,-2.5519 -67.7626,1.9659 -33.56227,12.056 -67.06795,24.097 -108.14469,38.1565 -40.51008,24.8819 -43.63682,85.2273 -49.8094,142.6833 z"
+       id="path131173"
+       sodipodi:nodetypes="cccccscccccccccccccc" />
   </g>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff00ff;stroke-width:97.6288"
-     x="848.50824"
-     y="5036.4961"
-     id="text18631-9-4-1-1-8"><tspan
+     style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px"
+     x="193.76079"
+     y="4777.9419"
+     id="text3720"><tspan
        sodipodi:role="line"
-       id="tspan18629-8-4-7-7-5"
-       x="848.50824"
-       y="5036.4961"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff00ff;stroke-width:97.6288">curve: red</tspan></text>
-  <path
-     style="fill:none;stroke:#ffff00;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="m 802.47771,5495.9173 0.0676,-121.1754 c 2.22438,-101.1366 22.88738,-165.2204 65.50464,-187.3603 29.84708,-6.5373 85.34666,-3.373 126.24874,-0.6785 84.04691,-6.3487 82.16271,-28.4005 102.38221,-44.9089 9.4476,-4.9999 21.1273,-15.5454 35.5045,-20.9869 15.0921,-5.7121 32.9333,-6.1931 44.6133,-5.7589 74.1207,-29.8646 63.2918,-34.3549 162.622,31.6795 29.3845,17.072 58.4855,28.3893 87.1312,30.4702 90.603,2.9984 216.2195,11.5068 260.2859,7.1819 l 0.6878,103.9178 c -4.6102,3.9988 -9.5973,6.6903 -15.1736,7.3386 -71.1281,9.9175 -148.4037,9.6012 -224.0902,11.9304 -50.3746,-1.6685 -94.2525,15.6085 -133.4789,46.4502 -63.9854,50.5181 -113.2378,34.5953 -159.2069,3.8659 -17.8715,-10.9765 -36.5471,-21.1854 -59.6519,-27.1659 -30.5001,-5.1863 -30.1138,-5.1833 -67.7297,-17.6054 -23.0716,-4.2514 -45.55612,-2.5519 -67.7626,1.9659 -33.56227,12.056 -67.06795,24.097 -108.14469,38.1565 -40.51008,24.8819 -43.63682,85.2273 -49.8094,142.6833 z"
-     id="path131173"
-     sodipodi:nodetypes="cccccscccccccccccccc" />
+       id="tspan3718"
+       x="193.76079"
+       y="4777.9419">Figure: 4d</tspan></text>
 </svg>
