@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    height="7016px"
    version="1.2"
    width="4961px"
    id="svg6"
-   sodipodi:docname="Engstfeld_2018_polycrystalline_17743_f4b_1.svg"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+   sodipodi:docname="engstfeld_2018_polycrystalline_17743_f4b_1.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -39,18 +39,18 @@
      inkscape:window-height="1017"
      id="namedview8"
      showgrid="false"
-     inkscape:zoom="1.0763968"
-     inkscape:cx="3766.6344"
-     inkscape:cy="2438.8629"
+     inkscape:zoom="0.38056374"
+     inkscape:cx="3578.9011"
+     inkscape:cy="4942.6674"
      inkscape:window-x="-8"
      inkscape:window-y="32"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg6" />
+     inkscape:current-layer="svg6"
+     inkscape:pagecheckerboard="0" />
   <defs
      id="defs2" />
   <image
-     sodipodi:absref="F:\1-drive\Projects_shared\ECDB\Literature\engstfeld_2018_polycrystalline_17743\Engstfeld_2018_polycrystalline_17743_p4_v2.png"
-     xlink:href="file:///F:/1-drive/Projects_shared/ECDB/Literature/engstfeld_2018_polycrystalline_17743/Engstfeld_2018_polycrystalline_17743_p4_v2.png"
+     xlink:href="../../../../../1-drive/Projects_shared/ECDB/Literature/engstfeld_2018_polycrystalline_17743/Engstfeld_2018_polycrystalline_17743_v2.png"
      width="4985.5044"
      height="7050.6553"
      preserveAspectRatio="none"
@@ -63,12 +63,12 @@
        id="text819"
        y="5364.1929"
        x="2898.5591"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="5364.1929"
          x="2898.5591"
          id="tspan817"
-         sodipodi:role="line">y1: -150 uA / cm2</tspan></text>
+         sodipodi:role="line">j1: -150 uA / cm2</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path821"
@@ -82,12 +82,12 @@
        id="text819-8"
        y="5364.1929"
        x="2898.5591"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="5364.1929"
          x="2898.5591"
          id="tspan817-0"
-         sodipodi:role="line">y2: 150 uA / cm2</tspan></text>
+         sodipodi:role="line">j2: 150 uA / cm2</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path821-4"
@@ -102,12 +102,12 @@
        id="text819-9"
        y="5364.1929"
        x="2898.5591"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="5364.1929"
          x="2898.5591"
          id="tspan817-1"
-         sodipodi:role="line">x1: -0.2 V @ RHE</tspan></text>
+         sodipodi:role="line">E1: -0.2 V @ RHE</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path821-6"
@@ -121,12 +121,12 @@
        id="text819-5"
        y="5364.1929"
        x="2898.5591"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="5364.1929"
          x="2898.5591"
          id="tspan817-7"
-         sodipodi:role="line">x2: 0.5 V @ RHE</tspan></text>
+         sodipodi:role="line">E2: 0.5 V @ RHE</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path821-9"
@@ -146,7 +146,7 @@
        id="text831"
        y="4817.9258"
        x="3179.125"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="4817.9258"
          x="3179.125"
@@ -155,22 +155,42 @@
   </g>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      x="3377.9365"
      y="4648.8433"
      id="text840"><tspan
        sodipodi:role="line"
        id="tspan838"
        x="3377.9365"
-       y="4648.8433">Rate: 50 mV / s</tspan></text>
+       y="4648.8433">scan rate: 50 mV / s</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      x="3173.979"
      y="4264.4189"
      id="text840-3"><tspan
        sodipodi:role="line"
        id="tspan838-6"
        x="3173.979"
-       y="4264.4189">comment: small humps around 0.3 to 0.45 V are complicated to digitize</tspan></text>
+       y="4264.4189">comment: Small humps around 0.3 to 0.45 V are complicated to digitize.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px"
+     x="4375.0884"
+     y="4514.3555"
+     id="text1728"><tspan
+       sodipodi:role="line"
+       id="tspan1726"
+       x="4375.0884"
+       y="4514.3555">figure: 1</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px"
+     x="4375.0884"
+     y="4619.4629"
+     id="text3602"><tspan
+       sodipodi:role="line"
+       id="tspan3600"
+       x="4375.0884"
+       y="4619.4629">tags: BCV</tspan></text>
 </svg>
