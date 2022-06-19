@@ -1,71 +1,79 @@
 # This file is part of echemdb (https://github.com/echemdb/website)
 # Details on the meta data structure can be found on https://github.com/echemdb/metadata-schema
-version: 1
+
+experimental:
+  tags:
+  - BCV
+  instrumentation:
+  - type: potentiostat
+
+system:
+  type: electrochemical
+  electrolyte:
+    type: aq
+    components:
+      - name: water
+        sum formula: H2O
+        type: solvent
+        proportion:
+          value: 100
+          unit: volume percent
+        source:
+          refinement: Milli-Q SP-TOC
+          quality: ultrapure water
+        purity:
+          resistance:
+            value: 18.2
+            unit: MOhm cm
+      - name: sulfuric acid
+        sum formula: H2SO4
+        type: acid
+        source:
+          supplier: Cica-Merck
+          grade: ultrapur
+          LOT: null
+        concentration:
+          value: 7.5
+          unit: M
+    pH:
+      estimated value (CurTiPot): -1.5
+      uncertainty: none
+    temperature:
+      value: 20
+      unit: C
+  electrodes:
+    configuration: three
+    reference electrode:
+      type: Ag/AgCl-sat
+      source:
+          supplier: (not given)
+    counter electrode:
+      material: not given
+      shape: not given
+    working electrode:
+      material: Au
+      crystallographic orientation: '111'
+      source:
+        supplier: homemade
+      shape:
+        type: bead shaped
+      geometric electrolyte contact area: 
+        value: null
+        unit: cm-2
+      preparation procedure: annealed in hydrogen flame (1 min) and subsequently quenched in ultrapure water
 
 source: 
-    doi: https://doi.org/10.1016/j.elecom.2006.03.001
-    bib: sato_2006_effect_725
-    figure: 4d
-    curve: red
-    
-curation:
-    - role: curator
-      name: Johannes M. Hermann
-      orcid: https://orcid.org/0000-0001-7119-1295
-      date: 2021-10-11
-    
-figure description:
-    linked measurements: null
-    comment:
+  citation key: sato_2006_effect_725
+  url: https://doi.org/10.1016/j.elecom.2006.03.001
+  version: 1
 
-electrochemical system:
-    electrolyte:
-        type: aq
-        components:
-            - name: water
-              sum formula: H2O
-              type: solvent
-              proportion:
-                  value: 100
-                  unit: volume percent
-              source:
-                  refinement: Millipore Milli-Q
-                  quality: ultrapure water
-              purity:
-                resistance:
-                    value: 18.2
-                    unit: MOhm cm
-            - name: H2SO4
-              type: acid
-              source:
-                  supplier: Cica-Merck
-                  grade: ultrapur
-              concentration:
-                  value: 7.5
-                  unit: M
-        pH: 
-            estimated value (CurTiPot): -1.5
-            uncertainty: none
-        temperature:
-            value: 20
-            unit: C
-    electrodes:
-        configuration: three
-        reference electrode:
-            type: Ag/AgCl-sat
-            source:
-                supplier: not given
-        counter electrode:
-            material: not given
-            shape: not given
-        working electrode:
-            material: Au
-            crystallographic orientation: '111'
-            source:
-                supplier: homemade
-            shape:
-                type: bead shaped
-            geometric electrolyte contact area: 
-                value: null
-                unit: cm-2
-            preparation procedure: annealed in hydrogen flame (1 min) and subsequently quenched in ultrapure water
+curation:
+  version: 1
+  process:
+  - role: curator
+    name: Johannes M. Hermann
+    orcid: https://orcid.org/0000-0001-7119-1295
+    date: 2021-10-11
+
+version: 1
+
