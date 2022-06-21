@@ -2,8 +2,6 @@
 # Details on the meta data structure can be found on https://github.com/echemdb/metadata-schema
 
 experimental:
-  tags:
-  - BCV
   instrumentation:
   - type: potentiostat
 
@@ -33,8 +31,8 @@ system:
           grade: ultrapur
           LOT: null
         concentration:
-		      value: 5.0
-		      unit: M
+          value: 5.0
+          unit: mol L⁻¹
     pH:
       estimated value (CurTiPot): -1.1
       uncertainty: none
