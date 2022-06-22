@@ -10,8 +10,7 @@ system:
   electrolyte:
     type: aq
     components:
-      - name: water
-        sum formula: H2O
+      - name: H2O
         type: solvent
         proportion:
           value: 100
@@ -23,19 +22,16 @@ system:
           resistance:
             value: 18.2
             unit: MOhm cm
-      - name: sulfuric acid
-        sum formula: H2SO4
+      - name: H2SO4
         type: acid
         source:
           supplier: Cica-Merck
           grade: ultrapur
-          LOT: null
         concentration:
           value: 7.5
           unit: mol L⁻¹
     pH:
       estimated value (CurTiPot): -1.5
-      uncertainty: none
     temperature:
       value: 20
       unit: C
@@ -43,11 +39,8 @@ system:
     configuration: three
     reference electrode:
       type: Ag/AgCl-sat
-      source:
-          supplier: (not given)
     counter electrode:
-      material: not given
-      shape: not given
+      material: (not given)
     working electrode:
       material: Au
       crystallographic orientation: '111'
@@ -56,9 +49,8 @@ system:
       shape:
         type: bead shaped
       geometric electrolyte contact area: 
-        value: null
         unit: cm-2
-      preparation procedure: annealed in hydrogen flame (1 min) and subsequently quenched in ultrapure water
+      preparation procedure: Annealed in hydrogen flame for 1 min and subsequently quenched in ultrapure water.
 
 source: 
   citation key: sato_2006_effect_725
@@ -72,6 +64,8 @@ curation:
     name: Johannes M. Hermann
     orcid: https://orcid.org/0000-0001-7119-1295
     date: 2021-10-11
-
+  - role: reviewer
+     name: Albert Engstfeld
+     orcid: https://orcid.org/0000-0002-9686-3948
+     date: 2022-06-22
 version: 1
-

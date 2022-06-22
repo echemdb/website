@@ -39,11 +39,8 @@ system:
     configuration: three
     reference electrode:
       type: Ag/AgCl-sat
-      source:
-          supplier: (not given)
     counter electrode:
-      material: not given
-      shape: not given
+      material: (not given)
     working electrode:
       material: Au
       crystallographic orientation: '111'
@@ -59,6 +56,7 @@ source:
   citation key: sato_2006_effect_725
   url: https://doi.org/10.1016/j.elecom.2006.03.001
   version: 1
+
 curation:
   version: 1
   process:
