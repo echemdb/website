@@ -31,7 +31,10 @@ system:
           value: 1.0
           unit: mol L⁻¹
     pH:
-      estimated value (CurTiPot): 0.1
+      estimation:
+        value: 0.1
+        calculation: CurTiPot
+
     temperature:
       value: 20
       unit: C
