@@ -34,7 +34,6 @@ system:
       estimation:
         value: 0.1
         calculation: CurTiPot
-
     temperature:
       value: 20
       unit: C
