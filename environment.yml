@@ -39,3 +39,4 @@ dependencies:
     - pymdown-extensions>=9.2,<10
     - python-frontmatter
     - tabulate
+    - mkdocs-simple-hooks
