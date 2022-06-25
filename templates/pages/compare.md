@@ -35,7 +35,7 @@ async function getData(names) {
 		names.map(name => {
 		console.log(name);
 		const source = name.split("_").slice(0, -2).join("_");
-		return d3.csv(["/data/generated/svgdigitizer/", source, "/", name, ".csv"].join(""), convertNumbers).then(processData);
+		return d3.csv(["/data/generated/svgdigitizer/", source, "/", name, ".csv"].join(""), convertNumbers).then(processData).then(function(result) {console.log(result);return {x: result[0], y: result[1], name: name, type: 'scatter'}});
 		// return d3.csv(["/data/generated/svgdigitizer/", source, "/", name, ".csv"].join(""), convertNumbers).then(processData)
 		})
 	 );
@@ -61,7 +61,7 @@ function processData(allRows) {
     y.push( row['j'] );
   }
 
-  return {x: x, y: y, type: 'scatter'}
+  return [x, y]
 };
 
 // callback on selections for all checkboxes
