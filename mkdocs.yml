@@ -25,6 +25,10 @@ plugins:
   - section-index
   - literate-nav:
       nav_file: NAVIGATION.md
+  - mkdocs-simple-hooks:
+      enabled: !ENV [ENABLE_MKDOCS_SIMPLE_HOOKS, False]
+      hooks:
+        on_post_build: "website.hooks:copy_data"
 
 markdown_extensions:
   - extra
