@@ -96,7 +96,16 @@ def main():
                 material_filter=material_filter(),
             )
         )
-
+    # Create an overview page with tabulated and linked entries for all systems to compare.
+    with mkdocs_gen_files.open(os.path.join("cv", "compare.md"), "w") as markdown:
+        markdown.write(
+            render(
+                "pages/compare.md",
+                database=database,
+                intro="Cyclic voltammograms to compare.",
+                material_filter=material_filter(),
+            )
+        )
 
 def material_filter():
     r"""
