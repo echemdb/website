@@ -107,6 +107,7 @@ def main():
             )
         )
 
+
 def material_filter():
     r"""
     A lambda that filters a database by a material that can be be passed
