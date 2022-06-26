@@ -29,6 +29,11 @@ var layout = {
         size: 18,
       }
     },
+    showline: true,
+    zeroline: false,
+    ticks: "outside",
+    mirror: true,
+    side: "bottom"
   },
 
   yaxis: {
@@ -38,7 +43,12 @@ var layout = {
         family: 'Courier New, monospace',
         size: 18,
       }
-    }
+    },
+    showline: true,
+    zeroline: true,
+    ticks: "outside",
+    mirror: true,
+    side: "left"
   },
   legend: {
     yanchor: "top",
