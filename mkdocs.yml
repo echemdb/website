@@ -26,7 +26,7 @@ plugins:
   - literate-nav:
       nav_file: NAVIGATION.md
   - mkdocs-simple-hooks:
-      enabled: !ENV [ENABLE_MKDOCS_SIMPLE_HOOKS, False]
+      enabled: !ENV [ENABLE_MKDOCS_COPY_DATA, True]
       hooks:
         on_post_build: "website.hooks:copy_data"
 

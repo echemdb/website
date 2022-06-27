@@ -38,6 +38,8 @@ jobs:
           # Since no browser is installed during this CI run, plotly fails to
           # produce HTML output, see https://github.com/plotly/plotly.py/blob/2c2dd6ab2eeff73c782457f33c590c1d09a97625/packages/python/plotly/plotly/io/_renderers.py#L532
           export PLOTLY_RENDERER=browser
+          # disable hook to copy data which is a convenience function for local deployment/testing
+          export ENABLE_MKDOCS_COPY_DATA=False
           mkdocs build --strict
           mv data generated/website/
           # Disable further processing by GitHub
