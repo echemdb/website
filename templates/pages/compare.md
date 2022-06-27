@@ -17,6 +17,7 @@ Click a graph to add it to the comparison.
 
 <script>
 
+var cache = {};
 var traces = [];
 
 var layout = {
@@ -64,9 +65,18 @@ async function updatePlot(names) {
   Promise.all(
 		names.map(name => {
 		const source = name.split("_").slice(0, -2).join("_");
+    if (name in cache) {
+      return cache[name];
+      }
+    else {
 		return d3.csv(["/data/generated/svgdigitizer/", source, "/", name, ".csv"].join(""), convertNumbers)
-    .then(processData)
-    .then(function(result) {return {x: result[0], y: result[1], name: name, type: 'scatter'}});
+      .then(processData)
+      .then(function(result) {return {x: result[0], y: result[1], name: name, type: 'scatter'}})
+      .then(function(result) {
+        cache[name] = result;
+        return result;
+      });
+    }
 		})
 	 )
    .then(function(traces) {Plotly.newPlot('vis', traces, layout);});
