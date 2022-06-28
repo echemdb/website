@@ -3,14 +3,14 @@
 <div id="vis"></div>
 Click a graph to add it to the comparison.
 
-{% for material in database.materials() %}
-
-## {{ material }}
 
 
-{{ render("components/cv_compare_table.md", entries_path=entries_path, database=database.filter(material_filter(material))) }}
+<input type="text" id="filterInput" onkeyup="quickFilter()" placeholder="Filter list ..." title="Type in a name">
 
-{% endfor %}
+{{ render("components/cv_compare_table.md", entries_path=entries_path, database=database) }}
+
+
+
 
 <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
 <script src="https://d3js.org/d3.v7.js"></script>
@@ -128,5 +128,34 @@ d3.selectAll(".checkbox")
         });
         updatePlot(selected_cyclic_voltammograms);
     });
+
+function quickFilter() {
+    var input, filter, table, tr, i, f, trContent, results;
+    input = document.getElementById("filterInput");
+    filter = input.value.toUpperCase().split(" ");
+    table = document.getElementsByClassName("md-typeset__table")[0];
+    tr = table.getElementsByTagName("tr");
+    for (i = 1; i < tr.length; i++) {
+    
+        trContent = tr[i].textContent.replace(/[\s]+/g, ' ');
+
+        if (trContent) {
+            results = []
+            for (f of filter)  {
+                if (trContent.toUpperCase().indexOf(f) > -1) {
+                    results.push(true);
+                } else {
+                    results.push(false);
+                }
+            }
+
+            if (results.every( (val, r, arr) => val === true )) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }       
+    }
+}
 
 </script>
