@@ -65,7 +65,7 @@ def main():
                     lambda entry: entry.system.electrolyte.type == "aq"
                     and "BCV" in entry.experimental.tags
                 ),
-                intro="Cyclic voltammograms recorded in CO containing aqueous electrolytes.",
+                intro="",
                 material_filter=material_filter(),
             )
         )
@@ -80,7 +80,7 @@ def main():
                     lambda entry: entry.system.electrolyte.type == "aq"
                     and "COOR" in entry.experimental.tags
                 ),
-                intro="",
+                intro="Cyclic voltammograms recorded in CO containing aqueous electrolytes.",
                 material_filter=material_filter(),
             )
         )
