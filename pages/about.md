@@ -27,7 +27,7 @@ According to frictionless a data package consists of:
 >
 > The Data Package metadata is stored in a “descriptor”.
 
-The metadata describe for example the [electrochemical system](https://github.com/echemdb/metadata-schema/blob/main/examples/system.yaml),
+The metadata describe for example the [electrochemical system](https://github.com/echemdb/metadata-schema/blob/main/examples/objects/system.yaml),
 which contains detailed information about the electrodes
 or the components of the electrolyte. The metadata also contains information
 on the curation process, i.e., who was the experimentalist,
