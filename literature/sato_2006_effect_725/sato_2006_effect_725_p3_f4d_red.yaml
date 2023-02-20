@@ -1,0 +1,66 @@
+# This file is part of echemdb (https://github.com/echemdb/website)
+# Details on the meta data structure can be found on https://github.com/echemdb/metadata-schema
+system:
+  type: electrochemical
+  electrolyte:
+    type: aq
+    components:
+      - name: H2O
+        type: solvent
+        proportion:
+          value: 100
+          unit: volume percent
+        source:
+          refinement: Milli-Q SP-TOC
+          quality: ultrapure water
+        purity:
+          resistance:
+            value: 18.2
+            unit: MOhm cm
+      - name: H2SO4
+        type: acid
+        source:
+          supplier: Cica-Merck
+          grade: ultrapur
+        concentration:
+          value: 7.5
+          unit: mol L⁻¹
+    pH:
+      estimation:
+        value: -1.5
+        calculation: CurTiPot
+    temperature:
+      value: 20
+      unit: C
+  electrodes:
+    configuration: three
+    reference electrode:
+      type: Ag/AgCl-sat
+    counter electrode:
+      material: (not given)
+    working electrode:
+      material: Au
+      crystallographic orientation: '111'
+      source:
+        supplier: homemade
+      shape:
+        type: bead shaped
+      geometric electrolyte contact area: 
+        unit: cm-2
+      preparation procedure: Annealed in hydrogen flame for 1 min and subsequently quenched in ultrapure water.
+source: 
+  citation key: sato_2006_effect_725
+  url: https://doi.org/10.1016/j.elecom.2006.03.001
+  version: 1
+curation:
+  version: 1
+  process:
+  - role: curator
+    name: Johannes M. Hermann
+    orcid: https://orcid.org/0000-0001-7119-1295
+    date: 2021-10-11
+  - role: reviewer
+    name: Albert Engstfeld
+    orcid: https://orcid.org/0000-0002-9686-3948
+    date: 2022-06-22
+version: 1
