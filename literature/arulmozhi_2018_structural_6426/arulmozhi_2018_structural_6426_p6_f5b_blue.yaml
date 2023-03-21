@@ -1,0 +1,77 @@
+curation:
+  version: 1
+  process:
+  - role: curator
+    name: Tobias Schmider
+    orcid: https://orcid.org/0000-0002-2911-2925
+    date: 2023-03-15
+experimental:
+  version: 1
+  instrumentation:
+  - type: potentiostat
+    manufacturer: Biologic
+    nane: Model SP-150
+source:
+  version: 1
+  bib: arulmozhi_2018_Structural_6426
+  url: https://doi.org/10.1021/acscatal.8b00319
+  techniques: 
+  - CV
+system:
+  version: 1
+  type: electrochemical
+  electrolyte:
+    type: aqueous
+    components:
+    - name: water
+      type: solvent
+      source:
+        refinement: Milli-Q
+      purity:
+        grade: ultrahigh-purity water
+        total ion conductivity:
+          value: 18.2
+          unit: MOhm cm
+    - name: H2SO4
+      type: acid
+      concentration:
+        value: 0.5
+        unit: mol / l
+      purity:
+        grade: ARISTAR
+    - name: N2
+      type: gas
+      pressure:
+        unit: 1
+        value: bar
+      proportion:
+        value: 100
+      purity:
+        grade: ultrahigh-purity
+  electrodes:
+    - name: RHE
+      function: reference electrode 
+      redox system: RHE
+    - name: CE
+      function: counter electrode
+      components:
+        - name: Pt
+          type: mesh
+          crystallographic orientation: poly
+    - name: WE
+      function: working electrode
+      components:
+      - name: Pt spherical
+        type: single crystal
+        material: Pt
+        crystallographic orientation: 'poly'
+        shape: 
+          type: beat
+          height:
+            value: 3.5
+            unit: mm
+          diameter:
+            value: 3.5
+            unit: mm
+  electrochemical cell:
+    type: glass cell
