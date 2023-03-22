@@ -8,12 +8,12 @@ curation:
 source:
   version: 1
   url: https://doi.org/10.1016/S0022-0728(79)80022-4
-  bib: clavilier_1980_preparation_205
+  citation key: clavilier_1980_preparation_205
   techniques:
-  - CV 
-system: 
+  - CV
+system:
   version: 1
-  type: electrochemical 
+  type: electrochemical
   electrolyte:
     type: aqueous
     components:
@@ -40,11 +40,11 @@ system:
         type: single crystal
         material: Pt
         crystallographic orientation: '110'
-        source: 
+        source:
           supplier: Johnson Matthey
-        purity: 
+        purity:
           grade: 5 N
         preparation procedure:
-          description: 
+          description:
             - Annealing and protecting the electrode surface with a droplet of ultra-pure water
 
