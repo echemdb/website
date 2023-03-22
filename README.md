@@ -9,14 +9,6 @@ The repository can be browsed on [our
 websites](https://echemdb.github.io/website/) or explored with a [Python
 API](https://github.com/echemdb/echemdb).
 
-# License
-
-The contents of this repository are licensed under the [GNU General Public
-License v3.0](./LICENSE) or, at your option, any later version.  The contents
-of [data/](./data/) and [literature/](./literature/) are additionally licensed
-under the [Creative Commons Attribution 4.0 International
-License](https://creativecommons.org/licenses/by/4.0/).
-
 # For developers
 
 The build of the website can be tested locally with the following steps.
@@ -43,9 +35,9 @@ pip install -e .
 mkdcos serve
 ```
 
-The HTML files are generated in `generated/website`
+The generated HTML files are located in `generated/website`
 
-Entries are created from datapackaes in `data/generated/svgdigitizer`. Follow the next section to create such data.
+Entries for the individual cyclic voltammograms are created from datapackaes in `data/generated/svgdigitizer`. Follow the next section to create such data.
 
 ## Convert literature to datapackages
 
@@ -68,7 +60,7 @@ We can also only digitize a single data set
 make generated/svgdigitizer/mello_2018_understanding_J3045/mello_2018_understanding_J3045_p1_f1H_black.csv
 ```
 
-To digitize data coming from a different source directory than
+To digitize data from a different source directory than
 `literature/` use
 
 ```sh
@@ -77,10 +69,19 @@ make SOURCE_DIR=/another/path
 
 ## Code changes
 
-If you make changes to the code test the modules with pylint, isort, and black.
+If you make changes to the code test the modules with
 
 ```sh
+pytest --doctest-modules website
 pylint website
 isort website
 black website
 ```
+
+# License
+
+The contents of this repository are licensed under the [GNU General Public
+License v3.0](./LICENSE) or, at your option, any later version.  The contents
+of [data/](./data/) and [literature/](./literature/) are additionally licensed
+under the [Creative Commons Attribution 4.0 International
+License](https://creativecommons.org/licenses/by/4.0/).
