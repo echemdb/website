@@ -1,0 +1,58 @@
+curation:
+  version:
+  process:
+  - role: curator
+    name: Tobias Schmider
+    orcid: https://orcid.org/0000-0002-2911-2925
+    date: 2023-03-18
+experimental:
+  version: 1
+  instrumentation:
+    - type: potentiostat
+      model: AMEL 551
+    - type: recorder
+      model: Philips PM 8133 X-Y
+    - type: universal programmer
+      model: EG&G PAR model 175
+source:
+  version: 1
+  citation key: gomez_2003_effect_228
+  url: https://doi.org/10.1021/jp034982g
+  techniques:
+  - CV
+system:
+  version: 1
+  type: electrochemical
+  electrolyte:
+    type: aqueous
+    components:
+    - name: water
+      type: solvent
+      source:
+        refinement: MiliQ plus 185
+      purity:
+        grade: ultrapure
+    - name: HClO4
+      type: acid
+      concentration:
+        value: 0.1
+        unit: mol / l
+      source:
+        supplier: Merck Suprapur
+      purity:
+        grade: suprapur
+    temperature:
+      value: 293
+      unit: K
+  electrodes:
+    reference electrode:
+      type: RHE
+    counter electrode:
+      material: Pt
+      shape: coiled wire
+    working electrode:
+      material: Pt
+      crystallographic orientation: '111'
+      preparation procedure:
+        description:
+          - The electrode was heated in a gas/air flame and cooled in a hydrogen + argon atmosphere. Adsorption of impurities during the transfer of the sample to the controlled atmosphere of the cell was avoided by protecting the surface with a droplet of ultrapure water in equilibrium with the cooling atmosphere. Contact with the electrolyte solution was made at a controlled potential (0.10 V). Voltammetric experiments were carried out in a hanging meniscus configuration (dipping technique)."
