@@ -35,8 +35,8 @@ system:
     - name: HClO4
       type: acid
       concentration:
-        unit: 0.001
-        value: mol / l
+        value: 0.001
+        unit: mol / l
       source:
         supplier: Merck Suprapur
       purity:
