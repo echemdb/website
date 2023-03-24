@@ -44,7 +44,7 @@ source:
   techniques:
   - EIS
   version: 1
-version: 1
+version: '1'
 curation:
   version: 1
   process:
