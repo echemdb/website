@@ -1,10 +1,10 @@
-curation: 
+curation:
   version: 1
   process:
   - role: curator
     name: Tobias Schmider
     orcid: https://orcid.org/0000-0002-2911-2925
-    date: 2022-05-17
+    date: 2023-03-15
 experimental:
   version: 1
   instrumentation:
@@ -18,9 +18,9 @@ source:
   version: 1
   citation key: garcia_2011_enthalpic_501
   url: https://doi.org/10.1021/jp1088146
-  techniques: 
+  techniques:
   - CV
-system: 
+system:
   version: 1
   type: electrochemical
   electrolyte:
@@ -30,37 +30,28 @@ system:
       type: solvent
       source:
         refinement: Milli-Q plus 185
-      purity: 
+      purity:
         grade: ultrapur
     - name: HClO4
       type: acid
       concentration:
         unit: 0.001
         value: mol / l
-      source: 
+      source:
         supplier: Merck Suprapur
       purity:
         garde: suprapur
     temperature:
       value: 298
       unit: K
-  electrodes: 
-    - name: RHE
-      function: reference electrode
-      redox system: RHE
-    - name: CE
-      function: counter electrode
-      components:
-      - name: Pt
-        type: wire
-        crystallographic orientation: poly
-    - name: WE
-      function: working electrode
-      components:
-      - name: Pt 111
-        type: single crystal
-        material: Pt
-        crystallographic orientation: '111'
-      
-
-  
+  electrodes:
+    configuration: three
+    reference electrode:
+      type: RHE
+    counter electrode:
+      crystallographic orientation: poly
+      material: Pt
+      shape: wire
+    working electrode:
+      material: Pt
+      crystallographic orientation: '111'
