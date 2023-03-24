@@ -1,0 +1,57 @@
+curation:
+  version: 1
+  process:
+  - role: curator
+    name: Tobias Schmider
+    orcid: https://orcid.org/0000-0002-2911-2925
+    date: 2023-03-17
+experimental:
+  version: 1
+  instrumentation:
+    - type: potentiostat
+      model: AMEL 551
+    - type: waveform generator
+      model: EG&G PARC 175
+    - type: X-Y recorder
+      model: Phillips PM 8133
+source:
+  version: 1
+  citation key: taguchi_2007_electrochemical_6023
+  url: https://doi.org/10.1016/j.electacta.2007.03.057
+  techniques:
+  - CV
+system:
+  version: 1
+  type: electrochemical
+  electrolyte:
+    type: aqueous
+    components:
+    - name: water
+      type: solvent
+      source:
+        refinement: Elga Purelab Ultra
+      purity:
+        grade: ultra-pure
+        total ion conductivity:
+          value: 18.2
+          unit: MOhm cm
+    - name: HClO4
+      type: acid
+      source:
+        supplier: Merck Suprapur
+  electrodes:
+    reference electrode:
+      type: RHE
+    counter electrode:
+      material: Pt
+      shape: coiled wire
+      purity:
+        grade: 4N
+    working electrode:
+      material: Pt
+      crystallographic orientation: '332'
+      purity:
+        grade: 4N
+      preparation procedure:
+        description:
+          - Before each measurement, the working electrodes were flame-annealed and immediately transferred to a gas stream of H2/Ar. After Cooling, they were quenched with ultra-pure water saturated by with H2/Ar gas.
