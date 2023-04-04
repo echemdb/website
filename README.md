@@ -24,7 +24,8 @@ git clone git@github.com:echemdb/website.git
 Install dependencies (mamba or conda)
 
 ```sh
-mamba env create --file enviornment.yaml
+cd website
+mamba env create --file environment.yaml
 mamba activate echemdb-website
 pip install -e .
 ```
