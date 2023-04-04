@@ -27,7 +27,7 @@ system:
         type: acid
         concentration:
           value: 0.5
-          unit: mole / l
+          unit: mol / l
         source:
           supplier: Merck
         purity:
