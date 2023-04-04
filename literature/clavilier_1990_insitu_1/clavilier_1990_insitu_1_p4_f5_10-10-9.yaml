@@ -5,7 +5,6 @@ curation:
     name: Tobias Schmider
     orcid: https://orcid.org/0000-0002-2911-2925
     date: 2023-03-15
-  version: 1
 source:
   version: 1
   citation key: clavilier_1990_insitu_1
@@ -21,7 +20,7 @@ system:
     - name: water
       type: solvent
       purity:
-        grade: ultrapur
+        grade: ultrapure
     - name: H2SO4
       type: acid
       concentration:
@@ -33,7 +32,7 @@ system:
       typ: RHE
     working electrode:
       material: Pt
-      crystallographic orientation: '10,10,9'
+      crystallographic orientation: '10 10 9'
       preparation procedure:
         description:
           - Heating the crystal in a gas flame, cooling in air to 300-200 degree Celsius and isolating the surface under investigation by a droplet formed on the surface in a stream of ultrapure water.
