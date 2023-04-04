@@ -39,7 +39,7 @@ source:
   - Monte-Carlo simulations
   url: https://doi.org/10.1016/S0022-0728(03)00178-5
   version: 1
-version: 1
+version: '1'
 curation:
   version: 1
   process:
