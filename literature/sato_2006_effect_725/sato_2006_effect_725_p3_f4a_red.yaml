@@ -21,7 +21,7 @@ system:
         type: acid
         source:
           supplier: Cica-Merck
-          grade: ultrapur
+          grade: ultrapure
         concentration:
           value: 1.0
           unit: mol L⁻¹
