@@ -45,8 +45,4 @@ packages = echemdb.local.collect_datapackages(
     os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "..", "data"))
 )
 
-# bibliography = echemdb.local.collect_bibliography(
-#     os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "..", "data"))
-# )
-
 cv = echemdb.cv.cv_database.CVDatabase(packages)
