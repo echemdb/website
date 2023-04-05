@@ -5,7 +5,7 @@ channels:
 dependencies:
   - astropy
   - black
-  - echemdb>=0.4.0,<0.5.0
+  #- echemdb>=0.4.0,<0.5.0
   - isort
   - make
   # In early 2022 we had trouble with some recent versions of mkdocs. To work around this issue, we pin mkdocs versions exactly. This pin can likely be relaxed again.
@@ -19,7 +19,7 @@ dependencies:
   - pytest-doctestplus
   - pytest-xdist
   - pytest-remotedata
-  - svgdigitizer>=0.5,<0.6
+  - svgdigitizer>=0.10,<0.11
   - pip:
     - linkchecker
     # In early 2022 we had trouble with some recent versions of mkdocs. To work around this issue, we pin mkdocs plugin versions exactly. This pin can likely be relaxed again.
@@ -39,3 +39,4 @@ dependencies:
     - pymdown-extensions>=9.2,<10
     - python-frontmatter
     - tabulate
+    - git+https://github.com/echemdb/echemdb.git@refs/pull/54/head
