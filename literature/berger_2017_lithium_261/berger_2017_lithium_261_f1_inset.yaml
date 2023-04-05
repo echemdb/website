@@ -52,7 +52,7 @@ source:
   url: https://doi.org/10.1002/celc.201600730
   techniques: CV, STM, EQCM
   version: 1
-version: 1
+version: '1'
 curation:
   version: 1
   process:
