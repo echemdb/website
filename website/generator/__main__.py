@@ -106,7 +106,7 @@ def material_filter():
     Unfortunately, jinja does not allow such generic lambdas.
     """
     return lambda material: (
-        lambda entry: entry.get_electrode('WE').material == material
+        lambda entry: entry.get_electrode("WE").material == material
     )
 
 
