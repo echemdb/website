@@ -62,7 +62,7 @@ system:
       material: Pt
       shape: gauze
       crystallographic orientation: poly
-    working: electrode
+    working electrode:
       material: Pt
       shape:
         diameter:
