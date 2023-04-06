@@ -56,4 +56,4 @@ system:
       preparation procedure:
         description:
           - The electrode was heated in a gas + air flame and cooled in a hydrogen + argon atmosphere. Adsorption of impurities during the transfer of the sample to the controlled atmosphere of the cell was avoided by protecting the surface with a droplet of ultrapure water in equilibrium with the cooling atmosphere. Contact with the electrolyte solution was made at a controlled potential (0.10 V). Voltammetric experiments were carried out in a hanging meniscus configuration (dipping technique)."
-
+  
