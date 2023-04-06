@@ -35,4 +35,6 @@ system:
       crystallographic orientation: '775'
       preparation procedure:
         description:
-          - Heating the crystal in a gas flame, cooling in air to 300-200 degree Celsius and isolating the surface under investigation by a droplet formed on the surface in a stream of ultrapure water.
+          - heating in a gas flame
+          - cooling in air to 300-200 °C 
+          - protecting the surface with a droplet of ultrapure water
