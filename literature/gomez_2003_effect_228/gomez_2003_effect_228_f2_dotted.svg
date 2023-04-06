@@ -12,7 +12,7 @@
    version="1.1"
    width="5100px"
    id="svg6"
-   sodipodi:docname="Gomez_2003_effect_228_p2_f3_Pt110_293K.svg"
+   sodipodi:docname="Gomez_2003_effect_228_p2_f2_Pt100_293K.svg"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
   <metadata
      id="metadata10">
@@ -38,14 +38,13 @@
      inkscape:window-height="1027"
      id="namedview8"
      showgrid="false"
-     inkscape:zoom="0.24844721"
-     inkscape:cx="940.8862"
-     inkscape:cy="5539.5622"
+     inkscape:zoom="0.1756787"
+     inkscape:cx="1093.719"
+     inkscape:cy="5924.0095"
      inkscape:window-x="-8"
      inkscape:window-y="22"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg6"
-     inkscape:document-rotation="0" />
+     inkscape:current-layer="svg6" />
   <defs
      id="defs2" />
   <image
@@ -62,16 +61,16 @@
     <text
        xml:space="preserve"
        style="font-style:italic;font-weight:bold;font-size:48px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';letter-spacing:0px"
-       x="901.60004"
-       y="2078.9126"
-       id="text837"><tspan
+       x="1978.2875"
+       y="1591.8875"
+       id="text849"><tspan
          sodipodi:role="line"
-         id="tspan835"
-         x="901.60004"
-         y="2078.9126">j2: 80 uA / cm2</tspan></text>
+         id="tspan847"
+         x="1978.2875"
+         y="1591.8875">E2: 0.7 V vs RHE</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 1048.8786,2238.1057 880.86943,2063.426"
+       d="m 2155.6391,1429.8813 -189.6922,147.5723"
        id="path851" />
   </g>
   <g
@@ -79,16 +78,16 @@
     <text
        xml:space="preserve"
        style="font-style:italic;font-weight:bold;font-size:48px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';letter-spacing:0px"
-       x="547.40002"
-       y="3316.5999"
-       id="text841"><tspan
+       x="820.09375"
+       y="1620.0625"
+       id="text845"><tspan
          sodipodi:role="line"
-         id="tspan839"
-         x="547.40002"
-         y="3316.5999">j1: -80 uA / cm2</tspan></text>
+         id="tspan843"
+         x="820.09375"
+         y="1620.0625">E1: 0 V vs RHE</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1048.9675,3521.6989 -519.68,-223.2114"
+       d="M 839.58985,1429.7555 802.9875,1597.925"
        id="path853" />
   </g>
   <g
@@ -96,16 +95,16 @@
     <text
        xml:space="preserve"
        style="font-style:italic;font-weight:bold;font-size:48px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';letter-spacing:0px"
-       x="959.96252"
-       y="3797.5874"
-       id="text845"><tspan
+       x="477.96875"
+       y="1184.3563"
+       id="text841"><tspan
          sodipodi:role="line"
-         id="tspan843"
-         x="959.96252"
-         y="3797.5874">E1: 0 V vs RHE</tspan></text>
+         id="tspan839"
+         x="477.96875"
+         y="1184.3563">j1: 0 uA / cm2</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 1103.4789,3601.4945 950.599,3781.7618"
+       d="m 470.42188,1172.0297 368.80104,257.3597"
        id="path855" />
   </g>
   <g
@@ -113,66 +112,76 @@
     <text
        xml:space="preserve"
        style="font-style:italic;font-weight:bold;font-size:48px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';letter-spacing:0px"
-       x="2056.7749"
-       y="3725.1377"
-       id="text849"><tspan
+       x="647.01874"
+       y="367.28125"
+       id="text837"><tspan
          sodipodi:role="line"
-         id="tspan847"
-         x="2056.7749"
-         y="3725.1377">E2: 0.8 V vs RHE</tspan></text>
+         id="tspan835"
+         x="647.01874"
+         y="367.28125">j2: 80 uA / cm2</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1970.8664,3601.4945 80.3742,106.0336"
+       d="M 839.68986,483.61547 634.94375,351.18125"
        id="path857" />
   </g>
   <g
      id="g888">
     <path
-       style="fill:none;stroke:#21c10a;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1169.927,2874.2101 c 0,0 2.4574,-95.1125 0.7115,-148.5311 -1.0304,-31.5272 6.1953,-68.3311 29.0631,-90.0587 9.4729,-9.0006 15.2875,-21.5651 20.3213,-34.1339 9.2638,-23.1307 12.4016,-50.0494 15.9037,-74.5411 4.0019,-27.9875 14.6228,-138.8502 14.0875,-134.5859 -0.9378,7.4704 6.8792,-51.1988 14.0875,-50.8156 10.8429,0.5764 13.2617,46.0323 18.8961,86.2818 3.999,28.5671 7.1117,54.1543 27.1398,61.8885 19.1722,7.4037 40.1289,-38.5023 57.6078,-32.2 15.6017,5.6254 16.5434,81.2885 21.8353,163.0483 3.8363,59.2696 15.4508,131.925 29.9866,162.7251 16.8547,35.7136 33.3493,50.4613 68.6766,62.6391 53.3538,18.3918 112.9969,2.8257 169.3015,-1.0063 69.9253,-4.759 144.7974,3.9151 211.524,-15.3009 12.7393,-3.6687 24.6675,-11.4391 36.7682,-17.1506 60.1427,-28.3869 67.2644,-87.9365 67.1672,-84.525 l -4.1093,144.2761 c -0.6902,24.2295 -2.7659,39.2768 -4.6954,43.641 -8.7078,19.6958 -25.2089,38.2538 -58.6141,27.1688 -14.3608,-4.7654 -56.5695,-15.7482 -98.2955,-20.5556 -19.8542,-2.2875 -37.6826,-1.0624 -56.1638,-0.8272 -46.861,0.5964 -116.2965,-11.6501 -173.1248,-13.1302 -54.3461,-1.4154 -89.9643,0.1705 -101.833,6.0864 -59.9351,29.8742 -58.5853,62.3276 -69.866,101.8954 -12.2737,43.0509 -23.6781,237.9125 -29.2497,249.0343 -7.7849,15.54 -19.7551,16.1361 -29.1323,15.5579 -15.7744,-0.9728 -29.1007,-11.256 -36.777,-5.7469 -8.7479,6.2782 -22.1542,38.5814 -26.3161,61.9018 -3.7902,21.2371 -5.6757,41.1975 -7.8964,52.3075 -3.0302,15.1596 -5.8854,45.132 -14.5907,44.0235 -5.7147,-0.7277 -11.7113,-50.7843 -17.3578,-76.2235 -14.4445,-65.0764 -19.3928,-194.8919 -42.2625,-195.464 -22.1204,-0.5533 -31.4453,130.5609 -31.4453,130.5609"
+       style="fill:none;stroke:#1bf911;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 953.04453,1426.6109 c 0,0 2.72644,-83.6371 8.42735,-126.0328 3.02402,-22.4886 1.46877,-64.3122 24.15,-63.6453 10.18913,0.2996 35.89152,43.7181 74.79352,77.2395 34.0219,29.3162 79.5344,48.1864 114.8846,48.0386 83.8352,-0.3505 121.1795,-56.3946 141.8813,-110.6875 15.2897,-40.0992 37.0159,-121.6736 56.5918,-203.3958 9.361,-39.0786 21.9792,-77.5937 25.6691,-112.81822 1.4757,-14.08721 7.7634,-69.58258 11.6783,-124.49792 4.1386,-58.05272 5.9804,-115.27986 10.2076,-115.49271 5.5321,-0.27856 5.8653,20.39312 10.8172,39.1635 4.9287,18.68286 14.4824,35.46337 17.3578,35.80213 6.3893,0.75274 15.1501,-43.18286 28.4057,-84.87481 11.9598,-37.61621 27.906,-73.31244 43.2896,-74.36426 4.421,-0.30227 25.9945,31.19511 52.0052,65.45661 28.9143,38.08615 38.6636,31.5071 55.1605,45.23089 13.2175,10.99569 26.7479,56.45199 40.3893,113.43475 9.2012,38.43531 21.0634,124.79175 39.4159,196.09374 8.4866,32.9716 22.3218,69.2284 28.8698,82.909 6.6147,13.8199 28.8813,53.466 81.6872,66.3209 78.973,19.2249 108.8855,38.6821 147.2346,66.5041 59.4043,43.0975 119.3603,91.6866 190.1813,110.9391 28.9686,7.8751 90.0594,0.2515 90.0594,0.2515"
        id="path879"
-       sodipodi:nodetypes="cssssssssssssssssssssssssssssssssc"
+       sodipodi:nodetypes="csssssssssssssssssssssc"
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
        style="font-style:italic;font-weight:bold;font-size:48px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';letter-spacing:0px"
-       x="1430.8876"
-       y="2513.6125"
+       x="1328.25"
+       y="551.42505"
        id="text883"><tspan
          sodipodi:role="line"
          id="tspan881"
-         x="1430.8876"
-         y="2513.6125">curve: 293</tspan></text>
+         x="1328.25"
+         y="551.42505">curve: dotted</tspan></text>
   </g>
   <text
      xml:space="preserve"
      style="font-style:italic;font-weight:bold;font-size:48px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';letter-spacing:0px"
-     x="1517.425"
-     y="3185.7876"
+     x="1795.15"
+     y="776.82501"
      id="text892"><tspan
        sodipodi:role="line"
        id="tspan890"
-       x="1517.425"
-       y="3185.7876">scan rate: 50 mV / s</tspan></text>
+       x="1795.15"
+       y="776.82501">scan rate: 50 mV / s</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:italic;font-weight:bold;font-size:48px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';letter-spacing:0px"
+     x="1235.675"
+     y="376.33749"
+     id="text896"><tspan
+       sodipodi:role="line"
+       id="tspan894"
+       x="1235.675"
+       y="376.33749">comment: Only positive going scans shown.</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:80px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     x="138.8625"
-     y="2467.325"
+     x="-421.22351"
+     y="516.02783"
      id="text838"><tspan
        sodipodi:role="line"
        id="tspan836"
-       x="138.8625"
-       y="2467.325">Figure: 3</tspan></text>
+       x="-421.22351"
+       y="516.02783">Figure: 2</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:80px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     x="142.8875"
-     y="2624.3"
+     x="-392.76248"
+     y="675.40973"
      id="text842"><tspan
        sodipodi:role="line"
        id="tspan840"
-       x="142.8875"
-       y="2624.3">Tags: BCV</tspan></text>
+       x="-392.76248"
+       y="675.40973">Tags: BCV</tspan></text>
 </svg>
    
