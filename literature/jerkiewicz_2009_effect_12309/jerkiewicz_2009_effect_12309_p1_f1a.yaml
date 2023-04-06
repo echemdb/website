@@ -14,7 +14,7 @@ experimental:
       model: EG&G PAR model 175
 source:
   version: 1
-  citation key: Jerkiewicz_2009_effect_12309
+  citation key: jerkiewicz_2009_effect_12309
   url: https://doi.org/10.1021/jp900478u
   techniques:
   - CV
