@@ -49,9 +49,11 @@ system:
         grade: 4N
     working electrode:
       material: Pt
-      crystallographic orientation: '331'
+      crystallographic orientation: '332'
       purity:
         grade: 4N
       preparation procedure:
         description:
-          - Before each measurement, the working electrodes were flame-annealed and immediately transferred to a gas stream of H2/Ar. After Cooling, they were quenched with ultra-pure water saturated by with H2/Ar gas.
+          - flame-annealing
+          - cooling in a gas stream of H2/Ar
+          - quenching with ultra-pure water saturated by with H2/Ar gas
