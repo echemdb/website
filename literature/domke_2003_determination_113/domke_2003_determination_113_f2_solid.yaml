@@ -37,7 +37,7 @@ system:
       crystallographic orientation: poly
       material: Pt
     working electrode:
-      crystallographic orientation: '511'
+      crystallographic orientation: '100'
       material: Pt
       source:
         supplier: Goodfellow
@@ -45,4 +45,5 @@ system:
           grade: 5N
       preparation procedure:
         description:
-          - the working electrodes were heated again for 10 s in a gas-oxygen flame and cooled in a reductive atmosphere (H2+Ar).
+          - heating for 10 s in a gas-oxygen flame 
+          - cooled in a reductive atmosphere (H2+Ar)
