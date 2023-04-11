@@ -57,7 +57,7 @@ system:
 source:
   citation key: briega_martos_2021_cation_48
   url: https://doi.org/10.1021/acsmeasuresciau.1c00004
-version: 1
+version: '1'
 curation:
   version: 1
   process:

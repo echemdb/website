@@ -21,7 +21,7 @@ system:
         type: acid
         source:
           supplier: Cica-Merck
-          grade: ultrapur
+          grade: ultrapure
         concentration:
           value: 1.0
           unit: mol L⁻¹
@@ -45,13 +45,13 @@ system:
         supplier: homemade
       shape:
         type: bead shaped
-      geometric electrolyte contact area: 
+      geometric electrolyte contact area:
         unit: cm-2
       preparation procedure: Annealed in hydrogen flame for 1 min and subsequently quenched in ultrapure water.
-source: 
+source:
   citation key: sato_2006_effect_725
   url: https://doi.org/10.1016/j.elecom.2006.03.001
-  version: 1
+  version: '1'
 curation:
   version: 1
   process:
@@ -63,4 +63,4 @@ curation:
     name: Albert Engstfeld
     orcid: https://orcid.org/0000-0002-9686-3948
     date: 2022-06-22
-version: 1
+version: '1'
