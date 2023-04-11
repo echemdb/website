@@ -46,11 +46,11 @@ system:
       shape:
         type: cylinder
         diameter: { value: 4, unit: mm }
-      geometric electrolyte contact area: 
+      geometric electrolyte contact area:
         unit: cm-2
-      preparation procedure: Annealed in hydrogen or bunsen burner flame and subsequently cooled down in N2 for 1 min.
-source: 
-  citation key: kibler_in-situ_2000_73
+      preparation procedure: Annealed in hydrogen or bunsen burner flame and subsequently cooled down in CO + N2 for 1 min.
+source:
+  citation key: kibler_2000_in-situ_73
   url: https://doi.org/10.1016/S0022-0728(00)00065-6
   version: 1
 curation:
