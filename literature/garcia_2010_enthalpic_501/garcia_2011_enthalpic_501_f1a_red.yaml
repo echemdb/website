@@ -5,10 +5,19 @@ curation:
     name: Tobias Schmider
     orcid: https://orcid.org/0000-0002-2911-2925
     date: 2023-03-15
+experimental:
+  version: 1
+  instrumentation:
+    - type: potentiostat
+      model: AMEL 551
+    - type: recorder
+      model: Philips PM 8133 X-Y
+    - type: universal programmer
+      model: EG&G PAR model 175
 source:
   version: 1
-  citation key: domke_2003_determination_113
-  url: https://doi.org/10.1016/S0022-0728(02)01471-7
+  citation key: garcia_2011_enthalpic_501
+  url: https://doi.org/10.1021/jp1088146
   techniques:
   - CV
 system:
@@ -20,29 +29,29 @@ system:
     - name: water
       type: solvent
       source:
-        refinement: Millipore Milli Q
+        refinement: Milli-Q plus 185
+      purity:
+        grade: ultrapur
     - name: HClO4
       type: acid
       concentration:
-        value: 0.1
+        value: 0.001
         unit: mol / l
       source:
         supplier: Merck Suprapur
-    - name: Ar
-      type: gas
+      purity:
+        garde: suprapur
+    temperature:
+      value: 298
+      unit: K
   electrodes:
+    configuration: three
     reference electrode:
       type: RHE
     counter electrode:
       crystallographic orientation: poly
       material: Pt
+      shape: wire
     working electrode:
-      crystallographic orientation: '711'
       material: Pt
-      source:
-        supplier: Goodfellow
-        purity:
-          grade: 5N
-      preparation procedure:
-        description:
-          - the working electrodes were heated again for 10 s in a gas-oxygen flame and cooled in a reductive atmosphere (H2+Ar).
+      crystallographic orientation: '100'
