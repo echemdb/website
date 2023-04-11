@@ -58,4 +58,6 @@ system:
           unit: mm
       preparation procedure:
         description:
-          - Flame annealing with a nutane torch until glowing red hot for at least 30 s, cooling in a flpw of Ar/H2 (ca. 40% H2) for 2 min and the surface was then protected by a drop of Ar/H2 saturated ultrapure water for transfer.
+          - flame annealing in a butane torch, while glowing red hot for at least 30 s
+          - cooling in Ar/H2 (ca. 40% H2) for 2 min
+          - protecting surface with a drop of Ar/H2 saturated ultrapure water
