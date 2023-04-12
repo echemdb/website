@@ -1,0 +1,53 @@
+curation:
+  version: 1
+  process:
+  - role: curator
+    name: Tobias Schmider
+    orcid: https://orcid.org/0000-0002-2911-2925
+    date: 2023-03-17
+source:
+  version: 1
+  citation key: nishihara_1994_underpotential_75
+  url: https://doi.org/10.1016/0022-0728(94)03803-B
+  techniques:
+  - CV
+system:
+  version: 1
+  type: electrochemical
+  electrolyte:
+    type: aqueous
+    components:
+    - name: water
+      type: solvent
+    - name: H2SO4
+      type: acid
+      concentration:
+        value: 0.5
+        unit: mol / l
+      source:
+        supplier: Merck Suprapur
+      purity:
+        grade: suprapur
+    - name: CuSO4*5H2O
+      type: salt
+      concentration:
+        value: 0.2
+        unit: mmol / l
+      source:
+        supplier: Aldrich
+      purity:
+        grade: 5N
+    - name: Ar
+      type: gas
+      purity:
+        value: 99.9995
+        unit: percent
+  electrodes:
+    reference electrode:
+      type: RHE
+    working electrode:
+      material: Pt
+      crystallographic orientation: '15,11,11'
+      preparation procedure:
+        description:
+          - After annealing the single crystal in a hydrogen/air flame at around, the crystal was quenched in hydrogen-bubbled water under an argon atmosphere.

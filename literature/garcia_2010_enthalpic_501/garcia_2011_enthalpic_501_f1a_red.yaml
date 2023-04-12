@@ -1,0 +1,57 @@
+curation:
+  version: 1
+  process:
+  - role: curator
+    name: Tobias Schmider
+    orcid: https://orcid.org/0000-0002-2911-2925
+    date: 2023-03-15
+experimental:
+  version: 1
+  instrumentation:
+    - type: potentiostat
+      model: AMEL 551
+    - type: recorder
+      model: Philips PM 8133 X-Y
+    - type: universal programmer
+      model: EG&G PAR model 175
+source:
+  version: 1
+  citation key: garcia_2011_enthalpic_501
+  url: https://doi.org/10.1021/jp1088146
+  techniques:
+  - CV
+system:
+  version: 1
+  type: electrochemical
+  electrolyte:
+    type: aqueous
+    components:
+    - name: water
+      type: solvent
+      source:
+        refinement: Milli-Q plus 185
+      purity:
+        grade: ultrapur
+    - name: HClO4
+      type: acid
+      concentration:
+        value: 0.001
+        unit: mol / l
+      source:
+        supplier: Merck Suprapur
+      purity:
+        garde: suprapur
+    temperature:
+      value: 298
+      unit: K
+  electrodes:
+    configuration: three
+    reference electrode:
+      type: RHE
+    counter electrode:
+      crystallographic orientation: poly
+      material: Pt
+      shape: wire
+    working electrode:
+      material: Pt
+      crystallographic orientation: '100'
