@@ -10,7 +10,6 @@ experimental:
 system:
   type: electrochemical
   electrodes:
-    configuration: 3
     - name: REF
       function: reference electrode
       type: Ag/AgCl

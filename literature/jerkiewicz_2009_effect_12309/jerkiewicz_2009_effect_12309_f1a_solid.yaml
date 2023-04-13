@@ -1,5 +1,4 @@
 curation:
-  version:
   process:
   - role: curator
     name: Tobias Schmider
