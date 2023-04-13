@@ -35,7 +35,7 @@ system:
     temperature:
       unit: K
       value: 298.15
-    type: aq
+    type: aqueous
 source:
   citation key: mello_2018_bromide_18562
   url: https://doi.org/10.1021/acs.jpcc.8b05685

@@ -27,7 +27,7 @@ system:
     temperature:
       unit: K
       value: 293
-    type: aq
+    type: aqueous
 source:
   citation key: wandlowski_1996_structural_10277
   url: https://doi.org/10.1021/jp9600064

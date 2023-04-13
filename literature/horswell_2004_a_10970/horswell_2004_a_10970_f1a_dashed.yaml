@@ -36,7 +36,7 @@ system:
     temperature:
       unit: K
       value: 298.15
-    type: aq
+    type: aqueous
 source:
   citation key: horswell_2004_a_10970
   url: https://doi.org/10.1021/la0483818

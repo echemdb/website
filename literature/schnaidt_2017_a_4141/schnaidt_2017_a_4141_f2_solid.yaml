@@ -57,7 +57,7 @@ system:
     temperature:
       unit: K
       value: 298.15
-    type: aq
+    type: aqueous
 source:
   citation key: schnaidt_2017_a_4141
   url: https://doi.org/10.1039/C6CP06051J

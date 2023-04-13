@@ -62,7 +62,7 @@ def main():
             render(
                 "pages/cv.md",
                 database=database.filter(
-                    lambda entry: entry.system.electrolyte.type == "aq"
+                    lambda entry: entry.system.electrolyte.type == "aqueous"
                     and "BCV" in entry.experimental.tags
                 ),
                 intro="",
@@ -77,7 +77,7 @@ def main():
             render(
                 "pages/cv.md",
                 database=database.filter(
-                    lambda entry: entry.system.electrolyte.type == "aq"
+                    lambda entry: entry.system.electrolyte.type == "aqueous"
                     and "COOR" in entry.experimental.tags
                 ),
                 intro="Cyclic voltammograms recorded in CO containing aqueous electrolytes.",

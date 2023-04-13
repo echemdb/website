@@ -3,7 +3,7 @@
 system:
   type: electrochemical
   electrolyte:
-    type: aq
+    type: aqueous
     components:
       - name: H2O
         type: solvent

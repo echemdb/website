@@ -48,7 +48,7 @@ system:
     temperature:
       unit: K
       value: 298.15
-    type: aq
+    type: aqueous
 source:
   citation key: alves_2011_electrochemistry_6010
   url: https://doi.org/10.1039/C0CP01001D

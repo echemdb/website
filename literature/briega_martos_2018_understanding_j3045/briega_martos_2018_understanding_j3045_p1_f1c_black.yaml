@@ -31,7 +31,7 @@ system:
     temperature:
       unit: K
       value: 298.15
-    type: aq
+    type: aqueous
 source:
   citation key: briega_martos_2018_understanding_j3045
   url: https://doi.org/10.1149/2.0081815jes

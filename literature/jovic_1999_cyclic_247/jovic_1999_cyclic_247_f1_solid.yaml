@@ -31,7 +31,7 @@ system:
     temperature:
       unit: K
       value: 298.15
-    type: aq
+    type: aqueous
 source:
   citation key: jovic_1999_cyclic_247
   url: https://doi.org/10.1016/S1388-2481(99)00049-1

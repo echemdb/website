@@ -38,7 +38,7 @@ system:
     temperature:
       unit: K
       value: 293
-    type: aq
+    type: aqueous
 source:
   citation key: hamad_2003_electrosorption_211
   techniques:

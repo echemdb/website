@@ -58,7 +58,7 @@ system:
     temperature:
       unit: K
       value: 298.15
-    type: aq
+    type: aqueous
 source:
   citation key: engstfeld_2018_polycrystalline_17743
   url: https://doi.org/10.1002/chem.201803418

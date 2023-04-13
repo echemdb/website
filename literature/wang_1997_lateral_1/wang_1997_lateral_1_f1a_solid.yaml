@@ -30,7 +30,7 @@ system:
     temperature:
       unit: K
       value: 298.15
-    type: aq
+    type: aqueous
 source:
   citation key: wang_1997_lateral_1
   url: https://www.osti.gov/biblio/537264
