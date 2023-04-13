@@ -7,12 +7,15 @@ system:
   type: electrochemical
   electrodes:
     configuration: 3
-    counter electrode:
+    - name: CE
+      function: counter electrode
       material: Pt
       shape: sheet
-    reference electrode:
+    - name: REF
+      function: reference electrode
       type: SCE
-    working electrode:
+    - name: WE
+      function: working electrode
       crystallographic orientation: '100'
       material: Ag
       preparation procedure: Ag crystal polished with fine emery paper, alumina, then
@@ -30,14 +33,10 @@ system:
       unit: K
       value: 298.15
     type: aq
-  version: 1
 source:
   citation key: jovic_1999_cyclic_247
   url: https://doi.org/10.1016/S1388-2481(99)00049-1
-  version: 1
-version: '1'
 curation:
-  version: 1
   process:
   - role: curator
     name: Markus Schilling

@@ -6,7 +6,6 @@ curation:
     orcid: https://orcid.org/0000-0002-2911-2925
     date: 2023-03-18
 experimental:
-  version: 1
   instrumentation:
     - type: potentiostat
       model: AMEL 551
@@ -15,13 +14,11 @@ experimental:
     - type: universal programmer
       model: EG&G PAR model 175
 source:
-  version: 1
   citation key: gomez_2003_effect_228
   url: https://doi.org/10.1021/jp034982g
   techniques:
   - CV
 system:
-  version: 1
   type: electrochemical
   electrolyte:
     type: aqueous
@@ -45,12 +42,15 @@ system:
       value: 293
       unit: K
   electrodes:
-    reference electrode:
+    - name: REF
+      function: reference electrode
       type: RHE
-    counter electrode:
+    - name: CE
+      function: counter electrode
       material: Pt
       shape: coiled wire
-    working electrode:
+    - name: WE
+      function: working electrode
       material: Pt
       crystallographic orientation: '100'
       preparation procedure:

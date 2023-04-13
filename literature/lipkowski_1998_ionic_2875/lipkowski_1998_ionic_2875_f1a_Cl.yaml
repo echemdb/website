@@ -7,9 +7,11 @@ system:
   type: electrochemical
   electrodes:
     configuration: 3
-    reference electrode:
+    - name: REF
+      function: reference electrode
       type: SCE
-    working electrode:
+    - name: WE
+      function: working electrode
       crystallographic orientation: '111'
       material: Au
   electrolyte:
@@ -30,17 +32,13 @@ system:
       unit: K
       value: 298.15
     type: aq
-  version: 1
 source:
   citation key: lipkowski_1998_ionic_2875
   url: https://doi.org/10.1016/S0013-4686(98)00028-0
   techniques:
   - SHG 
   - SXRD
-  version: 1
-version: '1'
 curation:
-  version: 1
   process:
   - role: curator
     name: Markus Schilling

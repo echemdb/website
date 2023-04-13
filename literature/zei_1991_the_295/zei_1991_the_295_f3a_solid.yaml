@@ -7,9 +7,11 @@ system:
   type: electrochemical
   electrodes:
     configuration: 3
-    reference electrode:
+    - name: REF
+      function: reference electrode
       type: Ag/AgCl
-    working electrode:
+    - name: WE
+      function: working electrode
       crystallographic orientation: '111'
       material: Ag
   electrolyte:
@@ -28,7 +30,6 @@ system:
       unit: K
       value: 298.15
     type: aq
-  version: 1
 source:
   citation key: zei_1991_the_295
   url: https://doi.org/10.1016/0022-0728(91)85074-Y
@@ -36,10 +37,7 @@ source:
   - LEED 
   - RHEED 
   - AES
-  version: 1
-version: '1'
 curation:
-  version: 1
   process:
   - role: curator
     name: Markus Schilling

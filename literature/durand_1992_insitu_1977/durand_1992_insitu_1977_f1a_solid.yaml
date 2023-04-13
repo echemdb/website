@@ -4,14 +4,14 @@ curation:
     name: Tobias Schmider
     orcid: https://orcid.org/0000-0002-2911-2925
     role: curator
-  version: 1
 system:
   type: electrochemical
   electrodes:
-    configuration: three
-    reference electrode:
+    - name: REF
+      function: reference electrode
       type: RHE
-    working electrode:
+    - name: WE
+      function: working electrode
       crystallographic orientation: '110'
       geometric electrolyte contact area:
         unit: cm-2
@@ -56,7 +56,6 @@ system:
       unit: K
       value: 298.15
     type: aq
-  version: 1
 source:
   citation key: durand_1992_insitu_1977
   url: https://doi.org/10.1016/0013-4686(92)87111-C
@@ -64,4 +63,3 @@ source:
   - CV
   - in situ XRD
   - EXAFS
-  version: 1

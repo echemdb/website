@@ -7,12 +7,15 @@ system:
   type: electrochemical
   electrodes:
     configuration: 3
-    counter electrode:
+    - name: CE
+      function: counter electrode
       material: Pt
       shape: wire
-    reference electrode:
+    - name: REF
+      function: reference electrode
       type: RHE
-    working electrode:
+    - name: WE
+      function: working electrode
       crystallographic orientation: '111'
       material: Pt
   electrolyte:
@@ -34,14 +37,10 @@ system:
       unit: K
       value: 298.15
     type: aq
-  version: 1
 source:
   citation key: mello_2018_bromide_18562
   url: https://doi.org/10.1021/acs.jpcc.8b05685
-  version: 1
-version: '1'
 curation:
-  version: 1
   process:
   - role: curator
     name: Markus Schilling

@@ -7,9 +7,11 @@ system:
   type: electrochemical
   electrodes:
     configuration: 3
-    reference electrode:
+    - name: REF
+      function: reference electrode
       type: SCE
-    working electrode:
+    - name: WE
+      function: working electrode
       crystallographic orientation: '100'
       material: Au
       preparation procedure: Electrodes were annealed and quenched in water. Measurements
@@ -27,16 +29,12 @@ system:
       unit: K
       value: 293
     type: aq
-  version: 1
 source:
   citation key: wandlowski_1996_structural_10277
   url: https://doi.org/10.1021/jp9600064
   techniques:
   - SXRD
-  version: 1
-version: '1'
 curation:
-  version: 1
   process:
   - role: curator
     name: Markus Schilling

@@ -7,9 +7,11 @@ system:
   type: electrochemical
   electrodes:
     configuration: 3
-    reference electrode:
+    - name: REF
+      function: reference electrode
       type: Ag/AgCl
-    working electrode:
+    - name: WE
+      function: working electrode
       crystallographic orientation: '100'
       material: Ag
       preparation procedure: Ag electrode etched with chromic acid, then annealed
@@ -38,7 +40,6 @@ system:
     temperature:
       unit: K
       value: 298.15
-  version: 1
 source:
   citation key: nakamura_2014_structural_22136
   url: https://doi.org/10.1021/jp506979p
@@ -46,10 +47,7 @@ source:
   - Current transients (voltage steps) 
   - time-resolved XRD 
   - EIS
-  version: 1
-version: '1'
 curation:
-  version: 1
   process:
   - role: curator
     name: Markus Schilling

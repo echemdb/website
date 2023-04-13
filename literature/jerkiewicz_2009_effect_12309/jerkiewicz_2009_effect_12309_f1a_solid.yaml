@@ -6,20 +6,17 @@ curation:
     orcid: https://orcid.org/0000-0002-2911-2925
     date: 2023-03-18
 experimental:
-  version: 1
   instrumentation:
     - type: potentiostat-galvanostat
       model: EG&G Model 263A
     - type: universal programmer
       model: EG&G PAR model 175
 source:
-  version: 1
   citation key: jerkiewicz_2009_effect_12309
   url: https://doi.org/10.1021/jp900478u
   techniques:
   - CV
 system:
-  version: 1
   type: electrochemical
   electrolyte:
     type: aqueous
@@ -55,14 +52,17 @@ system:
       value: 298
       unit: K
   electrodes:
-    reference electrode:
+    - name: REF
+      function: reference electrode
       type: RHE
       description: H2 gas was bubbled through the reference electrode compartment in which the Pt/Pt-black electrode was immersed
-    counter electrode:
+    - name: CE
+      function: counter electrode
       material: Pt
       shape: gauze
       crystallographic orientation: poly
-    working electrode:
+    - name: WE
+      function: working electrode
       material: Pt
       shape:
         diameter:

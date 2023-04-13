@@ -1,18 +1,15 @@
 curation:
-  version: 1
   process:
   - role: curator
     name: Tobias Schmider
     orcid: https://orcid.org/0000-0002-2911-2925
     date: 2023-03-15
 source:
-  version: 1
   citation key: domke_2003_determination_113
   url: https://doi.org/10.1016/S0022-0728(02)01471-7
   techniques:
   - CV
 system:
-  version: 1
   type: electrochemical
   electrolyte:
     type: aqueous
@@ -31,12 +28,15 @@ system:
     - name: Ar
       type: gas
   electrodes:
-    reference electrode:
+    - name: REF
+      function: reference electrode
       type: RHE
-    counter electrode:
+    - name: CE
+      function: counter electrode
       crystallographic orientation: poly
       material: Pt
-    working electrode:
+    - name: WE
+      function: working electrode
       crystallographic orientation: '100'
       material: Pt
       source:

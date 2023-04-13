@@ -7,12 +7,15 @@ system:
   type: electrochemical
   electrodes:
     configuration: 3
-    counter electrode:
+    - name: CE
+      function: counter electrode
       material: Au
       shape: coil
-    reference electrode:
+    - name: REF
+      function: reference electrode
       type: SCE
-    working electrode:
+    - name: WE
+      function: working electrode
       crystallographic orientation: '111'
       material: Au
       preparation procedure: The Au electrode was prepared by flame annealing.
@@ -34,14 +37,10 @@ system:
       unit: K
       value: 298.15
     type: aq
-  version: 1
 source:
   citation key: shi_1996_chloride_225
   url: https://doi.org/10.1016/0022-0728(92)80223-Q
-  version: 1
-version: '1'
 curation:
-  version: 1
   process:
   - role: curator
     name: Markus Schilling
