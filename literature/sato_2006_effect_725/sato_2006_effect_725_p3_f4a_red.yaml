@@ -53,7 +53,7 @@ system:
 source:
   citation key: sato_2006_effect_725
   url: https://doi.org/10.1016/j.elecom.2006.03.001
-  curation:
+curation:
   process:
   - role: curator
     name: Johannes M. Hermann
