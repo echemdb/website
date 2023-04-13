@@ -36,7 +36,7 @@ system:
       value: 298.15
     type: aq
 source:
-  citation key: Kerner_2002_Measurement_2055
+  citation key: kerner_2002_measurement_2055
   url: https://doi.org/10.1016/0022-0728(92)80223-Q
   techniques:
   - EIS
