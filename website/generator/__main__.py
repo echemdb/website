@@ -62,7 +62,7 @@ def main():
             render(
                 "pages/cv.md",
                 database=database.filter(
-                    lambda entry: entry.system.electrolyte.type == "aq"
+                    lambda entry: entry.system.electrolyte.type == "aqueous"
                     and "BCV" in entry.experimental.tags
                 ),
                 intro="",
@@ -77,7 +77,7 @@ def main():
             render(
                 "pages/cv.md",
                 database=database.filter(
-                    lambda entry: entry.system.electrolyte.type == "aq"
+                    lambda entry: entry.system.electrolyte.type == "aqueous"
                     and "COOR" in entry.experimental.tags
                 ),
                 intro="Cyclic voltammograms recorded in CO containing aqueous electrolytes.",
@@ -106,7 +106,7 @@ def material_filter():
     Unfortunately, jinja does not allow such generic lambdas.
     """
     return lambda material: (
-        lambda entry: entry.system.electrodes.working_electrode.material == material
+        lambda entry: entry.get_electrode("WE").material == material
     )
 
 

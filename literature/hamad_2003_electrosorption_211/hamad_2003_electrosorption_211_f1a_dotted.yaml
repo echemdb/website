@@ -6,15 +6,17 @@ experimental:
 system:
   type: electrochemical
   electrodes:
-    configuration: 3
-    counter electrode:
+    - name: CE
+      function: counter electrode
       material: Pt
       shape: wire
-    reference electrode:
+    - name: REF
+      function: reference electrode
       source:
         supplier: SI Analytics
       type: SCE
-    working electrode:
+    - name: WE
+      function: working electrode
       crystallographic orientation: '100'
       material: Ag
       preparation procedure: Electrode etched with a cyanide solution, rinsed with
@@ -31,17 +33,13 @@ system:
     temperature:
       unit: K
       value: 293
-    type: aq
-  version: 1
+    type: aqueous
 source:
   citation key: hamad_2003_electrosorption_211
   techniques:
   - Monte-Carlo simulations
   url: https://doi.org/10.1016/S0022-0728(03)00178-5
-  version: 1
-version: '1'
 curation:
-  version: 1
   process:
   - role: curator
     name: Markus Schilling

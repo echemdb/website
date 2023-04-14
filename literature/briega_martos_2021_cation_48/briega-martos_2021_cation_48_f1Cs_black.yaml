@@ -6,14 +6,16 @@ experimental:
 system:
   type: electrochemical
   electrodes:
-    configuration: three
-    counter electrode:
+    - name: CE
+      function: counter electrode
       crystallographic orientation: poly
       material: Pt
       shape: coiled wire
-    reference electrode:
+    - name: REF
+      function: reference electrode
       type: RHE
-    working electrode:
+    - name: WE
+      function: working electrode
       crystallographic orientation: '111'
       geometric electrolyte contact area:
         unit: 1 / cm2
@@ -53,13 +55,11 @@ system:
     temperature:
       unit: K
       value: 298.15
-    type: aq
+    type: aqueous
 source:
   citation key: briega_martos_2021_cation_48
   url: https://doi.org/10.1021/acsmeasuresciau.1c00004
-version: '1'
 curation:
-  version: 1
   process:
   - role: curator
     name: Nicolas Hoermann

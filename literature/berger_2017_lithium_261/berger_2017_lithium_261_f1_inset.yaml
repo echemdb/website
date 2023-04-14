@@ -8,17 +8,19 @@ experimental:
 system:
   type: electrochemical
   electrodes:
-    configuration: three
-    counter electrode:
+    - name: CE
+      function: counter electrode
       crystallographic orientation: poly
       material: Pt
       supplier: Mateck GmbH
       shape: wire
-    reference electrode:
+    - name: REF
+      function: reference electrode
       source: Pt
       supplier: Mateck GmbH
       type: wire
-    working electrode:
+    - name: WE
+      function: working electrode
       crystallographic orientation: '111'
       material: Au
       preparation procedure: Annealed in a hydrogen stream and slowly cooled in Argon.
@@ -27,7 +29,7 @@ system:
           unit: mm
           value: 12
         type: disk
-      source: 
+      source:
         supplier: Mateck GmbH
   electrolyte:
     components:
@@ -35,7 +37,7 @@ system:
       proportion:
         unit: volume percent
         value: 100
-      source: 
+      source:
         supplier: IoLiTec
         supplied purity:
             grade: '>99%'
@@ -46,15 +48,11 @@ system:
       unit: K
       value: 298.15
     type: ionic liquid
-  version: 1
 source:
   citation key: berger_2017_lithium_261
   url: https://doi.org/10.1002/celc.201600730
   techniques: CV, STM, EQCM
-  version: 1
-version: '1'
 curation:
-  version: 1
   process:
   - role: curator
     name: Jerome Mayer

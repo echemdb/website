@@ -3,7 +3,7 @@
 system:
   type: electrochemical
   electrolyte:
-    type: aq
+    type: aqueous
     components:
       - name: H2O
         type: solvent
@@ -33,12 +33,14 @@ system:
       unit: C
       comment: room temperature
   electrodes:
-    configuration: three
-    reference electrode:
+    - name: REF
+      function: reference electrode
       type: SCE
-    counter electrode:
+    - name: CE
+      function: counter electrode
       material: Pt
-    working electrode:
+    - name: WE
+      function: working electrode
       material: Pt
       crystallographic orientation: '100'
       source:
@@ -52,12 +54,9 @@ system:
 source:
   citation key: kibler_2000_in-situ_73
   url: https://doi.org/10.1016/S0022-0728(00)00065-6
-  version: 1
 curation:
-  version: 1
   process:
   - role: curator
     name: Johannes M. Hermann
     orcid: https://orcid.org/0000-0001-7119-1295
     date: 2023-02-04
-version: 1

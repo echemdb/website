@@ -1,18 +1,15 @@
 curation:
-  version: 1
   process:
   - role: curator
     name: Tobias Schmider
     orcid: https://orcid.org/0000-0002-2911-2925
     date: 2023-03-17
 source:
-  version: 1
   citation key: sandbeck_2019_dissolution_2997
   url: https://doi.org/10.1002/cphc.201900866
   techniques:
   - CV
 system:
-  version: 1
   type: electrochemical
   electrolyte:
     type: aqueous
@@ -38,12 +35,15 @@ system:
     - name: Ar
       type: gas
   electrodes:
-    reference electrode:
+    - name: REF
+      function: reference electrode
       type: Ag/AgCl
-    counter electrode:
+    - name: CE
+      function: counter electrode
       material: carbon
       shape: rod
-    working electrode:
+    - name: WE
+      function: working electrode
       material: Pt
       crystallographic orientation: '110'
       source:

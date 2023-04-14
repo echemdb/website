@@ -1,18 +1,15 @@
 curation:
-  version: 1
   process:
   - role: curator
     name: Tobias Schmider
     orcid: https://orcid.org/0000-0002-2911-2925
     date: 2023-03-15
 source:
-  version: 1
   citation key: clavilier_1990_insitu_1
   url: https://doi.org/10.1016/0301-0104(90)80014-O
   techniques:
   - CV
 system:
-  version: 1
   type: electrochemical
   electrolyte:
     type: aqueous
@@ -27,10 +24,11 @@ system:
         value: 0.5
         unit: mol / l
   electrodes:
-    configuration: three
-    reference electrode:
+    - name: REF
+      function: reference electrode
       typ: RHE
-    working electrode:
+    - name: WE
+      function: working electrode
       material: Pt
       crystallographic orientation: '111'
       preparation procedure:
