@@ -3,7 +3,7 @@
 system:
   type: electrochemical
   electrolyte:
-    type: aq
+    type: aqueous
     components:
       - name: H2O
         type: solvent
@@ -33,12 +33,14 @@ system:
       value: 20
       unit: C
   electrodes:
-    configuration: three
-    reference electrode:
+    - name: REF
+      function: reference electrode
       type: Ag/AgCl-sat
-    counter electrode:
+    - name: CE
+      function: counter electrode
       material: (not given)
-    working electrode:
+    - name: WE
+      function: working electrode
       material: Au
       crystallographic orientation: '111'
       source:
@@ -51,9 +53,7 @@ system:
 source:
   citation key: sato_2006_effect_725
   url: https://doi.org/10.1016/j.elecom.2006.03.001
-  version: '1'
 curation:
-  version: 1
   process:
   - role: curator
     name: Johannes M. Hermann
@@ -63,4 +63,3 @@ curation:
     name: Albert Engstfeld
     orcid: https://orcid.org/0000-0002-9686-3948
     date: 2022-06-22
-version: '1'

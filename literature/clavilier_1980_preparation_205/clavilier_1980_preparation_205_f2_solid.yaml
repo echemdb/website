@@ -1,18 +1,15 @@
 curation:
-  version: 1
   process:
     - role: curator
       name: Tobias Schmider
       orcid: https://orcid.org/0000-0002-2911-2925
       date: 2022-06-03
 source:
-  version: 1
   url: https://doi.org/10.1016/S0022-0728(79)80022-4
   citation key: clavilier_1980_preparation_205
   techniques:
   - CV
 system:
-  version: 1
   type: electrochemical
   electrolyte:
     type: aqueous
@@ -33,7 +30,8 @@ system:
         purity:
           grade: suprapur
   electrodes:
-    working electrode:
+    - name: WE
+      function: working electrode
       type: single crystal
       material: Pt
       crystallographic orientation: '110'
