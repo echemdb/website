@@ -39,4 +39,5 @@ dependencies:
     - pymdown-extensions>=9.2,<10
     - python-frontmatter
     - tabulate
+    - markdown-katex
     - git+https://github.com/echemdb/echemdb.git@refs/pull/54/head
