@@ -1,5 +1,6 @@
-# {{ entry.system.electrodes.working_electrode.material }}({{ entry.system.electrodes.working_electrode.crystallographic_orientation }}) <small>- {{ entry.system.electrolyte | render("components/electrolyte.md") }}</small>
-<small>echemdb identifier: `{{ entry.identifier }}`</small>  
+# {{ entry.get_electrode('WE').material }}({{ entry.get_electrode('WE').crystallographic_orientation }}) <small>- {{ entry.system.electrolyte | render("components/electrolyte.md") }}</small>
+
+<small>echemdb identifier: `{{ entry.identifier }}`</small>
 <small>tags:
 {% set separator = joiner(", ") %}
 {% for tag in entry.experimental.tags %}
@@ -9,7 +10,7 @@
 </small>
 
 A cyclic voltammogramm for
-{{ entry.system.electrodes.working_electrode.material }}({{ entry.system.electrodes.working_electrode.crystallographic_orientation }})
+{{ entry.get_electrode('WE').material }}({{ entry.get_electrode('WE').crystallographic_orientation }})
 recorded in
 {% if 'COOR' in entry.experimental.tags %}
 CO containing
@@ -34,9 +35,9 @@ in
 ## Further information
 The figure shows {{ entry.figure_description.type }} data.
 
-{% if entry.system.electrodes.working_electrode.preparation_procedure is defined %}
-The {{ entry.system.electrodes.working_electrode.material }}({{ entry.system.electrodes.working_electrode.crystallographic_orientation }}) electrode was prepared by:
-{{ entry.system.electrodes.working_electrode.preparation_procedure }}
+{% if entry.get_electrode('WE').preparation_procedure is defined %}
+The {{ entry.get_electrode('WE').material }}({{ entry.get_electrode('WE').crystallographic_orientation }}) electrode was prepared by:
+{{ entry.get_electrode('WE').preparation_procedure }}
 {% else %}
 Preparation procedure not available.
 {% endif %}
