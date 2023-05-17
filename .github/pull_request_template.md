@@ -3,7 +3,7 @@
 
 For contributors and reviewers alike.
 
-- [ ] Name PR `Add Literature-Identifier`
+- [ ] Name PR `Add literature_identifier`
 
 **Filename**
 
