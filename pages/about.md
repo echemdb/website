@@ -71,7 +71,7 @@ Please [leave us a message](https://github.com/orgs/echemdb/discussions)
 if you are interested in contributing to the echemDB.
 
 You could get started by [digitizing some published data](https://echemdb.github.io/svgdigitizer/workflow.html)
-in your area of research or by extending any of the pages of the [echemDB website](https://echemdb.github.io/website/).
+in your area of research or by extending any of the pages of the [echemDB website](https://www.echemdb.org/).
 If your interest is outside of cyclic voltammograms or electrochemistry,
 we would also be thrilled to hear about your ideas to extend these projects to other areas.
 

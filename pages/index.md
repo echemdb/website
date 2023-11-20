@@ -67,6 +67,7 @@ from published figures,
 where machine-readable data is not available.
 
 [→ Learn more](https://echemdb.github.io/svgdigitizer/)
+
 [→ Digitize a plot for echemdb](https://echemdb.github.io/svgdigitizer/workflow.html)
 
 </figcaption>
