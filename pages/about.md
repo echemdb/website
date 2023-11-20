@@ -60,7 +60,7 @@ In order to improve the reusability of published data, the authors of echemdb cr
 digitizing any kind of published 2D plots from carefully prepared SVG files.
 This approach has some superior functionalities compared to other tools, for example,
 allowing to extract units from the axis labels or reconstructing a time axis based on a given scan rate.
-Modules for specific types of plots, auch as the [electrochemistry module](https://echemdb.github.io/svgdigitizer/workflow.html)
+Modules for specific types of plots, such as the [electrochemistry module](https://echemdb.github.io/svgdigitizer/workflow.html)
 offers convenience functionality, and allow extracting additional properties such as the reference potential of a potential axis.
 By providing a set of metadata, the digitized data can directly be stored as a [unitpackage](https://echemdb.github.io/unitpackage/).
 

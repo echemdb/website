@@ -15,34 +15,34 @@ EXAMPLES::
 
 """
 # ********************************************************************
-#  This file is part of echemdb.
+#  This file is part of echemdb-website.
 #
-#        Copyright (C)      2021 Albert Engstfeld
+#        Copyright (C) 2021-2023 Albert Engstfeld
 #        Copyright (C)      2021 Johannes Hermann
 #        Copyright (C) 2021-2022 Julian Rüth
 #        Copyright (C)      2021 Nicolas Hörmann
 #
-#  echemdb is free software: you can redistribute it and/or modify
+#  echemdb-website is free software: you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
 #  the Free Software Foundation, either version 3 of the License, or
 #  (at your option) any later version.
 #
-#  echemdb is distributed in the hope that it will be useful,
+#  echemdb-website is distributed in the hope that it will be useful,
 #  but WITHOUT ANY WARRANTY; without even the implied warranty of
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #  GNU General Public License for more details.
 #
 #  You should have received a copy of the GNU General Public License
-#  along with echemdb. If not, see <https://www.gnu.org/licenses/>.
+#  along with echemdb-website. If not, see <https://www.gnu.org/licenses/>.
 # ********************************************************************
 
 import os.path
 
-import echemdb.cv.cv_database
-import echemdb.local
+import unitpackage.cv.cv_collection
+import unitpackage.local
 
-packages = echemdb.local.collect_datapackages(
+packages = unitpackage.local.collect_datapackages(
     os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "..", "data"))
 )
 
-cv = echemdb.cv.cv_database.CVDatabase(packages)
+cv = unitpackage.cv.cv_collection.CVCollection(packages)
