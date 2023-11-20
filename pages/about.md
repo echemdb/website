@@ -5,10 +5,9 @@ according to the [FAIR principles](https://www.go-fair.org/fair-principles/).
 Ultimately, this approach allows for a seamless comparison of published data
 with laboratory-derived data and theoretical models.
 
-The tools are developed focusing on electrochemical data.
-The key issues for compliance with the FAIR principles for these data
-are (i) metadata standards and (ii) accessibility to published data
-which are often not machine-readable. More specifically, research data often stored as CSV
+Key issues for compliance with the FAIR principles are that many research areas lack
+(i) metadata standards and (ii) published data is mostly inaccessible or
+not machine-readable. More specifically, research data often stored as CSV
 usually do not contain information on the units of the axis/columns or contain metadata annotating
 and describing the data.
 
@@ -18,11 +17,12 @@ of the electrochemical properties of well-defined single crystal electrodes by
 cyclic voltammetry has played a crucial role in the fundamental understanding of more
 complex three dimensional systems found in more applied research areas or even in application.
 These materials are very well defined and the measurement principle is also well established
-within the community.
+within the community. The validity of our approach to other research areas
+is illustrated [here](https://echemdb.github.io/rawtofigure/intro.html).
 
 ## Standardization
 
-To standardize CVS data the authors of echemdb adopt
+To standardize CSV data the authors of echemdb adopt
 the [frictionless datapackage](https://specs.frictionlessdata.io/data-package/#introduction)
 structure.
 According to frictionless a data package consists of:
@@ -32,12 +32,11 @@ According to frictionless a data package consists of:
 >
 > The Data Package metadata is stored in a “descriptor”.
 
-The frictionless resource descriptors are enhanced by
-
 The echemdb authors augmented the frictionless schema, by adding
 
 * units, allowing for simple unit transformations or data manipulation.
 * metadata describing a resource within the package.
+
 The metadata describes for example the [electrochemical system](https://github.com/echemdb/metadata-schema/blob/main/examples/objects/system.yaml),
 which contains detailed information about the electrodes
 or the components of the electrolyte. The metadata also contains information
@@ -77,11 +76,12 @@ we would also be thrilled to hear about your ideas to extend these projects to o
 
 ## What's next
 
-The collection of metadata for a single measurement in the laboratory is often a tedious task.
-We are currently [developing a tool](https://github.com/echemdb/autotag-metadata)
-that stores a predefined set of metadata along with the measurement data.
-Furthermore we develop file converters for electrochemical data,
-which in combination with the metadata files produce a [unitpackage](https://echemdb.github.io/unitpackage/).
+We anticipate developing additional tools which help in generating [unitpackages](https://echemdb.github.io/unitpackage/)
+or allow for interacting with unitpackages.
+The latter comprises common tools for the evaluation of electrochemical data.
+We also plan to include other electrochemical data from methods other than cyclic voltammetry in our database,
+including data which have been recorded concomitantly, such as disc electrode currents
+or mass spectrometry signals.
 
 ## Contact
 
