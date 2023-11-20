@@ -58,6 +58,18 @@ renders electrochemical data interoperable.
 </figure>
 
 <figure class="echemdb-spotlight" markdown>
+![DataAnnotation](./images/autotag/home_autotag_metadata.png)
+<figcaption markdown>
+## Automated Data Annotation
+
+AutotagMetadata is a tool with a GUI for automated tagging of newly created data with metadata
+from a template.
+
+[→ Learn more](https://echemdb.github.io/autotag-metadata/)
+</figcaption>
+</figure>
+
+<figure class="echemdb-spotlight echemdb-spotlight-reverse" markdown>
 ![SVGDigitizer](./images/home_digitizer.png)
 <figcaption markdown>
 ## Digitizer
@@ -67,6 +79,7 @@ from published figures,
 where machine-readable data is not available.
 
 [→ Learn more](https://echemdb.github.io/svgdigitizer/)
+
 [→ Digitize a plot for echemdb](https://echemdb.github.io/svgdigitizer/workflow.html)
 
 </figcaption>
