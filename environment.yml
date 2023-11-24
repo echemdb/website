@@ -5,7 +5,7 @@ channels:
 dependencies:
   - astropy
   - black
-  - echemdb>=0.6.0,<0.7.0
+  - unitpackage>=0.7.1,<0.8.0
   - isort
   - make
   # In early 2022 we had trouble with some recent versions of mkdocs. To work around this issue, we pin mkdocs versions exactly. This pin can likely be relaxed again.
