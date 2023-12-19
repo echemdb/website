@@ -25,7 +25,7 @@ system:
         concentration:
           value: 7.5
           unit: mol L⁻¹
-    pH:
+    ph:
       estimation:
         value: -1.5
         calculation: CurTiPot
