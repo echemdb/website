@@ -17,7 +17,9 @@ system:
       function: working electrode
       crystallographic orientation: '100'
       material: Ag
-      preparation procedure: Etched with H2O2 and NaCN solution.
+      preparation procedure:
+        description:
+          - Etched with H2O2 and NaCN solution.
       source:
         supplier: Techno Chemics
   electrolyte:

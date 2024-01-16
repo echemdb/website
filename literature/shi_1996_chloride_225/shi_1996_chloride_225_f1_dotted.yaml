@@ -17,7 +17,9 @@ system:
       function: working electrode
       crystallographic orientation: '111'
       material: Au
-      preparation procedure: The Au electrode was prepared by flame annealing.
+      preparation procedure:
+        description:
+          - The Au electrode was prepared by flame annealing.
   electrolyte:
     components:
     - concentration:

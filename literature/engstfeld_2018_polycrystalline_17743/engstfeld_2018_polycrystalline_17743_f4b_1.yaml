@@ -25,7 +25,9 @@ system:
       geometric electrolyte contact area:
         unit: 1 / cm2
       material: Cu
-      preparation procedure: Sputter and heating under UHV conditions.
+      preparation procedure:
+        description:
+          - Sputter and heating under UHV conditions.
       shape:
         diameter:
           unit: mm

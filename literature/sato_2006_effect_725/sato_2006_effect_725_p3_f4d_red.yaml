@@ -49,7 +49,10 @@ system:
         type: bead shaped
       geometric electrolyte contact area:
         unit: cm-2
-      preparation procedure: Annealed in hydrogen flame for 1 min and subsequently quenched in ultrapure water.
+      preparation procedure:
+        description:
+          - Annealed in a hydrogen flame for 1 min.
+          - Quenched in ultrapure water.
 source:
   citation key: sato_2006_effect_725
   url: https://doi.org/10.1016/j.elecom.2006.03.001

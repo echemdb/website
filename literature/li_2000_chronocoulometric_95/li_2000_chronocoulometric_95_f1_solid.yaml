@@ -17,10 +17,15 @@ system:
       function: working electrode
       crystallographic orientation: '111'
       material: Pt
-      preparation procedure: A Pt single crystal bead was cut along the (111) orientation
-        (geometric area of the (111) surface 0.043 cm2 ). The electrode was annealed
-        in a hydrogen+air flame and then cooled down in a hydrogen atmosphere and
-        later quenched with ultrapure water, before each experiment
+      geometric electrolyte contact area:
+          unit: cm2
+          value: 0.043
+      preparation procedure:
+        description:
+          - A Pt single crystal bead was cut along the (111) orientation.
+          - The electrode was annealed in a hydrogen+air flame.
+          - Cooled in a hydrogen atmosphere.
+          - Quenched with ultrapure water.
   electrolyte:
     components:
     - concentration:

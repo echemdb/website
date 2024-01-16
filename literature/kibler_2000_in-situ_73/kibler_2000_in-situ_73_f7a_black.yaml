@@ -47,10 +47,13 @@ system:
         supplier: MaTecK
       shape:
         type: cylinder
-        diameter: { value: 4, unit: mm }
-      geometric electrolyte contact area:
-        unit: cm-2
-      preparation procedure: Annealed in hydrogen or bunsen burner flame and subsequently cooled down in CO + N2 for 1 min.
+        diameter:
+          value: 4
+          unit: mm
+      preparation procedure:
+        description:
+          - Annealed in hydrogen or bunsen burner flame.
+          - Cooled down in CO + N2 for 1 min.
 source:
   citation key: kibler_2000_in-situ_73
   url: https://doi.org/10.1016/S0022-0728(00)00065-6

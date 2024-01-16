@@ -2,8 +2,8 @@
 # Details on the meta data structure can be found on https://github.com/echemdb/metadata-schema
 experimental:
   instrumentation:
-  - supplier: Zahner Elektrik
-    model: Zahner IM6
+  - manufacturer: Zahner Elektrik
+    name: Zahner IM6
     type: potentiostat
 system:
   type: electrochemical
@@ -16,14 +16,16 @@ system:
       shape: wire
     - name: REF
       function: reference electrode
-      source: Pt
+      material: Pt
       supplier: Mateck GmbH
       type: wire
     - name: WE
       function: working electrode
       crystallographic orientation: '111'
       material: Au
-      preparation procedure: Annealed in a hydrogen stream and slowly cooled in Argon.
+      preparation procedure:
+        description:
+          - Annealed in a hydrogen stream and slowly cooled in Argon.
       shape:
         diameter:
           unit: mm
@@ -51,7 +53,10 @@ system:
 source:
   citation key: berger_2017_lithium_261
   url: https://doi.org/10.1002/celc.201600730
-  techniques: CV, STM, EQCM
+  techniques:
+    - CV
+    - STM
+    - EQCM
 curation:
   process:
   - role: curator
