@@ -9,7 +9,8 @@ system:
     - name: CE
       function: counter electrode
       material: Pt
-      shape: sheet
+      shape:
+        type: sheet
     - name: REF
       function: reference electrode
       type: SCE

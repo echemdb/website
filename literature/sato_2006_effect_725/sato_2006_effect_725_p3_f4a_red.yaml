@@ -12,23 +12,25 @@ system:
           unit: volume percent
         source:
           refinement: Milli-Q SP-TOC
-          quality: ultrapure water
+          supplied purity:
+            grade: ultrapure water
         purity:
-          resistance:
+          total ionic conductivity:
             value: 18.2
             unit: MOhm cm
       - name: H2SO4
         type: acid
         source:
           supplier: Cica-Merck
-          grade: ultrapure
+          supplied purity:
+            grade: ultrapure
         concentration:
           value: 1.0
           unit: mol L⁻¹
-    pH:
-      estimation:
-        value: 0.1
-        calculation: CurTiPot
+    ph:
+      value: 0.1
+      calculation: CurTiPot
+      comment: estimated
     temperature:
       value: 20
       unit: C
@@ -44,7 +46,7 @@ system:
       material: Au
       crystallographic orientation: '111'
       source:
-        supplier: homemade
+        manufacturer: homemade
       shape:
         type: bead shaped
       geometric electrolyte contact area:

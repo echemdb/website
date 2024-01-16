@@ -9,7 +9,8 @@ system:
     - name: CE
       function: counter electrode
       material: Au
-      shape: coil
+      shape:
+        type: coil
     - name: REF
       function: reference electrode
       type: SCE

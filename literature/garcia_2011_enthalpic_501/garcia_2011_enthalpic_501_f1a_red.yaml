@@ -6,11 +6,14 @@ curation:
     date: 2023-03-15
 experimental:
   instrumentation:
-    - type: potentiostat
+    - name: potentiostat
+      type: potentiostat
       model: AMEL 551
-    - type: recorder
+    - name: recorder
+      type: recorder
       model: Philips PM 8133 X-Y
-    - type: universal programmer
+    - name: universal programmer
+      type: universal programmer
       model: EG&G PAR model 175
 source:
   citation key: garcia_2011_enthalpic_501
@@ -36,7 +39,7 @@ system:
       source:
         supplier: Merck Suprapur
       purity:
-        garde: suprapur
+        grade: suprapur
     temperature:
       value: 298
       unit: K
@@ -48,8 +51,9 @@ system:
       function: counter electrode
       crystallographic orientation: poly
       material: Pt
-      shape: wire
+      shape: 
+        type: wire
     - name: WE
       function: working electrode
       material: Pt
-      crystallographic orientation: '110'
+      crystallographic orientation: '100'

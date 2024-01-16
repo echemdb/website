@@ -9,11 +9,12 @@ system:
     - name: CE
       function: counter electrode
       material: Pt
-      shape: wire
+      shape: 
+        type: wire
     - name: REF
       function: reference electrode
       source:
-        supplier: SI Analytics
+        manufacturer: SI Analytics
       type: SCE
     - name: WE
       function: working electrode

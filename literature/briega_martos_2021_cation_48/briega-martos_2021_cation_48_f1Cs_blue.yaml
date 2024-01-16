@@ -10,7 +10,8 @@ system:
       function: counter electrode
       crystallographic orientation: poly
       material: Pt
-      shape: coiled wire
+      shape: 
+        type: coiled wire
     - name: REF
       function: reference electrode
       type: RHE
@@ -36,9 +37,8 @@ system:
       source:
         supplier: Alfa Aesar Puratronic
         supplied purity:
-          grade:
-            value: 99.99
-            unit: pct
+          value: 99.99
+          unit: pct
       type: salt
     - name: water
       source:

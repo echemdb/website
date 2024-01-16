@@ -6,7 +6,7 @@ system:
     - name: REF
       function: reference electrode
       source:
-        supplier: homemade
+        manufacturer: homemade
       type: RHE
     - name: WE
       function: working electrode
@@ -22,7 +22,7 @@ system:
           value: 2
         type: hat shaped
       source:
-        supplier: Mateck
+        manufacturer: MaTecK
   electrolyte:
     components:
     - name: H2O

@@ -4,7 +4,7 @@ experimental:
   tags:
   - BCV
   instrumentation:
-  - supplier: Biologic
+  - name: Biologic
     type: potentiostat
 system:
   type: electrochemical
@@ -13,11 +13,12 @@ system:
       function: counter electrode
       crystallographic orientation: poly
       material: Au
-      shape: mesh
+      shape:
+        type: mesh
     - name: REF
       function: reference electrode
       source:
-        supplier: homemade
+        manufacturer: homemade
       type: RHE
     - name: WE
       function: working electrode
@@ -37,7 +38,7 @@ system:
           value: 2
         type: head shaped
       source:
-        supplier: Mateck
+        manufacturer: Mateck
   electrolyte:
     components:
     - name: water

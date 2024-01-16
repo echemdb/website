@@ -12,12 +12,15 @@ system:
       function: counter electrode
       crystallographic orientation: poly
       material: Pt
-      supplier: Mateck GmbH
-      shape: wire
+      source:
+        manufacturer: MaTecK GmbH
+      shape:
+        type: wire
     - name: REF
       function: reference electrode
       material: Pt
-      supplier: Mateck GmbH
+      source:
+        manufacturer: MaTecK GmbH
       type: wire
     - name: WE
       function: working electrode
@@ -32,7 +35,7 @@ system:
           value: 12
         type: disk
       source:
-        supplier: Mateck GmbH
+        manufacturer: MaTecK GmbH
   electrolyte:
     components:
     - name: MPPi-TFSI

@@ -16,7 +16,9 @@ system:
       geometric electrolyte contact area:
         unit: cm-2
       material: Pt
-      preparation procedure: Annealed in an H2-O2 flame.
+      preparation procedure:
+        description:
+          - Annealed in an H2-O2 flame.
   electrolyte:
     components:
     - name: water

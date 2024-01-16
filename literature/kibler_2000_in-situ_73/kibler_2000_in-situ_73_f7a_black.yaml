@@ -14,24 +14,25 @@ system:
           refinement: Milli-Q
           quality: ultrapure water
         purity:
-          resistance: { value: 18.2, unit: MOhm cm }
-          TOC: { value: 3, unit: "ppb" }
+          total ionic conductivity: { value: 18.2, unit: MOhm cm }
+          total organic carbon: { value: 3, unit: "ppb" }
       - name: H2SO4
         type: acid
         source:
           supplier: Merck
-          grade: suprapur
+          supplied purity:
+            grade: suprapur
         concentration:
           value: 0.1
           unit: mol L⁻¹
-    pH:
-      estimation:
-        value: 0.1
-        calculation: CurTiPot
+    ph:
+      value: 0.1
+      calculation: CurTiPot
+      comment: estimated
     temperature:
       value: 20
       unit: C
-      comment: room temperature
+    comment: room temperature
   electrodes:
     - name: REF
       function: reference electrode
@@ -44,7 +45,7 @@ system:
       material: Pt
       crystallographic orientation: '100'
       source:
-        supplier: MaTecK
+        manufacturer: MaTecK
       shape:
         type: cylinder
         diameter:

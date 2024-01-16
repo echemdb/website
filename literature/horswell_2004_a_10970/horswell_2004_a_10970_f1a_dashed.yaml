@@ -9,7 +9,8 @@ system:
     - name: CE
       function: counter electrode
       material: Pt
-      shape: ring
+      shape:
+        type: ring
     - name: REF
       function: reference electrode
       type: Hg/HgO/0.1 M NaOH

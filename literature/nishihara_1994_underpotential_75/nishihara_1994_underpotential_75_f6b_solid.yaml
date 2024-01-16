@@ -36,9 +36,10 @@ system:
         grade: 5N
     - name: Ar
       type: gas
-      purity:
-        value: 99.9995
-        unit: percent
+      source:
+        supplied purity:
+          value: 99.9995
+          unit: percent
   electrodes:
     - name: REF
       function: reference electrode
