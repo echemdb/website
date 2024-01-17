@@ -6,9 +6,11 @@ curation:
     date: 2023-03-18
 experimental:
   instrumentation:
-    - type: potentiostat-galvanostat
+    - name: potentiostat-galvanostat
+      type: potentiostat-galvanostat
       model: EG&G Model 263A
-    - type: universal programmer
+    - name: universal programmer
+      type: universal programmer
       model: EG&G PAR model 175
 source:
   citation key: jerkiewicz_2009_effect_12309
@@ -58,7 +60,8 @@ system:
     - name: CE
       function: counter electrode
       material: Pt
-      shape: gauze
+      shape:
+        type: gauze
       crystallographic orientation: poly
     - name: WE
       function: working electrode

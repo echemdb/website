@@ -26,7 +26,7 @@ system:
   electrodes:
     - name: REF
       function: reference electrode
-      typ: RHE
+      type: RHE
     - name: WE
       function: working electrode
       material: Pt
@@ -34,5 +34,5 @@ system:
       preparation procedure:
         description:
           - heating in a gas flame
-          - cooling in air to 300-200 °C 
+          - cooling in air to 300-200 °C
           - protecting the surface with a droplet of ultrapure water

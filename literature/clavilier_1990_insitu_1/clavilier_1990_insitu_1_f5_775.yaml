@@ -26,7 +26,7 @@ system:
   electrodes:
     - name: REF
       function: reference electrode
-      typ: RHE
+      type: RHE
     - name: WE
       function: working electrode
       material: Pt

@@ -9,7 +9,8 @@ system:
     - name: CE
       function: counter electrode
       material: Au
-      shape: coil
+      shape:
+        type: coil
     - name: REF
       function: reference electrode
       type: SCE
@@ -17,7 +18,9 @@ system:
       function: working electrode
       crystallographic orientation: '111'
       material: Au
-      preparation procedure: The Au electrode was prepared by flame annealing.
+      preparation procedure:
+        description:
+          - The Au electrode was prepared by flame annealing.
   electrolyte:
     components:
     - concentration:

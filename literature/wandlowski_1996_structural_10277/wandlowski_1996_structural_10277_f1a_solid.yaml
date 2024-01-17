@@ -13,8 +13,10 @@ system:
       function: working electrode
       crystallographic orientation: '100'
       material: Au
-      preparation procedure: Electrodes were annealed and quenched in water. Measurements
-        with hanging meniscus technique.
+      preparation procedure:
+        description:
+          - Electrodes were annealed and quenched in water. Measurements
+            with hanging meniscus technique.
   electrolyte:
     components:
     - concentration:

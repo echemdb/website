@@ -1,5 +1,4 @@
 curation:
-  version:
   process:
   - role: curator
     name: Tobias Schmider
@@ -7,11 +6,14 @@ curation:
     date: 2023-03-18
 experimental:
   instrumentation:
-    - type: potentiostat
+    - name: potentiostat
+      type: potentiostat
       model: AMEL 551
-    - type: recorder
+    - name: recorder
+      type: recorder
       model: Philips PM 8133 X-Y
-    - type: universal programmer
+    - name: universal programmer
+      type: universal programmer
       model: EG&G PAR model 175
 source:
   citation key: gomez_2003_effect_228
@@ -48,7 +50,8 @@ system:
     - name: CE
       function: counter electrode
       material: Pt
-      shape: coiled wire
+      shape: 
+        type: coiled wire
     - name: WE
       function: working electrode
       material: Pt

@@ -1,29 +1,28 @@
 # This file is part of echemdb (https://github.com/echemdb/website)
 # Details on the meta data structure can be found on https://github.com/echemdb/metadata-schema
-experimental:
-  instrumentation:
-  - type: potentiostat
 system:
   type: electrochemical
   electrodes:
     - name: REF
       function: reference electrode
       source:
-        supplier: homemade
+        manufacturer: homemade
       type: RHE
     - name: WE
       function: working electrode
       crystallographic orientation: '0001'
       material: Ru
-      preparation procedure: Sputtering and flash annealing under UHV conditions with
-        repeated cycles of oxygen adsorption and desorption.
+      preparation procedure:
+        description:
+          - Sputtering and flash annealing under UHV conditions with
+            repeated cycles of oxygen adsorption and desorption.
       shape:
         height:
           unit: mm
           value: 2
         type: hat shaped
       source:
-        supplier: Mateck
+        manufacturer: MaTecK
   electrolyte:
     components:
     - name: H2O

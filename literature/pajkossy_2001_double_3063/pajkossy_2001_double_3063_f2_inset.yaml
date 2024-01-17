@@ -9,7 +9,8 @@ system:
     - name: CE
       function: counter electrode
       material: Pt
-      shape: wire
+      shape: 
+        type: wire
     - name: REF
       function: reference electrode
       type: RHE
@@ -17,10 +18,12 @@ system:
       function: working electrode
       crystallographic orientation: '111'
       material: Pt
-      preparation procedure: The electrode was annealed in a hydrogen or propane gas
-        flame and, after cooling in nitrogen for about 1 min, it was immersed in water
-        and thereafter transferred to the electrochemical cell with a protecting water
-        droplet.
+      preparation procedure:
+        description:
+          - The electrode was annealed in a hydrogen or propane gas flame.
+          - Cooling in N2 for about 1 min.
+          - Immersed in water.
+          - Transferred to the electrochemical cell with water protecting the surface.
   electrolyte:
     components:
     - concentration:

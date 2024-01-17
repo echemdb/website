@@ -9,7 +9,8 @@ system:
     - name: CE
       function: counter electrode
       material: Pt
-      shape: sheet
+      shape: 
+        type: sheet
     - name: REF
       function: reference electrode
       type: SCE
@@ -17,8 +18,10 @@ system:
       function: working electrode
       crystallographic orientation: '111'
       material: Ag
-      preparation procedure: Ag crystal polished with fine emery paper, alumina, then
-        etched with cyanide and H2O2.
+      preparation procedure:
+        description:
+          - Ag crystal polished with fine emery paper and alumina.
+          - Etched with cyanide and H2O2.
   electrolyte:
     components:
     - concentration:

@@ -36,9 +36,9 @@ system:
       material: Pt
       crystallographic orientation: '110'
       source:
-        supplier: Johnson Matthey
-      purity:
-        grade: 5 N
+        manufacturer: Johnson Matthey
+        purity:
+          grade: 5 N
       preparation procedure:
         description:
           - Annealing and protecting the electrode surface with a droplet of ultra-pure water.

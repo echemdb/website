@@ -12,26 +12,28 @@ system:
           unit: volume percent
         source:
           refinement: Milli-Q SP-TOC
-          quality: ultrapure water
+          supplied purity:
+            grade: ultrapure water
         purity:
-          resistance:
+          total ionic conductivity:
             value: 18.2
             unit: MOhm cm
       - name: H2SO4
         type: acid
         source:
           supplier: Cica-Merck
-          grade: ultrapure
+          supplied purity:
+            grade: ultrapure
         concentration:
           value: 5.0
           unit: mol L⁻¹
-    pH:
-      estimation:
-        value: -1.1
-        calculation: CurTiPot
+    ph:
+      value: -1.078
+      comment: Estimated with CurTiPot on extraction from publication using a temperature of 25°C.
     temperature:
-      value: 20
-      unit: C
+      value: 25
+      unit: °C
+    comment: The electrolyte was at room temperature.
   electrodes:
     - name: REF
       function: reference electrode
@@ -44,12 +46,15 @@ system:
       material: Au
       crystallographic orientation: '111'
       source:
-        supplier: homemade
+        manufacturer: homemade
       shape:
         type: bead shaped
       geometric electrolyte contact area:
         unit: cm-2
-      preparation procedure: Annealed in hydrogen flame for 1 min and subsequently quenched in ultrapure water.
+      preparation procedure:
+        description:
+          - Annealed in a hydrogen flame for 1 min.
+          - Quenched in ultrapure water.
 source:
   citation key: sato_2006_effect_725
   url: https://doi.org/10.1016/j.elecom.2006.03.001

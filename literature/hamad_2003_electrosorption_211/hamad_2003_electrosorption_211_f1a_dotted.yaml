@@ -9,18 +9,22 @@ system:
     - name: CE
       function: counter electrode
       material: Pt
-      shape: wire
+      shape: 
+        type: wire
     - name: REF
       function: reference electrode
       source:
-        supplier: SI Analytics
+        manufacturer: SI Analytics
       type: SCE
     - name: WE
       function: working electrode
       crystallographic orientation: '100'
       material: Ag
-      preparation procedure: Electrode etched with a cyanide solution, rinsed with
-        Milli-Q water, annealed in a H2 flame for 30 s.
+      preparation procedure:
+        description:
+          - Electrode etched with a cyanide solution.
+          - Rinsed with Milli-Q water.
+          - Annealed in an H2 flame for 30 s.
   electrolyte:
     components:
     - concentration:

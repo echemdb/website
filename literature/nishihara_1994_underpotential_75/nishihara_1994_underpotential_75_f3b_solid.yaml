@@ -36,9 +36,10 @@ system:
         grade: 5N
     - name: Ar
       type: gas
-      purity:
-        value: 99.9995
-        unit: percent
+      source:
+        supplied purity:
+          value: 99.9995
+          unit: percent
   electrodes:
     - name: REF
       function: reference electrode
@@ -49,4 +50,5 @@ system:
       crystallographic orientation: '15,11,11'
       preparation procedure:
         description:
-          - After annealing the single crystal in a hydrogen/air flame at around, the crystal was quenched in hydrogen-bubbled water under an argon atmosphere.
+          - Annealing in a hydrogen/air flame.
+          - Quenched in hydrogen-bubbled water under an argon atmosphere.

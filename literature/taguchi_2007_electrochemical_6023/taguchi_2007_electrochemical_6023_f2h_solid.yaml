@@ -6,11 +6,14 @@ curation:
     date: 2023-03-17
 experimental:
   instrumentation:
-    - type: potentiostat
+    - name: potentiostat
+      type: potentiostat
       model: AMEL 551
-    - type: waveform generator
+    - name: waveform generator
+      type: waveform generator
       model: EG&G PARC 175
-    - type: X-Y recorder
+    - name: X-Y recorder
+      type: X-Y recorder
       model: Phillips PM 8133
 source:
   citation key: taguchi_2007_electrochemical_6023
@@ -26,11 +29,11 @@ system:
       type: solvent
       source:
         refinement: Elga Purelab Ultra
-      purity:
-        grade: ultra-pure
-        total ion conductivity:
-          value: 18.2
-          unit: MOhm cm
+        supplied purity:
+          grade: ultra-pure
+          total ion conductivity:
+            value: 18.2
+            unit: MOhm cm
     - name: HClO4
       type: acid
       source:
@@ -42,15 +45,18 @@ system:
     - name: CE
       function: counter electrode
       material: Pt
-      shape: coiled wire
-      purity:
-        grade: 4N
+      shape: 
+        type: coiled wire
+      source:
+        purity:
+          grade: 4N
     - name: WE
       function: working electrode
       material: Pt
       crystallographic orientation: '331'
-      purity:
-        grade: 4N
+      source:
+        purity:
+          grade: 4N
       preparation procedure:
         description:
           - flame-annealing

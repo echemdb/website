@@ -40,7 +40,7 @@ system:
       crystallographic orientation: '711'
       material: Pt
       source:
-        supplier: Goodfellow
+        manufacturer: Goodfellow
         purity:
           grade: 5N
       preparation procedure:

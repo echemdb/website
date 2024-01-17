@@ -14,24 +14,24 @@ system:
           refinement: Milli-Q
           quality: ultrapure water
         purity:
-          resistance: { value: 18.2, unit: MOhm cm }
-          TOC: { value: 3, unit: "ppb" }
+          total ionic conductivity: { value: 18.2, unit: MOhm cm }
+          total organic carbon: { value: 3, unit: "ppb" }
       - name: H2SO4
         type: acid
         source:
           supplier: Merck
-          grade: suprapur
+          supplied purity:
+            grade: suprapur
         concentration:
           value: 0.1
           unit: mol L⁻¹
-    pH:
-      estimation:
-        value: 0.1
-        calculation: CurTiPot
+    ph:
+      value: 1.041
+      comment: Estimated with CurTiPot on extraction from publication using a temperature of 25°C.
     temperature:
       value: 20
-      unit: C
-      comment: room temperature
+      unit: °C
+    comment: The electrolyte was at room temperature.
   electrodes:
     - name: REF
       function: reference electrode
@@ -44,13 +44,16 @@ system:
       material: Pt
       crystallographic orientation: '100'
       source:
-        supplier: MaTecK
+        manufacturer: MaTecK
       shape:
         type: cylinder
-        diameter: { value: 4, unit: mm }
-      geometric electrolyte contact area:
-        unit: cm-2
-      preparation procedure: Annealed in hydrogen or bunsen burner flame and subsequently cooled down in H2 + N2 for 1 min.
+        diameter:
+          value: 4
+          unit: mm
+      preparation procedure:
+        description:
+          - Annealed in hydrogen or bunsen burner flame.
+          - Cooled down in H2 + N2 for 1 min.
 source:
   citation key: kibler_2000_in-situ_73
   url: https://doi.org/10.1016/S0022-0728(00)00065-6

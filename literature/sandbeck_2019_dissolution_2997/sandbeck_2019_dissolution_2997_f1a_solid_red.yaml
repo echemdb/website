@@ -41,13 +41,14 @@ system:
     - name: CE
       function: counter electrode
       material: carbon
-      shape: rod
+      shape:
+        type: rod
     - name: WE
       function: working electrode
       material: Pt
       crystallographic orientation: '111'
       source:
-        supplier: MaTeck
+        manufacturer: MaTecK
       shape:
         type: cylinder
         height:

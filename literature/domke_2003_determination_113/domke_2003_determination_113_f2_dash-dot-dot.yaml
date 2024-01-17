@@ -40,10 +40,10 @@ system:
       crystallographic orientation: '511'
       material: Pt
       source:
-        supplier: Goodfellow
+        manufacturer: Goodfellow
         purity:
           grade: 5N
       preparation procedure:
         description:
-          - heating for 10 s in a gas-oxygen flame 
+          - heating for 10 s in a gas-oxygen flame
           - cooled in a reductive atmosphere (H2+Ar)

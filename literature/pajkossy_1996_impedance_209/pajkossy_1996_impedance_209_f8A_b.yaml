@@ -9,7 +9,8 @@ system:
     - name: CE
       function: counter electrode
       material: Pt
-      shape: wire
+      shape: 
+        type: wire
     - name: REF
       function: reference electrode
       type: SCE
@@ -17,8 +18,11 @@ system:
       function: working electrode
       crystallographic orientation: '100'
       material: Au
-      preparation procedure: Au crystal annealed with Bunsen burner, cooled in air,
-        quenched with Milli-Q water.
+      preparation procedure:
+        description:
+          - Annealed with a Bunsen burner
+          - Cooled in air.
+          - Quenched with Milli-Q water.
       shape:
         diameter:
           unit: mm

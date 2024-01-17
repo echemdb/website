@@ -13,8 +13,10 @@ system:
       function: working electrode
       crystallographic orientation: '100'
       material: Ag
-      preparation procedure: Ag electrode etched with chromic acid, then annealed
-        in H2/Ar at 700 K with inductively heated furnace.
+      preparation procedure:
+        description:
+          - Etched with chromic acid.
+          - Annealed in H2/Ar at 700 K in an inductively heated furnace.
       shape:
         diameter:
           unit: mm
