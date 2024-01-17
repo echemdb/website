@@ -26,13 +26,12 @@ system:
           value: 0.1
           unit: mol L⁻¹
     ph:
-      value: 0.1
-      calculation: CurTiPot
-      comment: estimated
+      value: 1.041
+      comment: Estimated with CurTiPot on extraction from publication using a temperature of 25°C.
     temperature:
       value: 20
-      unit: C
-    comment: room temperature
+      unit: °C
+    comment: The electrolyte was at room temperature.
   electrodes:
     - name: REF
       function: reference electrode
