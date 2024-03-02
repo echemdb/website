@@ -14,6 +14,7 @@ EXAMPLES::
     [...]
 
 """
+
 # ********************************************************************
 #  This file is part of echemdb-website.
 #
@@ -36,13 +37,12 @@ EXAMPLES::
 #  along with echemdb-website. If not, see <https://www.gnu.org/licenses/>.
 # ********************************************************************
 
-import os.path
+from echemdb_ecdata.url import get_echemdb_database_url
+from unitpackage.cv.cv_collection import CVCollection
+from unitpackage.remote import collect_datapackages
 
-import unitpackage.cv.cv_collection
-import unitpackage.local
-
-packages = unitpackage.local.collect_datapackages(
-    os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "..", "data"))
+packages = collect_datapackages(
+    data=".", url=get_echemdb_database_url(), outdir="data/generated/"
 )
 
-cv = unitpackage.cv.cv_collection.CVCollection(packages)
+cv = CVCollection(packages)

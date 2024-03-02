@@ -13,6 +13,7 @@ The `render` macro renders an element using a specific template::
     '1 M'
 
 """
+
 # ********************************************************************
 #  This file is part of echemdb.
 #

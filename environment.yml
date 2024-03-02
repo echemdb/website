@@ -4,7 +4,7 @@ channels:
   - defaults
 dependencies:
   - astropy
-  - black
+  - black>=24,<25
   - unitpackage>=0.7.1,<0.8.0
   - isort
   - make
@@ -14,12 +14,11 @@ dependencies:
   - myst-parser>=0.18.0,<0.19.0
   - pip
   - pylatexenc>=2.10,<3
-  - pylint
+  - pylint>=3,<3.1
   - pytest
   - pytest-doctestplus
   - pytest-xdist
   - pytest-remotedata
-  - svgdigitizer>=0.10,<0.11
   - pip:
     - linkchecker
     # In early 2022 we had trouble with some recent versions of mkdocs. To work around this issue, we pin mkdocs plugin versions exactly. This pin can likely be relaxed again.
@@ -39,3 +38,4 @@ dependencies:
     - pymdown-extensions>=9.2,<10
     - python-frontmatter
     - tabulate
+    - git+https://github.com/echemdb/electrochemistry-data

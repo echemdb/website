@@ -37,6 +37,7 @@ When no template is given, the filter renders the value with the
     '1 M'
 
 """
+
 # ********************************************************************
 #  This file is part of echemdb.
 #
