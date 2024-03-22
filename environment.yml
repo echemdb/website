@@ -38,4 +38,3 @@ dependencies:
     - pymdown-extensions>=9.2,<10
     - python-frontmatter
     - tabulate
-    - git+https://github.com/echemdb/electrochemistry-data
