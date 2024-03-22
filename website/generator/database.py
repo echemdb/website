@@ -36,6 +36,7 @@ EXAMPLES::
 #  You should have received a copy of the GNU General Public License
 #  along with echemdb-website. If not, see <https://www.gnu.org/licenses/>.
 # ********************************************************************
+import os
 from unitpackage.cv.cv_collection import CVCollection
 from unitpackage.remote import collect_datapackages
 
