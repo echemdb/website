@@ -37,16 +37,14 @@ EXAMPLES::
 #  along with echemdb-website. If not, see <https://www.gnu.org/licenses/>.
 # ********************************************************************
 import os
+
 from unitpackage.cv.cv_collection import CVCollection
-from unitpackage.remote import collect_datapackages
 
 ECHEMDB_DATABASE_URL = os.environ.get(
     "ECHEMDB_DATABASE_URL",
     "https://github.com/echemdb/electrochemistry-data/releases/download/0.3.2/data-0.3.2.zip",
 )
 
-packages = collect_datapackages(
+cv = CVCollection.from_remote(
     data=".", url=ECHEMDB_DATABASE_URL, outdir="data/generated/"
 )
-
-cv = CVCollection(packages)
