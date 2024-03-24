@@ -53,7 +53,6 @@ def main():
             markdown.write(
                 render(
                     "pages/cv_entry.md",
-                    database=database,
                     entry=entry,
                 )
             )

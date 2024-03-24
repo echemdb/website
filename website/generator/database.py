@@ -2,9 +2,8 @@ r"""
 Data packages and bibliography built from local data.
 
 This module provides a (cached) database of CVs which is queried when building
-the website. In principle, this is no different than calling ``Database()``
-directly. However, this uses data from the local ``data`` directory and it also
-caches this information in a global variable for improved performance during
+the website. In principle, this is no different than calling ``CVDatabase.from_remote()``
+directly. The data is cached in a global variable for improved performance during
 the website build.
 
 EXAMPLES::
@@ -45,4 +44,4 @@ ECHEMDB_DATABASE_URL = os.environ.get(
     "https://github.com/echemdb/electrochemistry-data/releases/download/0.3.2/data-0.3.2.zip",
 )
 
-cv = CVCollection.from_remote(data=".", url=ECHEMDB_DATABASE_URL)
+cv = CVCollection.from_remote(url=ECHEMDB_DATABASE_URL)
