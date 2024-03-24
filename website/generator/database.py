@@ -45,6 +45,4 @@ ECHEMDB_DATABASE_URL = os.environ.get(
     "https://github.com/echemdb/electrochemistry-data/releases/download/0.3.2/data-0.3.2.zip",
 )
 
-cv = CVCollection.from_remote(
-    data=".", url=ECHEMDB_DATABASE_URL, outdir="data/generated/"
-)
+cv = CVCollection.from_remote(data=".", url=ECHEMDB_DATABASE_URL)
