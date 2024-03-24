@@ -1,0 +1,666 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.5">
+    
+    
+      
+        <title>Ionic Liquid - echemdb.org</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2d9f7617.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="lime">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cyclic-voltammograms" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="echemdb.org" class="md-header__button md-logo" aria-label="echemdb.org" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            echemdb.org
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ionic Liquid
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../" class="md-tabs__link md-tabs__link--active">
+      CV
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://echemdb.github.io/unitpackage/" class="md-tabs__link">
+      API
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../about/" class="md-tabs__link">
+      About
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="echemdb.org" class="md-nav__button md-logo" aria-label="echemdb.org" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    echemdb.org
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">CV</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="CV" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          CV
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      
+      
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../aqueous/">Aqueous</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Aqueous" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Aqueous
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aqueous/COOR/" class="md-nav__link">
+        COOR
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Ionic Liquid
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Ionic Liquid
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#au" class="md-nav__link">
+    Au
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://echemdb.github.io/unitpackage/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#au" class="md-nav__link">
+    Au
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="cyclic-voltammograms">Cyclic Voltammograms</h1>
+<p>Cyclic voltammograms recorded in ionic liquids.</p>
+<p>Click a graph for more details.</p>
+<h2 id="au">Au</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Substrate</th>
+<th class="echemdb-expand-column">Electrolyte</th>
+<th class="echemdb-hide-mobile">Year</th>
+<th class="echemdb-hide-mobile">Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/atkin_2009_afm_13266_p4_f4a_solid"><img alt="atkin_2009_afm_13266_p4_f4a_solid" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjguMywgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy/H5lhTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEhklEQVR4nO3bb+ieUxzH8deZzZ+Rxn4YRbPGlhGFPbAIW54QGZJaeyQPRJpnHniw8ueBUDxCM/kbKYrCoohIWJ6wZrQZ8m8sfzcbvh6cq/wsv7b7us5c87vOu07n7v7d3+91ru/nPt/zPee+fikiVPpjSt8DGDpVgJ6pAvRMFaBnqgA9UwXomSpAz1QBeqYK0DNVgEKk5KiUHD2qXRWgHF/hmVGNqgBleXFUg1QP47qTkjF8izkRNo5iW2dAGa5s+k2jGtYZUICUbMDcCGlU2zoDyjAXr7cxrAJ0JCVHNC/vb2NfBejOkqZ/u41xFaA7y5r+kzbGdRHuQEqmYifWR5jfxkedAd04v+kfauugCtCN5U3fqgKipqDWpGQePpS/xAdG+K2Nn6lFR7UP05SLK3AcErbKxwdH4U/cGuHLPfS1AM/iDfzUNvgMKwXdhzl4CS/gI0zDOvyK91NybUrmpzTxjjYlV+BV3IJvtDgB/Ye/IaSglFyK23FahO0TfGahPEMWyZXNC3gTP+IgHIyzcAGW4gtZvHkRvm09tskuQEoOxQdYFuG1Pfh8wilyoBdiOrbjF/mw7Z4I36VkFX6OcEOn8U1mAZpgPoidEa4p6PNGXIMzIvzUxd+kXISbRXI5LsQ2nFfA50FYjOtwDJZ0DT77+AxIyQGYMUEba9oRu/RjcoXziLxAro3w+26uk3DIOPsxHInZOB4nYQHW4lGsjrCjyD3uLQGamzoHl2O+fFOHyTc6RS4Fd2JH83rav7Tx1chm+bxlLo6d4LI/YCUOxeny4rlrOxD7N/6njut/xpZd2qfYiPV4L8K21gGZgL0iQEqOwSq57FuN9+WS7Xt5MftDDu5UORghizG+LcXd8sI3HbMwUw7GY3Ip+Ll/inciHsAaPCWXl9t2adtl0cdf6/cI/aSCiCjaiNnERmIlMa2F/RTiNmIDceYIdol4h1hR+p72Zis6A1Kyv1w7PxHhznHvHyKnobUR/mx+xL4BZ8rfxlflamV708/GxRG2jHj9WRG+KnAr/xmld8JXy2nmLrIgKbkeH+NpvJWSq/GevMjdK58kni7n2nXYD4tHDT7834KPcimoSR2biIXEOcTjxNfES8Spzd+XEy8Tl/yL/RhxNjGl77Twv0xBKVkk/y56HZ7EzVgTIz4nMzRKbsQuwrt4AldFeKWg70lLSQEW4WzcVIO/5xRJQU3185tcs58Qu9l5Vv6mVBV0WtPfUYM/GqUEOLnpny/kbzCUEuASiLC5kL/BUGoNCGyLML37kIZFyZ3wwwV9DYbOAoz7AfvJrr6GSIkZcHzTv1nA1+AoIcBlEB2ejRkyxQSotKNzFdRUQD9EmFFkRAOjVBX0XCE/g6MK0DOdUlBKDpafJjg8wtZioxoQXWfAuVCD356uAlxUZBQDpqsAFxQZxYDpKsAcfFZiIEOlRBW0poCPwVIF6JnWZWhKpslPtc2M8H3RUQ2ILjNgDGrwu9F1I5YienqqeJLQaQ2owe/OkP5NdZ+kCtAzVYCeqQL0TBWgZ6oAPVMF6JkqQM/8BZq8SdEBqfSCAAAAAElFTkSuQmCC" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell">BMP-TFSI</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2009</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1021/jp9026755"> Atkin <strong><em>et. al.</em></strong> Fig. 4a (solid)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/atkin_2009_afm_13266_p4_f4b_solid"><img alt="atkin_2009_afm_13266_p4_f4b_solid" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjguMywgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy/H5lhTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEGElEQVR4nO2cTYgdRRDHf/V2s5GYxGAgrB+HqMSDqHtRRIXdyC57UcgevAkexIs3PYhCBMWLCB5UEPGgOXmQiBKD4sUgapCIoqigGxQJYoxETYzm+6M8VCcufqxvumvo7Ez9YKhZeF3dr/5d3TM1b1ZUlaAeg9oD6DshQGVCgMqEAJUJASoTAlQmBKhMCFCZEKAyIYATIoyLcGnTdiGAHz8CzzdtFAI4IMJl6fSppm1DAB+eSfaDpg0lqqFliLAMOAHsUGW6afvIgHLmkn0ip3FkQCEifAesB5arcqJp+8iAAkS4Bgv+iznBhxCglPuS3ZLrIJagTERYCfwOnALGVMkKZGRAPncl+2Ru8CEyIAsRRoDvgUuA9arsyfUVGZDHnVjwt5UEHyIDGiPCGPAlsAGYUeWdEn+RAQ0QQYDHsOB/Cuwo9RkCLEIKOCKICNNYwDcBPwOPlGy+5/pYKkuQCBPAQ8Au4FmPL79IXwPgbqy8cBAYA45gRbeLsPLDZKcFEGE5cBVwOXAPsBELwBzwK7AZ+EyVM5n+B8BqLLA3AY8Cx4HdwCx2jX9/+szVqdls+uytqnyT0+8/xlFLgBSAceAK7HZ+LbBmwXE7Nvv2Am8Dz6nyR6o+PowF5+Lk7ihWkRykYyQdZ8+H4S3gJLbEnAR+AtYBh4F5bON9F9iuyqHGX/g/aFUAEcaxmTqJBXgtcMGQzeeBPdgMXPW34wwW9GXAiiH9/YbN9iNYUPelc03+TgGnga+Bj4GvgH2qHBvSfxatCZA2sE+A94BtWIpPYSm+E/gC+8IjwCh/zdjDWPovPA4t/Du38HU+Mtqi7ylstm8FXgVeA+ZUOdhin0uONjNgC/A5toE+rsrWVjpa4rRyH5BqJXdgS4ZiGRD8C23diN0C/ADcBrzQ5jX7UqeVJUjk3M8z7gU2qLLfvZOO0FYGbEp2ZwR/cdwFEOFKYCVWsHrF23/XaCMDZoAPsdLB9hb8d4o2BJjG7i92qXKgBf+dwlWAVN+ZxsoHr3v67ireGTCBlQ2ux8oPwf/gLcAMVtSaV2Wvs+9O0oYAq7G6TzAEbjdi6QHKL1hV8zqvBxZdxzMDbgYuBL6N4A+PpwAbk33D0Wfn8RRgKtm4+mmAyx6Q1v9j2CO+VbkPyvuIVwbckOzLEfxmeAkwmWys/w3xWoI+Am4EVqhytNhhjyjOABFGseC/H8FvjscSNJHsSw6+eoeHALPJvungq3cU7wEiHMfekRKfIfWLogxI9f8x4GmX0fSQ0iXo2mQb/5eQwCgV4AEAVXY7jKWXFO0BIiiwX5V1fkPqF9kZcPb1HeBBp7H0kuwMEGENcAAYVeW056D6ROkSNIjiWxnn7TtifSFeU61MCFCZEKAyIUBlQoDKhACVCQEqEwJU5k9Q/yBxyc7vyQAAAABJRU5ErkJggg==" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell">EMIM-TFSI</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2009</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1021/jp9026755"> Atkin <strong><em>et. al.</em></strong> Fig. 4b (solid)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/berger_2017_lithium_261_f1_inset"><img alt="berger_2017_lithium_261_f1_inset" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell">MPPi-TFSI</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2017</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1002/celc.201600730"> Berger <strong><em>et. al.</em></strong> Fig. 1 (inset)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/berger_2017_lithium_261_p1_f1_black"><img alt="berger_2017_lithium_261_p1_f1_black" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjguMywgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy/H5lhTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEtklEQVR4nO3cT6gVVRzA8c/x6fP5pyw1Mwkyw/yHWCSpUUktwsRWWUGLWgTSolWt3LcIahWBm/7gIqFVEBFCSRQUWamFkWl/RMvU1FTCP6W+0+LMxZvl8707RybvPV8YZu55c8+c9/uePzNnZm6IMSo0x6imC9DrFAENUwQ0TBHQMEVAwxQBDVMENEwR0DBFQMN0rYAQzAzByhBc1XRZhiJ041RECBbiQ3yDOViL9TGq9c9WMh/DU7gZB7APv2IMno/RDyPKs9sEhKAPm7EuRq+FYDHW4SRewSfY35IRgrG4EddJwdyHsbgV8zC3Ws/DLHyAV7EN12MB1iNgSYw+H1F5u1DAWjyA+9uC3Icn8AjuwDip9k7AVKkGH5JETMMZ/IQd+K5a78DOGJ0IQZCErMSzeAdrY3R0xOXtBgFVQJZgDe7D8hjtHWL/yVKgT+GXGJ1r+9sYxBidrfK9QWoNs6XWcHu1HMdGvBGjzR2X/XIJCMFoqXnOkWrWlGqZJDXx/rZ1H85h8CLrczh7wbq1PQnLpGC+iZdjdKwqQ5D65gGp1o+rtie0LePbtqdKAZ+OmVLQT2JX2/IVtsXotyxxuhwCQvAkXsJhqenuxZFqOY6/nJdxuvp8CEelvrRPqm1rMH8YhzyCTdJZ3SJMdj7og5KcU9WxTklBPVEt7dtHsF/qnvZgV4yOdxqH4ZBdQAgexYtYFaPtbenj8TBW414pGAelgPdLA9oAtko1ez5ex7vYLQVuTLVvf/W9UVXaZKmVDWKnNJCewukYnc36D2Ymq4AQTJFq/IMx2lKlTcJzeAafYgM2xejgf3z/aiyWWsZ7MfozW+H+p+QW8AKuidHTbWnvS017bYx2ZztYlzA6V0YhGJAuUO5qS1sgna7dHKMzuY7VTeSciliFr2P0fVva49hQgn9xcgp4CG9fkLYab2U8RteRZQwIwSjpjGZxjPZUabOkQXdGjAZrH6RLydUCZuOPVvArVmBjCf7Q5BJwJ/+ahFohXaoXhiCngC9aH6ppiOXSzGFhCHIJmM/5q17chr0xOpwp/64ll4Bb8GPb5+X4OFPeXU1tASHol2YQ26d/l+Ojunn3AjlawEz83LrYqk5J71ZawLDIIWCWdPeoxUIcitGBDHl3PTkEzJCmf1vco9T+YZNDwHT+UduXSVfAhWFwOQQsxWcZ8u0JsgoIwTTp7tTODPn2BLlbwFJsLvM/w+dyCCjdzwgoAhqm1v2A6jbkcelphj7psZKbYvR7nuJ1P3VbwLU4Wj0CuAD7SvBHRhYB1Xbpfjogp4AldP6MZK+SU8BifFkzv54ji4AQjJPuC2+/xP6FC8jVAhZhR4xO1y9Sb5FDwDHppYcttUvTg+RqAUVAhxQBDVNXQOsFizIAd0hdAROlW5I7ywDcGTkEzFW6n46pK2CC1P1szVCWnqTuCxoTpZftvs1Qlp4kh4Cp0nthhQ6oez8gSq+YDtT9HYZepeMxoHr9H7aU4HdOnUF4fLUu/X8N6gjor9al/69BHQGtLqgIqEEdAa3vFgE1yPFYyr5L71K4GHVPQ0eVp+Dq0RU/2HQl07W/mnilUAQ0TBHQMEVAwxQBDVMENEwR0DBFQMP8DctLXtVjULy2AAAAAElFTkSuQmCC" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell">MPPi-TFSI + 0.02 M lithium bis(trifluoromethylsulfonyl)imide</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2017</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1002/celc.201600730"> Berger <strong><em>et. al.</em></strong> Fig. 1 (black)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/berger_2017_lithium_261_p1_f1_pink"><img alt="berger_2017_lithium_261_p1_f1_pink" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell">MPPi-TFSI + 0.02 M lithium bis(trifluoromethylsulfonyl)imide</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2017</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1002/celc.201600730"> Berger <strong><em>et. al.</em></strong> Fig. 1 (pink)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/gasparotto_2009_in_11140_f1_dashed"><img alt="gasparotto_2009_in_11140_f1_dashed" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjguMywgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy/H5lhTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAG10lEQVR4nO3cfczVZRkH8M+FQCCWQOJQQcQhmPZmYCgvYuWgl5kjGpYDXDPTOa2pS3KEzbY2Xcu5RankhhatVsCo1CJf5gtZaoUSK2kaksmLKDLLtBe8+uP3oz17fHgezjme8+N5nvPdznZ+931f932d6/u73677uk9kpjaqw4CqFejvaBNQMdoEVIw2ARWjTUDFaBNQMdoEVIw2ARWjTUDF6PMERHhnhFkRompdukKfJiDC53E3voNvVqxOl+izBEQ4E4sxFZMxJ8JHm9jeqREm1SyYmX3uQw4iN5FzO6SdXaYNbEJ7R5JJrqhVtq/2gEuwDWs7pN2BF3F+T8IRjovwjgOZNyIMxg/Kxy21Khp9zR0dYSQ2Y1amP3bKm4rVmJjpn13IDsOt+BD+hT/jS5ke209bh+H7SDyBAZmW1qJvX+wBS7C6s/Eh0yN4GFd0zoswGvfjNYzDeAVZqyJsiHBThCsjfCLC1AgXKYy+C/MxmDeS2hP6VA+IMBG/xsmZduynzHg8gnmZHirTTsKduA1fzZQdyg/EaXgfjsdxGIuncEum+8pyt2BDpptr0XlgLYUPZpRj8W24dn/Gh0xbIizAmgjLsVcxZ1yR6btdlP8v1pef7jASu2vVu9cPQRGGRDgNP8UOLOtJJtMvMQ2DMAzTuzJ+jRiL52oV6pVDULk6+TQuxXsVk+4aXJ/p3xXp8xImZHqhFtneOgRdphg2Lsf9mV6tWJ/R2Fur8aloCIowPcK9EZZEOLxG2dm4Gh/O9PODwPhwOh6tR7CqOeDL+A0mYVOEOQciVG71V2J+pmeap17NmIUH6pKsyFWwkxxTfj+L3EouJ9/WjcwY8i/kZ6p2dXTSK8inyMn1yLe8B5QbnoHKFUOme/AuBDZGmBvhkA7lD42wUNHFl2Va0Wqde8AHFZu339clXcEbM4e8r5u8R8kXySfJv5KvkHeTM6t+27vQdxy5hZxXbx1VrILeo9jCvwGZ1mFdhKMwXLG135Vd+G2qRLnsPAffxnWZVtdbV1UE3NNdgUzbsb016hw4IozCPHwWQ/CpTA82VGfRlVqHCJuwKLPOMbOFKA0+U7HKOUPhC7pL4QG9K9PrDbfRSgIiDFHsGEdkeq1lDR8gIhyhmFRn4UyMwa8US8wH8bt8k3farR6CTsbTVRi/9GquxcWZ/tYhfRA+iQWYoTD2A1iBx7NwxjUNrSZgMn7b4jb34RIcqlz+loa/CFcpXMu34txM/2ilUq0mYIbCX99SlHuPa3BGpowwDcsVx5bzcj8nXi3RrRVzQIR341pMwanZjb++LH8UzlacSu3EyqzD0dWhvu9he6aryrOAbyg8qasyVesObvJGZQL5I3IHeTk5tIfyh5DXkLvJleQS8vZS/jwy6tBhbunCOIw8lnyBPKnqTdz/9WuS4QeSXyx/7NXksAOUu5FcTx7TKX0q+QfyTvLYTnknkOeSo7qob0xJ3unl81pyadVGbyoB5NHkQ+S95PE1yE0hnyNH7Cd/MLm0dFNcVxr9x6Vj745SdnaH8ieSm8kry+fzS/fGW6o2etMIIGeR20pDDahRdjV56QGUG09+vXybL9vXu8gPkM+WpKwue9/nyryPlz3hoBl63nQCyEXl2zinDtlR5J7u3NHdyI4k31p+H05eQC4k316mzSefJ6dUbeyuPg0vQ0vH1GJcjDMz/amOas7Bukwv1yG7CF+L8LIikOpJbMC4CBcqVjtnZdpYR91NR0PL0NJvf6Ni6/6RzNqjAsp6VuMnWWdkQoQBOBonKHbbpyhcCk/jgkxb66m3FWiUgC8oosI+lmlPnXUMUkSXTcq0s25leikaPRGbgB/Wa/wSk/FMfzQ+jRMwivp3qCVmUoQI9kc0SsARGidghjYBdaMhAsrJc4ae4y77LKruASdiT6ZtDerRa1E1ATP147efBggoT5gG0dDpVr8e/2msBwzFq5kN+dPbPaAB2aHUHxgbYawiNn9zAzr0ejRCwGD8ByKMiXBDhK0RXorwswjH9CA/Hesb7EG9Ho0Q8Dz2RvgFNuJ1zMZERRzn+ggjupHv98MPjfuCRmOOIkhpV6e8ZTg808L9yD6BCzPri6vvK2jaoXx55/ZxLM60plPecDyLkZnFMNZf0bTw9EyvKG6lfyvCkZ2yp+Gx/m58mnxDJtPDuB03d7r23+/X//vQigsaX1EclCzokNaegEu0KjDrFKzD+xVh57sxOtPfm974QY6WXFHKtAHXY5UiEHZD2/gFWhkbeoPi3HYlzmthuwc1qrigMTCbHPLdm9Ar/6qgL6HX/1lHb0ebgIrRJqBitAmoGG0CKkabgIrRJqBitAmoGP8DCUDNC67yTvAAAAAASUVORK5CYII=" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell">BMPY-TFSI</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2009</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1039/b916809e"> Gasparotto <strong><em>et. al.</em></strong> Fig. 1 (dashed)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/rudnev_2020_structural_501_p1_f2c_1"><img alt="rudnev_2020_structural_501_p1_f2c_1" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjguMywgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy/H5lhTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFsklEQVR4nO3bX6xcVRXH8c/qHwKprTdQg9WGlAakKmq0tYjVqNgWCSpGwBAtUSKhqMUHEhOjSTUmmmDsC/7hQUmqiP990KgJohg1CKJExP+KFgy1DVItFAHBunzY55LrhN7bM3Pmnpk755vsTObM7H1W1u/svddee5/ITB3tsahtAyadToCW6QRomU6AlukEaJlOgJbpBGiZToCW6QRomU6ABohwXIQtEY6rW7cTYEAibMQd+AYuq1t/SdMGTQoRluB9eBd24HmYqttOJ0AfRDgF1+EQXpRpb4RNuKduW90QVIMISyNcgVvwBbwm097q5yk8ULfNrgf0EOEZeA+24iB+iJvxLFyOv+IVmX7bU3UNPl/3fl0PmEGEzbgdiW3YicO4Uhnjt2PrkzgfTsWfat+z25AhwmK8X3nCt2W6qWb9ZbgfyzL9t07diR+CqiHnOizG+kz7+mjmdPy+rvNZQAJEWIs34wVYrkyIf8Pd2DNdMj1U/X8NLlHCyKvx4UyH+7z9Bvysn4pjL0AVj+/EO3E9vq44fwrPVCbPs3Ey1kR4SBnjA1/Dxkx/GdCMDUpkVJuxFiDCUnxJcfbpmfbP8f/AiUrwsS9TUxPgRny8n4pjOwlXT/71WIbzM/27JTuejt9hZT9D2Fj2gCpq2a08+ee15fyKzfhBv/PH2AlQPfnXYhVem+nRlk3aghv7rTxWQ1AV6ezGv5Rh5+GW7TkGe7Ehs34eiDFZCUdYFeETSqj3LZzbtvMrtuAP/TqfERdghuN/g8ewLtNH+1nwDImL8cVBGhhZASK8FXfiUTw705WZ/t6yWU9QLeQ26yMBN5ORnIQjfEBJhp2V6Vdt23MEduLTmfVT0DMZOQEiXK6kFDZluq9te6ap9nt3KNuOh3A8nj9ouyMlQISX44NGyPkRTsSleAduU3rmEtyV6cFB2x8ZASKswOdwaaY/t2zLCTgPF+BMfFVZc9zR+L1GZR0Q4TM4nGn7AG0sUXI9xysZ0enyYKbvzlJvGV6KV+MsrMMNSmLv25kO9WvTnDaPggARXqwc61hXp1tHOBMXKcmwk/A0HKjKoaqcgWOVXa2D1bXFWI31SiZzrbITdlNVbp2v9EbrAlQZyp8oy/l9uDbTY0dR50N4Gz5Z1d+D/Zke7/nvJpyj9IoprMDjuA8/Vxz/67nuOSxGQYC34Bo8rGzr3YLLZksVR9iOK/CqUVob9EVmtlbIp5CPkEm+nVxO3km+e5Y6q8gD5Glt2t6YD1oW4KrK+VfNuLaG3E++7Ah1riZ3te24sReAXFs5/xfkop7fXk/eTU71XF9O/oNc3bbjmipt5oK+X32ekz3JtUzfxHewq6fOhfhRpnvnwb55oZWFWISLlZNkO/LI+7jvxV0RTs60p7p2vgGTX6PGvEdBEU5SDrH+EydkzhrtfFaJya+pVsr3YnU2kAIYFeZ1CKr2cm+vvr5wNudX3KAcKYFz8eOF5Hzmfz/gI1ipxPlHs4t0I15Zbf29UUkNLCzmMep5QxX13ExGjXq3kheQD5Ar245ami7zMgdEWKecnYGprLGJEeFCfBnfy7R1GPa1ydAFqCbPaYc/N5/8aPdcbazHPZnub9S4EWCoYWiERUrCC87ux/mQ+cTEveAY9iT8KeXFhUtylnz8JDM0ASJcpLxRsivT7mHdZ9wZyhwQ4TnKWZ5fOrp4f2JpXIAIT1V2nuCY7Nkg6fh/Gh2CqpXuwerrys75c9P0HDB9TO8lmQ403PaCpDEBImxT0sU7M/20qXYXOo3MARFOxR+V92RP6ybdo2dgASIci0eqrytyiGdoFiJNDEFfqT7P6Jxfn4EEiPAmvA4fy3RbMyZNFn0PQVWeZ/rFtKWZ/tOYVRPEID1gRfV5Suf8/hloEo6wqPdEQ0c9Wj+aOOmM7Dtik0InQMt0ArRMJ0DLdAK0TCdAy3QCtEwnQMv8DwYm6NFmXVZTAAAAAElFTkSuQmCC" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell">BMP-TFSI</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2020</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1002/celc.201902010"> Rudnev <strong><em>et. al.</em></strong> Fig. 2c (solid)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/schuett_2021_electrodeposition_20461_sf2_blue"><img alt="schuett_2021_electrodeposition_20461_sf2_blue" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell">MPPi-TFSI</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2021</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1002/anie.202107195"> Schuett <strong><em>et. al.</em></strong> Fig. S1tags: BCV (blue)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/wen_2015_potential-dependent_6062_f1_black"><img alt="wen_2015_potential-dependent_6062_f1_black" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjguMywgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy/H5lhTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD3klEQVR4nO2bT4jVVRTHP2dqmjR7+ad09NEiTRiNXGiIJBRUlKsgIVpE0EJEV+5buQjFRbQOgjZCBlELEXQjheI0i1xINBiJQX+MpEzNP28YPS3uSSRavN+9x7k093zgci7vvfv93Tnfd+7v/e7vN6KqBPUYqT2B1gkDKhMGVCYMqEwYUJkwoDJhQGXCgMqEAZUJA5wQYYUIq7qOCwP8+BX4oOugMMABER627rtdx4YBPuwHUGWq60CJ3dByRFDgvCqru46NCihEhEet+1bO+DCgnH0WT+UMjiWoEFt+plVZnzM+KqAAEZ607u5cjTCgjL0WT+QKxBKUiQgC3AZOq7IpVycqIJ/NFt8pEYkKyESEz4DXgDFVZrJ1woDuiDAKzACnVNlaohVLUB4vW3yvVCgqIAMRjpFMWKTKtSKtMKAbIvSAy8AJVZ4r1YslqDvbLX7oIRYV0BERJoEtwDJV/ijViwrogAh9UvJPeiQfwoCuvGnxYy/BWIKGxLYezgJrgb4qv3joRgUMzyZS8qe8kg9hQBfetvipp2gsQUMgwoPANdIXdrkqF720m68AEXoivC/CHrvI+i92knJ10DP50GgFiHAfMAFsBfYAp4EFwDbgW+B74AJwA1gK7ABGgfWqTLvOZb4ZYMvFE8A6YIO1cVKCHyIldDHwAzAFfAIcVkVFWAhstPHjwBhwnWTUVdU75wG/+d4rA0QYB14gJaBP+oNWAMuAJaSEzAVngYvALWtXgT+tL/aZS/baIqBHMmrM2kp77XlVfvOenKsB9lv5DYa/UBmQyvymxbvbAJi1dot0+++f/r/jwI77GGmP5jppv37G3ru7P2taag3Sl6IH/AVcIZ1wB9YuAZOqDLplYzjcDBDhfuAg8CzwOLBdlc9dxIc7/iNAT5Uf5+qYHngasJeU/G+AharschGe57gYIMIS4Bxpo2oSeEaV88XCDeB1HfAq8CXwFHAmkj88XgZsAw4DrwOHnDSbwMuAjcDXpPukR5w0m6DYAPvvkD7pN/QFVX4qnlVDeFTAatJV5UvAUQe9pvAwYBXwM/AKcMxBryk8DOiTriCfBk466DWFlwFrgK9Uuemg1xQeBqwk7Twed9BqDg8DlgMPEAZkUbwVIcJ3pJvVo6rMusyqITwqYC1wLpKfR5EBtgUN8JHDXJqktALWWIzth0xKDXjR4pnSibRK0UlYhGlgQvXOvdWgI6UVMAF84TCPZsk2wG7AAxxwmkuTZC9BIiwFfgdGVJlfDxfNIaXngBFVbjvOpznm3ZNx/zeafzi3NmFAZcKAyoQBlQkDKhMGVCYMqEwYUJm/ATz9EbvIf0deAAAAAElFTkSuQmCC" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell">BMP-TFSI</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2015</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1002/anie.201501715"> Wen <strong><em>et. al.</em></strong> Fig. 1 (black)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/wen_2015_potential-dependent_6062_f1_blueinset"><img alt="wen_2015_potential-dependent_6062_f1_blueinset" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjguMywgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy/H5lhTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAErElEQVR4nO3cXagd1RnG8d+bRG1swEM0Gq0gUTFqkqJS0vqJoBi1Ej8uFLxTLK1pvcmNIoheFCq9KBSkF9qKirUIotWiqMSigUBM1IDR+IFGG5Ijgaa1osYP9O3F7MDhcDyevc/svSZn5g8DZ8+e/a7nrGfeNbPWrDWRmTrKMa+0gLbTGVCYzoDCdAYUpjOgMJ0BhekMKExnQGE6AwqzoLSAJhDhB1iOozCGb7AfH+H9TJ/NIMbhmJfp037Kbq0BEY7Hjbgap2In9uJjzMdC/AjLIryN+3Ffpi+niLUQT2ED7u5LSGa2aiPnkbeT/yHvIc8nD5vm+EPIC8lnyc3k0knfLyU3kg+T8/vWU7pCChjwe/Jl8vg+fxfkHeQu8jLyBPJX5Dh51yCVn5miCt4OIpyOf2JFpn0DxrgCd+JYbMXvMm0ZWFPLDPgtDsl0a2ktB2jbbeileKa0iIm0JgMiHI13sSTT16X1HKBNGXARXmxS5dMuA87DxtIiJtMmA87FptIiJtOKa0CEI7AHizN9VVrPRNqSAT/D1qZVPu0xYDWDd5aGSVsMOBOvlhYxFW0x4CxsKy1iKua8ARGOxGK8X1rLVMx5A3AGtmX6trSQqWiDAY1tfmiHAWfqDCjKWXittIjvYk73hCMsUj3nHWvaINwB5noG/Bg7mlr5zH0DGt3+0xlQnM6AwjTSgAiLItwZYVuErRGuHyDGoTgNr9evsD4aNzMuwir8HZtxMxbh3ggLMj3UR6jT8WGmz+tXWR+NMiDC5XgA6zM9PGH/lXghwpOZ/jfDcI1vfmhQExThN/gz1k6sfMi0Hc/hpj5CXoyX6lM4JBowVXA++UdyB7lsmuMuJrfOMOYCcl+/0w9LbEUzIELgr1iFczJ9MM3hL+KkCEsnxVgXYVeEdRN2r8F7mXbXrbl2Cp/968kt081OnnT80+Q1Ez6fSP67lx17ydW9/U+RN5Y+uxudARF+ittwbU4x5/472KSaXnKAG/BQpg34NR6JsFb1DPjROvUOi6EZEOGkCBdEWB5hrNfciBAR1uBx/DLTh32E3YGTJ3xegych02P4G/6CX+QMVrU0gdpHQyMciwdV7fpOHI1jcKhq9cnh+BduzexvomyE1fhTpp/0OlqfqEY6v6jvPxgttfYDehOgXsIj+HlOGIXsLeMZwxeZ/jtgEeM4rvf3ydh1MFc+9XfE/oANme6a/EWm/aqFb7NhL5ZEWKAaZnhrlvGKU5sBvdUnV+CUumJOJtPXEfapmrUVeGNYZY2KOi/Ct+CenPlQwaCMq1YvrtQZUBHhh7hOdQcybPaorgMr8eYIyhsqdWXAZXgl03hN8aZjHMt62zsjKG+o1GXAVXiipljfx27V4uq3++jANZZZG9C7H79cr0M0ArbjAtXo6EFPHRlwNnaOqPmheh3AP3DfiMobKnXchl5ihGdjVi/DWDuq8oZNHRlwCZ6vIU4rmdVYUG/q9wc4Khu4/OdgYLYZcBE2dpU/OLM1oGt+ZkkdGfBCHULaysAG9N44tVD1kKRjQGZ7ER7L9HF9ctrHnF4fcDDQmIlZbaUzoDCdAYXpDChMZ0BhOgMK0xlQmM6Awvwfpm038+Sij1kAAAAASUVORK5CYII=" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell">BMP-TFSI</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2015</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1002/anie.201501715"> Wen <strong><em>et. al.</em></strong> Fig. 1 (blueinset)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/wen_2015_potential-dependent_6062_sf1_black"><img alt="wen_2015_potential-dependent_6062_sf1_black" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjguMywgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy/H5lhTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAErElEQVR4nO3cW4hVVRzH8c/ScVTGNJMUC7MrZaV0EyeUKMrIkm4SvmQFEb1ELxFEl4cg8KWIejCESIWggqCieiioXppuRr1UghnUxFRa3jV1TFcPa09OQzVz3Pu0Z85ZX1jsfdY+/Pd/r9/6//faa+1zQoxRpj7G1e1Au5MFqJksQM1kAWomC1AzWYCayQLUTBagZrIANdMSAoSgMwTXheDMun1plI66HShLCCbiHZyA00LwCh6N0a5aHRshrRABq7ETC3Gu1Kk2heD2EIRaPRsBYSxPxoVgCV7GghjtGFTfjeewCw/hsxiNygsdswKEYBK+xMMxeu0fjnfgXjyAHXgJb2HzaBJjTApQpJbnMSVGK4f57ngsxS24HpPwBb7G9/gBvdgupbJ9/6dATRUgBItxBt6O0c6StqbjLJyDO3AilsZoXwM2AmbjEszDXJyOOTgJ0zFREuIADqG/KIdwVLrHdGD8kO3JuC9GLzZ0Xc0SIAQz8R3ew1XokVLGNuniujANUwdtp2IKJks9dVKx31WY3VKUD7AuRgeb4HenJMRkdEqCdBa+TS98mYGZmCV1innF5xtj9GZD52uiAPdjYYxWhWAarsEFOBXdUo+ZKl3QURwptvuxB3uL0otn8UmMYgi6cAUWYUVxLBZ2Z0g9eWA7TRJxoBEn4jD2DbK/t/i8r/BhoENMG7IPuwvftuLnonyLr/B5jPY02k7NfA5YhUcgRrtDsFHKwbdJkfGx1Lg/OdYI+6XG7MCEopyNN9ATghm4WMrhH+JC3CM1QF9hd6OUz3dIDXZQSh8D6WSC9MwwuHRJkdfhWCPvHlyaEW00KQJCcB7ex5wYHQnBMmzAWjwTo98atDcVKyXBehrJ+6OdZgmwGh0xejAEF+Fd3Byjjyo/2RincgGKYV+vNPTbJKWatTFaV+mJWoRmTEUsQ1+MvsGV0o1sQxPO0xJUKkDR+x/DU0XV3VgTo6NVnqeVqDQFheAJXI5rJXG3Yn6M+io7SYtR2TA0BDfgTlxajHwuw4+58f+bSgQIwVy8gFtjtK2o7iaPeoaj9D2gmF9Zjydj1DPoUDc+KWu/1aniJny1NCfy9JD6bnxagf2WpgoB7pJGOn8MVIRgljRbubkC+y1NKQFCMA7L8eqQQ4ukVag8/ByGshEwD7/G6Jch9Yvk/D8iygqwQJrjH8piOf+PiLICnIK+EEwYqAjBHMyXFk0yw1CFAMvRH4I1IZiNx7E+RgdKe9cGlH0QmyktmKzAEmlBZEuxnxkBpeaCQvA6bsLkGB0slgv7Y3S4Iv9anrIRcD4MLNfFaH9pj9qMshFwWFr5GvWvAI5Wyt6EO/hr8i1zHFQxFdFbgY22pQoBhj4FZxqgCgEaesUk83eqEGB7BTbalhwBNZMjoGaqEGDH8F/J/BtVCNDwG8GZY1QhQMu8KFsHWYCaqUKAvRXYaFtyBNTMcQtQvBEBv1fkS1tSJgI6i21/FY60K2UEmFhsj1ThSLtSRoBJMJp+dT4WqSICMiUoHQGZcuQIqJkcATVTRoBSf76RSYzJv6tpJVrhL8vGNFmAmskC1EwWoGayADWTBaiZLEDNZAFqJgtQM38C9cA/P8v08YsAAAAASUVORK5CYII=" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell">BMPY-TFSI</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2015</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1002/anie.201501715"> Wen <strong><em>et. al.</em></strong> Fig. 1 (black)</a></td>
+</tr>
+</tbody>
+</table>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../aqueous/COOR/" class="md-footer__link md-footer__link--prev" aria-label="Previous: COOR" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              COOR
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../about/" class="md-footer__link md-footer__link--next" aria-label="Next: About" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              About
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.indexes", "navigation.tabs.sticky", "toc.follow"], "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.467223ff.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+        <script src="../../javascripts/tables.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
+      
+    
+  </body>
+</html>
