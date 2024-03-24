@@ -5,6 +5,7 @@ This module is invoked by the `mkdocs-gen-files module
 <https://oprypin.github.io/mkdocs-gen-files/>` to generate pages such as the
 individual pages for each entry in the database.
 """
+
 # ********************************************************************
 #  This file is part of echemdb.
 #
@@ -52,7 +53,6 @@ def main():
             markdown.write(
                 render(
                     "pages/cv_entry.md",
-                    database=database,
                     entry=entry,
                 )
             )

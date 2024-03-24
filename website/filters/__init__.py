@@ -1,6 +1,7 @@
 r"""
 Provides custom Jinja filters for rendering the echemdb websites.
 """
+
 # ********************************************************************
 #  This file is part of echemdb.
 #

@@ -2,9 +2,8 @@ r"""
 Data packages and bibliography built from local data.
 
 This module provides a (cached) database of CVs which is queried when building
-the website. In principle, this is no different than calling ``Database()``
-directly. However, this uses data from the local ``data`` directory and it also
-caches this information in a global variable for improved performance during
+the website. In principle, this is no different than calling ``CVDatabase.from_remote()``
+directly. The data is cached in a global variable for improved performance during
 the website build.
 
 EXAMPLES::
@@ -14,10 +13,11 @@ EXAMPLES::
     [...]
 
 """
+
 # ********************************************************************
 #  This file is part of echemdb-website.
 #
-#        Copyright (C) 2021-2023 Albert Engstfeld
+#        Copyright (C) 2021-2024 Albert Engstfeld
 #        Copyright (C)      2021 Johannes Hermann
 #        Copyright (C) 2021-2022 Julian Rüth
 #        Copyright (C)      2021 Nicolas Hörmann
@@ -35,14 +35,13 @@ EXAMPLES::
 #  You should have received a copy of the GNU General Public License
 #  along with echemdb-website. If not, see <https://www.gnu.org/licenses/>.
 # ********************************************************************
+import os
 
-import os.path
+from unitpackage.cv.cv_collection import CVCollection
 
-import unitpackage.cv.cv_collection
-import unitpackage.local
-
-packages = unitpackage.local.collect_datapackages(
-    os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "..", "data"))
+ECHEMDB_DATABASE_URL = os.environ.get(
+    "ECHEMDB_DATABASE_URL",
+    "https://github.com/echemdb/electrochemistry-data/releases/download/0.3.2/data-0.3.2.zip",
 )
 
-cv = unitpackage.cv.cv_collection.CVCollection(packages)
+cv = CVCollection.from_remote(url=ECHEMDB_DATABASE_URL)
