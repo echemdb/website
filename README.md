@@ -1,8 +1,8 @@
-This projects builds a website from the [eletrochemistry-data
+This project builds a website from the [eletrochemistry-data
 repository](https://github.com/echemdb/electrochemistry-data) which contains
 high quality experimental and theoretical data on electrochemical systems. The
 standardized and validated data displayed on the [projects
-website](https://www.echemdb.org/) so far is from the community and
+website](https://www.echemdb.org/cv) so far is from the community and
 publications aiming at fullfilling the [FAIR
 principles](https://www.go-fair.org/fair-principles/).
 
