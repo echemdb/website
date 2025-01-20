@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "echemdb-website"
+classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"]
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.9"
+
+
+[tool.setuptools]
+packages = [
+    "website",
+    "website.generator",
+    "website.filters",
+    "website.macros",
+]
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-64", "win-64"]
+
+[tool.pixi.dependencies]
+astropy = "*"
+black = "*"
+unitpackage = "*"
+isort = "*"
+mkdocs = "*"
+myst-nb = "*"
+myst-parser = "*"
+pip = "*"
+pylatexenc = "*"
+pylint = "*"
+pytest = "*"
+pytest-doctestplus = "*"
+pytest-xdist = "*"
+pytest-remotedata = "*"
+
+[tool.pixi.pypi-dependencies]
+linkchecker = "*"
+mkdocs-gen-files = "*"
+mkdocs-literate-nav = "*"
+mkdocs-macros-plugin = "*"
+mkdocs-material = "*"
+mkdocs-material-extensions = "*"
+mkdocs-section-index = "*"
+markdown-include = "*"
+mdutils = "*"
+pymdown-extensions = "*"
+python-frontmatter = "*"
+tabulate = "*"
+echemdb-website = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+doctest = "pytest -n $(nproc) --doctest-modules website"
+doc = "mkdocs"
+pylint = "pylint website"
+black = "black website"
+isort = "isort --profile black website"
+lint = { depends-on = ["pylint", "black", "isort"] }
