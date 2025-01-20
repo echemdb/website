@@ -55,7 +55,8 @@ echemdb-website = { path = ".", editable = true }
 
 [tool.pixi.tasks]
 doctest = "pytest -n $(nproc) --doctest-modules website"
-doc = "mkdocs"
+doc = "mkdocs build"
+preview = "mkdocs serve"
 pylint = "pylint website"
 black = "black website"
 isort = "isort --profile black website"
