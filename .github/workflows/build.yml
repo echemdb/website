@@ -19,10 +19,11 @@ jobs:
         with:
           pixi-version: v0.39.5
       - name: mkdocs
-        run: |
+        env:
           # Since no browser is installed during this CI run, plotly fails to
           # produce HTML output, see https://github.com/plotly/plotly.py/blob/2c2dd6ab2eeff73c782457f33c590c1d09a97625/packages/python/plotly/plotly/io/_renderers.py#L532
-          export PLOTLY_RENDERER=browser
+          PLOTLY_RENDERER: browser
+        run: |
           pixi run doc --strict
           # Disable further processing by GitHub
           touch generated/website/.nojekyll
