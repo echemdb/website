@@ -54,7 +54,7 @@ tabulate = "*"
 echemdb-website = { path = ".", editable = true }
 
 [tool.pixi.tasks]
-doctest = "pytest -n $(nproc) --doctest-modules website"
+doctest = "pytest -n auto --doctest-modules website"
 doc = "mkdocs build"
 preview = "mkdocs serve"
 pylint = "pylint website"
