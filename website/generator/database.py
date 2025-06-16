@@ -17,7 +17,7 @@ EXAMPLES::
 # ********************************************************************
 #  This file is part of echemdb-website.
 #
-#        Copyright (C) 2021-2024 Albert Engstfeld
+#        Copyright (C) 2021-2025 Albert Engstfeld
 #        Copyright (C)      2021 Johannes Hermann
 #        Copyright (C) 2021-2022 Julian Rüth
 #        Copyright (C)      2021 Nicolas Hörmann
@@ -41,7 +41,7 @@ from unitpackage.cv.cv_collection import CVCollection
 
 ECHEMDB_DATABASE_URL = os.environ.get(
     "ECHEMDB_DATABASE_URL",
-    "https://github.com/echemdb/electrochemistry-data/releases/download/0.3.2/data-0.3.2.zip",
+    "https://github.com/echemdb/electrochemistry-data/releases/download/0.4.1/data-0.4.1.zip",
 )
 
 cv = CVCollection.from_remote(url=ECHEMDB_DATABASE_URL)
