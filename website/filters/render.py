@@ -42,7 +42,7 @@ When no template is given, the filter renders the value with the
 #  This file is part of echemdb.
 #
 #        Copyright (C) 2021 Albert Engstfeld
-#        Copyright (C) 2021 Johannes Hermann
+#        Copyright (C) 2021-2025 Johannes Hermann
 #        Copyright (C) 2021 Julian Rüth
 #        Copyright (C) 2021 Nicolas Hörmann
 #
