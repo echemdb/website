@@ -1,13 +1,36 @@
-The [echemdb repository](https://github.com/echemdb/website) contains high
-quality experimental and theoretical data on electrochemical systems. The
+This project builds a website from the [eletrochemistry-data
+repository](https://github.com/echemdb/electrochemistry-data) which contains
+high quality experimental and theoretical data on electrochemical systems. The
 standardized and validated data displayed on the [projects
-website](https://echemdb.github.io/website/) so far is from the community and
+website](https://www.echemdb.org/cv) so far is from the community and
 publications aiming at fullfilling the [FAIR
-principles](https://www.go-fair.org/fair-principles/). 
+principles](https://www.go-fair.org/fair-principles/).
 
 The repository can be browsed on [our
-websites](https://echemdb.github.io/website/) or explored with a [Python
-API](https://github.com/echemdb/echemdb).
+websites](https://www.echemdb.org/) or explored with a [Python
+API](https://github.com/echemdb/unitpackage).
+
+# For developers
+
+Install [pixi](https://pixi.sh) and clone this repository
+
+```sh
+git clone git@github.com:echemdb/website.git
+```
+
+To preview the website run
+
+```sh
+cd website
+pixi run preview
+```
+
+If you make changes to the code test the modules with
+
+```sh
+pixi run doctest
+pixi run lint
+```
 
 # License
 

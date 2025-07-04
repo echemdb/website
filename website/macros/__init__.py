@@ -1,6 +1,7 @@
 r"""
 Provides custom Jinja macros for rendering the echemdb websites.
 """
+
 # ********************************************************************
 #  This file is part of echemdb.
 #

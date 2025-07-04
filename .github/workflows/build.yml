@@ -14,39 +14,19 @@ jobs:
       matrix:
         os: ["ubuntu-latest", "macos-latest", "windows-latest"]
     steps:
-      - uses: actions/checkout@v2
-        with: { submodules: recursive }
-      - uses: conda-incubator/setup-miniconda@v2
-        with: { mamba-version: "*", channels: "conda-forge", channel-priority: true }
-      - name: install dependencies
-        shell: bash -l {0}
-        run: |
-          mamba env update --quiet -n test -f environment.yml
-          conda list
-      - name: digitize
-        shell: bash -l {0}
-        run: |
-          cd data
-          make
-      - name: install echemdb-website
-        shell: bash -l {0}
-        run: |
-          pip install -e .
+      - uses: actions/checkout@v3
+      - uses: prefix-dev/setup-pixi@v0.8.1
+        with:
+          pixi-version: v0.39.5
       - name: mkdocs
-        shell: bash -l {0}
-        run: |
+        env:
           # Since no browser is installed during this CI run, plotly fails to
           # produce HTML output, see https://github.com/plotly/plotly.py/blob/2c2dd6ab2eeff73c782457f33c590c1d09a97625/packages/python/plotly/plotly/io/_renderers.py#L532
-          export PLOTLY_RENDERER=browser
-          mkdocs build --strict
-          mv data generated/website/
+          PLOTLY_RENDERER: browser
+        run: |
+          pixi run doc --strict
           # Disable further processing by GitHub
           touch generated/website/.nojekyll
-      - name: fix permissions
-        shell: bash -l {0}
-        run: |
-          # Strangely, the linkchecker modules are installed writable and linkchecker then refuses to load them.
-          chmod -R a-w `python -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())"`
       - name: detect broken links
         shell: bash -l {0}
         run: |
@@ -55,7 +35,7 @@ jobs:
           # We check for broken links:
           # * ignore fonts.gstatic.com which is mentioned by a link preconnect tag that linkchecker does not parse correctly.
           # * ignore DOIs since some publishers ban GitHub or bots.
-          linkchecker --check-extern --no-robots --ignore fonts.gstatic.com --ignore doi.org http://localhost:8880/ --ignore mybinder.org
+          pixi run linkchecker --check-extern --no-robots --ignore fonts.gstatic.com --ignore doi.org http://localhost:8880/ --ignore mybinder.org --ignore osti.gov --no-warnings
         # We only check links on Linux since we do not want to get flagged because of too many requests by the target websites.
         if: ${{ matrix.os == 'ubuntu-latest' }}
       - uses: JamesIves/github-pages-deploy-action@v4.3.3
@@ -65,19 +45,3 @@ jobs:
           target-folder: ""
           single-commit: true
         if: ${{ github.event_name == 'push' && matrix.os == 'ubuntu-latest' }}
-      - name: doctest against generated website data
-        shell: bash -l {0}
-        run: |
-          # Create a ZIP archive similar to the one automatically rovided by GitHub.
-          mkdir website-gh-pages
-          cp -R generated/website/data website-gh-pages/
-          zip -r generated/website/website-gh-pages.zip website-gh-pages
-
-          # Run tests against the new ZIP archive.
-          export ECHEMDB_DATABASE_URL=http://localhost:8880/website/website-gh-pages.zip
-          pytest -n auto --doctest-plus --remote-data --doctest-modules website
-        # We only run tests on Linux since we already run tests for all OSes in the test workflow.
-        if: ${{ matrix.os == 'ubuntu-latest' }}
-
-env:
-  MAKEFLAGS: -j2

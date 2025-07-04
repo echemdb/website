@@ -11,7 +11,7 @@ hide:
 <figcaption markdown>
 ## Philosophy
 
-echemdb aims at standardizing electrochemical data according to the
+echemdb aims at standardizing (electrochemical) data according to the
 [FAIR principles](https://www.go-fair.org/fair-principles/), allowing
 comparison of published data with data acquired
 in the laboratory, and theoretical models.
@@ -40,8 +40,7 @@ which were standardized and validated from published works by the community.
 The echemdb Python module provides an interactive way to visualize, filter,
 or evaluate the entries in the database.
 
-[→ Explore](https://mybinder.org/v2/gh/echemdb/echemdb/0.3.0?urlpath=tree%2Fdoc%2Fusage%2Fentry_interactions.md)  
-[→ Documentation](https://echemdb.github.io/echemdb/)
+[→ Documentation](https://echemdb.github.io/unitpackage/)
 
 </figcaption>
 </figure>
@@ -59,6 +58,18 @@ renders electrochemical data interoperable.
 </figure>
 
 <figure class="echemdb-spotlight" markdown>
+![DataAnnotation](./images/autotag/home_autotag_metadata.png)
+<figcaption markdown>
+## Automated Data Annotation
+
+AutotagMetadata is a tool with a GUI for automated tagging of newly created data with metadata
+from a template.
+
+[→ Learn more](https://echemdb.github.io/autotag-metadata/)
+</figcaption>
+</figure>
+
+<figure class="echemdb-spotlight echemdb-spotlight-reverse" markdown>
 ![SVGDigitizer](./images/home_digitizer.png)
 <figcaption markdown>
 ## Digitizer
@@ -67,7 +78,8 @@ The svgdigitizer recovers data
 from published figures,
 where machine-readable data is not available.
 
-[→ Learn more](https://echemdb.github.io/svgdigitizer/)  
+[→ Learn more](https://echemdb.github.io/svgdigitizer/)
+
 [→ Digitize a plot for echemdb](https://echemdb.github.io/svgdigitizer/workflow.html)
 
 </figcaption>

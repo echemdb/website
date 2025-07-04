@@ -5,6 +5,7 @@ This module is invoked by the `mkdocs-gen-files module
 <https://oprypin.github.io/mkdocs-gen-files/>` to generate pages such as the
 individual pages for each entry in the database.
 """
+
 # ********************************************************************
 #  This file is part of echemdb.
 #
@@ -52,7 +53,6 @@ def main():
             markdown.write(
                 render(
                     "pages/cv_entry.md",
-                    database=database,
                     entry=entry,
                 )
             )
@@ -62,10 +62,10 @@ def main():
             render(
                 "pages/cv.md",
                 database=database.filter(
-                    lambda entry: entry.system.electrolyte.type == "aq"
+                    lambda entry: entry.system.electrolyte.type == "aqueous"
                     and "BCV" in entry.experimental.tags
                 ),
-                intro="Cyclic voltammograms recorded in CO containing aqueous electrolytes.",
+                intro="",
                 material_filter=material_filter(),
             )
         )
@@ -77,10 +77,10 @@ def main():
             render(
                 "pages/cv.md",
                 database=database.filter(
-                    lambda entry: entry.system.electrolyte.type == "aq"
+                    lambda entry: entry.system.electrolyte.type == "aqueous"
                     and "COOR" in entry.experimental.tags
                 ),
-                intro="",
+                intro="Cyclic voltammograms recorded in CO containing aqueous electrolytes.",
                 material_filter=material_filter(),
             )
         )
@@ -106,7 +106,7 @@ def material_filter():
     Unfortunately, jinja does not allow such generic lambdas.
     """
     return lambda material: (
-        lambda entry: entry.system.electrodes.working_electrode.material == material
+        lambda entry: entry.get_electrode("WE").material == material
     )
 
 
