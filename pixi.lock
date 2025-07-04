@@ -222,6 +222,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/1f/7f/13cd798d180af4bf4c0ceddeefba2b864a63c71645abc0308b768d67bb81/hjson-3.1.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/cd/c6/8d6a8383a92fbd19337b7a3c4ed57042a3f39f57772774a11bd56316af2e/LinkChecker-10.5.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/d7/e2/c4d20b21a05fe0fee571649cebc05f7f72e80b1a743f932e7326125e6c9e/markdown_include-0.8.1-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/f4/34/780748d7d78fb4024dd1a290844374dd0d9830da35593c534638a4e9e54e/markdown_katex-202406.1035-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/b1/ec/6240f147530a2c8d362ed3f2f7985aca92cda68c25ffc2fc216504b17148/mdutils-1.6.0.tar.gz
       - pypi: https://files.pythonhosted.org/packages/e7/0f/1e55b3fd490ad2cecb6e7b31892d27cb9fc4218ec1dab780440ba8579e74/mkdocs_gen_files-0.5.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/51/3b/e00d839d3242844c77e248f9572dd34644a04300839a60fe7d6bf652ab19/mkdocs_literate_nav-0.6.1-py3-none-any.whl
@@ -236,7 +237,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/d1/c2/fe97d779f3ef3b15f05c94a2f1e3d21732574ed441687474db9d342a7315/soupsieve-2.6-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/07/6d/58de58c521e7fb79bceb4da90d55250070bb4adfa3c870b82519a561c79d/super_collections-0.5.3-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/7f/be/df630c387a0a054815d60be6a97eb4e8f17385d5d6fe660e1c02750062b4/termcolor-2.5.0-py3-none-any.whl
-      - pypi: .
+      - pypi: ./
       osx-64:
       - conda: https://conda.anaconda.org/conda-forge/noarch/alabaster-1.0.0-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/annotated-types-0.7.0-pyhd8ed1ab_1.conda
@@ -444,6 +445,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/1f/7f/13cd798d180af4bf4c0ceddeefba2b864a63c71645abc0308b768d67bb81/hjson-3.1.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/cd/c6/8d6a8383a92fbd19337b7a3c4ed57042a3f39f57772774a11bd56316af2e/LinkChecker-10.5.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/d7/e2/c4d20b21a05fe0fee571649cebc05f7f72e80b1a743f932e7326125e6c9e/markdown_include-0.8.1-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/f4/34/780748d7d78fb4024dd1a290844374dd0d9830da35593c534638a4e9e54e/markdown_katex-202406.1035-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/b1/ec/6240f147530a2c8d362ed3f2f7985aca92cda68c25ffc2fc216504b17148/mdutils-1.6.0.tar.gz
       - pypi: https://files.pythonhosted.org/packages/e7/0f/1e55b3fd490ad2cecb6e7b31892d27cb9fc4218ec1dab780440ba8579e74/mkdocs_gen_files-0.5.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/51/3b/e00d839d3242844c77e248f9572dd34644a04300839a60fe7d6bf652ab19/mkdocs_literate_nav-0.6.1-py3-none-any.whl
@@ -458,7 +460,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/d1/c2/fe97d779f3ef3b15f05c94a2f1e3d21732574ed441687474db9d342a7315/soupsieve-2.6-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/07/6d/58de58c521e7fb79bceb4da90d55250070bb4adfa3c870b82519a561c79d/super_collections-0.5.3-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/7f/be/df630c387a0a054815d60be6a97eb4e8f17385d5d6fe660e1c02750062b4/termcolor-2.5.0-py3-none-any.whl
-      - pypi: .
+      - pypi: ./
       win-64:
       - conda: https://conda.anaconda.org/conda-forge/win-64/_openmp_mutex-4.5-2_gnu.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/alabaster-1.0.0-pyhd8ed1ab_1.conda
@@ -672,6 +674,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/1f/7f/13cd798d180af4bf4c0ceddeefba2b864a63c71645abc0308b768d67bb81/hjson-3.1.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/cd/c6/8d6a8383a92fbd19337b7a3c4ed57042a3f39f57772774a11bd56316af2e/LinkChecker-10.5.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/d7/e2/c4d20b21a05fe0fee571649cebc05f7f72e80b1a743f932e7326125e6c9e/markdown_include-0.8.1-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/f4/34/780748d7d78fb4024dd1a290844374dd0d9830da35593c534638a4e9e54e/markdown_katex-202406.1035-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/b1/ec/6240f147530a2c8d362ed3f2f7985aca92cda68c25ffc2fc216504b17148/mdutils-1.6.0.tar.gz
       - pypi: https://files.pythonhosted.org/packages/e7/0f/1e55b3fd490ad2cecb6e7b31892d27cb9fc4218ec1dab780440ba8579e74/mkdocs_gen_files-0.5.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/51/3b/e00d839d3242844c77e248f9572dd34644a04300839a60fe7d6bf652ab19/mkdocs_literate_nav-0.6.1-py3-none-any.whl
@@ -686,7 +689,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/d1/c2/fe97d779f3ef3b15f05c94a2f1e3d21732574ed441687474db9d342a7315/soupsieve-2.6-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/07/6d/58de58c521e7fb79bceb4da90d55250070bb4adfa3c870b82519a561c79d/super_collections-0.5.3-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/7f/be/df630c387a0a054815d60be6a97eb4e8f17385d5d6fe660e1c02750062b4/termcolor-2.5.0-py3-none-any.whl
-      - pypi: .
+      - pypi: ./
 packages:
 - conda: https://conda.anaconda.org/conda-forge/linux-64/_libgcc_mutex-0.1-conda_forge.tar.bz2
   sha256: fe51de6107f9edc7aa4f786a70f4a883943bc9d39b3bb7307c04c41410990726
@@ -1467,10 +1470,10 @@ packages:
   - pkg:pypi/docutils?source=hash-mapping
   size: 402700
   timestamp: 1733217860944
-- pypi: .
+- pypi: ./
   name: echemdb-website
   version: 0.1.0
-  sha256: b40fe66369d2317dde8e25d2cc79f533502e250f6f88bd55bd0e86eb2d3088fc
+  sha256: 79d95f7b1d56fc50071d82b383828c363e907cdcd71f2b4b59d69082b1b2c05a
   requires_python: '>=3.9'
   editable: true
 - conda: https://conda.anaconda.org/conda-forge/noarch/exceptiongroup-1.2.2-pyhd8ed1ab_1.conda
@@ -3252,6 +3255,17 @@ packages:
   - pkg:pypi/markdown-it-py?source=hash-mapping
   size: 64430
   timestamp: 1733250550053
+- pypi: https://files.pythonhosted.org/packages/f4/34/780748d7d78fb4024dd1a290844374dd0d9830da35593c534638a4e9e54e/markdown_katex-202406.1035-py2.py3-none-any.whl
+  name: markdown-katex
+  version: '202406.1035'
+  sha256: c1713e85854ddecb641ad96243a8b6cd67367bf1bf8d39b43b3680d7f2b1884d
+  requires_dist:
+  - setuptools
+  - pathlib2 ; python_full_version < '3.4'
+  - typing ; python_full_version < '3.5'
+  - markdown>=3.0,<3.3 ; python_full_version < '3.6'
+  - markdown>=3.0 ; python_full_version >= '3.6'
+  requires_python: '>=2.7'
 - conda: https://conda.anaconda.org/conda-forge/noarch/marko-2.1.2-pyhd8ed1ab_1.conda
   sha256: eab720010e7155152ed79c7172990adb723f0ccf2d0f1235bb06e2f9b52e575f
   md5: 0b561c367f7c1ef9f32f8527d8b9e7bf
