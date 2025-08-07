@@ -25,7 +25,7 @@ platforms = ["linux-64", "osx-64", "win-64"]
 [tool.pixi.dependencies]
 astropy = "*"
 black = "*"
-# unitpackage = "*"
+unitpackage = "*"
 isort = "*"
 mkdocs = "*"
 myst-nb = "*"
@@ -39,7 +39,6 @@ pytest-xdist = "*"
 pytest-remotedata = "*"
 
 [tool.pixi.pypi-dependencies]
-unitpackage = { git = "https://github.com/echemdb/unitpackage", branch = "camel-case" }
 linkchecker = "*"
 mkdocs-gen-files = "*"
 mkdocs-literate-nav = "*"
