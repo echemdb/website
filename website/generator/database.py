@@ -41,7 +41,7 @@ from unitpackage.cv.cv_collection import CVCollection
 
 ECHEMDB_DATABASE_URL = os.environ.get(
     "ECHEMDB_DATABASE_URL",
-    "https://github.com/echemdb/electrochemistry-data/releases/download/0.4.1/data-0.4.1.zip",
+    "https://github.com/echemdb/electrochemistry-data/releases/download/0.5.0/data-0.5.0.zip",
 )
 
 cv = CVCollection.from_remote(url=ECHEMDB_DATABASE_URL)

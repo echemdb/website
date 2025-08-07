@@ -15,9 +15,9 @@ jobs:
         os: ["ubuntu-latest", "macos-latest", "windows-latest"]
     steps:
       - uses: actions/checkout@v3
-      - uses: prefix-dev/setup-pixi@v0.8.1
+      - uses: prefix-dev/setup-pixi@v0.8.10
         with:
-          pixi-version: v0.39.5
+          pixi-version: v0.49.0
       - name: mkdocs
         env:
           # Since no browser is installed during this CI run, plotly fails to
