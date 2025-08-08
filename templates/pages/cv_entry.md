@@ -36,6 +36,7 @@ in
 ## Further information
 The figure shows {{ entry.figureDescription.type }} data.
 
+<!--
 {% if entry.get_electrode('WE').preparationProcedure is defined %}
 The {{ entry.get_electrode('WE').material }}({{ entry.get_electrode('WE').crystallographicOrientation }}) electrode was prepared by:
 {% for step in entry.get_electrode('WE').preparationProcedure.description %}
@@ -44,6 +45,7 @@ The {{ entry.get_electrode('WE').material }}({{ entry.get_electrode('WE').crysta
 {% else %}
 Preparation procedure not available.
 {% endif %}
+-->
 
 {% if entry.figureDescription.comment %}
 **Comment left by the curator on the published figure**

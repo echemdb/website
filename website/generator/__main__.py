@@ -46,16 +46,18 @@ def main():
 
     database = website.generator.database.cv
     # Create a single page for each entry in the database
-    for entry in database:
-        with mkdocs_gen_files.open(
-            os.path.join("cv", "entries", f"{entry.identifier}.md"), "w"
-        ) as markdown:
-            markdown.write(
-                render(
-                    "pages/cv_entry.md",
-                    entry=entry,
+    for idx, entry in enumerate(database):
+        if idx < 4:
+            print(f"Generating page for {entry.identifier}")
+            with mkdocs_gen_files.open(
+                os.path.join("cv", "entries", f"{entry.identifier}.md"), "w"
+            ) as markdown:
+                markdown.write(
+                    render(
+                        "pages/cv_entry.md",
+                        entry=entry,
+                    )
                 )
-            )
     # Create an overview page with tabulated and linked entries for aqueous systems.
     with mkdocs_gen_files.open(os.path.join("cv", "aqueous.md"), "w") as markdown:
         markdown.write(
