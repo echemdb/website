@@ -29,7 +29,6 @@ individual pages for each entry in the database.
 # ********************************************************************
 
 import os.path
-
 import time
 
 import mkdocs_gen_files
@@ -95,8 +94,8 @@ def main():
                 material_filter=material_filter(),
             )
         )
-    t_COOR = time.time() - t_start - t_pages - t_aqueous
-    print(f"Generated COOR overview page in {t_COOR:.2f} seconds")
+    t_coor = time.time() - t_start - t_pages - t_aqueous
+    print(f"Generated COOR overview page in {t_coor:.2f} seconds")
     # Create an overview page with tabulated and linked entries for ionic liquid systems.
     with mkdocs_gen_files.open(os.path.join("cv", "ionic_liquid.md"), "w") as markdown:
         print("Generating overview page for ionic liquids")
@@ -110,7 +109,7 @@ def main():
                 material_filter=material_filter(),
             )
         )
-    t_ionic_liquid = time.time() - t_start - t_pages - t_aqueous - t_COOR
+    t_ionic_liquid = time.time() - t_start - t_pages - t_aqueous - t_coor
     print(f"Generated ionic liquid overview page in {t_ionic_liquid:.2f} seconds")
 
 
