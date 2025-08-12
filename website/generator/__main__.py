@@ -44,7 +44,7 @@ def main():
 
     This function is invoked automatically by mkdocs during the build process.
     """
-    t_start = time.time()
+    t_pages_start = time.time()
     database = website.generator.database.cv
     # Create a single page for each entry in the database
     # for idx, entry in enumerate(database):
@@ -60,8 +60,9 @@ def main():
                     entry=entry,
                 )
             )
-    t_pages = time.time() - t_start
+    t_pages = time.time() - t_pages_start
     print(f"Generated {len(database)} pages in {t_pages:.2f} seconds")
+    t_aqueous_start = time.time()
     # Create an overview page with tabulated and linked entries for aqueous systems.
     with mkdocs_gen_files.open(os.path.join("cv", "aqueous.md"), "w") as markdown:
         print("Generating overview page for aqueous systems")
@@ -76,8 +77,9 @@ def main():
                 material_filter=material_filter(),
             )
         )
-    t_aqueous = time.time() - t_start - t_pages
+    t_aqueous = time.time() - t_aqueous_start
     print(f"Generated aqueous overview page in {t_aqueous:.2f} seconds")
+    t_coor_start = time.time()
     # Create an overview page with tabulated and linked entries for CO oxidation (COOR) in aqueous systems.
     with mkdocs_gen_files.open(
         os.path.join("cv", "aqueous", "COOR.md"), "w"
@@ -94,8 +96,9 @@ def main():
                 material_filter=material_filter(),
             )
         )
-    t_coor = time.time() - t_start - t_pages - t_aqueous
+    t_coor = time.time() - t_coor_start
     print(f"Generated COOR overview page in {t_coor:.2f} seconds")
+    t_ionic_liquid_start = time.time()
     # Create an overview page with tabulated and linked entries for ionic liquid systems.
     with mkdocs_gen_files.open(os.path.join("cv", "ionic_liquid.md"), "w") as markdown:
         print("Generating overview page for ionic liquids")
@@ -109,7 +112,7 @@ def main():
                 material_filter=material_filter(),
             )
         )
-    t_ionic_liquid = time.time() - t_start - t_pages - t_aqueous - t_coor
+    t_ionic_liquid = time.time() - t_ionic_liquid_start
     print(f"Generated ionic liquid overview page in {t_ionic_liquid:.2f} seconds")
 
 
