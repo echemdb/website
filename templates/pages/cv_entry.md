@@ -38,7 +38,7 @@ The figure shows {{ entry.figureDescription.type }} data.
 {% if entry.get_electrode('WE').preparationProcedure is defined %}
 The {{ entry.get_electrode('WE').material }}({{ entry.get_electrode('WE').crystallographicOrientation }}) electrode was prepared by:<br>
 {% for step in entry.get_electrode('WE').preparationProcedure.description %}
-    * {{ step }}<br>
+* {{ step }}<br>
 {% endfor %}
 {% else %}
 Preparation procedure not available.
