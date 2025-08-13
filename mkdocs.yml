@@ -15,6 +15,7 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
 
 plugins:
   - search
@@ -42,11 +43,6 @@ markdown_extensions:
   - attr_list
   - pymdownx.arithmatex:
       generic: true
-      inline_syntax:
-        - dollar
-      block_syntax:
-        - dollar
-        - begin
   - pymdownx.details
   - pymdownx.superfences
   - footnotes
@@ -56,12 +52,13 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
-  - markdown_katex:
-      no_inline_svg: True
-      insert_fonts_css: True
 
 extra_javascript:
   - javascripts/config.js
   - https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js
   - javascripts/tables.js
   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+

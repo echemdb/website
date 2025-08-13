@@ -39,7 +39,7 @@ def enable_macros(env):
 
         >>> snippet = StringIO("{{ render('components/quantity.md', value={ 'quantity': quantity }) }}")
         >>> render(snippet, quantity=1 * Unit("mol / l"))
-        '$`\\mathsf{ 1 \\; M }`$'
+        '$\\mathsf{ 1 \\; M }$'
 
     """
     from website.macros.render import render
