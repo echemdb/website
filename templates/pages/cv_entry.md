@@ -1,6 +1,5 @@
 # {{ entry.get_electrode('WE').material }}({{ entry.get_electrode('WE').crystallographicOrientation }}) <small>- {{ entry.system.electrolyte | render("components/electrolyte.md") }}</small>
-
-<small>echemdb identifier: `{{ entry.identifier }}`</small>
+<small>echemdb identifier: `{{ entry.identifier }}`</small><br>
 <small>tags:
 {% set separator = joiner(", ") %}
 {% for tag in entry.experimental.tags %}
@@ -33,11 +32,14 @@ in
 -->
 
 ## Further information
+
 The figure shows {{ entry.figureDescription.type }} data.
 
 {% if entry.get_electrode('WE').preparationProcedure is defined %}
-The {{ entry.get_electrode('WE').material }}({{ entry.get_electrode('WE').crystallographicOrientation }}) electrode was prepared by:
-{{ entry.get_electrode('WE').preparationProcedure }}
+The {{ entry.get_electrode('WE').material }}({{ entry.get_electrode('WE').crystallographicOrientation }}) electrode was prepared by:<br>
+{% for step in entry.get_electrode('WE').preparationProcedure.description %}
+* {{ step }}<br>
+{% endfor %}
 {% else %}
 Preparation procedure not available.
 {% endif %}
