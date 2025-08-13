@@ -47,8 +47,6 @@ def main():
     t_pages_start = time.time()
     database = website.generator.database.cv
     # Create a single page for each entry in the database
-    # for idx, entry in enumerate(database):
-    #     if idx < 4:
     for entry in database:
         print(f"Generating page for {entry.identifier}")
         with mkdocs_gen_files.open(
