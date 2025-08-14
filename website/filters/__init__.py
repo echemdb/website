@@ -39,7 +39,7 @@ def enable_filters(env):
 
         >>> snippet = StringIO("{{ value | render('components/quantity.md') }}")
         >>> render(snippet, value={'quantity': 1 * Unit("mol / l")})
-        '$\\mathsf{ 1 \\; M }$'
+        '$1 \\; \\mathrm{M}$'
 
     """
     from base64 import b64encode
