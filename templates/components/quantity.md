@@ -1,5 +1,6 @@
 {% if value.quantity.unit.is_equivalent('mol / m^3') -%}
-  $\mathsf{ {{ '{0:.3g}'.format(value.quantity.to('mol / l').value|float) }} \; M }$
+  ${{ '{0:.3g}'.format(value.quantity.to('mol / l').value|float) }} \; \mathrm{M} $
 {%- else -%}
-  $\mathsf{ {{ value.quantity.value }} \; {{ value.quantity.unit.to_string(format="latex_inline").replace("\\mathrm", "")[2:-2] }} }$
+  {{ value.quantity.to_string(format="latex_inline") }}
+
 {%- endif %}
