@@ -11,7 +11,7 @@ The `render` filter renders an element using a specific template::
 
     >>> snippet = StringIO("{{ value | render(template='components/quantity.md') }}")
     >>> render(snippet, value={ 'quantity': 1 * Unit("mol / l") })
-    '1 M'
+    '$\\mathsf{ 1 \\; M }$'
 
 When no template is given, the filter returns the `markdown` property if
 present::
@@ -34,7 +34,7 @@ When no template is given, the filter renders the value with the
     ...     markdown_template = 'components/quantity.md'
 
     >>> render(snippet, value=Value({ 'quantity': 1 * Unit("mol / l") }))
-    '1 M'
+    '$\\mathsf{ 1 \\; M }$'
 
 """
 
@@ -42,7 +42,7 @@ When no template is given, the filter renders the value with the
 #  This file is part of echemdb.
 #
 #        Copyright (C) 2021 Albert Engstfeld
-#        Copyright (C) 2021 Johannes Hermann
+#        Copyright (C) 2021-2025 Johannes Hermann
 #        Copyright (C) 2021 Julian Rüth
 #        Copyright (C) 2021 Nicolas Hörmann
 #
@@ -77,7 +77,7 @@ def render(value, template=None):
 
         >>> snippet = StringIO("{{ value | render(template='components/quantity.md') }}")
         >>> render(snippet, value={ 'quantity': 1 * Unit("A / m^2") })
-        '1.0 $\\mathrm{A\\,m^{-2}}$'
+        '$\\mathsf{ 1.0 \\; A\\,m^{-2} }$'
 
     """
     if template is None:

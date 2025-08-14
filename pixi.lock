@@ -95,7 +95,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/importlib-metadata-8.7.0-pyhe01879c_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/iniconfig-2.0.0-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/ipydatagrid-1.4.0-pyhd8ed1ab_1.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/ipykernel-6.30.1-pyh82676e8_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/ipykernel-7.0.0a2-pyh82676e8_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/ipython-9.4.0-pyhfa0c392_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/ipython_pygments_lexers-1.1.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/ipywidgets-8.1.7-pyhd8ed1ab_0.conda
@@ -423,7 +423,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/importlib-metadata-8.7.0-pyhe01879c_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/iniconfig-2.0.0-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/ipydatagrid-1.4.0-pyhd8ed1ab_1.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/ipykernel-6.30.1-pyh92f572d_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/ipykernel-7.0.0a2-pyh92f572d_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/ipython-9.4.0-pyhfa0c392_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/ipython_pygments_lexers-1.1.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/ipywidgets-8.1.7-pyhd8ed1ab_0.conda
@@ -738,7 +738,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/importlib-metadata-8.7.0-pyhe01879c_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/iniconfig-2.0.0-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/ipydatagrid-1.4.0-pyhd8ed1ab_1.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/ipykernel-6.30.1-pyh3521513_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/ipykernel-7.0.0a2-pyh3521513_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/ipython-9.4.0-pyh6be1c34_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/ipython_pygments_lexers-1.1.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/ipywidgets-8.1.7-pyhd8ed1ab_0.conda
@@ -1018,6 +1018,7 @@ packages:
   - wrapt >=1.10.10,<2.0.0
   - python
   license: Apache-2.0
+  license_family: APACHE
   purls:
   - pkg:pypi/aiobotocore?source=hash-mapping
   size: 79596
@@ -1071,7 +1072,7 @@ packages:
   license: MIT AND Apache-2.0
   license_family: Apache
   purls:
-  - pkg:pypi/aiohttp?source=compressed-mapping
+  - pkg:pypi/aiohttp?source=hash-mapping
   size: 980844
   timestamp: 1753805465708
 - conda: https://conda.anaconda.org/conda-forge/win-64/aiohttp-3.12.15-py313hd650c13_0.conda
@@ -3345,9 +3346,9 @@ packages:
   - pkg:pypi/ipydatagrid?source=hash-mapping
   size: 620065
   timestamp: 1735486891242
-- conda: https://conda.anaconda.org/conda-forge/noarch/ipykernel-6.30.1-pyh3521513_0.conda
-  sha256: 3dd6fcdde5e40a3088c9ecd72c29c6e5b1429b99e927f41c8cee944a07062046
-  md5: 953007d45edeb098522ac860aade4fcf
+- conda: https://conda.anaconda.org/conda-forge/noarch/ipykernel-7.0.0a2-pyh3521513_0.conda
+  sha256: 94eaa4f9f937a71707f6a25f98dfe7b13731132391016679e96b8d4814c0829d
+  md5: d97f8cd0bab843bb58cb7a6af71df1b0
   depends:
   - __win
   - comm >=0.1.1
@@ -3366,12 +3367,12 @@ packages:
   license: BSD-3-Clause
   license_family: BSD
   purls:
-  - pkg:pypi/ipykernel?source=hash-mapping
-  size: 121976
-  timestamp: 1754353094360
-- conda: https://conda.anaconda.org/conda-forge/noarch/ipykernel-6.30.1-pyh82676e8_0.conda
-  sha256: cfc2c4e31dfedbb3d124d0055f55fda4694538fb790d52cd1b37af5312833e36
-  md5: b0cc25825ce9212b8bee37829abad4d6
+  - pkg:pypi/ipykernel?source=compressed-mapping
+  size: 123857
+  timestamp: 1755087201242
+- conda: https://conda.anaconda.org/conda-forge/noarch/ipykernel-7.0.0a2-pyh82676e8_0.conda
+  sha256: ce2486c0b41dff9dfbdcff1ecde38419b1d2eec4823821125b48e924e1ff3633
+  md5: 3bc121d1e9428f478d5a4d6ee28857f4
   depends:
   - __linux
   - comm >=0.1.1
@@ -3391,11 +3392,11 @@ packages:
   license_family: BSD
   purls:
   - pkg:pypi/ipykernel?source=compressed-mapping
-  size: 121367
-  timestamp: 1754352984703
-- conda: https://conda.anaconda.org/conda-forge/noarch/ipykernel-6.30.1-pyh92f572d_0.conda
-  sha256: ec80ed5f68c96dd46ff1b533b28d2094b6f07e2ec8115c8c60803920fdd6eb13
-  md5: f208c1a85786e617a91329fa5201168c
+  size: 122990
+  timestamp: 1755087171716
+- conda: https://conda.anaconda.org/conda-forge/noarch/ipykernel-7.0.0a2-pyh92f572d_0.conda
+  sha256: 5d0f6cb29b34db3f21dfca851d56a80faa2d3567411b5ea5fb44660ca951a631
+  md5: 2a72f58fc3348032b3fd0c33b2b14e07
   depends:
   - __osx
   - appnope
@@ -3415,9 +3416,9 @@ packages:
   license: BSD-3-Clause
   license_family: BSD
   purls:
-  - pkg:pypi/ipykernel?source=hash-mapping
-  size: 121397
-  timestamp: 1754353050327
+  - pkg:pypi/ipykernel?source=compressed-mapping
+  size: 123386
+  timestamp: 1755087398356
 - conda: https://conda.anaconda.org/conda-forge/noarch/ipython-9.4.0-pyh6be1c34_0.conda
   sha256: 8fb441c9f4b50e38b6059e8984e49208a4e2a4ec4e41b543ebaa894f8261d4c9
   md5: b551e25e4fb27ccb51aff2c5dcf178f4
@@ -8393,6 +8394,7 @@ packages:
   - python >=3.13,<3.14.0a0
   - python_abi 3.13.* *_cp313
   license: BSD-3-Clause
+  license_family: BSD
   purls:
   - pkg:pypi/scipy?source=hash-mapping
   size: 17223792
@@ -8415,6 +8417,7 @@ packages:
   - python >=3.12,<3.13.0a0
   - python_abi 3.12.* *_cp312
   license: BSD-3-Clause
+  license_family: BSD
   purls:
   - pkg:pypi/scipy?source=hash-mapping
   size: 15332499
@@ -8435,6 +8438,7 @@ packages:
   - vc >=14.3,<15
   - vc14_runtime >=14.44.35208
   license: BSD-3-Clause
+  license_family: BSD
   purls:
   - pkg:pypi/scipy?source=hash-mapping
   size: 15237060
@@ -8666,6 +8670,7 @@ packages:
   - python_abi 3.13.* *_cp313
   - typing-extensions >=4.6.0
   license: MIT
+  license_family: MIT
   purls:
   - pkg:pypi/sqlalchemy?source=compressed-mapping
   size: 3654031
@@ -8680,6 +8685,7 @@ packages:
   - python_abi 3.12.* *_cp312
   - typing-extensions >=4.6.0
   license: MIT
+  license_family: MIT
   purls:
   - pkg:pypi/sqlalchemy?source=hash-mapping
   size: 3558095
@@ -8696,6 +8702,7 @@ packages:
   - vc >=14.3,<15
   - vc14_runtime >=14.44.35208
   license: MIT
+  license_family: MIT
   purls:
   - pkg:pypi/sqlalchemy?source=compressed-mapping
   size: 3634369
@@ -8831,7 +8838,7 @@ packages:
   license: MIT
   license_family: MIT
   purls:
-  - pkg:pypi/tomli?source=compressed-mapping
+  - pkg:pypi/tomli?source=hash-mapping
   size: 21238
   timestamp: 1753796677376
 - conda: https://conda.anaconda.org/conda-forge/noarch/tomlkit-0.13.3-pyha770c72_0.conda
@@ -9233,6 +9240,7 @@ packages:
   - python >=3.13,<3.14.0a0
   - python_abi 3.13.* *_cp313
   license: BSD-2-Clause
+  license_family: BSD
   purls:
   - pkg:pypi/wrapt?source=hash-mapping
   size: 64919
@@ -9245,6 +9253,7 @@ packages:
   - python >=3.12,<3.13.0a0
   - python_abi 3.12.* *_cp312
   license: BSD-2-Clause
+  license_family: BSD
   purls:
   - pkg:pypi/wrapt?source=hash-mapping
   size: 60804
@@ -9259,6 +9268,7 @@ packages:
   - vc >=14.3,<15
   - vc14_runtime >=14.44.35208
   license: BSD-2-Clause
+  license_family: BSD
   purls:
   - pkg:pypi/wrapt?source=hash-mapping
   size: 63421
