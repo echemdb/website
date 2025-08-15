@@ -7,8 +7,8 @@
 {% for component in components %}
   {{- plus() -}}
   {% if component.concentration is defined and component.concentration.value -%}
-    {{ component.concentration | render }} {{ component.name }}
+    {{ component.concentration | render }} $\ce{ {{ component.name }} }$
   {%- else -%}
-    {{ component.name }}
+    $\ce{ {{ component.name }} }$
   {%- endif %}
 {% endfor %}

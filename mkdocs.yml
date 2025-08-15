@@ -15,7 +15,8 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
-  - https://unpkg.com/katex@0/dist/katex.min.css
+  - stylesheets/katex.css
+  - https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.css
 
 plugins:
   - search
@@ -59,6 +60,8 @@ extra_javascript:
   - javascripts/tables.js
   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
   - javascripts/katex.js
-  - https://unpkg.com/katex@0/dist/katex.min.js
-  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16/dist/contrib/mhchem.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16/dist/contrib/auto-render.min.js
+
 
