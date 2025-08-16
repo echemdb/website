@@ -18,13 +18,13 @@ CO containing
 at a scan rate of
 {{ entry.figureDescription.scanRate | render }}
 from Figure
-{{ entry.source.figure }}
+{{ entry.source.figure  }}
 in
 [{{ entry.citation('md') }}]({{ entry.source.url }})
 
 <!-- TODO: It would be great if we could toggle between SI and original units. See #104. -->
 <!-- TODO: Format plots. See #104. -->
-{{ entry.rescale('original').plot()._repr_html_() }}
+{{ entry.rescale('original') | render_plot }}
 
 
 <!-- TODO: Make download link work, i.e., build .zip package and link to it here. See #104.

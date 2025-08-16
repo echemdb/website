@@ -92,3 +92,61 @@ def render(value, template=None):
     import website.macros.render
 
     return website.macros.render.render(template, value=value)
+
+
+def render_plot(entry):
+    r"""
+    Return html representation of plotly plot.
+
+    """
+    import plotly.graph_objects
+    from astropy.units import Unit
+
+    x_label = "E"
+    y_label = "j"
+    x_label = entry._normalize_field_name(x_label)  # pylint: disable=W0212
+    y_label = entry._normalize_field_name(y_label)  # pylint: disable=W0212
+
+    fig = plotly.graph_objects.Figure()
+
+    fig.add_trace(
+        plotly.graph_objects.Scatter(
+            x=entry.df[x_label],
+            y=entry.df[y_label],
+            mode="lines",
+        )
+    )
+
+    x_field = entry.mutable_resource.schema.get_field(x_label).to_dict()
+    reference = (
+        entry.mutable_resource.schema.get_field(x_label).to_dict().get("reference")
+    )
+    if reference:
+        reference = f" vs. {x_field['reference']}"
+    else:
+        reference = ""
+
+    fig.update_layout(
+        template="simple_white",
+        margin={"l": 40, "r": 40, "b": 40, "t": 40},
+        xaxis_title=f"<i>{x_label}</i>{reference} / {Unit(entry.field_unit(x_label)).to_string(format='unicode')}",
+        yaxis_title=f"<i>{y_label}</i> / {Unit(entry.field_unit(y_label)).to_string(format='unicode')}",
+    )
+
+    fig.add_hline(y=0.0, line_width=2)
+
+    x_min = entry.df[x_label].min()
+    x_max = entry.df[x_label].max()
+    x_padding = (x_max - x_min) * 0.05
+    y_min = entry.df[y_label].min()
+    y_max = entry.df[y_label].max()
+    y_padding = (y_max - y_min) * 0.05
+
+    fig.update_xaxes(
+        showline=True, mirror=True, range=(x_min - x_padding, x_max + x_padding)
+    )
+    fig.update_yaxes(
+        showline=True, mirror=True, range=(y_min - y_padding, y_max + y_padding)
+    )
+
+    return fig._repr_html_()  # pylint: disable=W0212

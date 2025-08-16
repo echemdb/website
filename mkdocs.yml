@@ -63,5 +63,3 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.js
   - https://cdn.jsdelivr.net/npm/katex@0.16/dist/contrib/mhchem.min.js
   - https://cdn.jsdelivr.net/npm/katex@0.16/dist/contrib/auto-render.min.js
-
-
