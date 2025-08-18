@@ -127,7 +127,6 @@ def main():
     print(f"Generated ionic liquid overview page in {t_ionic_liquid:.2f} seconds")
 
 
-
 def material_filter():
     r"""
     A lambda that filters a database by a material that can be be passed
