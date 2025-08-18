@@ -5,6 +5,7 @@ This module is invoked by the `mkdocs-gen-files module
 <https://oprypin.github.io/mkdocs-gen-files/>` to generate pages such as the
 individual pages for each entry in the database.
 """
+
 # ********************************************************************
 #  This file is part of echemdb.
 #
@@ -28,6 +29,7 @@ individual pages for each entry in the database.
 # ********************************************************************
 
 import os.path
+import time
 
 import mkdocs_gen_files
 
@@ -42,60 +44,40 @@ def main():
 
     This function is invoked automatically by mkdocs during the build process.
     """
-
+    t_pages_start = time.time()
     database = website.generator.database.cv
     # Create a single page for each entry in the database
     for entry in database:
+        print(f"Generating page for {entry.identifier}")
         with mkdocs_gen_files.open(
             os.path.join("cv", "entries", f"{entry.identifier}.md"), "w"
         ) as markdown:
             markdown.write(
                 render(
                     "pages/cv_entry.md",
-                    database=database,
                     entry=entry,
                 )
             )
+    t_pages = time.time() - t_pages_start
+    print(f"Generated {len(database)} pages in {t_pages:.2f} seconds")
+    t_aqueous_start = time.time()
     # Create an overview page with tabulated and linked entries for aqueous systems.
     with mkdocs_gen_files.open(os.path.join("cv", "aqueous.md"), "w") as markdown:
+        print("Generating overview page for aqueous systems")
         markdown.write(
             render(
                 "pages/cv.md",
                 database=database.filter(
-                    lambda entry: entry.system.electrolyte.type == "aq"
+                    lambda entry: entry.system.electrolyte.type == "aqueous"
                     and "BCV" in entry.experimental.tags
-                ),
-                intro="Cyclic voltammograms recorded in CO containing aqueous electrolytes.",
-                material_filter=material_filter(),
-            )
-        )
-    # Create an overview page with tabulated and linked entries for CO oxidation (COOR) in aqueous systems.
-    with mkdocs_gen_files.open(
-        os.path.join("cv", "aqueous", "COOR.md"), "w"
-    ) as markdown:
-        markdown.write(
-            render(
-                "pages/cv.md",
-                database=database.filter(
-                    lambda entry: entry.system.electrolyte.type == "aq"
-                    and "COOR" in entry.experimental.tags
                 ),
                 intro="",
                 material_filter=material_filter(),
             )
         )
-    # Create an overview page with tabulated and linked entries for ionic liquid systems.
-    with mkdocs_gen_files.open(os.path.join("cv", "ionic_liquid.md"), "w") as markdown:
-        markdown.write(
-            render(
-                "pages/cv.md",
-                database=database.filter(
-                    lambda entry: entry.system.electrolyte.type == "ionic liquid"
-                ),
-                intro="Cyclic voltammograms recorded in ionic liquids.",
-                material_filter=material_filter(),
-            )
-        )
+    t_aqueous = time.time() - t_aqueous_start
+    print(f"Generated aqueous overview page in {t_aqueous:.2f} seconds")
+
     # Create an overview page with tabulated and linked entries for all systems to compare.
     with mkdocs_gen_files.open(os.path.join("cv", "compare.md"), "w") as markdown:
         markdown.write(
@@ -107,6 +89,44 @@ def main():
             )
         )
 
+    t_coor_start = time.time()
+    # Create an overview page with tabulated and linked entries for CO oxidation (COOR) in aqueous systems.
+    with mkdocs_gen_files.open(
+        os.path.join("cv", "aqueous", "COOR.md"), "w"
+    ) as markdown:
+        print("Generating overview page for COOR in aqueous systems")
+        markdown.write(
+            render(
+                "pages/cv.md",
+                database=database.filter(
+                    lambda entry: entry.system.electrolyte.type == "aqueous"
+                    and "COOR" in entry.experimental.tags
+                ),
+                intro="Cyclic voltammograms recorded in CO containing aqueous electrolytes.",
+                material_filter=material_filter(),
+            )
+        )
+    t_coor = time.time() - t_coor_start
+    print(f"Generated COOR overview page in {t_coor:.2f} seconds")
+    t_ionic_liquid_start = time.time()
+    # Create an overview page with tabulated and linked entries for ionic liquid systems.
+    with mkdocs_gen_files.open(os.path.join("cv", "ionic_liquid.md"), "w") as markdown:
+        print("Generating overview page for ionic liquids")
+        markdown.write(
+            render(
+                "pages/cv.md",
+                database=database.filter(
+                    lambda entry: entry.system.electrolyte.type == "ionic liquid"
+                ),
+                intro="Cyclic voltammograms recorded in ionic liquids.",
+                material_filter=material_filter(),
+            )
+        )
+
+    t_ionic_liquid = time.time() - t_ionic_liquid_start
+    print(f"Generated ionic liquid overview page in {t_ionic_liquid:.2f} seconds")
+
+
 
 def material_filter():
     r"""
@@ -116,7 +136,7 @@ def material_filter():
     Unfortunately, jinja does not allow such generic lambdas.
     """
     return lambda material: (
-        lambda entry: entry.system.electrodes.working_electrode.material == material
+        lambda entry: entry.get_electrode("WE").material == material
     )
 
 

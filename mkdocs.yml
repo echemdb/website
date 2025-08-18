@@ -15,6 +15,8 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/katex.css
+  - https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.css
 
 plugins:
   - search
@@ -39,18 +41,13 @@ markdown_extensions:
   - def_list
   - footnotes
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - markdown_include.include:
       base_path: pages
   - attr_list
   - pymdownx.arithmatex:
       generic: true
-      inline_syntax:
-        - dollar
-      block_syntax:
-        - dollar
-        - begin
   - pymdownx.details
   - pymdownx.superfences
   - footnotes
@@ -63,8 +60,11 @@ markdown_extensions:
 
 extra_javascript:
   - javascripts/config.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+  - https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js
   - javascripts/tables.js
   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
-  - https://d3js.org/d3.v7.min.js
+  - https://cdn.jsdelivr.net/npm/d3@7
+  - javascripts/katex.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16/dist/contrib/mhchem.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16/dist/contrib/auto-render.min.js

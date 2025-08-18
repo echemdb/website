@@ -1,5 +1,5 @@
-# {{ entry.system.electrodes.working_electrode.material }}({{ entry.system.electrodes.working_electrode.crystallographic_orientation }}) <small>- {{ entry.system.electrolyte | render("components/electrolyte.md") }}</small>
-<small>echemdb identifier: `{{ entry.identifier }}`</small>  
+# {{ entry.get_electrode('WE').material }}({{ entry.get_electrode('WE').crystallographicOrientation }}) <small>- {{ entry.system.electrolyte | render("components/electrolyte.md") }}</small>
+<small>echemdb identifier: `{{ entry.identifier }}`</small><br>
 <small>tags:
 {% set separator = joiner(", ") %}
 {% for tag in entry.experimental.tags %}
@@ -9,14 +9,14 @@
 </small>
 
 A cyclic voltammogramm for
-{{ entry.system.electrodes.working_electrode.material }}({{ entry.system.electrodes.working_electrode.crystallographic_orientation }})
+{{ entry.get_electrode('WE').material }}({{ entry.get_electrode('WE').crystallographicOrientation }})
 recorded in
 {% if 'COOR' in entry.experimental.tags %}
 CO containing
 {% endif %}
 {{ entry.system.electrolyte | render("components/electrolyte.md") }}
 at a scan rate of
-{{ entry.figure_description.scan_rate | render }}
+{{ entry.figureDescription.scanRate | render }}
 from Figure
 {{ entry.source.figure }}
 in
@@ -32,18 +32,21 @@ in
 -->
 
 ## Further information
-The figure shows {{ entry.figure_description.type }} data.
 
-{% if entry.system.electrodes.working_electrode.preparation_procedure is defined %}
-The {{ entry.system.electrodes.working_electrode.material }}({{ entry.system.electrodes.working_electrode.crystallographic_orientation }}) electrode was prepared by:
-{{ entry.system.electrodes.working_electrode.preparation_procedure }}
+The figure shows {{ entry.figureDescription.type }} data.
+
+{% if entry.get_electrode('WE').preparationProcedure is defined %}
+The {{ entry.get_electrode('WE').material }}({{ entry.get_electrode('WE').crystallographicOrientation }}) electrode was prepared by:<br>
+{% for step in entry.get_electrode('WE').preparationProcedure.description %}
+* {{ step }}<br>
+{% endfor %}
 {% else %}
 Preparation procedure not available.
 {% endif %}
 
-{% if entry.figure_description.comment %}
+{% if entry.figureDescription.comment %}
 **Comment left by the curator on the published figure**
-{{ entry.figure_description.comment }}
+{{ entry.figureDescription.comment }}
 {% endif %}
 
 ## Metadata
@@ -69,7 +72,7 @@ Preparation procedure not available.
 <summary>Details about the original figure in the publicaton (yaml).</summary>
 
 ```yaml
-{{ entry.figure_description.yaml }}
+{{ entry.figureDescription.yaml }}
 ```
 </details>
 

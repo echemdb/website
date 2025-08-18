@@ -10,9 +10,10 @@ The `render` macro renders an element using a specific template::
 
     >>> snippet = StringIO("{{ render('components/quantity.md', value=value) }}")
     >>> render(snippet, value={ 'quantity': 1 * Unit("mol / l") })
-    '1 M'
+    '$1 \\; \\mathrm{M}$'
 
 """
+
 # ********************************************************************
 #  This file is part of echemdb.
 #
