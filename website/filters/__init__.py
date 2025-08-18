@@ -44,9 +44,10 @@ def enable_filters(env):
     """
     from base64 import b64encode
 
-    from website.filters.render import render
+    from website.filters.render import render, render_plot
     from website.filters.unicode import unicode
 
     env.filters["render"] = render
+    env.filters["render_plot"] = render_plot
     env.filters["unicode"] = unicode
     env.filters["b64encode"] = lambda value: b64encode(value).decode("utf-8")
