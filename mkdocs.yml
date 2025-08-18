@@ -27,10 +27,9 @@ plugins:
   - section-index
   - literate-nav:
       nav_file: NAVIGATION.md
-  - mkdocs-simple-hooks:
-      enabled: !ENV [ENABLE_MKDOCS_COPY_DATA, True]
-      hooks:
-        on_post_build: "website.hooks:copy_data"
+
+hooks:
+  - website/data_hooks.py
 
 markdown_extensions:
   - extra
