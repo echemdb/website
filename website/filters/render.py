@@ -148,5 +148,4 @@ def render_plot(entry):
     fig.update_yaxes(
         showline=True, mirror=True, range=(y_min - y_padding, y_max + y_padding)
     )
-
-    return fig._repr_html_()  # pylint: disable=W0212
+    return fig.to_html(full_html=False, include_plotlyjs="https://cdn.plot.ly/plotly-3.1.0.min.js", include_mathjax=False)

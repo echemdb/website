@@ -12,8 +12,8 @@ Click a graph to add it to the comparison.
 
 
 
-<script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
-<script src="https://d3js.org/d3.v7.js"></script>
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 
 <script>
 

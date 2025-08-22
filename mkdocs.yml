@@ -56,11 +56,12 @@ markdown_extensions:
 
 extra_javascript:
   - javascripts/config.js
-  - https://cdn.jsdelivr.net/npm/polyfill-library@4.8.0/lib/index.min.js
+  - https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js
   - javascripts/tables.js
-  - https://cdn.jsdelivr.net/npm/tablesort@5.6.0/src/tablesort.min.js
-  - https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js
+  - https://cdn.jsdelivr.net/npm/tablesort@5/src/tablesort.min.js
+  - https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js
   - javascripts/katex.js
   - https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.js
   - https://cdn.jsdelivr.net/npm/katex@0.16/dist/contrib/mhchem.min.js
   - https://cdn.jsdelivr.net/npm/katex@0.16/dist/contrib/auto-render.min.js
+  - https://cdn.plot.ly/plotly-3.1.0.min.js
