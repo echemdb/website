@@ -1,0 +1,145 @@
+/*
+ * Spotlight cards for the homepage.
+ *
+ * Apparently, spotlight is a sponsor-feature of mkdocs-material (or completely unreleased.)
+ * Since we want something like this on our homepage, we roll our own. Once
+ * this has been open-sourced, we should use the mkdocs-material feature
+ * instead.
+ **/
+.echemdb-spotlight figure {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 0 6em 3em;
+    text-align: left;
+    gap: 3em;
+}
+
+.echemdb-spotlight figure > p {
+    margin: 0;
+}
+
+.echemdb-spotlight figure > p:first-child {
+    flex-shrink: 0;
+    /* Align images and headings. */
+    margin-top: 1.2em;
+}
+
+.echemdb-spotlight figure.echemdb-spotlight-reverse {
+    flex-flow: row-reverse nowrap;
+}
+
+.echemdb-spotlight figcaption {
+    margin: 0 0 .5em 0;
+    font-style: normal;
+    max-width: 100%;
+}
+
+.echemdb-spotlight figcaption h2 {
+    margin: .8em 0 0 0;
+}
+
+.echemdb-spotlight img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: 40ex;
+    border-radius: .3ex;
+    box-shadow: 4px 5px 20px -6px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .echemdb-spotlight figure , .echemdb-spotlight figure.echemdb-spotlight-reverse {
+        flex-flow: column;
+        gap: 0;
+        margin: 0 0 3em 0;
+    }
+
+    .echemdb-spotlight img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 28rem;
+        box-shadow: unset;
+    }
+
+    .echemdb-spotlight figure > p:first-child {
+        margin-top: 0;
+    }
+
+    /*
+     * Shade every other spotlight so that it is clear on mobile which figure belongs to which caption.
+     */
+    .echemdb-spotlight figure.echemdb-spotlight-reverse:before {
+        position: absolute;
+        content: "";
+
+        /* A random shade of gray. We might be able to replace this from a color from the logo evenutually. */
+        background-color: #efefef;
+
+        /* Span the entire width of the screen */
+        width: 200vw;
+        left: -100vw;
+
+        height: calc(100% + 1.5em);
+        top: -1.5em;
+
+        z-index: -1;
+    }
+
+    /*
+     * The headers can be confusing on mobile since they break which picture belongs to which text. Since they are repeated in the text anyway, we hide them.
+     */
+    .echemdb-spotlight figcaption h2 {
+        display: none;
+    }
+}
+
+/*
+ * Do not wrap sort buttons in column headers. (So we do not get oversized headers.)
+ */
+th[role=columnheader] {
+  white-space: nowrap;
+}
+
+/*
+ * Animated hover for CV thumbnails.
+ */
+tr img.echemdb-cv-thumbnail {
+  transform: unset;
+  height: calc(72px / 1.5);
+  /* Chrome blurs the thumbnails when they are scaled down. So we ask all webkit browsers to optimize for high-contrast. */
+  image-rendering: -webkit-optimize-contrast;
+}
+
+tr:hover img.echemdb-cv-thumbnail {
+  transform: scale(1.5);
+  transition: transform 125ms;
+}
+
+/*
+ * Hide elements on mobile.
+ */
+
+@media screen and (max-width: 768px) {
+  .echemdb-hide-mobile {
+    display: none;
+  }
+}
+
+/*
+ * Expand tables to full width.
+ * Note that one of the th cells needs to be marked with the
+ * .echemdb-expand-column class to make sure that the table contents also fill
+ * the entire width.
+ */
+.md-typeset__table {
+  width: 100%;
+}
+
+.echemdb-expand-column {
+  width: 100%;
+}
+
+.md-typeset table:not([class]) td.echemdb-middle-cell {
+  vertical-align: middle;
+}

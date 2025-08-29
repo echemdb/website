@@ -1,0 +1,1071 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../aqueous/COOR/">
+      
+      
+        <link rel="next" href="../../about/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Ionic Liquid - echemdb.org</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/katex.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cyclic-voltammograms" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="echemdb.org" class="md-header__button md-logo" aria-label="echemdb.org" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            echemdb.org
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ionic Liquid
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  CV
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://echemdb.github.io/unitpackage/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  API
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="echemdb.org" class="md-nav__button md-logo" aria-label="echemdb.org" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    echemdb.org
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    CV
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            CV
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../aqueous/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Aqueous
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Aqueous
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aqueous/COOR/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    COOR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Ionic Liquid
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ionic Liquid
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#au" class="md-nav__link">
+    <span class="md-ellipsis">
+      Au
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://echemdb.github.io/unitpackage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#au" class="md-nav__link">
+    <span class="md-ellipsis">
+      Au
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="cyclic-voltammograms">Cyclic Voltammograms</h1>
+<p>Cyclic voltammograms recorded in ionic liquids.</p>
+<p>Click a graph for more details.</p>
+<h2 id="au">Au</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Substrate</th>
+<th class="echemdb-expand-column">Electrolyte</th>
+<th class="echemdb-hide-mobile">Year</th>
+<th class="echemdb-hide-mobile">Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/atkin_2009_afm_13266_f4a_solid"><img alt="atkin_2009_afm_13266_f4a_solid" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAABIZJREFUeJzt22/onlMcx/HXmc2fkcZ+GEWzxpYRhT2wCFueEBmSWnskD0SaZx54sPLngVA8QjP5GymKwqKISFiesGa0GfJvLH83G74enKv8LL+2+7rOXPO7zrtO5+7+3d/vda7v5z7f8z3nvn4pIlT6Y0rfAxg6VYCeqQL0TBWgZ6oAPVMF6JkqQM9UAXqmCtAzVYBCpOSolBw9ql0VoBxf4ZlRjaoAZXlxVINUD+O6k5IxfIs5ETaOYltnQBmubPpNoxrWGVCAlGzA3AhpVNs6A8owF6+3MawCdCQlRzQv729jXwXozpKmf7uNcRWgO8ua/pM2xnUR7kBKpmIn1keY38ZHnQHdOL/pH2rroArQjeVN36oCoqag1qRkHj6Uv8QHRvitjZ+pRUe1D9OUiytwHBK2yscHR+FP3Brhyz30tQDP4g381Db4DCsF3Yc5eAkv4CNMwzr8ivdTcm1K5qc08Y42JVfgVdyCb7Q4Af2HvyGkoJRcittxWoTtE3xmoTxDFsmVzQt4Ez/iIByMs3ABluILWbx5Eb5tPbbJLkBKDsUHWBbhtT34fMIpcqAXYjq24xf5sO2eCN+lZBV+jnBDp/FNZgGaYD6InRGuKejzRlyDMyL81MXfpFyEm0VyOS7ENpxXwOdBWIzrcAyWdA0++/gMSMkBmDFBG2vaEbv0Y3KF84i8QK6N8PturpNwyDj7MRyJ2TgeJ2EB1uJRrI6wo8g97i0Bmps6B5djvnxTh8k3OkUuBXdiR/N62r+08dXIZvm8ZS6OneCyP2AlDsXp8uK5azsQ+zf+p47rf8aWXdqn2Ij1eC/CttYBmYC9IkBKjsEquexbjfflku17eTH7Qw7uVDkYIYsxvi3F3fLCNx2zMFMOxmNyKfi5f4p3Ih7AGjwll5fbdmnbZdHHX+v3CP2kgogo2ojZxEZiJTGthf0U4jZiA3HmCHaJeIdYUfqe9mYrOgNSsr9cOz8R4c5x7x8ip6G1Ef5sfsS+AWfK38ZX5Wple9PPxsURtox4/VkRvipwK/8ZpXfCV8tp5i6yICm5Hh/jabyVkqvxnrzI3SufJJ4u59p12A+LRw0+/N+Cj3IpqEkdm4iFxDnE48TXxEvEqc3flxMvE5f8i/0YcTYxpe+08L9MQSlZJP8ueh2exM1YEyM+JzM0Sm7ELsK7eAJXRXiloO9JS0kBFuFs3FSDv+cUSUFN9fObXLOfELvZeVb+plQVdFrT31GDPxqlBDi56Z8v5G8wlBLgEoiwuZC/wVBqDQhsizC9+5CGRcmd8MMFfQ2GzgKM+wH7ya6+hkiJGXB8079ZwNfgKCHAZRAdno0ZMsUEqLSjcxXUVEA/RJhRZEQDo1QV9FwhP4OjCtAznVJQSg6WnyY4PMLWYqMaEF1nwLlQg9+ergJcVGQUA6arABcUGcWA6SrAHHxWYiBDpUQVtKaAj8FSBeiZ1mVoSqbJT7XNjPB90VENiC4zYAxq8LvRdSOWInp6qniS0GkNqMHvzpD+TXWfpArQM1WAnqkC9EwVoGeqAD1TBeiZKkDP/AWavEnRAan0ggAAAABJRU5ErkJggg==" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMP-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2009</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1021/jp9026755"> Atkin <strong><em>et. al.</em></strong> Fig. 4a (solid)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/atkin_2009_afm_13266_f4b_solid"><img alt="atkin_2009_afm_13266_f4b_solid" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAABBhJREFUeJztnE2IHUUQx3/1drORmMRgIKwfh6jEg6h7UUSF3cgue1HIHrwJHsSLNz2IQgTFiwgeVBDxoDl5kIgSg+LFIGqQiKKooBsUCWKMRE2M5vujPFQnLn6sb7pr6OxM/WCoWXhd3a/+Xd0zNW9WVJWgHoPaA+g7IUBlQoDKhACVCQEqEwJUJgSoTAhQmRCgMiGAEyKMi3Bp03YhgB8/As83bRQCOCDCZen0qaZtQwAfnkn2g6YNJaqhZYiwDDgB7FBlumn7yIBy5pJ9IqdxZEAhInwHrAeWq3KiafvIgAJEuAYL/os5wYcQoJT7kt2S6yCWoExEWAn8DpwCxlTJCmRkQD53JftkbvAhMiALEUaA74FLgPWq7Mn1FRmQx51Y8LeVBB8iAxojwhjwJbABmFHlnRJ/kQENEEGAx7DgfwrsKPUZAixCCjgiiAjTWMA3AT8Dj5Rsvuf6WCpLkAgTwEPALuBZjy+/SF8D4G6svHAQGAOOYEW3i7Dyw2SnBRBhOXAVcDlwD7ARC8Ac8CuwGfhMlTOZ/gfAaiywNwGPAseB3cAsdo1/f/rM1anZbPrsrap8k9PvP8ZRS4AUgHHgCux2fi2wZsFxOzb79gJvA8+p8keqPj6MBefi5O4oVpEcpGMkHWfPh+Et4CS2xJwEfgLWAYeBeWzjfRfYrsqhxl/4P2hVABHGsZk6iQV4LXDBkM3ngT3YDFz1t+MMFvRlwIoh/f2GzfYjWFD3pXNN/k4Bp4GvgY+Br4B9qhwb0n8WrQmQNrBPgPeAbViKT2EpvhP4AvvCI8Aof83Yw1j6LzwOLfw7t/B1PjLaou8pbLZvBV4FXgPmVDnYYp9LjjYzYAvwObaBPq7K1lY6WuK0ch+QaiV3YEuGYhkQ/Att3YjdAvwA3Aa80OY1+1KnlSVI5NzPM+4FNqiy372TjtBWBmxKdmcEf3HcBRDhSmAlVrB6xdt/12gjA2aAD7HSwfYW/HeKNgSYxu4vdqlyoAX/ncJVgFTfmcbKB697+u4q3hkwgZUNrsfKD8H/4C3ADFbUmldlr7PvTtKGAKuxuk8wBG43YukByi9YVfM6rwcWXcczA24GLgS+jeAPj6cAG5N9w9Fn5/EUYCrZuPppgMsekNb/Y9gjvlW5D8r7iFcG3JDsyxH8ZngJMJlsrP8N8VqCPgJuBFaocrTYYY8ozgARRrHgvx/Bb47HEjSR7EsOvnqHhwCzyb7p4Kt3FO8BIhzH3pESnyH1i6IMSPX/MeBpl9H0kNIl6NpkG/+XkMAoFeABAFV2O4yllxTtASIosF+VdX5D6hfZGXD29R3gQaex9JLsDBBhDXAAGFXltOeg+kTpEjSI4lsZ5+07Yn0hXlOtTAhQmRCgMiFAZUKAyoQAlQkBKhMCVOZPUP8gccnO78kAAAAASUVORK5CYII=" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ EMIM-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2009</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1021/jp9026755"> Atkin <strong><em>et. al.</em></strong> Fig. 4b (solid)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/atkin_2011_an_6849_f1_black"><img alt="atkin_2011_an_6849_f1_black" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMP-FAP }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2011</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1039/c0cp02846k"> Atkin <strong><em>et. al.</em></strong> Fig. 1 (black)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/atkin_2011_an_6849_f1_inset"><img alt="atkin_2011_an_6849_f1_inset" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAAA4xJREFUeJztm0lrFkEQhp/KYgJqjGDiDiruehHBBREFLx48eNCDRxHRq/gX/BcuJ48K+QHiQcUNBRdUcAc33NCg4hKT9tAd/Yyi+boK2tj1QFPNJFXT871d3dM9MxJCwClHS+kG1I4LUBgXoDAuQGFcgMK4AIVxAQrjAhTGBSiMC2CECL0iTG/az7cibBBhALgfAoua8fMMsKMNeNSskwtgy6lmHVwAA0SQVHUBCtGT7I1mHV0AG5Yn+6pZRxfAhvUAIdD0LaULYMOGXEdfBxggwiDQEsL3yXjUeAbY0AJczHV0bGj6FhRcADUiTEzVCzn+LoCeecneznF2AfQsSPZejrMLoGcDQAh8yHF2AfRs1ji7AHrmAw9znV0ABQ27oIdzY7gAOmYn25cbwAXQsTvZW7kB/ru9IBHkd7uSIiwFeon3689ydi5HxGsHvgD9IdCdG6dN04h/BRHagB3AfmC5CE+IK9NzwF1iT10J3AcWA60i3Ex/ezqivAbeAx9SGQJagXHAFGAOsArYm06/XdX2sZwBIswEtgL7gCfAAeA0cWxeA6wFlgDHgUMh8ClNnD3AMmAuMAOYnuwMYDIwEZgAjE+nGgQGgM/ETtsBtANHQmCX6hosBRBhIbCN+IRoMj9fQGMJgIyyzAdm/eXU14k9vp04r0myfyq/+5/WhtKW4nUAXUB3OnYPuAocA/q0Q5nZECTCTuAQuon9HXGMvkPsgVvS8a/Ac+AFcXjoBx4Aj4nj8EBDGRpFCX84/jWVwWS/AG9TeR8CQ4rr+wWTDGiYkACOEnvHFX709uGLG1lvJfawDmASsbcvSBbgIHBW28v+ZawyYGOy00LguSLOZYO2jCms1gF7AJQ/fpVYDUFvgO6cZ6K1Y5UB3cA1o1hVYbkVccIwVjWoBRChK1XPaGPViEUGDL8Pn/VMtHYsBFiYbNYz0dqxEGAdQAh8MohVHRYCbDKIUS3qdYAIAXgRAlNtmlQXVrehJ43iVIeVAKeN4lSHSgARJqTqJYO2VIk2A4bfCniojFMtWgEWJ/tS25Ba0QqwBvK+jXIiWgFWm7SiYlTrABE+Ap3+HCAfbQZ0ongrzLFZB2R9muNELAQ4bxCjWiwEyPo804lkT8IijCe+JDUuBAZMW1URmgxYAeA/vg5NBgjQFQL9tk2qizH9dvT/gH8hUxgXoDAuQGFcgMK4AIVxAQrjAhTGBSjMN2up48AjQ24hAAAAAElFTkSuQmCC" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMP-FAP }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2011</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1039/c0cp02846k"> Atkin <strong><em>et. al.</em></strong> Fig. inset (inset)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/atkin_2014_structure_44_f2a_black"><img alt="atkin_2014_structure_44_f2a_black" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAABhJJREFUeJzt3HusXFUVx/HPakGQR1taqQ+gLYK1KK9aqmiw2lJNrZKgCQSfBSOKgWiMCX8gRo1RYzQiPuCPig+CmiZIFNQYU8W3FAwC0miLFBBbIzSUCrYCwvKPfaBN2wuemTNzpveebzJ/3Jk5a6/Zv3P2Y+21bmSmjvaY1LYDE51OgJbpBGiZToCW6QRomU6AlukEaJlOgJbpBGiZToAGiDApwuURZta9thOgTyI8Gz/CeTi17vWdAH0QYTK+jQfxPT30ZydAj0SYhMsxFWfjTsyua6cToAci7INvYS5Oz/QIpmFLXVudADWJcCCuxgwsz/RQ9dFs3FPXXidADSIci99iq3Lnb9vp47nKMFSLcStAhIMizItwaJ92IsL8CCvxc1yGszM9utN3pmEm/lrX/j79ODeKRJiOT+Pt2ISZEbbjJtyItXgch+MIPIwNeAxnYDl+hs14Lk7CI7gCL8m0eQ/NLsStmR6v7e94OZKMcIjS6R/BNbg405YIoYzPC/FyvBiTsVEZsw/GUdgP1+P7OBlT8E/cjjszjdlRES7FfZk+VdvvvUGACM/CCXgpjlEmwANwEE89/ofjx/h8phuH6Nv+uAtLMv257vUjOwRVnf5mvBOLlGHiT/iLMtZuU4aPrcpwsS7TYy24eg5u6aXzGdEnIMJSZZPzd6zETzI90K5XuxNhtjK3vC7TrT0ZycyRepEXkJvIN7TtyzP4eTS5jvxAX3ba/iG7/KgV5N3k7LZ9GcO/aeQS8ovkZvK8fm2OzBwQYRk+i9dm1t9RDsCfUFZDp+N4HKtM+Lcpq6X5me7tu52ibLtEOB6rld3l73q0cRyWYYGyKtquTNRPvrYoc8qDeF7196+wIXPHErOK87wNF1VvrcIflOXoPZme6MW/Mf1uW4AIx+CnuDDTd3u4fo6ySXoRrsMNygZsf2Wp+uRrhrLxmoZ/KJus1+AJ/BJrlGXtubgbn8T1O4szCFodgiK8CV/Te+cfqcRmvoBlWXMZWg0zRylCnIRHcVamNXV96ZWhPAERpmIpZil34BRlYzUHKzL9ugebk5XOX5XpksacHTIDDcZVZ6UXKDvFdysdnrhXCWrN66XzK85V7thLG3C1NQY2BEU4DF9XToxekemOBm0fgI/itKYnxWEzkCcgwhm4Gb/BKU12fsX5+H2mmxu2O3QanQMiTMFXlajjOzLd1JjxHW0crMSClmRa27T9YdPYExBhgXLXP6xsUhrv/IoPYvV46Hw0E4og30reT545hFDAZnJu22GJpl59T8LVeP85LM50e7/2noEP4YeZ1g+4naHR1xxQrXRuwesz/bEpp8ZoawbWY2GmDYNsa5j0K8BXsC3Thc25tFsbC7BYOZTZmOn9g2qrDXoWoMoMux8nNhEVHKONpfgOrsW/cFGm/wyirbboR4BpSnRwaqMe7bC/L+7AezKtHkQbo0A/y9AD8e+mHNkDb8Fd47nz6S8U8RCeH2EJple2NuMXmf7bgG9n4ZsN2Blp+hmCQom9b8cDSmLTHCXmfiW+kWldz46F+5T5ZVOvNvYGGg9HVwcs5+BdSvLTZzJdXdPGDCXP8pBBH4i0zcDOA6qjvTdiZWa90p0IL8MVmeYPxLkRYmDnAdU8cC32q+7oOsxiMEvbUWOgBzLV8LFOyceswxE6ARpjLY6rec0s/G0AvowcwxDgOnwswitrXNM9AU2R6Rq8Dz+IcOb/ednRSmrIuGdoeUERTlDqaT+cadXTfG+qkkB16HiL++yJoZUoZckePg1frrKKx2IR1kyEzmfINWLVmcFKXPw0XztVKRGaEAw9NbGq4VqvpKrsVlUY4TYlAjq0Kpc2aSU3NMLHcWSmFbu8P0NJ4preUEBv5GmrTPUSLI8wb5f3X4UbJkrn05IAmbYqCbWf2OWjU5RkrglDm4XaX8KiCCfu9N6rTTABWq0PiHC+Uhy9GIcp1ScvmChLUNoXYLJSGHGVUtXynEzvbc2hFhiFCpkXKuVJ++LkTBtbdWjItC4AT6W4RPbwvxb2dkZCgInMuP13NXsLnQAt0wnQMp0ALdMJ0DKdAC3TCdAynQAt8z8JMwFTljd/6QAAAABJRU5ErkJggg==" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ EMIM-FAP }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2014</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1016/j.molliq.2013.08.006"> Atkin <strong><em>et. al.</em></strong> Fig. 2a (black)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/atkin_2014_structure_44_f2b_black"><img alt="atkin_2014_structure_44_f2b_black" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMPY-FAP }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2014</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1016/j.molliq.2013.08.006"> Atkin <strong><em>et. al.</em></strong> Fig. 2b (black)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/berger_2017_lithium_261_f1_black"><img alt="berger_2017_lithium_261_f1_black" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAABLZJREFUeJzt3E+oFVUcwPHP8enz+acsNTMJMsP8h1gkqVFJLcLEVllBi1oE0qJVrdy3CGoVgZv+4CKhVRARQkkUFFmphZFpf0TL1NRUwj+lvtPizMWb5fO9O0cm7z1fGGbueXPPnPf7nj8zZ2ZuiDEqNMeopgvQ6xQBDVMENEwR0DBFQMMUAQ1TBDRMEdAwRUDDdK2AEMwMwcoQXNV0WYYidONURAgW4kN8gzlYi/UxqvXPVjIfw1O4GQewD79iDJ6P0Q8jyrPbBISgD5uxLkavhWAx1uEkXsEn2N+SEYKxuBHXScHch7G4FfMwt1rPwyx8gFexDddjAdYjYEmMPh9RebtQwFo8gPvbgtyHJ/AI7sA4qfZOwFSpBh+SREzDGfyEHfiuWu/AzhidCEGQhKzEs3gHa2N0dMTl7QYBVUCWYA3uw/IY7R1i/8lSoE/hlxida/vbGMQYna3yvUFqDbOl1nB7tRzHRrwRo80dl/1yCQjBaKl5zpFq1pRqmSQ18f62dR/OYfAi63M4e8G6tT0Jy6RgvomXY3SsKkOQ+uYBqdaPq7YntC3j27anSgGfjplS0E9iV9vyFbbF6LcscbocAkLwJF7CYanp7sWRajmOv5yXcbr6fAhHpb60T6ptazB/GIc8gk3SWd0iTHY+6IOSnFPVsU5JQT1RLe3bR7Bf6p72YFeMjncah+GQXUAIHsWLWBWj7W3p4/EwVuNeKRgHpYD3SwPaALZKNXs+Xse72C0Fbky1b3/1vVFV2mSplQ1ipzSQnsLpGJ3N+g9mJquAEEyRavyDMdpSpU3Cc3gGn2IDNsXo4H98/2osllrGezH6M1vh/qfkFvACronR021p70tNe22Mdmc7WJcwOldGIRiQLlDuaktbIJ2u3RyjM7mO1U3knIpYha9j9H1b2uPYUIJ/cXIKeAhvX5C2Gm9lPEbXkWUMCMEo6YxmcYz2VGmzpEF3RowGax+kS8nVAmbjj1bwK1ZgYwn+0OQScCf/moRaIV2qF4Ygp4AvWh+qaYjl0sxhYQhyCZjP+ate3Ia9MTqcKf+uJZeAW/Bj2+fl+DhT3l1NbQEh6JdmENunf5fjo7p59wI5WsBM/Ny62KpOSe9WWsCwyCFglnT3qMVCHIrRgQx5dz05BMyQpn9b3KPU/mGTQ8B0/lHbl0lXwIVhcDkELMVnGfLtCbIKCME06e7Uzgz59gS5W8BSbC7zP8Pncggo3c8IKAIaptb9gOo25HHpaYY+6bGSm2L0e57idT91W8C1OFo9ArgA+0rwR0YWAdV26X46IKeAJXT+jGSvklPAYnxZM7+eI4uAEIyT7gtvv8T+hQvI1QIWYUeMTtcvUm+RQ8Ax6aWHLbVL04PkagFFQIcUAQ1TV0DrBYsyAHdIXQETpVuSO8sA3Bk5BMxVup+OqStggtT9bM1Qlp6k7gsaE6WX7b7NUJaeJIeAqdJ7YYUOqHs/IEqvmA7U/R2GXqXjMaB6/R+2lOB3Tp1BeHy1Lv1/DeoI6K/Wpf+vQR0BrS6oCKhBHQGt7xYBNcjxWMq+S+9SuBh1T0NHlafg6tEVP9h0JdO1v5p4pVAENEwR0DBFQMMUAQ1TBDRMEdAwRUDD/A3LS17VY1C8tgAAAABJRU5ErkJggg==" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ MPPi-TFSI }\)</span> + <span class="arithmatex">\(0.02 \; \mathrm{M}\)</span> <span class="arithmatex">\(\ce{ lithium bis(trifluoromethylsulfonyl)imide }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2017</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1002/celc.201600730"> Berger <strong><em>et. al.</em></strong> Fig. 1 (black)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/berger_2017_lithium_261_f1_inset"><img alt="berger_2017_lithium_261_f1_inset" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ MPPi-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2017</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1002/celc.201600730"> Berger <strong><em>et. al.</em></strong> Fig. 1 (inset)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/berger_2017_lithium_261_f1_pink"><img alt="berger_2017_lithium_261_f1_pink" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ MPPi-TFSI }\)</span> + <span class="arithmatex">\(0.02 \; \mathrm{M}\)</span> <span class="arithmatex">\(\ce{ lithium bis(trifluoromethylsulfonyl)imide }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2017</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1002/celc.201600730"> Berger <strong><em>et. al.</em></strong> Fig. 1 (pink)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/bi_2018_minimizing_1_f3a_black"><img alt="bi_2018_minimizing_1_f3a_black" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAABOJJREFUeJzt21uop1MYx/HP2oOJGDNjZjaDEeU0cgpJRMqQ0rgQOSUXhCv3uJAUuSOKQdwgiQuSQkNuyCEjZpzPOYwx5uCUYTwu1trm324w72H2i72+tVrvXm/Petf/+a3T+6x3p4hQGY6xoRsw3akCDEwVYGCqAANTBRiYKsDAVAEGpgowMFWAgakC9ERKxlOyV2O7Goroh5RswIYIi5rY1RHQH7Pwc1OjKkC/fNjUoArQL+82NagC9Mv7TQ2qAD2Qkh3L5QdNbasA/bBnyb9ralgF6Id9Sv59U8MqQD9MCLCxqWEVoB/qCBiY/Ur+Y1PDKkA/HAIRGsd1qgD9cFRbwypAR1KSMI7VbeyrAN2ZeAf4tI1xFaA7x5S88Q6IKkAfnIg3tXgHgB36bcu05DS83ta4joAOpORALJIFqFPQVFIioDdiGXbXIhBHFaAVKTkNH2M2bsYCfNOmripAQ1KyNx7CJRHOiPAj5mNNm/qqAM25FvdGWD5S1noE1F1QA1KyG87H4ZNu1REwRVyA5yN8MVFQQhEL8XWbCqsAzbgcd08qW4DfsbZNhVWAbSQlR8lBt6cn3VqMVW1C0VQBmnAN7oiweVL5cVjRttIqwDaQktNxAm7fyu3T8UzbuqsAf0NKUkrOwwO4uOz5R+/vi6PxXNtnTIttaNmpzMdh8py9GHOxqaRfRvJfZL8swslYj6URXtxK1Tfgvoh2cSD+w5+np2QMe2B9hF9LWZK/UDhUPqc91Banj2ElVpX8W+yInTBzUvodn+NlrBxdYFMyAwfjapyE4yP80Pp3/JsEKA7cTT5lGh/JxyeVTVzvhAeL+SGyYzbinZLetsXpq5vsVFJyAC4s9S7EXvIomi2ffj2OGyKsa/t72Y4CpGSW3BvnjqQ5cuRw9kia+HuO7NTf5PPVr0s+ej1a9hVOxSnyd/mbSvkPCKyTe/knEdY3bPuFuFUW9zV8WZ63Bmu3shNqTW8ClCnhfFwsb812lofxWjlUu66k9SVtGLmeSN/LR3z7yuKN2yLULNmxv+Iz+Vv8zbio3H+vPGczkiz4POwvj4oVeAWv4uWIrcduSs9/BSdHWNnaIdtILwKUqeMeeUdwE16Ue/K8kuaXNA+7Yhdb5tlH5CF9WbFdKTv3C7nHT4g2ceQ3U14gD5SnoCfwwl9NL6VjLCptOw7HlvwjuYcvG11EU3IbNka4rpNTtpG+BDgHd2K5fEQ3S3bcGnkaWFPSWtmRP2EGDpJHzWa5V18a4a3ODfrn9u4gn+VeKS+k50Z4qXSkz7Akwjvbux0gIjon4n0iiFuIhcRYA9uZxD5NbPpMxFJiNTGf2Jv4hkhT9fzOIyAli+VpY1mEK7p3iaknJQ/jWXkRvyrCmVP17D7ehM8u+fU91DUUj+IcHIE3pvLBfYyAgAiplxYNQEp2lbeaL+H+iD/fLbY7fcWC7u2pnkEob7LLsUT+yGrK6CRAShaUy8d6aMvQ3FXyxv9q2oWuwbgjS/5q14YMTYSnUjLW9mClLV2noCXwV2+V/zWm2vl0F+CsXloxjem0Cyo7oK8iLOyvSdOLPnZBT/ZQx7SlCjAwraeglOwsB9Xmdj2UmM50GQFzoDq/G10X4TTE1u3/RKc1oDq/O/W7oIGpAgxMFWBgqgADUwUYmCrAwFQBBqYKMDB/ABhkVwwgxzRgAAAAAElFTkSuQmCC" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMPY-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2018</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1038/s41467-018-07674-0"> Bi <strong><em>et. al.</em></strong> Fig. 3a (black)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/bi_2018_minimizing_1_f3a_blue"><img alt="bi_2018_minimizing_1_f3a_blue" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMPY-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2018</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1038/s41467-018-07674-0"> Bi <strong><em>et. al.</em></strong> Fig. 3a (blue)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/bi_2018_minimizing_1_f3a_red"><img alt="bi_2018_minimizing_1_f3a_red" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMPY-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2018</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1038/s41467-018-07674-0"> Bi <strong><em>et. al.</em></strong> Fig. 3a (red)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/bi_2018_minimizing_1_f3b_black"><img alt="bi_2018_minimizing_1_f3b_black" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMIM-BF4 }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2018</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1038/s41467-018-07674-0"> Bi <strong><em>et. al.</em></strong> Fig. 3b (black)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/bi_2018_minimizing_1_f3b_blue"><img alt="bi_2018_minimizing_1_f3b_blue" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMIM-BF4 }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2018</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1038/s41467-018-07674-0"> Bi <strong><em>et. al.</em></strong> Fig. 3b (blue)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/bi_2018_minimizing_1_f3b_red"><img alt="bi_2018_minimizing_1_f3b_red" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMIM-BF4 }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2018</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1038/s41467-018-07674-0"> Bi <strong><em>et. al.</em></strong> Fig. 3b (red)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/bonhote_1996_hydrophobic_1168_f7_bold"><img alt="bonhote_1996_hydrophobic_1168_f7_bold" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAy1JREFUeJztm79rFEEUxz8vkeQakxSCCCaQWgwG0ihaBBUb/wEVRBTUWrSyU9RKaxEVNKTRFCIoCsHOJtjEQitFbbTzVDA/JD6Lm5MQOcnOvGPIzvvAMrvHznf35st7b/aXqCpOPnpyn0DpuAGZcQMy4wZkxg3IjBuQGTcgM25AZtyAzLgBRoiwVYRtVfu5AXZ8AaardnIDDBBBwurtqn3dABv2h/ZB1Y7id0PTEWEeGFP9GwnrxiPAhjHgaUxHNyCRVTOfSzH93YB0ToX2VUxnrwGJiKAAMfkfPAKSEKERVqPSD7gBqbSnnzOxAp6CEhDhBTAJ9KryO0bDIyCSkH4mgZexgw9uQAqHQlv5/s9q3IB4zoQ26gKsjdeACEQYAT4C86rsStHyCIjjQmhvpQp5BFREhJ3Aa2AFGFDlZ4qeR0AFRNgDzIXNk6mDD7ApVWAjEB6Y9AONsKxe7/Tb2u0h4FyQvKjKfZNz63YKEmEH8IZWtG1hfX82dpA67dMPLIVlcc2y9rdO+ywBn4FZVT6YjU+3DBChF7gGHAMuA+eBQWCBuAFI2Wc55WKpm3TFABF6gClgmNZ0bTdwVpVZ84NtcLpVA64CI8A7YBSYUKXZpWNtaMxnQSKMAyeAJ8A4cNgHvzPmKUiEKaAJHAH2qfLW9AA1w9QAEQaAT7QuVJ6rcsVMvKZYp6ADQXMYuG6sXUusDTgIbAZuqLJorF1LrFPQV1pXjIOqfDcTrjFmERDejxkCZnzw149lCpoI7UNDzdpjacDe0D4z1Kw9ZjVAhAWgEfuCUqmYREC43dsAm1u0JWGVgraH1g2oiJUB7QI899+9nH+wMuAogCo/jPSKwaQIhzeEV1TLeMRpieU09I6hVjEkGyBCX1i9l6pVIhYR0C7AUV+IlI6FAccBVFk20CqO5CIswhLQ51fAcVhEQB/wyECnSKxmQXeNdIojKQWJMAq8p5WCfpmdVUGkRsBpAB/8eFIjoEnr8aMX4EhSI2AQeGxxIqViUYRvGmgUS3QKCi9hfSPhG1knvQb0+OCn4d+IZca/EcuMG5AZNyAzbkBm3IDMuAGZcQMy4wZk5g+ANu+MEjVwzgAAAABJRU5ErkJggg==" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ EMIm-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">1996</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1021/ic951325x"> Bonhote <strong><em>et. al.</em></strong> Fig. 7 (bold)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/bonhote_1996_hydrophobic_1168_f7_dashed"><img alt="bonhote_1996_hydrophobic_1168_f7_dashed" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAs5JREFUeJztm81qFEEQgL/SNSIJChKI8QeCoJ7ECF7Eg0cvvoEn38CH8BF8AC8+gTfBix4UNBcvoqKCEdFD/EGDETHlYXtDhF1Md5VUYtcHQw07qaLT3/bMdO+MqCpJHLuiG9A7KSCYFBBMCggmBQSTAoJJAcGkgGBSQDApwAkR5kSYr87LpQgfRFgB1lQ5UpOXI8CPg0D1tzkF+LJcm5ACfEkBwbytTUgBDoggZTcFBDFT4sfaxBTgw1yJP2oTU4APIwGfahNTgA8jAXkKCiIFBHOoxBQQxIkSv9Qm5mKcAyK8A+ZVN+YDWyZHgA/zwMuWxBRgRGRjEnavJT8F2Dlb4uOW5BRg53yJD1uS8yJsRITXwAIwpcrP2vwcAQZEWGTY+bdaOh9yBDRRlp9PA/eB/cAZVZ601Bp4NmwnIMIAmGa4hLx5G/fZpOPHgaOl5LXWzodtPALKt2wf9Z3zt+NTwCrwbcw26fNxx1aBD6r1yw9//J+eAkSYBRaBz2y9cyb9zTTD9XWPztq8ranWP73wr/AW8AY4Biyx9Q6ZdHxVlV9ujdumuF0DRFhg2PlXVbnpVfd/x20EiHAbuAwMevjmeuEioFww14E7qlwyF+wIr4nYaD3kulO9bvAScKXEpvWQnvE6BSlAyw8SvWMeASLsLbs3rLV6xOMUNDr/P3Co1R0eAs6V+MyhVnd4CDhV4nOHWt3hIeAigCpfHWp1h/kuqNwBragy69OkvjCNABH2lN27Dm3pEusp6HCJT60N6RUvAa+sDekVLwFNT4UldgGjN8NzBDRiFXCyxPfWhvSKVcAFgO30G+tOwzQPKHOAdVV2+zWpLzxmwo8canSLh4Alhxrd4iGg6bHsZEizgE2v5+cIMGAZAQdKfOHRkF6xCJgBUOW7U1u6xHobKjkHsGG6CGfn28k3ZIJJAcGkgGBSQDApIJgUEEwKCCYFBPMb16HLRCSvNG8AAAAASUVORK5CYII=" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ EMIm-TFA }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">1996</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1021/ic951325x"> Bonhote <strong><em>et. al.</em></strong> Fig. 7 (dashed)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/bonhote_1996_hydrophobic_1168_f7_dotdashed"><img alt="bonhote_1996_hydrophobic_1168_f7_dotdashed" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAAA+xJREFUeJzt3E2oFlUYwPHf0W4fN5BCvfkRVkYQSC0iAjPCMKIgMGuRtHLZolq1cREStQlatGjTNiIi21RG9GUtgqCSJITqRt4sP8pMK7Pw82kxo7a45X3nnBplzh+GM/fC88xz5z/nzDnzzntTRKj0x6y+Cxg6VUDPVAE9UwX0TBXQM1VAz1QBPVMF9EwV0DNVQCFSMpGShSPH1UcRZUhJ4KsI144SV3tAWb4eNaAKKMvmUQOqgLK8P2pAvQcUICULsAezI5wYJbb2gDKshFFPPlVAKe7oGliHoAKkZC/mR0ijxtYeUIb52NolsAoox+tdgqqATNoZELzVJb4KyOfWtv2mS3AVkM8Dbftjl+A6C8ogJXOxD1MRlnbJUXtAHhva9oWuCaqAjqRkHe7BrzrOgKgCRiYlKSWPaa7+Z7Adn3bNd16hugZBSsbwHK7HCs2V/1SEzjfS2gNmSErm4A3NqnelZvg5jJdz8lYBMyAll+NDzSdea7AUj2NdztVPFXBGUnIjPsLzeAgLsQmPRJjMPkBE1G2ajZhDbCD2Emva3y0nJolHSx1n8AuxlCRcjAlc7fQNdhXe0YzxV2qGnkVYH+HFYsf/PwS0f+QErsIVWIK5uLTdLsE4xnD+39rZOIHjbXtCc7LGOPXsPU2zP93P47hwhLJ/bmO+1AxBm/BuhKMj5Dgj/4mA9oQvw92ah1U3aE7aduzAd/gJB/BL2/6BozjStgtwL27CdW18CQ61xzqEg5jCbvzWbnvwfbttj3Ck0HGnpbiAlNylmSFchtfwHrZg50xmDK28jbgNr2hmH9vwA/ZHOFy04J4puhBLyYNYj6exC/M0U7ZF+LP96G4HdkQ4+A9pnsR9WBxhd8n6zkaK9YCULNNcqftxDB9rrtrfNWPvuKZXnLwHHMbnmuX8qxEiJas1K83lEaaKFHaWU1LATizGWmz8t1c02mFmHm7BE5pn6btwO1ZH+KRIUecARQSk5BpM4uEIz44YO4b7NTOhlyLsyy7oHKKUgDdxJ8YiHMtOOCBKCQhsjrAqv6Rhkf0sKCVL2t31ubmGSImHcSvbdkuBXIOjhIC1EOF4gVyDI/se0I7/urwXWSn3ecDbhfIMjlICOr2WV8kUkJKL2t0P8ksZJrk94OQU9NvMPIMlV8Cytj2QW8hQyRVwM+S+GTBkcgWsKFLFgMlaB6TkOGbVNUB3cnvALHxRopChUmIdsLVAjsFSQsBnBXIMltoDeqazgJROvVGxrVAtgySnB8xt205fTqs05Ai4gG7/oKJymtx1QKqr4DyybsL15OdTv6DRM1VAz1QBPVMF9EwV0DNVQM9UAT1TBfTMXxbJEJ4xrg3PAAAAAElFTkSuQmCC" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ EMIm-TAc }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">1996</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1021/ic951325x"> Bonhote <strong><em>et. al.</em></strong> Fig. 7 (dotdashed)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/bonhote_1996_hydrophobic_1168_f7_solid"><img alt="bonhote_1996_hydrophobic_1168_f7_solid" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAAA4FJREFUeJztnEuPDUEUgL8zg4hMMhFvmciYyBDGKxGLWfAHyCwsCWvxD/wBSwvWYoVYITZ2ViRIPIIQMY8ghBji/ZxjUXXjcWdCd517y+0+X3JTXYuqPjlfV/Wr+oqq4uSjK3cAdccFZMYFZMYFZMYFZMYFZMYFZMYFZMYFZMYFGCHCUhGWFW3nAux4Cpwt2sgF2HKtaAMXYIAIS+LmlaJtXYAN62P5umhDF2DDhli+LtrQBdjQEPCyaEMXYMPGWD4q2lD8jVgaIswGvgAKdKtSKKE+AtIZjOX9oskHF2DBEPCBEtMPuAALhoDvwL0yjV1AOkOxvFOmsQtIZwiYAu6WaexXQQmIMA94RZiC+lSZLNqHj4A01gKzgcdlkg8uIJWtgACXy3bgAtLYFsvSAmYZBVJJRBBgATAArIxl47cKWAF8Bi6U3kfdT8IizAX6aU5wo/4NGANG4+/X7eeqvEnaf9UFxKN4KdMndwBYSLiLHaU5yWOqvGppfFUQIEIPvyf11+1+4C3TJ3gUeKLK9/ZHHegIASJ0A31Mn+ABoIeZp4lxVd5lCPufaKsAERYBw6rNqwdEmM/MCe4DXtCc3Eb9WZknkf8DbbsKEqEfuASMx/Uzf87J3cBDfib4FnAm1idU+dSuWNtJW0aACBuAm7F6EXhA81E82alHcQotHwEibAKux+qwavmblirS0hEgwjrgdqyuUC330qLKtEyACAsIJ04BNqtyoyU76nBa8ixIhC7gFCH5Bz35M9OSESDCAeAoMA6sVuWL+U4qgrkAEZYTLiG7gf2qnDLdQcVohYAjwBZgEeHoz3ab3wmYngPiKuHdhFd0hz35f8f6JLwXuEp4VXfcuO9KYi1gH2GFwGlV3hv3XUnMBIgwSHh7NAgcs+q36lg+ihghLNGYIkxDzj9gOQWNAL3A8To+VCuLyWWoCIuBCcLVzxpVHid3WhOsRsDO2Nc1T34xrATsAOYAJ4z6qw3JU1B88PaRIGChavHvpOqMxQhYR0j+eU9+cSwEbI/lSYO+aoeFgF2xPGfQV+1IOgfEVWdTwGVVhs2iqhGpI6DxheCh1EDqSqqAPbEsvTq47qROQQqgiphFVDNKj4A4/wMcMIqllpQeASL0Ev4dZI4qXy2DqhOpU1CXKlOG8dSOjlieXmX8I73MuIDMuIDMuIDMuIDMuIDMuIDMuIDM/ADdFQbtxfEcZwAAAABJRU5ErkJggg==" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ EMMIm-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">1996</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1021/ic951325x"> Bonhote <strong><em>et. al.</em></strong> Fig. 7 (solid)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/borisenko_2006_in_6250_f1_a"><img alt="borisenko_2006_in_6250_f1_a" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAABKdJREFUeJzt29urVkUYx/HPlIZZFlppFpHY0YvIvKvojEUJZkUQUVFdCP0B3QTdRRBRGJGdbjofoOggBUURBQWd68JDRkoHQlPCUtPMerqYtWmzsdjvu2a7Yq/5wjCLd+951rzPbz3PPGvNelNEqHTHAV1PoO9UATqmCtAxVYCOqQJ0TBWgY6oAHVMF6JgqQMdUAQqRkjkpmTvouCpAOTZh1aCDqgBleX/QAVWAAqRkWnP41KBjqwBlOL/pvxx0YBWgDLdAhD2DDkx1P6A9KQlsizBz0LE1AloyKv8/NMz4KkB7zm76d4YZXAVoz5VN/+Ewg+sa0IKUJPwFEdIwNmoEtGNh0z86rIEqQDtubvqh8j81BQ1NSuZgA6bjiAg/D2NnStFZ/Y9JyaG4AfMxA782bTF+xh0RPhmnrYPwHNZh57DOp0cCYAXm4Q18g8MwE/diNlal5AU8jNUR9pkaUnI0nsFWbMYHbSbVixSUktPxJk6JsO1f/mcWbsdSHIK38Qq+ksU6DmfhGjyI+7Ee89tEwKQXoCkV38KLEVaOc8w8XIwrcCx24Hv5YdvTEb5Nyd04PMLyVvPrgQDX41YsirC3kM3L8QhOj7Cpja1JtwY0V/wCnIsLcCEWt3V+SqbjPCzHGVja1vn8DyMgJQfgoDFt6qjjaXIVc1jTjxwfLjv+HGzHe01bFWHLOM6b5HRzAubKC/NseeFegJPxhbwAPxFhZ4GvO7ECpOQELMGJmOUfp03DwU0/+vhg2dm/Yw/+kOvskSeO6+Vb/1P/47QXYa+cv4/yj0hj2yHNeX7DruY8f8gV0g/Ygp/k3L8GayJsH94b+2ZCBGjCdQWW4WX5C2yV6+4d8hfe3bRdY/qRTY2r5DvNc7BavsKPbf72OT6W6/AfR9k6ELfJV/Hj+E6Ohn21nXJETW/aHmz+t/Jzoii+BjQ3PG9iI06K8MuA4w/ESpyJu3D1SLinZCbiP0rJlfJVe/k4d6f2yhHQGcUjICXPyqF908jV1OTXOdgS4c+UTMUl8gI5V76heUbOsU/iSCwbNORTMgO7SlU7+4OiEZCSS7EICyNE4/iluFN29PaUPIAbsU2+0fkUx+MFHIp3sSTC7kHPPxE5esKJiGKN+IhYRpxIPE9sIFYTlxKJWEw8RlxGpDFjpxDHjP18srdiKSglp8q379fJD6ruwav4OsKfRU4yCSmZgi7AWjyPayO8VdD2pKXkhsxZcg3+YHX++CmZgkYMzYiwo4jRHlAkApr6HO6rzh+MUinolKYf+OXUvlNKgAub/rNC9npDkTUgJevk3aah3o3pMyVT0JpCtnpFyTL06YK2ekPrFJSSKfJz9PkRNhaZVY8oEQHnQ3X+cJQQ4KoCNnpLiRS0GbNrBTQcJSJgtvxMvzIEpaqglwrZ6R2tBGj2b8kb75UhaBsBpzX92rYT6SttBVgKEflnOpXBaSvAZUVm0WNalaHNJsyOCDPKTalflKiCXitgo7eUEOD1AjZ6y9ApaNRDuDkRfio6qx7RJgKOgur8drRdhNP+fpt4stFqDajOb0/9pXzHVAE6pgrQMVWAjqkCdEwVoGOqAB1TBeiYvwEbfVkRPlLI2QAAAABJRU5ErkJggg==" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMP-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2006</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1021/jp057337d"> Borisenko <strong><em>et. al.</em></strong> Fig. 1 (a)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/borisenko_2006_in_6250_f1_b"><img alt="borisenko_2006_in_6250_f1_b" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMP-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2006</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1021/jp057337d"> Borisenko <strong><em>et. al.</em></strong> Fig. 1 (b)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/borisenko_2006_in_6250_f1_c"><img alt="borisenko_2006_in_6250_f1_c" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAABO5JREFUeJzt3FuoXcUdx/HPJJp7jVFi8ZJoUojaVoPWCyi2IFHzoFiTCNUUhCAttEQUhCL0xdRUEJW21peirYJWBR8EbyCS1JS2GkpbUIshiYrRXqitCVGsSZO/D2sO7pxs07P3np1Fzp4vDLPOrM1/Zv1/6z8za2atkyJCpT2mtN2AUacK0DJVgJapArRMFaBlqgAtUwVomSpAy1QBWqYK0AMpmZmS5SmZXcpmFaA3foxfYUtKlo0VpuSUlFyakqm9Gkx1LWhipGQR/ogv5/QY7sYXsQb7cUeEn/Zit0bAxLkDP4vwzwgbcQkux0ychW3Y0qvRGgETICXn4hksifBhl/OLsBknRdjbi+0aAf+HlCTcg3XdnJ+5Dk/26nw4apDGjQi3YS4e6HYyJdPxPVzVj/EqwOeQkhm4C8vxjQj/6/Kbo3EvXo3w537qqQJ0kLubBViBW/AKLoiwM59bnM8vwCKsxA58u+86j7RBODviKMzA9C75+LLxaVpOR+MLOAHzcQYWjqtuHd7BPM1U8xhsx3t4C3/AsxH6dmIrAqRkLk7JaUHOF+bjeRrnjKUxh3U6dR8+yem/n5PPwvl9NG8dfpvrvhgnZ3uPYdMgzu7GYRMgJVdircYp0zShuwPv5vRO/vsD7MHejnSAcyPs62L/JCzL6Rychl/j35pB9EX8XSNedKT9HccfRdhe+toPxWERICW343r8EBvxrxJ3UkpOxnewCidig8bRr+CNCB8PWsfQiYihJmIF8TYxv6NsLrGaOLuj7EpiA3EncRkx/RA25xCPEP8h7icuJKYO+1qGkYYaASk5Hq/hmggv57KZ+JNmEPsadmm6hiW4FadrupHT8QTujvBmh83ZeF4zGN4UYffQLuBwMOS7/yHiJ+PKbiaeyscziTOJVcSp4353KvEj4n3iF8RCYjHxEvFLYkrbd28RHw3R+RcS7xJzOspmEO8R5/Rg5zhiPbGL+CR3OUdkd9MtDaULynP1DXg04rNH+JR8H8sjen9sT8l8TI3wj3ItbZ9hCXAZfo6vRH6Ez2sm27AywubilR6hDGs19AeazYnO9ZMb8Hp1/oEUj4CUfBUv4LQIe3LZNM1mxeoIvy9a4RHOMCLgW3hkzPmZ72JLdf7BDCMC/oo18dm8/1jN3b8swqtFK5sEFI2AlHxJs5jW2c/fhqer87tTej/g6/hNhP2QkiW4UbNpXelC6THgEs1SrpRMwYOavdS/Fa5n0jAMATal5Djcj4T7CtcxqSgmQF54m48rsBVTsWKsO6p0p+QYsFSz8bEW50V4q6DtSUvJLmhpztdX50+ckgJclPMnC9qc9BR7EEtJ4OMIs4oYHBGKREB+QYlm5lPpgVJd0Bk5f66QvZGhlAAX5/zlQvZGhiJjQEr+gqUR0sDGRoxSEbAUbxSyNVKUnIY+XNDWyDBwF5SSWfgIi+sDWO+UiICxrwXfLmBr5CghwLUQUfat4VGhRBe0G3PqDKg/SkTAHPyugJ2RpNQs6KlCdkaOgQToWAN6ukBbRpJBI2BsD2DroA0ZVQYV4Gqo2479M6gA3yzRiFFmoGlo3oTZEXHQ552VCVJiFvR4ARsjS98C5BevaL7jqvRJ311Q/th6p+arlToI98mgY0Cqa0CDMdAYUJ0/OPUfNrVMFaBlqgAtUwVomSpAy1QBWqYK0DJVgJb5FF/cWIbVjB8hAAAAAElFTkSuQmCC" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMP-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2006</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1021/jp057337d"> Borisenko <strong><em>et. al.</em></strong> Fig. 1 (c)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/borisenko_2012_an_1736_f1_black"><img alt="borisenko_2012_an_1736_f1_black" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ EMIM-FAP }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2012</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1002/cphc.201100873"> Borisenko <strong><em>et. al.</em></strong> Fig. 1 (black)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/borisenko_2012_an_1736_f1_green"><img alt="borisenko_2012_an_1736_f1_green" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ EMIM-FAP }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2012</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1002/cphc.201100873"> Borisenko <strong><em>et. al.</em></strong> Fig. 1 (green)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/borisenko_2012_an_1736_f1_purple"><img alt="borisenko_2012_an_1736_f1_purple" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ EMIM-FAP }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2012</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1002/cphc.201100873"> Borisenko <strong><em>et. al.</em></strong> Fig. 1 (purple)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/endres_2006_probing_1377_f11_a"><img alt="endres_2006_probing_1377_f11_a" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAtlJREFUeJztnEtrU0EUgL/TJEbEYApiwfoo4sKlIIK4UejWn+BacCuCO/EH+BtcqFu3ulfQol24E1EQLL5Q1Ep9NIQcF5nE0MbaZA6cxDkfHObmppmeO989c7lzQ0RVCfyY8U6gdEKAMyHAmRDgTAhwJgQ4EwKcCQHOhABnpk6ACKdFmPPOw4qpEiDCOeAusCTCPu98LJBpWQsSYQZ4CFwHjgNngEVVWp555TIVAtLZfguoA4uAAnfoVvBl4KUqk38gQ5h4ASKcBW4DN4GrqrTT/p3ANeA8sBt4BqwA74C3wAfgS4qvA+3aJMmaSAEiVOme6ReBE8AFVe5t8fd7gWPAPLA/xRzQBGZT29uuA2vAjxTf/9L2ogWsp+htt4EKUE1RS+0jVe6PdKxWAkQ4CrzYsPsT8BxYZfOBCLArxSywABza8PnPwA3gV+/fbNEOi5kh2zuARoomf8TMplxyWFbl5CgfsBTQ6+gK3bP2FJsHdDs8BZaA9+m1jtAORucf2x26J8JgrA/ZN/herzp+Wk1jVYtORPoDfUSVVxZ9loLVfcAlgBj80TGZgkT4BjRU+3NysE2sKqABPDbqqygslyIeGPZVDJYCnhj2VQzZAkT68/5ybl8lkn0RFqFJ9za/okrHIqmSsJiCDgPE4I+HmYBgPCwELBj0USxRAc6EAGdiCnImKsAZi/sABVqq1G1SKgurpYjXRv0Uh5WAFaN+iiMEOBMCnIlrgDNRAc6EAGeyBIhQSZtvDHIpktwK2JPa1dxESiVXwAGIhzE55Ao4aJJFwYQAZ0KAMyHAmVwB43z9PBggKsCZrAcyIrSAWnwrenxyK6AGfLRIpFQs1oJiHSiDEOCMhYB4FpBBVIAzIcCZEOBMXAOcGftGTIQa9G/E2qZZFUROBcwDxODnMVW/mPU/krsWJJP02zvTSFYFxODnE1OQMyHAmRDgTAhwJgQ4EwKcCQHOhABnfgOF1NMqBAFf8gAAAABJRU5ErkJggg==" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ EMIm-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2006</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1524/zpch.2006.220.10.1377"> Endres <strong><em>et. al.</em></strong> Fig. 11a (a)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/endres_2006_probing_1377_f11_b"><img alt="endres_2006_probing_1377_f11_b" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAABBJJREFUeJzt20+oVVUUx/HPelqK5r8CqSSkSUWQRX/EGmgpUTkQqVGQNGpaA6M/FjSKaBhRoRFE1CRqUApN+oMURAkWWIFQUGFFEGl/npra2w3OroQk3ztnH47v3v2Fy7rn8fba+67fWWvvs885kVJSGY6JoQcw7lQBBqYKMDBVgIGpAgxMFWBgqgADUwUYmCrAwFQBChFhc4Q7ZtyubkV0J0JgCvtSsmombWsGlGFDtptm2rBmQAEiHMTSlMRM29YM6EiElViKJ9q0rwJ0555sX2nTuJagDkQ4C8fy4URKZhzMmgHd+HvSfaRN8KkZ0IkIu7EWF6fk6zY+aga0JMLlmuB/3Db4VAG6cH+2L3RxUktQCyKswIF8uCwlh9r6qhnQjoezfa5L8KkZMGMiXIo9mI+rUvJFJ39VgOkTYR7ew3n4KiUbu/qsJWgaRIgI6/EBDmIJtpXwPWsEiLAuwo4ID+Ur0D77mhdhW4SDEQ7gGzyDp/EzdqXk0yJ9naklKMJcXIIrcCeuxFO4DQmP4bOUTLb0PwcpJVN5Q20rLtCc4bfgEzyIRXkc5+Iuzb7/zW37/c84hhIgn8XLsSJ/lmt2FZdoArFJc7btw25sT8nR3O5R3I2VJ7k8jDk4G3/gJ80+zTlYrJk0T8d+XIhf8vH5OIQfNBPvTs3Zf6LFTz4lvQoQYaEmWDdpgrscy6bZfL8miAvzZ8FJ3+dgUhP0+RrRTsdUbvMdvsT3+W+L8COO4ASO57734tuSwT4VfQvwmqZcPI/Hca3mx+/G5/jz5H/XnLmT/g3uqb5P4ljbza8zjbl9OY6wCmuwEW/gfaxLyeG++pyN9JYBEf+sGDbj2ZRs76WjWU4vy9AIE7hdUzqOYkcf/YwCfV0HrNasJNZoVi8jUa/7oJcSFOFJzWplCy5Kya/FOxkR+sqADZiHd2vw/5/iq6AIS3CZ5gKm082KcaCPDLhBs9ZfjV09+B8p+hBgreZq9+2U/NaD/5GiDwHWafZQXu3B98hRdBUUYYFmq+CE5l7p78WcjyilM+D6bHfW4E+P0gKszfb1wn5HltIC3JrtW4X9jizF5oB8w/oo9qbkmiJOx4CSGXBdti8X9DnylBTgxmzfLOhz5ClZglq/pjPOFMmA/ATDUs2tx8oMKFWCrs72xUL+xoZSAmzJ9qNC/saGInNAhIQjKVnQfUjjRecMyE+YwQNdfY0jJUrQmmxfKuBr7OhcgiK8g/V1+dmOEgIk7EnJ6jJDGi86laC8/wP3FRjLWNJ1DrgXUvJhgbGMJZ1KUC4/av1vT4lV0NYCPsaW1hkQYbHm8cOzU3K86KjGiK4laCIlUwXHM3acse+IjQuz5i3JUaUKMDBVgIGpAgxMFWBgqgADUwUYmCrAwPwF0dkjcZDK1osAAAAASUVORK5CYII=" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ EMIm-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2006</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1524/zpch.2006.220.10.1377"> Endres <strong><em>et. al.</em></strong> Fig. 11b (b)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/endres_2006_probing_1377_f11_c"><img alt="endres_2006_probing_1377_f11_c" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAABHhJREFUeJzt3NuvHVMcwPHP0tJrtAiiLSKKSESDuFbTNhH14JJovHiTaP0BohFBgsRfIH11iTcR8eCBJkjcggj6oHUPVaRBqlr0ws/DWuo4PWe3Z/bMGWdb32SyZs/stdbMfGfWzPqtvSdFhEp/HNf3BvzfqQJ6pgromSqgZ6qAnqkCeqYK6JkqoGeqgJ6pAloiJbel5IYp56uhiHZISeDbCEunkq9eAS2QklRmN081bxXQDheU9LmpZqwC2uHGkn4+1Yz1HtACKfkUyyMON0XHTL0ChiQlc7Ec7zXJXwUMz6qSvtskcxUwPH8/+3/WJHMVMDzr8IMqYPpJyTKcgd2qgF64Hi/jTHzRpIAqYDhuwEfYFeG3JgVUAQ1JySxcJ5/5jZofqoBhuBw7cSI+aVpIFdCcm/ACLsbWpoVUAc25WRawDm80LaQKaEBKLsUi/IT9ET5sWtaMFpCSE1LyUEq+S8nGaaz6Hjn2f4Z8H2jMjBWQkhV4G5fhdjxazsyu612PlXgMt8r9gMbMbmOjpouUzMPp2Ig7sQlPRoiU3IUtKdkqRya/xA58I/dU9+MA/kSMS2EOTsOy8nmeHOW8BKdiMU7CAtyCc7Aeq4fap7bGA1KyUD4jLiqL3sJLEfaV9ceX9UswCwvlnZuHufIBmFumRfLj3bwBVT4tx2DGxuDnYw3Oa2OfCr/jFxzCQfyMk8v23h3hqWEKb0VAShbgA2zDm2XxelyKByI8mpIncD7ekbvwFx5D0YfkHf4ZH5fy98oH4kBZ/+ekucvmyU3tbFn87HHzs8p0cJJpf6lzX0n3yO3+zgh/HMM+DCYihp6Ih4kgNo9bvoT4kdhEbCcWECcSu4hr2qh7pk9tHPxUDv4uYi8xZ9z6R8r6y8rnDcSzfe/4f2Vq4yno6pKulrvk459EHsQpEYeH7G7CMy3UOxK0IWAzRNiG7Th37Moi+idIyRz5JrmlhXpHgjYErPDPGf01zhrw3auxPcKPLdQ7EgwlIKXDB/vekn6FswdkWWvIjsuoMewVcD9EHB4N+l7uKE3GWrwyZJ0jxbACNvCv5mSf3FM8gpTMl2/QjSOHo0gb94D7xsxPKgDXYGuEvS3UOTI0FpCSxWX28TGLBwlYozY/R9BYQITdWBjh4JjFgwTU9n8ChmqCogTaxjChgBKoW+GfOFGl0PZ4wGRXwEq8H+HXluub8XQhYP6Yf4z8zRq1+ZmQVgVEOCSHiOeMW7VGFTAhXQxJ/qsZKs//F8vDh5VxdC4AV8rP/7X9n4DpEHAtXuugnpFgOgSswusd1DMSdCogJbNxlRr/mZSur4AV2FHj/5PThYC98k9OqO3/UelCwB75dz1kAbX9H0AXAnZjcekNr1KvgIF0IeB7LJUH5w/K48SVSehCwFZcoZz9Eeq7EAbQhYBX5beH3KHGf45K6wIiHJBvvKvwfNvljxpd/T/gRXwaYVdH5Y8Mnb2uJiXHRRz1l8v/e+r7gnpmxv5FaVSoAnqmCuiZKqBnqoCeqQJ6pgromSqgZ/4CDicZXq4ecGMAAAAASUVORK5CYII=" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ EMIm-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2006</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1524/zpch.2006.220.10.1377"> Endres <strong><em>et. al.</em></strong> Fig. 11c (c)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/friedl_2017_interface_216_f1a_lightblue"><img alt="friedl_2017_interface_216_f1a_lightblue" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMPY-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2017</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1002/celc.201600557"> Friedl <strong><em>et. al.</em></strong> Fig. 1a (lightblue)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/gasparotto_2009_in_11140_f1_dashed"><img alt="gasparotto_2009_in_11140_f1_dashed" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMPY-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2009</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1039/b916809e"> Gasparotto <strong><em>et. al.</em></strong> Fig. 1 (dashed)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/gnahm_2011_the_250_f1_dashed"><img alt="gnahm_2011_the_250_f1_dashed" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMIm-PF6 }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2011</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1016/j.jelechem.2010.11.019"> Gnahm <strong><em>et. al.</em></strong> Fig. 1 (dashed)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/gnahm_2011_the_250_f1_solid"><img alt="gnahm_2011_the_250_f1_solid" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMIm-PF6 }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2011</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1016/j.jelechem.2010.11.019"> Gnahm <strong><em>et. al.</em></strong> Fig. 1 (solid)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/howlett_2006_electrochemistry_1483_f1_au_dashed"><img alt="howlett_2006_electrochemistry_1483_f1_au_dashed" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAAA+RJREFUeJzt3E+oVVUUx/HPfk8UA83sj5GkYFAvEPqfBNGkf9jAmpkTo0EgBEIRzaKCbFRE/yZRQ5sEktWgokFQUEhJUEQRomWR5sAEe5D/VoNzhIs8/7x39r379s7+wmYd7j6su+7+nbX3Xvece1NEqJRjonQAfacKUJgqQGGqAIWpAhSmClCYKkBhqgCFqQIUZkHpAIZNShIm27bgHPZsfTO1hW1bdMbxrgjfzCa+sRYgJZfhQdyCa7AcS3GRJnsnWzt4PGgXjjjkt5mdAGncvgtKyQJswBbcjk/xJfZgLW7WXG1LNGIsxWL8gb1tO4wHsAY7sQ8HcBBHcRInWnvm8fn6TkY4le3zjosA7VSxAS9rBuoN7IwwnZJ1eE1z5b+PQ/i7bUcwjSuxGqtwMb7DOxGOjfBjzJ6IKN6Ia4mPiR+JewdenyS2EQeIzcRE6Vhzt6JrQDvdPNW2F/F6hONt3yJs18z7N0Q4WCzQIVJMgJSs1ixaE7g1wr6Bvkm82/atj/BvkSBHwMjrgJRcmpKXsFuzuN43OPgtr2AZNs7nwWeEGZCSJXgCW/Ee1kb4c4bzHsM9uGPsF9AMjESAlGzSXNWfYV2EPWc5bx224c4IR0YRW2mGug1tt5Zb8TRexT+agmpas7//amDRXaEpYh6P8MHQghozhiZAu8N5C4/iGH7ALk2htAz3a8T4HN/jIeyI8OxQAhpThiJAu4vZjo2aq/3hCB/OcN4VuBvXaQqnnRHGozIcEcMS4Hk8idDscr7O/ibzhOwCpOQmzVRzCpsi7Mj6BvOMYdQBL2h2V2/WwT8/WTMgJVfjN+zHVITpbM7nKbkz4JHWbqmDf2HkzoDTzib6tpuZK9kyICWXtIfr6+BfODmnoGda+0lGn/OebFNQO/0cjxj5fdj/NbkX4ecy+5v3ZMmAlKzCr1gR4a/ODntErgzYDHXwZ0+uDPgdKyOk7iH1i1wZsNIsH0iqNHQWoL3pAh919dVHcmTAVa3dncFX78ghwFRr92bw1TtyCLCmtfsy+OodOQS4DSIczeCrd+QQ4K4MPnpL5zqg/Q7ocITleULqF7nqgC8y+ekduQSoTz3MkU4CtM//wLcZYuklXTNgWWt/6eint3QV4HQVvL9rIH2lqwA3QoQT3UPpJ10FuD5LFD2mClCYrgJMnf+UyrnoVAmn5FTjo94JmytdMyAx88+NKhdGjkr4pww+eksVoDBVgMLkEODnDD56y5wFGHgaogrQgS4ZcHlrD+UIpK90EWAx1N8CdKNrIZaqAN3otAjXwe9O/dvKwlQBClMFKEwVoDBVgMJUAQpTBShMFaAw/wEkhxZyHL8L2QAAAABJRU5ErkJggg==" /></a></td>
+<td class="echemdb-middle-cell">(poly)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ PMP-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2006</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1524/zpch.2006.220.10.1483"> Howlett <strong><em>et. al.</em></strong> Fig. 1 (Au_dashed)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/howlett_2006_electrochemistry_1483_f1_au_solid"><img alt="howlett_2006_electrochemistry_1483_f1_au_solid" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAAA1dJREFUeJztnE1LFlEUx39XU6HM3uxN1KgwW0QbNy0raNEqWgZ+hfoELYoWfYdaV4uE2rWJCIKEoKKoRQlCmRUVpUWvmqfFnEQMH3zmnvHS3POD4Qw+8/yfO/c/58ydO+MEEcFJR0vqBuSOG5AYNyAxbkBi3IDEuAGJcQMS4wYkxg1IzKrUDShLCLQCncBaYDUQKA6ooJv8BuYWxUZ/a6HojzZdyqxfF+FnM/uR3IAQWAcMAv3ADmAImKbo3DXABl06dFlD0ekdwFfgC/AdEGC7fp6Ks8CZZr6w4gaEQD9wFDhM0dm7S8jMAi+Ad8AHoBcYAD4DD4E3wCdgCvip289SHO2zwMwSy68Gn83od+e0DaLLwvWpZndkRQwIgQAcB04C+yg6qA9YD7wFRoH7wDgwAUxS7MxXEX4t0mkFuoBNwGagG3gNPBPhy0rsjyWh6tnQENgKXAE2Ag8ojtRdwEVgBHgqQrZTspUaEAK9wB2KciAUdfs8cHXhkZ0zlZWgEOigKCdQnFTPAddE5muoQ7XngFsah4HLOZeZRlRSgkJgAHgODItwyfwHakRVBgiAyPxFkbME5lMRIdCtqyestetIFXNBpzWOVKBdO8xLkJafSRF6TYVrimkGhMAWXT1lqVtnrEvQIY03jXVri2kJCoFR4ICPfpaPtQECjImwx0y05lQxCrpQgWZtMcsAnfv5AfSJ8MpENAMsM+AggHd+c1gacMxQKxssS9Ak0OMjoOawzIAe4ImhXhZYj4JuGOvVHhMD9NESgLsWejlhlQF7Nb400ssGawMmGm7l/IOVAUMaPxjpZYOVAUcA/MZ785hcB+gk3HuR+fsBzjKJzgB9ShngdqxWjliUoL+3HscMtLLDwoCdGn0SrgSWBvgQtARuQGK8BCXGwoD9Gj8aaGVH9HWAXgN8E0n6v1n/LVEZEAJtunrPoC1ZEluCtml8EduQXIk1YLtGHwGVJNaAHo1uQEmsMsCHoCXxDEiMnwMSE2vAoMbp2IbkStSFWAhMA13+MFZ5YjOgCz8BR2ExF/TIQCNbShugby4BeGzUliyJyYBOjeMWDcmVGAPaNfq94AhiR0Ht/tqZOCp/YZPTGH9tZWLcgMS4AYlxAxLjBiTGDUiMG5AYNyAxfwAqMttlFq+7igAAAABJRU5ErkJggg==" /></a></td>
+<td class="echemdb-middle-cell">(poly)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ PMP-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2006</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1524/zpch.2006.220.10.1483"> Howlett <strong><em>et. al.</em></strong> Fig. 1 (Au_solid)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/hu_2015_an_877_f1_a"><img alt="hu_2015_an_877_f1_a" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAABQJJREFUeJzt3FuMXVMcx/HPKqFo1S2q1Y4OSkSQEvfLAyGuEV4aQYRIREQiIXF5IBEiXqVpJCIeiIfqg0slhCBE3MUtKXVpozPUnTahFbo8rD20E6oz+39mn5m9v8nKOWdyzn//5/8767/W+q91dso562iOaU070HY6ARqmE6BhOgEaphOgYToBGqYToGE6ARqmE6BhdmzagX4hJXviYOyFnbETNmE9fsTnOfs1+rqtEiAlM5UgH4KFo9p0fIrvlcD/rogwC/tgMCXf4nW8gBU5G67t01SrBaVkNxxo6+COBHwWPscqJdgjbRW+ydl/BiMlO2AQp+AMnIe3sEQRY1yB7DsBUjINA9gXe2B35du5rbaXEpwDq/evsXVwR54P52xzkJ+74CLcjD9xE14cqxCNCpCShAU4FafhaByKn/B19bgBv2HjNtovWI0vsC4qyNv5P0zDxXisuvacsXx+wseAKg+fqXThsyofXsYreAArc7Z+ov2qwa44WUltp431wxMiQEoGcX7VTsJrWIF78el482dNn3bC/pivpLx52NM/KW+jksrexmfYG3NHtYVYhKdxQs6+H7MfvUxBKTkB9+EAxckVeC5nG3p20X+uvaMS3AXK+LBg1PPZSppbiy8xhB+Uaecm7KLMmI5Rxpbvqvd/tUVbjXfGE/i//eyVAFXwn8L1WJ6zP4Ltz1ACPK9qA7YO8BysU77Fa5Rgbfl8ONqn8dATAaqp4Ee4IWdPBNqdgUtwuTJgD41qI0FejaGc/R517V7RKwHuwmDOLg2yNxN34EplwH4Qz+dsY4T9JgkfhKsl/bVK7oywNxsvKSvQo3I2FGG3XwjvASm5BYfl7IoAWwnP4u2c3VbbuT4ktAdUAbtKydERLFZWubcH2es7olPQich4s66hSsxbcGs/zFZ6RfR+wGI8ErSwOkUpCz8TYKtviRbgHGWxFcF1WNrEKnkiCRuEU3KwUs+ZWzdoKdkPK7EgZ79E+NevRPaA05UyQ4SiV2PZVA8+sYPwcXijrpGqhnMNLqjt0SQgsgccK2D2o1RMv8zZewG2+p4QAarS7qH4IMDcdVgaYGdSENUDBpXi16Y6RlJycWVreYhXk4CoMWChsuc6blJyPO7HhXWFnEz0VIBqNXs2LlOKc7MwjA+VdLUKm5WtyctwZc5eC/JpUhApwMot/5CSOXhY2XlagnuUTfYBHIEjlcDvoBzvWDTVKp3bQ5QAh+DJkRcpmaeUkB/FnaNqOcO061u+LcJTUDUjWo6HcnZ3kP0pS+1SREqm42fMyNkfKblNOaZx/lSv40QQ0QPmqza4qxrOjTi2C/72EbEOGFCOdVAWUcty9kWA3VYQ1QPWVrn/GuWYYcd2EtkDzsQnOfskwGZriBRgMZYF2GsVUQIM4Vw8HmCvVUQIMF850PpTztYG2GsVtQSoaj0DOEhZ+XaMkbo9YA/l1yGH49Xa3rSQugLMVk4gH4136rvTPiIE+FUZB1b+z3s7/oUIAebgw6l8eq2XRAiwry79jJsIAeDduo60lSgB3q/rSFupK8DIb2I/rutIW6m1IZOSYeUsaIpzqV3U7QFz8U2EI20lohZU+zxom4kQIOI8aGsZtwDV7VsoP+XvGCd1esDu1WPEgdzWUkeA6dXjughH2krdaei0ibw3z1Sk7+6Y1Ta621Y2TCdAw3QCNEwnQMN0AjRMJ0DDdAI0TCdAw/wFLKxnNNsNIzwAAAAASUVORK5CYII=" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ EMIm-TFSI }\)</span> + <span class="arithmatex">\(0.5 \; \mathrm{M}\)</span> <span class="arithmatex">\(\ce{ lithium bis(trifluoromethylsulfonyl)imide }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2015</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1007/s11434-015-0746-7"> Hu <strong><em>et. al.</em></strong> Fig. 1a (a)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/hu_2015_an_877_f1_b"><img alt="hu_2015_an_877_f1_b" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ EMIm-TFSI }\)</span> + <span class="arithmatex">\(0.5 \; \mathrm{M}\)</span> <span class="arithmatex">\(\ce{ lithium bis(trifluoromethylsulfonyl)imide }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2015</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1007/s11434-015-0746-7"> Hu <strong><em>et. al.</em></strong> Fig. 1b (b)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/hu_2015_an_877_f1_c"><img alt="hu_2015_an_877_f1_c" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAABQxJREFUeJzt3MmPVEUcwPFPCcKwKLiNihpBVDYXcIlbXBITY+KCcfsLOBiXkx71ol4UL+oJDyaaeCEucY3GJRoXXBMTl7iLRkVFBRVQGbQ81AManMHpedX9hu76JpU3r7unqub37ap6r6rehBijQnPs0XQF+p0ioGGKgIYpAhqmCGiYIqBhioCGKQIapghomK4LCMFBIVjU7XLHK020gMfxfghmN1D2uKOrAkJwJA7DLVXqe7rdApbiMdyB80pX1H0BF+KxGP2G5bgrBPt1uQ7jiondKigEs7AYL1Qv3Y05+CIEb+FdrMFPGMLWefIBTK/StOo4FZOr9waqnyP+xB9V+qHK7zt8X53/iN9jVGsOPgQBU3BA9TfMwRF4M0aPt5VXt9YDQrAcU2J07U6vz8TpOBYHYX/pixGqtAkbsaFKG20P8l9S0P+qshuQAjMVg5iFQ3BglQYliaGlCv9g8zBpqHpPy+cnYG/MxBb8jNX4skpPx2hVW3HphoAQnISnsDhG33W8wF3XZYLUWmKMYnU+aYTUKipW6Vesj3Gb9K35BkyM0VA79el4FxSCI/Aormo6+BCjv4c539qixkQIluBOPFQdR01HBVSXnc/h1hg93MmyRkv1TZ0udUcHjHAcxAypu5omdUkbpLHkK6zDnlL3dozUvd2Ee9uuT6e6oBAswLO4JUYrOlLIf8vcF/NxlDSejBTgLdKAvHYXx/VS0DdJ3dF0HIzZ0hgwhG/xCd6J0ZYx1bkTAkJwKFbhxhjdl72AVMYhOK1KJ0uBH8BHUlDW2B7QHYIbo02dqNNYyC4gBAN4HQ/EaHnGfANOwqXSDd1gVc4qvIEPsabuJWa36YSA2zEXl+cIRnWZeiWulvrjldKg/naM2y4Td1uyCgjBQryIY2L04xh+f7Ik7yjppu0MnCKNJSvwfC8EvZXcAh6U7gZv38VnJmCRFOS5OLI6zpUGua/wKd7Dq3g5RuuzVXKckU1ACI7GK5g93CAXghm4Acukm5mP8HlL+gxft3sjs7uT8z5gGe4bIfgn4GG8hHNi9HHGcndrsrSAqlv5FmfvHNwQLMYzuCZGD9YurMfINR19Kn4YJvgz8AiuK8EfnlwCLsITw7x+G56J0cpM5fQcucaA86Xr9G2EYB4uw7xMZfQktceAEEyVFlH2aZ2iDcE9+CZGN9erYm+TowUcjw93Cv4MXIEFGfLvaXKMAQukeZhWLsFLMfo+Q/49TQ4Bs6XluFaWSlc/hf8hh4A5WgRU8znn4skMefc8uVrA6pbzE/FZjH7KkHfP0wkBZ+C1DPn2BbUEhGAPaemvdbH9dGkWszAK6raAfbAhRptbXluCd2rm2zfUFTDI9oWXEOwlLXx/UTPfviGrACzExzvvvSmMTG4Bi/BBzTz7itwCFigC2iKHgLUt5/OlpcbCKKkrYCZ+aTkvAtqkroC98RvbpiAOkxbYC6MkmwBpe8nqftvVUJecAkr3MwbqCthLEVCL0gIapghomLoCpmNjtXV8PmXHW7vUFTBJenxnFjbGaF39KvUXuQScLD3nW2iTMQuoFmMmSM9bnYmXc1Wqn6jTAvbE5uopmLMUAWOijoBJ2ByCuTic9p4QLyTqChjC9bi/TEGMjTpbEydJa8IX47g81ek/6rSArQvxF8S4w5R0oQ1q7Y4OQdjdnssdb9S6DyjBr0/5t5UNUwQ0TBHQMEVAwxQBDVMENEwR0DBFQMP8C1V1eLD7JgM/AAAAAElFTkSuQmCC" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ EMIm-TFSI }\)</span> + <span class="arithmatex">\(0.5 \; \mathrm{M}\)</span> <span class="arithmatex">\(\ce{ lithium bis(trifluoromethylsulfonyl)imide }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2015</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1007/s11434-015-0746-7"> Hu <strong><em>et. al.</em></strong> Fig. 1c (c)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/hu_2015_an_877_f1_d_dashed"><img alt="hu_2015_an_877_f1_d_dashed" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAABF5JREFUeJzt3E+IlVUYx/HPcapxJMtGRp3QCrIoSBdJ0SCB6KKQMFtVRBuJaFPQMmoREa2LlgUtatPOwQysoD9UFEEUhv2hqMwRLfNP6mhJnhbve5nrNIp33vP6Ovc9X3h4ztx753mfe373Oc+5596ZEGOUaY55TSfQdrIADZMFaJgsQMNkARomC9AwWYCGyQI0TBagYS5pOoE6CEHA9ViBq8qbT5V2DEe77BhOxqiRI4G+EiAEy/A0HsQkfsZBRMVzHcTlpS3ssoEQHPN/cY7iAPZhf5f/HYdxKEb/VMq5X86CQrAG2/EGXo7Rrz387qXOFKUzvgIjWIplpV+KJVikqK5TCjH+xEsxerWXvOd8BYRgMe7Hs3g0Rlt7jRGjUzhUWi/XDliAUdzJ+Yve4aIRIARDWIxhxavryhls+u3DuBrv4e4YfXmO+IOKV3S3DSo2IgNdfgBDpipg4bRxt1+kqIIB/IDne37eF3oJCsEo1mMMN2Cl4hU0T1HGBxUlfaTLpv883UYVDXe5M5eLjh8p4x/BX6UdxUmcxr+ldcYnyvs7j+sed9/WqZrJ2TbxCyZACFbhBazF+/gE3+FHTJjhSZRVcS2uOYstV0zI7tImTDXK7qb5hwZ3OufigggQgifwDJ7DazE6fpbHzcPtuBfrsBp7TE3wdNsToxN1518ntQsQgqfwMDbG6JcZ7h9UTPYmbFYsN1sV6/rnMZqsNcGGqbUJh+A+PIaxGO0tdw03YhVuwhpFP9iJt7A+Rt/XmdPFRm0VEIIRxcRuxi48iS2KRve1Yv3fiR0xOlBLEnOAOivgRbxejr9RNN57YrSzxmvOOWoRIASrsQEPYBu2xGhbHdea69SyBIXgFcUZykN4PEbjyS/SJyQXIATzsRc7cDxGjyS9QJ9RxxK0Eb/hLsVuJ3MO6vhAZqPiTGc8RhM1xO8rki5B5T5/t+IMZkOMPkoWvE9JXQE3K85nJvBx4th9SWoBNpR+PEanE8fuS1ILcEfptyeO27ek7gGHFR+UzI/R38kC9zHJKiAESxST/06e/PMn5RLUWX4+TBiz70kpwG2lz1vPHkgpwNrSf5EwZt+TrAmHIOJAjEaSBGwJSSogBAvL4Zsp4rWJVEvQLaXPy0+PpBKgc+p51i9GZWYmlQBjpf82UbzWkKQJh2ASQzEK1VNqF6kqYEje/8+KygKE4LJy+HbVWG0kRQVcV/qvEsRqHSkEWFn6XQlitY4UAnTOgPYkiNU6UgiwCS7Gr37PBSpvQ8szoEMxGk6TUrtItQ19N1Gc1pFKgA8SxWkdlQToOgXNh3CzpGoFrCj9T1UTaStVBbgVYuzt72szU1QVYF2KJNpMFqBhKr0PKN8D7IvRaLqU2kWKbWg+hq5ACgE+TRCjtaQQ4LMEMVrLrHtACBbguOKjyJNJs2oRVSpgGPLkV6PqLijkY+hqVOoBefKrk/9tZcNkARomC9AwWYCGyQI0TBagYbIADZMFaJj/ABJTPoQVq2bQAAAAAElFTkSuQmCC" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ EMIm-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2015</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1007/s11434-015-0746-7"> Hu <strong><em>et. al.</em></strong> Fig. 1d (d_dashed)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/hu_2015_an_877_f1_d_solid"><img alt="hu_2015_an_877_f1_d_solid" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAABMhJREFUeJzt3EmIHUUcgPFfZV9M5mk0i0lwSYxGExREvMSLF0+CXsSDqIcIXjwY9RBD9BC8GETBW456cT0oESSiRBBF8BCCaDQqRIwmuGQz+1Ieqse8DMnM9HT39Mu8+qDo6uG97ur6+l9b95sQY5Rpj0ltF6DfyQJaJgtomSygZbKAlskCWiYLaJksoGWygJbpSQEhmBqC1W2XYzzoSQG4HztDENouSNP0qoAbiu3CVksxDvSqgBXFdlmrpRgHelXAzfgDy9suSNP0qoAV+Ag3tV2Qpuk5ASGYiwFsw6qWi9M4PScAt+E77MCdIZjcbnGapRcF3C1V/k/4BRsm8nC0pwQUzc+TeDtGEQ/jIXwQgjUTMRrCeDwTDsFCPIh3YvR3198D5uMWrMFabI3RU12fmSFJWSvNC3ZgN/7CERzFWZwptiPlz+A0ThWpOz90/zTOFjdDd5nnSSO07rQAb8TozVJ106SAEDwuVdRm7Jfa968xGYukcf5JqUK/wnsx+nKY4y3GaumCr8IczC6ONxlTRpGf2pWmdaWpl8gHScSgmCmSzN1SMzmY9mNPjHaVqqOmBITgWuwtdjfF6IUQXI/bpYvZj59jdLCRAly8TEGq1JlFmjaKrw1Km4bpiDjM/6O1AVwtDZ0/idG2UmVqUMCrRfaZGJ2reKzJmCVdbOci26Hpyq78LKmyZxTpNE7guHRHj7YCYlc6J0k4VKR/pCjYGqOdpa6tCQEhWIDvsSpGv4/yOx3ch3uwEtdJ/cNMabBwHAelCx66PVDkh6ZDUh9xXKr0EzE6W+Xa6mZKQ8d9Au+OpvJDMAeb8Bi+wHZ8iD3Yh2MxOt1QOVunKQEPYN1IHwrBfHyGb7AyRvsaKk/PUnsTVHR0/2JhjI4M87kp+FQa/azvHur1E01MxBbhyHCVX/Cc1CFu6NfKp5kmaLk0IrgkIbgGz+KuXusUx5smImCZtIYzHM/jrRhH/NyEp4kIWIS9IVgpLSe/3z0PCMF1eFSaFfc9tXbCIViKX4vdP6XJyssx2lJMpubhdeyK0Yu1nfgyprYmKAQD+LjY3Sw9VlyHR4q7/jdpnX8JXqnrvJc7tURACKZiK36U1no2xujzEEyXnu3+gO0xWl/5ZBOMuiJgi7Sq+bS0ZLwPYnQSG6Ul4JdqOteEonIEhGC5tIRwY4yOheAwlsboUB0FnOjUEQH3YltR+YNLvIdrOG5fUIeAO6S1HNLy74F+ntmWpQ4Bq/Btke8wfg9YJgJ1CLhVGl6SBZSmkoAQzMIV0uNFsoDSVI2Axdjb1eZ3ZAGlqEVA135HFlCKqgIWON/8kAWUpqqAARdWeEcWUIo6BHTPeDuygFJUFdBxYYUPjYjMCNQdAQPyMkQpqgqYwwUP3+fKAkpRVcBs6c2zQYYKyYxAVQGzcKxrf64soBRNREBugkpQWwQUb8TlCChJHQIGI2C69GuSUxWP2VfU0QQN9gH57h8DdUZAHgGNgbojIHfAJRmzgKLTnem8gBwBY6BKBMzAya73PnMEjIEqL+fOxtEQTCryS+QIKE3Vt6M70ltvx6TKf63i8fqOSm/GFb9iP1X1Z6j9zLj8q4LMpempf9bRj2QBLZMFtEwW0DJZQMtkAS2TBbRMFtAy/wFOz1lzUZrZtwAAAABJRU5ErkJggg==" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ EMIm-TFSI }\)</span> + <span class="arithmatex">\(0.5 \; \mathrm{M}\)</span> <span class="arithmatex">\(\ce{ lithium bis(trifluoromethylsulfonyl)imide }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2015</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1007/s11434-015-0746-7"> Hu <strong><em>et. al.</em></strong> Fig. 1d (d_solid)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/liu_2019_in-situ_11_f2_dashed"><img alt="liu_2019_in-situ_11_f2_dashed" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ EMIM-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2019</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1016/j.electacta.2019.04.066"> Liu <strong><em>et. al.</em></strong> Fig. 2 (dashed)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/meng_2012_the_5222_f1_red_1"><img alt="meng_2012_the_5222_f1_red_1" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAABGxJREFUeJzt3F2oFkUcx/HP/1hq0tGiOhXUhTdd2CmLtCCxFErzJQpD67Y7o4ugi6LrEEq6q4sggqKwF0oL0pLAKAgjg140CEKSXiDLKApT82W6mA0eTsc6x3OenT1n9wvLs7O7w/Njfjv/mZ2d2Ugp6SjHQGkBbaczoDCdAYXpDChMZ0BhOgMK0xlQmM6AwnQGFOas0gImSoQZGMRczMaMUbaQb7ax/g6cJn0Sx0ZsJ3rO/5iSH8ajf8oYEGEBVmMDFo8hy+Fqm4V5fZTWy284fzwZouljQRHOxUtYO+LU5/hVvgsHMFMu7NnV9s/+EfyEn3t+D+GofEefxKme/d70X1X+I/izZ793O56SMy7ERhsQYQBvYwW24qGU7C+ranJpegh6RC7817BhIndaU2lsDYiwCHuq5NyU/FFST79oZDc0QuCpKnnvdC18GloDIqzHq/gB81NyvLCkvtG4NqBqeB/FN3hmOhc+zQxBq+WHm3l4sbCWvtO4EBRhl9xPH0rJssJy+k6jakCEy7BQfsDZVlhOLTTKAKzBTtyCHYW11EITDfgWR1LydWkxddAYAyKcg2Xy+Mu7ZdXUR2MMwHJ8igX4sLCW2miSAWuxHUt0BtRLNfSwBl8i4UBRQTXSCAMwLI+/D+Kj6TjqeTqaYsBavIVr5HagNTTNgIXym67WUHwoIsKF2I8hOfbfkJJvi4qqkSbUgNuwC+fJ73C/K6qmZppgwO16wk+bGmAKGxBhFlbKBgzji5J6SlC6BizHvpQcxFXYV1hP7ZQ24E68We0PY285KWUo1guKMEducK/F9/gDl6bk9yKCClGyBqzH7qrLOR+H2lb4lDVgI56p9lsZ/ylkQIQl8oPX9upQK+M/5WrAw3giJSeq9LCuBtRDhCtxPZ7rOdzaEFR7LyjCC/gqJZuq9CzVvPqUHK1VTAOodWZchGF5tvP9PYevwIE2Fj71h6BNeGxEd7O18Z8aa0CEZfILl7tHnGpt/KemGlDF+afxwCihprVdUOoLQY/IDe8bo5xrdQjqey8owlJ5rv+ikUs4IwziIAZTcrKvQhpKX2tANdl2i7zKZbT1szdiT1sLnz4aEOECeaLtkyl55zSX3YQP+qVhKtAXAyJcjY+xLSWb/+PSm/F+PzRMFSa9DYhwD56Uezxb/uO6OfLC6YtTcnhSRUwhJu05IMJZeAzrcGtKPvufLDdgb5sLn0kyIMJFeAXHsTglv4wh2wp5OkqrmXAbEOE6fILdWD3Gwicvxtv+v1dNcybUBkRYheexMSVbx5HvMnkK4lCbu6BMoAZUwws75KHkExFmjyP7Kuxse+EzAQNScgyXyz2eB/FjhJcjbKg+MTMqEc7GfXj9TP97OjFp3dAIQ7gDd8lPuLvkGP+evOr9lDzy+bj8rZ51bZuGOBp9GQuKcL4853MlluIS+fNf3+NZbE7JX5P+x1OQWl5JRpgJXaH/m+LrA9pO6bmhraczoDCdAYXpDChMZ0BhOgMK0xlQmM6AwvwN1J1EmqMUH18AAAAASUVORK5CYII=" /></a></td>
+<td class="echemdb-middle-cell">(poly)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ EMIM-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2012</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1039/c2cp23801b"> Meng <strong><em>et. al.</em></strong> Fig. 1 (red)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/motobayashi_2016_potential-dependent_14_2b_black"><img alt="motobayashi_2016_potential-dependent_14_2b_black" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(poly)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMIM-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2016</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1016/j.elecom.2016.01.018"> Motobayashi <strong><em>et. al.</em></strong> Fig. 2b (black)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/motobayashi_2016_potential-dependent_14_2b_red"><img alt="motobayashi_2016_potential-dependent_14_2b_red" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAABbhJREFUeJzt3H3I3lUdx/HXd7dzy9t7hkWrnKnLfCCzBm2tWDoHga2gtEZWFgURjYgRQZBBSSzQIDNMZvRA64kisSDQtJWVgRWUWIopyhy6qT1IbS6nbvv2x/ltu6ldu+/rdz3dD+cNh5v7+v3O+Z3rfM75nvP9nvO7IjNVRseCUVdgvlMFGDFVgBFTBRgxVYARUwUYMVWAEVMFGDFVgBFTBegTES6NsKHrfDUU0TsRTsQe7My0rJu8dQT0h881f2/oNmMVoEcinIfL8W08023+KkDvbMK12K0KMFwinIR34htYpAowdN6H2zI9gefj390WUAVoSYTARmxpPnoRnui2nCpAe9Yo7ffr5v+l+Fu3hVQB2vNxXJ/pkCO1VIsRUB2xFkR4NX6OMzLtjbAEj2Ei08FuyqojoEsijOOb+HSmvc3HZ+GBbhsfjutn5eYqEVbjauzE+fgdvj7plnNwf5uyqwBT0Kx2tuBbyjJzq7L0nGy7z8N9bcqvAkzNG3ECrjuGiVmDK9sUXifhKYhwE36R6foO15dgF5ZOmhOmTR0BxyDCRXg93n+M296NW9s0PlUAEVbiy/iL4lTtRuACfACXZXqqQ96Fij/w0bbPn9cCRFiGH+PzmMDbMY4x3IVVmbYfo4gP41H8snUdZtsc0EQgX44XYAn2K1HIvUrv3XPob6ZnmlXM8VisRCxPwMuwUum9X8z0pRb1OBu/xdpM97b9PjN+BEQ4HhcrvXMdXoiH8A+loceUhh1XBJlo0pIICxRn8znsU4Tah0dwDzZkurNFnV6Cn+KKXhqfEYyAxqnZgJtxO1LpoRN4MU5t0tlY0aR7cCNu1YXH2djoA2081A7ljWE9voItma7qucxhChDhHNyBryo9+lxFgAOKCXlc6Z2PKL38Lvwpc/pRxqbXL8Sz/+MstanvuOJkrVBG3zo8jM9kurmXsg8/Y8gCbMV9h3pO01jHZXq2ZXknK8vAN+OVSkRysTIvLMBTR0l7FLGfVszRPmXVs7hJJ+GlOAUnKx7un5UV0rZMj7apa8fvMCwBmslzB16R6e89lDOm9MqNeBduwU24W4lI/ifTwcb8jOPEDmkxntekg46IsVtxrHZhV6b9bes6HYY5CV+m9KBpNX6E5XgdTsdpk9IZiqnainMzPX60/Jmew7+aNGMZ5gj4Az6b6ZYO1wOrFJOyXlnR3IHtit3d0aTtbb3OmchQRkCEtcry8bYO10/B9xS7+x3FtNzdr9XLTGbgAkQ4H9/FxkwHjnJ9HNvwA2w+2j1zmYGZoGYS/BQ+hk2Zvt/hvs1Ynuk9A6nIDGcgIyDCa5QNjJ1Y0Wnp1hxq/QheO4h6zAb6viccUQ4r4Rq8dYp18yW4M9PD/a7HbKGvIyDCB5WTwhdmTmuL7h34UT/rMNvo2xwQ4VJch3WZU29QR1ikBNROy/RkXyoxC+nLCIjwKiW+c/F0Gr9hpRJYm7eNTx/mgKYn/xCfyPTHLrJe4MixvnlLPybhT+IBxYHqhgvxmz48f1bT0xzQOFE7sDrTg13kW4h/4vRqgnrjEvy+m8ZvWImH5nvj07sAb8FPWuRbq+yGzXt6FeAN2jXkRfhVj8+eE7QWIMKEsne7PGL6y9lmk321OgGjtxHwNK7AZjwW4WsR04rprML9mTN7o2RYtBYg0/5MV2VapQTTHsSNEW5vQtCdWKuan8P0JRiXaUemq3Gm4pRti/ChDrevVQU4zED2A5pTYz/DlZm2Tvr8UPxnWWb3r3TORQbyilITD1qPayKcOunSKvy1Nv4RBvaOWBOOvsGRH7Kgmp//Y9Av6X0B6ydNymuUkw6VhoEfS4mwCW/C2/AkzuzlYNZcYxgCLMK9ys+5XJ7prIE+cJYx8GMpzRn99yqx/2sH/bzZxjBPxo3NtzM/02HWvSEz16g/VTBiqgAjpgowYqoAI6YKMGKqACOmCjBiqgAj5r861L1mdiKShQAAAABJRU5ErkJggg==" /></a></td>
+<td class="echemdb-middle-cell">(poly)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMIM-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2016</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1016/j.elecom.2016.01.018"> Motobayashi <strong><em>et. al.</em></strong> Fig. 2b (red)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/rudnev_2020_structural_501_f2c_1"><img alt="rudnev_2020_structural_501_f2c_1" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMP-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2020</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1002/celc.201902010"> Rudnev <strong><em>et. al.</em></strong> Fig. 2c (solid)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/schuett_2021_electrodeposition_20461_fs1_blue"><img alt="schuett_2021_electrodeposition_20461_fs1_blue" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ MPPi-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2021</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1002/anie.202107195"> Schuett <strong><em>et. al.</em></strong> Fig. S1 (blue)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/wallauer_2013_the_1143_f3d_bottom"><img alt="wallauer_2013_the_1143_f3d_bottom" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMB-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2013</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.5560/ZNB.2013-3153"> Wallauer <strong><em>et. al.</em></strong> Fig. 3d (bottom)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/wallauer_2013_the_1143_f3e_bottom"><img alt="wallauer_2013_the_1143_f3e_bottom" class="echemdb-cv-thumbnail" src="data:image/png;base64,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" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ EMIM-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2013</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.5560/ZNB.2013-3153"> Wallauer <strong><em>et. al.</em></strong> Fig. 3e (bottom)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/wen_2015_potential-dependent_6062_f1_black"><img alt="wen_2015_potential-dependent_6062_f1_black" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAAA95JREFUeJztm0+I1VUUxz9napo0e/mndPTRIk0YjVxoiCQUVJSrICFaRNBCRFfuW7kIxUW0DoI2QgZRCxF0I4XiNItcSDQYiUF/jKRMzT9vGD0t7kkkWrzfvce5NPd84HIu7737/d0533fu7/3u7zeiqgT1GKk9gdYJAyoTBlQmDKhMGFCZMKAyYUBlwoDKhAGVCQOcEGGFCKu6jgsD/PgV+KDroDDAAREetu67XceGAT7sB1BlqutAid3QckRQ4Lwqq7uOjQooRIRHrftWzvgwoJx9Fk/lDI4lqBBbfqZVWZ8zPiqgABGetO7uXI0woIy9Fk/kCsQSlIkIAtwGTquyKVcnKiCfzRbfKRGJCshEhM+A14AxVWaydcKA7ogwCswAp1TZWqIVS1AeL1t8r1QoKiADEY6RTFikyrUirTCgGyL0gMvACVWeK9WLJag72y1+6CEWFdARESaBLcAyVf4o1YsK6IAIfVLyT3okH8KArrxp8WMvwViChsS2Hs4Ca4G+Kr946EYFDM8mUvKnvJIPYUAX3rb4qadoLEFDIMKDwDXSF3a5Khe9tJuvABF6Irwvwh67yPovdpJyddAz+dBoBYhwHzABbAX2AKeBBcA24Fvge+ACcANYCuwARoH1qky7zmW+GWDLxRPAOmCDtXFSgh8iJXQx8AMwBXwCHFZFRVgIbLTx48AYcJ1k1FXVO+cBv/neKwNEGAdeICWgT/qDVgDLgCWkhMwFZ4GLwC1rV4E/rS/2mUv22iKgRzJqzNpKe+15VX7znpyrAfZb+Q2Gv1AZkMr8psW72wCYtXaLdPvvn/6/48CO+xhpj+Y6ab9+xt67uz9rWmoN0peiB/wFXCGdcAfWLgGTqgy6ZWM43AwQ4X7gIPAs8DiwXZXPXcSHO/4jQE+VH+fqmB54GrCXlPxvgIWq7HIRnue4GCDCEuAcaaNqEnhGlfPFwg3gdR3wKvAl8BRwJpI/PF4GbAMOA68Dh5w0m8DLgI3A16T7pEecNJug2AD775A+6Tf0BVV+Kp5VQ3hUwGrSVeVLwFEHvabwMGAV8DPwCnDMQa8pPAzok64gnwZOOug1hZcBa4CvVLnpoNcUHgasJO08HnfQag4PA5YDDxAGZFG8FSHCd6Sb1aOqzLrMqiE8KmAtcC6Sn0eRAbYFDfCRw1yapLQC1liM7YdMSg140eKZ0om0StFJWIRpYEL1zr3VoCOlFTABfOEwj2bJNsBuwAMccJpLk2QvQSIsBX4HRlSZXw8XzSGl54ARVW47zqc55t2Tcf83mn84tzZhQGXCgMqEAZUJAyoTBlQmDKhMGFCZvwE8/RG7yH9HXgAAAABJRU5ErkJggg==" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMP-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2015</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1002/anie.201501715"> Wen <strong><em>et. al.</em></strong> Fig. 1 (black)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/wen_2015_potential-dependent_6062_f1_blueinset"><img alt="wen_2015_potential-dependent_6062_f1_blueinset" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAABKxJREFUeJzt3F2oHdUZxvHfm0RtbMBDNBqtIFExapKiUtL6iaAYtRI/LhS8Uyytab3JjSKIXhQqvSgUpBfaioq1CKLVoqjEooFATNSA0fiBRhuSI4GmtaLGD/TtxezA4XA8nr3P7L0mZ+YPA2fPnv2u56xn3jWz1qw1kZk6yjGvtIC20xlQmM6AwnQGFKYzoDCdAYXpDChMZ0BhOgMKs6C0gCYQ4QdYjqMwhm+wHx/h/UyfzSDG4ZiX6dN+ym6tARGOx424GqdiJ/biY8zHQvwIyyK8jftxX6Yvp4i1EE9hA+7uS0hmtmoj55G3k/8h7yHPJw+b5vhDyAvJZ8nN5NJJ3y8lN5IPk/P71lO6QgoY8HvyZfL4Pn8X5B3kLvIy8gTyV+Q4edcglZ+ZogreDiKcjn9iRaZ9A8a4AnfiWGzF7zJtGVhTywz4LQ7JdGtpLQdo223opXimtIiJtCYDIhyNd7Ek09el9RygTRlwEV5sUuXTLgPOw8bSIibTJgPOxabSIibTimtAhCOwB4szfVVaz0TakgE/w9amVT7tMWA1g3eWhklbDDgTr5YWMRVtMeAsbCstYirmvAERjsRivF9ay1TMeQNwBrZl+ra0kKlogwGNbX5ohwFn6gwoyll4rbSI72JO94QjLFI95x1r2iDcAeZ6BvwYO5pa+cx9Axrd/tMZUJzOgMI00oAIiyLcGWFbhK0Rrh8gxqE4Da/Xr7A+GjczLsIq/B2bcTMW4d4ICzI91Eeo0/Fhps/rV1kfjTIgwuV4AOszPTxh/5V4IcKTmf43w3CNb35oUBMU4Tf4M9ZOrHzItB3P4aY+Ql6Ml+pTOCQaMFVwPvlHcge5bJrjLia3zjDmAnJfv9MPS2xFMyBC4K9YhXMyfTDN4S/ipAhLJ8VYF2FXhHUTdq/Be5l21625dgqf/evJLdPNTp50/NPkNRM+n0j+u5cde8nVvf1PkTeWPrsbnQERforbcG1OMef+O9ikml5ygBvwUKYN+DUeibBW9Qz40Tr1DouhGRDhpAgXRFgeYazX3IgQEdbgcfwy04d9hN2Bkyd8XoMnIdNj+Bv+gl/kDFa1NIHaR0MjHIsHVe36ThyNY3CoavXJ4fgXbs3sb6JshNX4U6af9Dpan6hGOr+o7z8YLbX2A3oToF7CI/h5ThiF7C3jGcMXmf47YBHjOK7398nYdTBXPvV3xP6ADZnumvxFpv2qhW+zYS+WRFigGmZ4a5bxilObAb3VJ1fglLpiTibT1xH2qZq1FXhjWGWNijovwrfgnpz5UMGgjKtWL67UGVAR4Ye4TnUHMmz2qK4DK/HmCMobKnVlwGV4JdN4TfGmYxzLets7IyhvqNRlwFV4oqZY38du1eLqt/vowDWWWRvQux+/XK9DNAK24wLV6OhBTx0ZcDZ2jqj5oXodwD9w34jKGyp13IZeYoRnY1Yvw1g7qvKGTR0ZcAmeryFOK5nVWFBv6vcHOCobuPznYGC2GXARNnaVPzizNaBrfmZJHRnwQh1C2srABvTeOLVQ9ZCkY0BmexEey/RxfXLax5xeH3Aw0JiJWW2lM6AwnQGF6QwoTGdAYToDCtMZUJjOgML8H6ZtN/Pkoo9ZAAAAAElFTkSuQmCC" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMP-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2015</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1002/anie.201501715"> Wen <strong><em>et. al.</em></strong> Fig. 1 (blueinset)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/wen_2015_potential-dependent_6062_fs1_black"><img alt="wen_2015_potential-dependent_6062_fs1_black" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAABKxJREFUeJzt3FuIVVUcx/HP0nFUxjSTFAuzK2WldBMnlCjKyJJuEr5kBRG9RC8RRJeHIPCliHowhEiFoIKgonooqF6abka9VIIZ1MRUWt41dUxXD2tPTkM1c9z7tGfOWV9Y7H3WPvz3f6/f+v/32mvtc0KMUaY+xtXtQLuTBaiZLEDNZAFqJgtQM1mAmskC1EwWoGayADXTEgKEoDME14XgzLp9aZSOuh0oSwgm4h2cgNNC8AoejdGuWh0bIa0QAauxEwtxrtSpNoXg9hCEWj0bAWEsT8aFYAlexoIY7RhU343nsAsP4bMYjcoLHbMChGASvsTDMXrtH4534F48gB14CW9h82gSY0wKUKSW5zElRiuH+e54LMUtuB6T8AW+xvf4Ab3YLqWyff+nQE0VIASLcQbejtHOkram4yycgztwIpbGaF8DNgJm4xLMw1ycjjk4CdMxURLiAA6hvyiHcFS6x3Rg/JDtybgvRi82dF3NEiAEM/Ed3sNV6JFSxjbp4rowDVMHbadiCiZLPXVSsd9VmN1SlA+wLkYHm+B3pyTEZHRKgnQWvk0vfJmBmZgldYp5xecbY/RmQ+drogD3Y2GMVoVgGq7BBTgV3VKPmSpd0FEcKbb7sQd7i9KLZ/FJjGIIunAFFmFFcSwWdmdIPXlgO00ScaARJ+Iw9g2yv7f4vK/wYaBDTBuyD7sL37bi56J8i6/weYz2NNpOzXwOWIVHIEa7Q7BRysG3SZHxsdS4PznWCPulxuzAhKKcjTfQE4IZuFjK4R/iQtwjNUBfYXejlM93SA12UEofA+lkgvTMMLh0SZHX4Vgj7x5cmhFtNCkCQnAe3secGB0JwTJswFo8E6PfGrQ3FSslwXoayfujnWYJsBodMXowBBfhXdwco48qP9kYp3IBimFfrzT02ySlmrUxWlfpiVqEZkxFLENfjL7BldKNbEMTztMSVCpA0fsfw1NF1d1YE6OjVZ6nlag0BYXgCVyOayVxt2J+jPoqO0mLUdkwNAQ34E5cWox8LsOPufH/m0oECMFcvIBbY7StqO4mj3qGo/Q9oJhfWY8nY9Qz6FA3Pilrv9Wp4iZ8tTQn8vSQ+m58WoH9lqYKAe6SRjp/DFSEYJY0W7m5AvstTSkBQjAOy/HqkEOLpFWoPPwchrIRMA+/xuiXIfWL5Pw/IsoKsECa4x/KYjn/j4iyApyCvhBMGKgIwRzMlxZNMsNQhQDL0R+CNSGYjcexPkYHSnvXBpR9EJspLZiswBJpQWRLsZ8ZAaXmgkLwOm7C5BgdLJYL+2N0uCL/Wp6yEXA+DCzXxWh/aY/ajLIRcFha+Rr1rwCOVsrehDv4a/ItcxxUMRXRW4GNtqUKAYY+BWcaoAoBGnrFJPN3qhBgewU22pYcATWTI6BmqhBgx/BfyfwbVQjQ8BvBmWNUIUDLvChbB1mAmqlCgL0V2GhbcgTUzHELULwRAb9X5EtbUiYCOottfxWOtCtlBJhYbI9U4Ui7UkaASTCafnU+FqkiAjIlKB0BmXLkCKiZHAE1U0aAUn++kUmMyb+raSVa4S/LxjRZgJrJAtRMFqBmsgA1kwWomSxAzWQBaiYLUDN/AvXAPz/L9PGLAAAAAElFTkSuQmCC" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(\ce{ BMPY-TFSI }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2015</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1002/anie.201501715"> Wen <strong><em>et. al.</em></strong> Fig. s1 (black)</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.indexes", "navigation.tabs.sticky", "toc.follow"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js"></script>
+      
+        <script src="../../javascripts/tables.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/contrib/mhchem.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
