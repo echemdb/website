@@ -61,8 +61,8 @@ var layout = {
 
 Plotly.newPlot('vis', traces, layout);
 
-async function updatePlot(names) {
-    Promise.all(
+function updatePlot(names) {
+    return Promise.all(
             names.map(name => {
                 const source = name.split("_")
                     .slice(0, -2)
