@@ -37,7 +37,10 @@ EXAMPLES::
 # ********************************************************************
 import os
 
+from mkdocs.config import load_config
 from unitpackage.database.echemdb import Echemdb
+
+config = load_config("mkdocs.yml")
 
 ECHEMDB_DATABASE_URL = os.environ.get(
     "ECHEMDB_DATABASE_URL",
@@ -45,3 +48,4 @@ ECHEMDB_DATABASE_URL = os.environ.get(
 )
 
 cv = Echemdb.from_remote(url=ECHEMDB_DATABASE_URL)
+cv.save_entries(outdir=os.path.join(config["site_dir"], "data"))

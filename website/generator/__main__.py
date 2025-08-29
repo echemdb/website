@@ -77,6 +77,18 @@ def main():
         )
     t_aqueous = time.time() - t_aqueous_start
     print(f"Generated aqueous overview page in {t_aqueous:.2f} seconds")
+
+    # Create an overview page with tabulated and linked entries for all systems to compare.
+    with mkdocs_gen_files.open(os.path.join("cv", "compare.md"), "w") as markdown:
+        markdown.write(
+            render(
+                "pages/compare.md",
+                database=database,
+                intro="Cyclic voltammograms to compare.",
+                material_filter=material_filter(),
+            )
+        )
+
     t_coor_start = time.time()
     # Create an overview page with tabulated and linked entries for CO oxidation (COOR) in aqueous systems.
     with mkdocs_gen_files.open(
@@ -110,6 +122,7 @@ def main():
                 material_filter=material_filter(),
             )
         )
+
     t_ionic_liquid = time.time() - t_ionic_liquid_start
     print(f"Generated ionic liquid overview page in {t_ionic_liquid:.2f} seconds")
 

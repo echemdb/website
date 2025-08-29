@@ -21,6 +21,9 @@ as in **[Ionic Liquids](ionic_liquid.md)**, or it consists of a non-conductive s
 * **COOR**: CO Oxidation Reaction, usually studied in a CO saturated electrolyte.
 * **HER**: Hydrogen Evolution Reaction.
 
+## Individual Comparisons
+**[Compare](compare.md)**
+
 [^1]:
     Note that in the literature the abbreviation CV is sometimes
     used for the technique cyclic voltammetry.
