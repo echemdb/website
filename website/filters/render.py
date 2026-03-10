@@ -108,9 +108,9 @@ def render_plot(entry):  # pylint: disable=R0914
     try:
         entry = entry.rescale("original")
     except (KeyError, AttributeError):
-        fd = entry._descriptor._descriptor.get(
+        fd = entry._descriptor._descriptor.get(  # pylint: disable=W0212
             "figureDescription", {}
-        )  # pylint: disable=W0212
+        )
         units = {f["name"]: f["unit"] for f in fd.get("fields", []) if "unit" in f}
         if units:
             entry = entry.rescale(units)
