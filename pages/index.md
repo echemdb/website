@@ -21,14 +21,14 @@ in the laboratory, and theoretical models.
 </figure>
 
 <figure class="echemdb-spotlight echemdb-spotlight-reverse" markdown>
-[![Content](./images/home_plot.png)](./cv/entries/schnaidt_2017_a_4141_f2_solid)
+[![Content](./images/home_plot.png)](cv/entries/schnaidt_2017_a_4141_f2_solid.md)
 <figcaption markdown>
 ## Website
 
 The website shows cyclic voltammograms from the echemdb data repository
 which were standardized and validated from published works by the community.
 
-[→ Explore](./cv)
+[→ Explore](cv/index.md)
 </figcaption>
 </figure>
 

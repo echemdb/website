@@ -9,9 +9,6 @@ Click a graph to add it to the comparison.
 
 {{ render("components/cv_compare_table.md", entries_path=entries_path, database=database) }}
 
-
-
-
 <script src="https://cdn.plot.ly/plotly-3.1.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 
@@ -24,7 +21,7 @@ var layout = {
 
     xaxis: {
         title: {
-            text: '<i>E</i> [V]',
+            text: '<i>E</i> / V',
             font: {
                 family: 'Courier New, monospace',
                 size: 18,
@@ -39,7 +36,7 @@ var layout = {
 
     yaxis: {
         title: {
-            text: '<i>j</i> [A m⁻²]',
+            text: '<i>j</i> / A m⁻²',
             font: {
                 family: 'Courier New, monospace',
                 size: 18,
