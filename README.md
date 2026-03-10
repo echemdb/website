@@ -32,6 +32,8 @@ pixi run doctest
 pixi run lint
 ```
 
+The version of the electrochemistry-data must be adapted in the [database generator](website/generator/database.py).
+
 # License
 
 The contents of this repository are licensed under the [GNU General Public

@@ -117,9 +117,9 @@ def render_plot(entry):
         )
     )
 
-    x_field = entry.mutable_resource.schema.get_field(x_label).to_dict()
+    x_field = entry.resource.schema.get_field(x_label).to_dict()
     reference = (
-        entry.mutable_resource.schema.get_field(x_label).to_dict().get("reference")
+        entry.resource.schema.get_field(x_label).to_dict().get("reference")
     )
     if reference:
         reference = f" vs. {x_field['reference']}"
