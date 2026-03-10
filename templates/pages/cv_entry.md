@@ -24,7 +24,7 @@ in
 
 <!-- TODO: It would be great if we could toggle between SI and original units. See #104. -->
 <!-- TODO: Format plots. See #104. -->
-{{ entry.rescale('original') | render_plot }}
+{{ entry | render_plot }}
 
 
 <!-- TODO: Make download link work, i.e., build .zip package and link to it here. See #104.

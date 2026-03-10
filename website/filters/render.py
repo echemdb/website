@@ -102,6 +102,21 @@ def render_plot(entry):
     import plotly.graph_objects
     from astropy.units import Unit
 
+    # Rescale to original units, skipping unitless fields (e.g., 'cycle').
+    # TODO: Remove workaround once unitpackage's rescale('original') handles unitless fields.
+    # See https://github.com/echemdb/unitpackage
+    try:
+        entry = entry.rescale("original")
+    except (KeyError, AttributeError):
+        fd = entry._descriptor._descriptor.get("figureDescription", {})  # pylint: disable=W0212
+        units = {
+            f["name"]: f["unit"]
+            for f in fd.get("fields", [])
+            if "unit" in f
+        }
+        if units:
+            entry = entry.rescale(units)
+
     x_label = "E"
     y_label = "j"
     x_label = entry._normalize_field_name(x_label)  # pylint: disable=W0212
