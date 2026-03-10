@@ -94,7 +94,7 @@ def render(value, template=None):
     return website.macros.render.render(template, value=value)
 
 
-def render_plot(entry):
+def render_plot(entry):  # pylint: disable=R0914
     r"""
     Return html representation of plotly plot.
 
@@ -108,12 +108,10 @@ def render_plot(entry):
     try:
         entry = entry.rescale("original")
     except (KeyError, AttributeError):
-        fd = entry._descriptor._descriptor.get("figureDescription", {})  # pylint: disable=W0212
-        units = {
-            f["name"]: f["unit"]
-            for f in fd.get("fields", [])
-            if "unit" in f
-        }
+        fd = entry._descriptor._descriptor.get(
+            "figureDescription", {}
+        )  # pylint: disable=W0212
+        units = {f["name"]: f["unit"] for f in fd.get("fields", []) if "unit" in f}
         if units:
             entry = entry.rescale(units)
 
