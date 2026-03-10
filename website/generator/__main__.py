@@ -96,6 +96,25 @@ def main():
         )
     t_coor = time.time() - t_coor_start
     print(f"Generated COOR overview page in {t_coor:.2f} seconds")
+    t_faor_start = time.time()
+    # Create an overview page with tabulated and linked entries for formic acid oxidation reaction (FAOR) in aqueous systems.
+    with mkdocs_gen_files.open(
+        os.path.join("cv", "aqueous", "FAOR.md"), "w"
+    ) as markdown:
+        print("Generating overview page for FAOR in aqueous systems")
+        markdown.write(
+            render(
+                "pages/cv.md",
+                database=database.filter(
+                    lambda entry: entry.system.electrolyte.type == "aqueous"
+                    and "FAOR" in entry.experimental.tags
+                ),
+                intro="Cyclic voltammograms recorded in formic acid containing aqueous electrolytes.",
+                material_filter=material_filter(),
+            )
+        )
+    t_faor = time.time() - t_faor_start
+    print(f"Generated FAOR overview page in {t_faor:.2f} seconds")
     t_ionic_liquid_start = time.time()
     # Create an overview page with tabulated and linked entries for ionic liquid systems.
     with mkdocs_gen_files.open(os.path.join("cv", "ionic_liquid.md"), "w") as markdown:

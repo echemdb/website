@@ -19,6 +19,7 @@ as in **[Ionic Liquids](ionic_liquid.md)**, or it consists of a non-conductive s
 
 * **BCV**: We consider a base cyclic voltammogram as a CV that shows no electrocatalysis except possibly the decomposition of the electrolyte.
 * **COOR**: CO Oxidation Reaction, usually studied in a CO saturated electrolyte.
+* **FAOR**: Formic Acid Oxidation Reaction, usually studied in a formic acid containing electrolyte.
 * **HER**: Hydrogen Evolution Reaction.
 
 [^1]:

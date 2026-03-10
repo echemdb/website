@@ -94,13 +94,26 @@ def render(value, template=None):
     return website.macros.render.render(template, value=value)
 
 
-def render_plot(entry):
+def render_plot(entry):  # pylint: disable=R0914
     r"""
     Return html representation of plotly plot.
 
     """
     import plotly.graph_objects
     from astropy.units import Unit
+
+    # Rescale to original units, skipping unitless fields (e.g., 'cycle').
+    # TODO: Remove workaround once unitpackage's rescale('original') handles unitless fields.
+    # See https://github.com/echemdb/unitpackage
+    try:
+        entry = entry.rescale("original")
+    except (KeyError, AttributeError):
+        fd = entry._descriptor._descriptor.get(  # pylint: disable=W0212
+            "figureDescription", {}
+        )
+        units = {f["name"]: f["unit"] for f in fd.get("fields", []) if "unit" in f}
+        if units:
+            entry = entry.rescale(units)
 
     x_label = "E"
     y_label = "j"
@@ -117,10 +130,8 @@ def render_plot(entry):
         )
     )
 
-    x_field = entry.mutable_resource.schema.get_field(x_label).to_dict()
-    reference = (
-        entry.mutable_resource.schema.get_field(x_label).to_dict().get("reference")
-    )
+    x_field = entry.resource.schema.get_field(x_label).to_dict()
+    reference = entry.resource.schema.get_field(x_label).to_dict().get("reference")
     if reference:
         reference = f" vs. {x_field['reference']}"
     else:

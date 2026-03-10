@@ -2,6 +2,7 @@
 * [CV](cv/index.md)
     * [Aqueous](cv/aqueous.md)
         * [COOR](cv/aqueous/COOR.md)
+        * [FAOR](cv/aqueous/FAOR.md)
     * [Ionic Liquid](cv/ionic_liquid.md)
 * [API](https://echemdb.github.io/unitpackage/)
 * [About](about.md)
