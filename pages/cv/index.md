@@ -1,8 +1,9 @@
 # Cyclic Voltammograms
 
 The cyclic voltammograms (CVs[^1]) are categorized based on the type of system,
-i.e., aquoues or non-aqueous, as well as common descriptors (tags) used by the
-community to descibe an experiment. An entry can have several tags.
+i.e., aquoues or non-aqueous, as well as descriptors (tags) used to some extent
+commonly by the community or introduced here for the purpose of categorizing the systems.
+An entry can have several tags.
 
 To create, browse and compare specific datasets based on other search criteria,
 use the [API](https://echemdb.github.io/echemdb/).
@@ -17,10 +18,12 @@ as in **[Ionic Liquids](ionic_liquid.md)**, or it consists of a non-conductive s
 
 ## Tags
 
-* **BCV**: We consider a base cyclic voltammogram as a CV that shows no electrocatalysis except possibly the decomposition of the electrolyte.
+* **BCV**: We consider a "base cyclic voltammogram" as a CV that shows no electrocatalysis except possibly the decomposition of the electrolyte.
+* **SHA**: Specific Halide Adsorption, studied in electrolytes containing at least one halide component.
 * **COOR**: CO Oxidation Reaction, usually studied in a CO saturated electrolyte.
 * **FAOR**: Formic Acid Oxidation Reaction, usually studied in a formic acid containing electrolyte.
 * **HER**: Hydrogen Evolution Reaction.
+
 
 [^1]:
     Note that in the literature the abbreviation CV is sometimes

@@ -1,4 +1,4 @@
-# Cyclic Voltammograms
+# {{ title }}
 {{ intro }}
 
 Click a graph for more details.

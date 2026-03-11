@@ -1,6 +1,8 @@
 * [Home](index.md)
 * [CV](cv/index.md)
     * [Aqueous](cv/aqueous.md)
+        * [Single Component](cv/aqueous/single_component.md)
+        * [SHA](cv/aqueous/SHA.md)
         * [COOR](cv/aqueous/COOR.md)
         * [FAOR](cv/aqueous/FAOR.md)
     * [Ionic Liquid](cv/ionic_liquid.md)
