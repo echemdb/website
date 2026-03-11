@@ -37,7 +37,7 @@ import website.generator.database
 from website.macros.render import render
 
 
-def main():
+def main():  # pylint: disable=R0914
     r"""
     Create MarkDown files in a virtual file system that is consumed by mkdocs
     when building the website.
