@@ -71,12 +71,34 @@ def main():
                     lambda entry: entry.system.electrolyte.type == "aqueous"
                     and "BCV" in entry.experimental.tags
                 ),
-                intro="",
+                title="Aqueous Cyclic Voltammograms",
+                intro="Overview of base cyclic voltammograms (BCVs) recorded in aqueous electrolytes.",
                 material_filter=material_filter(),
             )
         )
     t_aqueous = time.time() - t_aqueous_start
     print(f"Generated aqueous overview page in {t_aqueous:.2f} seconds")
+    t_bcv_start = time.time()
+    # Create an overview page with tabulated and linked entries for aqueous BCV systems with a single electrolyte component besides water.
+    with mkdocs_gen_files.open(
+        os.path.join("cv", "aqueous", "single_component.md"), "w"
+    ) as markdown:
+        print("Generating overview page for aqueous BCV (single component)")
+        markdown.write(
+            render(
+                "pages/cv.md",
+                database=database.filter(
+                    lambda entry: entry.system.electrolyte.type == "aqueous"
+                    and "BCV" in entry.experimental.tags
+                    and len(entry.system.electrolyte.components) == 2
+                ),
+                title="Single Component Cyclic Voltammograms",
+                intro="Base cyclic voltammograms recorded in aqueous electrolytes with a single additional component (water + one acid, base, or salt).",
+                material_filter=material_filter(),
+            )
+        )
+    t_bcv = time.time() - t_bcv_start
+    print(f"Generated BCV overview page in {t_bcv:.2f} seconds")
     t_coor_start = time.time()
     # Create an overview page with tabulated and linked entries for CO oxidation (COOR) in aqueous systems.
     with mkdocs_gen_files.open(
@@ -90,6 +112,7 @@ def main():
                     lambda entry: entry.system.electrolyte.type == "aqueous"
                     and "COOR" in entry.experimental.tags
                 ),
+                title="COOR Cyclic Voltammograms",
                 intro="Cyclic voltammograms recorded in CO containing aqueous electrolytes.",
                 material_filter=material_filter(),
             )
@@ -109,12 +132,33 @@ def main():
                     lambda entry: entry.system.electrolyte.type == "aqueous"
                     and "FAOR" in entry.experimental.tags
                 ),
+                title="FAOR Cyclic Voltammograms",
                 intro="Cyclic voltammograms recorded in formic acid containing aqueous electrolytes.",
                 material_filter=material_filter(),
             )
         )
     t_faor = time.time() - t_faor_start
     print(f"Generated FAOR overview page in {t_faor:.2f} seconds")
+    t_sha_start = time.time()
+    # Create an overview page with tabulated and linked entries for specific halide adsorption (SHA) in aqueous systems.
+    with mkdocs_gen_files.open(
+        os.path.join("cv", "aqueous", "SHA.md"), "w"
+    ) as markdown:
+        print("Generating overview page for SHA in aqueous systems")
+        markdown.write(
+            render(
+                "pages/cv.md",
+                database=database.filter(
+                    lambda entry: entry.system.electrolyte.type == "aqueous"
+                    and "SHA" in entry.experimental.tags
+                ),
+                title="SHA Cyclic Voltammograms",
+                intro="Cyclic voltammograms recorded in halide containing aqueous electrolytes.",
+                material_filter=material_filter(),
+            )
+        )
+    t_sha = time.time() - t_sha_start
+    print(f"Generated SHA overview page in {t_sha:.2f} seconds")
     t_ionic_liquid_start = time.time()
     # Create an overview page with tabulated and linked entries for ionic liquid systems.
     with mkdocs_gen_files.open(os.path.join("cv", "ionic_liquid.md"), "w") as markdown:
@@ -125,6 +169,7 @@ def main():
                 database=database.filter(
                     lambda entry: entry.system.electrolyte.type == "ionic liquid"
                 ),
+                title="Ionic Liquid Cyclic Voltammograms",
                 intro="Cyclic voltammograms recorded in ionic liquids.",
                 material_filter=material_filter(),
             )
