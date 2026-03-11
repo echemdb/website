@@ -1,0 +1,840 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../COOR/">
+      
+      
+        <link rel="next" href="../../ionic_liquid/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>FAOR - echemdb.org</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/katex.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#faor-cyclic-voltammograms" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="echemdb.org" class="md-header__button md-logo" aria-label="echemdb.org" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            echemdb.org
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              FAOR
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  CV
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://echemdb.github.io/unitpackage/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  API
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="echemdb.org" class="md-nav__button md-logo" aria-label="echemdb.org" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    echemdb.org
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    CV
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            CV
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Aqueous
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Aqueous
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../single_component/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Single Component
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SHA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SHA
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../COOR/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    COOR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    FAOR
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAOR
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#au" class="md-nav__link">
+    <span class="md-ellipsis">
+      Au
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ionic_liquid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ionic Liquid
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://echemdb.github.io/unitpackage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#au" class="md-nav__link">
+    <span class="md-ellipsis">
+      Au
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="faor-cyclic-voltammograms">FAOR Cyclic Voltammograms</h1>
+<p>Cyclic voltammograms recorded in formic acid containing aqueous electrolytes.</p>
+<p>Click a graph for more details.</p>
+<h2 id="au">Au</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Substrate</th>
+<th class="echemdb-expand-column">Electrolyte</th>
+<th class="echemdb-hide-mobile">Year</th>
+<th class="echemdb-hide-mobile">Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/hermann_2021_effect_138279_f5a_black"><img alt="hermann_2021_effect_138279_f5a_black" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAABE5JREFUeJztnEFoHUUYx3/fqza2GotSSCnVU1NrsUpFRKoHqVoPogfbiyjq0YMKItSrB2+KHiqKoGIRBFE8NF7qQRQRBdFWa22JFdSDtlixpEalafr3sPPSbfq02dlkv8zs/uAxO+/Nzv6Z/34zs7O7zyTR4UfPW0Db6QxwpjPAmc4AZzoDnOkMcKYzwJnOAGc6A5xprQFmDJvxpRn7zLjITUcblyLMeAB4c8BPSyRON6qlbQaYsR+45n+KrJI42pSeVnVBZmzjTOOPSJiEASOlYkfMuLwxTW2JADNGgCMhe5nE8QFltgPvhOylEicWWlebIuDjkL48qPEBJN4F7g/ZiSYG51ZEQPnsD13O+crfDewGDgEbJM5pJDN6wBUSP9XR1pYI6Hc9m+ZSWGIMeBJYDzz/H8VeA340Y2MdYdlHQOhG/oa5nf2z9t0DbAW2Sbw367dxYBQ4KLEhWl8LDHgU2AlcL7G34r4GM9cFoxKHS7+dhsLQqsaedYwWGCCIbyQzLgb+DNmVEr+X6w1EXztkPQaYsT5s3h5bh8QkcGXIHguDb59jIX06tv6sI8CMT4HNQG/QTKZiXQ8BbwDjEleFCPgFWEoRGVERlm0EhMF3M/Bq3cYHkNgFjAHrzPgqfH0C2FGn3mwNAO4L6TPzVaHEPcAuzkxnDxMW9cy4OabOnA14HaDuhdJsJB4GHglZkzgVtl+Iqe+C+RC12DDjkrC5eyHql3jFjOPAwfDVHuDOmLqyHITNeIuiC1ot8WsDx7sa+A5YITFRad9MDag1969xzBclHquyX3ZjQGme/nbDh34J+LnqTtlFgBnXAfuAtRI/OMs5Lzka8D5wV5PdTx1yNKDx/r8O2Y0BgSe8BcyVrCLAjFFgHBiWZlYwFzW5RcAOgFQaH/KLAAEnJYa8tcyVbCLAjGVh81lXIRXJxgDglpB+6KqiIjkZ8GBI97uqqEg2Y0Bq8/8+WUSAGWvC5keeOmLIwgCKh6gAvnZVEUEuBqwM6QFXFREkb0B4eGpLyHYR4MBa4MKw/a2nkBhyuCd8G3AU+E3iL28xVcnBgFuBSYp7ssmRdBcUbj9uAf4BPneWE0XSBgDXAn8Aq4HPnLVEkboBW4FvKKahXRfkwB3AFPCJxLS3mBiSNcCM5cBNwDLgA2c50SRrAMXZv5diGXrMWUs0ya6GmvEFMEFx//dGbz2xJBkB4U32G4AVFC9NJEuSBgDPhXQNg/90IxmS64LMGKK48AJ4XGKnp566pGhAWfCQxEk3MfNAUl2Q2VnP+9ybeuNDzcU4MzYBqyguhqaAUzBzQTRF8RLbZMj3zbbSp1dKl1AsKy8FlgNDFH8jsxF4atah10l8X0f7YiG6CzJjGKq9DVKTA8B2iUMNHnPBmbcxINyZmskCojirpzn37C+X6ed7IQ8wXXr5LWuSG4RzI6lBOEc6A5zpDHCmM8CZzgBnOgOc6QxwpjPAmX8B8Lg6JerUassAAAAASUVORK5CYII=" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(0.1 \; \mathrm{M}\)</span> <span class="arithmatex">\(\ce{ HClO4 }\)</span> + <span class="arithmatex">\(0.1 \; \mathrm{M}\)</span> <span class="arithmatex">\(\ce{ HCOOH }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2021</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1016/j.electacta.2021.138279"> Hermann <strong><em>et. al.</em></strong> Fig. 5a (black)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/hermann_2021_effect_138279_f5a_blue"><img alt="hermann_2021_effect_138279_f5a_blue" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAvhJREFUeJztnMtLFlEYh5+30q4I3TAJgzAiEUJq1aY2gYs29QfUP1C0DqFo37Jdy6JVi1YtIogoI4giLKEiukAXisCCIJLIt8UcTSPLc9GjX79nc+YTf+8M5/Gc+ebMjObuiHosqX0A/zsSUBkJqIwEVEYCKiMBlZGAykhAZSSgMhJQCDM6zeiKzmkpogxmjAFv3OmJyWkElKMd+BAbkoCyPIoNSEBZXsQGJKAsElCZl7EBCSiAGcvD5rvYrASUoSO0Y7FBCSjDitB+jw1KQBkkoDISUJmVof0RG5SAMnQAuBO9sCYBZVifGpSAMmxMDUpAGTakBiWgDFtSgxJQhh2pQQkogwRUZi0wmhKUgHLcTQlJQCZmLA2bF1LyEpBPb2iHUsISkM9AaF+nhPVcUCZmjAB97lhKXiMgnz7gfmpYAjKYci/4bGoNCcijP7TXUgtIQB5HANzjn4aYQCfhDMyaGzCpJ2DQCEjGjPaweTKnjgSksze0l3KKaApKxIwbwD5gScq94Ak0AhIww2g6/3pO54MEpLIntIO5hTQFJWDGM2AbmdMPaAREY0Y3Teefye180AiIxoz3QCewOecCbLKeBMweM/qAEci7+JqKpqA4boV2a6mCEjBLzHhMc/P9lDuvitXVFPRvzDgPHA4f293jH0OfiWWlCrUqZtwDdoePvSU7HyRgRsxYA3yZ8qN+d56U3o/OAb9hxjozhpne+YfcGZ6L/bX0CDCjDdgJHKV5fWgU+ETzENUmmjdb9gOrgHHgAEzeZgS4Awy4T5NRlJYREDp7EDhdoNxx4Jx7/GunsSw6AWEl8ja/FsRyOQH0AFeBK+58K1R3ViwKAWYcBC5nlDgGXHTnc5EDKkiWADOeAtv/8itDwE2ak30bzf/UceAr0A28pXmy7DnNPNwFfKT5616deFj9wMMSC2XzQfKF2B++ps03u9x5UHH/RVjwV8JmzVdld8ZrH8tcsOAFtDq6EKuMBFRGAiojAZWRgMpIQGUkoDISUJmf0GejOl214n0AAAAASUVORK5CYII=" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(0.1 \; \mathrm{M}\)</span> <span class="arithmatex">\(\ce{ H2SO4 }\)</span> + <span class="arithmatex">\(0.1 \; \mathrm{M}\)</span> <span class="arithmatex">\(\ce{ HCOOH }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2021</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1016/j.electacta.2021.138279"> Hermann <strong><em>et. al.</em></strong> Fig. 5a (blue)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/hermann_2021_effect_138279_f5a_green"><img alt="hermann_2021_effect_138279_f5a_green" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAAA2lJREFUeJztm79rFEEUxz/fS/xNBBNRCFoEERSxs5AUlkIggiIIoo2gf4GFCHa2FnYpBDstLFRIY2OlIGIVFBvFIiiigqIRA0n0WWQubjY/vNtfc3v3Ps3Ozh1vhvfd92Z2ZlZmhhOPRuwO9DouQGRcgMi4AJFxASLjAkTGBYiMCxAZFyAyLkBGJIYkbuW14wJkZxK4KDGWx4h8LSgbEvNAP4AZymrHIyA7/UUYcQHy8QxAYjyrARcgH1/D9X5WAy5APmaAK8AGib4sBlyAfMwAN0P5UhYDLkA+ZsyYAxaAiSwGXIB8fA/XIwAS59o1UMhUqod5D2DGlMQx4HO7BlyADEjsCsU3zToznmSy5W/C7SEh4E+43WrGbB57Pga0z71mIa/zwSOgLST2AW8h3/rPMpsuQGukUs8eMz4UYddTUOucbRaKcj54BLSMRNNRDTMKc5pHQAtInAjF6SKdDx4BLZF4+jeaMV+kbY+A/yCxt1ku2vngArTCdLiOlGHcU9A6hDX+BShu3p/GI2B9rofr1bIa8AhYh8Tg22e29BJWKB4BayBxOhRflOV88AhYk8TTP2jGt7La8QhYBYnHoThVpvPBI2AFEluAX+F22IyPZbbnEbCSpvNflu188AhYRiLvA2wKJx5KxSMgkHL+aBXOBxcAiUbK+WNmi2c+q6CnBZA4A/xOVD0w41GVfejZYymppx7gjhnnq+5HzwkgMQK8S1UfNeN5jP70VAqSuMxK5zdiOR96SACJu8CNRNWEGSp6i7Fduj4FpY6TNNlvtni+JzZdLUA4w/kpVV3oqYa8dG0KkrhAyvmdkHLSdJ0AEtvDFPN2onqirC3FvHRNCpI4BLxa5aftZsxU3Z9Wqb0AEtuAn6v91qlPfZJapyCJnazu/G11cD7UOALWmOH0my1b2+l4ahkBEgf55/ynYXajujkfarghIzEA/Ai3h8x4HbM/ealVBISc33T+aN2dDzURQKJP4hrwJVQdr3LTpExyDcISJ4EDwAAwB2wJNneHv0wCs8Aw8AGWvrGaBQZZ3AD/A2wONgZZ/Px/B3AYGAeGUs0W9nlQJ5B5DEjl4ip4aMapCturhGiDcFilxAwL5QYgEluEnbZuUwa1mwV1G7UYhLsZFyAyLkBkXIDIuACRcQEi4wJExgWIzF8sh/xmn1TDkAAAAABJRU5ErkJggg==" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(0.1 \; \mathrm{M}\)</span> <span class="arithmatex">\(\ce{ HClO4 }\)</span> + <span class="arithmatex">\(0.1 \; \mathrm{M}\)</span> <span class="arithmatex">\(\ce{ H3PO4 }\)</span> + <span class="arithmatex">\(0.1 \; \mathrm{M}\)</span> <span class="arithmatex">\(\ce{ HCOOH }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2021</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1016/j.electacta.2021.138279"> Hermann <strong><em>et. al.</em></strong> Fig. 5a (green)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/hermann_2021_effect_138279_f5a_orange"><img alt="hermann_2021_effect_138279_f5a_orange" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAABHtJREFUeJztnE2MFEUUx39vZ0UQCBKzGw4aCYlGzAaDmngQRRE16sF40IPIQc+EiwcPcjDxgHohRm6EBARPhmTjwWjiR/y4SUBD1JMfRCPqrh8o6MrKPg/9ZqfFmZ2uapy3VdO/ZPK6ul9Xv6l/V1V3dVeLqtLgx4h3AMNOI4AzjQDONAI40wjgTCOAM40AzjQCONMI4MxQCSBCS4RDImz0jqXN0Aggwg7gb+Ax4JgIR0T8/78Mw1iQCNcBn3fZNKXK+KDjKeN+BgyIcuEfLi2PifBJaGbWlF1aP6whEECEl0rJMVW2qyLAg7ZugwhXBOQ3QtGUzYhwbd34shcA2GH2flWm2ytVeQ141pLT/9mrN1vN7gOerxtc1n2ACBPACeCkKmt7+BwFbgLuUuWdCnn+DKyic/KuUeWH2BhzrwHPmN20gM/dZt+umOdqinJ7xNIPh4dVQlWz/IGOgSqoVvDdbb7b+vgtM79TllbQuTpx5lwDPjR7XwXfp80e7nNvsN7sHrO7ABGhFREfkHcT1L5CebOfoypzFDdolGw3rjf7vtm9Zu8Jjs7IUgAR1tniEVUqXWWo8ootHhThkh5uE2aP2T6nLb23u3t/shSATof6ZOB+N5v9s8f2hwBUOVda9zLMCx5MlpehIsVZbzdcUfsCq1X5tcu2b1W5qrRuDXAKWKfKV6HHy64GiLDEFvdFZrHW7C89tr9RTqjyvS3u6eLbl+wEAO40eyBmZ1VOAi8AiLCzi8vrXdZ9RGdoI4jsmiARPqO4XBxV5XxkHi2K8R6AcVWmRLgMOAtcXup82/4bKTrmFaqcDTlWjjVgPfB7bOED2L63W/JHEa4GHrdtp7v4H7fFXaHHGo0NcpGzu24GqnwgwiFgO/B1hV32A1Ohx8mqCRLhSuAbimHnkBHOhfLcDzxhya2qlceMquWfmQDPAU/FXH5WyFuq3tQF5ZuZANHX/17k2AlHDwt4kI0ApfGfA55xhJKNAMCjZj91jSKQbPqAFNt/yKQGiMwX+lHXQCLIQgA6A2ivegYRQy4C3GY2+CUrb3IT4GPPIGLIohMW4QywPLUOGDKoASKMA8uBt7xjiSF5Aei8dHV8Qa9FSg4CJNsBQyOAO0l3wiKsBH4D5oClqsw6hxRM6k/EbqF4dnsixcKH9JugW0n8JEpdgE3AGfjXLJikSLYPEGGU4uWpUWBClS+cQ4oi5RpwA7AC+A740jmWaFIWYLPZyf/jYfmgSFmALWYnPYOoS5J9gM3RnaG4/l9S5y04b1KtAfeaPZhy4UO6ArQfwE96BnExSK4Jslnt0xRN0KoLZqskR4o14D2zL6Ze+JBYDSi9hw813v9fTCRTA0S4g07hb86h8KHmQJYIDwA3An8Byyi+ofAH0ALOU3yn4Sc7zoz5zNlvFlhJMSNxxHyuAc4BS4FtFJ8FuHAG4kV79XwxEN0ElabsDIotqrw7wOMNBNc+wD4LoDA/1b8FzNrM9aEgqU44R5LphHOlEcCZRgBnGgGcaQRwphHAmUYAZxoBnPkHnmw5oIa5OUEAAAAASUVORK5CYII=" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(0.1 \; \mathrm{M}\)</span> <span class="arithmatex">\(\ce{ HClO4 }\)</span> + <span class="arithmatex">\(0.1 \; \mathrm{M}\)</span> <span class="arithmatex">\(\ce{ HCOOH }\)</span> + <span class="arithmatex">\(0.1 \; \mathrm{M}\)</span> <span class="arithmatex">\(\ce{ acetic acid }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2021</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1016/j.electacta.2021.138279"> Hermann <strong><em>et. al.</em></strong> Fig. 5a (orange)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/hermann_2021_effect_138279_f5a_red"><img alt="hermann_2021_effect_138279_f5a_red" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAAA91JREFUeJztmz2IHVUUx3//l3Vj1thEIyFKshEERUQLA1ai4AeKmk5LG0Er8asKKCgYUqigKGgrBLRQRAurgK2pRLawEo0YSUhERHE1mz0WcyY7Pp67zswzZ+be+4Ph3Lkzc+959z/n3Nm7MzIzCnFMoh3InSJAMEWAYIoAwRQBgikCBFMECKYIEEwRIJgiQEckbpBY6t1OWYrohoQBmKE+7ZQI6InEcp/riwAzkLhe4kuJYxL3bHH6e736Kinon0g8DHw6Vf0W8IwZ1jjvYrlPGioCNJDYDqz67mHgKuB5338beLoWwQX4DljuNQ+YWdl8A3sZzMAONeoE9onXH27UG9gbbm/v3Gf0jx7KBnaND6bNODYBO+7HH20IcMTtB137LZPwBu+7vWv6gBnrwH3Aj8CHEof80CrwC/BY107LHABILADngVUzdmxy3iLwZ6PqKWAXcMQ6zgMlAipedPvgZieZ8Rewp1E1wR9DJXZ36bgIUPGS2y+2OtGM02yM2x9m/OzlZ7t0nH0KkrgO+AF43YwXWlx3G7BixlqfZYkSAfC529faXGTGV2as+e7Rrp2XCJjDoprELuAcsN+Mk22uzToCJG7x4uN92mnMA6+0vXahT8cJ8LXbj+bQ1lHgp7YXZZuCGs/+vdJPX3JOQfWz//2RTuQcAfUP3+ZLDSFkGQESe714LHLwIdMIaNz9rR8b5+5LbgJICKq7PnLyrckxBT3ntvMS8jzJMQLqH7zdVzdDySoCJB6oy0MYfMhMAOBVt3s2PesSkk0KktgHfA/DmHxrcoqAd9zuC/ViiiwiQOIA8C0M6+6HfCLgTbf3hnoxg+QjQOJmYAU4brble56XnBwEOAEcBG4y45tof6ZJWgCJg8AJ4KQZ+6P9mUXqApylesF2txlno/2ZRbKTsMTdVIP/7lAHHxKNgOaKJ7DTjN8j/dmMVCPgEbdPDnnwIcEIkJgAF3x30az6x/tQSTECnnD72dAHHxKLAIkrgN9geEsO/0ZqEVC/aHVHqBctSCYC/P38MzCeux/SioAzbq8N9aIlSQggcacXPzbjVKgzLRl9ChraayZtSSEC6o/mRpV6akYtgMQKcBnVV4qjSj01o0xBU2s9581YjPSnD6OLAImH2Bh8xjz40PMLGYkbgb3AEnA5VTpYAoxK3NPAKS9PqD6IWPd+1wF5vQHbgB3AMrDm7S14+/W7/E1uNbv4h9do6ZyCJK4Efp2vO/+Jq804F9Dv/0KvOUBCZvSeRDynQxUNC1QRcQFYn0f7Q2aUk3BKjG4STo0iQDBFgGCKAMEUAYIpAgRTBAimCBDM3/cvQaWxaHrxAAAAAElFTkSuQmCC" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(0.1 \; \mathrm{M}\)</span> <span class="arithmatex">\(\ce{ HNO3 }\)</span> + <span class="arithmatex">\(0.1 \; \mathrm{M}\)</span> <span class="arithmatex">\(\ce{ HCOOH }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2021</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1016/j.electacta.2021.138279"> Hermann <strong><em>et. al.</em></strong> Fig. 5a (red)</a></td>
+</tr>
+<tr>
+<td class="echemdb-middle-cell"><a href="/cv/entries/hermann_2021_effect_138279_f5a_violet"><img alt="hermann_2021_effect_138279_f5a_violet" class="echemdb-cv-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABICAYAAAAJZ/BjAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAALEwAACxMBAJqcGAAABHdJREFUeJztnE2IHEUUx39vExc2cf04RCQqEeMHmqAhAaMeJBh0A6IggnhQVDAHCSIGDYiCHlTQUyQiyop4UjB+HSReFBQ0iFnxM4qoiFERBb9iIlGz+zz0G6fpyYwz1bP9tmrqB0NVd1dX/6f/+151V0+vqCoZP8a8BYw62QBnsgHOZAOcyQY4kw1wJhvgTDbAmWyAMyNjgAgiwrMizIosnO+9YIQ0wBxwLcV3nhXhIWc9wIgYIMJFVr0GWGX1bSKs8VHURlKfjLN0MwtsBs4E7qw0Wa7KD40LM0bBgE3Aq73aqCINyelgFFLQFuBlq0+rInbCf2w1EOExD2GQeARY7n+7tVz9Sxeh/OVPV+WrprS1SD0CdpTqK6obK4Z82U+HIiwVGV7KStYAO0lntZZV2del6Xhpn3X/0+ddwAFgToRFw9CZrAHA3cBSqy/v1kiVf4AbbXFGhIkefT5Yqs/UUmckOwaU83s/Vzki/IVFQ7f2lTEDYLEqs3V0JhkBlRx9f5+7LSnt/3iPPl8EzrH65iCBZVQ1uQ/obaBqHxlgv6tL+41Xti2z9RtsWUG1rtYkIwDYbqWqdqSNrqjyQmnx08rmU6xs5f4bAEQ4JkRgi1QNaHF5wD6LrVwpwtbS+g0Aqhyw5WesvCNMmuGdLuYh/Zxs6eGbGn2cW0pF07ZupppyQH+qm4ZSjIDrrJwO7UCVj2hHz8129bMOeK3S9CoAEY4LPVaKBpxq5Ut1OlFlF3BFZfV9lTataY7tocdJ7j6gdK0+NsgA3KO/ceBh4C1Vnj/C9veAtRo4o5qUAZYKfoXmpphFWEkxj7RCu093dCW1FHSelVNNHVDbM6jPheyfmgFXWlkdLOebJ4H1IbOkqaUgheafcImwBDgI3KLaOY3Ri9QiAOgcKOcbVf4EnqI0n9QvyUSACJPAfuB8VfZ46+mXlCJgk5UfeIoYlJQM2Ar/PWCJhpRSkAL7VTnWW8sgJBEBdjME8KirkACSMID2jddnrioCSMWAy6z81lVFANGPASIcBfwOTABHq3LQWdJApBABFwIKfBHbyYf247eYmQK+Az73FhJCChEwBXwPfOwtJISoDRBhGXAG8AfwibOcIKI2ALgUeIPixYtsgANTwJsUz4HzGNAk9vBjI7AP+FqVv50lBRGtAcDZwEnAaojv8rNFzAZcArwP3Av87KwlmJgN2AHstPrOXg0XMlFORdhvdQ4Ba4APgcnSbzajItYIuBh4F5t+jvXkQ7wR8A6wG7gdfN/zrUt0EWDpZz3wuq1a7SinNtEZADxg5TYAVfY6aqlNVAbYzdf1wBMU48BGX0X1iWoMEOFW4BFAgEOqPV8pjYJongcc4RXRSRchQ6aWASLcQ/GWyNouTV4B9lD8m4AJiimDw8Aiin8hcxj4jWIgPQ04ATiR4m303cAF0PES3C7VoHe/FiTBKUiE44FfhiunJzep8nSDx2uEWmOACGOqzA1Rz8gR1SCcIlFdhqZINsCZbIAz2QBnsgHOZAOcyQY4kw1w5l8+cySPpJ0DeQAAAABJRU5ErkJggg==" /></a></td>
+<td class="echemdb-middle-cell">(111)</td>
+<td class="echemdb-middle-cell"><span class="arithmatex">\(0.1 \; \mathrm{M}\)</span> <span class="arithmatex">\(\ce{ HClO4 }\)</span> + <span class="arithmatex">\(0.1 \; \mathrm{M}\)</span> <span class="arithmatex">\(\ce{ glycolic acid }\)</span> + <span class="arithmatex">\(0.1 \; \mathrm{M}\)</span> <span class="arithmatex">\(\ce{ HCOOH }\)</span></td>
+<td class="echemdb-hide-mobile echemdb-middle-cell">2021</td>
+<td class="echemdb-hide-mobile echemdb-middle-cell"><a href="https://doi.org/10.1016/j.electacta.2021.138279"> Hermann <strong><em>et. al.</em></strong> Fig. 5a (violet)</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.indexes", "navigation.tabs.sticky", "toc.follow"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../../javascripts/config.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js"></script>
+      
+        <script src="../../../javascripts/tables.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/contrib/mhchem.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
