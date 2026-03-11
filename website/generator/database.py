@@ -41,7 +41,7 @@ from unitpackage.database.echemdb import Echemdb
 
 ECHEMDB_DATABASE_URL = os.environ.get(
     "ECHEMDB_DATABASE_URL",
-    "https://github.com/echemdb/electrochemistry-data/releases/download/0.7.6/data-0.7.6.zip",
+    "https://github.com/echemdb/electrochemistry-data/releases/download/0.7.7/data-0.7.7.zip",
 )
 
 cv = Echemdb.from_remote(url=ECHEMDB_DATABASE_URL)
