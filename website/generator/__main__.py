@@ -37,7 +37,7 @@ import website.generator.database
 from website.macros.render import render
 
 
-def main():   # pylint: disable=R0914
+def main():  # pylint: disable=R0914
     r"""
     Create MarkDown files in a virtual file system that is consumed by mkdocs
     when building the website.
@@ -90,7 +90,14 @@ def main():   # pylint: disable=R0914
                 database=database.filter(
                     lambda entry: entry.system.electrolyte.type == "aqueous"
                     and "BCV" in entry.experimental.tags
-                    and len(entry.system.electrolyte.components) == 2
+                    and len(
+                        [
+                            c
+                            for c in entry.system.electrolyte.components
+                            if c.type not in ("solvent", "gas")
+                        ]
+                    )
+                    == 1
                 ),
                 title="Single Component Cyclic Voltammograms",
                 intro="Base cyclic voltammograms recorded in aqueous electrolytes with a single additional component (water + one acid, base, or salt).",
