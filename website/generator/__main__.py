@@ -9,7 +9,7 @@ individual pages for each entry in the database.
 # ********************************************************************
 #  This file is part of echemdb.
 #
-#        Copyright (C) 2021-2022 Albert Engstfeld
+#        Copyright (C) 2021-2026 Albert Engstfeld
 #        Copyright (C) 2021      Johannes Hermann
 #        Copyright (C) 2021-2022 Julian Rüth
 #        Copyright (C) 2021      Nicolas Hörmann
@@ -37,7 +37,7 @@ import website.generator.database
 from website.macros.render import render
 
 
-def main():  # pylint: disable=R0914
+def main():   # pylint: disable=R0914
     r"""
     Create MarkDown files in a virtual file system that is consumed by mkdocs
     when building the website.
