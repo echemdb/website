@@ -78,6 +78,7 @@ def main():  # pylint: disable=R0914
         )
     t_aqueous = time.time() - t_aqueous_start
     print(f"Generated aqueous overview page in {t_aqueous:.2f} seconds")
+
     t_bcv_start = time.time()
     # Create an overview page with tabulated and linked entries for aqueous BCV systems with a single electrolyte component besides water.
     with mkdocs_gen_files.open(
@@ -106,6 +107,7 @@ def main():  # pylint: disable=R0914
         )
     t_bcv = time.time() - t_bcv_start
     print(f"Generated BCV overview page in {t_bcv:.2f} seconds")
+
     t_coor_start = time.time()
     # Create an overview page with tabulated and linked entries for CO oxidation (COOR) in aqueous systems.
     with mkdocs_gen_files.open(
@@ -146,6 +148,7 @@ def main():  # pylint: disable=R0914
         )
     t_faor = time.time() - t_faor_start
     print(f"Generated FAOR overview page in {t_faor:.2f} seconds")
+
     t_sha_start = time.time()
     # Create an overview page with tabulated and linked entries for specific halide adsorption (SHA) in aqueous systems.
     with mkdocs_gen_files.open(
@@ -166,6 +169,7 @@ def main():  # pylint: disable=R0914
         )
     t_sha = time.time() - t_sha_start
     print(f"Generated SHA overview page in {t_sha:.2f} seconds")
+
     t_ionic_liquid_start = time.time()
     # Create an overview page with tabulated and linked entries for ionic liquid systems.
     with mkdocs_gen_files.open(os.path.join("cv", "ionic_liquid.md"), "w") as markdown:
@@ -181,8 +185,23 @@ def main():  # pylint: disable=R0914
                 material_filter=material_filter(),
             )
         )
+
     t_ionic_liquid = time.time() - t_ionic_liquid_start
     print(f"Generated ionic liquid overview page in {t_ionic_liquid:.2f} seconds")
+
+    t_ionic_liquid_start = time.time()
+    # Create an overview page with tabulated and linked entries for all systems to compare.
+    with mkdocs_gen_files.open(os.path.join("cv", "compare.md"), "w") as markdown:
+        markdown.write(
+            render(
+                "pages/compare.md",
+                database=database,
+                intro="Cyclic voltammograms to compare.",
+                material_filter=material_filter(),
+            )
+        )
+    t_ionic_liquid = time.time() - t_ionic_liquid_start
+    print(f"Generated comparison page in {t_ionic_liquid:.2f} seconds")
 
 
 def material_filter():

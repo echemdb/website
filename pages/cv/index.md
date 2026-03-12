@@ -24,6 +24,9 @@ as in **[Ionic Liquids](ionic_liquid.md)**, or it consists of a non-conductive s
 * **FAOR**: Formic Acid Oxidation Reaction, usually studied in a formic acid containing electrolyte.
 * **HER**: Hydrogen Evolution Reaction.
 
+## Individual Comparisons
+**[Compare](compare.md)**
+
 
 [^1]:
     Note that in the literature the abbreviation CV is sometimes
