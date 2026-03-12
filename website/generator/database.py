@@ -44,7 +44,7 @@ config = load_config("mkdocs.yml")
 
 ECHEMDB_DATABASE_URL = os.environ.get(
     "ECHEMDB_DATABASE_URL",
-    "https://github.com/echemdb/electrochemistry-data/releases/download/0.5.1/data-0.5.1.zip",
+    "https://github.com/echemdb/electrochemistry-data/releases/download/0.7.7/data-0.7.7.zip",
 )
 
 cv = Echemdb.from_remote(url=ECHEMDB_DATABASE_URL)

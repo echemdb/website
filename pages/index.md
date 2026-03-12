@@ -21,7 +21,9 @@ in the laboratory, and theoretical models.
 </figure>
 
 <figure class="echemdb-spotlight echemdb-spotlight-reverse" markdown>
-[![Content](./images/home_plot.png)](cv/entries/schnaidt_2017_a_4141_f2_solid.md)
+
+[![Content](./images/home_plot.png)](./cv/entries/schnaidt_2017_combined_4166_f2_solid)
+
 <figcaption markdown>
 ## Website
 
