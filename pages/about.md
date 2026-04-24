@@ -63,17 +63,6 @@ Modules for specific types of plots, such as the [electrochemistry module](https
 offers convenience functionality, and allow extracting additional properties such as the reference potential of a potential axis.
 By providing a set of metadata, the digitized data can directly be stored as a [unitpackage](https://echemdb.github.io/unitpackage/).
 
-## Contribute
-
-Contributions are always welcome and do not necessarily require programming skills.
-Please [leave us a message](https://github.com/orgs/echemdb/discussions)
-if you are interested in contributing to the echemdb.
-
-You could get started by [digitizing some published data](https://echemdb.github.io/svgdigitizer/workflow.html)
-in your area of research or by extending any of the pages of the [echemdb website](https://echemdb.github.io/website/).
-If your interest is outside of cyclic voltammograms or electrochemistry,
-we would also be thrilled to hear about your ideas to extend these projects to other areas.
-
 ## What's next
 
 We anticipate developing additional tools which help in generating [unitpackages](https://echemdb.github.io/unitpackage/)

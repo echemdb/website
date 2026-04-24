@@ -7,4 +7,5 @@
         * [FAOR](cv/aqueous/FAOR.md)
     * [Ionic Liquid](cv/ionic_liquid.md)
 * [API](https://echemdb.github.io/unitpackage/)
+* [Contribute](contribute.md)
 * [About](about.md)
