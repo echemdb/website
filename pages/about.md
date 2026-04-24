@@ -1,29 +1,30 @@
 # About the project
 
-The echemdb projects aim at standardizing experimental and theoretical 3D or time series data
+The echemdb projects aim at standardizing experimental and theoretical 2D or time series data
 according to the [FAIR principles](https://www.go-fair.org/fair-principles/).
 Ultimately, this approach allows for a seamless comparison of published data
 with laboratory-derived data and theoretical models.
 
 Key issues for compliance with the FAIR principles are that many research areas lack
-(i) metadata standards and (ii) published data is mostly inaccessible or
-not machine-readable. More specifically, research data often stored as CSV
-usually do not contain information on the units of the axis/columns or contain metadata annotating
-and describing the data.
+(i) metadata standards and (ii) published data is mostly inaccessible or not machine-readable.
+More specifically, research data often stored as CSV usually do not contain information
+on the units of the axis/columns or contain metadata annotating and describing the data.
 
-To solve these issues, in a first step the authors of echemdb limit themselves to a popular research
-field of electrochemistry. In recent decades, the study
-of the electrochemical properties of well-defined single crystal electrodes by
-cyclic voltammetry has played a crucial role in the fundamental understanding of more
-complex three dimensional systems found in more applied research areas or even in application.
+To solve these issues, in a first step the authors of echemdb limit their approach
+to a popular research field of interfacial electrochemistry.
+In recent decades, the study of the electrochemical properties of
+well-defined single crystal electrodes by cyclic voltammetry has played a crucial role
+in the fundamental understanding of more complex three dimensional systems
+found in more applied research areas or even in application.
 These materials are very well defined and the measurement principle is also well established
-within the community. The validity of our approach to other research areas
-is illustrated [here](https://echemdb.github.io/rawtofigure/intro.html).
+within the community.
 
 ## Standardization
 
-To standardize CSV data the authors of echemdb adopt
-the [frictionless datapackage](https://specs.frictionlessdata.io/data-package/#introduction)
+The data standardization approach is described [Engstfeld et al., *Data Science Journal*, **24** (2025) 13](https://datascience.codata.org/articles/10.5334/dsj-2025-013).
+
+In brief, to standardize CSV data the authors of echemdb adopt the
+[frictionless datapackage](https://specs.frictionlessdata.io/data-package/#introduction)
 structure.
 According to frictionless a data package consists of:
 
@@ -48,9 +49,9 @@ as a separate project.
 By following this approach, a set of datapackages forms a collection.
 The entries of such a collection are displayed in different forms on this
 website based on the available descriptors.
-A [Python API](https://echemdb.github.io/unitpackage/) provides direct access
+The [unitpackage](https://echemdb.github.io/unitpackage/) Python API provides direct access
 to the entries of such a collection, enabling more specific filtering,
-and enabling seamless integration into existing workflows.
+and enabling seamless integration into existing workflows, including locally stored data.
 
 ## Reusability
 
@@ -65,6 +66,8 @@ By providing a set of metadata, the digitized data can directly be stored as a [
 
 ## What's next
 
+
+
 We anticipate developing additional tools which help in generating [unitpackages](https://echemdb.github.io/unitpackage/)
 or allow for interacting with unitpackages.
 The latter comprises common tools for the evaluation of electrochemical data.
@@ -77,8 +80,34 @@ or mass spectrometry signals.
 The authors of echemdb are from the fields of experimental and theoretical physical chemistry,
 as well as from computer science and mathematics.
 
+Direct Contact:
+
+* [albert.engstfeld@uni-ulm.de](mailto:albert.engstfeld@uni-ulm.de) (Institute of Electrochemistry, Ulm university, DE)
+
 Ideas and suggestions, tell us more on our [discussion board](https://github.com/orgs/echemdb/discussions).
 
 Reach individual contributors on the [GitHub organization](https://github.com/echemdb).
 
 Discuss and stay up to date on [echemdb.zulipchat.com](https://echemdb.zulipchat.com).
+
+## Funding, Support, & Related Projects
+
+Most of the work has been supported by funding from the following institutions:
+
+| | |
+|---|---|
+| [Institute of Electrochemistry, Ulm University (DE)](https://www.uni-ulm.de/en/nawi/institute-of-electrochemistry/) | [![](images/logos/logo-uni-ulm.svg){width=200 .logo-bg}](https://www.uni-ulm.de/en/nawi/institute-of-electrochemistry/) |
+| [Theory Department, Fritz-Haber Institute, Berlin (DE)](https://www.fhi.mpg.de/th-department) | [![](images/logos/logo_fhi.png){width=200 .logo-bg}](https://www.fhi.mpg.de/th-department) |
+
+The work is also supported by:
+
+| | |
+|---|---|
+| [CRC-1316](https://sfb1316.rub.de/index.php/en/) | [![](images/logos/logo-crc1316.jpg){width=250 .logo-bg}](https://sfb1316.rub.de/index.php/en/) |
+| [NFDI4Chem](https://nfdi4chem.de/) | [![](images/logos/logo_nfdi4chem.svg){width=200 .logo-bg}](https://nfdi4chem.de/) |
+
+## Cite
+
+For the individual repositories, refer to the Zenodo DOIs provided in the repositories readme or documentation.
+
+The general concept is described in [A.K. Engstfeld, J. M. Hermann, N. Hörmann, & J. Rüth, *Data Science Journal*, **24** (2025) 13](https://datascience.codata.org/articles/10.5334/dsj-2025-013)

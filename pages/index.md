@@ -83,3 +83,7 @@ where machine-readable data is not available.
 </figcaption>
 </figure>
 </div>
+
+## Funding and support
+
+[![Ulm University – Institute of Electrochemistry](images/logos/logo-uni-ulm.svg){width=200 .logo-bg}](https://www.uni-ulm.de/en/nawi/institute-of-electrochemistry/) [![Fritz-Haber Institute Berlin – Theory Department](images/logos/logo_fhi.png){width=200 .logo-bg}](https://www.fhi.mpg.de/th-department) [![CRC-1316](images/logos/logo-crc1316.jpg){width=200 .logo-bg}](https://sfb1316.rub.de/index.php/en/) [![NFDI4Chem](images/logos/logo_nfdi4chem.svg){width=200 .logo-bg}](https://nfdi4chem.de/)

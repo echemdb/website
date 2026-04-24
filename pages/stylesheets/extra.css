@@ -143,3 +143,28 @@ tr:hover img.echemdb-cv-thumbnail {
 .md-typeset table:not([class]) td.echemdb-middle-cell {
   vertical-align: middle;
 }
+
+/*
+ * Funding and support logos styling.
+ */
+.logo-bg {
+  background-color: white;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+/*
+ * Funding and support tables styling.
+ * Ensure tables have white background and proper alignment.
+ */
+.md-typeset table {
+  background-color: white;
+}
+
+.md-typeset table thead {
+  display: none;
+}
+
+.md-typeset table td {
+  vertical-align: middle;
+}
