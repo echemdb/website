@@ -46,4 +46,4 @@ ECHEMDB_DATABASE_URL = os.environ.get(
     f"https://github.com/echemdb/electrochemistry-data/releases/download/{ECHEMDB_DATABASE_VERSION}/data-{ECHEMDB_DATABASE_VERSION}.zip",
 )
 
-cv = Echemdb.from_remote(url=ECHEMDB_DATABASE_URL)
+cv = Echemdb.from_remote(url=ECHEMDB_DATABASE_URL)[0:20]

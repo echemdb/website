@@ -35,11 +35,23 @@ in
 
 The figure shows {{ entry.figureDescription.type }} data.
 
-{% if entry.get_electrode('WE').preparationProcedure is defined %}
-The {{ entry.get_electrode('WE').material }}({{ entry.get_electrode('WE').crystallographicOrientation }}) electrode was prepared by:<br>
-{% for step in entry.get_electrode('WE').preparationProcedure.description %}
-* {{ step }}<br>
+{% set working_electrode = entry.get_electrode('WE') %}
+{% if working_electrode.preparationProcedure is defined %}
+{% set preparation = working_electrode.preparationProcedure %}
+{% if preparation.description is defined and preparation.description %}
+The {{ working_electrode.material }}({{ working_electrode.crystallographicOrientation }}) electrode was prepared by:
+
+{% for step in preparation.description %}
+- {{ step }}
 {% endfor %}
+{% if preparation.url is defined and preparation.url %}
+Preparation reference: [{{ preparation.url }}]({{ preparation.url }})
+{% endif %}
+{% elif preparation.url is defined and preparation.url %}
+Preparation procedure reference: [{{ preparation.url }}]({{ preparation.url }})
+{% else %}
+Preparation procedure not available.
+{% endif %}
 {% else %}
 Preparation procedure not available.
 {% endif %}
