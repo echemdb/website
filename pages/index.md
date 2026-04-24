@@ -3,7 +3,7 @@ hide:
 - toc
 - navigation
 ---
-# echemdb - the community database for electrochemical data
+# echemdb - a community project for interfacial electrochemistry and local research data management
 
 <div class="echemdb-spotlight" markdown>
 <figure class="echemdb-spotlight" markdown>
@@ -11,7 +11,7 @@ hide:
 <figcaption markdown>
 ## Philosophy
 
-echemdb aims at standardizing (electrochemical) data according to the
+echemdb aims at standardizing data for interfacial electrochemistry according to the
 [FAIR principles](https://www.go-fair.org/fair-principles/), allowing
 comparison of published data with data acquired
 in the laboratory, and theoretical models.
@@ -25,8 +25,8 @@ in the laboratory, and theoretical models.
 <figcaption markdown>
 ## Website
 
-The website shows cyclic voltammograms from the echemdb data repository
-which were standardized and validated from published works by the community.
+The website shows cyclic voltammograms (CVs) for redox processes at the solid liquid interface
+from the echemdb data repository which were standardized and validated from published works by the community.
 
 [→ Explore](./cv)
 </figcaption>
@@ -37,8 +37,8 @@ which were standardized and validated from published works by the community.
 <figcaption markdown>
 ## API
 
-The echemdb Python module provides an interactive way to visualize, filter,
-or evaluate the entries in the database.
+The unitpackage Python module provides an interactive way to visualize, filter,
+or evaluate the entries in the database and provides an approach for local research data management (RDM).
 
 [→ Documentation](https://echemdb.github.io/unitpackage/)
 
@@ -62,8 +62,7 @@ renders electrochemical data interoperable.
 <figcaption markdown>
 ## Automated Data Annotation
 
-AutotagMetadata is a tool with a GUI for automated tagging of newly created data with metadata
-from a template.
+AutotagMetadata is a tool with a GUI for automated tagging of newly created data in the laboratory using pre-defined metadata templates.
 
 [→ Learn more](https://echemdb.github.io/autotag-metadata/)
 </figcaption>
@@ -74,8 +73,7 @@ from a template.
 <figcaption markdown>
 ## Digitizer
 
-The svgdigitizer recovers data
-from published figures,
+The svgdigitizer allows recovering data from published figures,
 where machine-readable data is not available.
 
 [→ Learn more](https://echemdb.github.io/svgdigitizer/)
@@ -85,3 +83,7 @@ where machine-readable data is not available.
 </figcaption>
 </figure>
 </div>
+
+## Funding and support
+
+[![Ulm University – Institute of Electrochemistry](images/logos/logo-uni-ulm.svg){width=200 .logo-bg}](https://www.uni-ulm.de/en/nawi/institute-of-electrochemistry/) [![Fritz-Haber Institute Berlin – Theory Department](images/logos/logo_fhi.png){width=200 .logo-bg}](https://www.fhi.mpg.de/th-department) [![CRC-1316](images/logos/logo-crc1316.jpg){width=200 .logo-bg}](https://sfb1316.rub.de/index.php/en/) [![NFDI4Chem](images/logos/logo_nfdi4chem.svg){width=200 .logo-bg}](https://nfdi4chem.de/)

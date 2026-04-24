@@ -71,8 +71,9 @@ def main():  # pylint: disable=R0914
                     lambda entry: entry.system.electrolyte.type == "aqueous"
                     and "BCV" in entry.experimental.tags
                 ),
-                title="Aqueous Cyclic Voltammograms",
-                intro="Overview of base cyclic voltammograms (BCVs) recorded in aqueous electrolytes.",
+                title="Aqueous Systems",
+                intro="Overview of cyclic voltammograms for electrodes"
+                "recorded in aqueous electrolytes, denoted by the tag BCV (base cyclic voltammograms).",
                 material_filter=material_filter(),
             )
         )
@@ -99,8 +100,9 @@ def main():  # pylint: disable=R0914
                     )
                     == 1
                 ),
-                title="Single Component Cyclic Voltammograms",
-                intro="Base cyclic voltammograms recorded in aqueous electrolytes with a single additional component (water + one acid, base, or salt).",
+                title="Single Component Systems",
+                intro="Base cyclic voltammograms for electrodes recorded"
+                " in aqueous electrolytes with a single additional component (water + one acid, base, or salt).",
                 material_filter=material_filter(),
             )
         )
@@ -119,8 +121,9 @@ def main():  # pylint: disable=R0914
                     lambda entry: entry.system.electrolyte.type == "aqueous"
                     and "COOR" in entry.experimental.tags
                 ),
-                title="COOR Cyclic Voltammograms",
-                intro="Cyclic voltammograms recorded in CO containing aqueous electrolytes.",
+                title="CO oxidation reaction - COOR",
+                intro="Cyclic voltammograms for electrodes recorded in CO containing aqueous electrolytes "
+                "(COOR - CO oxidation reaction).",
                 material_filter=material_filter(),
             )
         )
@@ -139,8 +142,9 @@ def main():  # pylint: disable=R0914
                     lambda entry: entry.system.electrolyte.type == "aqueous"
                     and "FAOR" in entry.experimental.tags
                 ),
-                title="FAOR Cyclic Voltammograms",
-                intro="Cyclic voltammograms recorded in formic acid containing aqueous electrolytes.",
+                title="Formaic Acid Oxidation Reaction - FAOR",
+                intro="Cyclic voltammograms for electrodes recorded in formic acid "
+                "containing aqueous electrolytes (FAOR - formic acid oxidation reaction).",
                 material_filter=material_filter(),
             )
         )
@@ -159,8 +163,9 @@ def main():  # pylint: disable=R0914
                     lambda entry: entry.system.electrolyte.type == "aqueous"
                     and "SHA" in entry.experimental.tags
                 ),
-                title="SHA Cyclic Voltammograms",
-                intro="Cyclic voltammograms recorded in halide containing aqueous electrolytes.",
+                title="Specific Halide Adsorption - SHA",
+                intro="Cyclic voltammograms for electrodes recorded in "
+                "halide containing aqueous electrolytes (SHA - specific halide adsorption).",
                 material_filter=material_filter(),
             )
         )
@@ -176,8 +181,8 @@ def main():  # pylint: disable=R0914
                 database=database.filter(
                     lambda entry: entry.system.electrolyte.type == "ionic liquid"
                 ),
-                title="Ionic Liquid Cyclic Voltammograms",
-                intro="Cyclic voltammograms recorded in ionic liquids.",
+                title="Ionic Liquids - ILs",
+                intro="Cyclic Voltammograms for electrodes recorded in Ionic Liquids",
                 material_filter=material_filter(),
             )
         )
