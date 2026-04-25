@@ -82,7 +82,8 @@ as well as from computer science and mathematics.
 
 Direct Contact:
 
-* [albert.engstfeld@uni-ulm.de](mailto:albert.engstfeld@uni-ulm.de) (Institute of Electrochemistry, Ulm university, DE)
+* , [mailto:Albert Engstfeld](mailto:albert.engstfeld@uni-ulm.de) (Institute of Electrochemistry, Ulm university, DE)
+* [mailto:Nicolas Hoermann](mailto:hoermann@fhi-berlin.mpg.de) (Theory Department, Fritz-Haber Institute, Berlin (DE))
 
 Ideas and suggestions, tell us more on our [discussion board](https://github.com/orgs/echemdb/discussions).
 
