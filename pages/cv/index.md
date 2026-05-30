@@ -1,12 +1,28 @@
 # Cyclic Voltammograms
 
-The cyclic voltammograms (CVs[^1]) are categorized based on the type of system,
-i.e., aquoues or non-aqueous, as well as descriptors (tags) used to some extent
-commonly by the community or introduced here for the purpose of categorizing the systems.
-An entry can have several tags.
+This Section shows the content of the [electrochemistry-data](https://github.com/echemdb/electrochemistry-data)
+repository, containing cyclic voltammograms (CVs[^1]) for single crystal electrodes (using dataset version {{ ECHEMDB_DATABASE_VERSION }}).
 
-To create, browse and compare specific datasets based on other search criteria,
-use the [API](https://echemdb.github.io/echemdb/).
+The CVs are sorted based ony categories relevant to certain communities
+such as the type of electrolyte, i.e., aquoues or non-aqueous,
+as well as tags used for categorizing the systems.
+
+## Database Access
+
+The data shown on this website can either be downloaded directly as a ZIP from the
+release section of the [electrochemistry-data](https://github.com/echemdb/electrochemistry-data) repository.
+
+Alternatively, the dataset can be downloaded using the [unitpackage API](https://echemdb.github.io/unitpackage/usage/echemdb_usage.html).
+The API also allows browsing, filtering and manipulating the database, which is described in detail in the API documentation.
+
+Example usage to download the database using the API:
+
+```python
+from unitpackage.database.echemdb import Echemdb
+
+db = Echemdb.from_remote(version="{{ ECHEMDB_DATABASE_VERSION }}")
+db.describe()
+```
 
 ## Systems
 
@@ -17,6 +33,12 @@ In the case of a liquid, the solvent is either conductive itself,
 as in **[Ionic Liquids](ionic_liquid.md)**, or it consists of a non-conductive solvent mixed with a salt.
 
 ## Tags
+
+We use common tags used by the community or new (or less known) ones
+for the purpose of categorizing the systems.
+An entry can have several tags.
+
+Currently available tags are:
 
 * **BCV**: We consider a "base cyclic voltammogram" as a CV that shows no electrocatalysis except possibly the decomposition of the electrolyte.
 * **SHA**: Specific Halide Adsorption, studied in electrolytes containing at least one halide component.
