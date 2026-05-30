@@ -45,3 +45,13 @@ def enable_macros(env):
     from website.macros.render import render
 
     env.macro(render)
+
+
+def define_env(env):
+    r"""
+    Register variables and macros for use in mkdocs-macros templates.
+    """
+    from website.generator.database import ECHEMDB_DATABASE_VERSION
+
+    env.variables["ECHEMDB_DATABASE_VERSION"] = ECHEMDB_DATABASE_VERSION
+    enable_macros(env)

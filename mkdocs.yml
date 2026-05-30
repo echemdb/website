@@ -20,7 +20,8 @@ extra_css:
 
 plugins:
   - search
-  - macros
+  - macros:
+      module_name: website/macros/__init__
   - gen-files:
       scripts:
       - website/generator/__main__.py
