@@ -20,7 +20,7 @@ We would also be thrilled to hear about your ideas to extend these projects to o
 Data can be provided directly, for example, as csv file (source data)
 or involves digitizing data from a publication.
 In either case additional metadata and a PDF of the work should be provided (PDFs should not be uploaded in the repository).
-Contributions can made via a pull request in the [electrochemistry dataa repository](https://github.com/echemdb/electrochemistry-data) or send via mail to a [albert.engstfeld@uni-ulm.de](mailto:albert.engstfeld@uni-ulm.de) to determine further steps.
+Contributions can be made via a pull request in the [electrochemistry data repository](https://github.com/echemdb/electrochemistry-data) or sent via mail to [albert.engstfeld@uni-ulm.de](mailto:albert.engstfeld@uni-ulm.de) to determine further steps.
 
 ### Source data
 

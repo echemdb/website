@@ -39,7 +39,7 @@ import os
 
 from unitpackage.database.echemdb import Echemdb
 
-ECHEMDB_DATABASE_VERSION = "0.8.4"
+ECHEMDB_DATABASE_VERSION = "0.9.0"
 
 ECHEMDB_DATABASE_URL = os.environ.get(
     "ECHEMDB_DATABASE_URL",
