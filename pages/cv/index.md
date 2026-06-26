@@ -2,14 +2,15 @@
 
 This Section shows the content of the [electrochemistry-data](https://github.com/echemdb/electrochemistry-data)
 repository, containing cyclic voltammograms (CVs[^1]) for single crystal electrodes (using dataset version {{ ECHEMDB_DATABASE_VERSION }}).
+The dataset currently contains {{ ECHEMDB_ENTRY_COUNT }} entries from {{ ECHEMDB_SOURCE_COUNT }} literature sources.
 
-The CVs are sorted based ony categories relevant to certain communities
-such as the type of electrolyte, i.e., aquoues or non-aqueous,
+The CVs are sorted based on categories relevant to certain communities
+such as the type of electrolyte, i.e., aqueous or non-aqueous,
 as well as tags used for categorizing the systems.
 
 ## Database Access
 
-The data shown on this website can either be downloaded directly as a ZIP from the
+The data shown on this website can either be downloaded directly as a ZIP from <a href="https://doi.org/10.5281/zenodo.20723429"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.20723429.svg" alt="DOI"></a> or the
 release section of the [electrochemistry-data](https://github.com/echemdb/electrochemistry-data) repository.
 
 Alternatively, the dataset can be downloaded using the [unitpackage API](https://echemdb.github.io/unitpackage/usage/echemdb_usage.html).

@@ -21,7 +21,7 @@ within the community.
 
 ## Standardization
 
-The data standardization approach is described [Engstfeld et al., *Data Science Journal*, **24** (2025) 13](https://datascience.codata.org/articles/10.5334/dsj-2025-013).
+The data standardization approach is described in [Engstfeld et al., *Data Science Journal*, **24** (2025) 13](https://datascience.codata.org/articles/10.5334/dsj-2025-013).
 
 In brief, to standardize CSV data the authors of echemdb adopt the
 [frictionless datapackage](https://specs.frictionlessdata.io/data-package/#introduction)
@@ -66,8 +66,6 @@ By providing a set of metadata, the digitized data can directly be stored as a [
 
 ## What's next
 
-
-
 We anticipate developing additional tools which help in generating [unitpackages](https://echemdb.github.io/unitpackage/)
 or allow for interacting with unitpackages.
 The latter comprises common tools for the evaluation of electrochemical data.
@@ -82,8 +80,8 @@ as well as from computer science and mathematics.
 
 Direct Contact:
 
-* , [mailto:Albert Engstfeld](mailto:albert.engstfeld@uni-ulm.de) (Institute of Electrochemistry, Ulm university, DE)
-* [mailto:Nicolas Hoermann](mailto:hoermann@fhi-berlin.mpg.de) (Theory Department, Fritz-Haber Institute, Berlin (DE))
+* [Albert Engstfeld](mailto:albert.engstfeld@uni-ulm.de) (Institute of Electrochemistry, Ulm university, DE)
+* [Nicolas Hoermann](mailto:hoermann@fhi-berlin.mpg.de) (Theory Department, Fritz-Haber Institute, Berlin (DE))
 
 Ideas and suggestions, tell us more on our [discussion board](https://github.com/orgs/echemdb/discussions).
 
@@ -111,4 +109,6 @@ The work is also supported by:
 
 For the individual repositories, refer to the Zenodo DOIs provided in the repositories readme or documentation.
 
-The general concept is described in [A.K. Engstfeld, J. M. Hermann, N. Hörmann, & J. Rüth, *Data Science Journal*, **24** (2025) 13](https://datascience.codata.org/articles/10.5334/dsj-2025-013)
+The general concept is described in [A.K. Engstfeld, J. M. Hermann, N. Hörmann, & J. Rüth, *Data Science Journal*, **24** (2025) 13](https://datascience.codata.org/articles/10.5334/dsj-2025-013).
+
+The dataset itself can be cited according to the respective version on <a href="https://doi.org/10.5281/zenodo.20723429"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.20723429.svg" alt="DOI"></a>.

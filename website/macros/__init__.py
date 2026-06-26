@@ -51,7 +51,14 @@ def define_env(env):
     r"""
     Register variables and macros for use in mkdocs-macros templates.
     """
-    from website.generator.database import ECHEMDB_DATABASE_VERSION
+    from website.generator.database import ECHEMDB_DATABASE_VERSION, cv
 
     env.variables["ECHEMDB_DATABASE_VERSION"] = ECHEMDB_DATABASE_VERSION
+    # Statistics from the database, e.g., the number of entries (cyclic
+    # voltammograms) and the number of distinct literature sources. Several
+    # entries can originate from the same publication (e.g., different figures),
+    # so "number of references" counts distinct bibliography keys.
+    statistics = cv.describe()
+    env.variables["ECHEMDB_ENTRY_COUNT"] = statistics["number of entries"]
+    env.variables["ECHEMDB_SOURCE_COUNT"] = statistics["number of references"]
     enable_macros(env)
