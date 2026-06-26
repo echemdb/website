@@ -25,7 +25,7 @@ in the laboratory, and theoretical models.
 <figcaption markdown>
 ## Website
 
-The website shows the content from a dataset (<a href="https://doi.org/10.5281/zenodo.20723429"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.20723429.svg" alt="DOI"></a>) of cyclic voltammograms (CVs) for redox processes at the solid liquid interface
+The website shows the content from a [dataset of cyclic voltammograms (CVs)](https://doi.org/10.5281/zenodo.20723429) for redox processes at the solid liquid interface
 from the [echemdb data repository](https://github.com/echemdb/electrochemistry-data) which were standardized and validated from published works by the community.
 
 [→ Explore](./cv)
