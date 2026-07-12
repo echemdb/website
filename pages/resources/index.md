@@ -4,7 +4,7 @@ A curated collection of links to projects and resources related to electrochemis
 with a focus on open-source software for handling electrochemical data.
 
 * [Software Tools](tools.md): open-source tools and formats for loading, converting, storing, and analyzing electrochemical data.
-* [Knowledge Bases](knowledge.md): educational and reference resources on electrochemistry.
+* [Knowledge Bases](knowledge.md): educational, reference, and historical resources on electrochemistry.
 
 The collection is non-exhaustive and the maintenance status of community projects may change over time.
 

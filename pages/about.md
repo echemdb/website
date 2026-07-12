@@ -93,17 +93,25 @@ Discuss and stay up to date on [echemdb.zulipchat.com](https://echemdb.zulipchat
 
 Most of the work has been supported by funding from the following institutions:
 
+<div class="echemdb-logo-table" markdown>
+
 | | |
 |---|---|
 | [Institute of Electrochemistry, Ulm University (DE)](https://www.uni-ulm.de/en/nawi/institute-of-electrochemistry/) | [![](images/logos/logo-uni-ulm.svg){width=200 .logo-bg}](https://www.uni-ulm.de/en/nawi/institute-of-electrochemistry/) |
 | [Theory Department, Fritz-Haber Institute, Berlin (DE)](https://www.fhi.mpg.de/th-department) | [![](images/logos/logo_fhi.png){width=200 .logo-bg}](https://www.fhi.mpg.de/th-department) |
 
+</div>
+
 The work is also supported by:
+
+<div class="echemdb-logo-table" markdown>
 
 | | |
 |---|---|
 | [CRC-1316](https://sfb1316.rub.de/index.php/en/) | [![](images/logos/logo-crc1316.jpg){width=250 .logo-bg}](https://sfb1316.rub.de/index.php/en/) |
 | [NFDI4Chem](https://nfdi4chem.de/) | [![](images/logos/logo_nfdi4chem.svg){width=200 .logo-bg}](https://nfdi4chem.de/) |
+
+</div>
 
 ## Cite
 

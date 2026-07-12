@@ -17,6 +17,8 @@ comparison of published data with data acquired
 in the laboratory, and theoretical models.
 
 [→ Learn more](about.md)
+
+[→ Related projects and resources](resources/index.md)
 </figcaption>
 </figure>
 
