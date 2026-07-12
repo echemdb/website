@@ -31,6 +31,7 @@ To add a project to this list, see [suggest a link](index.md#suggest-a-link).
 | Name | Scope / formats | Reference |
 |---|---|---|
 | [ElectroKitty](https://github.com/RedrumKid/ElectroKitty) | electrochemical simulator; fits reaction mechanisms and kinetic parameters to voltammograms | [DOI](https://doi.org/10.1021/acselectrochem.4c00218) |
+| [frumkin](https://github.com/lucasdekam/frumkin) | modeling of electric double layers with modified Poisson–Boltzmann theory; comparison with experimental capacitance data | |
 
 ## Databases and data platforms
 
