@@ -1,5 +1,5 @@
 * [Home](index.md)
-* [CV](cv/index.md)
+* [CV Dataset](cv/index.md)
     * [Aqueous](cv/aqueous.md)
         * [Single Component](cv/aqueous/single_component.md)
         * [SHA](cv/aqueous/SHA.md)
