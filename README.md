@@ -1,9 +1,9 @@
-This project builds a website from the [eletrochemistry-data
+This project builds a website from the [electrochemistry-data
 repository](https://github.com/echemdb/electrochemistry-data) which contains
 high quality experimental and theoretical data on electrochemical systems. The
 standardized and validated data displayed on the [projects
 website](https://www.echemdb.org/cv) so far is from the community and
-publications aiming at fullfilling the [FAIR
+publications aiming at fulfilling the [FAIR
 principles](https://www.go-fair.org/fair-principles/).
 
 The repository can be browsed on [our
@@ -21,9 +21,18 @@ git clone git@github.com:echemdb/website.git
 To preview the website run
 
 ```sh
-cd website
 pixi run preview
 ```
+
+For a fast preview during development run
+
+```sh
+pixi run preview-fast
+```
+
+which only includes a limited number of database entries per tag
+(such as BCV or COOR) and electrolyte type (such as aqueous or ionic liquid),
+so that all overview pages contain some entries.
 
 If you make changes to the code test the modules with
 
