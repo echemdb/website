@@ -57,7 +57,9 @@ echemdb-website = { path = ".", editable = true }
 [tool.pixi.tasks]
 doctest = "pytest -n auto --doctest-modules website"
 doc = "mkdocs build"
+doc-fast = { cmd = "mkdocs build", env = { ECHEMDB_WEBSITE_MAX_ENTRIES = "5" } }
 preview = "mkdocs serve"
+preview-fast = { cmd = "mkdocs serve", env = { ECHEMDB_WEBSITE_MAX_ENTRIES = "5" } }
 pylint = "pylint website"
 black = "black website"
 isort = "isort --profile black website"

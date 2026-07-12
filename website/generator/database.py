@@ -47,3 +47,36 @@ ECHEMDB_DATABASE_URL = os.environ.get(
 )
 
 cv = Echemdb.from_remote(url=ECHEMDB_DATABASE_URL)
+
+# Limit the number of entries per experimental tag (BCV, COOR, ...) and
+# electrolyte type (aqueous, ionic liquid, ...) for fast local test builds
+# where all overview pages contain at least some entries,
+# e.g., `pixi run doc-fast` or `pixi run preview-fast`.
+ECHEMDB_WEBSITE_MAX_ENTRIES = os.environ.get("ECHEMDB_WEBSITE_MAX_ENTRIES")
+
+
+def _limit_per_group(database, max_entries):
+    r"""
+    Return a sub-collection of `database` containing at most `max_entries`
+    entries for each experimental tag and each electrolyte type.
+    """
+    counts = {}
+    identifiers = []
+    for entry in database:
+        try:
+            groups = set(entry.experimental.tags)
+        except (KeyError, AttributeError):
+            groups = set()
+        try:
+            groups.add(entry.system.electrolyte.type)
+        except (KeyError, AttributeError):
+            pass
+        if any(counts.get(group, 0) < max_entries for group in groups):
+            identifiers.append(entry.identifier)
+            for group in groups:
+                counts[group] = counts.get(group, 0) + 1
+    return database[identifiers]
+
+
+if ECHEMDB_WEBSITE_MAX_ENTRIES:
+    cv = _limit_per_group(cv, int(ECHEMDB_WEBSITE_MAX_ENTRIES))
