@@ -136,6 +136,18 @@ tr:hover img.echemdb-cv-thumbnail {
   width: 100%;
 }
 
+/*
+ * Also stretch the table itself, so that tables written in plain Markdown
+ * (which cannot carry the .echemdb-expand-column class) fill the entire
+ * width, e.g., on the resources pages.
+ * Material renders tables as shrink-to-fit inline-blocks; that rule has
+ * higher specificity than Material's own ".md-typeset__table table"
+ * width rule, so it must be overridden at equal specificity here.
+ */
+.md-typeset table:not([class]) {
+  display: table;
+}
+
 .echemdb-expand-column {
   width: 100%;
 }
@@ -154,17 +166,19 @@ tr:hover img.echemdb-cv-thumbnail {
 }
 
 /*
- * Funding and support tables styling.
- * Ensure tables have white background and proper alignment.
+ * Funding and support tables styling (tables wrapped in a
+ * div.echemdb-logo-table, see about.md).
+ * Ensure tables have white background, no (empty) header row,
+ * and vertically centered logos.
  */
-.md-typeset table {
+.echemdb-logo-table table {
   background-color: white;
 }
 
-.md-typeset table thead {
+.echemdb-logo-table table thead {
   display: none;
 }
 
-.md-typeset table td {
+.md-typeset .echemdb-logo-table table:not([class]) td {
   vertical-align: middle;
 }
