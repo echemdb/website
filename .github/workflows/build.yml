@@ -37,7 +37,8 @@ jobs:
           # * ignore DOIs since some publishers ban GitHub or bots.
           # * ignore datascience.codata.org because this host intermittently times out.
           # * ignore go-fair.org because it returns 403 for automated requests.
-          pixi run linkchecker --check-extern --no-robots --ignore fonts.gstatic.com --ignore doi.org --ignore datascience.codata.org http://localhost:8880/ --ignore mybinder.org --ignore osti.gov --ignore go-fair.org --no-warnings
+          # * ignore ki.si because its certificate chain is misconfigured (missing intermediate certificate), which fails strict SSL verification.
+          pixi run linkchecker --check-extern --no-robots --ignore fonts.gstatic.com --ignore doi.org --ignore datascience.codata.org http://localhost:8880/ --ignore mybinder.org --ignore osti.gov --ignore go-fair.org --ignore ki.si --no-warnings
         # We only check links on Linux since we do not want to get flagged because of too many requests by the target websites.
         if: ${{ matrix.os == 'ubuntu-latest' }}
       - uses: JamesIves/github-pages-deploy-action@v4.3.3
