@@ -99,7 +99,7 @@ Most of the work has been supported by funding from the following institutions:
 |---|---|
 | [Institute of Electrochemistry, Ulm University (GER)](https://www.uni-ulm.de/en/nawi/institute-of-electrochemistry/) | [![](images/logos/logo-uni-ulm.svg){width=200 .logo-bg}](https://www.uni-ulm.de/en/nawi/institute-of-electrochemistry/) |
 | [Theory Department, Fritz-Haber Institute, Berlin (GER)](https://www.fhi.mpg.de/th-department) | [![](images/logos/logo_fhi.png){width=200 .logo-bg}](https://www.fhi.mpg.de/th-department) |
-| [Department of Material Chemistry, National Institute of Chemistry, Ljubljana (SLO)](https://www.ki.si/en/departments/d10-department-of-materials-chemistry/) | [![](images/logos/Logo_national_institue_chemistry.png){width=200 .logo-bg}](https://www.ki.si/en/departments/d10-department-of-materials-chemistry/) |
+| [Department of Materials Chemistry, National Institute of Chemistry, Ljubljana (SLO)](https://www.ki.si/en/departments/d10-department-of-materials-chemistry/) | [![](images/logos/Logo_national_institue_chemistry.png){width=200 .logo-bg}](https://www.ki.si/en/departments/d10-department-of-materials-chemistry/) |
 
 </div>
 
