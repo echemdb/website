@@ -8,12 +8,10 @@ BibTeX entries in ``data/best_practices/bibliography.bib``.
 
 EXAMPLES::
 
-    >>> from website.generator.best_practices import sections
-    >>> for section in sections("general"):
-    ...     print(section["title"])
-    Cross-domain consensus protocols
-    Data, metadata, FAIR and open science
-    General reproducibility, verification and research software
+    >>> from website.generator.best_practices import groups
+    >>> for group in groups("general"):
+    ...     print(group["title"], [section["title"] for section in group["sections"]])
+    None ['Cross-domain consensus protocols', 'Data, metadata, FAIR and open science', 'General reproducibility, verification and research software']
 
 """
 
@@ -59,7 +57,7 @@ def table():
 
         >>> from website.generator.best_practices import table
         >>> sorted(table().keys())
-        ['_comment', 'sections', 'tags']
+        ['_comment', 'groups', 'sections', 'tags']
 
     """
     with open(TABLE, encoding="utf-8") as source:
@@ -199,6 +197,46 @@ def sections(scope):
         for section in table()["sections"]
         if section.get("scope", "domain") == scope
     ]
+
+
+def groups(scope):
+    r"""
+    Return the sections of the best-practice table with this `scope`, grouped
+    by the topic groups of the table, in the order in which they are displayed.
+
+    Sections that are not part of any group are returned in a final group
+    without a title, so that they are shown at the same level as the groups
+    themselves.
+
+    EXAMPLES::
+
+        >>> from website.generator.best_practices import groups
+        >>> for group in groups("domain"):
+        ...     print(group["title"], len(group["sections"]))
+        Measurement practice 4
+        Electrodes and surfaces 2
+        Reactions and devices 5
+        Reporting and rigour 5
+        None 1
+
+    """
+    grouped = sections(scope)
+
+    ordered = [
+        {
+            "title": group["title"],
+            "sections": [
+                section for section in grouped if section.get("group") == group["slug"]
+            ],
+        }
+        for group in table()["groups"]
+    ]
+
+    ungrouped = [section for section in grouped if "group" not in section]
+
+    return [group for group in ordered if group["sections"]] + (
+        [{"title": None, "sections": ungrouped}] if ungrouped else []
+    )
 
 
 def references(section):
