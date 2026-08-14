@@ -75,3 +75,8 @@ alone does not say what the work provides.
    significant word of the title.
 3. Only use tags that exist in the top-level `tags` object; add the tag there
    first if it does not.
+
+Both files are plain text, so a work can be suggested with a pull request that
+touches nothing else. Alternatively, open an
+[issue](https://github.com/echemdb/website/issues) with the DOI of the work and
+the topic it belongs to, and we add it.
