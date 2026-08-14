@@ -222,7 +222,7 @@ def best_practices():
                 "Recommendations on data, metadata, and reproducibility that are not specific"
                 " to electrochemistry are collected separately in"
                 " [cross-domain references](best_practices/cross_domain.md).",
-                sections=website.generator.best_practices.sections("domain"),
+                groups=website.generator.best_practices.groups("domain"),
                 outro=best_practices_outro(
                     bibliography="best_practices/bibliography.bib",
                     resources="index.md",
@@ -242,7 +242,7 @@ def best_practices():
                 " build on.\n\n"
                 "For the literature of interfacial electrochemistry and electrocatalysis"
                 " itself, see [best practices](../best_practices.md).",
-                sections=website.generator.best_practices.sections("general"),
+                groups=website.generator.best_practices.groups("general"),
                 outro=best_practices_outro(
                     bibliography="bibliography.bib",
                     resources="../index.md",

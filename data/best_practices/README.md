@@ -21,9 +21,9 @@ The table consists of `sections`, each of which holds the `rows` filed under it:
 
 ```json
 {
-  "id": 1,
   "slug": "basic_electrochemistry",
   "scope": "domain",
+  "group": "measurement_practice",
   "title": "Basic electrochemistry and measurement practice",
   "nav": "Basic electrochemistry",
   "rows": [
@@ -53,6 +53,11 @@ The two scopes are shown on separate pages, so that no table of the field
 carries a reference from outside it. A row may override the `scope` of its
 section, which is how a work on electrochemistry filed under a cross-domain
 topic is still shown with the field.
+
+Sections are shown in the order in which they appear in the file, under the
+heading of the `group` they name. The groups themselves, and their order, are
+declared in the top-level `groups` object. A section without a `group` is shown
+after the groups, at the same level as their headings.
 
 Every row carries `tags` from the controlled vocabulary in the top-level `tags`
 object. Tags in the `topic` group are section slugs and decide where a work is

@@ -48,11 +48,29 @@
       "photovoltaics": "Photovoltaic and photocatalytic devices"
     }
   },
+  "groups": [
+    {
+      "slug": "measurement_practice",
+      "title": "Measurement practice"
+    },
+    {
+      "slug": "electrodes_surfaces",
+      "title": "Electrodes and surfaces"
+    },
+    {
+      "slug": "reactions_devices",
+      "title": "Reactions and devices"
+    },
+    {
+      "slug": "reporting_rigour",
+      "title": "Reporting and rigour"
+    }
+  ],
   "sections": [
     {
-      "id": 1,
       "slug": "basic_electrochemistry",
       "scope": "domain",
+      "group": "measurement_practice",
       "title": "Basic electrochemistry and measurement practice",
       "nav": "Basic electrochemistry",
       "rows": [
@@ -232,9 +250,245 @@
       ]
     },
     {
-      "id": 2,
+      "slug": "reference_electrodes",
+      "scope": "domain",
+      "group": "measurement_practice",
+      "title": "Reference electrodes, potential scales and internal standards",
+      "nav": "Reference electrodes",
+      "rows": [
+        {
+          "key": "gagne_1980_ferrocene",
+          "authors": "Gagné *et al.*",
+          "title": "Ferrocene as an Internal Standard for Electrochemical Measurements",
+          "journal": "Inorg. Chem.",
+          "volume": "19",
+          "page": "2854",
+          "year": "1980",
+          "doi": "10.1021/ic50211a080"
+        },
+        {
+          "key": "connelly_1996_chemical",
+          "authors": "Connelly & Geiger",
+          "title": "Chemical Redox Agents for Organometallic Chemistry",
+          "journal": "Chem. Rev.",
+          "volume": "96",
+          "page": "877",
+          "year": "1996",
+          "doi": "10.1021/cr940053x"
+        },
+        {
+          "key": "noviandri_1999_decamethylferrocenium",
+          "authors": "Noviandri *et al.*",
+          "title": "The Decamethylferrocenium/Decamethylferrocene Redox Couple: A Superior Redox Standard",
+          "journal": "J. Phys. Chem. B",
+          "volume": "103",
+          "page": "6713",
+          "year": "1999",
+          "doi": "10.1021/jp991381+"
+        },
+        {
+          "key": "pavlishchuk_2000_conversion",
+          "authors": "Pavlishchuk & Addison",
+          "title": "Conversion constants for redox potentials measured versus different reference electrodes in acetonitrile solutions at 25 °C",
+          "journal": "Inorg. Chim. Acta",
+          "volume": "298",
+          "page": "97",
+          "year": "2000",
+          "doi": "10.1016/S0020-1693(99)00407-7"
+        },
+        {
+          "key": "frenzel_2017_voltammetric",
+          "authors": "Frenzel, Hartley & Frisch",
+          "title": "Voltammetric and spectroscopic study of ferrocene and hexacyanoferrate and the suitability of their redox couples as internal standards in ionic liquids",
+          "journal": "Phys. Chem. Chem. Phys.",
+          "volume": "19",
+          "page": "28841",
+          "year": "2017",
+          "doi": "10.1039/c7cp05483a"
+        }
+      ]
+    },
+    {
+      "slug": "operando",
+      "scope": "domain",
+      "group": "measurement_practice",
+      "title": "Operando and in situ measurements",
+      "nav": "Operando and in situ",
+      "rows": [
+        {
+          "key": "tackett_2026_rigor",
+          "authors": "Tackett *et al.*",
+          "title": "Rigor and Reproducibility in Electrocatalysis: Best Practices for Operando Studies",
+          "journal": "ACS Catal.",
+          "year": "2026",
+          "doi": "10.1021/acscatal.6c01946",
+          "tags": [
+            "reproducibility"
+          ]
+        },
+        {
+          "key": "prajapati_2025_best",
+          "authors": "Prajapati *et al.*",
+          "title": "Best Practices for In-Situ and Operando Techniques within Electrocatalytic Systems",
+          "journal": "Nat. Commun.",
+          "volume": "16",
+          "page": "2593",
+          "year": "2025",
+          "doi": "10.1038/s41467-025-57563-6"
+        }
+      ]
+    },
+    {
+      "slug": "variable_temperature",
+      "scope": "domain",
+      "group": "measurement_practice",
+      "title": "Variable-temperature electrochemistry",
+      "nav": "Variable temperature",
+      "rows": [
+        {
+          "key": "de_2025_best",
+          "authors": "De *et al.*",
+          "title": "Best Practices for Variable-Temperature Electrochemistry Experiments and Data Reporting",
+          "journal": "ACS Energy Lett.",
+          "volume": "10",
+          "page": "1542",
+          "year": "2025",
+          "doi": "10.1021/acsenergylett.5c00308",
+          "tags": [
+            "data_reporting"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "surface_area",
+      "scope": "domain",
+      "group": "electrodes_surfaces",
+      "title": "Surface area determination",
+      "nav": "Surface area",
+      "rows": [
+        {
+          "key": "trasatti_1991_real",
+          "authors": "Trasatti & Petrii",
+          "title": "Real surface area measurements in electrochemistry",
+          "journal": "Pure Appl. Chem.",
+          "volume": "63",
+          "page": "711",
+          "year": "1991",
+          "doi": "10.1351/pac199163050711"
+        },
+        {
+          "key": "lukaszewski_2016_electrochemical",
+          "authors": "Łukaszewski *et al.*",
+          "title": "Electrochemical Methods of Real Surface Area Determination of Noble Metal Electrodes — an Overview",
+          "journal": "Int. J. Electrochem. Sci.",
+          "volume": "11",
+          "page": "4442",
+          "year": "2016"
+        },
+        {
+          "key": "mygind_2026_hidden",
+          "authors": "Mygind, Rost & Escudero-Escribano",
+          "title": "The Hidden Complexities of Electrochemically Active Surface Area Measurements",
+          "journal": "ACS Energy Lett.",
+          "volume": "11",
+          "page": "2508",
+          "year": "2026",
+          "doi": "10.1021/acsenergylett.5c04204"
+        },
+        {
+          "key": "bates_2026_rigor",
+          "authors": "Bates *et al.*",
+          "title": "Rigor & Reproducibility in Electrocatalysis: Approaches and Considerations for Surface Area Normalization",
+          "journal": "ACS Catal.",
+          "year": "2026",
+          "doi": "10.1021/acscatal.6c01834",
+          "tags": [
+            "reproducibility"
+          ]
+        },
+        {
+          "key": "wei_2019_approaches",
+          "authors": "Wei *et al.*",
+          "title": "Approaches for measuring the surface areas of metal oxide electrocatalysts for determining their intrinsic electrocatalytic activity",
+          "journal": "Chem. Soc. Rev.",
+          "volume": "48",
+          "page": "2518",
+          "year": "2019",
+          "doi": "10.1039/C8CS00848E",
+          "tags": [
+            "nanomaterials"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "well_defined_surfaces",
+      "scope": "domain",
+      "group": "electrodes_surfaces",
+      "title": "Well-defined surfaces and single-crystal electrochemistry",
+      "nav": "Well-defined surfaces",
+      "rows": [
+        {
+          "key": "hamelin_1996_cyclic",
+          "authors": "Hamelin",
+          "title": "Cyclic voltammetry at gold single-crystal surfaces. Part 1. Behaviour at low-index faces",
+          "journal": "J. Electroanal. Chem.",
+          "volume": "407",
+          "page": "1",
+          "year": "1996",
+          "doi": "10.1016/0022-0728(95)04499-X",
+          "tags": [
+            "fundamental"
+          ]
+        },
+        {
+          "key": "cuesta_2000_adsorption",
+          "authors": "Cuesta, Kleinert & Kolb",
+          "title": "The adsorption of sulfate and phosphate on Au(111) and Au(100) electrodes: an in situ STM study",
+          "journal": "Phys. Chem. Chem. Phys.",
+          "volume": "2",
+          "page": "5684",
+          "year": "2000",
+          "doi": "10.1039/b006464p",
+          "tags": [
+            "fundamental"
+          ]
+        },
+        {
+          "key": "ganassin_2015_non",
+          "authors": "Ganassin *et al.*",
+          "title": "Non-covalent interactions in water electrolysis: influence on the activity of Pt(111) and iridium oxide catalysts in acidic media",
+          "journal": "Phys. Chem. Chem. Phys.",
+          "volume": "17",
+          "page": "8349",
+          "year": "2015",
+          "doi": "10.1039/C4CP04791E",
+          "tags": [
+            "fundamental",
+            "orr"
+          ]
+        },
+        {
+          "key": "fang_2011_electrochemistry",
+          "authors": "Fang *et al.*",
+          "title": "Electrochemistry at gold nanoparticles deposited on dendrimers assemblies adsorbed onto gold and platinum surfaces",
+          "journal": "J. Electroanal. Chem.",
+          "volume": "659",
+          "page": "76",
+          "year": "2011",
+          "doi": "10.1016/j.jelechem.2011.05.004",
+          "tags": [
+            "fundamental",
+            "nanomaterials"
+          ]
+        }
+      ]
+    },
+    {
       "slug": "water_electrolysis",
       "scope": "domain",
+      "group": "reactions_devices",
       "title": "Water electrolysis and HER/OER/ORR electrocatalysis",
       "nav": "Water electrolysis",
       "rows": [
@@ -434,9 +688,9 @@
       ]
     },
     {
-      "id": 3,
       "slug": "co2_reduction",
       "scope": "domain",
+      "group": "reactions_devices",
       "title": "Carbon dioxide reduction",
       "nav": "CO₂ reduction",
       "rows": [
@@ -609,9 +863,9 @@
       ]
     },
     {
-      "id": 4,
       "slug": "nitrogen_reduction",
       "scope": "domain",
+      "group": "reactions_devices",
       "title": "Nitrogen reduction",
       "nav": "Nitrogen reduction",
       "rows": [
@@ -674,654 +928,9 @@
       ]
     },
     {
-      "id": 5,
-      "slug": "cross_cutting_pitfalls",
-      "scope": "domain",
-      "title": "Cross-cutting pitfalls",
-      "nav": "Cross-cutting pitfalls",
-      "rows": [
-        {
-          "key": "christopher_2021_why",
-          "authors": "Christopher, Jin, Sivula & Kamat",
-          "title": "Why Seeing Is Not Always Believing: Common Pitfalls in Photocatalysis and Electrocatalysis",
-          "journal": "ACS Energy Lett.",
-          "volume": "6",
-          "page": "707",
-          "year": "2021",
-          "doi": "10.1021/acsenergylett.1c00064"
-        },
-        {
-          "key": "diklic_2022_potential",
-          "authors": "Diklić *et al.*",
-          "title": "Potential Pitfalls in the Operando XAS Study of Oxygen Evolution Electrocatalysts",
-          "journal": "ACS Energy Lett.",
-          "volume": "7",
-          "page": "1735",
-          "year": "2022",
-          "doi": "10.1021/acsenergylett.2c00727",
-          "tags": [
-            "operando",
-            "oer"
-          ]
-        },
-        {
-          "key": "kibsgaard_2026_who",
-          "authors": "Kibsgaard",
-          "title": "Who Will Keep the Vacuum Pumping? The Need to Sustain UHV-Based Surface Science in Electrocatalysis",
-          "journal": "ACS Energy Lett.",
-          "volume": "11",
-          "page": "1",
-          "year": "2026",
-          "doi": "10.1021/acsenergylett.5c03630",
-          "tags": [
-            "well_defined_surfaces",
-            "fundamental"
-          ]
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "slug": "reproducibility",
-      "scope": "domain",
-      "title": "Reproducibility, uncertainty and rigour",
-      "nav": "Reproducibility and rigour",
-      "rows": [
-        {
-          "key": "smith_2022_error",
-          "authors": "Smith & Dickinson",
-          "title": "Error, reproducibility and uncertainty in experiments for electrochemical energy technologies",
-          "journal": "Nat. Commun.",
-          "volume": "13",
-          "page": "6832",
-          "year": "2022",
-          "doi": "10.1038/s41467-022-34594-x",
-          "tags": [
-            "uncertainty"
-          ]
-        },
-        {
-          "key": "hausmann_2025_reproducibility",
-          "authors": "Hausmann *et al.*",
-          "title": "Reproducibility in Electrocatalysis",
-          "gloss": "(NiFe OER interlaboratory study)",
-          "journal": "ChemRxiv",
-          "year": "2025",
-          "doi": "10.26434/chemrxiv-2025-p0923"
-        },
-        {
-          "key": "mistry_2021_minimal",
-          "authors": "Mistry *et al.*",
-          "title": "A Minimal Information Set to Enable Verifiable Theoretical Battery Research",
-          "journal": "ACS Energy Lett.",
-          "volume": "6",
-          "page": "3831",
-          "year": "2021",
-          "doi": "10.1021/acsenergylett.1c01710",
-          "tags": [
-            "computation",
-            "batteries_fuel_cells",
-            "data_reporting"
-          ]
-        },
-        {
-          "key": "arnadottir_2026_rigor",
-          "authors": "Árnadóttir *et al.*",
-          "title": "Rigor & Reproducibility in Electrocatalysis: Integrating Theory and Experiment",
-          "journal": "ChemRxiv",
-          "year": "2026",
-          "doi": "10.26434/chemrxiv.15002639/v2",
-          "tags": [
-            "computation"
-          ]
-        },
-        {
-          "key": "jung_2026_experimental",
-          "authors": "Jung *et al.*",
-          "title": "Experimental choices shape electrocatalytic data: reproducibility and validity for researchers new to electrocatalysis",
-          "journal": "Electrochim. Acta",
-          "volume": "575",
-          "page": "149614",
-          "year": "2026",
-          "doi": "10.1016/j.electacta.2026.149614",
-          "tags": [
-            "education"
-          ]
-        },
-        {
-          "key": "heubach_2025_reproducibility",
-          "authors": "Heubach *et al.*",
-          "title": "Reproducibility of Electrochemical Measurements with Ionic Liquids: Role of Supplied Batches, Water and Adventitious Oxygen",
-          "journal": "Top. Catal.",
-          "volume": "68",
-          "page": "1910",
-          "year": "2025",
-          "doi": "10.1007/s11244-025-02123-x",
-          "tags": [
-            "impurities",
-            "electrolyte_purity"
-          ]
-        },
-        {
-          "key": "clark_2026_reporting",
-          "authors": "Clark & Escudero-Escribano",
-          "title": "Reporting for Reproducibility in Electrocatalysis",
-          "journal": "Cell Rep. Phys. Sci.",
-          "volume": "7",
-          "page": "103431",
-          "year": "2026",
-          "doi": "10.1016/j.xcrp.2026.103431",
-          "tags": [
-            "data_reporting"
-          ]
-        },
-        {
-          "key": "beil_2021_reproducibility",
-          "authors": "Beil, Pollok & Waldvogel",
-          "title": "Reproducibility in Electroorganic Synthesis — Myths and Misunderstandings",
-          "journal": "Angew. Chem. Int. Ed.",
-          "volume": "60",
-          "page": "14750",
-          "year": "2021",
-          "doi": "10.1002/anie.202014544",
-          "tags": [
-            "organic_electrosynthesis"
-          ]
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "slug": "batteries_fuel_cells",
-      "scope": "domain",
-      "title": "Batteries, supercapacitors and fuel cells",
-      "nav": "Batteries, supercapacitors, fuel cells",
-      "rows": [
-        {
-          "key": "dugas_2019_methods",
-          "authors": "Dugas *et al.*",
-          "title": "Methods and Protocols for Reliable Electrochemical Testing in Post-Li Batteries (Na, K, Mg, and Ca)",
-          "journal": "Chem. Mater.",
-          "volume": "31",
-          "page": "8613",
-          "year": "2019",
-          "doi": "10.1021/acs.chemmater.9b02776"
-        },
-        {
-          "key": "kuhn_2026_workflows",
-          "authors": "Kuhn *et al.*",
-          "title": "Workflows and principles for collaboration and communication in battery research",
-          "journal": "Digital Discovery",
-          "volume": "5",
-          "page": "177",
-          "year": "2026",
-          "doi": "10.1039/d5dd00247h",
-          "tags": [
-            "data_reporting"
-          ]
-        },
-        {
-          "key": "li_2020_good",
-          "authors": "Li *et al.*",
-          "title": "Good practice guide for papers on batteries for the Journal of Power Sources",
-          "journal": "J. Power Sources",
-          "volume": "452",
-          "page": "227824",
-          "year": "2020",
-          "doi": "10.1016/j.jpowsour.2020.227824",
-          "tags": [
-            "journal_guidelines",
-            "data_reporting"
-          ]
-        },
-        {
-          "key": "sun_2021_experimental",
-          "authors": "Sun",
-          "title": "An Experimental Checklist for Reporting Battery Performances",
-          "journal": "ACS Energy Lett.",
-          "volume": "6",
-          "page": "2187",
-          "year": "2021",
-          "doi": "10.1021/acsenergylett.1c00870",
-          "tags": [
-            "data_reporting"
-          ]
-        },
-        {
-          "key": "arbizzani_2020_good",
-          "authors": "Arbizzani *et al.*",
-          "title": "Good practice guide for papers on supercapacitors and related hybrid capacitors",
-          "journal": "J. Power Sources",
-          "volume": "450",
-          "page": "227636",
-          "year": "2020",
-          "doi": "10.1016/j.jpowsour.2019.227636",
-          "tags": [
-            "journal_guidelines",
-            "data_reporting"
-          ]
-        },
-        {
-          "key": "chatenet_2020_good",
-          "authors": "Chatenet *et al.*",
-          "title": "Good practice guide for papers on fuel cells and electrolysis cells",
-          "journal": "J. Power Sources",
-          "volume": "451",
-          "page": "227635",
-          "year": "2020",
-          "doi": "10.1016/j.jpowsour.2019.227635",
-          "tags": [
-            "journal_guidelines",
-            "water_electrolysis",
-            "data_reporting"
-          ]
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "slug": "operando",
-      "scope": "domain",
-      "title": "Operando and in situ measurements",
-      "nav": "Operando and in situ",
-      "rows": [
-        {
-          "key": "tackett_2026_rigor",
-          "authors": "Tackett *et al.*",
-          "title": "Rigor and Reproducibility in Electrocatalysis: Best Practices for Operando Studies",
-          "journal": "ACS Catal.",
-          "year": "2026",
-          "doi": "10.1021/acscatal.6c01946",
-          "tags": [
-            "reproducibility"
-          ]
-        },
-        {
-          "key": "prajapati_2025_best",
-          "authors": "Prajapati *et al.*",
-          "title": "Best Practices for In-Situ and Operando Techniques within Electrocatalytic Systems",
-          "journal": "Nat. Commun.",
-          "volume": "16",
-          "page": "2593",
-          "year": "2025",
-          "doi": "10.1038/s41467-025-57563-6"
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "slug": "variable_temperature",
-      "scope": "domain",
-      "title": "Variable-temperature electrochemistry",
-      "nav": "Variable temperature",
-      "rows": [
-        {
-          "key": "de_2025_best",
-          "authors": "De *et al.*",
-          "title": "Best Practices for Variable-Temperature Electrochemistry Experiments and Data Reporting",
-          "journal": "ACS Energy Lett.",
-          "volume": "10",
-          "page": "1542",
-          "year": "2025",
-          "doi": "10.1021/acsenergylett.5c00308",
-          "tags": [
-            "data_reporting"
-          ]
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "slug": "consensus_protocols",
-      "scope": "general",
-      "title": "Cross-domain consensus protocols",
-      "nav": "Cross-domain consensus",
-      "rows": [
-        {
-          "key": "khenkin_2020_consensus",
-          "authors": "Khenkin *et al.*",
-          "title": "Consensus statement for stability assessment and reporting for perovskite photovoltaics based on ISOS procedures",
-          "journal": "Nat. Energy",
-          "volume": "5",
-          "page": "35",
-          "year": "2020",
-          "doi": "10.1038/s41560-019-0529-5",
-          "tags": [
-            "stability",
-            "photovoltaics"
-          ]
-        },
-        {
-          "key": "reese_2011_consensus",
-          "authors": "Reese *et al.*",
-          "title": "Consensus stability testing protocols for organic photovoltaic materials and devices",
-          "gloss": "(the original ISOS protocols)",
-          "journal": "Sol. Energy Mater. Sol. Cells",
-          "volume": "95",
-          "page": "1253",
-          "year": "2011",
-          "doi": "10.1016/j.solmat.2011.01.036",
-          "tags": [
-            "stability",
-            "photovoltaics"
-          ]
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "slug": "terminology",
-      "scope": "domain",
-      "title": "Terminology, nomenclature and IUPAC recommendations",
-      "nav": "Terminology and IUPAC",
-      "rows": [
-        {
-          "key": "parsons_1974_electrochemical",
-          "authors": "Parsons",
-          "title": "Manual of Symbols and Terminology for Physicochemical Quantities and Units. Appendix III: Electrochemical Nomenclature",
-          "journal": "Pure Appl. Chem.",
-          "volume": "37",
-          "page": "499",
-          "year": "1974",
-          "doi": "10.1351/pac197437040499"
-        },
-        {
-          "key": "parsons_1980_electrode",
-          "authors": "Parsons",
-          "title": "Electrode Reaction Orders, Transfer Coefficients and Rate Constants. Amplification of Definitions and Recommendations for Publication of Parameters",
-          "journal": "Pure Appl. Chem.",
-          "volume": "52",
-          "page": "233",
-          "year": "1980",
-          "doi": "10.1351/pac198052010233"
-        },
-        {
-          "key": "gritzner_1984_recommendations",
-          "authors": "Gritzner & Kůta",
-          "title": "Recommendations on reporting electrode potentials in nonaqueous solvents",
-          "journal": "Pure Appl. Chem.",
-          "volume": "56",
-          "page": "461",
-          "year": "1984",
-          "doi": "10.1351/pac198456040461",
-          "tags": [
-            "reference_electrodes"
-          ]
-        },
-        {
-          "key": "gritzner_1993_nomenclature",
-          "authors": "Gritzner & Kreysa",
-          "title": "Nomenclature, symbols and definitions in electrochemical engineering",
-          "journal": "Pure Appl. Chem.",
-          "volume": "65",
-          "page": "1009",
-          "year": "1993",
-          "doi": "10.1351/pac199365051009"
-        },
-        {
-          "key": "pingarron_2020_terminology",
-          "authors": "Pingarrón *et al.*",
-          "title": "Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019)",
-          "journal": "Pure Appl. Chem.",
-          "volume": "92",
-          "page": "641",
-          "year": "2020",
-          "doi": "10.1515/pac-2018-0109"
-        },
-        {
-          "key": "naturenano_2024_importance",
-          "authors": "Editorial, *Nature Nanotechnology*",
-          "title": "The Importance of Basic Electrochemistry Terminology in the Era of Interdisciplinary Battery Research",
-          "journal": "Nat. Nanotechnol.",
-          "volume": "19",
-          "page": "1757",
-          "year": "2024",
-          "doi": "10.1038/s41565-024-01844-6",
-          "tags": [
-            "batteries_fuel_cells"
-          ]
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "slug": "journal_guidelines",
-      "scope": "domain",
-      "title": "Journal, publisher and vendor guidelines",
-      "nav": "Journal and vendor guidelines",
-      "rows": [
-        {
-          "key": "minteer_2023_new",
-          "authors": "Minteer *et al.*",
-          "title": "New Guidelines for Presenting Electrochemical Data in All ACS Journals",
-          "journal": "J. Org. Chem.",
-          "volume": "88",
-          "page": "4036",
-          "year": "2023",
-          "doi": "10.1021/acs.joc.3c00476",
-          "tags": [
-            "data_reporting"
-          ]
-        },
-        {
-          "key": "electrochemistry_2025_revised",
-          "authors": "Editorial Office, *Electrochemistry* (ECSJ)",
-          "title": "Revised the Instructions for Authors for Electrochemistry",
-          "journal": "Electrochemistry",
-          "volume": "93",
-          "page": "S0002",
-          "year": "2025",
-          "doi": "10.5796/electrochemistry.25-S0002",
-          "tags": [
-            "data_reporting"
-          ]
-        },
-        {
-          "key": "kamat_2024_tutorials",
-          "authors": "Kamat",
-          "title": "Tutorials in Electrochemistry: Electrocatalysis",
-          "gloss": "(collection editorial, the source of sections 1-5)",
-          "journal": "ACS Energy Lett.",
-          "volume": "9",
-          "page": "1053",
-          "year": "2024",
-          "doi": "10.1021/acsenergylett.4c00471"
-        },
-        {
-          "key": "biologic_2024_practices",
-          "authors": "BioLogic Science Instruments",
-          "title": "An Essential Guide to the Best Laboratory Practices for Electrochemistry",
-          "journal": "ECS guest post",
-          "year": "2024",
-          "tags": [
-            "education",
-            "setup"
-          ]
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "slug": "surface_area",
-      "scope": "domain",
-      "title": "Surface area determination",
-      "nav": "Surface area",
-      "rows": [
-        {
-          "key": "trasatti_1991_real",
-          "authors": "Trasatti & Petrii",
-          "title": "Real surface area measurements in electrochemistry",
-          "journal": "Pure Appl. Chem.",
-          "volume": "63",
-          "page": "711",
-          "year": "1991",
-          "doi": "10.1351/pac199163050711"
-        },
-        {
-          "key": "lukaszewski_2016_electrochemical",
-          "authors": "Łukaszewski *et al.*",
-          "title": "Electrochemical Methods of Real Surface Area Determination of Noble Metal Electrodes — an Overview",
-          "journal": "Int. J. Electrochem. Sci.",
-          "volume": "11",
-          "page": "4442",
-          "year": "2016"
-        },
-        {
-          "key": "mygind_2026_hidden",
-          "authors": "Mygind, Rost & Escudero-Escribano",
-          "title": "The Hidden Complexities of Electrochemically Active Surface Area Measurements",
-          "journal": "ACS Energy Lett.",
-          "volume": "11",
-          "page": "2508",
-          "year": "2026",
-          "doi": "10.1021/acsenergylett.5c04204"
-        },
-        {
-          "key": "bates_2026_rigor",
-          "authors": "Bates *et al.*",
-          "title": "Rigor & Reproducibility in Electrocatalysis: Approaches and Considerations for Surface Area Normalization",
-          "journal": "ACS Catal.",
-          "year": "2026",
-          "doi": "10.1021/acscatal.6c01834",
-          "tags": [
-            "reproducibility"
-          ]
-        },
-        {
-          "key": "wei_2019_approaches",
-          "authors": "Wei *et al.*",
-          "title": "Approaches for measuring the surface areas of metal oxide electrocatalysts for determining their intrinsic electrocatalytic activity",
-          "journal": "Chem. Soc. Rev.",
-          "volume": "48",
-          "page": "2518",
-          "year": "2019",
-          "doi": "10.1039/C8CS00848E",
-          "tags": [
-            "nanomaterials"
-          ]
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "slug": "reference_electrodes",
-      "scope": "domain",
-      "title": "Reference electrodes, potential scales and internal standards",
-      "nav": "Reference electrodes",
-      "rows": [
-        {
-          "key": "gagne_1980_ferrocene",
-          "authors": "Gagné *et al.*",
-          "title": "Ferrocene as an Internal Standard for Electrochemical Measurements",
-          "journal": "Inorg. Chem.",
-          "volume": "19",
-          "page": "2854",
-          "year": "1980",
-          "doi": "10.1021/ic50211a080"
-        },
-        {
-          "key": "connelly_1996_chemical",
-          "authors": "Connelly & Geiger",
-          "title": "Chemical Redox Agents for Organometallic Chemistry",
-          "journal": "Chem. Rev.",
-          "volume": "96",
-          "page": "877",
-          "year": "1996",
-          "doi": "10.1021/cr940053x"
-        },
-        {
-          "key": "noviandri_1999_decamethylferrocenium",
-          "authors": "Noviandri *et al.*",
-          "title": "The Decamethylferrocenium/Decamethylferrocene Redox Couple: A Superior Redox Standard",
-          "journal": "J. Phys. Chem. B",
-          "volume": "103",
-          "page": "6713",
-          "year": "1999",
-          "doi": "10.1021/jp991381+"
-        },
-        {
-          "key": "pavlishchuk_2000_conversion",
-          "authors": "Pavlishchuk & Addison",
-          "title": "Conversion constants for redox potentials measured versus different reference electrodes in acetonitrile solutions at 25 °C",
-          "journal": "Inorg. Chim. Acta",
-          "volume": "298",
-          "page": "97",
-          "year": "2000",
-          "doi": "10.1016/S0020-1693(99)00407-7"
-        },
-        {
-          "key": "frenzel_2017_voltammetric",
-          "authors": "Frenzel, Hartley & Frisch",
-          "title": "Voltammetric and spectroscopic study of ferrocene and hexacyanoferrate and the suitability of their redox couples as internal standards in ionic liquids",
-          "journal": "Phys. Chem. Chem. Phys.",
-          "volume": "19",
-          "page": "28841",
-          "year": "2017",
-          "doi": "10.1039/c7cp05483a"
-        }
-      ]
-    },
-    {
-      "id": 15,
-      "slug": "education",
-      "scope": "domain",
-      "title": "Education and tutorials",
-      "nav": "Education and tutorials",
-      "rows": [
-        {
-          "key": "elgrishi_2018_practical",
-          "authors": "Elgrishi *et al.*",
-          "title": "A Practical Beginner's Guide to Cyclic Voltammetry",
-          "journal": "J. Chem. Educ.",
-          "volume": "95",
-          "page": "197",
-          "year": "2018",
-          "doi": "10.1021/acs.jchemed.7b00361"
-        },
-        {
-          "key": "scholz_2015_voltammetric",
-          "authors": "Scholz",
-          "title": "Voltammetric techniques of analysis: the essentials",
-          "journal": "ChemTexts",
-          "volume": "1",
-          "page": "17",
-          "year": "2015",
-          "doi": "10.1007/s40828-015-0016-y"
-        },
-        {
-          "key": "climent_2020_single",
-          "authors": "Climent & Feliu",
-          "title": "Single Crystal Electrochemistry as an In Situ Analytical Characterization Tool",
-          "journal": "Annu. Rev. Anal. Chem.",
-          "volume": "13",
-          "page": "201",
-          "year": "2020",
-          "doi": "10.1146/annurev-anchem-061318-115541",
-          "tags": [
-            "well_defined_surfaces",
-            "fundamental"
-          ]
-        },
-        {
-          "key": "climent_2011_thirty",
-          "authors": "Climent & Feliu",
-          "title": "Thirty years of platinum single crystal electrochemistry",
-          "journal": "J. Solid State Electrochem.",
-          "volume": "15",
-          "page": "1297",
-          "year": "2011",
-          "doi": "10.1007/s10008-011-1372-1",
-          "tags": [
-            "well_defined_surfaces",
-            "fundamental"
-          ]
-        }
-      ]
-    },
-    {
-      "id": 16,
       "slug": "organic_electrosynthesis",
       "scope": "domain",
+      "group": "reactions_devices",
       "title": "Organic electrosynthesis",
       "nav": "Organic electrosynthesis",
       "rows": [
@@ -1463,7 +1072,503 @@
       ]
     },
     {
-      "id": 17,
+      "slug": "batteries_fuel_cells",
+      "scope": "domain",
+      "group": "reactions_devices",
+      "title": "Batteries, supercapacitors and fuel cells",
+      "nav": "Batteries, supercapacitors, fuel cells",
+      "rows": [
+        {
+          "key": "dugas_2019_methods",
+          "authors": "Dugas *et al.*",
+          "title": "Methods and Protocols for Reliable Electrochemical Testing in Post-Li Batteries (Na, K, Mg, and Ca)",
+          "journal": "Chem. Mater.",
+          "volume": "31",
+          "page": "8613",
+          "year": "2019",
+          "doi": "10.1021/acs.chemmater.9b02776"
+        },
+        {
+          "key": "kuhn_2026_workflows",
+          "authors": "Kuhn *et al.*",
+          "title": "Workflows and principles for collaboration and communication in battery research",
+          "journal": "Digital Discovery",
+          "volume": "5",
+          "page": "177",
+          "year": "2026",
+          "doi": "10.1039/d5dd00247h",
+          "tags": [
+            "data_reporting"
+          ]
+        },
+        {
+          "key": "li_2020_good",
+          "authors": "Li *et al.*",
+          "title": "Good practice guide for papers on batteries for the Journal of Power Sources",
+          "journal": "J. Power Sources",
+          "volume": "452",
+          "page": "227824",
+          "year": "2020",
+          "doi": "10.1016/j.jpowsour.2020.227824",
+          "tags": [
+            "journal_guidelines",
+            "data_reporting"
+          ]
+        },
+        {
+          "key": "sun_2021_experimental",
+          "authors": "Sun",
+          "title": "An Experimental Checklist for Reporting Battery Performances",
+          "journal": "ACS Energy Lett.",
+          "volume": "6",
+          "page": "2187",
+          "year": "2021",
+          "doi": "10.1021/acsenergylett.1c00870",
+          "tags": [
+            "data_reporting"
+          ]
+        },
+        {
+          "key": "arbizzani_2020_good",
+          "authors": "Arbizzani *et al.*",
+          "title": "Good practice guide for papers on supercapacitors and related hybrid capacitors",
+          "journal": "J. Power Sources",
+          "volume": "450",
+          "page": "227636",
+          "year": "2020",
+          "doi": "10.1016/j.jpowsour.2019.227636",
+          "tags": [
+            "journal_guidelines",
+            "data_reporting"
+          ]
+        },
+        {
+          "key": "chatenet_2020_good",
+          "authors": "Chatenet *et al.*",
+          "title": "Good practice guide for papers on fuel cells and electrolysis cells",
+          "journal": "J. Power Sources",
+          "volume": "451",
+          "page": "227635",
+          "year": "2020",
+          "doi": "10.1016/j.jpowsour.2019.227635",
+          "tags": [
+            "journal_guidelines",
+            "water_electrolysis",
+            "data_reporting"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cross_cutting_pitfalls",
+      "scope": "domain",
+      "group": "reporting_rigour",
+      "title": "Cross-cutting pitfalls",
+      "nav": "Cross-cutting pitfalls",
+      "rows": [
+        {
+          "key": "christopher_2021_why",
+          "authors": "Christopher, Jin, Sivula & Kamat",
+          "title": "Why Seeing Is Not Always Believing: Common Pitfalls in Photocatalysis and Electrocatalysis",
+          "journal": "ACS Energy Lett.",
+          "volume": "6",
+          "page": "707",
+          "year": "2021",
+          "doi": "10.1021/acsenergylett.1c00064"
+        },
+        {
+          "key": "diklic_2022_potential",
+          "authors": "Diklić *et al.*",
+          "title": "Potential Pitfalls in the Operando XAS Study of Oxygen Evolution Electrocatalysts",
+          "journal": "ACS Energy Lett.",
+          "volume": "7",
+          "page": "1735",
+          "year": "2022",
+          "doi": "10.1021/acsenergylett.2c00727",
+          "tags": [
+            "operando",
+            "oer"
+          ]
+        },
+        {
+          "key": "kibsgaard_2026_who",
+          "authors": "Kibsgaard",
+          "title": "Who Will Keep the Vacuum Pumping? The Need to Sustain UHV-Based Surface Science in Electrocatalysis",
+          "journal": "ACS Energy Lett.",
+          "volume": "11",
+          "page": "1",
+          "year": "2026",
+          "doi": "10.1021/acsenergylett.5c03630",
+          "tags": [
+            "well_defined_surfaces",
+            "fundamental"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "reproducibility",
+      "scope": "domain",
+      "group": "reporting_rigour",
+      "title": "Reproducibility, uncertainty and rigour",
+      "nav": "Reproducibility and rigour",
+      "rows": [
+        {
+          "key": "smith_2022_error",
+          "authors": "Smith & Dickinson",
+          "title": "Error, reproducibility and uncertainty in experiments for electrochemical energy technologies",
+          "journal": "Nat. Commun.",
+          "volume": "13",
+          "page": "6832",
+          "year": "2022",
+          "doi": "10.1038/s41467-022-34594-x",
+          "tags": [
+            "uncertainty"
+          ]
+        },
+        {
+          "key": "hausmann_2025_reproducibility",
+          "authors": "Hausmann *et al.*",
+          "title": "Reproducibility in Electrocatalysis",
+          "gloss": "(NiFe OER interlaboratory study)",
+          "journal": "ChemRxiv",
+          "year": "2025",
+          "doi": "10.26434/chemrxiv-2025-p0923"
+        },
+        {
+          "key": "mistry_2021_minimal",
+          "authors": "Mistry *et al.*",
+          "title": "A Minimal Information Set to Enable Verifiable Theoretical Battery Research",
+          "journal": "ACS Energy Lett.",
+          "volume": "6",
+          "page": "3831",
+          "year": "2021",
+          "doi": "10.1021/acsenergylett.1c01710",
+          "tags": [
+            "computation",
+            "batteries_fuel_cells",
+            "data_reporting"
+          ]
+        },
+        {
+          "key": "arnadottir_2026_rigor",
+          "authors": "Árnadóttir *et al.*",
+          "title": "Rigor & Reproducibility in Electrocatalysis: Integrating Theory and Experiment",
+          "journal": "ChemRxiv",
+          "year": "2026",
+          "doi": "10.26434/chemrxiv.15002639/v2",
+          "tags": [
+            "computation"
+          ]
+        },
+        {
+          "key": "jung_2026_experimental",
+          "authors": "Jung *et al.*",
+          "title": "Experimental choices shape electrocatalytic data: reproducibility and validity for researchers new to electrocatalysis",
+          "journal": "Electrochim. Acta",
+          "volume": "575",
+          "page": "149614",
+          "year": "2026",
+          "doi": "10.1016/j.electacta.2026.149614",
+          "tags": [
+            "education"
+          ]
+        },
+        {
+          "key": "heubach_2025_reproducibility",
+          "authors": "Heubach *et al.*",
+          "title": "Reproducibility of Electrochemical Measurements with Ionic Liquids: Role of Supplied Batches, Water and Adventitious Oxygen",
+          "journal": "Top. Catal.",
+          "volume": "68",
+          "page": "1910",
+          "year": "2025",
+          "doi": "10.1007/s11244-025-02123-x",
+          "tags": [
+            "impurities",
+            "electrolyte_purity"
+          ]
+        },
+        {
+          "key": "clark_2026_reporting",
+          "authors": "Clark & Escudero-Escribano",
+          "title": "Reporting for Reproducibility in Electrocatalysis",
+          "journal": "Cell Rep. Phys. Sci.",
+          "volume": "7",
+          "page": "103431",
+          "year": "2026",
+          "doi": "10.1016/j.xcrp.2026.103431",
+          "tags": [
+            "data_reporting"
+          ]
+        },
+        {
+          "key": "beil_2021_reproducibility",
+          "authors": "Beil, Pollok & Waldvogel",
+          "title": "Reproducibility in Electroorganic Synthesis — Myths and Misunderstandings",
+          "journal": "Angew. Chem. Int. Ed.",
+          "volume": "60",
+          "page": "14750",
+          "year": "2021",
+          "doi": "10.1002/anie.202014544",
+          "tags": [
+            "organic_electrosynthesis"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "terminology",
+      "scope": "domain",
+      "group": "reporting_rigour",
+      "title": "Terminology, nomenclature and IUPAC recommendations",
+      "nav": "Terminology and IUPAC",
+      "rows": [
+        {
+          "key": "parsons_1974_electrochemical",
+          "authors": "Parsons",
+          "title": "Manual of Symbols and Terminology for Physicochemical Quantities and Units. Appendix III: Electrochemical Nomenclature",
+          "journal": "Pure Appl. Chem.",
+          "volume": "37",
+          "page": "499",
+          "year": "1974",
+          "doi": "10.1351/pac197437040499"
+        },
+        {
+          "key": "parsons_1980_electrode",
+          "authors": "Parsons",
+          "title": "Electrode Reaction Orders, Transfer Coefficients and Rate Constants. Amplification of Definitions and Recommendations for Publication of Parameters",
+          "journal": "Pure Appl. Chem.",
+          "volume": "52",
+          "page": "233",
+          "year": "1980",
+          "doi": "10.1351/pac198052010233"
+        },
+        {
+          "key": "gritzner_1984_recommendations",
+          "authors": "Gritzner & Kůta",
+          "title": "Recommendations on reporting electrode potentials in nonaqueous solvents",
+          "journal": "Pure Appl. Chem.",
+          "volume": "56",
+          "page": "461",
+          "year": "1984",
+          "doi": "10.1351/pac198456040461",
+          "tags": [
+            "reference_electrodes"
+          ]
+        },
+        {
+          "key": "gritzner_1993_nomenclature",
+          "authors": "Gritzner & Kreysa",
+          "title": "Nomenclature, symbols and definitions in electrochemical engineering",
+          "journal": "Pure Appl. Chem.",
+          "volume": "65",
+          "page": "1009",
+          "year": "1993",
+          "doi": "10.1351/pac199365051009"
+        },
+        {
+          "key": "pingarron_2020_terminology",
+          "authors": "Pingarrón *et al.*",
+          "title": "Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019)",
+          "journal": "Pure Appl. Chem.",
+          "volume": "92",
+          "page": "641",
+          "year": "2020",
+          "doi": "10.1515/pac-2018-0109"
+        },
+        {
+          "key": "naturenano_2024_importance",
+          "authors": "Editorial, *Nature Nanotechnology*",
+          "title": "The Importance of Basic Electrochemistry Terminology in the Era of Interdisciplinary Battery Research",
+          "journal": "Nat. Nanotechnol.",
+          "volume": "19",
+          "page": "1757",
+          "year": "2024",
+          "doi": "10.1038/s41565-024-01844-6",
+          "tags": [
+            "batteries_fuel_cells"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "journal_guidelines",
+      "scope": "domain",
+      "group": "reporting_rigour",
+      "title": "Journal, publisher and vendor guidelines",
+      "nav": "Journal and vendor guidelines",
+      "rows": [
+        {
+          "key": "minteer_2023_new",
+          "authors": "Minteer *et al.*",
+          "title": "New Guidelines for Presenting Electrochemical Data in All ACS Journals",
+          "journal": "J. Org. Chem.",
+          "volume": "88",
+          "page": "4036",
+          "year": "2023",
+          "doi": "10.1021/acs.joc.3c00476",
+          "tags": [
+            "data_reporting"
+          ]
+        },
+        {
+          "key": "electrochemistry_2025_revised",
+          "authors": "Editorial Office, *Electrochemistry* (ECSJ)",
+          "title": "Revised the Instructions for Authors for Electrochemistry",
+          "journal": "Electrochemistry",
+          "volume": "93",
+          "page": "S0002",
+          "year": "2025",
+          "doi": "10.5796/electrochemistry.25-S0002",
+          "tags": [
+            "data_reporting"
+          ]
+        },
+        {
+          "key": "kamat_2024_tutorials",
+          "authors": "Kamat",
+          "title": "Tutorials in Electrochemistry: Electrocatalysis",
+          "gloss": "(collection editorial, the source of sections 1-5)",
+          "journal": "ACS Energy Lett.",
+          "volume": "9",
+          "page": "1053",
+          "year": "2024",
+          "doi": "10.1021/acsenergylett.4c00471"
+        },
+        {
+          "key": "biologic_2024_practices",
+          "authors": "BioLogic Science Instruments",
+          "title": "An Essential Guide to the Best Laboratory Practices for Electrochemistry",
+          "journal": "ECS guest post",
+          "year": "2024",
+          "tags": [
+            "education",
+            "setup"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "computation",
+      "scope": "domain",
+      "group": "reporting_rigour",
+      "title": "Computational and theoretical modelling",
+      "nav": "Computational modelling",
+      "rows": [
+        {
+          "key": "doblhoffdier_2026_atomistic",
+          "authors": "Doblhoff-Dier *et al.*",
+          "title": "Atomistic Modeling for Electrochemical Reactions: From the State of the Art to a Strategic Roadmap for Future Research within EU-CONCERT",
+          "journal": "arXiv:2607.07933",
+          "year": "2026",
+          "doi": "10.48550/arXiv.2607.07933"
+        },
+        {
+          "key": "refiorentin_2026_methodological",
+          "authors": "Re Fiorentin *et al.*",
+          "title": "Methodological Frameworks for Computational Electrocatalysis: From Theory to Practice",
+          "journal": "Small Methods",
+          "volume": "10",
+          "page": "2501542",
+          "year": "2026",
+          "doi": "10.1002/smtd.202501542"
+        }
+      ]
+    },
+    {
+      "slug": "education",
+      "scope": "domain",
+      "title": "Education and tutorials",
+      "nav": "Education and tutorials",
+      "rows": [
+        {
+          "key": "elgrishi_2018_practical",
+          "authors": "Elgrishi *et al.*",
+          "title": "A Practical Beginner's Guide to Cyclic Voltammetry",
+          "journal": "J. Chem. Educ.",
+          "volume": "95",
+          "page": "197",
+          "year": "2018",
+          "doi": "10.1021/acs.jchemed.7b00361"
+        },
+        {
+          "key": "scholz_2015_voltammetric",
+          "authors": "Scholz",
+          "title": "Voltammetric techniques of analysis: the essentials",
+          "journal": "ChemTexts",
+          "volume": "1",
+          "page": "17",
+          "year": "2015",
+          "doi": "10.1007/s40828-015-0016-y"
+        },
+        {
+          "key": "climent_2020_single",
+          "authors": "Climent & Feliu",
+          "title": "Single Crystal Electrochemistry as an In Situ Analytical Characterization Tool",
+          "journal": "Annu. Rev. Anal. Chem.",
+          "volume": "13",
+          "page": "201",
+          "year": "2020",
+          "doi": "10.1146/annurev-anchem-061318-115541",
+          "tags": [
+            "well_defined_surfaces",
+            "fundamental"
+          ]
+        },
+        {
+          "key": "climent_2011_thirty",
+          "authors": "Climent & Feliu",
+          "title": "Thirty years of platinum single crystal electrochemistry",
+          "journal": "J. Solid State Electrochem.",
+          "volume": "15",
+          "page": "1297",
+          "year": "2011",
+          "doi": "10.1007/s10008-011-1372-1",
+          "tags": [
+            "well_defined_surfaces",
+            "fundamental"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "consensus_protocols",
+      "scope": "general",
+      "title": "Cross-domain consensus protocols",
+      "nav": "Cross-domain consensus",
+      "rows": [
+        {
+          "key": "khenkin_2020_consensus",
+          "authors": "Khenkin *et al.*",
+          "title": "Consensus statement for stability assessment and reporting for perovskite photovoltaics based on ISOS procedures",
+          "journal": "Nat. Energy",
+          "volume": "5",
+          "page": "35",
+          "year": "2020",
+          "doi": "10.1038/s41560-019-0529-5",
+          "tags": [
+            "stability",
+            "photovoltaics"
+          ]
+        },
+        {
+          "key": "reese_2011_consensus",
+          "authors": "Reese *et al.*",
+          "title": "Consensus stability testing protocols for organic photovoltaic materials and devices",
+          "gloss": "(the original ISOS protocols)",
+          "journal": "Sol. Energy Mater. Sol. Cells",
+          "volume": "95",
+          "page": "1253",
+          "year": "2011",
+          "doi": "10.1016/j.solmat.2011.01.036",
+          "tags": [
+            "stability",
+            "photovoltaics"
+          ]
+        }
+      ]
+    },
+    {
       "slug": "data_fair",
       "scope": "general",
       "title": "Data, metadata, FAIR and open science",
@@ -1635,97 +1740,6 @@
       ]
     },
     {
-      "id": 18,
-      "slug": "computation",
-      "scope": "domain",
-      "title": "Computational and theoretical modelling",
-      "nav": "Computational modelling",
-      "rows": [
-        {
-          "key": "doblhoffdier_2026_atomistic",
-          "authors": "Doblhoff-Dier *et al.*",
-          "title": "Atomistic Modeling for Electrochemical Reactions: From the State of the Art to a Strategic Roadmap for Future Research within EU-CONCERT",
-          "journal": "arXiv:2607.07933",
-          "year": "2026",
-          "doi": "10.48550/arXiv.2607.07933"
-        },
-        {
-          "key": "refiorentin_2026_methodological",
-          "authors": "Re Fiorentin *et al.*",
-          "title": "Methodological Frameworks for Computational Electrocatalysis: From Theory to Practice",
-          "journal": "Small Methods",
-          "volume": "10",
-          "page": "2501542",
-          "year": "2026",
-          "doi": "10.1002/smtd.202501542"
-        }
-      ]
-    },
-    {
-      "id": 19,
-      "slug": "well_defined_surfaces",
-      "scope": "domain",
-      "title": "Well-defined surfaces and single-crystal electrochemistry",
-      "nav": "Well-defined surfaces",
-      "rows": [
-        {
-          "key": "hamelin_1996_cyclic",
-          "authors": "Hamelin",
-          "title": "Cyclic voltammetry at gold single-crystal surfaces. Part 1. Behaviour at low-index faces",
-          "journal": "J. Electroanal. Chem.",
-          "volume": "407",
-          "page": "1",
-          "year": "1996",
-          "doi": "10.1016/0022-0728(95)04499-X",
-          "tags": [
-            "fundamental"
-          ]
-        },
-        {
-          "key": "cuesta_2000_adsorption",
-          "authors": "Cuesta, Kleinert & Kolb",
-          "title": "The adsorption of sulfate and phosphate on Au(111) and Au(100) electrodes: an in situ STM study",
-          "journal": "Phys. Chem. Chem. Phys.",
-          "volume": "2",
-          "page": "5684",
-          "year": "2000",
-          "doi": "10.1039/b006464p",
-          "tags": [
-            "fundamental"
-          ]
-        },
-        {
-          "key": "ganassin_2015_non",
-          "authors": "Ganassin *et al.*",
-          "title": "Non-covalent interactions in water electrolysis: influence on the activity of Pt(111) and iridium oxide catalysts in acidic media",
-          "journal": "Phys. Chem. Chem. Phys.",
-          "volume": "17",
-          "page": "8349",
-          "year": "2015",
-          "doi": "10.1039/C4CP04791E",
-          "tags": [
-            "fundamental",
-            "orr"
-          ]
-        },
-        {
-          "key": "fang_2011_electrochemistry",
-          "authors": "Fang *et al.*",
-          "title": "Electrochemistry at gold nanoparticles deposited on dendrimers assemblies adsorbed onto gold and platinum surfaces",
-          "journal": "J. Electroanal. Chem.",
-          "volume": "659",
-          "page": "76",
-          "year": "2011",
-          "doi": "10.1016/j.jelechem.2011.05.004",
-          "tags": [
-            "fundamental",
-            "nanomaterials"
-          ]
-        }
-      ]
-    },
-    {
-      "id": 20,
       "slug": "general_reproducibility",
       "scope": "general",
       "title": "General reproducibility, verification and research software",
