@@ -10,5 +10,7 @@
 * [Resources](resources/index.md)
     * [Software Tools](resources/tools.md)
     * [Knowledge Bases](resources/knowledge.md)
+    * [Best Practices](resources/best_practices.md)
+        * [Cross-Domain References](resources/best_practices/cross_domain.md)
 * [Contribute](contribute.md)
 * [About](about.md)

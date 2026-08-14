@@ -33,6 +33,7 @@ import time
 
 import mkdocs_gen_files
 
+import website.generator.best_practices
 import website.generator.database
 from website.macros.render import render
 
@@ -188,6 +189,96 @@ def main():  # pylint: disable=R0914
         )
     t_ionic_liquid = time.time() - t_ionic_liquid_start
     print(f"Generated ionic liquid overview page in {t_ionic_liquid:.2f} seconds")
+    best_practices()
+
+
+def best_practices():
+    r"""
+    Create the pages of the best-practice reference table, i.e., an overview of
+    the literature on how to perform, report, and reproduce electrochemical
+    measurements.
+
+    The literature of interfacial electrochemistry and electrocatalysis itself
+    and the cross-domain literature it builds on are shown on separate pages.
+    Both link the bibliography of the entire table, which we publish alongside
+    them so that the references can be imported into a reference manager.
+    """
+    print("Generating best practices pages")
+
+    with mkdocs_gen_files.open(
+        os.path.join("resources", "best_practices.md"), "w"
+    ) as markdown:
+        markdown.write(
+            render(
+                "pages/best_practices.md",
+                title="Best Practices",
+                intro="A curated index of best-practice, protocol, and tutorial literature for"
+                " interfacial electrochemistry and electrocatalysis, i.e., recommendations on"
+                " how electrochemical measurements should be performed, reported, and"
+                " reproduced.\n\n"
+                "The works are grouped by topic and sorted by year, most recent first."
+                " Click a column header to sort a table by that column. A work that is"
+                " relevant to several topics is listed in each of them.\n\n"
+                "Recommendations on data, metadata, and reproducibility that are not specific"
+                " to electrochemistry are collected separately in"
+                " [cross-domain references](best_practices/cross_domain.md).",
+                sections=website.generator.best_practices.sections("domain"),
+                outro=best_practices_outro(
+                    bibliography="best_practices/bibliography.bib",
+                    resources="index.md",
+                ),
+            )
+        )
+
+    with mkdocs_gen_files.open(
+        os.path.join("resources", "best_practices", "cross_domain.md"), "w"
+    ) as markdown:
+        markdown.write(
+            render(
+                "pages/best_practices.md",
+                title="Cross-Domain References",
+                intro="Recommendations on reporting, data, metadata, and reproducibility that"
+                " are not specific to electrochemistry but which the practices of the field"
+                " build on.\n\n"
+                "For the literature of interfacial electrochemistry and electrocatalysis"
+                " itself, see [best practices](../best_practices.md).",
+                sections=website.generator.best_practices.sections("general"),
+                outro=best_practices_outro(
+                    bibliography="bibliography.bib",
+                    resources="../index.md",
+                ),
+            )
+        )
+
+    with open(
+        website.generator.best_practices.BIBLIOGRAPHY, encoding="utf-8"
+    ) as bibliography:
+        with mkdocs_gen_files.open(
+            os.path.join("resources", "best_practices", "bibliography.bib"), "w"
+        ) as published:
+            published.write(bibliography.read())
+
+
+def best_practices_outro(bibliography, resources):
+    r"""
+    Return the closing section of a best-practice page, i.e., the download of
+    the bibliography at the relative path `bibliography` and the invitation to
+    contribute on the resources page at the relative path `resources`.
+
+    EXAMPLES::
+
+        >>> "[bibliography.bib](bibliography.bib)" in best_practices_outro(
+        ...     "bibliography.bib", "../index.md")
+        True
+
+    """
+    return (
+        "## References\n\n"
+        "All references listed on this page and on its companion page are available as a"
+        f" single BibTeX file, [bibliography.bib]({bibliography}).\n\n"
+        "The collection is non-exhaustive. Do you know a work that should be listed here?"
+        f" See [suggest a link]({resources}#suggest-a-link)."
+    )
 
 
 def material_filter():

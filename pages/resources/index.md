@@ -5,6 +5,7 @@ with a focus on open-source software for handling electrochemical data.
 
 * [Software Tools](tools.md): open-source tools and formats for loading, converting, storing, and analyzing electrochemical data.
 * [Knowledge Bases](knowledge.md): educational, reference, and historical resources on electrochemistry.
+* [Best Practices](best_practices.md): literature on how electrochemical measurements should be performed, reported, and reproduced.
 
 The collection is non-exhaustive and the maintenance status of community projects may change over time.
 

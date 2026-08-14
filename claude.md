@@ -24,8 +24,12 @@ website/                  # Main Python package
 ├── filters/              # Custom Jinja filters (render, unicode, b64encode)
 ├── generator/            # Dynamic page generation from electrochemistry database
 │   ├── __main__.py       # Entry point for mkdocs-gen-files; generates CV pages
+│   ├── best_practices.py # Reads the best-practice reference table from data/
 │   └── database.py       # Loads remote CV database (cached singleton)
 └── macros/               # Custom Jinja macros (render)
+
+data/                     # Curated data maintained in this repository
+└── best_practices/       # Best-practice reference table + its bibliography (see its README)
 
 pages/                    # Static markdown pages (site source)
 ├── index.md              # Homepage
@@ -34,8 +38,8 @@ pages/                    # Static markdown pages (site source)
 └── cv/                   # CV section landing page
 
 templates/                # Jinja2 templates for rendering data
-├── components/           # Reusable snippets (quantity, electrolyte, cv_overview_table)
-└── pages/                # Full page templates (cv_entry, cv overview)
+├── components/           # Reusable snippets (quantity, electrolyte, cv_overview_table, best_practices_table)
+└── pages/                # Full page templates (cv_entry, cv overview, best_practices)
 
 util/                     # Shell scripts for literature PDF management (rclone)
 ```
@@ -59,7 +63,7 @@ Output goes to `generated/website/`.
 1. MkDocs reads `pages/` and `mkdocs.yml`
 2. The `mkdocs-gen-files` plugin runs `website/generator/__main__.py`
 3. That script loads the CV database from a remote ZIP (version pinned in `database.py`)
-4. Individual entry pages (`cv/entries/*.md`) and overview pages (aqueous, ionic_liquid, COOR) are generated
+4. Individual entry pages (`cv/entries/*.md`) and overview pages (aqueous, ionic_liquid, COOR) are generated, as are the best-practice pages from `data/best_practices/`
 5. Jinja templates + custom filters/macros render data into markdown
 6. MkDocs Material theme + KaTeX produce the final static HTML
 
@@ -91,4 +95,5 @@ Output goes to `generated/website/`.
 
 - CV entries: `/cv/entries/{identifier}.md`
 - Overview pages: `/cv/aqueous.md`, `/cv/aqueous/COOR.md`, `/cv/ionic_liquid.md`
+- Best practices: `/resources/best_practices.md`, `/resources/best_practices/cross_domain.md` (both generated)
 - Navigation defined in `pages/NAVIGATION.md`
