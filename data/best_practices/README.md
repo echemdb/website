@@ -10,10 +10,12 @@ which are generated from it during the build, see
 
 ## Files
 
-* `best_practices_table.json` — the table itself, one entry per work.
-* `bibliography.bib` — the BibTeX entry of each work, keyed by the `key` of its
-  row. It is published alongside the generated pages so that readers can import
-  the entire collection into a reference manager.
+* `bibliography.bib` — the BibTeX entry of each work. This is where a work is
+  described: its authors, its title, the year it appeared, its DOI or URL, and
+  everything else one needs to cite it.
+* `best_practices_table.json` — where each work belongs, i.e., its topic and
+  its tags. A row points to a BibTeX entry by its `key` and repeats nothing
+  that the entry already says.
 
 ## Structure
 
@@ -29,13 +31,6 @@ The table consists of `sections`, each of which holds the `rows` filed under it:
   "rows": [
     {
       "key": "boettcher_2021_potentially",
-      "authors": "Boettcher *et al.*",
-      "title": "Potentially Confusing: Potentials in Electrochemistry",
-      "journal": "ACS Energy Lett.",
-      "volume": "6",
-      "page": "261",
-      "year": "2021",
-      "doi": "10.1021/acsenergylett.0c02443",
       "tags": ["reference_electrodes", "fundamental"]
     }
   ]
@@ -66,18 +61,32 @@ table of every section whose slug it carries as a tag. The remaining groups
 (`reaction`, `approach`, `aspect`) are descriptive and are meant for filtering
 the collection.
 
-Rows without a `doi` are linked through the `url` of their bibliography entry
-instead. A `gloss` is a short parenthesis appended to the title where the title
-alone does not say what the work provides.
+Everything a table shows about a work comes from its bibliography entry, which
+is read with [pybtex](https://pybtex.org):
+
+* the title from the `title` field, with its LaTeX markup rendered as text, so
+  that `CO\textsubscript{2}` is shown as CO₂,
+* the label of the link from the authors: one author is named, two are named
+  with an ampersand, and more are shortened to `Boettcher *et al.*`,
+* the year from the `year` field, which has to be the one the work is cited
+  under, i.e., for a journal article the year of its issue rather than the year
+  it first appeared online,
+* the link from the `doi` field, or from the `url` field for works without a
+  DOI.
+
+A row therefore never repeats any of this. The one thing it may add is a
+`gloss`, a short parenthesis appended to the title where the title alone does
+not say what the work provides.
 
 ## Adding a work
 
-1. Add its row to the section it belongs to, and tag it with the slug of every
-   other section it should appear in. Store a work exactly once; never
-   duplicate a row to make it appear twice.
-2. Add its BibTeX entry to `bibliography.bib`, using the same `key`, which is
-   `surname_year_firstword` of the first author, the year, and the first
-   significant word of the title.
+1. Add its BibTeX entry to `bibliography.bib`. Its `key` is
+   `surname_year_firstword`, i.e., the surname of the first author, the year it
+   is cited under, and the first significant word of the title. The `year` of
+   the entry has to agree with the year in the key.
+2. Add a row for that `key` to the section it belongs to, and tag it with the
+   slug of every other section it should appear in. Store a work exactly once;
+   never duplicate a row to make it appear twice.
 3. Only use tags that exist in the top-level `tags` object; add the tag there
    first if it does not.
 

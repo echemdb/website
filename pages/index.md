@@ -17,24 +17,34 @@ comparison of published data with data acquired
 in the laboratory, and theoretical models.
 
 [→ Learn more](about.md)
-
-[→ Related projects and resources](resources/index.md)
 </figcaption>
 </figure>
 
 <figure class="echemdb-spotlight echemdb-spotlight-reverse" markdown>
-[![Content](./images/home_plot.png)](./cv/entries/schnaidt_2017_combined_4166_f2_solid)
+![Resources](./images/home_resources.svg)
 <figcaption markdown>
-## Website
+## Resources
 
-The website shows the content from a [dataset of cyclic voltammograms (CVs)](https://doi.org/10.5281/zenodo.20723429) for redox processes at the solid liquid interface
-from the [echemdb data repository](https://github.com/echemdb/electrochemistry-data) which were standardized and validated from published works by the community.
+A curated collection of open-source software tools, knowledge bases, and
+best-practice literature for acquiring, reporting, and reusing electrochemical data.
+
+[→ Browse the resources](resources/index.md)
+</figcaption>
+</figure>
+
+<figure class="echemdb-spotlight" markdown>
+[![CV Dataset](./images/home_plot.png)](./cv/entries/schnaidt_2017_combined_4166_f2_solid)
+<figcaption markdown>
+## CV Dataset
+
+A [dataset of cyclic voltammograms (CVs)](https://doi.org/10.5281/zenodo.20723429) for redox processes at the solid liquid interface
+from the [echemdb data repository](https://github.com/echemdb/electrochemistry-data), which were standardized and validated from published works by the community.
 
 [→ Explore](./cv)
 </figcaption>
 </figure>
 
-<figure class="echemdb-spotlight" markdown>
+<figure class="echemdb-spotlight echemdb-spotlight-reverse" markdown>
 ![API](./images/home_api.png)
 <figcaption markdown>
 ## API
@@ -47,7 +57,7 @@ or evaluate the entries in the database and provides an approach for local resea
 </figcaption>
 </figure>
 
-<figure class="echemdb-spotlight echemdb-spotlight-reverse" markdown>
+<figure class="echemdb-spotlight" markdown>
 ![Validation](./images/home_yaml.png)
 <figcaption markdown>
 ## Metadata
@@ -59,7 +69,7 @@ renders electrochemical data interoperable.
 </figcaption>
 </figure>
 
-<figure class="echemdb-spotlight" markdown>
+<figure class="echemdb-spotlight echemdb-spotlight-reverse" markdown>
 ![DataAnnotation](./images/autotag/home_autotag_metadata.png)
 <figcaption markdown>
 ## Automated Data Annotation
@@ -70,7 +80,7 @@ AutotagMetadata is a tool with a GUI for automated tagging of newly created data
 </figcaption>
 </figure>
 
-<figure class="echemdb-spotlight echemdb-spotlight-reverse" markdown>
+<figure class="echemdb-spotlight" markdown>
 ![SVGDigitizer](./images/home_digitizer.png)
 <figcaption markdown>
 ## Digitizer

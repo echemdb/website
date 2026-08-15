@@ -67,109 +67,53 @@ def table():
 @functools.cache
 def bibliography():
     r"""
-    Return the bibliography backing the best-practice table, i.e., a dict
-    mapping BibTeX keys to their parsed entries.
+    Return the bibliography backing the best-practice table, i.e., the BibTeX
+    entries of all the works it lists, keyed by their BibTeX key.
 
     EXAMPLES::
 
         >>> from website.generator.best_practices import bibliography
-        >>> bibliography()["boettcher_2021_potentially"]["doi"]
+        >>> bibliography()["boettcher_2021_potentially"].fields["doi"]
         '10.1021/acsenergylett.0c02443'
 
     """
-    with open(BIBLIOGRAPHY, encoding="utf-8") as source:
-        return parse_bibtex(source.read())
+    from pybtex.database.input.bibtex import Parser
+
+    return Parser(encoding="utf-8").parse_file(BIBLIOGRAPHY).entries
 
 
-def parse_bibtex(bibtex):
+# The subscripts of a chemical formula, i.e., CO\textsubscript{2} on the LaTeX
+# side and CO₂ on the website.
+SUBSCRIPTS = str.maketrans("0123456789xyn+-", "₀₁₂₃₄₅₆₇₈₉ₓᵧₙ₊₋")
+
+
+def unicode(latex):
     r"""
-    Return the entries of the BibTeX database `bibtex`, i.e., a dict mapping
-    each key to its verbatim source and to its ``doi`` and ``url`` fields.
-
-    This is a deliberately minimal parser. We only need to identify entries by
-    their key and read the two fields that provide a link to the work.
+    Return the LaTeX markup `latex` of a BibTeX field as the text that is shown
+    on the website.
 
     EXAMPLES::
 
-        >>> from website.generator.best_practices import parse_bibtex
-        >>> entries = parse_bibtex('''
-        ... @article{doe_2026_example,
-        ...   title = {An {Example}},
-        ...   doi   = {10.0000/example},
-        ... }
-        ... ''')
-        >>> entries["doe_2026_example"]["doi"]
-        '10.0000/example'
-        >>> entries["doe_2026_example"]["url"] is None
-        True
+        >>> from website.generator.best_practices import unicode
+        >>> unicode(r"Preparing {Alkaline} Electrolytes -- an Overview")
+        'Preparing Alkaline Electrolytes – an Overview'
+
+    Subscripts are shown as such, since a chemical formula is much easier to
+    read that way::
+
+        >>> unicode(r"Faradaic Efficiency in Electrochemical CO\textsubscript{2} Reduction")
+        'Faradaic Efficiency in Electrochemical CO₂ Reduction'
 
     """
-    entries = {}
+    from pylatexenc.latex2text import LatexNodes2Text
 
-    for match in re.finditer(r"@(\w+)\s*\{\s*([^,\s]+)\s*,", bibtex):
-        opening = bibtex.index("{", match.start())
-        source = bibtex[match.start() : _closing_brace(bibtex, opening) + 1]
+    latex = re.sub(
+        r"\\textsubscript\{([0-9xyn+-]+)\}",
+        lambda match: match.group(1).translate(SUBSCRIPTS),
+        latex,
+    )
 
-        entries[match.group(2)] = {
-            "type": match.group(1).lower(),
-            "source": source,
-            "doi": _field(source, "doi"),
-            "url": _field(source, "url"),
-        }
-
-    return entries
-
-
-def _closing_brace(text, opening):
-    r"""
-    Return the position of the brace in `text` that closes the brace at
-    position `opening`.
-
-    EXAMPLES::
-
-        >>> from website.generator.best_practices import _closing_brace
-        >>> _closing_brace("{a{b}c}", 0)
-        6
-
-    """
-    depth = 0
-
-    for position in range(opening, len(text)):
-        if text[position] == "{":
-            depth += 1
-        elif text[position] == "}":
-            depth -= 1
-            if depth == 0:
-                return position
-
-    raise ValueError(f"unbalanced braces in BibTeX entry at position {opening}")
-
-
-def _field(source, name):
-    r"""
-    Return the value of the BibTeX field `name` of the entry `source` or
-    ``None`` if the entry has no such field.
-
-    EXAMPLES::
-
-        >>> from website.generator.best_practices import _field
-        >>> _field("@misc{key, url = {https://echemdb.org}}", "url")
-        'https://echemdb.org'
-        >>> _field("@misc{key}", "doi") is None
-        True
-
-    """
-    match = re.search(rf"\b{name}\s*=\s*[{{\"]", source, re.IGNORECASE)
-
-    if match is None:
-        return None
-
-    if source[match.end() - 1] == "{":
-        value = source[match.end() : _closing_brace(source, match.end() - 1)]
-    else:
-        value = source[match.end() : source.index('"', match.end())]
-
-    return " ".join(value.split())
+    return LatexNodes2Text().latex_to_text(latex).strip()
 
 
 def sections(scope):
@@ -313,18 +257,15 @@ def reference(row):
     i.e., the title of the work, the year it appeared, and a link to it that is
     labeled with its authors.
 
-    Works are linked through their DOI. For the few without one, we fall back
-    to the URL recorded in the bibliography.
+    Nothing of this is stored in the table. Everything is read from the
+    bibliography entry that the row names, so that a work is described in
+    exactly one place. Works are linked through their DOI, and through the URL
+    of their bibliography entry when they have no DOI.
 
     EXAMPLES::
 
         >>> from website.generator.best_practices import reference
-        >>> displayed = reference({"key": "boettcher_2021_potentially",
-        ...                        "authors": "Boettcher *et al.*",
-        ...                        "title": "Potentially Confusing: Potentials in Electrochemistry",
-        ...                        "journal": "ACS Energy Lett.",
-        ...                        "year": "2021",
-        ...                        "doi": "10.1021/acsenergylett.0c02443"})
+        >>> displayed = reference({"key": "boettcher_2021_potentially"})
         >>> displayed["title"]
         'Potentially Confusing: Potentials in Electrochemistry'
         >>> displayed["authors"], displayed["year"]
@@ -334,45 +275,90 @@ def reference(row):
 
     A work without a DOI is linked through the URL of its bibliography entry::
 
-        >>> reference({"key": "biologic_2024_practices",
-        ...            "authors": "BioLogic Science Instruments",
-        ...            "title": "An Essential Guide to the Best Laboratory Practices for Electrochemistry",
-        ...            "year": "2024"})["url"]
+        >>> reference({"key": "biologic_2024_practices"})["url"]
         'https://www.electrochem.org/ecsnews/biologic-best-lab-practices-guide'
 
     """
-    entry = bibliography().get(row.get("key"), {})
-
-    doi = row.get("doi") or entry.get("doi")
+    entry = bibliography()[row["key"]]
+    doi = entry.fields.get("doi")
 
     return {
-        "key": row.get("key", ""),
-        "title": title(row),
-        "authors": row.get("authors", ""),
-        "journal": row.get("journal", ""),
-        "year": row.get("year", ""),
-        "url": f"https://doi.org/{doi}" if doi else entry.get("url"),
+        "key": row["key"],
+        "title": title(entry, row.get("gloss")),
+        "authors": authors(entry),
+        "year": entry.fields.get("year", ""),
+        "url": f"https://doi.org/{doi}" if doi else entry.fields.get("url"),
         "tags": row.get("tags", []),
     }
 
 
-def title(row):
+def title(entry, gloss=None):
     r"""
-    Return the title of the work in `row`, extended by the gloss that the table
-    provides for some of them.
+    Return the title of the work of the bibliography `entry`, extended by the
+    `gloss` that the table provides for some of them.
 
     EXAMPLES::
 
-        >>> from website.generator.best_practices import title
-        >>> title({"title": "Reproducibility of Water Oxidation",
-        ...        "gloss": "(NiFe OER interlaboratory study)"})
-        'Reproducibility of Water Oxidation (NiFe OER interlaboratory study)'
+        >>> from website.generator.best_practices import bibliography, title
+        >>> title(bibliography()["hausmann_2025_reproducibility"])
+        'Reproducibility in Electrocatalysis'
+        >>> title(bibliography()["hausmann_2025_reproducibility"],
+        ...       gloss="(NiFe OER interlaboratory study)")
+        'Reproducibility in Electrocatalysis (NiFe OER interlaboratory study)'
 
     """
-    if row.get("gloss"):
-        return f"{row['title']} {row['gloss']}"
+    text = unicode(entry.fields["title"])
 
-    return row["title"]
+    if gloss:
+        return f"{text} {gloss}"
+
+    return text
+
+
+def authors(entry):
+    r"""
+    Return the authors of the work of the bibliography `entry` as the label of
+    the link to it.
+
+    A work of one or two authors names them, anything beyond that is shortened
+    to the first author.
+
+    EXAMPLES::
+
+        >>> from website.generator.best_practices import authors, bibliography
+        >>> authors(bibliography()["jerkiewicz_2022_applicability"])
+        'Jerkiewicz'
+        >>> authors(bibliography()["zheng_2021_metal"])
+        'Zheng & Lee'
+        >>> authors(bibliography()["boettcher_2021_potentially"])
+        'Boettcher *et al.*'
+
+    Particles are part of a surname, and an institution that authors a work is
+    named in full::
+
+        >>> authors(bibliography()["vanbavel_2020_integrating"])
+        'van Bavel *et al.*'
+        >>> authors(bibliography()["biologic_2024_practices"])
+        'Bio-Logic Science Instruments'
+
+    """
+    persons = entry.persons.get("author") or entry.persons.get("editor") or []
+
+    names = [
+        unicode(" ".join(person.prelast_names + person.last_names))
+        for person in persons
+    ]
+
+    if not names:
+        return ""
+
+    if len(names) == 1:
+        return names[0]
+
+    if len(names) == 2:
+        return f"{names[0]} & {names[1]}"
+
+    return f"{names[0]} *et al.*"
 
 
 def count(scope):
