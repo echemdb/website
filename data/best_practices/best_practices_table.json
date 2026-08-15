@@ -76,13 +76,6 @@
       "rows": [
         {
           "key": "boettcher_2021_potentially",
-          "authors": "Boettcher *et al.*",
-          "title": "Potentially Confusing: Potentials in Electrochemistry",
-          "journal": "ACS Energy Lett.",
-          "volume": "6",
-          "page": "261",
-          "year": "2021",
-          "doi": "10.1021/acsenergylett.0c02443",
           "tags": [
             "reference_electrodes",
             "fundamental"
@@ -90,13 +83,6 @@
         },
         {
           "key": "son_2023_navigating",
-          "authors": "Son *et al.*",
-          "title": "Navigating iR Compensation: Practical Considerations for Accurate Study of Oxygen Evolution Catalytic Electrodes",
-          "journal": "ACS Energy Lett.",
-          "volume": "8",
-          "page": "4323",
-          "year": "2023",
-          "doi": "10.1021/acsenergylett.3c01658",
           "tags": [
             "water_electrolysis",
             "ir_compensation",
@@ -105,26 +91,12 @@
         },
         {
           "key": "zheng_2023_ir",
-          "authors": "Zheng",
-          "title": "iR Compensation for Electrocatalysis Studies: Considerations and Recommendations",
-          "journal": "ACS Energy Lett.",
-          "volume": "8",
-          "page": "1952",
-          "year": "2023",
-          "doi": "10.1021/acsenergylett.3c00366",
           "tags": [
             "ir_compensation"
           ]
         },
         {
           "key": "heenan_2022_why",
-          "authors": "Heenan *et al.*",
-          "title": "Why Careful iR Compensation and Reporting of Electrode Potentials Are Critical for the CO₂ Reduction Reaction",
-          "journal": "ACS Energy Lett.",
-          "volume": "7",
-          "page": "2357",
-          "year": "2022",
-          "doi": "10.1021/acsenergylett.2c00800",
           "tags": [
             "co2_reduction",
             "ir_compensation",
@@ -133,26 +105,12 @@
         },
         {
           "key": "niu_2020_how",
-          "authors": "Niu *et al.*",
-          "title": "How to Reliably Report the Overpotential of an Electrocatalyst",
-          "journal": "ACS Energy Lett.",
-          "volume": "5",
-          "page": "1083",
-          "year": "2020",
-          "doi": "10.1021/acsenergylett.0c00321",
           "tags": [
             "benchmarking"
           ]
         },
         {
           "key": "anantharaj_2021_pitfalls",
-          "authors": "Anantharaj *et al.*",
-          "title": "The Pitfalls of Using Potentiodynamic Polarization Curves for Tafel Analysis in Electrocatalytic Water Splitting",
-          "journal": "ACS Energy Lett.",
-          "volume": "6",
-          "page": "1607",
-          "year": "2021",
-          "doi": "10.1021/acsenergylett.1c00608",
           "tags": [
             "water_electrolysis",
             "her",
@@ -161,13 +119,6 @@
         },
         {
           "key": "kumar_2021_caustic",
-          "authors": "Kumar *et al.*",
-          "title": "Caustic Soda Production, Energy Efficiency, and Electrolyzers",
-          "journal": "ACS Energy Lett.",
-          "volume": "6",
-          "page": "3563",
-          "year": "2021",
-          "doi": "10.1021/acsenergylett.1c01827",
           "tags": [
             "chlor_alkali",
             "setup"
@@ -175,13 +126,6 @@
         },
         {
           "key": "hausmann_2021_ph",
-          "authors": "Hausmann *et al.*",
-          "title": "The pH of Aqueous NaOH/KOH Solutions: A Critical and Non-trivial Parameter for Electrocatalysis",
-          "journal": "ACS Energy Lett.",
-          "volume": "6",
-          "page": "3567",
-          "year": "2021",
-          "doi": "10.1021/acsenergylett.1c01693",
           "tags": [
             "water_electrolysis",
             "electrolyte_purity",
@@ -191,26 +135,12 @@
         },
         {
           "key": "zheng_2021_metal",
-          "authors": "Zheng & Lee",
-          "title": "Metal–Organic Frameworks for Electrocatalysis: Catalyst or Precatalyst?",
-          "journal": "ACS Energy Lett.",
-          "volume": "6",
-          "page": "2838",
-          "year": "2021",
-          "doi": "10.1021/acsenergylett.1c01350",
           "tags": [
             "nanomaterials"
           ]
         },
         {
           "key": "tiwari_2019_effect",
-          "authors": "Tiwari *et al.*",
-          "title": "Effect of Dissolved Glassware on the Structure-Sensitive Part of the Cu(111) Voltammogram in KOH",
-          "journal": "ACS Energy Lett.",
-          "volume": "4",
-          "page": "1645",
-          "year": "2019",
-          "doi": "10.1021/acsenergylett.9b01064",
           "tags": [
             "well_defined_surfaces",
             "electrolyte_purity",
@@ -220,13 +150,6 @@
         },
         {
           "key": "jerkiewicz_2020_standard",
-          "authors": "Jerkiewicz",
-          "title": "Standard and Reversible Hydrogen Electrodes: Theory, Design, Operation, and Applications",
-          "journal": "ACS Catal.",
-          "volume": "10",
-          "page": "8409",
-          "year": "2020",
-          "doi": "10.1021/acscatal.0c02046",
           "tags": [
             "reference_electrodes",
             "setup",
@@ -235,13 +158,6 @@
         },
         {
           "key": "jerkiewicz_2022_applicability",
-          "authors": "Jerkiewicz",
-          "title": "Applicability of Platinum as a Counter-Electrode Material in Electrocatalysis Research",
-          "journal": "ACS Catal.",
-          "volume": "12",
-          "page": "2661",
-          "year": "2022",
-          "doi": "10.1021/acscatal.1c06040",
           "tags": [
             "counter_electrodes",
             "setup"
@@ -257,54 +173,19 @@
       "nav": "Reference electrodes",
       "rows": [
         {
-          "key": "gagne_1980_ferrocene",
-          "authors": "Gagné *et al.*",
-          "title": "Ferrocene as an Internal Standard for Electrochemical Measurements",
-          "journal": "Inorg. Chem.",
-          "volume": "19",
-          "page": "2854",
-          "year": "1980",
-          "doi": "10.1021/ic50211a080"
+          "key": "gagne_1980_ferrocene"
         },
         {
-          "key": "connelly_1996_chemical",
-          "authors": "Connelly & Geiger",
-          "title": "Chemical Redox Agents for Organometallic Chemistry",
-          "journal": "Chem. Rev.",
-          "volume": "96",
-          "page": "877",
-          "year": "1996",
-          "doi": "10.1021/cr940053x"
+          "key": "connelly_1996_chemical"
         },
         {
-          "key": "noviandri_1999_decamethylferrocenium",
-          "authors": "Noviandri *et al.*",
-          "title": "The Decamethylferrocenium/Decamethylferrocene Redox Couple: A Superior Redox Standard",
-          "journal": "J. Phys. Chem. B",
-          "volume": "103",
-          "page": "6713",
-          "year": "1999",
-          "doi": "10.1021/jp991381+"
+          "key": "noviandri_1999_decamethylferrocenium"
         },
         {
-          "key": "pavlishchuk_2000_conversion",
-          "authors": "Pavlishchuk & Addison",
-          "title": "Conversion constants for redox potentials measured versus different reference electrodes in acetonitrile solutions at 25 °C",
-          "journal": "Inorg. Chim. Acta",
-          "volume": "298",
-          "page": "97",
-          "year": "2000",
-          "doi": "10.1016/S0020-1693(99)00407-7"
+          "key": "pavlishchuk_2000_conversion"
         },
         {
-          "key": "frenzel_2017_voltammetric",
-          "authors": "Frenzel, Hartley & Frisch",
-          "title": "Voltammetric and spectroscopic study of ferrocene and hexacyanoferrate and the suitability of their redox couples as internal standards in ionic liquids",
-          "journal": "Phys. Chem. Chem. Phys.",
-          "volume": "19",
-          "page": "28841",
-          "year": "2017",
-          "doi": "10.1039/c7cp05483a"
+          "key": "frenzel_2017_voltammetric"
         }
       ]
     },
@@ -317,24 +198,12 @@
       "rows": [
         {
           "key": "tackett_2026_rigor",
-          "authors": "Tackett *et al.*",
-          "title": "Rigor and Reproducibility in Electrocatalysis: Best Practices for Operando Studies",
-          "journal": "ACS Catal.",
-          "year": "2026",
-          "doi": "10.1021/acscatal.6c01946",
           "tags": [
             "reproducibility"
           ]
         },
         {
-          "key": "prajapati_2025_best",
-          "authors": "Prajapati *et al.*",
-          "title": "Best Practices for In-Situ and Operando Techniques within Electrocatalytic Systems",
-          "journal": "Nat. Commun.",
-          "volume": "16",
-          "page": "2593",
-          "year": "2025",
-          "doi": "10.1038/s41467-025-57563-6"
+          "key": "prajapati_2025_best"
         }
       ]
     },
@@ -347,13 +216,6 @@
       "rows": [
         {
           "key": "de_2025_best",
-          "authors": "De *et al.*",
-          "title": "Best Practices for Variable-Temperature Electrochemistry Experiments and Data Reporting",
-          "journal": "ACS Energy Lett.",
-          "volume": "10",
-          "page": "1542",
-          "year": "2025",
-          "doi": "10.1021/acsenergylett.5c00308",
           "tags": [
             "data_reporting"
           ]
@@ -368,54 +230,22 @@
       "nav": "Surface area",
       "rows": [
         {
-          "key": "trasatti_1991_real",
-          "authors": "Trasatti & Petrii",
-          "title": "Real surface area measurements in electrochemistry",
-          "journal": "Pure Appl. Chem.",
-          "volume": "63",
-          "page": "711",
-          "year": "1991",
-          "doi": "10.1351/pac199163050711"
+          "key": "trasatti_1991_real"
         },
         {
-          "key": "lukaszewski_2016_electrochemical",
-          "authors": "Łukaszewski *et al.*",
-          "title": "Electrochemical Methods of Real Surface Area Determination of Noble Metal Electrodes — an Overview",
-          "journal": "Int. J. Electrochem. Sci.",
-          "volume": "11",
-          "page": "4442",
-          "year": "2016"
+          "key": "lukaszewski_2016_electrochemical"
         },
         {
-          "key": "mygind_2026_hidden",
-          "authors": "Mygind, Rost & Escudero-Escribano",
-          "title": "The Hidden Complexities of Electrochemically Active Surface Area Measurements",
-          "journal": "ACS Energy Lett.",
-          "volume": "11",
-          "page": "2508",
-          "year": "2026",
-          "doi": "10.1021/acsenergylett.5c04204"
+          "key": "mygind_2026_hidden"
         },
         {
           "key": "bates_2026_rigor",
-          "authors": "Bates *et al.*",
-          "title": "Rigor & Reproducibility in Electrocatalysis: Approaches and Considerations for Surface Area Normalization",
-          "journal": "ACS Catal.",
-          "year": "2026",
-          "doi": "10.1021/acscatal.6c01834",
           "tags": [
             "reproducibility"
           ]
         },
         {
           "key": "wei_2019_approaches",
-          "authors": "Wei *et al.*",
-          "title": "Approaches for measuring the surface areas of metal oxide electrocatalysts for determining their intrinsic electrocatalytic activity",
-          "journal": "Chem. Soc. Rev.",
-          "volume": "48",
-          "page": "2518",
-          "year": "2019",
-          "doi": "10.1039/C8CS00848E",
           "tags": [
             "nanomaterials"
           ]
@@ -431,39 +261,18 @@
       "rows": [
         {
           "key": "hamelin_1996_cyclic",
-          "authors": "Hamelin",
-          "title": "Cyclic voltammetry at gold single-crystal surfaces. Part 1. Behaviour at low-index faces",
-          "journal": "J. Electroanal. Chem.",
-          "volume": "407",
-          "page": "1",
-          "year": "1996",
-          "doi": "10.1016/0022-0728(95)04499-X",
           "tags": [
             "fundamental"
           ]
         },
         {
           "key": "cuesta_2000_adsorption",
-          "authors": "Cuesta, Kleinert & Kolb",
-          "title": "The adsorption of sulfate and phosphate on Au(111) and Au(100) electrodes: an in situ STM study",
-          "journal": "Phys. Chem. Chem. Phys.",
-          "volume": "2",
-          "page": "5684",
-          "year": "2000",
-          "doi": "10.1039/b006464p",
           "tags": [
             "fundamental"
           ]
         },
         {
           "key": "ganassin_2015_non",
-          "authors": "Ganassin *et al.*",
-          "title": "Non-covalent interactions in water electrolysis: influence on the activity of Pt(111) and iridium oxide catalysts in acidic media",
-          "journal": "Phys. Chem. Chem. Phys.",
-          "volume": "17",
-          "page": "8349",
-          "year": "2015",
-          "doi": "10.1039/C4CP04791E",
           "tags": [
             "fundamental",
             "orr"
@@ -471,13 +280,6 @@
         },
         {
           "key": "fang_2011_electrochemistry",
-          "authors": "Fang *et al.*",
-          "title": "Electrochemistry at gold nanoparticles deposited on dendrimers assemblies adsorbed onto gold and platinum surfaces",
-          "journal": "J. Electroanal. Chem.",
-          "volume": "659",
-          "page": "76",
-          "year": "2011",
-          "doi": "10.1016/j.jelechem.2011.05.004",
           "tags": [
             "fundamental",
             "nanomaterials"
@@ -494,13 +296,6 @@
       "rows": [
         {
           "key": "marquez_2024_guide",
-          "authors": "Marquez *et al.*",
-          "title": "A Guide to Electrocatalyst Stability Using Lab-Scale Alkaline Water Electrolyzers",
-          "journal": "ACS Energy Lett.",
-          "volume": "9",
-          "page": "547",
-          "year": "2024",
-          "doi": "10.1021/acsenergylett.3c02758",
           "tags": [
             "her",
             "oer",
@@ -510,13 +305,6 @@
         },
         {
           "key": "wang_2022_unveiling",
-          "authors": "Wang *et al.*",
-          "title": "Unveiling the Pitfalls of Comparing Oxygen Reduction Reaction Kinetic Data for Pd-Based Electrocatalysts without the Experimental Conditions of the Current–Potential Curves",
-          "journal": "ACS Energy Lett.",
-          "volume": "7",
-          "page": "952",
-          "year": "2022",
-          "doi": "10.1021/acsenergylett.2c00181",
           "tags": [
             "orr",
             "benchmarking"
@@ -524,13 +312,6 @@
         },
         {
           "key": "lee_2020_reliable",
-          "authors": "Lee & Bang",
-          "title": "Reliable Counter Electrodes for the Hydrogen Evolution Reaction in Acidic Media",
-          "journal": "ACS Energy Lett.",
-          "volume": "5",
-          "page": "2706",
-          "year": "2020",
-          "doi": "10.1021/acsenergylett.0c01537",
           "tags": [
             "basic_electrochemistry",
             "counter_electrodes",
@@ -540,13 +321,6 @@
         },
         {
           "key": "zheng_2020_best",
-          "authors": "Zheng *et al.*",
-          "title": "Best Practices in Using Foam-Type Electrodes for Electrocatalytic Performance Benchmark",
-          "journal": "ACS Energy Lett.",
-          "volume": "5",
-          "page": "3260",
-          "year": "2020",
-          "doi": "10.1021/acsenergylett.0c01958",
           "tags": [
             "benchmarking",
             "setup"
@@ -554,13 +328,6 @@
         },
         {
           "key": "marquez_2023_getting",
-          "authors": "Márquez *et al.*",
-          "title": "Getting the Basics Right: Preparing Alkaline Electrolytes for Electrochemical Applications",
-          "journal": "ACS Energy Lett.",
-          "volume": "8",
-          "page": "1141",
-          "year": "2023",
-          "doi": "10.1021/acsenergylett.2c02847",
           "tags": [
             "basic_electrochemistry",
             "electrolyte_purity",
@@ -569,13 +336,6 @@
         },
         {
           "key": "wu_2021_comparing",
-          "authors": "Wu & Hofmann",
-          "title": "Comparing the Intrinsic HER Activity of Transition Metal Dichalcogenides: Pitfalls and Suggestions",
-          "journal": "ACS Energy Lett.",
-          "volume": "6",
-          "page": "2619",
-          "year": "2021",
-          "doi": "10.1021/acsenergylett.1c00912",
           "tags": [
             "her",
             "benchmarking",
@@ -584,13 +344,6 @@
         },
         {
           "key": "anantharaj_2019_do",
-          "authors": "Anantharaj & Kundu",
-          "title": "Do the Evaluation Parameters Reflect Intrinsic Activity of Electrocatalysts in Electrochemical Water Splitting?",
-          "journal": "ACS Energy Lett.",
-          "volume": "4",
-          "page": "1260",
-          "year": "2019",
-          "doi": "10.1021/acsenergylett.9b00686",
           "tags": [
             "surface_area",
             "benchmarking",
@@ -600,13 +353,6 @@
         },
         {
           "key": "mccrory_2013_benchmarking",
-          "authors": "McCrory *et al.*",
-          "title": "Benchmarking Heterogeneous Electrocatalysts for the Oxygen Evolution Reaction",
-          "journal": "J. Am. Chem. Soc.",
-          "volume": "135",
-          "page": "16977",
-          "year": "2013",
-          "doi": "10.1021/ja407115p",
           "tags": [
             "benchmarking",
             "oer"
@@ -614,13 +360,6 @@
         },
         {
           "key": "mccrory_2015_benchmarking",
-          "authors": "McCrory *et al.*",
-          "title": "Benchmarking Hydrogen Evolving Reaction and Oxygen Evolving Reaction Electrocatalysts for Solar Water Splitting Devices",
-          "journal": "J. Am. Chem. Soc.",
-          "volume": "137",
-          "page": "4347",
-          "year": "2015",
-          "doi": "10.1021/ja510442p",
           "tags": [
             "benchmarking",
             "her",
@@ -629,39 +368,18 @@
         },
         {
           "key": "bligaard_2016_toward",
-          "authors": "Bligaard *et al.*",
-          "title": "Toward Benchmarking in Catalysis Science: Best Practices, Challenges, and Opportunities",
-          "journal": "ACS Catal.",
-          "volume": "6",
-          "page": "2590",
-          "year": "2016",
-          "doi": "10.1021/acscatal.6b00183",
           "tags": [
             "benchmarking"
           ]
         },
         {
           "key": "chen_2017_best",
-          "authors": "Chen *et al.*",
-          "title": "Best Practices in Pursuit of Topics in Heterogeneous Electrocatalysis",
-          "journal": "ACS Catal.",
-          "volume": "7",
-          "page": "6392",
-          "year": "2017",
-          "doi": "10.1021/acscatal.7b02839",
           "tags": [
             "benchmarking"
           ]
         },
         {
           "key": "voiry_2018_best",
-          "authors": "Voiry *et al.*",
-          "title": "Best Practices for Reporting Electrocatalytic Performance of Nanomaterials",
-          "journal": "ACS Nano",
-          "volume": "12",
-          "page": "9635",
-          "year": "2018",
-          "doi": "10.1021/acsnano.8b07700",
           "tags": [
             "benchmarking",
             "nanomaterials",
@@ -670,13 +388,6 @@
         },
         {
           "key": "wei_2019_recommended",
-          "authors": "Wei *et al.*",
-          "title": "Recommended Practices and Benchmark Activity for Hydrogen and Oxygen Electrocatalysis in Water Splitting and Fuel Cells",
-          "journal": "Adv. Mater.",
-          "volume": "31",
-          "page": "1806296",
-          "year": "2019",
-          "doi": "10.1002/adma.201806296",
           "tags": [
             "batteries_fuel_cells",
             "benchmarking",
@@ -696,26 +407,12 @@
       "rows": [
         {
           "key": "duta_2024_guideline",
-          "authors": "Duta *et al.*",
-          "title": "A Guideline to Determine Faradaic Efficiency in Electrochemical CO₂ Reduction",
-          "journal": "ACS Energy Lett.",
-          "volume": "9",
-          "page": "323",
-          "year": "2024",
-          "doi": "10.1021/acsenergylett.3c02362",
           "tags": [
             "co2rr"
           ]
         },
         {
           "key": "cui_2023_guide",
-          "authors": "Cui *et al.*",
-          "title": "A Guide to Evaluate Electrolyte Purity for CO₂ Reduction Studies",
-          "journal": "ACS Energy Lett.",
-          "volume": "8",
-          "page": "5201",
-          "year": "2023",
-          "doi": "10.1021/acsenergylett.3c02343",
           "tags": [
             "co2rr",
             "electrolyte_purity",
@@ -724,13 +421,6 @@
         },
         {
           "key": "iglesiasvanmontfort_2023_advanced",
-          "authors": "Iglesias van Montfort *et al.*",
-          "title": "An Advanced Guide to Assembly and Operation of CO₂ Electrolyzers",
-          "journal": "ACS Energy Lett.",
-          "volume": "8",
-          "page": "4156",
-          "year": "2023",
-          "doi": "10.1021/acsenergylett.3c01561",
           "tags": [
             "co2rr",
             "setup"
@@ -738,13 +428,6 @@
         },
         {
           "key": "salvatore_2020_voltage",
-          "authors": "Salvatore & Berlinguette",
-          "title": "Voltage Matters When Reducing CO₂ in an Electrochemical Flow Cell",
-          "journal": "ACS Energy Lett.",
-          "volume": "5",
-          "page": "215",
-          "year": "2020",
-          "doi": "10.1021/acsenergylett.9b02356",
           "tags": [
             "co2rr",
             "setup"
@@ -752,13 +435,6 @@
         },
         {
           "key": "sebastianpascual_2020_addressing",
-          "authors": "Sebastián-Pascual & Escudero-Escribano",
-          "title": "Addressing the Interfacial Properties for CO Electroreduction on Cu with Cyclic Voltammetry",
-          "journal": "ACS Energy Lett.",
-          "volume": "5",
-          "page": "130",
-          "year": "2020",
-          "doi": "10.1021/acsenergylett.9b02456",
           "tags": [
             "co2rr",
             "fundamental"
@@ -766,13 +442,6 @@
         },
         {
           "key": "vanbavel_2020_integrating",
-          "authors": "van Bavel *et al.*",
-          "title": "Integrating CO₂ Electrolysis into the Gas-to-Liquids–Power-to-Liquids Process",
-          "journal": "ACS Energy Lett.",
-          "volume": "5",
-          "page": "2597",
-          "year": "2020",
-          "doi": "10.1021/acsenergylett.0c01418",
           "tags": [
             "co2rr",
             "setup"
@@ -780,26 +449,12 @@
         },
         {
           "key": "welch_2020_bicarbonate",
-          "authors": "Welch *et al.*",
-          "title": "Bicarbonate or Carbonate Processes for Coupling Carbon Dioxide Capture and Electrochemical Conversion",
-          "journal": "ACS Energy Lett.",
-          "volume": "5",
-          "page": "940",
-          "year": "2020",
-          "doi": "10.1021/acsenergylett.0c00234",
           "tags": [
             "co2rr"
           ]
         },
         {
           "key": "liu_2019_introductory",
-          "authors": "Liu *et al.*",
-          "title": "Introductory Guide to Assembling and Operating Gas Diffusion Electrodes for Electrochemical CO₂ Reduction",
-          "journal": "ACS Energy Lett.",
-          "volume": "4",
-          "page": "639",
-          "year": "2019",
-          "doi": "10.1021/acsenergylett.9b00137",
           "tags": [
             "co2rr",
             "setup"
@@ -807,13 +462,6 @@
         },
         {
           "key": "clark_2018_standards",
-          "authors": "Clark *et al.*",
-          "title": "Standards and Protocols for Data Acquisition and Reporting for Studies of the Electrochemical Reduction of Carbon Dioxide",
-          "journal": "ACS Catal.",
-          "volume": "8",
-          "page": "6560",
-          "year": "2018",
-          "doi": "10.1021/acscatal.8b01340",
           "tags": [
             "co2rr",
             "data_reporting"
@@ -821,26 +469,12 @@
         },
         {
           "key": "seger_2023_best",
-          "authors": "Seger *et al.*",
-          "title": "Best practices for electrochemical reduction of carbon dioxide",
-          "journal": "Nat. Sustain.",
-          "volume": "6",
-          "page": "236",
-          "year": "2023",
-          "doi": "10.1038/s41893-022-01034-z",
           "tags": [
             "co2rr"
           ]
         },
         {
           "key": "nwabara_2020_towards",
-          "authors": "Nwabara *et al.*",
-          "title": "Towards accelerated durability testing protocols for CO₂ electrolysis",
-          "journal": "J. Mater. Chem. A",
-          "volume": "8",
-          "page": "22557",
-          "year": "2020",
-          "doi": "10.1039/D0TA08695A",
           "tags": [
             "co2rr",
             "stability"
@@ -848,13 +482,6 @@
         },
         {
           "key": "garg_2022_how",
-          "authors": "Garg *et al.*",
-          "title": "How membrane characteristics influence the performance of CO₂ and CO electrolysis",
-          "journal": "Energy Environ. Sci.",
-          "volume": "15",
-          "page": "4440",
-          "year": "2022",
-          "doi": "10.1039/D2EE01818G",
           "tags": [
             "co2rr",
             "setup"
@@ -871,13 +498,6 @@
       "rows": [
         {
           "key": "izelaar_2023_identification",
-          "authors": "Izelaar *et al.*",
-          "title": "Identification, Quantification, and Elimination of NOₓ and NH₃ Impurities for Aqueous and Li-Mediated Nitrogen Reduction Experiments",
-          "journal": "ACS Energy Lett.",
-          "volume": "8",
-          "page": "3614",
-          "year": "2023",
-          "doi": "10.1021/acsenergylett.3c01130",
           "tags": [
             "nrr",
             "impurities"
@@ -885,13 +505,6 @@
         },
         {
           "key": "kibsgaard_2019_difficulty",
-          "authors": "Kibsgaard, Nørskov & Chorkendorff",
-          "title": "The Difficulty of Proving Electrochemical Ammonia Synthesis",
-          "journal": "ACS Energy Lett.",
-          "volume": "4",
-          "page": "2986",
-          "year": "2019",
-          "doi": "10.1021/acsenergylett.9b02286",
           "tags": [
             "nrr",
             "impurities"
@@ -899,13 +512,6 @@
         },
         {
           "key": "li_2019_electrochemical",
-          "authors": "Li *et al.*",
-          "title": "Electrochemical Nitrogen Reduction: Identification and Elimination of Contamination in Electrolyte",
-          "journal": "ACS Energy Lett.",
-          "volume": "4",
-          "page": "2111",
-          "year": "2019",
-          "doi": "10.1021/acsenergylett.9b01573",
           "tags": [
             "nrr",
             "impurities",
@@ -914,13 +520,6 @@
         },
         {
           "key": "hollevoet_2020_energy",
-          "authors": "Hollevoet *et al.*",
-          "title": "Energy-Efficient Ammonia Production from Air and Water Using Electrocatalysts with Limited Faradaic Efficiency",
-          "journal": "ACS Energy Lett.",
-          "volume": "5",
-          "page": "1124",
-          "year": "2020",
-          "doi": "10.1021/acsenergylett.0c00455",
           "tags": [
             "nrr"
           ]
@@ -935,139 +534,55 @@
       "nav": "Organic electrosynthesis",
       "rows": [
         {
-          "key": "frontanauribe_2010_organic",
-          "authors": "Frontana-Uribe *et al.*",
-          "title": "Organic electrosynthesis: a promising green methodology in organic chemistry",
-          "journal": "Green Chem.",
-          "volume": "12",
-          "page": "2099",
-          "year": "2010",
-          "doi": "10.1039/C0GC00382D"
+          "key": "frontanauribe_2010_organic"
         },
         {
-          "key": "yan_2017_synthetic",
-          "authors": "Yan, Kawamata & Baran",
-          "title": "Synthetic Organic Electrochemical Methods Since 2000: On the Verge of a Renaissance",
-          "journal": "Chem. Rev.",
-          "volume": "117",
-          "page": "13230",
-          "year": "2017",
-          "doi": "10.1021/acs.chemrev.7b00397"
+          "key": "yan_2017_synthetic"
         },
         {
-          "key": "wiebe_2018_electrifying",
-          "authors": "Wiebe *et al.*",
-          "title": "Electrifying Organic Synthesis",
-          "journal": "Angew. Chem. Int. Ed.",
-          "volume": "57",
-          "page": "5594",
-          "year": "2018",
-          "doi": "10.1002/anie.201711060"
+          "key": "wiebe_2018_electrifying"
         },
         {
-          "key": "mohle_2018_modern",
-          "authors": "Möhle *et al.*",
-          "title": "Modern Electrochemical Aspects for the Synthesis of Value-Added Organic Products",
-          "journal": "Angew. Chem. Int. Ed.",
-          "volume": "57",
-          "page": "6018",
-          "year": "2018",
-          "doi": "10.1002/anie.201712732"
+          "key": "mohle_2018_modern"
         },
         {
           "key": "kingston_2020_survival",
-          "authors": "Kingston *et al.*",
-          "title": "A Survival Guide for the \"Electro-curious\"",
-          "journal": "Acc. Chem. Res.",
-          "volume": "53",
-          "page": "72",
-          "year": "2020",
-          "doi": "10.1021/acs.accounts.9b00539",
           "tags": [
             "education"
           ]
         },
         {
-          "key": "pollok_2020_electroorganic",
-          "authors": "Pollok & Waldvogel",
-          "title": "Electro-organic synthesis — a 21st century technique",
-          "journal": "Chem. Sci.",
-          "volume": "11",
-          "page": "12386",
-          "year": "2020",
-          "doi": "10.1039/D0SC01848A"
+          "key": "pollok_2020_electroorganic"
         },
         {
           "key": "pletcher_2018_flow",
-          "authors": "Pletcher, Green & Brown",
-          "title": "Flow Electrolysis Cells for the Synthetic Organic Chemistry Laboratory",
-          "journal": "Chem. Rev.",
-          "volume": "118",
-          "page": "4573",
-          "year": "2018",
-          "doi": "10.1021/acs.chemrev.7b00360",
           "tags": [
             "setup"
           ]
         },
         {
           "key": "noel_2019_fundamentals",
-          "authors": "Noël, Cao & Laudadio",
-          "title": "The Fundamentals Behind the Use of Flow Reactors in Electrochemistry",
-          "journal": "Acc. Chem. Res.",
-          "volume": "52",
-          "page": "2858",
-          "year": "2019",
-          "doi": "10.1021/acs.accounts.9b00412",
           "tags": [
             "setup"
           ]
         },
         {
-          "key": "leech_2020_organic",
-          "authors": "Leech *et al.*",
-          "title": "Organic electrosynthesis: from academia to industry",
-          "journal": "React. Chem. Eng.",
-          "volume": "5",
-          "page": "977",
-          "year": "2020",
-          "doi": "10.1039/D0RE00064G"
+          "key": "leech_2020_organic"
         },
         {
           "key": "ware_2024_guide",
-          "authors": "Ware *et al.*",
-          "title": "A guide to troubleshooting metal sacrificial anodes for organic electrosynthesis",
-          "journal": "Chem. Sci.",
-          "volume": "15",
-          "page": "5814",
-          "year": "2024",
-          "doi": "10.1039/D3SC06885D",
           "tags": [
             "setup"
           ]
         },
         {
           "key": "bloomquist_2024_understanding",
-          "authors": "Bloomquist *et al.*",
-          "title": "Understanding the effects of forced and bubble-induced convection in transport-limited organic electrosynthesis",
-          "journal": "React. Chem. Eng.",
-          "volume": "9",
-          "page": "865",
-          "year": "2024",
-          "doi": "10.1039/D3RE00579H",
           "tags": [
             "setup"
           ]
         },
         {
-          "key": "brachi_2023_advanced",
-          "authors": "Brachi *et al.*",
-          "title": "Advanced Electroanalysis for Electrosynthesis",
-          "journal": "ACS Org. Inorg. Au",
-          "volume": "4",
-          "page": "141",
-          "year": "2023",
-          "doi": "10.1021/acsorginorgau.3c00051"
+          "key": "brachi_2023_advanced"
         }
       ]
     },
@@ -1079,37 +594,16 @@
       "nav": "Batteries, supercapacitors, fuel cells",
       "rows": [
         {
-          "key": "dugas_2019_methods",
-          "authors": "Dugas *et al.*",
-          "title": "Methods and Protocols for Reliable Electrochemical Testing in Post-Li Batteries (Na, K, Mg, and Ca)",
-          "journal": "Chem. Mater.",
-          "volume": "31",
-          "page": "8613",
-          "year": "2019",
-          "doi": "10.1021/acs.chemmater.9b02776"
+          "key": "dugas_2019_methods"
         },
         {
           "key": "kuhn_2026_workflows",
-          "authors": "Kuhn *et al.*",
-          "title": "Workflows and principles for collaboration and communication in battery research",
-          "journal": "Digital Discovery",
-          "volume": "5",
-          "page": "177",
-          "year": "2026",
-          "doi": "10.1039/d5dd00247h",
           "tags": [
             "data_reporting"
           ]
         },
         {
           "key": "li_2020_good",
-          "authors": "Li *et al.*",
-          "title": "Good practice guide for papers on batteries for the Journal of Power Sources",
-          "journal": "J. Power Sources",
-          "volume": "452",
-          "page": "227824",
-          "year": "2020",
-          "doi": "10.1016/j.jpowsour.2020.227824",
           "tags": [
             "journal_guidelines",
             "data_reporting"
@@ -1117,26 +611,12 @@
         },
         {
           "key": "sun_2021_experimental",
-          "authors": "Sun",
-          "title": "An Experimental Checklist for Reporting Battery Performances",
-          "journal": "ACS Energy Lett.",
-          "volume": "6",
-          "page": "2187",
-          "year": "2021",
-          "doi": "10.1021/acsenergylett.1c00870",
           "tags": [
             "data_reporting"
           ]
         },
         {
           "key": "arbizzani_2020_good",
-          "authors": "Arbizzani *et al.*",
-          "title": "Good practice guide for papers on supercapacitors and related hybrid capacitors",
-          "journal": "J. Power Sources",
-          "volume": "450",
-          "page": "227636",
-          "year": "2020",
-          "doi": "10.1016/j.jpowsour.2019.227636",
           "tags": [
             "journal_guidelines",
             "data_reporting"
@@ -1144,13 +624,6 @@
         },
         {
           "key": "chatenet_2020_good",
-          "authors": "Chatenet *et al.*",
-          "title": "Good practice guide for papers on fuel cells and electrolysis cells",
-          "journal": "J. Power Sources",
-          "volume": "451",
-          "page": "227635",
-          "year": "2020",
-          "doi": "10.1016/j.jpowsour.2019.227635",
           "tags": [
             "journal_guidelines",
             "water_electrolysis",
@@ -1167,24 +640,10 @@
       "nav": "Cross-cutting pitfalls",
       "rows": [
         {
-          "key": "christopher_2021_why",
-          "authors": "Christopher, Jin, Sivula & Kamat",
-          "title": "Why Seeing Is Not Always Believing: Common Pitfalls in Photocatalysis and Electrocatalysis",
-          "journal": "ACS Energy Lett.",
-          "volume": "6",
-          "page": "707",
-          "year": "2021",
-          "doi": "10.1021/acsenergylett.1c00064"
+          "key": "christopher_2021_why"
         },
         {
           "key": "diklic_2022_potential",
-          "authors": "Diklić *et al.*",
-          "title": "Potential Pitfalls in the Operando XAS Study of Oxygen Evolution Electrocatalysts",
-          "journal": "ACS Energy Lett.",
-          "volume": "7",
-          "page": "1735",
-          "year": "2022",
-          "doi": "10.1021/acsenergylett.2c00727",
           "tags": [
             "operando",
             "oer"
@@ -1192,13 +651,6 @@
         },
         {
           "key": "kibsgaard_2026_who",
-          "authors": "Kibsgaard",
-          "title": "Who Will Keep the Vacuum Pumping? The Need to Sustain UHV-Based Surface Science in Electrocatalysis",
-          "journal": "ACS Energy Lett.",
-          "volume": "11",
-          "page": "1",
-          "year": "2026",
-          "doi": "10.1021/acsenergylett.5c03630",
           "tags": [
             "well_defined_surfaces",
             "fundamental"
@@ -1215,35 +667,16 @@
       "rows": [
         {
           "key": "smith_2022_error",
-          "authors": "Smith & Dickinson",
-          "title": "Error, reproducibility and uncertainty in experiments for electrochemical energy technologies",
-          "journal": "Nat. Commun.",
-          "volume": "13",
-          "page": "6832",
-          "year": "2022",
-          "doi": "10.1038/s41467-022-34594-x",
           "tags": [
             "uncertainty"
           ]
         },
         {
           "key": "hausmann_2025_reproducibility",
-          "authors": "Hausmann *et al.*",
-          "title": "Reproducibility in Electrocatalysis",
-          "gloss": "(NiFe OER interlaboratory study)",
-          "journal": "ChemRxiv",
-          "year": "2025",
-          "doi": "10.26434/chemrxiv-2025-p0923"
+          "gloss": "(NiFe OER interlaboratory study)"
         },
         {
           "key": "mistry_2021_minimal",
-          "authors": "Mistry *et al.*",
-          "title": "A Minimal Information Set to Enable Verifiable Theoretical Battery Research",
-          "journal": "ACS Energy Lett.",
-          "volume": "6",
-          "page": "3831",
-          "year": "2021",
-          "doi": "10.1021/acsenergylett.1c01710",
           "tags": [
             "computation",
             "batteries_fuel_cells",
@@ -1252,37 +685,18 @@
         },
         {
           "key": "arnadottir_2026_rigor",
-          "authors": "Árnadóttir *et al.*",
-          "title": "Rigor & Reproducibility in Electrocatalysis: Integrating Theory and Experiment",
-          "journal": "ChemRxiv",
-          "year": "2026",
-          "doi": "10.26434/chemrxiv.15002639/v2",
           "tags": [
             "computation"
           ]
         },
         {
           "key": "jung_2026_experimental",
-          "authors": "Jung *et al.*",
-          "title": "Experimental choices shape electrocatalytic data: reproducibility and validity for researchers new to electrocatalysis",
-          "journal": "Electrochim. Acta",
-          "volume": "575",
-          "page": "149614",
-          "year": "2026",
-          "doi": "10.1016/j.electacta.2026.149614",
           "tags": [
             "education"
           ]
         },
         {
           "key": "heubach_2025_reproducibility",
-          "authors": "Heubach *et al.*",
-          "title": "Reproducibility of Electrochemical Measurements with Ionic Liquids: Role of Supplied Batches, Water and Adventitious Oxygen",
-          "journal": "Top. Catal.",
-          "volume": "68",
-          "page": "1910",
-          "year": "2025",
-          "doi": "10.1007/s11244-025-02123-x",
           "tags": [
             "impurities",
             "electrolyte_purity"
@@ -1290,26 +704,12 @@
         },
         {
           "key": "clark_2026_reporting",
-          "authors": "Clark & Escudero-Escribano",
-          "title": "Reporting for Reproducibility in Electrocatalysis",
-          "journal": "Cell Rep. Phys. Sci.",
-          "volume": "7",
-          "page": "103431",
-          "year": "2026",
-          "doi": "10.1016/j.xcrp.2026.103431",
           "tags": [
             "data_reporting"
           ]
         },
         {
           "key": "beil_2021_reproducibility",
-          "authors": "Beil, Pollok & Waldvogel",
-          "title": "Reproducibility in Electroorganic Synthesis — Myths and Misunderstandings",
-          "journal": "Angew. Chem. Int. Ed.",
-          "volume": "60",
-          "page": "14750",
-          "year": "2021",
-          "doi": "10.1002/anie.202014544",
           "tags": [
             "organic_electrosynthesis"
           ]
@@ -1324,67 +724,25 @@
       "nav": "Terminology and IUPAC",
       "rows": [
         {
-          "key": "parsons_1974_electrochemical",
-          "authors": "Parsons",
-          "title": "Manual of Symbols and Terminology for Physicochemical Quantities and Units. Appendix III: Electrochemical Nomenclature",
-          "journal": "Pure Appl. Chem.",
-          "volume": "37",
-          "page": "499",
-          "year": "1974",
-          "doi": "10.1351/pac197437040499"
+          "key": "parsons_1974_electrochemical"
         },
         {
-          "key": "parsons_1980_electrode",
-          "authors": "Parsons",
-          "title": "Electrode Reaction Orders, Transfer Coefficients and Rate Constants. Amplification of Definitions and Recommendations for Publication of Parameters",
-          "journal": "Pure Appl. Chem.",
-          "volume": "52",
-          "page": "233",
-          "year": "1980",
-          "doi": "10.1351/pac198052010233"
+          "key": "parsons_1980_electrode"
         },
         {
           "key": "gritzner_1984_recommendations",
-          "authors": "Gritzner & Kůta",
-          "title": "Recommendations on reporting electrode potentials in nonaqueous solvents",
-          "journal": "Pure Appl. Chem.",
-          "volume": "56",
-          "page": "461",
-          "year": "1984",
-          "doi": "10.1351/pac198456040461",
           "tags": [
             "reference_electrodes"
           ]
         },
         {
-          "key": "gritzner_1993_nomenclature",
-          "authors": "Gritzner & Kreysa",
-          "title": "Nomenclature, symbols and definitions in electrochemical engineering",
-          "journal": "Pure Appl. Chem.",
-          "volume": "65",
-          "page": "1009",
-          "year": "1993",
-          "doi": "10.1351/pac199365051009"
+          "key": "gritzner_1993_nomenclature"
         },
         {
-          "key": "pingarron_2020_terminology",
-          "authors": "Pingarrón *et al.*",
-          "title": "Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019)",
-          "journal": "Pure Appl. Chem.",
-          "volume": "92",
-          "page": "641",
-          "year": "2020",
-          "doi": "10.1515/pac-2018-0109"
+          "key": "pingarron_2020_terminology"
         },
         {
           "key": "naturenano_2024_importance",
-          "authors": "Editorial, *Nature Nanotechnology*",
-          "title": "The Importance of Basic Electrochemistry Terminology in the Era of Interdisciplinary Battery Research",
-          "journal": "Nat. Nanotechnol.",
-          "volume": "19",
-          "page": "1757",
-          "year": "2024",
-          "doi": "10.1038/s41565-024-01844-6",
           "tags": [
             "batteries_fuel_cells"
           ]
@@ -1400,47 +758,22 @@
       "rows": [
         {
           "key": "minteer_2023_new",
-          "authors": "Minteer *et al.*",
-          "title": "New Guidelines for Presenting Electrochemical Data in All ACS Journals",
-          "journal": "J. Org. Chem.",
-          "volume": "88",
-          "page": "4036",
-          "year": "2023",
-          "doi": "10.1021/acs.joc.3c00476",
           "tags": [
             "data_reporting"
           ]
         },
         {
           "key": "electrochemistry_2025_revised",
-          "authors": "Editorial Office, *Electrochemistry* (ECSJ)",
-          "title": "Revised the Instructions for Authors for Electrochemistry",
-          "journal": "Electrochemistry",
-          "volume": "93",
-          "page": "S0002",
-          "year": "2025",
-          "doi": "10.5796/electrochemistry.25-S0002",
           "tags": [
             "data_reporting"
           ]
         },
         {
           "key": "kamat_2024_tutorials",
-          "authors": "Kamat",
-          "title": "Tutorials in Electrochemistry: Electrocatalysis",
-          "gloss": "(collection editorial, the source of sections 1-5)",
-          "journal": "ACS Energy Lett.",
-          "volume": "9",
-          "page": "1053",
-          "year": "2024",
-          "doi": "10.1021/acsenergylett.4c00471"
+          "gloss": "(collection editorial, the source of sections 1-5)"
         },
         {
           "key": "biologic_2024_practices",
-          "authors": "BioLogic Science Instruments",
-          "title": "An Essential Guide to the Best Laboratory Practices for Electrochemistry",
-          "journal": "ECS guest post",
-          "year": "2024",
           "tags": [
             "education",
             "setup"
@@ -1456,22 +789,10 @@
       "nav": "Computational modelling",
       "rows": [
         {
-          "key": "doblhoffdier_2026_atomistic",
-          "authors": "Doblhoff-Dier *et al.*",
-          "title": "Atomistic Modeling for Electrochemical Reactions: From the State of the Art to a Strategic Roadmap for Future Research within EU-CONCERT",
-          "journal": "arXiv:2607.07933",
-          "year": "2026",
-          "doi": "10.48550/arXiv.2607.07933"
+          "key": "doblhoffdier_2026_atomistic"
         },
         {
-          "key": "refiorentin_2026_methodological",
-          "authors": "Re Fiorentin *et al.*",
-          "title": "Methodological Frameworks for Computational Electrocatalysis: From Theory to Practice",
-          "journal": "Small Methods",
-          "volume": "10",
-          "page": "2501542",
-          "year": "2026",
-          "doi": "10.1002/smtd.202501542"
+          "key": "refiorentin_2026_methodological"
         }
       ]
     },
@@ -1482,34 +803,13 @@
       "nav": "Education and tutorials",
       "rows": [
         {
-          "key": "elgrishi_2018_practical",
-          "authors": "Elgrishi *et al.*",
-          "title": "A Practical Beginner's Guide to Cyclic Voltammetry",
-          "journal": "J. Chem. Educ.",
-          "volume": "95",
-          "page": "197",
-          "year": "2018",
-          "doi": "10.1021/acs.jchemed.7b00361"
+          "key": "elgrishi_2018_practical"
         },
         {
-          "key": "scholz_2015_voltammetric",
-          "authors": "Scholz",
-          "title": "Voltammetric techniques of analysis: the essentials",
-          "journal": "ChemTexts",
-          "volume": "1",
-          "page": "17",
-          "year": "2015",
-          "doi": "10.1007/s40828-015-0016-y"
+          "key": "scholz_2015_voltammetric"
         },
         {
           "key": "climent_2020_single",
-          "authors": "Climent & Feliu",
-          "title": "Single Crystal Electrochemistry as an In Situ Analytical Characterization Tool",
-          "journal": "Annu. Rev. Anal. Chem.",
-          "volume": "13",
-          "page": "201",
-          "year": "2020",
-          "doi": "10.1146/annurev-anchem-061318-115541",
           "tags": [
             "well_defined_surfaces",
             "fundamental"
@@ -1517,13 +817,6 @@
         },
         {
           "key": "climent_2011_thirty",
-          "authors": "Climent & Feliu",
-          "title": "Thirty years of platinum single crystal electrochemistry",
-          "journal": "J. Solid State Electrochem.",
-          "volume": "15",
-          "page": "1297",
-          "year": "2011",
-          "doi": "10.1007/s10008-011-1372-1",
           "tags": [
             "well_defined_surfaces",
             "fundamental"
@@ -1539,13 +832,6 @@
       "rows": [
         {
           "key": "khenkin_2020_consensus",
-          "authors": "Khenkin *et al.*",
-          "title": "Consensus statement for stability assessment and reporting for perovskite photovoltaics based on ISOS procedures",
-          "journal": "Nat. Energy",
-          "volume": "5",
-          "page": "35",
-          "year": "2020",
-          "doi": "10.1038/s41560-019-0529-5",
           "tags": [
             "stability",
             "photovoltaics"
@@ -1553,14 +839,7 @@
         },
         {
           "key": "reese_2011_consensus",
-          "authors": "Reese *et al.*",
-          "title": "Consensus stability testing protocols for organic photovoltaic materials and devices",
           "gloss": "(the original ISOS protocols)",
-          "journal": "Sol. Energy Mater. Sol. Cells",
-          "volume": "95",
-          "page": "1253",
-          "year": "2011",
-          "doi": "10.1016/j.solmat.2011.01.036",
           "tags": [
             "stability",
             "photovoltaics"
@@ -1575,167 +854,61 @@
       "nav": "Data, metadata, FAIR",
       "rows": [
         {
-          "key": "wilkinson_2016_fair",
-          "authors": "Wilkinson *et al.*",
-          "title": "The FAIR Guiding Principles for scientific data management and stewardship",
-          "journal": "Sci. Data",
-          "volume": "3",
-          "page": "160018",
-          "year": "2016",
-          "doi": "10.1038/sdata.2016.18"
+          "key": "wilkinson_2016_fair"
         },
         {
-          "key": "mons_2017_cloudy",
-          "authors": "Mons *et al.*",
-          "title": "Cloudy, increasingly FAIR; revisiting the FAIR Data guiding principles for the European Open Science Cloud",
-          "journal": "Inf. Serv. Use",
-          "volume": "37",
-          "page": "49",
-          "year": "2017",
-          "doi": "10.3233/ISU-170824"
+          "key": "mons_2017_cloudy"
         },
         {
           "key": "collins_2018_turning",
-          "authors": "Collins *et al.*",
-          "title": "Turning FAIR into Reality",
-          "gloss": "(EC expert-group action plan)",
-          "year": "2018",
-          "doi": "10.2777/1524"
+          "gloss": "(EC expert-group action plan)"
         },
         {
-          "key": "pwc_2018_cost",
-          "authors": "PwC EU Services",
-          "title": "Cost-Benefit Analysis for FAIR Research Data",
-          "year": "2018",
-          "doi": "10.2777/02999"
+          "key": "pwc_2018_cost"
         },
         {
-          "key": "sansone_2019_fairsharing",
-          "authors": "Sansone *et al.*",
-          "title": "FAIRsharing as a community approach to standards, repositories and policies",
-          "journal": "Nat. Biotechnol.",
-          "volume": "37",
-          "page": "358",
-          "year": "2019",
-          "doi": "10.1038/s41587-019-0080-8"
+          "key": "sansone_2019_fairsharing"
         },
         {
-          "key": "belliard_2023_ten",
-          "authors": "Belliard *et al.*",
-          "title": "Ten simple rules for starting FAIR discussions in your community",
-          "journal": "PLOS Comput. Biol.",
-          "volume": "19",
-          "page": "e1011668",
-          "year": "2023",
-          "doi": "10.1371/journal.pcbi.1011668"
+          "key": "belliard_2023_ten"
         },
         {
-          "key": "tsipouri_2025_economic",
-          "authors": "Tsipouri *et al.*",
-          "title": "The economic impact of open science: a scoping review",
-          "journal": "R. Soc. Open Sci.",
-          "volume": "12",
-          "page": "250754",
-          "year": "2025",
-          "doi": "10.1098/rsos.250754"
+          "key": "tsipouri_2025_economic"
         },
         {
           "key": "xu_2022_navigating",
-          "authors": "Xu",
-          "title": "Navigating the minefield of battery literature",
-          "journal": "Commun. Mater.",
-          "volume": "3",
-          "page": "31",
-          "year": "2022",
-          "doi": "10.1038/s43246-022-00251-5",
           "scope": "domain",
           "tags": [
             "batteries_fuel_cells"
           ]
         },
         {
-          "key": "chalk_2017_iupac",
-          "authors": "Chalk & McEwen",
-          "title": "The IUPAC Gold Book: An Exemplar for IUPAC Asset Digitization",
-          "journal": "Chem. Int.",
-          "volume": "39",
-          "page": "25",
-          "year": "2017",
-          "doi": "10.1515/ci-2017-0307"
+          "key": "chalk_2017_iupac"
         },
         {
-          "key": "mustafa_2024_digital",
-          "authors": "Mustafa *et al.*",
-          "title": "Digital Standards: A Path to Sustainable and Interoperable Chemical Data Exchange",
-          "journal": "Chem. Int.",
-          "volume": "46",
-          "page": "43",
-          "year": "2024",
-          "doi": "10.1515/ci-2024-0325"
+          "key": "mustafa_2024_digital"
         },
         {
           "key": "steinbeck_2025_proposal",
-          "authors": "Steinbeck *et al.*",
-          "title": "Proposal NFDI4Chem 2025–2030",
-          "gloss": "(MIChI minimum information)",
-          "journal": "Res. Ideas Outcomes",
-          "volume": "11",
-          "page": "e177037",
-          "year": "2025",
-          "doi": "10.3897/rio.11.e177037"
+          "gloss": "(MIChI minimum information)"
         },
         {
           "key": "leipzig_2021_role",
-          "authors": "Leipzig *et al.*",
-          "title": "The role of metadata in reproducible computational research",
-          "journal": "Patterns",
-          "volume": "2",
-          "page": "100322",
-          "year": "2021",
-          "doi": "10.1016/j.patter.2021.100322",
           "tags": [
             "general_reproducibility"
           ]
         },
         {
-          "key": "duval_2001_metadata",
-          "authors": "Duval",
-          "title": "Metadata Standards: What, Who and Why",
-          "journal": "J. Univ. Comput. Sci.",
-          "volume": "7",
-          "page": "591",
-          "year": "2001",
-          "doi": "10.3217/jucs-007-07-0591"
+          "key": "duval_2001_metadata"
         },
         {
-          "key": "edwards_2011_science",
-          "authors": "Edwards *et al.*",
-          "title": "Science friction: Data, metadata, and collaboration",
-          "journal": "Soc. Stud. Sci.",
-          "volume": "41",
-          "page": "667",
-          "year": "2011",
-          "doi": "10.1177/0306312711413314"
+          "key": "edwards_2011_science"
         },
         {
-          "key": "ghiringhelli_2023_shared",
-          "authors": "Ghiringhelli *et al.*",
-          "title": "Shared metadata for data-centric materials science",
-          "journal": "Sci. Data",
-          "volume": "10",
-          "page": "626",
-          "year": "2023",
-          "doi": "10.1038/s41597-023-02501-8"
+          "key": "ghiringhelli_2023_shared"
         },
         {
-          "key": "pinoli_2019_metadata",
-          "authors": "Pinoli *et al.*",
-          "title": "Metadata management for scientific databases",
-          "journal": "Inf. Syst.",
-          "volume": "81",
-          "page": "1",
-          "year": "2019",
-          "doi": "10.1016/j.is.2018.10.002"
+          "key": "pinoli_2019_metadata"
         }
       ]
     },
@@ -1746,92 +919,36 @@
       "nav": "General reproducibility",
       "rows": [
         {
-          "key": "baker_2016_scientists",
-          "authors": "Baker",
-          "title": "1,500 scientists lift the lid on reproducibility",
-          "journal": "Nature",
-          "volume": "533",
-          "page": "452",
-          "year": "2016",
-          "doi": "10.1038/533452a"
+          "key": "baker_2016_scientists"
         },
         {
-          "key": "scott_2022_err",
-          "authors": "Scott *et al.*",
-          "title": "To Err is Human; To Reproduce Takes Time",
-          "journal": "ACS Catal.",
-          "volume": "12",
-          "page": "3644",
-          "year": "2022",
-          "doi": "10.1021/acscatal.2c00967"
+          "key": "scott_2022_err"
         },
         {
-          "key": "sandve_2013_ten",
-          "authors": "Sandve *et al.*",
-          "title": "Ten Simple Rules for Reproducible Computational Research",
-          "journal": "PLOS Comput. Biol.",
-          "volume": "9",
-          "page": "e1003285",
-          "year": "2013",
-          "doi": "10.1371/journal.pcbi.1003285"
+          "key": "sandve_2013_ten"
         },
         {
           "key": "grossfield_2018_best",
-          "authors": "Grossfield *et al.*",
-          "title": "Best Practices for Quantification of Uncertainty and Sampling Quality in Molecular Simulations [Article v1.0]",
-          "journal": "LiveCoMS",
-          "volume": "1",
-          "page": "5067",
-          "year": "2018",
-          "doi": "10.33011/livecoms.1.1.5067",
           "tags": [
             "uncertainty"
           ]
         },
         {
           "key": "lejaeghere_2016_reproducibility",
-          "authors": "Lejaeghere *et al.*",
-          "title": "Reproducibility in density functional theory calculations of solids",
-          "gloss": "(the Δ-test, 69 authors, 15 codes)",
-          "journal": "Science",
-          "volume": "351",
-          "page": "aad3000",
-          "year": "2016",
-          "doi": "10.1126/science.aad3000"
+          "gloss": "(the Δ-test, 69 authors, 15 codes)"
         },
         {
-          "key": "bosoni_2024_how",
-          "authors": "Bosoni *et al.*",
-          "title": "How to verify the precision of density-functional-theory implementations via reproducible and universal workflows",
-          "journal": "Nat. Rev. Phys.",
-          "volume": "6",
-          "page": "45",
-          "year": "2024",
-          "doi": "10.1038/s42254-023-00655-3"
+          "key": "bosoni_2024_how"
         },
         {
           "key": "huber_2020_aiida",
-          "authors": "Huber *et al.*",
-          "title": "AiiDA 1.0, a scalable computational infrastructure for automated reproducible workflows and data provenance",
-          "journal": "Sci. Data",
-          "volume": "7",
-          "page": "300",
-          "year": "2020",
-          "doi": "10.1038/s41597-020-00638-4",
           "tags": [
             "data_fair"
           ]
         },
         {
           "key": "barker_2022_introducing",
-          "authors": "Barker *et al.*",
-          "title": "Introducing the FAIR Principles for research software",
           "gloss": "(FAIR4RS)",
-          "journal": "Sci. Data",
-          "volume": "9",
-          "page": "622",
-          "year": "2022",
-          "doi": "10.1038/s41597-022-01710-x",
           "tags": [
             "data_fair"
           ]

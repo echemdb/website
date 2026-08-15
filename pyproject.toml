@@ -32,6 +32,7 @@ myst-nb = "*"
 myst-parser = "*"
 pip = "*"
 plotly = ">=5,<6" # Workaround for https://github.com/executablebooks/MyST-NB/issues/667
+pybtex = "*"
 pylatexenc = "*"
 pylint = "*"
 pytest = "*"
