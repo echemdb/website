@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  Placeholder illustration for the "Resources" spotlight on the homepage.
+  Plain SVG, meant to be edited/replaced with an Inkscape drawing.
+  Style follows the other homepage illustrations: black line art with a
+  light purple (#9999ff) accent.
+-->
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="300"
+   height="200"
+   viewBox="0 0 300 200">
+  <g fill="none" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Stack of collected resources -->
+    <rect x="26" y="26" width="130" height="140" rx="6" fill="#ffffff" />
+    <rect x="38" y="38" width="130" height="140" rx="6" fill="#ffffff" />
+    <rect x="50" y="50" width="130" height="140" rx="6" fill="#ffffff" />
+
+    <!-- List of entries on the front card -->
+    <circle cx="68" cy="76" r="6" fill="#9999ff" />
+    <line x1="86" y1="76" x2="162" y2="76" />
+    <circle cx="68" cy="104" r="6" fill="#9999ff" />
+    <line x1="86" y1="104" x2="162" y2="104" />
+    <circle cx="68" cy="132" r="6" fill="#9999ff" />
+    <line x1="86" y1="132" x2="146" y2="132" />
+    <circle cx="68" cy="160" r="6" fill="#9999ff" />
+    <line x1="86" y1="160" x2="154" y2="160" />
+
+    <!-- Links pointing out to the community -->
+    <path d="M 186 74 C 214 66 232 62 254 62" />
+    <path d="M 246 54 L 256 62 L 246 70" />
+    <path d="M 186 104 C 214 104 232 104 254 104" />
+    <path d="M 246 96 L 256 104 L 246 112" />
+    <path d="M 186 134 C 214 142 232 146 254 146" />
+    <path d="M 246 138 L 256 146 L 246 154" />
+
+  </g>
+</svg>
