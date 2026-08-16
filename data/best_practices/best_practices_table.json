@@ -3,24 +3,26 @@
   "tags": {
     "topic": {
       "basic_electrochemistry": "Basic electrochemistry and measurement practice",
+      "ir_compensation": "Uncompensated resistance and iR correction",
+      "reference_electrodes": "Reference electrodes, potential scales and internal standards",
+      "electrolyte_purity": "Electrolyte preparation and purity",
+      "operando": "Operando and in situ measurements",
+      "variable_temperature": "Variable-temperature electrochemistry",
+      "surface_area": "Surface area determination",
+      "well_defined_surfaces": "Well-defined surfaces and single-crystal electrochemistry",
       "water_electrolysis": "Water electrolysis and HER/OER/ORR electrocatalysis",
       "co2_reduction": "Carbon dioxide reduction",
       "nitrogen_reduction": "Nitrogen reduction",
-      "cross_cutting_pitfalls": "Cross-cutting pitfalls",
-      "reproducibility": "Reproducibility, uncertainty and rigour",
+      "organic_electrosynthesis": "Organic electrosynthesis",
       "batteries_fuel_cells": "Batteries, supercapacitors and fuel cells",
-      "operando": "Operando and in situ measurements",
-      "variable_temperature": "Variable-temperature electrochemistry",
-      "consensus_protocols": "Cross-domain consensus protocols",
+      "benchmarking": "Benchmarking and activity metrics",
+      "reproducibility": "Reproducibility, uncertainty and rigour",
       "terminology": "Terminology, nomenclature and IUPAC recommendations",
       "journal_guidelines": "Journal, publisher and vendor guidelines",
-      "surface_area": "Surface area determination",
-      "reference_electrodes": "Reference electrodes, potential scales and internal standards",
-      "education": "Education and tutorials",
-      "organic_electrosynthesis": "Organic electrosynthesis",
-      "data_fair": "Data, metadata, FAIR and open science",
       "computation": "Computational and theoretical modelling",
-      "well_defined_surfaces": "Well-defined surfaces and single-crystal electrochemistry",
+      "education": "Education and tutorials",
+      "consensus_protocols": "Cross-domain consensus protocols",
+      "data_fair": "Data, metadata, FAIR and open science",
       "general_reproducibility": "General reproducibility, verification and research software"
     },
     "reaction": {
@@ -28,20 +30,16 @@
       "oer": "Oxygen evolution reaction",
       "orr": "Oxygen reduction reaction",
       "co2rr": "CO2 and CO reduction",
-      "nrr": "Nitrogen reduction / ammonia synthesis",
-      "chlor_alkali": "Chlor-alkali and caustic soda electrolysis"
+      "nrr": "Nitrogen reduction / ammonia synthesis"
     },
     "approach": {
       "setup": "Cell design, hardware, assembly and operation of the setup",
       "fundamental": "Model systems and fundamental research, where the requirements differ from device-scale work"
     },
     "aspect": {
-      "ir_compensation": "Uncompensated resistance and iR correction",
-      "benchmarking": "Benchmark systems, protocols and figures of merit",
-      "stability": "Stability, durability and accelerated stress testing",
-      "electrolyte_purity": "Electrolyte preparation and purity",
-      "impurities": "Contamination and impurity control",
       "counter_electrodes": "Counter-electrode choice and artefacts",
+      "impurities": "Contamination and impurity control",
+      "stability": "Stability, durability and accelerated stress testing",
       "data_reporting": "What to report, checklists and reporting standards",
       "uncertainty": "Error, uncertainty quantification and statistics",
       "nanomaterials": "Nanostructured and high-surface-area catalysts",
@@ -82,85 +80,46 @@
           ]
         },
         {
-          "key": "son_2023_navigating",
+          "key": "jerkiewicz_2022_applicability",
           "tags": [
-            "water_electrolysis",
-            "ir_compensation",
-            "oer"
+            "counter_electrodes",
+            "setup"
           ]
         },
         {
-          "key": "zheng_2023_ir",
+          "key": "lee_2020_reliable",
           "tags": [
-            "ir_compensation"
+            "water_electrolysis",
+            "counter_electrodes",
+            "her",
+            "setup"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ir_compensation",
+      "scope": "domain",
+      "group": "measurement_practice",
+      "title": "Uncompensated resistance and iR correction",
+      "nav": "iR correction",
+      "rows": [
+        {
+          "key": "zheng_2023_ir",
+          "tags": []
+        },
+        {
+          "key": "son_2023_navigating",
+          "tags": [
+            "water_electrolysis",
+            "oer"
           ]
         },
         {
           "key": "heenan_2022_why",
           "tags": [
             "co2_reduction",
-            "ir_compensation",
             "co2rr"
-          ]
-        },
-        {
-          "key": "niu_2020_how",
-          "tags": [
-            "benchmarking"
-          ]
-        },
-        {
-          "key": "anantharaj_2021_pitfalls",
-          "tags": [
-            "water_electrolysis",
-            "her",
-            "oer"
-          ]
-        },
-        {
-          "key": "kumar_2021_caustic",
-          "tags": [
-            "chlor_alkali",
-            "setup"
-          ]
-        },
-        {
-          "key": "hausmann_2021_ph",
-          "tags": [
-            "water_electrolysis",
-            "electrolyte_purity",
-            "her",
-            "oer"
-          ]
-        },
-        {
-          "key": "zheng_2021_metal",
-          "tags": [
-            "nanomaterials"
-          ]
-        },
-        {
-          "key": "tiwari_2019_effect",
-          "tags": [
-            "well_defined_surfaces",
-            "electrolyte_purity",
-            "impurities",
-            "fundamental"
-          ]
-        },
-        {
-          "key": "jerkiewicz_2020_standard",
-          "tags": [
-            "reference_electrodes",
-            "setup",
-            "her"
-          ]
-        },
-        {
-          "key": "jerkiewicz_2022_applicability",
-          "tags": [
-            "counter_electrodes",
-            "setup"
           ]
         }
       ]
@@ -173,19 +132,69 @@
       "nav": "Reference electrodes",
       "rows": [
         {
-          "key": "gagne_1980_ferrocene"
+          "key": "jerkiewicz_2020_standard",
+          "tags": [
+            "her",
+            "setup"
+          ]
         },
         {
-          "key": "connelly_1996_chemical"
+          "key": "frenzel_2017_voltammetric",
+          "tags": []
         },
         {
-          "key": "noviandri_1999_decamethylferrocenium"
+          "key": "pavlishchuk_2000_conversion",
+          "tags": []
         },
         {
-          "key": "pavlishchuk_2000_conversion"
+          "key": "noviandri_1999_decamethylferrocenium",
+          "tags": []
         },
         {
-          "key": "frenzel_2017_voltammetric"
+          "key": "connelly_1996_chemical",
+          "tags": []
+        },
+        {
+          "key": "gagne_1980_ferrocene",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "electrolyte_purity",
+      "scope": "domain",
+      "group": "measurement_practice",
+      "title": "Electrolyte preparation and purity",
+      "nav": "Electrolyte purity",
+      "rows": [
+        {
+          "key": "marquez_2023_getting",
+          "tags": [
+            "setup"
+          ]
+        },
+        {
+          "key": "hausmann_2021_ph",
+          "tags": [
+            "water_electrolysis",
+            "her",
+            "oer"
+          ]
+        },
+        {
+          "key": "tiwari_2019_effect",
+          "tags": [
+            "well_defined_surfaces",
+            "impurities",
+            "fundamental"
+          ]
+        },
+        {
+          "key": "heubach_2025_reproducibility",
+          "tags": [
+            "reproducibility",
+            "impurities"
+          ]
         }
       ]
     },
@@ -203,7 +212,15 @@
           ]
         },
         {
-          "key": "prajapati_2025_best"
+          "key": "prajapati_2025_best",
+          "tags": []
+        },
+        {
+          "key": "diklic_2022_potential",
+          "tags": [
+            "water_electrolysis",
+            "oer"
+          ]
         }
       ]
     },
@@ -230,13 +247,8 @@
       "nav": "Surface area",
       "rows": [
         {
-          "key": "trasatti_1991_real"
-        },
-        {
-          "key": "lukaszewski_2016_electrochemical"
-        },
-        {
-          "key": "mygind_2026_hidden"
+          "key": "mygind_2026_hidden",
+          "tags": []
         },
         {
           "key": "bates_2026_rigor",
@@ -249,6 +261,14 @@
           "tags": [
             "nanomaterials"
           ]
+        },
+        {
+          "key": "lukaszewski_2016_electrochemical",
+          "tags": []
+        },
+        {
+          "key": "trasatti_1991_real",
+          "tags": []
         }
       ]
     },
@@ -260,29 +280,29 @@
       "nav": "Well-defined surfaces",
       "rows": [
         {
+          "key": "kibsgaard_2026_who",
+          "tags": [
+            "fundamental"
+          ]
+        },
+        {
+          "key": "climent_2020_single",
+          "tags": [
+            "education",
+            "fundamental"
+          ]
+        },
+        {
+          "key": "climent_2011_thirty",
+          "tags": [
+            "education",
+            "fundamental"
+          ]
+        },
+        {
           "key": "hamelin_1996_cyclic",
           "tags": [
             "fundamental"
-          ]
-        },
-        {
-          "key": "cuesta_2000_adsorption",
-          "tags": [
-            "fundamental"
-          ]
-        },
-        {
-          "key": "ganassin_2015_non",
-          "tags": [
-            "fundamental",
-            "orr"
-          ]
-        },
-        {
-          "key": "fang_2011_electrochemistry",
-          "tags": [
-            "fundamental",
-            "nanomaterials"
           ]
         }
       ]
@@ -306,17 +326,16 @@
         {
           "key": "wang_2022_unveiling",
           "tags": [
-            "orr",
-            "benchmarking"
+            "benchmarking",
+            "orr"
           ]
         },
         {
-          "key": "lee_2020_reliable",
+          "key": "wu_2021_comparing",
           "tags": [
-            "basic_electrochemistry",
-            "counter_electrodes",
+            "benchmarking",
             "her",
-            "setup"
+            "fundamental"
           ]
         },
         {
@@ -327,35 +346,22 @@
           ]
         },
         {
-          "key": "marquez_2023_getting",
-          "tags": [
-            "basic_electrochemistry",
-            "electrolyte_purity",
-            "setup"
-          ]
-        },
-        {
-          "key": "wu_2021_comparing",
-          "tags": [
-            "her",
-            "benchmarking",
-            "fundamental"
-          ]
-        },
-        {
           "key": "anantharaj_2019_do",
           "tags": [
-            "surface_area",
             "benchmarking",
+            "surface_area",
             "her",
             "oer"
           ]
         },
         {
-          "key": "mccrory_2013_benchmarking",
+          "key": "wei_2019_recommended",
           "tags": [
             "benchmarking",
-            "oer"
+            "batteries_fuel_cells",
+            "her",
+            "oer",
+            "orr"
           ]
         },
         {
@@ -367,33 +373,10 @@
           ]
         },
         {
-          "key": "bligaard_2016_toward",
-          "tags": [
-            "benchmarking"
-          ]
-        },
-        {
-          "key": "chen_2017_best",
-          "tags": [
-            "benchmarking"
-          ]
-        },
-        {
-          "key": "voiry_2018_best",
+          "key": "mccrory_2013_benchmarking",
           "tags": [
             "benchmarking",
-            "nanomaterials",
-            "data_reporting"
-          ]
-        },
-        {
-          "key": "wei_2019_recommended",
-          "tags": [
-            "batteries_fuel_cells",
-            "benchmarking",
-            "her",
-            "oer",
-            "orr"
+            "oer"
           ]
         }
       ]
@@ -427,6 +410,19 @@
           ]
         },
         {
+          "key": "seger_2023_best",
+          "tags": [
+            "co2rr"
+          ]
+        },
+        {
+          "key": "garg_2022_how",
+          "tags": [
+            "co2rr",
+            "setup"
+          ]
+        },
+        {
           "key": "salvatore_2020_voltage",
           "tags": [
             "co2rr",
@@ -441,16 +437,10 @@
           ]
         },
         {
-          "key": "vanbavel_2020_integrating",
+          "key": "nwabara_2020_towards",
           "tags": [
             "co2rr",
-            "setup"
-          ]
-        },
-        {
-          "key": "welch_2020_bicarbonate",
-          "tags": [
-            "co2rr"
+            "stability"
           ]
         },
         {
@@ -466,26 +456,6 @@
             "co2rr",
             "data_reporting"
           ]
-        },
-        {
-          "key": "seger_2023_best",
-          "tags": [
-            "co2rr"
-          ]
-        },
-        {
-          "key": "nwabara_2020_towards",
-          "tags": [
-            "co2rr",
-            "stability"
-          ]
-        },
-        {
-          "key": "garg_2022_how",
-          "tags": [
-            "co2rr",
-            "setup"
-          ]
         }
       ]
     },
@@ -500,6 +470,7 @@
           "key": "izelaar_2023_identification",
           "tags": [
             "nrr",
+            "electrolyte_purity",
             "impurities"
           ]
         },
@@ -514,14 +485,8 @@
           "key": "li_2019_electrochemical",
           "tags": [
             "nrr",
-            "impurities",
-            "electrolyte_purity"
-          ]
-        },
-        {
-          "key": "hollevoet_2020_energy",
-          "tags": [
-            "nrr"
+            "electrolyte_purity",
+            "impurities"
           ]
         }
       ]
@@ -534,30 +499,25 @@
       "nav": "Organic electrosynthesis",
       "rows": [
         {
-          "key": "frontanauribe_2010_organic"
+          "key": "ware_2024_guide",
+          "tags": [
+            "setup"
+          ]
         },
         {
-          "key": "yan_2017_synthetic"
+          "key": "brachi_2023_advanced",
+          "tags": []
         },
         {
-          "key": "wiebe_2018_electrifying"
-        },
-        {
-          "key": "mohle_2018_modern"
+          "key": "bloomquist_2024_understanding",
+          "tags": [
+            "setup"
+          ]
         },
         {
           "key": "kingston_2020_survival",
           "tags": [
             "education"
-          ]
-        },
-        {
-          "key": "pollok_2020_electroorganic"
-        },
-        {
-          "key": "pletcher_2018_flow",
-          "tags": [
-            "setup"
           ]
         },
         {
@@ -567,22 +527,10 @@
           ]
         },
         {
-          "key": "leech_2020_organic"
-        },
-        {
-          "key": "ware_2024_guide",
+          "key": "pletcher_2018_flow",
           "tags": [
             "setup"
           ]
-        },
-        {
-          "key": "bloomquist_2024_understanding",
-          "tags": [
-            "setup"
-          ]
-        },
-        {
-          "key": "brachi_2023_advanced"
         }
       ]
     },
@@ -594,10 +542,20 @@
       "nav": "Batteries, supercapacitors, fuel cells",
       "rows": [
         {
-          "key": "dugas_2019_methods"
+          "key": "kuhn_2026_workflows",
+          "tags": [
+            "data_reporting"
+          ]
         },
         {
-          "key": "kuhn_2026_workflows",
+          "key": "xu_2022_navigating",
+          "tags": [
+            "data_fair",
+            "data_reporting"
+          ]
+        },
+        {
+          "key": "sun_2021_experimental",
           "tags": [
             "data_reporting"
           ]
@@ -606,12 +564,6 @@
           "key": "li_2020_good",
           "tags": [
             "journal_guidelines",
-            "data_reporting"
-          ]
-        },
-        {
-          "key": "sun_2021_experimental",
-          "tags": [
             "data_reporting"
           ]
         },
@@ -629,32 +581,48 @@
             "water_electrolysis",
             "data_reporting"
           ]
+        },
+        {
+          "key": "dugas_2019_methods",
+          "tags": []
         }
       ]
     },
     {
-      "slug": "cross_cutting_pitfalls",
+      "slug": "benchmarking",
       "scope": "domain",
       "group": "reporting_rigour",
-      "title": "Cross-cutting pitfalls",
-      "nav": "Cross-cutting pitfalls",
+      "title": "Benchmarking and activity metrics",
+      "nav": "Benchmarking",
       "rows": [
         {
-          "key": "christopher_2021_why"
-        },
-        {
-          "key": "diklic_2022_potential",
+          "key": "anantharaj_2021_pitfalls",
           "tags": [
-            "operando",
+            "water_electrolysis",
+            "her",
             "oer"
           ]
         },
         {
-          "key": "kibsgaard_2026_who",
+          "key": "niu_2020_how",
           "tags": [
-            "well_defined_surfaces",
-            "fundamental"
+            "water_electrolysis"
           ]
+        },
+        {
+          "key": "voiry_2018_best",
+          "tags": [
+            "nanomaterials",
+            "data_reporting"
+          ]
+        },
+        {
+          "key": "chen_2017_best",
+          "tags": []
+        },
+        {
+          "key": "bligaard_2016_toward",
+          "tags": []
         }
       ]
     },
@@ -666,27 +634,9 @@
       "nav": "Reproducibility and rigour",
       "rows": [
         {
-          "key": "smith_2022_error",
+          "key": "clark_2026_reporting",
           "tags": [
-            "uncertainty"
-          ]
-        },
-        {
-          "key": "hausmann_2025_reproducibility",
-          "gloss": "(NiFe OER interlaboratory study)"
-        },
-        {
-          "key": "mistry_2021_minimal",
-          "tags": [
-            "computation",
-            "batteries_fuel_cells",
             "data_reporting"
-          ]
-        },
-        {
-          "key": "arnadottir_2026_rigor",
-          "tags": [
-            "computation"
           ]
         },
         {
@@ -696,22 +646,42 @@
           ]
         },
         {
-          "key": "heubach_2025_reproducibility",
+          "key": "arnadottir_2026_rigor",
           "tags": [
-            "impurities",
-            "electrolyte_purity"
+            "computation"
           ]
         },
         {
-          "key": "clark_2026_reporting",
+          "key": "hausmann_2025_reproducibility",
+          "gloss": "(NiFe OER interlaboratory study)",
+          "tags": []
+        },
+        {
+          "key": "smith_2022_error",
           "tags": [
-            "data_reporting"
+            "uncertainty"
           ]
+        },
+        {
+          "key": "scott_2022_err",
+          "tags": []
+        },
+        {
+          "key": "christopher_2021_why",
+          "tags": []
         },
         {
           "key": "beil_2021_reproducibility",
           "tags": [
             "organic_electrosynthesis"
+          ]
+        },
+        {
+          "key": "mistry_2021_minimal",
+          "tags": [
+            "computation",
+            "batteries_fuel_cells",
+            "data_reporting"
           ]
         }
       ]
@@ -724,10 +694,18 @@
       "nav": "Terminology and IUPAC",
       "rows": [
         {
-          "key": "parsons_1974_electrochemical"
+          "key": "naturenano_2024_importance",
+          "tags": [
+            "batteries_fuel_cells"
+          ]
         },
         {
-          "key": "parsons_1980_electrode"
+          "key": "pingarron_2020_terminology",
+          "tags": []
+        },
+        {
+          "key": "gritzner_1993_nomenclature",
+          "tags": []
         },
         {
           "key": "gritzner_1984_recommendations",
@@ -736,16 +714,12 @@
           ]
         },
         {
-          "key": "gritzner_1993_nomenclature"
+          "key": "parsons_1980_electrode",
+          "tags": []
         },
         {
-          "key": "pingarron_2020_terminology"
-        },
-        {
-          "key": "naturenano_2024_importance",
-          "tags": [
-            "batteries_fuel_cells"
-          ]
+          "key": "parsons_1974_electrochemical",
+          "tags": []
         }
       ]
     },
@@ -770,7 +744,10 @@
         },
         {
           "key": "kamat_2024_tutorials",
-          "gloss": "(collection editorial, the source of sections 1-5)"
+          "gloss": "(collection editorial, the source of sections 1-5)",
+          "tags": [
+            "education"
+          ]
         },
         {
           "key": "biologic_2024_practices",
@@ -789,10 +766,12 @@
       "nav": "Computational modelling",
       "rows": [
         {
-          "key": "doblhoffdier_2026_atomistic"
+          "key": "doblhoffdier_2026_atomistic",
+          "tags": []
         },
         {
-          "key": "refiorentin_2026_methodological"
+          "key": "refiorentin_2026_methodological",
+          "tags": []
         }
       ]
     },
@@ -803,23 +782,15 @@
       "nav": "Education and tutorials",
       "rows": [
         {
-          "key": "elgrishi_2018_practical"
-        },
-        {
-          "key": "scholz_2015_voltammetric"
-        },
-        {
-          "key": "climent_2020_single",
+          "key": "elgrishi_2018_practical",
           "tags": [
-            "well_defined_surfaces",
-            "fundamental"
+            "basic_electrochemistry"
           ]
         },
         {
-          "key": "climent_2011_thirty",
+          "key": "scholz_2015_voltammetric",
           "tags": [
-            "well_defined_surfaces",
-            "fundamental"
+            "basic_electrochemistry"
           ]
         }
       ]
@@ -854,43 +825,25 @@
       "nav": "Data, metadata, FAIR",
       "rows": [
         {
-          "key": "wilkinson_2016_fair"
-        },
-        {
-          "key": "mons_2017_cloudy"
-        },
-        {
-          "key": "collins_2018_turning",
-          "gloss": "(EC expert-group action plan)"
-        },
-        {
-          "key": "pwc_2018_cost"
-        },
-        {
-          "key": "sansone_2019_fairsharing"
-        },
-        {
-          "key": "belliard_2023_ten"
-        },
-        {
-          "key": "tsipouri_2025_economic"
-        },
-        {
-          "key": "xu_2022_navigating",
-          "scope": "domain",
-          "tags": [
-            "batteries_fuel_cells"
-          ]
-        },
-        {
-          "key": "chalk_2017_iupac"
-        },
-        {
-          "key": "mustafa_2024_digital"
-        },
-        {
           "key": "steinbeck_2025_proposal",
-          "gloss": "(MIChI minimum information)"
+          "gloss": "(MIChI minimum information)",
+          "tags": []
+        },
+        {
+          "key": "mustafa_2024_digital",
+          "tags": []
+        },
+        {
+          "key": "ghiringhelli_2023_shared",
+          "tags": []
+        },
+        {
+          "key": "belliard_2023_ten",
+          "tags": []
+        },
+        {
+          "key": "tsipouri_2025_economic",
+          "tags": []
         },
         {
           "key": "leipzig_2021_role",
@@ -899,16 +852,41 @@
           ]
         },
         {
-          "key": "duval_2001_metadata"
+          "key": "sansone_2019_fairsharing",
+          "tags": []
         },
         {
-          "key": "edwards_2011_science"
+          "key": "collins_2018_turning",
+          "gloss": "(EC expert-group action plan)",
+          "tags": []
         },
         {
-          "key": "ghiringhelli_2023_shared"
+          "key": "pwc_2018_cost",
+          "tags": []
         },
         {
-          "key": "pinoli_2019_metadata"
+          "key": "chalk_2017_iupac",
+          "tags": []
+        },
+        {
+          "key": "mons_2017_cloudy",
+          "tags": []
+        },
+        {
+          "key": "wilkinson_2016_fair",
+          "tags": []
+        },
+        {
+          "key": "edwards_2011_science",
+          "tags": []
+        },
+        {
+          "key": "duval_2001_metadata",
+          "tags": []
+        },
+        {
+          "key": "pinoli_2019_metadata",
+          "tags": []
         }
       ]
     },
@@ -919,13 +897,21 @@
       "nav": "General reproducibility",
       "rows": [
         {
-          "key": "baker_2016_scientists"
+          "key": "bosoni_2024_how",
+          "tags": []
         },
         {
-          "key": "scott_2022_err"
+          "key": "barker_2022_introducing",
+          "gloss": "(FAIR4RS)",
+          "tags": [
+            "data_fair"
+          ]
         },
         {
-          "key": "sandve_2013_ten"
+          "key": "huber_2020_aiida",
+          "tags": [
+            "data_fair"
+          ]
         },
         {
           "key": "grossfield_2018_best",
@@ -935,23 +921,16 @@
         },
         {
           "key": "lejaeghere_2016_reproducibility",
-          "gloss": "(the Δ-test, 69 authors, 15 codes)"
+          "gloss": "(the Δ-test, 69 authors, 15 codes)",
+          "tags": []
         },
         {
-          "key": "bosoni_2024_how"
+          "key": "baker_2016_scientists",
+          "tags": []
         },
         {
-          "key": "huber_2020_aiida",
-          "tags": [
-            "data_fair"
-          ]
-        },
-        {
-          "key": "barker_2022_introducing",
-          "gloss": "(FAIR4RS)",
-          "tags": [
-            "data_fair"
-          ]
+          "key": "sandve_2013_ten",
+          "tags": []
         }
       ]
     }
