@@ -157,7 +157,7 @@ def groups(scope):
         >>> from website.generator.best_practices import groups
         >>> for group in groups("domain"):
         ...     print(group["title"], len(group["sections"]))
-        Measurement practice 4
+        Measurement practice 6
         Electrodes and surfaces 2
         Reactions and devices 5
         Reporting and rigour 5
@@ -328,16 +328,16 @@ def authors(entry):
         >>> from website.generator.best_practices import authors, bibliography
         >>> authors(bibliography()["jerkiewicz_2022_applicability"])
         'Jerkiewicz'
-        >>> authors(bibliography()["zheng_2021_metal"])
-        'Zheng & Lee'
+        >>> authors(bibliography()["sebastianpascual_2020_addressing"])
+        'Sebastián-Pascual & Escudero-Escribano'
         >>> authors(bibliography()["boettcher_2021_potentially"])
         'Boettcher *et al.*'
 
     Particles are part of a surname, and an institution that authors a work is
     named in full::
 
-        >>> authors(bibliography()["vanbavel_2020_integrating"])
-        'van Bavel *et al.*'
+        >>> authors(bibliography()["iglesiasvanmontfort_2023_advanced"])
+        'Iglesias van Montfort *et al.*'
         >>> authors(bibliography()["biologic_2024_practices"])
         'Bio-Logic Science Instruments'
 
