@@ -1,9 +1,5 @@
 r"""
-Downloadable archives of the entries in the database.
-
-Each entry is offered on its page as a zip archive containing the frictionless
-Data Package of the entry, i.e., a CSV and a JSON file, together with a README
-and a LICENSE.
+Downloadable zip archives of the entries in the database.
 
 EXAMPLES::
 
@@ -56,8 +52,7 @@ def datapackage_zip(entry):
         >>> import io
         >>> import zipfile
         >>> from website.generator.database import cv
-        >>> entry = cv["alves_2011_electrochemistry_6010_f1a_solid"]
-        >>> archive = zipfile.ZipFile(io.BytesIO(datapackage_zip(entry)))
+        >>> archive = zipfile.ZipFile(io.BytesIO(datapackage_zip(cv[0])))
         >>> "Entry.from_local" in archive.read("README.md").decode("utf-8")
         True
         >>> "CC-BY-4.0" in archive.read("LICENSE.md").decode("utf-8")
