@@ -1,7 +1,12 @@
 name: Build
 on:
-  push: { branches: [ "main" ] }
+  push:
+    branches: [ "main" ]
+    # The website is only published when a new version is tagged, see rever.xsh.
+    tags: [ "*" ]
   pull_request: { branches: [ "main" ] }
+  # Republish the website manually, e.g., when run on an existing tag.
+  workflow_dispatch:
 
 concurrency:
   group: build-${{ github.ref }}
@@ -42,7 +47,7 @@ jobs:
           folder: generated/website
           target-folder: ""
           single-commit: true
-        if: ${{ github.event_name == 'push' && matrix.os == 'ubuntu-latest' }}
+        if: ${{ startsWith(github.ref, 'refs/tags/') && matrix.os == 'ubuntu-latest' }}
 
   # Broken links are reported in a job of their own, so that a website that
   # builds is published even when a site we link to is unreachable. When this

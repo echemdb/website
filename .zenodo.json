@@ -1,0 +1,48 @@
+{
+    "upload_type": "software",
+    "title": "echemdb website",
+    "description": "<p>Source code and curated content of the website <a href=\"https://www.echemdb.org\">echemdb.org</a>, a community project for interfacial electrochemistry and local research data management following the FAIR principles. The website</p><ul><li>displays the standardized and validated cyclic voltammograms of the <a href=\"https://github.com/echemdb/electrochemistry-data\">echemdb electrochemistry-data</a> repository, grouped by electrolyte, electrode material, and electrochemical system,</li><li>provides a curated collection of resources, i.e., open-source software tools, knowledge bases, and a reference table of best-practice literature for performing, reporting, and reproducing electrochemical measurements, and</li><li>introduces the tools of the echemdb ecosystem for creating, annotating, and evaluating electrochemical data.</li></ul><p>A new version is archived whenever the website is updated. Changes between versions are listed in the <a href=\"https://github.com/echemdb/website/blob/main/ChangeLog\">ChangeLog</a>.</p>",
+    "creators": [
+        {
+            "orcid": "0000-0002-9686-3948",
+            "name": "Engstfeld, Albert Kilian",
+            "affiliation": "Ulm University"
+        },
+        {
+            "orcid": "0000-0001-7119-1295",
+            "name": "Hermann, Johannes M.",
+            "affiliation": "Ulm University"
+        },
+        {
+            "orcid": "0000-0001-6944-5575",
+            "name": "Hörmann, Nicolas",
+            "affiliation": "Fritz-Haber-Institut"
+        },
+        {
+            "orcid": "0000-0002-3930-9107",
+            "name": "Rüth, Julian"
+        }
+    ],
+    "license": "GPL-3.0-or-later",
+    "keywords": [
+        "electrochemistry",
+        "interfacial electrochemistry",
+        "cyclic voltammetry",
+        "FAIR data",
+        "research data management",
+        "best practices",
+        "echemdb"
+    ],
+    "related_identifiers": [
+        {
+            "identifier": "https://www.echemdb.org",
+            "relation": "isDocumentedBy",
+            "resource_type": "other"
+        },
+        {
+            "identifier": "https://github.com/echemdb/electrochemistry-data",
+            "relation": "references",
+            "resource_type": "dataset"
+        }
+    ]
+}
