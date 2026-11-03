@@ -109,7 +109,7 @@ The work is also supported by:
 
 | | |
 |---|---|
-| [CRC-1316](https://sfb1316.rub.de/index.php/en/) | [![](images/logos/logo-crc1316.jpg){width=250 .logo-bg}](https://sfb1316.rub.de/index.php/en/) |
+| [CRC-1316](https://sfb1316.ruhr-uni-bochum.de/) | [![](images/logos/logo-crc1316.jpg){width=250 .logo-bg}](https://sfb1316.ruhr-uni-bochum.de/) |
 | [NFDI4Chem](https://nfdi4chem.de/) | [![](images/logos/logo_nfdi4chem.svg){width=200 .logo-bg}](https://nfdi4chem.de/) |
 
 </div>
