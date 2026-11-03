@@ -27,9 +27,7 @@ in
 {{ entry | render_plot }}
 
 
-<!-- TODO: Make download link work, i.e., build .zip package and link to it here. See #104.
-[Download datapackage with ID-XXXXXXXX](#TODO)
--->
+[:material-download: Download Data Package (CSV + JSON)]({{ entry.identifier }}.zip){ .md-button download }
 
 ## Further information
 
