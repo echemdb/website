@@ -65,3 +65,13 @@ pylint = "pylint website"
 black = "black website"
 isort = "isort --profile black website"
 lint = { depends-on = ["pylint", "black", "isort"] }
+
+[tool.pixi.environments]
+release = { features = ["release"], solve-group = "default" }
+
+[tool.pixi.feature.release.tasks]
+# To create a new release, run `pixi run rever X.Y.Z`
+rever = { args = [ { "arg" = "version", "default" = "--help" } ], cmd = "rever {{ version }}" }
+
+[tool.pixi.feature.release.dependencies]
+rever = "*"

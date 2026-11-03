@@ -1,14 +1,17 @@
-This project builds a website from the [electrochemistry-data
-repository](https://github.com/echemdb/electrochemistry-data) which contains
-high quality experimental and theoretical data on electrochemical systems. The
-standardized and validated data displayed on the [projects
-website](https://www.echemdb.org/cv) so far is from the community and
-publications aiming at fulfilling the [FAIR
-principles](https://www.go-fair.org/fair-principles/).
+This repository contains the source of the website
+[echemdb.org](https://www.echemdb.org/), a community project for interfacial
+electrochemistry and local research data management following the [FAIR
+principles](https://www.go-fair.org/fair-principles/). The website
 
-The repository can be browsed on [our
-websites](https://www.echemdb.org/) or explored with a [Python
-API](https://github.com/echemdb/unitpackage).
+* displays the standardized and validated cyclic voltammograms from the
+  [electrochemistry-data repository](https://github.com/echemdb/electrochemistry-data),
+  which were collected from published works by the community,
+* provides a curated collection of [resources](https://www.echemdb.org/resources/),
+  i.e., open-source software tools, knowledge bases, and a reference table of
+  best-practice literature (maintained in [data/best_practices/](./data/best_practices/)), and
+* introduces the tools of the echemdb ecosystem, such as the
+  [unitpackage](https://github.com/echemdb/unitpackage) Python API and the
+  [svgdigitizer](https://github.com/echemdb/svgdigitizer).
 
 # For developers
 
@@ -42,6 +45,8 @@ pixi run lint
 ```
 
 The version of the electrochemistry-data must be adapted in the [database generator](website/generator/database.py).
+
+Every pull request should add a news entry in [news/](./news/), see [news/TEMPLATE.rst](./news/TEMPLATE.rst).
 
 # License
 
