@@ -182,3 +182,8 @@ tr:hover img.echemdb-cv-thumbnail {
 .md-typeset .echemdb-logo-table table:not([class]) td {
   vertical-align: middle;
 }
+
+.md-typeset .admonition.echemdb-download > .admonition-title::before {
+    -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5zM19 9h-4V3H9v6H5l7 7z"/></svg>');
+    mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5zM19 9h-4V3H9v6H5l7 7z"/></svg>');
+}

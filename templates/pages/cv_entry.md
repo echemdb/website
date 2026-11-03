@@ -26,11 +26,6 @@ in
 <!-- TODO: Format plots. See #104. -->
 {{ entry | render_plot }}
 
-
-<!-- TODO: Make download link work, i.e., build .zip package and link to it here. See #104.
-[Download datapackage with ID-XXXXXXXX](#TODO)
--->
-
 ## Further information
 
 The figure shows {{ entry.figureDescription.type }} data.
@@ -95,6 +90,12 @@ Preparation procedure not available.
 {{ entry.curation.yaml }}
 ```
 </details>
+
+## Download
+
+<div class="admonition echemdb-download" markdown>
+<p class="admonition-title" markdown>[{{ entry.identifier }}.zip]({{ entry.identifier }}.zip){ download="{{ entry.identifier }}.zip" } (data as CSV, metadata as JSON, README, LICENSE)</p>
+</div>
 
 ----
 

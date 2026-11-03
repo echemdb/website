@@ -35,6 +35,7 @@ import mkdocs_gen_files
 
 import website.generator.best_practices
 import website.generator.database
+import website.generator.datapackage
 from website.macros.render import render
 
 
@@ -59,6 +60,10 @@ def main():  # pylint: disable=R0914
                     entry=entry,
                 )
             )
+        with mkdocs_gen_files.open(
+            os.path.join("cv", "entries", f"{entry.identifier}.zip"), "wb"
+        ) as archive:
+            archive.write(website.generator.datapackage.datapackage_zip(entry))
     t_pages = time.time() - t_pages_start
     print(f"Generated {len(database)} pages in {t_pages:.2f} seconds")
     t_aqueous_start = time.time()
