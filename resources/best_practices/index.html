@@ -1,0 +1,2063 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../knowledge/">
+      
+      
+        <link rel="next" href="cross_domain/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Best Practices - echemdb.org</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/katex.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#best-practices" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="echemdb.org" class="md-header__button md-logo" aria-label="echemdb.org" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            echemdb.org
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Best Practices
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Resources
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../cv/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  CV Dataset
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../contribute/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Contribute
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="echemdb.org" class="md-nav__button md-logo" aria-label="echemdb.org" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    echemdb.org
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Resources
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Software Tools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../knowledge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Knowledge Bases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  
+  <span class="md-ellipsis">
+    Best Practices
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Best Practices
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="cross_domain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cross-Domain References
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../cv/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    CV Dataset
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            CV Dataset
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../cv/aqueous/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Aqueous
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Aqueous
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cv/aqueous/single_component/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Single Component
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cv/aqueous/SHA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SHA
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cv/aqueous/COOR/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    COOR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cv/aqueous/FAOR/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAOR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cv/ionic_liquid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ionic Liquid
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contribute
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#measurement-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Measurement practice
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Measurement practice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-electrochemistry-and-measurement-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic electrochemistry and measurement practice
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uncompensated-resistance-and-ir-correction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uncompensated resistance and iR correction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference-electrodes-potential-scales-and-internal-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference electrodes, potential scales and internal standards
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#electrolyte-preparation-and-purity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Electrolyte preparation and purity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operando-and-in-situ-measurements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operando and in situ measurements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-temperature-electrochemistry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variable-temperature electrochemistry
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#electrodes-and-surfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Electrodes and surfaces
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Electrodes and surfaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#surface-area-determination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Surface area determination
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#well-defined-surfaces-and-single-crystal-electrochemistry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Well-defined surfaces and single-crystal electrochemistry
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reactions-and-devices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reactions and devices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reactions and devices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#water-electrolysis-and-heroerorr-electrocatalysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Water electrolysis and HER/OER/ORR electrocatalysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#carbon-dioxide-reduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Carbon dioxide reduction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nitrogen-reduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nitrogen reduction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organic-electrosynthesis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organic electrosynthesis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batteries-supercapacitors-and-fuel-cells" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batteries, supercapacitors and fuel cells
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reporting-and-rigour" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reporting and rigour
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reporting and rigour">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#benchmarking-and-activity-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benchmarking and activity metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reproducibility-uncertainty-and-rigour" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reproducibility, uncertainty and rigour
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#terminology-nomenclature-and-iupac-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Terminology, nomenclature and IUPAC recommendations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#journal-publisher-and-vendor-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Journal, publisher and vendor guidelines
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#computational-and-theoretical-modelling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Computational and theoretical modelling
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#education-and-tutorials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Education and tutorials
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="best-practices">Best Practices</h1>
+<p>A curated index of best-practice, protocol, and tutorial literature for interfacial electrochemistry and electrocatalysis, i.e., recommendations on how electrochemical measurements should be performed, reported, and reproduced. Recommendations on data, metadata, and reproducibility that are not specific to electrochemistry are collected separately in <a href="cross_domain/">cross-domain references</a>.</p>
+<p>The collection is non-exhaustive. Do you know a work that should be listed here? See <a href="../#suggest-a-link">suggest a link</a>.</p>
+<h2 id="measurement-practice">Measurement practice</h2>
+<h3 id="basic-electrochemistry-and-measurement-practice">Basic electrochemistry and measurement practice</h3>
+<table>
+<thead>
+<tr>
+<th class="echemdb-expand-column">Title</th>
+<th>Year</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Applicability of Platinum as a Counter-Electrode Material in Electrocatalysis Research</td>
+<td>2022</td>
+<td><a href="https://doi.org/10.1021/acscatal.1c06040">Jerkiewicz</a></td>
+</tr>
+<tr>
+<td>Potentially Confusing: Potentials in Electrochemistry</td>
+<td>2021</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.0c02443">Boettcher <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Reliable Counter Electrodes for the Hydrogen Evolution Reaction in Acidic Media</td>
+<td>2020</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.0c01537">Lee &amp; Bang</a></td>
+</tr>
+<tr>
+<td>A Practical Beginner&rsquo;s Guide to Cyclic Voltammetry</td>
+<td>2018</td>
+<td><a href="https://doi.org/10.1021/acs.jchemed.7b00361">Elgrishi <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Voltammetric techniques of analysis: the essentials</td>
+<td>2015</td>
+<td><a href="https://doi.org/10.1007/s40828-015-0016-y">Scholz</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="uncompensated-resistance-and-ir-correction">Uncompensated resistance and iR correction</h3>
+<table>
+<thead>
+<tr>
+<th class="echemdb-expand-column">Title</th>
+<th>Year</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iR Compensation for Electrocatalysis Studies: Considerations and Recommendations</td>
+<td>2023</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.3c00366">Zheng</a></td>
+</tr>
+<tr>
+<td>Navigating iR Compensation: Practical Considerations for Accurate Study of Oxygen Evolution Catalytic Electrodes</td>
+<td>2023</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.3c01658">Son <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Why Careful iR Compensation and Reporting of Electrode Potentials Are Critical for the CO₂ Reduction Reaction</td>
+<td>2022</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.2c00800">Heenan <em>et al.</em></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="reference-electrodes-potential-scales-and-internal-standards">Reference electrodes, potential scales and internal standards</h3>
+<table>
+<thead>
+<tr>
+<th class="echemdb-expand-column">Title</th>
+<th>Year</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Potentially Confusing: Potentials in Electrochemistry</td>
+<td>2021</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.0c02443">Boettcher <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Standard and Reversible Hydrogen Electrodes: Theory, Design, Operation, and Applications</td>
+<td>2020</td>
+<td><a href="https://doi.org/10.1021/acscatal.0c02046">Jerkiewicz</a></td>
+</tr>
+<tr>
+<td>Voltammetric and spectroscopic study of ferrocene and hexacyanoferrate and the suitability of their redox couples as internal standards in ionic liquids</td>
+<td>2017</td>
+<td><a href="https://doi.org/10.1039/c7cp05483a">Frenzel <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Conversion constants for redox potentials measured versus different reference electrodes in acetonitrile solutions at 25 °C</td>
+<td>2000</td>
+<td><a href="https://doi.org/10.1016/S0020-1693(99)00407-7">Pavlishchuk &amp; Addison</a></td>
+</tr>
+<tr>
+<td>The Decamethylferrocenium/Decamethylferrocene Redox Couple: A Superior Redox Standard to the Ferrocenium/Ferrocene Redox Couple for Studying Solvent Effects on the Thermodynamics of Electron Transfer</td>
+<td>1999</td>
+<td><a href="https://doi.org/10.1021/jp991381+">Noviandri <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Chemical Redox Agents for Organometallic Chemistry</td>
+<td>1996</td>
+<td><a href="https://doi.org/10.1021/cr940053x">Connelly &amp; Geiger</a></td>
+</tr>
+<tr>
+<td>Recommendations on reporting electrode potentials in nonaqueous solvents (Recommendations 1983)</td>
+<td>1984</td>
+<td><a href="https://doi.org/10.1351/pac198456040461">Gritzner &amp; Kůta</a></td>
+</tr>
+<tr>
+<td>Ferrocene as an Internal Standard for Electrochemical Measurements</td>
+<td>1980</td>
+<td><a href="https://doi.org/10.1021/ic50211a080">Gagné <em>et al.</em></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="electrolyte-preparation-and-purity">Electrolyte preparation and purity</h3>
+<table>
+<thead>
+<tr>
+<th class="echemdb-expand-column">Title</th>
+<th>Year</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reproducibility of Electrochemical Measurements with Ionic Liquids: Role of Supplied Batches, Water and Adventitious Oxygen</td>
+<td>2025</td>
+<td><a href="https://doi.org/10.1007/s11244-025-02123-x">Heubach <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Getting the Basics Right: Preparing Alkaline Electrolytes for Electrochemical Applications</td>
+<td>2023</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.2c02847">Márquez <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>A Guide to Evaluate Electrolyte Purity for CO₂ Reduction Studies</td>
+<td>2023</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.3c02343">Cui <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Identification, Quantification, and Elimination of NOₓ and NH₃ Impurities for Aqueous and Li-Mediated Nitrogen Reduction Experiments</td>
+<td>2023</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.3c01130">Izelaar <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>The pH of Aqueous NaOH/KOH Solutions: A Critical and Non-trivial Parameter for Electrocatalysis</td>
+<td>2021</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.1c01693">Hausmann <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Effect of Dissolved Glassware on the Structure-Sensitive Part of the Cu(111) Voltammogram in KOH</td>
+<td>2019</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.9b01064">Tiwari <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Electrochemical Nitrogen Reduction: Identification and Elimination of Contamination in Electrolyte</td>
+<td>2019</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.9b01573">Li <em>et al.</em></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="operando-and-in-situ-measurements">Operando and in situ measurements</h3>
+<table>
+<thead>
+<tr>
+<th class="echemdb-expand-column">Title</th>
+<th>Year</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rigor and Reproducibility in Electrocatalysis: Best Practices for Operando Studies</td>
+<td>2026</td>
+<td><a href="https://doi.org/10.1021/acscatal.6c01946">Tackett <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Best Practices for In-Situ and Operando Techniques within Electrocatalytic Systems</td>
+<td>2025</td>
+<td><a href="https://doi.org/10.1038/s41467-025-57563-6">Prajapati <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Potential Pitfalls in the Operando XAS Study of Oxygen Evolution Electrocatalysts</td>
+<td>2022</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.2c00727">Diklić <em>et al.</em></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="variable-temperature-electrochemistry">Variable-temperature electrochemistry</h3>
+<table>
+<thead>
+<tr>
+<th class="echemdb-expand-column">Title</th>
+<th>Year</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Best Practices for Variable-Temperature Electrochemistry Experiments and Data Reporting</td>
+<td>2025</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.5c00308">De <em>et al.</em></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="electrodes-and-surfaces">Electrodes and surfaces</h2>
+<h3 id="surface-area-determination">Surface area determination</h3>
+<table>
+<thead>
+<tr>
+<th class="echemdb-expand-column">Title</th>
+<th>Year</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Hidden Complexities of Electrochemically Active Surface Area Measurements</td>
+<td>2026</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.5c04204">Mygind <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Rigor &amp; Reproducibility in Electrocatalysis: Approaches and Considerations for Surface Area Normalization</td>
+<td>2026</td>
+<td><a href="https://doi.org/10.1021/acscatal.6c01834">Bates <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Approaches for measuring the surface areas of metal oxide electrocatalysts for determining their intrinsic electrocatalytic activity</td>
+<td>2019</td>
+<td><a href="https://doi.org/10.1039/c8cs00848e">Wei <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Do the Evaluation Parameters Reflect Intrinsic Activity of Electrocatalysts in Electrochemical Water Splitting?</td>
+<td>2019</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.9b00686">Anantharaj &amp; Kundu</a></td>
+</tr>
+<tr>
+<td>Electrochemical Methods of Real Surface Area Determination of Noble Metal Electrodes – an Overview</td>
+<td>2016</td>
+<td><a href="https://doi.org/10.20964/2016.06.71">Łukaszewski <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Real surface area measurements in electrochemistry</td>
+<td>1991</td>
+<td><a href="https://doi.org/10.1351/pac199163050711">Trasatti &amp; Petrii</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="well-defined-surfaces-and-single-crystal-electrochemistry">Well-defined surfaces and single-crystal electrochemistry</h3>
+<table>
+<thead>
+<tr>
+<th class="echemdb-expand-column">Title</th>
+<th>Year</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Who Will Keep the Vacuum Pumping? The Need to Sustain UHV-Based Surface Science in Electrocatalysis</td>
+<td>2026</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.5c03630">Kibsgaard</a></td>
+</tr>
+<tr>
+<td>Single Crystal Electrochemistry as an In Situ Analytical Characterization Tool</td>
+<td>2020</td>
+<td><a href="https://doi.org/10.1146/annurev-anchem-061318-115541">Climent &amp; Feliu</a></td>
+</tr>
+<tr>
+<td>Effect of Dissolved Glassware on the Structure-Sensitive Part of the Cu(111) Voltammogram in KOH</td>
+<td>2019</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.9b01064">Tiwari <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Thirty years of platinum single crystal electrochemistry</td>
+<td>2011</td>
+<td><a href="https://doi.org/10.1007/s10008-011-1372-1">Climent &amp; Feliu</a></td>
+</tr>
+<tr>
+<td>Cyclic voltammetry at gold single-crystal surfaces. Part 1. Behaviour at low-index faces</td>
+<td>1996</td>
+<td><a href="https://doi.org/10.1016/0022-0728(95)04499-X">Hamelin</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="reactions-and-devices">Reactions and devices</h2>
+<h3 id="water-electrolysis-and-heroerorr-electrocatalysis">Water electrolysis and HER/OER/ORR electrocatalysis</h3>
+<table>
+<thead>
+<tr>
+<th class="echemdb-expand-column">Title</th>
+<th>Year</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A Guide to Electrocatalyst Stability Using Lab-Scale Alkaline Water Electrolyzers</td>
+<td>2024</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.3c02758">Marquez <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Navigating iR Compensation: Practical Considerations for Accurate Study of Oxygen Evolution Catalytic Electrodes</td>
+<td>2023</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.3c01658">Son <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Unveiling the Pitfalls of Comparing Oxygen Reduction Reaction Kinetic Data for Pd-Based Electrocatalysts without the Experimental Conditions of the Current–Potential Curves</td>
+<td>2022</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.2c00181">Wang <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Potential Pitfalls in the Operando XAS Study of Oxygen Evolution Electrocatalysts</td>
+<td>2022</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.2c00727">Diklić <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Comparing the Intrinsic HER Activity of Transition Metal Dichalcogenides: Pitfalls and Suggestions</td>
+<td>2021</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.1c00912">Wu &amp; Hofmann</a></td>
+</tr>
+<tr>
+<td>The pH of Aqueous NaOH/KOH Solutions: A Critical and Non-trivial Parameter for Electrocatalysis</td>
+<td>2021</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.1c01693">Hausmann <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>The Pitfalls of Using Potentiodynamic Polarization Curves for Tafel Analysis in Electrocatalytic Water Splitting</td>
+<td>2021</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.1c00608">Anantharaj <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Best Practices in Using Foam-Type Electrodes for Electrocatalytic Performance Benchmark</td>
+<td>2020</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.0c01958">Zheng <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Reliable Counter Electrodes for the Hydrogen Evolution Reaction in Acidic Media</td>
+<td>2020</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.0c01537">Lee &amp; Bang</a></td>
+</tr>
+<tr>
+<td>Good practice guide for papers on fuel cells and electrolysis cells for the Journal of Power Sources</td>
+<td>2020</td>
+<td><a href="https://doi.org/10.1016/j.jpowsour.2019.227635">Chatenet <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>How to Reliably Report the Overpotential of an Electrocatalyst</td>
+<td>2020</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.0c00321">Niu <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Do the Evaluation Parameters Reflect Intrinsic Activity of Electrocatalysts in Electrochemical Water Splitting?</td>
+<td>2019</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.9b00686">Anantharaj &amp; Kundu</a></td>
+</tr>
+<tr>
+<td>Recommended Practices and Benchmark Activity for Hydrogen and Oxygen Electrocatalysis in Water Splitting and Fuel Cells</td>
+<td>2019</td>
+<td><a href="https://doi.org/10.1002/adma.201806296">Wei <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Benchmarking Hydrogen Evolving Reaction and Oxygen Evolving Reaction Electrocatalysts for Solar Water Splitting Devices</td>
+<td>2015</td>
+<td><a href="https://doi.org/10.1021/ja510442p">McCrory <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Benchmarking Heterogeneous Electrocatalysts for the Oxygen Evolution Reaction</td>
+<td>2013</td>
+<td><a href="https://doi.org/10.1021/ja407115p">McCrory <em>et al.</em></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="carbon-dioxide-reduction">Carbon dioxide reduction</h3>
+<table>
+<thead>
+<tr>
+<th class="echemdb-expand-column">Title</th>
+<th>Year</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A Guideline to Determine Faradaic Efficiency in Electrochemical CO₂ Reduction</td>
+<td>2024</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.3c02362">Dutta <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>A Guide to Evaluate Electrolyte Purity for CO₂ Reduction Studies</td>
+<td>2023</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.3c02343">Cui <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>An Advanced Guide to Assembly and Operation of CO₂ Electrolyzers</td>
+<td>2023</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.3c01561">Iglesias van Montfort <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Best practices for electrochemical reduction of carbon dioxide</td>
+<td>2023</td>
+<td><a href="https://doi.org/10.1038/s41893-022-01034-z">Seger <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>How membrane characteristics influence the performance of CO₂ and CO electrolysis</td>
+<td>2022</td>
+<td><a href="https://doi.org/10.1039/d2ee01818g">Garg <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Why Careful iR Compensation and Reporting of Electrode Potentials Are Critical for the CO₂ Reduction Reaction</td>
+<td>2022</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.2c00800">Heenan <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Voltage Matters When Reducing CO₂ in an Electrochemical Flow Cell</td>
+<td>2020</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.9b02356">Salvatore &amp; Berlinguette</a></td>
+</tr>
+<tr>
+<td>Addressing the Interfacial Properties for CO Electroreduction on Cu with Cyclic Voltammetry</td>
+<td>2020</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.9b02456">Sebastián-Pascual &amp; Escudero-Escribano</a></td>
+</tr>
+<tr>
+<td>Towards accelerated durability testing protocols for CO₂ electrolysis</td>
+<td>2020</td>
+<td><a href="https://doi.org/10.1039/d0ta08695a">Nwabara <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Introductory Guide to Assembling and Operating Gas Diffusion Electrodes for Electrochemical CO₂ Reduction</td>
+<td>2019</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.9b00137">Liu <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Standards and Protocols for Data Acquisition and Reporting for Studies of the Electrochemical Reduction of Carbon Dioxide</td>
+<td>2018</td>
+<td><a href="https://doi.org/10.1021/acscatal.8b01340">Clark <em>et al.</em></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="nitrogen-reduction">Nitrogen reduction</h3>
+<table>
+<thead>
+<tr>
+<th class="echemdb-expand-column">Title</th>
+<th>Year</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identification, Quantification, and Elimination of NOₓ and NH₃ Impurities for Aqueous and Li-Mediated Nitrogen Reduction Experiments</td>
+<td>2023</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.3c01130">Izelaar <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>The Difficulty of Proving Electrochemical Ammonia Synthesis</td>
+<td>2019</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.9b02286">Kibsgaard <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Electrochemical Nitrogen Reduction: Identification and Elimination of Contamination in Electrolyte</td>
+<td>2019</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.9b01573">Li <em>et al.</em></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="organic-electrosynthesis">Organic electrosynthesis</h3>
+<table>
+<thead>
+<tr>
+<th class="echemdb-expand-column">Title</th>
+<th>Year</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A guide to troubleshooting metal sacrificial anodes for organic electrosynthesis</td>
+<td>2024</td>
+<td><a href="https://doi.org/10.1039/D3SC06885D">Ware <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Understanding the effects of forced and bubble-induced convection in transport-limited organic electrosynthesis</td>
+<td>2024</td>
+<td><a href="https://doi.org/10.1039/D3RE00579H">Bloomquist <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Advanced Electroanalysis for Electrosynthesis</td>
+<td>2023</td>
+<td><a href="https://doi.org/10.1021/acsorginorgau.3c00051">Brachi <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Reproducibility in Electroorganic Synthesis—Myths and Misunderstandings</td>
+<td>2021</td>
+<td><a href="https://doi.org/10.1002/anie.202014544">Beil <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>A Survival Guide for the “Electro-curious”</td>
+<td>2020</td>
+<td><a href="https://doi.org/10.1021/acs.accounts.9b00539">Kingston <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>The Fundamentals Behind the Use of Flow Reactors in Electrochemistry</td>
+<td>2019</td>
+<td><a href="https://doi.org/10.1021/acs.accounts.9b00412">Noël <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Flow Electrolysis Cells for the Synthetic Organic Chemistry Laboratory</td>
+<td>2018</td>
+<td><a href="https://doi.org/10.1021/acs.chemrev.7b00360">Pletcher <em>et al.</em></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="batteries-supercapacitors-and-fuel-cells">Batteries, supercapacitors and fuel cells</h3>
+<table>
+<thead>
+<tr>
+<th class="echemdb-expand-column">Title</th>
+<th>Year</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Workflows and principles for collaboration and communication in battery research</td>
+<td>2026</td>
+<td><a href="https://doi.org/10.1039/d5dd00247h">Kuhn <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>The Importance of Basic Electrochemistry Terminology in the Era of Interdisciplinary Battery Research</td>
+<td>2024</td>
+<td><a href="https://doi.org/10.1038/s41565-024-01844-6">Nature Nanotechnology</a></td>
+</tr>
+<tr>
+<td>Navigating the minefield of battery literature</td>
+<td>2022</td>
+<td><a href="https://doi.org/10.1038/s43246-022-00251-5">Xu</a></td>
+</tr>
+<tr>
+<td>An Experimental Checklist for Reporting Battery Performances</td>
+<td>2021</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.1c00870">Sun</a></td>
+</tr>
+<tr>
+<td>A Minimal Information Set to Enable Verifiable Theoretical Battery Research</td>
+<td>2021</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.1c01710">Mistry <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Good practice guide for papers on batteries for the Journal of Power Sources</td>
+<td>2020</td>
+<td><a href="https://doi.org/10.1016/j.jpowsour.2020.227824">Li <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Good practice guide for papers on supercapacitors and related hybrid capacitors for the Journal of Power Sources</td>
+<td>2020</td>
+<td><a href="https://doi.org/10.1016/j.jpowsour.2019.227636">Arbizzani <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Good practice guide for papers on fuel cells and electrolysis cells for the Journal of Power Sources</td>
+<td>2020</td>
+<td><a href="https://doi.org/10.1016/j.jpowsour.2019.227635">Chatenet <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Methods and Protocols for Reliable Electrochemical Testing in Post-Li Batteries (Na, K, Mg, and Ca)</td>
+<td>2019</td>
+<td><a href="https://doi.org/10.1021/acs.chemmater.9b02776">Dugas <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Recommended Practices and Benchmark Activity for Hydrogen and Oxygen Electrocatalysis in Water Splitting and Fuel Cells</td>
+<td>2019</td>
+<td><a href="https://doi.org/10.1002/adma.201806296">Wei <em>et al.</em></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="reporting-and-rigour">Reporting and rigour</h2>
+<h3 id="benchmarking-and-activity-metrics">Benchmarking and activity metrics</h3>
+<table>
+<thead>
+<tr>
+<th class="echemdb-expand-column">Title</th>
+<th>Year</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unveiling the Pitfalls of Comparing Oxygen Reduction Reaction Kinetic Data for Pd-Based Electrocatalysts without the Experimental Conditions of the Current–Potential Curves</td>
+<td>2022</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.2c00181">Wang <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>The Pitfalls of Using Potentiodynamic Polarization Curves for Tafel Analysis in Electrocatalytic Water Splitting</td>
+<td>2021</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.1c00608">Anantharaj <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Comparing the Intrinsic HER Activity of Transition Metal Dichalcogenides: Pitfalls and Suggestions</td>
+<td>2021</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.1c00912">Wu &amp; Hofmann</a></td>
+</tr>
+<tr>
+<td>How to Reliably Report the Overpotential of an Electrocatalyst</td>
+<td>2020</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.0c00321">Niu <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Best Practices in Using Foam-Type Electrodes for Electrocatalytic Performance Benchmark</td>
+<td>2020</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.0c01958">Zheng <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Do the Evaluation Parameters Reflect Intrinsic Activity of Electrocatalysts in Electrochemical Water Splitting?</td>
+<td>2019</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.9b00686">Anantharaj &amp; Kundu</a></td>
+</tr>
+<tr>
+<td>Recommended Practices and Benchmark Activity for Hydrogen and Oxygen Electrocatalysis in Water Splitting and Fuel Cells</td>
+<td>2019</td>
+<td><a href="https://doi.org/10.1002/adma.201806296">Wei <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Best Practices for Reporting Electrocatalytic Performance of Nanomaterials</td>
+<td>2018</td>
+<td><a href="https://doi.org/10.1021/acsnano.8b07700">Voiry <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Best Practices in Pursuit of Topics in Heterogeneous Electrocatalysis</td>
+<td>2017</td>
+<td><a href="https://doi.org/10.1021/acscatal.7b02839">Chen <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Toward Benchmarking in Catalysis Science: Best Practices, Challenges, and Opportunities</td>
+<td>2016</td>
+<td><a href="https://doi.org/10.1021/acscatal.6b00183">Bligaard <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Benchmarking Hydrogen Evolving Reaction and Oxygen Evolving Reaction Electrocatalysts for Solar Water Splitting Devices</td>
+<td>2015</td>
+<td><a href="https://doi.org/10.1021/ja510442p">McCrory <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Benchmarking Heterogeneous Electrocatalysts for the Oxygen Evolution Reaction</td>
+<td>2013</td>
+<td><a href="https://doi.org/10.1021/ja407115p">McCrory <em>et al.</em></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="reproducibility-uncertainty-and-rigour">Reproducibility, uncertainty and rigour</h3>
+<table>
+<thead>
+<tr>
+<th class="echemdb-expand-column">Title</th>
+<th>Year</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reporting for Reproducibility in Electrocatalysis</td>
+<td>2026</td>
+<td><a href="https://doi.org/10.1016/j.xcrp.2026.103431">Clark &amp; Escudero-Escribano</a></td>
+</tr>
+<tr>
+<td>Experimental choices shape electrocatalytic data: reproducibility and validity for researchers new to electrocatalysis</td>
+<td>2026</td>
+<td><a href="https://doi.org/10.1016/j.electacta.2026.149614">Jung <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Rigor &amp; Reproducibility in Electrocatalysis: Integrating Theory and Experiment</td>
+<td>2026</td>
+<td><a href="https://doi.org/10.26434/chemrxiv.15002639/v2">Árnadóttir <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Rigor and Reproducibility in Electrocatalysis: Best Practices for Operando Studies</td>
+<td>2026</td>
+<td><a href="https://doi.org/10.1021/acscatal.6c01946">Tackett <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Rigor &amp; Reproducibility in Electrocatalysis: Approaches and Considerations for Surface Area Normalization</td>
+<td>2026</td>
+<td><a href="https://doi.org/10.1021/acscatal.6c01834">Bates <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Reproducibility in Electrocatalysis (NiFe OER interlaboratory study)</td>
+<td>2025</td>
+<td><a href="https://doi.org/10.26434/chemrxiv-2025-p0923">Hausmann <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Reproducibility of Electrochemical Measurements with Ionic Liquids: Role of Supplied Batches, Water and Adventitious Oxygen</td>
+<td>2025</td>
+<td><a href="https://doi.org/10.1007/s11244-025-02123-x">Heubach <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Error, reproducibility and uncertainty in experiments for electrochemical energy technologies</td>
+<td>2022</td>
+<td><a href="https://doi.org/10.1038/s41467-022-34594-x">Smith &amp; Dickinson</a></td>
+</tr>
+<tr>
+<td>To Err is Human; To Reproduce Takes Time</td>
+<td>2022</td>
+<td><a href="https://doi.org/10.1021/acscatal.2c00967">Scott <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Why Seeing Is Not Always Believing: Common Pitfalls in Photocatalysis and Electrocatalysis</td>
+<td>2021</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.1c00064">Christopher <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Reproducibility in Electroorganic Synthesis—Myths and Misunderstandings</td>
+<td>2021</td>
+<td><a href="https://doi.org/10.1002/anie.202014544">Beil <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>A Minimal Information Set to Enable Verifiable Theoretical Battery Research</td>
+<td>2021</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.1c01710">Mistry <em>et al.</em></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="terminology-nomenclature-and-iupac-recommendations">Terminology, nomenclature and IUPAC recommendations</h3>
+<table>
+<thead>
+<tr>
+<th class="echemdb-expand-column">Title</th>
+<th>Year</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Importance of Basic Electrochemistry Terminology in the Era of Interdisciplinary Battery Research</td>
+<td>2024</td>
+<td><a href="https://doi.org/10.1038/s41565-024-01844-6">Nature Nanotechnology</a></td>
+</tr>
+<tr>
+<td>Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019)</td>
+<td>2020</td>
+<td><a href="https://doi.org/10.1515/pac-2018-0109">Pingarrón <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Nomenclature, symbols and definitions in electrochemical engineering (IUPAC Recommendations 1993)</td>
+<td>1993</td>
+<td><a href="https://doi.org/10.1351/pac199365051009">Gritzner &amp; Kreysa</a></td>
+</tr>
+<tr>
+<td>Recommendations on reporting electrode potentials in nonaqueous solvents (Recommendations 1983)</td>
+<td>1984</td>
+<td><a href="https://doi.org/10.1351/pac198456040461">Gritzner &amp; Kůta</a></td>
+</tr>
+<tr>
+<td>Electrode Reaction Orders, Transfer Coefficients and Rate Constants. Amplification of Definitions and Recommendations for Publication of Parameters (Recommendations 1979)</td>
+<td>1980</td>
+<td><a href="https://doi.org/10.1351/pac198052010233">Parsons</a></td>
+</tr>
+<tr>
+<td>Manual of Symbols and Terminology for Physicochemical Quantities and Units. Appendix III: Electrochemical Nomenclature (Recommendations approved 1973)</td>
+<td>1974</td>
+<td><a href="https://doi.org/10.1351/pac197437040499">Parsons</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="journal-publisher-and-vendor-guidelines">Journal, publisher and vendor guidelines</h3>
+<table>
+<thead>
+<tr>
+<th class="echemdb-expand-column">Title</th>
+<th>Year</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Revised the Instructions for Authors for Electrochemistry – From the Editorial Office of Electrochemistry</td>
+<td>2025</td>
+<td><a href="https://doi.org/10.5796/electrochemistry.25-S0002">Editorial Office of Electrochemistry</a></td>
+</tr>
+<tr>
+<td>Tutorials in Electrochemistry: Electrocatalysis (collection editorial, the source of sections 1-5)</td>
+<td>2024</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.4c00471">Kamat</a></td>
+</tr>
+<tr>
+<td>An Essential Guide to the Best Laboratory Practices for Electrochemistry</td>
+<td>2024</td>
+<td><a href="https://www.electrochem.org/ecsnews/biologic-best-lab-practices-guide">Bio-Logic Science Instruments</a></td>
+</tr>
+<tr>
+<td>New Guidelines for Presenting Electrochemical Data in All ACS Journals</td>
+<td>2023</td>
+<td><a href="https://doi.org/10.1021/acs.joc.3c00476">Minteer <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Good practice guide for papers on batteries for the Journal of Power Sources</td>
+<td>2020</td>
+<td><a href="https://doi.org/10.1016/j.jpowsour.2020.227824">Li <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Good practice guide for papers on supercapacitors and related hybrid capacitors for the Journal of Power Sources</td>
+<td>2020</td>
+<td><a href="https://doi.org/10.1016/j.jpowsour.2019.227636">Arbizzani <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Good practice guide for papers on fuel cells and electrolysis cells for the Journal of Power Sources</td>
+<td>2020</td>
+<td><a href="https://doi.org/10.1016/j.jpowsour.2019.227635">Chatenet <em>et al.</em></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="computational-and-theoretical-modelling">Computational and theoretical modelling</h3>
+<table>
+<thead>
+<tr>
+<th class="echemdb-expand-column">Title</th>
+<th>Year</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Atomistic Modeling for Electrochemical Reactions: From the State of the Art to a Strategic Roadmap for Future Research within EU-CONCERT</td>
+<td>2026</td>
+<td><a href="https://doi.org/10.48550/arXiv.2607.07933">Doblhoff-Dier <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Methodological Frameworks for Computational Electrocatalysis: From Theory to Practice</td>
+<td>2026</td>
+<td><a href="https://doi.org/10.1002/smtd.202501542">Re Fiorentin <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Rigor &amp; Reproducibility in Electrocatalysis: Integrating Theory and Experiment</td>
+<td>2026</td>
+<td><a href="https://doi.org/10.26434/chemrxiv.15002639/v2">Árnadóttir <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>A Minimal Information Set to Enable Verifiable Theoretical Battery Research</td>
+<td>2021</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.1c01710">Mistry <em>et al.</em></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="education-and-tutorials">Education and tutorials</h2>
+<table>
+<thead>
+<tr>
+<th class="echemdb-expand-column">Title</th>
+<th>Year</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Experimental choices shape electrocatalytic data: reproducibility and validity for researchers new to electrocatalysis</td>
+<td>2026</td>
+<td><a href="https://doi.org/10.1016/j.electacta.2026.149614">Jung <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Tutorials in Electrochemistry: Electrocatalysis (collection editorial, the source of sections 1-5)</td>
+<td>2024</td>
+<td><a href="https://doi.org/10.1021/acsenergylett.4c00471">Kamat</a></td>
+</tr>
+<tr>
+<td>An Essential Guide to the Best Laboratory Practices for Electrochemistry</td>
+<td>2024</td>
+<td><a href="https://www.electrochem.org/ecsnews/biologic-best-lab-practices-guide">Bio-Logic Science Instruments</a></td>
+</tr>
+<tr>
+<td>Single Crystal Electrochemistry as an In Situ Analytical Characterization Tool</td>
+<td>2020</td>
+<td><a href="https://doi.org/10.1146/annurev-anchem-061318-115541">Climent &amp; Feliu</a></td>
+</tr>
+<tr>
+<td>A Survival Guide for the “Electro-curious”</td>
+<td>2020</td>
+<td><a href="https://doi.org/10.1021/acs.accounts.9b00539">Kingston <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>A Practical Beginner&rsquo;s Guide to Cyclic Voltammetry</td>
+<td>2018</td>
+<td><a href="https://doi.org/10.1021/acs.jchemed.7b00361">Elgrishi <em>et al.</em></a></td>
+</tr>
+<tr>
+<td>Voltammetric techniques of analysis: the essentials</td>
+<td>2015</td>
+<td><a href="https://doi.org/10.1007/s40828-015-0016-y">Scholz</a></td>
+</tr>
+<tr>
+<td>Thirty years of platinum single crystal electrochemistry</td>
+<td>2011</td>
+<td><a href="https://doi.org/10.1007/s10008-011-1372-1">Climent &amp; Feliu</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.indexes", "navigation.tabs.sticky", "toc.follow"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js"></script>
+      
+        <script src="../../javascripts/tables.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/contrib/mhchem.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
