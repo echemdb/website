@@ -26,6 +26,11 @@ in
 <!-- TODO: Format plots. See #104. -->
 {{ entry | render_plot }}
 
+{% if entry.figureDescription.comment %}
+!!! warning "Comment left by the curator on the published figure"
+    {{ entry.figureDescription.comment | indent(4) }}
+{% endif %}
+
 ## Further information
 
 The figure shows {{ entry.figureDescription.type }} data.
@@ -49,11 +54,6 @@ Preparation procedure not available.
 {% endif %}
 {% else %}
 Preparation procedure not available.
-{% endif %}
-
-{% if entry.figureDescription.comment %}
-**Comment left by the curator on the published figure**
-{{ entry.figureDescription.comment }}
 {% endif %}
 
 ## Metadata

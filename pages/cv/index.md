@@ -1,4 +1,4 @@
-# Cyclic Voltammograms
+# CV Dataset
 
 This Section shows the content of the [electrochemistry-data](https://github.com/echemdb/electrochemistry-data)
 repository, containing cyclic voltammograms (CVs[^1]) for single crystal electrodes (using dataset version {{ ECHEMDB_DATABASE_VERSION }}).
@@ -25,6 +25,8 @@ db = Echemdb.from_remote(version="{{ ECHEMDB_DATABASE_VERSION }}")
 db.describe()
 ```
 
+Each entry can be downloaded individually as a ZIP from the Download section at the bottom of its entry page.
+
 ## Systems
 
 * **[Aqueous](aqueous.md)**: Aqueous systems use water as a solvent, which is mixed with ions from an acid, a base, a salt, or a combination of such chemicals.
@@ -41,12 +43,28 @@ An entry can have several tags.
 
 Currently available tags are:
 
-* **BCV**: We consider a "base cyclic voltammogram" as a CV that shows no electrocatalysis except possibly the decomposition of the electrolyte.
-* **SHA**: Specific Halide Adsorption, studied in electrolytes containing at least one halide component.
+* **BCV**: We consider a "base cyclic voltammogram" as a CV that shows no electrocatalytic processes except possible currents related to the decomposition of the electrolyte.
+* **SHA**: Specific Halide Adsorption, studied in electrolytes containing at least one halide component. The tag is not common in the literature, but used here to simply differentiate between certain systems.
 * **COOR**: CO Oxidation Reaction, usually studied in a CO saturated electrolyte.
 * **FAOR**: Formic Acid Oxidation Reaction, usually studied in a formic acid containing electrolyte.
 * **HER**: Hydrogen Evolution Reaction.
+* **ORR**: Oxygen Reduction Reaction.
 
+## Notes and Limitations
+
+Please keep the following in mind when using the dataset.
+
+* **Data are reproduced as published.** The CVs are digitized from figures in the original publications. Their precision is limited by the resolution and quality of the published figures.
+* **Only metadata provided in the publication are included.** This limits for example conversion between RHE/SHE scales, if a pH is not explicitly mentioned, or the conversion between $I$ and $j$ if the electrode surface area is not provided.
+* **Curation errors can be fixed.** If you find an error introduced during curation, such as wrong metadata or a digitization error, please report it on the [issue board](https://github.com/echemdb/electrochemistry-data/issues) of the electrochemistry-data repository.
+* **Errors in the original publications cannot be fixed.** Known problems with a published figure, such as wrong axis labels or inconsistent units, are kept as published and are described in the curator's comment on the respective entry page.
+
+## Contribute
+
+The dataset is not exhaustive and many more CVs of the listed systems exist in the literature.
+Contributions are welcome, either by digitizing figures from publications
+or by providing source data, for example, as CSV files.
+See the [Contribute](../contribute.md) page for details on how to contribute data.
 
 [^1]:
     Note that in the literature the abbreviation CV is sometimes
