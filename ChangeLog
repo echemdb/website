@@ -4,6 +4,30 @@ echemdb-website Change Log
 
 .. current developments
 
+v0.2.0
+====================
+
+**Added:**
+
+* Added a "Notes and Limitations" and a "Contribute" section to the CV Dataset overview page.
+* Added a note to the single component overview page that dissolved gases are only listed if stated in the original publication.
+* Added a download section to each entry page, which provides the entry's Data Package (CSV and JSON) as a zip archive, together with a README and a LICENSE.
+
+**Changed:**
+
+* Changed the Contribute page to give an overview of contributions to the echemdb ecosystem, with a section per project linking to its contributing guide.
+* Changed the Contribute section of the CV Dataset page to describe the ways to contribute data and link to the contributing guide of the electrochemistry-data repository.
+* Changed the title of the CV overview page to "CV Dataset" and updated the description of the tags.
+* Changed the curator's comment on entry pages to a warning admonition placed directly below the figure.
+* Changed the electrochemistry-data version to 0.10.0.
+
+**Removed:**
+
+* Removed the step-by-step instructions for submitting source data and digitized data from the Contribute page, which are now part of the contributing guide of the electrochemistry-data repository.
+* Removed support for Python 3.10, which reached its end of life in October 2026. The website now requires Python 3.11 or later.
+
+
+
 v0.1.0
 ====================
 
