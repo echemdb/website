@@ -108,7 +108,8 @@ def main():  # pylint: disable=R0914
                 ),
                 title="Single Component Systems",
                 intro="Base cyclic voltammograms for electrodes recorded"
-                " in aqueous electrolytes with a single additional component (water + one acid, base, or salt).",
+                " in aqueous electrolytes with a single additional component (water + one acid, base, or salt)."
+                " Dissolved gases (e.g., from purging with Ar or N<sub>2</sub>) are only listed if they are stated in the original publication.",
                 material_filter=material_filter(),
             )
         )
