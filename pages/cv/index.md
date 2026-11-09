@@ -62,9 +62,16 @@ Please keep the following in mind when using the dataset.
 ## Contribute
 
 The dataset is not exhaustive and many more CVs of the listed systems exist in the literature.
-Contributions are welcome, either by digitizing figures from publications
-or by providing source data, for example, as CSV files.
-See the [Contribute](../contribute.md) page for details on how to contribute data.
+Contributions are welcome and do not require programming skills:
+
+* **Digitize figures** from publications with [svgdigitizer](https://echemdb.github.io/svgdigitizer/).
+* **Provide source data** behind a published figure that you measured yourself, for example, as CSV files.
+* **Check existing entries** against their publications and correct errors.
+
+The [contributing guide](https://github.com/echemdb/electrochemistry-data/blob/main/CONTRIBUTING.md)
+of the electrochemistry-data repository describes each of these routes step by step.
+If you prefer to send data without using Git, or want to discuss a contribution first,
+see the contact options on the [Contribute](../contribute.md#contact) page.
 
 [^1]:
     Note that in the literature the abbreviation CV is sometimes

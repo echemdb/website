@@ -1,33 +1,47 @@
 # Contribute
 
-Contributions are always welcome and do not necessarily require programming skills and can involve
+echemdb is a community effort, and contributions to any part of the ecosystem are welcome.
+Many of them do not require programming skills, for example
 
-* Providing data to the database
-* Digitize data for the database
-* Develop metadata standards
-* Improve the website content
-* Develop data evaluation tools
-* ...
-
-Please [leave us a message](https://github.com/orgs/echemdb/discussions),
-contact directly [albert.engstfeld@uni-ulm.de](mailto:albert.engstfeld@uni-ulm.de),
-or suggest changes in the issue boards of the respective repositories.
+* providing data or digitizing data from publications,
+* checking existing entries against their publications,
+* developing metadata standards,
+* improving the website content,
+* developing data evaluation tools.
 
 We would also be thrilled to hear about your ideas to extend these projects to other areas.
 
-## Contribute data
+## Contact
 
-Data can be provided directly, for example, as csv file (source data)
-or involves digitizing data from a publication.
-In either case additional metadata and a PDF of the work should be provided (PDFs should not be uploaded in the repository).
-Contributions can be made via a pull request in the [electrochemistry data repository](https://github.com/echemdb/electrochemistry-data) or sent via mail to [albert.engstfeld@uni-ulm.de](mailto:albert.engstfeld@uni-ulm.de) to determine further steps.
+Please [leave us a message](https://github.com/orgs/echemdb/discussions),
+contact us directly via [albert.engstfeld@uni-ulm.de](mailto:albert.engstfeld@uni-ulm.de),
+or open an issue in the respective repository.
+This is also the place to start if you prefer to send data without using Git,
+or want to discuss a contribution first.
 
-### Source data
+## Projects
 
-The data should be in a simple machine readable format, such as CSV, TSV, TXT, ... which contains columns with data. Header lines with additional metadata are acceptable. The data must contain a potential (E) or voltage (U) axis and a current (I) or current density (j) axis. A time (t) axis is preferable. If not present, the scan rate (V/s), must be provided in the metadata to reconstruct the time axis.
+Each project describes in its contributing guide how to contribute.
 
-Metadata is preferably submitted as YAML. Templates can be found either in the [metadata-scheme repository](https://github.com/echemdb/metadata-schema/blob/main/examples/file_schemas/source_data.yaml) (remove all parts that are not necessary) or browse through existing schemas from [works that are already included in the database](https://github.com/echemdb/electrochemistry-data/tree/main/literature) (check the entries in the subfolders).
+### CV dataset
 
-### Digitize data
+The [CV dataset](cv/index.md) is maintained in the [electrochemistry-data](https://github.com/echemdb/electrochemistry-data) repository.
+Data can be added by digitizing figures from publications or by providing source data, for example, as CSV files.
+See the [Contribute section of the CV dataset](cv/index.md#contribute) for an overview
+and the [contributing guide](https://github.com/echemdb/electrochemistry-data/blob/main/CONTRIBUTING.md) for the step-by-step instructions.
 
-To digitize data from published works, follow the instructions in the [svgdigitizer documentation](https://echemdb.github.io/svgdigitizer/workflow.html).
+### svgdigitizer
+
+[svgdigitizer](https://github.com/echemdb/svgdigitizer) is the tool used to digitize figures from publications.
+Bug reports, questions, feature ideas, and improvements to the code and the [documentation](https://echemdb.github.io/svgdigitizer/) are welcome,
+see the [contributing guide](https://github.com/echemdb/svgdigitizer/blob/master/CONTRIBUTING.md).
+
+### metadata-schema
+
+The [metadata-schema](https://github.com/echemdb/metadata-schema) defines the structure of the metadata describing the data in echemdb.
+New metadata fields or changes to the structure of the metadata can be proposed there,
+see the [contributing guide](https://github.com/echemdb/metadata-schema/blob/main/CONTRIBUTING.md).
+
+### Website
+
+Suggestions for the content of this website can be made in the [issue board](https://github.com/echemdb/website/issues) of the website repository.
