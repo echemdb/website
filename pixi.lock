@@ -21028,7 +21028,7 @@ packages:
   timestamp: 1742433568506
 - pypi: ./
   name: echemdb-website
-  requires_python: '>=3.10'
+  requires_python: '>=3.11'
 - pypi: https://files.pythonhosted.org/packages/01/53/76c109e6f822a6d19befb0450c87330b9a6ce52353de6a9dda7892060a1f/mkdocs_section_index-0.3.10-py3-none-any.whl
   name: mkdocs-section-index
   version: 0.3.10

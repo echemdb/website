@@ -9,7 +9,7 @@ The site is live at [echemdb.org](https://www.echemdb.org/).
 ## Tech Stack
 
 - **Static site generator**: MkDocs with Material theme
-- **Language**: Python 3.10+
+- **Language**: Python 3.11+
 - **Package manager**: Pixi (conda-based)
 - **Data library**: `unitpackage` — datapackage structures for electrochemistry
 - **Templating**: Jinja2 (via mkdocs-macros-plugin and mkdocs-gen-files)
