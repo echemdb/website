@@ -85,7 +85,7 @@ Output goes to `generated/website/`.
 
 ## Key Dependencies
 
-- `unitpackage >=0.12.0, <0.13.0` — core data structures
+- `unitpackage >=0.14.0, <0.15.0` — core data structures
 - `astropy` — physical units
 - `plotly >=5, <6` — interactive plots
 - `pylatexenc` — LaTeX to unicode conversion

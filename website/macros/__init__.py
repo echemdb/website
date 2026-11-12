@@ -58,7 +58,9 @@ def define_env(env):
     # voltammograms) and the number of distinct literature sources. Several
     # entries can originate from the same publication (e.g., different figures),
     # so "number of references" counts distinct bibliography keys.
-    statistics = cv.describe()
+    # pylint infers Collection instead of Echemdb from the super() call in
+    # Echemdb.from_remote(), so it does not know about Echemdb.describe().
+    statistics = cv.describe()  # pylint: disable=no-member
     env.variables["ECHEMDB_ENTRY_COUNT"] = statistics["number of entries"]
     env.variables["ECHEMDB_SOURCE_COUNT"] = statistics["number of references"]
     enable_macros(env)
