@@ -48,6 +48,10 @@ ECHEMDB_DATABASE_URL = os.environ.get(
 
 cv = Echemdb.from_remote(url=ECHEMDB_DATABASE_URL)
 
+# The complete database, also when `cv` is limited for fast builds (see
+# below). Used for figures and statistics that must show the full dataset.
+cv_all = cv
+
 # Limit the number of entries per experimental tag (BCV, COOR, ...) and
 # electrolyte type (aqueous, ionic liquid, ...) for fast local test builds
 # where all overview pages contain at least some entries,
