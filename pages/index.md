@@ -98,4 +98,14 @@ where machine-readable data is not available.
 
 ## Funding and support
 
-[![Ulm University – Institute of Electrochemistry](images/logos/logo-uni-ulm.svg){width=200 .logo-bg}](https://www.uni-ulm.de/en/nawi/institute-of-electrochemistry/) [![Fritz-Haber Institute Berlin – Theory Department](images/logos/logo_fhi.png){width=200 .logo-bg}](https://www.fhi.mpg.de/th-department) [![CRC-1316](images/logos/logo-crc1316.jpg){width=200 .logo-bg}](https://sfb1316.ruhr-uni-bochum.de/) [![NFDI4Chem](images/logos/logo_nfdi4chem.svg){width=200 .logo-bg}](https://nfdi4chem.de/)
+<div class="echemdb-logo-row" markdown>
+
+[![Ulm University – Institute of Electrochemistry](images/logos/logo-uni-ulm.svg){width=165 .logo-bg}](https://www.uni-ulm.de/en/nawi/institute-of-electrochemistry/)
+[![Fritz-Haber Institute Berlin – Theory Department](images/logos/logo_fhi.png){width=196 .logo-bg}](https://www.fhi.mpg.de/th-department)
+[![National Institute of Chemistry Ljubljana – Department of Materials Chemistry](images/logos/Logo_national_institue_chemistry.png){width=165 .logo-bg}](https://www.ki.si/en/departments/d10-department-of-materials-chemistry/)
+[![CRC-1316](images/logos/logo-crc1316.jpg){width=256 .logo-bg}](https://sfb1316.ruhr-uni-bochum.de/)
+[![NFDI4Chem](images/logos/logo_nfdi4chem.svg){width=196 .logo-bg}](https://nfdi4chem.de/)
+
+</div>
+
+[→ Learn more](support.md)

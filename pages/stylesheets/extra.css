@@ -167,7 +167,7 @@ tr:hover img.echemdb-cv-thumbnail {
 
 /*
  * Funding and support tables styling (tables wrapped in a
- * div.echemdb-logo-table, see about.md).
+ * div.echemdb-logo-table, see support.md).
  * Ensure tables have white background, no (empty) header row,
  * and vertically centered logos.
  */
@@ -181,6 +181,25 @@ tr:hover img.echemdb-cv-thumbnail {
 
 .md-typeset .echemdb-logo-table table:not([class]) td {
   vertical-align: middle;
+}
+
+/*
+ * Row of funding and support logos on the homepage (div.echemdb-logo-row,
+ * see index.md). The logos have very different aspect ratios. To make them
+ * look equally large, each logo gets a width in index.md such that all logos
+ * cover about the same area: width = 88px * sqrt(aspect ratio).
+ */
+.md-typeset .echemdb-logo-row p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem 2.5rem;
+}
+
+.md-typeset .echemdb-logo-row img {
+  height: auto;
+  max-width: 100%;
 }
 
 .md-typeset .admonition.echemdb-download > .admonition-title::before {
