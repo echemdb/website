@@ -4,6 +4,39 @@ echemdb-website Change Log
 
 .. current developments
 
+v0.2.1
+====================
+
+**Added:**
+
+* Added 23 works to the best-practice reference table, among them stability and statistical benchmarking for water electrolysis, stability windows and data reporting for batteries and supercapacitors, IUPAC terminology for semiconductor electrochemistry and detection limits, and guidelines for electrochemical sensing.
+* Added a News section to the website, built with the blog plugin of Material for MkDocs. The first post announces the news section and the acceptance of the echemdb data descriptor in *Scientific Data*. The first card on the home page links to the news.
+* Added a link to the curated list of Python packages for electrochemistry (awsome-python-electrochemsitry) to the Software Tools page.
+* Added the citation of the echemdb data descriptor, accepted for publication in *Scientific Data*, to the About page, the home page and a new Cite section of the CV Dataset page.
+* Added an overview figure of the CVs for single crystal metal electrodes in aqueous electrolytes, arranged as in the periodic table, to the CV Dataset page. The figure is generated from the database during the build, so that it shows the numbers of the dataset version on the website. It always uses the complete database (also in fast builds) and is cached in ``generated/cache/`` between builds.
+* Added a separate "Support" tab listing the institutions that fund and support echemdb.
+
+**Changed:**
+
+* Changed the tags of seven works in the best-practice reference table (Son 2023, Márquez 2024, Wang 2022, Wu 2021, Iglesias van Montfort 2023, Salvatore 2020, Nwabara 2020).
+* Changed the citation of the echemdb data descriptor to the citation format of the website: authors, title in quotes and italics, journal, and **accepted** (or the volume in bold) followed by the year. The references to the *Data Science Journal* article on the About page follow the same format and link to its DOI. The Cite section of the About page lists the latest publication first and states which work to cite for which purpose.
+* Changed the About page, which no longer contains the funding and support section. The homepage now links to the new Support page and also shows the logo of the National Institute of Chemistry, Ljubljana.
+
+* Changed the funding and support logos on the homepage, which are now scaled so that they appear about equally large. The logo of the National Institute of Chemistry was cropped to remove its blank border.
+* Changed the required version of unitpackage to 0.14.
+
+**Removed:**
+
+* Removed five works from the best-practice reference table that are not best-practice literature (Bloomquist 2024, Heenan 2022, Kibsgaard 2019, Pletcher 2018, Sebastián-Pascual 2020).
+
+**Fixed:**
+
+* Fixed the authors of the Journal of Power Sources good practice guide for battery papers (Li *et al.* 2020).
+* Fixed the year of Grossfield *et al.* to 2019 and the key of Dutta *et al.* 2024 in the best-practice bibliography.
+* Fixed the reference of Doblhoff-Dier *et al.* 2026, which now points to the published version in ACS Electrochemistry instead of the preprint.
+
+
+
 v0.2.0
 ====================
 
