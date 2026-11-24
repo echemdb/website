@@ -1,6 +1,7 @@
 **Added:**
 
 * Added a News section to the website, built with the blog plugin of Material for MkDocs. The first post announces the news section and the acceptance of the echemdb data descriptor in *Scientific Data*. The first card on the home page links to the news.
+* Added a link to the curated list of Python packages for electrochemistry (awsome-python-electrochemsitry) to the Software Tools page.
 
 **Changed:**
 
