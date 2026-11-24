@@ -12,4 +12,5 @@
         * [FAOR](cv/aqueous/FAOR.md)
     * [Ionic Liquid](cv/ionic_liquid.md)
 * [Contribute](contribute.md)
+* [Support](support.md)
 * [About](about.md)
