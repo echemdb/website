@@ -328,8 +328,8 @@ def authors(entry):
         >>> from website.generator.best_practices import authors, bibliography
         >>> authors(bibliography()["jerkiewicz_2022_applicability"])
         'Jerkiewicz'
-        >>> authors(bibliography()["sebastianpascual_2020_addressing"])
-        'Sebastián-Pascual & Escudero-Escribano'
+        >>> authors(bibliography()["suvarna_2024_embracing"])
+        'Suvarna & Pérez-Ramírez'
         >>> authors(bibliography()["boettcher_2021_potentially"])
         'Boettcher *et al.*'
 
