@@ -83,6 +83,22 @@ Output goes to `generated/website/`.
 - No heavy type annotation usage; duck typing preferred
 - CSS classes use `.echemdb-*` prefix for custom styling
 
+## Citations in pages and news posts
+
+Hand-written references (pages, news posts, `templates/components/citation_*.md`) use this format:
+
+```markdown
+A. Author, B. Author, "*Title of the article*", Journal, **24** (2025) 13
+```
+
+- Authors as initials and surname, separated by commas. Title in quotes and italics, journal plain.
+- Volume in bold, followed by the year in parentheses and the first page or article number.
+- For an accepted article without volume, write `**accepted** (2026)` instead.
+  Once it is published, replace `**accepted**` with the volume, add the page after the year,
+  and link the reference to its DOI (`[...](https://doi.org/...)`).
+- The automatically generated references (CV entry pages, best-practice tables) are rendered by
+  code and templates and do not follow this rule.
+
 ## Key Dependencies
 
 - `unitpackage >=0.14.0, <0.15.0` — core data structures

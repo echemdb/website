@@ -20,6 +20,14 @@ extra_css:
 
 plugins:
   - search
+  - blog:
+      blog_dir: news
+      blog_toc: true
+      post_date_format: long
+      post_url_format: "{date}/{slug}"
+      post_readtime: false
+      archive: false
+      categories: false
   - macros:
       module_name: website/macros/__init__
   - gen-files:

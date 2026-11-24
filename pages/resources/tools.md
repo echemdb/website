@@ -5,7 +5,8 @@ and analyzing electrochemical measurement data.
 The list is non-exhaustive and the maintenance status of community projects may change.
 To add a project to this list, see [suggest a link](index.md#suggest-a-link).
 
-A curated list of tools related to chemistry can be found [elsewhere](https://github.com/lmmentel/awesome-python-chemistry).
+Curated lists of Python packages can be found for [electrochemistry](https://github.com/federicoscarpioni/awsome-python-electrochemsitry)
+and [chemistry](https://github.com/lmmentel/awesome-python-chemistry) in general.
 
 ## Loaders and converters — interfacial electrochemistry and general
 

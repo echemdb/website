@@ -21,7 +21,7 @@ within the community.
 
 ## Standardization
 
-The data standardization approach is described in [Engstfeld et al., *Data Science Journal*, **24** (2025) 13](https://datascience.codata.org/articles/10.5334/dsj-2025-013).
+The data standardization approach is described in [A. K. Engstfeld et al., Data Science Journal, **24** (2025) 13](https://doi.org/10.5334/dsj-2025-013).
 
 In brief, to standardize CSV data the authors of echemdb adopt the
 [frictionless datapackage](https://specs.frictionlessdata.io/data-package/#introduction)
@@ -91,13 +91,15 @@ Discuss and stay up to date on [echemdb.zulipchat.com](https://echemdb.zulipchat
 
 ## Cite
 
-For the individual repositories, refer to the Zenodo DOIs provided in the repositories readme or documentation.
-
-The general concept is described in [A.K. Engstfeld, J. M. Hermann, N. Hörmann, & J. Rüth, *Data Science Journal*, **24** (2025) 13](https://datascience.codata.org/articles/10.5334/dsj-2025-013).
-
-The CV dataset is described in
+For the CV dataset and the underlying framework cite:
 
 {{ render('components/citation_dataset.md') }}
 
 The dataset itself can be cited according to the respective version on <a href="https://doi.org/10.5281/zenodo.20723429"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.20723429.svg" alt="DOI"></a>.
 See also [Cite](cv/index.md#cite) on the CV Dataset page.
+
+For local data management approaches using the echemdb ecosystem cite:
+
+[A. K. Engstfeld, J. M. Hermann, N. G. Hörmann, J. Rüth, "*A Lightweight File System Based Approach to Getting Data Ready for Data Management Solutions*", Data Science Journal, **24** (2025) 13](https://doi.org/10.5334/dsj-2025-013)
+
+For the individual repositories, refer to the Zenodo DOIs provided in the repositories readme or documentation.
