@@ -1,4 +1,5 @@
 * [Home](index.md)
+* [News](news/index.md)
 * [Resources](resources/index.md)
     * [Software Tools](resources/tools.md)
     * [Knowledge Bases](resources/knowledge.md)
