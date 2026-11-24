@@ -39,6 +39,7 @@ best-practice literature for acquiring, reporting, and reusing electrochemical d
 
 A [dataset of cyclic voltammograms (CVs)](https://doi.org/10.5281/zenodo.20723429) for redox processes at the solid liquid interface
 from the [echemdb data repository](https://github.com/echemdb/electrochemistry-data), which were standardized and validated from published works by the community.
+The dataset is described in a data descriptor accepted for publication in *Scientific Data*.
 
 [→ Explore](./cv)
 </figcaption>

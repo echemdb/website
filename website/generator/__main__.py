@@ -36,6 +36,7 @@ import mkdocs_gen_files
 import website.generator.best_practices
 import website.generator.database
 import website.generator.datapackage
+import website.generator.overview
 from website.macros.render import render
 
 
@@ -66,6 +67,10 @@ def main():  # pylint: disable=R0914
             archive.write(website.generator.datapackage.datapackage_zip(entry))
     t_pages = time.time() - t_pages_start
     print(f"Generated {len(database)} pages in {t_pages:.2f} seconds")
+    # Create the overview figure shown on the landing page of the CV dataset.
+    print("Generating overview figure")
+    with mkdocs_gen_files.open(os.path.join("cv", "overview.png"), "wb") as png:
+        png.write(website.generator.overview.cached_periodic_table())
     t_aqueous_start = time.time()
     # Create an overview page with tabulated and linked entries for aqueous systems.
     with mkdocs_gen_files.open(os.path.join("cv", "aqueous.md"), "w") as markdown:

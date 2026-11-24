@@ -3,15 +3,42 @@
 This Section shows the content of the [electrochemistry-data](https://github.com/echemdb/electrochemistry-data)
 repository, containing cyclic voltammograms (CVs[^1]) for single crystal electrodes (using dataset version {{ ECHEMDB_DATABASE_VERSION }}).
 The dataset currently contains {{ ECHEMDB_ENTRY_COUNT }} entries from {{ ECHEMDB_SOURCE_COUNT }} literature sources.
+It is described in a data descriptor in *Scientific Data* (see [Cite](#cite)).
 
 The CVs are sorted based on categories relevant to certain communities
 such as the type of electrolyte, i.e., aqueous or non-aqueous,
-as well as tags used for categorizing the systems.
+as well as [tags](#tags) used for categorizing the systems.
+
+* **[Aqueous](aqueous.md)**: Aqueous systems use water as a solvent, which is mixed with ions from an acid, a base, a salt, or a combination of such chemicals.
+Other chemicals or gases can be added.
+* **Non aqueous**: The ion conducting electrolyte can be a solid or a liquid.
+In the case of a liquid, the solvent is either conductive itself,
+as in **[Ionic Liquids](ionic_liquid.md)**, or it consists of a non-conductive solvent mixed with a salt.
+
+<figure markdown>
+![Overview of CVs for single crystal metal electrodes in aqueous electrolytes](overview.png)
+<figcaption markdown>
+Overview of CVs for single crystal metal electrodes recorded in aqueous electrolytes, arranged as in the periodic table of elements.
+$n$ denotes the number of CVs available for a material on the (111), (110), (100), and (0001) surfaces in version {{ ECHEMDB_DATABASE_VERSION }} of the dataset.
+The CV shown for each material is one example of these entries.
+</figcaption>
+</figure>
+
+## Cite
+
+When using the dataset, please cite the data descriptor
+
+{{ render('components/citation_dataset.md') }}
+
+and the specific dataset version on <a href="https://doi.org/10.5281/zenodo.20723429"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.20723429.svg" alt="DOI"></a>.
+When using individual entries, please also cite the original publications, which are given on each entry page.
 
 ## Database Access
 
 The data shown on this website can either be downloaded directly as a ZIP from <a href="https://doi.org/10.5281/zenodo.20723429"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.20723429.svg" alt="DOI"></a> or the
 release section of the [electrochemistry-data](https://github.com/echemdb/electrochemistry-data) repository.
+
+Each entry can be downloaded individually as a ZIP from the Download section at the bottom of its entry page.
 
 Alternatively, the dataset can be downloaded using the [unitpackage API](https://echemdb.github.io/unitpackage/usage/echemdb_usage.html).
 The API also allows browsing, filtering and manipulating the database, which is described in detail in the API documentation.
@@ -24,16 +51,6 @@ from unitpackage.database.echemdb import Echemdb
 db = Echemdb.from_remote(version="{{ ECHEMDB_DATABASE_VERSION }}")
 db.describe()
 ```
-
-Each entry can be downloaded individually as a ZIP from the Download section at the bottom of its entry page.
-
-## Systems
-
-* **[Aqueous](aqueous.md)**: Aqueous systems use water as a solvent, which is mixed with ions from an acid, a base, a salt, or a combination of such chemicals.
-Other chemicals or gases can be added.
-* **Non aqueous**: The ion conducting electrolyte can be a solid or a liquid.
-In the case of a liquid, the solvent is either conductive itself,
-as in **[Ionic Liquids](ionic_liquid.md)**, or it consists of a non-conductive solvent mixed with a salt.
 
 ## Tags
 
